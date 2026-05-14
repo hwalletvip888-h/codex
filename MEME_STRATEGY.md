@@ -1,0 +1,136 @@
+# Meme Strategy
+
+## 目标
+
+建立一套 Solana 链 meme 币策略流程：发现新标的，过滤明显风险，生成交易计划，执行后复盘。第一阶段默认半自动，不直接广播真实交易。
+
+## 核心模块
+
+### 1. 发现
+
+候选来源：
+
+- 新建流动性池
+- DEX 成交量和价格异动
+- 聪明钱钱包首次买入
+- 社群热度和叙事扩散
+- OKX Onchain OS token、market、signal、trenches 能力
+- Solana 新 mint、新 pool、Raydium / Meteora / Pump 相关交易路径
+
+候选 token 必须记录：
+
+- Chain
+- Token address / mint address
+- Pair address
+- Pool / market address
+- 创建时间
+- 当前价格
+- 流动性
+- 24h volume
+- 持有人数量
+- Top holders 占比
+- Dev wallet 状态
+- Bundle / sniper 痕迹
+- 买卖税
+- 是否可卖出
+- 合约是否开源或已验证
+
+### 2. 过滤
+
+直接跳过：
+
+- 无法卖出或卖出滑点异常
+- 买卖税异常
+- 流动性过低
+- 合约权限过大且无法解释
+- Top holders 或 deployer 持仓过度集中
+- LP 未锁或撤池风险明显
+- 交易量主要由少数钱包刷出
+- Token 名称碰瓷但地址来源不可靠
+- Solana mint / freeze authority 异常
+- Dev wallet 或早期 sniper 钱包持续砸盘
+
+重点观察：
+
+- 流动性持续增加
+- 买入钱包数量增长，而不是单一钱包拉盘
+- 回撤后仍有真实买盘
+- 大户分布改善
+- 社群传播和链上成交同步升温
+
+### 3. 打分
+
+每个候选 token 按 0 到 5 分打分：
+
+- Liquidity：流动性是否足够进出
+- Volume：成交量是否真实且持续
+- Holder quality：持有人增长与集中度
+- Smart money：聪明钱参与质量
+- Contract safety：合约和权限风险
+- Narrative：叙事和传播速度
+- Exit quality：卖出路径和滑点
+- Solana pool quality：池子质量、路由、滑点和真实成交
+
+默认规则：
+
+- 任一安全项为 0 分，直接跳过。
+- 总分低于 22，不进入交易计划。
+- 总分 22 到 27，只观察。
+- 总分 28 以上，允许生成小仓位计划。
+
+### 4. 仓位
+
+第一版建议：
+
+- 单笔最大风险金额固定，不随情绪扩大。
+- 首次买入只用计划仓位的一部分。
+- 高波动 token 不加杠杆。
+- 不在连续亏损后加大仓位。
+
+仓位字段：
+
+- Planned size
+- Max loss
+- Entry price
+- Stop loss
+- Take profit levels
+- Time stop
+- Invalid condition
+
+### 5. 退出
+
+退出优先级：
+
+1. 安全风险触发，立即退出或放弃。
+2. 跌破无效条件，按计划退出。
+3. 达到分批止盈线，先回收本金。
+4. 叙事或成交量衰减，降低仓位。
+5. 大户集中卖出或流动性撤出，退出。
+
+### 6. 自动化边界
+
+可以自动化：
+
+- 候选 token 收集
+- 基础安全检查
+- 链上指标抓取
+- 风险打分
+- 观察名单更新
+- 提醒和交易草案
+- 高风险 token 拦截
+
+必须人工确认：
+
+- 首次真实买入
+- 提高仓位
+- 修改止损
+- 授权合约
+- 广播真实交易
+
+## 第一阶段产物
+
+- Meme token 观察池
+- 风险评分表
+- 交易计划模板
+- 复盘模板
+- OKX Onchain OS skills 调用清单
