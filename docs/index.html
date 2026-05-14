@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Onchain OS | SOL Meme Strategy</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0f14;
+        --panel: #121923;
+        --panel-soft: #172130;
+        --text: #edf4f8;
+        --muted: #9fb0bd;
+        --line: #263546;
+        --green: #52d273;
+        --cyan: #49c6e5;
+        --yellow: #f5c542;
+        --red: #ff6b6b;
+        --blue: #7aa2ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 40px;
+      }
+
+      header {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr auto;
+        align-items: end;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 22px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 34px;
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+
+      h3 {
+        font-size: 14px;
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .subtitle {
+        margin-top: 10px;
+        color: var(--muted);
+        max-width: 760px;
+        line-height: 1.7;
+      }
+
+      .status {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-end;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--green);
+      }
+
+      .grid {
+        display: grid;
+        gap: 16px;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-top: 22px;
+      }
+
+      .layout {
+        grid-template-columns: 1.35fr 0.9fr;
+        margin-top: 16px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+      }
+
+      .metric {
+        min-height: 112px;
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 28px;
+        margin-top: 12px;
+      }
+
+      .metric span {
+        display: block;
+        color: var(--muted);
+        margin-top: 8px;
+        font-size: 13px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+        padding: 12px 8px;
+        vertical-align: middle;
+      }
+
+      th {
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 24px;
+        border-radius: 999px;
+        padding: 2px 9px;
+        border: 1px solid var(--line);
+        background: var(--panel-soft);
+        color: var(--text);
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      .tag.green {
+        color: var(--green);
+      }
+
+      .tag.yellow {
+        color: var(--yellow);
+      }
+
+      .tag.red {
+        color: var(--red);
+      }
+
+      .tag.blue {
+        color: var(--blue);
+      }
+
+      .pipeline {
+        display: grid;
+        gap: 10px;
+      }
+
+      .step {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        gap: 12px;
+        align-items: start;
+        padding: 12px;
+        background: var(--panel-soft);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .step b {
+        display: grid;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        border-radius: 50%;
+        background: #203144;
+        color: var(--cyan);
+      }
+
+      .step p {
+        color: var(--muted);
+        line-height: 1.55;
+        margin-top: 4px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      a {
+        color: var(--cyan);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .link-button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 36px;
+        padding: 0 12px;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        background: var(--panel-soft);
+        color: var(--text);
+      }
+
+      .notes {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.65;
+        margin-top: 12px;
+      }
+
+      @media (max-width: 900px) {
+        header,
+        .layout,
+        .metrics {
+          grid-template-columns: 1fr;
+        }
+
+        .status {
+          justify-content: flex-start;
+        }
+
+        table {
+          display: block;
+          overflow-x: auto;
+          white-space: nowrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>Onchain OS SOL Meme Strategy</h1>
+          <p class="subtitle">
+            Solana meme 币策略面板入口：先做新币发现、风险拦截、聪明钱信号和交易草案，真实执行默认人工确认。
+          </p>
+        </div>
+        <div class="status">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Research mode · no auto-broadcast</span>
+        </div>
+      </header>
+
+      <section class="grid metrics" aria-label="strategy metrics">
+        <article class="card metric">
+          <h3>Primary Chain</h3>
+          <strong>Solana</strong>
+          <span>chainIndex 501</span>
+        </article>
+        <article class="card metric">
+          <h3>Execution Mode</h3>
+          <strong>Manual</strong>
+          <span>quote first, confirm later</span>
+        </article>
+        <article class="card metric">
+          <h3>Risk Gate</h3>
+          <strong>Strict</strong>
+          <span>critical/high risk blocked or paused</span>
+        </article>
+        <article class="card metric">
+          <h3>Data Priority</h3>
+          <strong>OKX</strong>
+          <span>trenches, token, signal, market, security</span>
+        </article>
+      </section>
+
+      <section class="grid layout">
+        <article class="card">
+          <h2>Watchlist Schema</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Token</th>
+                <th>Stage</th>
+                <th>Signal</th>
+                <th>Risk</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>mint address first</td>
+                <td><span class="tag blue">NEW</span></td>
+                <td>smart money / KOL / whale</td>
+                <td><span class="tag yellow">scan required</span></td>
+                <td>observe</td>
+              </tr>
+              <tr>
+                <td>pool + liquidity</td>
+                <td><span class="tag blue">MIGRATING</span></td>
+                <td>aped wallets</td>
+                <td><span class="tag red">bundle check</span></td>
+                <td>block if unsafe</td>
+              </tr>
+              <tr>
+                <td>price + volume</td>
+                <td><span class="tag green">MIGRATED</span></td>
+                <td>leaderboard wallet</td>
+                <td><span class="tag green">LOW only</span></td>
+                <td>trade plan</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="notes">
+            面板现在是静态入口。下一步接入数据适配器后，这里会显示真实观察池、评分、拦截原因和交易草案。
+          </p>
+        </article>
+
+        <aside class="card">
+          <h2>Pipeline</h2>
+          <div class="pipeline">
+            <div class="step">
+              <b>1</b>
+              <div>
+                <h3>Discover</h3>
+                <p>OKX trenches 扫 Solana 新 meme token、阶段、bonding curve、dev 和 bundle 信息。</p>
+              </div>
+            </div>
+            <div class="step">
+              <b>2</b>
+              <div>
+                <h3>Enrich</h3>
+                <p>补价格、市值、流动性、holder、top trader、cluster 和逐笔成交。</p>
+              </div>
+            </div>
+            <div class="step">
+              <b>3</b>
+              <div>
+                <h3>Block</h3>
+                <p>安全扫描、dev 风险、sniper/bundle、Top holders 和卖出路径不合格就拦截。</p>
+              </div>
+            </div>
+            <div class="step">
+              <b>4</b>
+              <div>
+                <h3>Plan</h3>
+                <p>只生成 quote 和交易草案，真实买入、加仓和广播都需要人工确认。</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card" style="margin-top: 16px">
+        <h2>Project Docs</h2>
+        <div class="links">
+          <a class="link-button" href="./PROJECT_MEMORY.md">Project Memory</a>
+          <a class="link-button" href="./MEME_STRATEGY.md">Meme Strategy</a>
+          <a class="link-button" href="./DATA_INTEGRATION_MATRIX.md">Data Matrix</a>
+          <a class="link-button" href="./RISK_CONTROL.md">Risk Control</a>
+          <a class="link-button" href="./HUMMINGBOT_API_NOTES.md">Hummingbot Notes</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
