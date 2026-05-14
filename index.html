@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Onchain OS | SOL 链迷因币策略面板</title>
+    <title>Onchain OS | SOL 链迷因币监控面板</title>
     <style>
       :root {
         color-scheme: dark;
@@ -34,7 +34,7 @@
       }
 
       main {
-        width: min(1180px, calc(100% - 32px));
+        width: min(1320px, calc(100% - 32px));
         margin: 0 auto;
         padding: 28px 0 40px;
       }
@@ -75,7 +75,7 @@
       .subtitle {
         margin-top: 10px;
         color: var(--muted);
-        max-width: 760px;
+        max-width: 880px;
         line-height: 1.7;
       }
 
@@ -106,7 +106,12 @@
       }
 
       .layout {
-        grid-template-columns: 1.35fr 0.9fr;
+        grid-template-columns: 1fr;
+        margin-top: 16px;
+      }
+
+      .split {
+        grid-template-columns: 1fr 1fr;
         margin-top: 16px;
       }
 
@@ -134,6 +139,14 @@
         font-size: 13px;
       }
 
+      .section-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
       table {
         width: 100%;
         border-collapse: collapse;
@@ -155,6 +168,13 @@
 
       tr:last-child td {
         border-bottom: 0;
+      }
+
+      .mono {
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", monospace;
+        color: var(--cyan);
       }
 
       .tag {
@@ -186,36 +206,25 @@
         color: var(--blue);
       }
 
-      .pipeline {
+      .field-list {
         display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
       }
 
-      .step {
-        display: grid;
-        grid-template-columns: 30px 1fr;
-        gap: 12px;
-        align-items: start;
+      .field {
+        min-height: 72px;
         padding: 12px;
         background: var(--panel-soft);
         border: 1px solid var(--line);
         border-radius: 8px;
       }
 
-      .step b {
-        display: grid;
-        width: 30px;
-        height: 30px;
-        place-items: center;
-        border-radius: 50%;
-        background: #203144;
-        color: var(--cyan);
-      }
-
-      .step p {
+      .field p {
         color: var(--muted);
+        margin-top: 6px;
         line-height: 1.55;
-        margin-top: 4px;
+        font-size: 13px;
       }
 
       .links {
@@ -252,10 +261,11 @@
         margin-top: 12px;
       }
 
-      @media (max-width: 900px) {
+      @media (max-width: 980px) {
         header,
-        .layout,
-        .metrics {
+        .metrics,
+        .split,
+        .field-list {
           grid-template-columns: 1fr;
         }
 
@@ -275,35 +285,35 @@
     <main>
       <header>
         <div>
-          <h1>Onchain OS SOL 链迷因币策略面板</h1>
+          <h1>Onchain OS SOL 链迷因币监控面板</h1>
           <p class="subtitle">
-            Solana 迷因币策略面板入口：先做新币发现、风险拦截、聪明钱信号和交易草案，真实执行默认人工确认。
+            面板主要展示还未毕业的迷因币和刚毕业的迷因币信息。当前是静态样例页，后续接入 OKX 新币、代币、信号、行情和安全数据后，会自动刷新真实观察池。
           </p>
         </div>
         <div class="status">
           <span class="dot" aria-hidden="true"></span>
-          <span>研究模式 · 不自动广播交易</span>
+          <span>研究模式 · 不自动买入 · 不自动广播交易</span>
         </div>
       </header>
 
-      <section class="grid metrics" aria-label="策略指标">
+      <section class="grid metrics" aria-label="核心指标">
         <article class="card metric">
-          <h3>主链</h3>
-          <strong>Solana</strong>
-          <span>链编号 501</span>
+          <h3>未毕业池</h3>
+          <strong>重点监控</strong>
+          <span>新创建、迁移中、发射进度未完成</span>
         </article>
         <article class="card metric">
-          <h3>执行模式</h3>
-          <strong>人工确认</strong>
-          <span>先报价，再确认</span>
+          <h3>刚毕业池</h3>
+          <strong>重点追踪</strong>
+          <span>毕业后三天内，观察承接和出货</span>
         </article>
         <article class="card metric">
-          <h3>风险闸门</h3>
-          <strong>严格</strong>
-          <span>高危直接拦截或暂停</span>
+          <h3>风险拦截</h3>
+          <strong>优先级最高</strong>
+          <span>开发者、捆绑交易、头部持仓、卖出路径</span>
         </article>
         <article class="card metric">
-          <h3>数据优先级</h3>
+          <h3>数据来源</h3>
           <strong>OKX</strong>
           <span>新币、代币、信号、行情、安全</span>
         </article>
@@ -311,79 +321,186 @@
 
       <section class="grid layout">
         <article class="card">
-          <h2>观察池结构</h2>
+          <div class="section-head">
+            <h2>未毕业迷因币观察池</h2>
+            <span class="tag yellow">优先看风险和进度</span>
+          </div>
           <table>
             <thead>
               <tr>
                 <th>代币</th>
+                <th>铸币地址</th>
                 <th>阶段</th>
-                <th>信号</th>
-                <th>风险</th>
-                <th>状态</th>
+                <th>发射进度</th>
+                <th>市值</th>
+                <th>流动性</th>
+                <th>交易热度</th>
+                <th>头部持仓</th>
+                <th>开发者</th>
+                <th>捆绑/狙击</th>
+                <th>处理</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>优先记录铸币地址</td>
+                <td>示例代币 A</td>
+                <td class="mono">SoL...9xA</td>
                 <td><span class="tag blue">新创建</span></td>
-                <td>聪明钱 / 意见领袖 / 鲸鱼</td>
-                <td><span class="tag yellow">需要扫描</span></td>
+                <td>42%</td>
+                <td>$48K</td>
+                <td>$9K</td>
+                <td>升温</td>
+                <td>31%</td>
+                <td><span class="tag yellow">待查</span></td>
+                <td><span class="tag yellow">待查</span></td>
                 <td>观察</td>
               </tr>
               <tr>
-                <td>池子 + 流动性</td>
+                <td>示例代币 B</td>
+                <td class="mono">SoL...2mB</td>
                 <td><span class="tag blue">迁移中</span></td>
-                <td>同车钱包</td>
-                <td><span class="tag red">检查捆绑交易</span></td>
-                <td>不安全则拦截</td>
+                <td>78%</td>
+                <td>$126K</td>
+                <td>$22K</td>
+                <td>强</td>
+                <td>24%</td>
+                <td><span class="tag green">正常</span></td>
+                <td><span class="tag red">偏高</span></td>
+                <td>拦截</td>
               </tr>
               <tr>
-                <td>价格 + 成交量</td>
-                <td><span class="tag green">已迁移</span></td>
-                <td>排行榜钱包</td>
-                <td><span class="tag green">仅低风险</span></td>
-                <td>交易计划</td>
+                <td>示例代币 C</td>
+                <td class="mono">SoL...7pC</td>
+                <td><span class="tag yellow">临近毕业</span></td>
+                <td>93%</td>
+                <td>$310K</td>
+                <td>$41K</td>
+                <td>强</td>
+                <td>18%</td>
+                <td><span class="tag green">正常</span></td>
+                <td><span class="tag green">较低</span></td>
+                <td>准备交易草案</td>
               </tr>
             </tbody>
           </table>
           <p class="notes">
-            面板现在是静态入口。下一步接入数据适配器后，这里会显示真实观察池、评分、拦截原因和交易草案。
+            未毕业池主要看：发射进度、买盘是否真实、开发者历史、同车钱包、捆绑交易、狙击钱包、头部持仓、是否具备毕业后的承接可能。
           </p>
         </article>
 
-        <aside class="card">
-          <h2>策略流程</h2>
-          <div class="pipeline">
-            <div class="step">
-              <b>1</b>
-              <div>
-                <h3>发现</h3>
-                <p>OKX 新币模块扫描 Solana 新迷因代币、阶段、发射进度、开发者和捆绑交易信息。</p>
-              </div>
+        <article class="card">
+          <div class="section-head">
+            <h2>刚毕业迷因币追踪池</h2>
+            <span class="tag green">重点看承接和退出</span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>代币</th>
+                <th>铸币地址</th>
+                <th>毕业时间</th>
+                <th>毕业市值</th>
+                <th>当前市值</th>
+                <th>成交量</th>
+                <th>持有人</th>
+                <th>聪明钱</th>
+                <th>卖出路径</th>
+                <th>风险等级</th>
+                <th>处理</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>示例代币 D</td>
+                <td class="mono">SoL...4dD</td>
+                <td>18 分钟前</td>
+                <td>$420K</td>
+                <td>$510K</td>
+                <td>$1.8M</td>
+                <td>2,430</td>
+                <td>净买入</td>
+                <td><span class="tag green">可卖</span></td>
+                <td><span class="tag yellow">中</span></td>
+                <td>观察回踩</td>
+              </tr>
+              <tr>
+                <td>示例代币 E</td>
+                <td class="mono">SoL...8qE</td>
+                <td>2 小时前</td>
+                <td>$380K</td>
+                <td>$260K</td>
+                <td>$920K</td>
+                <td>1,140</td>
+                <td>开始卖出</td>
+                <td><span class="tag green">可卖</span></td>
+                <td><span class="tag red">高</span></td>
+                <td>跳过</td>
+              </tr>
+              <tr>
+                <td>示例代币 F</td>
+                <td class="mono">SoL...6rF</td>
+                <td>7 小时前</td>
+                <td>$460K</td>
+                <td>$880K</td>
+                <td>$3.4M</td>
+                <td>4,980</td>
+                <td>继续持有</td>
+                <td><span class="tag green">可卖</span></td>
+                <td><span class="tag green">低</span></td>
+                <td>生成交易草案</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="notes">
+            刚毕业池主要看：毕业后的市值变化、真实成交量、持有人增长、聪明钱是否继续持有、卖出路径、滑点、回撤结构和是否出现开发者出货。
+          </p>
+        </article>
+      </section>
+
+      <section class="grid split">
+        <article class="card">
+          <h2>未毕业币需要展示的信息</h2>
+          <div class="field-list">
+            <div class="field">
+              <h3>基础信息</h3>
+              <p>代币名称、铸币地址、池子地址、创建时间、阶段、发射进度、协议来源。</p>
             </div>
-            <div class="step">
-              <b>2</b>
-              <div>
-                <h3>补全</h3>
-                <p>补价格、市值、流动性、持有人、顶级交易者、持仓簇和逐笔成交。</p>
-              </div>
+            <div class="field">
+              <h3>市场信息</h3>
+              <p>当前价格、市值、流动性、成交量、买卖笔数、买盘占比、价格变化。</p>
             </div>
-            <div class="step">
-              <b>3</b>
-              <div>
-                <h3>拦截</h3>
-                <p>安全扫描、开发者风险、狙击/捆绑交易、头部持仓和卖出路径不合格就拦截。</p>
-              </div>
+            <div class="field">
+              <h3>持仓信息</h3>
+              <p>持有人数量、头部持仓比例、新钱包比例、同车钱包、持仓簇集中度。</p>
             </div>
-            <div class="step">
-              <b>4</b>
-              <div>
-                <h3>计划</h3>
-                <p>只生成报价和交易草案，真实买入、加仓和广播都需要人工确认。</p>
-              </div>
+            <div class="field">
+              <h3>风险信息</h3>
+              <p>开发者历史、开发者持仓、相似项目、捆绑交易、狙击钱包、可疑出货。</p>
             </div>
           </div>
-        </aside>
+        </article>
+
+        <article class="card">
+          <h2>刚毕业币需要展示的信息</h2>
+          <div class="field-list">
+            <div class="field">
+              <h3>毕业信息</h3>
+              <p>毕业时间、毕业市值、毕业池子、迁移后交易场所、初始流动性。</p>
+            </div>
+            <div class="field">
+              <h3>承接信息</h3>
+              <p>毕业后成交量、价格回撤、持有人增长、买卖方向、聪明钱持仓变化。</p>
+            </div>
+            <div class="field">
+              <h3>退出信息</h3>
+              <p>卖出路径、预估滑点、报价、价格影响、可卖状态、止损条件。</p>
+            </div>
+            <div class="field">
+              <h3>复盘信息</h3>
+              <p>入选原因、拦截原因、交易草案、实际执行、收益亏损、是否按计划执行。</p>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section class="card" style="margin-top: 16px">
