@@ -139,6 +139,39 @@
         font-size: 13px;
       }
 
+      .simulation {
+        margin-top: 16px;
+      }
+
+      .sim-summary {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 10px;
+        margin: 14px 0;
+      }
+
+      .sim-kpi {
+        min-height: 78px;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel-soft);
+      }
+
+      .sim-kpi strong {
+        display: block;
+        margin-top: 8px;
+        font-size: 20px;
+      }
+
+      .positive {
+        color: var(--green);
+      }
+
+      .negative {
+        color: var(--red);
+      }
+
       .section-head {
         display: flex;
         align-items: center;
@@ -289,6 +322,7 @@
       @media (max-width: 980px) {
         header,
         .metrics,
+        .sim-summary,
         .split,
         .field-list {
           grid-template-columns: 1fr;
@@ -336,6 +370,99 @@
           <strong id="fetchedAt">-</strong>
           <span>香港时间，来自本地生成的数据文件</span>
         </article>
+      </section>
+
+      <section class="card simulation">
+        <div class="section-head">
+          <div>
+            <h2>1000U SOL 等值纸面交易实验</h2>
+            <p class="notes">
+              自动模式只用真实链上数据推进模拟账本，买入和卖出都扣估算滑点与手续费；不连接钱包、不签名、不广播真实交易。
+            </p>
+          </div>
+          <span class="tag green" id="simulationMode">纸面自动模式</span>
+        </div>
+
+        <div class="sim-summary" aria-label="纸面交易实验资金">
+          <div class="sim-kpi">
+            <h3>初始本金</h3>
+            <strong id="simInitial">-</strong>
+          </div>
+          <div class="sim-kpi">
+            <h3>当前现金</h3>
+            <strong id="simCash">-</strong>
+          </div>
+          <div class="sim-kpi">
+            <h3>持仓估值</h3>
+            <strong id="simOpenValue">-</strong>
+          </div>
+          <div class="sim-kpi">
+            <h3>当前权益</h3>
+            <strong id="simEquity">-</strong>
+          </div>
+          <div class="sim-kpi">
+            <h3>累计盈亏</h3>
+            <strong id="simPnl">-</strong>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>代币</th>
+                <th>动作</th>
+                <th>评分</th>
+                <th>阶段</th>
+                <th>毕业进度</th>
+                <th>1小时量</th>
+                <th>买盘占比</th>
+                <th>持币人数</th>
+                <th>模拟买入</th>
+                <th>模拟卖出</th>
+                <th>买入滑点</th>
+                <th>卖出滑点</th>
+                <th>估算盈亏</th>
+                <th>原因</th>
+              </tr>
+            </thead>
+            <tbody id="simulationRows">
+              <tr>
+                <td colspan="14">正在加载纸面实验</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section-head" style="margin-top: 18px">
+          <h2>最近纸面成交</h2>
+          <span class="tag blue">记录真实数据驱动的模拟买卖</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>代币</th>
+                <th>动作</th>
+                <th>买入金额</th>
+                <th>卖出金额</th>
+                <th>扣减后金额</th>
+                <th>滑点</th>
+                <th>手续费</th>
+                <th>评分</th>
+                <th>已实现盈亏</th>
+                <th>原因</th>
+              </tr>
+            </thead>
+            <tbody id="tradeRows">
+              <tr>
+                <td colspan="11">正在加载纸面成交</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="notes" id="simulationUpdated">等待模拟账本加载。</p>
       </section>
 
       <section class="grid layout">
@@ -463,8 +590,10 @@
         <h2>项目文档</h2>
         <div class="links">
           <a class="link-button" href="./data/meme.json">真实数据文件</a>
+          <a class="link-button" href="./data/simulation.json">纸面实验账本</a>
           <a class="link-button" href="./PROJECT_MEMORY.md">项目记忆</a>
           <a class="link-button" href="./MEME_STRATEGY.md">迷因币策略</a>
+          <a class="link-button" href="./PAPER_SIMULATION.md">纸面实验规则</a>
           <a class="link-button" href="./DATA_INTEGRATION_MATRIX.md">数据对接矩阵</a>
           <a class="link-button" href="./RISK_CONTROL.md">风险控制</a>
           <a class="link-button" href="./HUMMINGBOT_API_NOTES.md">Hummingbot 评估</a>
@@ -497,6 +626,14 @@
         return Number.isFinite(value) ? usdFmt.format(value) : "-";
       }
 
+      function fmtSignedUsd(value) {
+        if (!Number.isFinite(value)) {
+          return "-";
+        }
+        const prefix = value > 0 ? "+" : "";
+        return `${prefix}${usdFmt.format(value)}`;
+      }
+
       function fmtPct(value) {
         return Number.isFinite(value) ? `${value.toFixed(value >= 10 ? 1 : 2)}%` : "-";
       }
@@ -514,13 +651,13 @@
       }
 
       function tagClass(value) {
-        if (value === "高风险" || value === "跳过") {
+        if (value === "高风险" || value === "跳过" || value === "模拟卖出") {
           return "red";
         }
-        if (value === "重点看承接" || value === "临近毕业观察") {
+        if (value === "重点看承接" || value === "临近毕业观察" || value === "模拟买入") {
           return "green";
         }
-        if (value === "需复查") {
+        if (value === "需复查" || value === "继续持仓" || value === "观察") {
           return "yellow";
         }
         return "blue";
@@ -533,6 +670,11 @@
         }
         td.textContent = text(value);
         return td;
+      }
+
+      function makePnlCell(value) {
+        const numeric = Number(value);
+        return makeCell(fmtSignedUsd(numeric), numeric >= 0 ? "positive" : "negative");
       }
 
       function makeTag(value) {
@@ -603,15 +745,116 @@
         body.replaceChildren(row);
       }
 
-      async function loadData() {
-        const response = await fetch("./data/meme.json", { cache: "no-store" });
+      async function loadJson(path) {
+        const response = await fetch(path, { cache: "no-store" });
         if (!response.ok) {
           throw new Error("数据文件读取失败");
         }
         return response.json();
       }
 
-      loadData()
+      function setPnlText(id, value) {
+        const node = document.getElementById(id);
+        node.textContent = fmtSignedUsd(value);
+        node.className = value >= 0 ? "positive" : "negative";
+      }
+
+      function renderSimulationRows(items) {
+        const body = document.getElementById("simulationRows");
+        body.replaceChildren();
+
+        if (!items.length) {
+          const row = document.createElement("tr");
+          const cell = document.createElement("td");
+          cell.colSpan = 14;
+          cell.textContent = "暂无纸面实验数据";
+          row.append(cell);
+          body.append(row);
+          return;
+        }
+
+        for (const item of items.slice(0, 24)) {
+          const row = document.createElement("tr");
+          row.append(
+            makeTokenCell({ name: item.token, symbol: item.symbol }),
+            makeTag(item.decision),
+            makeCell(fmtNum(item.score)),
+            makeTag(item.stageLabel),
+            makeCell(fmtPct(item.bondingPercent)),
+            makeCell(fmtUsd(item.volumeUsd1h)),
+            makeCell(fmtPct(item.buyRatioPct)),
+            makeCell(fmtNum(item.holders)),
+            makeCell(fmtUsd(item.buyUsd)),
+            makeCell(fmtUsd(item.sellUsd || item.estimatedSellUsd)),
+            makeCell(fmtPct(item.buySlippagePct)),
+            makeCell(fmtPct(item.sellSlippagePct)),
+            makePnlCell(Number(item.pnlUsd)),
+            makeCell(item.reason)
+          );
+          body.append(row);
+        }
+      }
+
+      function renderTradeRows(items) {
+        const body = document.getElementById("tradeRows");
+        body.replaceChildren();
+
+        if (!items.length) {
+          const row = document.createElement("tr");
+          const cell = document.createElement("td");
+          cell.colSpan = 11;
+          cell.textContent = "暂无纸面成交";
+          row.append(cell);
+          body.append(row);
+          return;
+        }
+
+        for (const item of items.slice(0, 12)) {
+          const row = document.createElement("tr");
+          const isBuy = item.action === "BUY";
+          const isSell = item.action === "SELL";
+          row.append(
+            makeCell(fmtTime(item.timestamp)),
+            makeTokenCell({ name: item.token, symbol: item.symbol }),
+            makeTag(isBuy ? "模拟买入" : "模拟卖出"),
+            makeCell(isBuy ? fmtUsd(item.grossUsd) : "-"),
+            makeCell(isSell ? fmtUsd(item.grossUsd) : "-"),
+            makeCell(fmtUsd(item.netUsd)),
+            makeCell(fmtPct(item.slippagePct)),
+            makeCell(fmtUsd(item.feeUsd)),
+            makeCell(fmtNum(item.score)),
+            makePnlCell(Number(item.realizedPnlUsd ?? 0)),
+            makeCell(item.reason)
+          );
+          body.append(row);
+        }
+      }
+
+      function renderSimulation(data) {
+        const capital = data.capital ?? {};
+        document.getElementById("simInitial").textContent = fmtUsd(Number(capital.initialUsd));
+        document.getElementById("simCash").textContent = fmtUsd(Number(capital.cashUsd));
+        document.getElementById("simOpenValue").textContent = fmtUsd(Number(capital.openValueUsd));
+        document.getElementById("simEquity").textContent = fmtUsd(Number(capital.equityUsd));
+        setPnlText("simPnl", Number(capital.totalPnlUsd));
+        document.getElementById("simulationMode").textContent = data.mode === "paper-auto" ? "纸面自动模式" : "纸面模式";
+        document.getElementById("simulationUpdated").textContent =
+          `账本更新：${fmtTime(data.updatedAt)}；真实数据：${fmtTime(data.sourceMemeFetchedAt)}；当前不执行真实交易。`;
+        renderSimulationRows(data.decisions ?? []);
+        renderTradeRows(data.trades ?? []);
+      }
+
+      loadJson("./data/simulation.json")
+        .then(renderSimulation)
+        .catch((error) => {
+          document.getElementById("simulationMode").textContent = "实验加载失败";
+          document.getElementById("simulationMode").className = "tag red";
+          document.getElementById("simulationUpdated").textContent = error.message;
+          renderError("simulationRows", error.message, 14);
+          renderError("tradeRows", error.message, 11);
+        });
+
+      loadJson("./data/meme.json")
         .then((data) => {
           const ungraduated = data.ungraduated ?? [];
           const graduated = data.graduated ?? [];
