@@ -7,7 +7,9 @@
   "scripts": {
     "check": "node scripts/check-env.js",
     "docs": "node scripts/check-env.js --docs",
-    "fetch:meme": "node scripts/fetch-meme-data.js"
+    "fetch:meme": "node scripts/fetch-meme-data.js",
+    "simulate:meme": "node scripts/run-paper-sim.js",
+    "update:meme": "npm run fetch:meme && npm run simulate:meme"
   },
   "engines": {
     "node": ">=20"

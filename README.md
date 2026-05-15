@@ -36,6 +36,20 @@ npm run fetch:meme
 
 该命令会调用 OKX Onchain OS，生成 `docs/data/meme.json`，面板会读取这个文件展示未毕业和刚毕业的 Solana meme 币数据。
 
+运行纸面交易实验：
+
+```powershell
+npm run simulate:meme
+```
+
+自动刷新真实数据并推进纸面账本：
+
+```powershell
+npm run update:meme
+```
+
+纸面实验使用 1000U 的 SOL 等值本金，只写入 `docs/data/simulation.json`，不会连接真实钱包、签名或广播交易。
+
 复制环境变量模板：
 
 ```powershell
@@ -72,6 +86,7 @@ Copy-Item .env.example .env
 
 - [Hummingbot API Notes](docs/HUMMINGBOT_API_NOTES.md)
 - [Hummingbot Execution Plan](docs/HUMMINGBOT_EXECUTION_PLAN.md)
+- [Paper Simulation](docs/PAPER_SIMULATION.md)
 - [Meme Strategy](docs/MEME_STRATEGY.md)
 - [Project Memory](docs/PROJECT_MEMORY.md)
 - [Data Integration Matrix](docs/DATA_INTEGRATION_MATRIX.md)

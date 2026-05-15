@@ -6,9 +6,12 @@ const requiredFiles = [
   "docs/MEME_STRATEGY.md",
   "docs/index.html",
   "docs/data/meme.json",
+  "docs/data/simulation.json",
   "docs/DATA_INTEGRATION_MATRIX.md",
   "docs/HUMMINGBOT_EXECUTION_PLAN.md",
-  "docs/RISK_CONTROL.md"
+  "docs/RISK_CONTROL.md",
+  "docs/PAPER_SIMULATION.md",
+  "scripts/run-paper-sim.js"
 ];
 
 const requiredEnvKeys = [
