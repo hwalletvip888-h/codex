@@ -5,6 +5,7 @@ const requiredFiles = [
   "docs/PROJECT_MEMORY.md",
   "docs/MEME_STRATEGY.md",
   "docs/index.html",
+  "docs/data/meme.json",
   "docs/DATA_INTEGRATION_MATRIX.md",
   "docs/RISK_CONTROL.md"
 ];

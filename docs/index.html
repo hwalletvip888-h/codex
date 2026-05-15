@@ -7,7 +7,7 @@
     <style>
       :root {
         color-scheme: dark;
-        --bg: #0b0f14;
+        --bg: #090d11;
         --panel: #121923;
         --panel-soft: #172130;
         --text: #edf4f8;
@@ -34,7 +34,7 @@
       }
 
       main {
-        width: min(1320px, calc(100% - 32px));
+        width: min(1440px, calc(100% - 32px));
         margin: 0 auto;
         padding: 28px 0 40px;
       }
@@ -75,7 +75,7 @@
       .subtitle {
         margin-top: 10px;
         color: var(--muted);
-        max-width: 880px;
+        max-width: 920px;
         line-height: 1.7;
       }
 
@@ -147,8 +147,13 @@
         margin-bottom: 12px;
       }
 
+      .table-wrap {
+        overflow-x: auto;
+      }
+
       table {
         width: 100%;
+        min-width: 1180px;
         border-collapse: collapse;
         font-size: 14px;
       }
@@ -170,11 +175,27 @@
         border-bottom: 0;
       }
 
+      .token-name {
+        display: grid;
+        gap: 4px;
+        min-width: 130px;
+      }
+
+      .token-name strong {
+        font-size: 14px;
+      }
+
+      .token-name span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
       .mono {
         font-family:
           ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
           "Liberation Mono", monospace;
         color: var(--cyan);
+        white-space: nowrap;
       }
 
       .tag {
@@ -261,6 +282,10 @@
         margin-top: 12px;
       }
 
+      .error {
+        color: var(--red);
+      }
+
       @media (max-width: 980px) {
         header,
         .metrics,
@@ -272,12 +297,6 @@
         .status {
           justify-content: flex-start;
         }
-
-        table {
-          display: block;
-          overflow-x: auto;
-          white-space: nowrap;
-        }
       }
     </style>
   </head>
@@ -287,35 +306,35 @@
         <div>
           <h1>Onchain OS SOL 链迷因币监控面板</h1>
           <p class="subtitle">
-            面板主要展示还未毕业的迷因币和刚毕业的迷因币信息。当前是静态样例页，后续接入 OKX 新币、代币、信号、行情和安全数据后，会自动刷新真实观察池。
+            面板展示还未毕业的迷因币和刚毕业的迷因币真实数据。数据来自 OKX Onchain OS，当前只做研究、观察、拦截和交易草案，不自动买入，不自动广播交易。
           </p>
         </div>
         <div class="status">
           <span class="dot" aria-hidden="true"></span>
-          <span>研究模式 · 不自动买入 · 不自动广播交易</span>
+          <span id="dataStatus">正在加载真实数据</span>
         </div>
       </header>
 
       <section class="grid metrics" aria-label="核心指标">
         <article class="card metric">
           <h3>未毕业池</h3>
-          <strong>重点监控</strong>
+          <strong id="ungraduatedCount">-</strong>
           <span>新创建、迁移中、发射进度未完成</span>
         </article>
         <article class="card metric">
           <h3>刚毕业池</h3>
-          <strong>重点追踪</strong>
+          <strong id="graduatedCount">-</strong>
           <span>毕业后三天内，观察承接和出货</span>
         </article>
         <article class="card metric">
-          <h3>风险拦截</h3>
-          <strong>优先级最高</strong>
-          <span>开发者、捆绑交易、头部持仓、卖出路径</span>
+          <h3>重点看承接</h3>
+          <strong id="watchCount">-</strong>
+          <span>成交量高，头部持仓不过分集中</span>
         </article>
         <article class="card metric">
-          <h3>数据来源</h3>
-          <strong>OKX</strong>
-          <span>新币、代币、信号、行情、安全</span>
+          <h3>数据更新时间</h3>
+          <strong id="fetchedAt">-</strong>
+          <span>香港时间，来自本地生成的数据文件</span>
         </article>
       </section>
 
@@ -325,64 +344,33 @@
             <h2>未毕业迷因币观察池</h2>
             <span class="tag yellow">优先看风险和进度</span>
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th>代币</th>
-                <th>铸币地址</th>
-                <th>阶段</th>
-                <th>发射进度</th>
-                <th>市值</th>
-                <th>流动性</th>
-                <th>交易热度</th>
-                <th>头部持仓</th>
-                <th>开发者</th>
-                <th>捆绑/狙击</th>
-                <th>处理</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>示例代币 A</td>
-                <td class="mono">SoL...9xA</td>
-                <td><span class="tag blue">新创建</span></td>
-                <td>42%</td>
-                <td>$48K</td>
-                <td>$9K</td>
-                <td>升温</td>
-                <td>31%</td>
-                <td><span class="tag yellow">待查</span></td>
-                <td><span class="tag yellow">待查</span></td>
-                <td>观察</td>
-              </tr>
-              <tr>
-                <td>示例代币 B</td>
-                <td class="mono">SoL...2mB</td>
-                <td><span class="tag blue">迁移中</span></td>
-                <td>78%</td>
-                <td>$126K</td>
-                <td>$22K</td>
-                <td>强</td>
-                <td>24%</td>
-                <td><span class="tag green">正常</span></td>
-                <td><span class="tag red">偏高</span></td>
-                <td>拦截</td>
-              </tr>
-              <tr>
-                <td>示例代币 C</td>
-                <td class="mono">SoL...7pC</td>
-                <td><span class="tag yellow">临近毕业</span></td>
-                <td>93%</td>
-                <td>$310K</td>
-                <td>$41K</td>
-                <td>强</td>
-                <td>18%</td>
-                <td><span class="tag green">正常</span></td>
-                <td><span class="tag green">较低</span></td>
-                <td>准备交易草案</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>代币</th>
+                  <th>地址</th>
+                  <th>来源</th>
+                  <th>阶段</th>
+                  <th>发射进度</th>
+                  <th>市值</th>
+                  <th>1小时量</th>
+                  <th>买/卖</th>
+                  <th>持有人</th>
+                  <th>头部10</th>
+                  <th>开发者</th>
+                  <th>捆绑</th>
+                  <th>狙击</th>
+                  <th>判断</th>
+                </tr>
+              </thead>
+              <tbody id="ungraduatedRows">
+                <tr>
+                  <td colspan="14">正在加载</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p class="notes">
             未毕业池主要看：发射进度、买盘是否真实、开发者历史、同车钱包、捆绑交易、狙击钱包、头部持仓、是否具备毕业后的承接可能。
           </p>
@@ -393,64 +381,32 @@
             <h2>刚毕业迷因币追踪池</h2>
             <span class="tag green">重点看承接和退出</span>
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th>代币</th>
-                <th>铸币地址</th>
-                <th>毕业时间</th>
-                <th>毕业市值</th>
-                <th>当前市值</th>
-                <th>成交量</th>
-                <th>持有人</th>
-                <th>聪明钱</th>
-                <th>卖出路径</th>
-                <th>风险等级</th>
-                <th>处理</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>示例代币 D</td>
-                <td class="mono">SoL...4dD</td>
-                <td>18 分钟前</td>
-                <td>$420K</td>
-                <td>$510K</td>
-                <td>$1.8M</td>
-                <td>2,430</td>
-                <td>净买入</td>
-                <td><span class="tag green">可卖</span></td>
-                <td><span class="tag yellow">中</span></td>
-                <td>观察回踩</td>
-              </tr>
-              <tr>
-                <td>示例代币 E</td>
-                <td class="mono">SoL...8qE</td>
-                <td>2 小时前</td>
-                <td>$380K</td>
-                <td>$260K</td>
-                <td>$920K</td>
-                <td>1,140</td>
-                <td>开始卖出</td>
-                <td><span class="tag green">可卖</span></td>
-                <td><span class="tag red">高</span></td>
-                <td>跳过</td>
-              </tr>
-              <tr>
-                <td>示例代币 F</td>
-                <td class="mono">SoL...6rF</td>
-                <td>7 小时前</td>
-                <td>$460K</td>
-                <td>$880K</td>
-                <td>$3.4M</td>
-                <td>4,980</td>
-                <td>继续持有</td>
-                <td><span class="tag green">可卖</span></td>
-                <td><span class="tag green">低</span></td>
-                <td>生成交易草案</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>代币</th>
+                  <th>地址</th>
+                  <th>来源</th>
+                  <th>毕业时间</th>
+                  <th>市值</th>
+                  <th>1小时量</th>
+                  <th>买/卖</th>
+                  <th>持有人</th>
+                  <th>头部10</th>
+                  <th>捆绑</th>
+                  <th>狙击</th>
+                  <th>疑似钓鱼</th>
+                  <th>判断</th>
+                </tr>
+              </thead>
+              <tbody id="graduatedRows">
+                <tr>
+                  <td colspan="13">正在加载</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p class="notes">
             刚毕业池主要看：毕业后的市值变化、真实成交量、持有人增长、聪明钱是否继续持有、卖出路径、滑点、回撤结构和是否出现开发者出货。
           </p>
@@ -506,6 +462,7 @@
       <section class="card" style="margin-top: 16px">
         <h2>项目文档</h2>
         <div class="links">
+          <a class="link-button" href="./data/meme.json">真实数据文件</a>
           <a class="link-button" href="./PROJECT_MEMORY.md">项目记忆</a>
           <a class="link-button" href="./MEME_STRATEGY.md">迷因币策略</a>
           <a class="link-button" href="./DATA_INTEGRATION_MATRIX.md">数据对接矩阵</a>
@@ -514,5 +471,198 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const numberFmt = new Intl.NumberFormat("zh-CN");
+      const usdFmt = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        notation: "compact",
+        maximumFractionDigits: 2
+      });
+      const timeFmt = new Intl.DateTimeFormat("zh-CN", {
+        timeZone: "Asia/Hong_Kong",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+
+      function text(value) {
+        return value === null || value === undefined || value === "" ? "-" : String(value);
+      }
+
+      function fmtUsd(value) {
+        return Number.isFinite(value) ? usdFmt.format(value) : "-";
+      }
+
+      function fmtPct(value) {
+        return Number.isFinite(value) ? `${value.toFixed(value >= 10 ? 1 : 2)}%` : "-";
+      }
+
+      function fmtNum(value) {
+        return Number.isFinite(value) ? numberFmt.format(value) : "-";
+      }
+
+      function fmtTime(value) {
+        if (!value) {
+          return "-";
+        }
+        const date = new Date(value);
+        return Number.isNaN(date.getTime()) ? "-" : timeFmt.format(date);
+      }
+
+      function tagClass(value) {
+        if (value === "高风险" || value === "跳过") {
+          return "red";
+        }
+        if (value === "重点看承接" || value === "临近毕业观察") {
+          return "green";
+        }
+        if (value === "需复查") {
+          return "yellow";
+        }
+        return "blue";
+      }
+
+      function makeCell(value, className) {
+        const td = document.createElement("td");
+        if (className) {
+          td.className = className;
+        }
+        td.textContent = text(value);
+        return td;
+      }
+
+      function makeTag(value) {
+        const td = document.createElement("td");
+        const span = document.createElement("span");
+        span.className = `tag ${tagClass(value)}`;
+        span.textContent = text(value);
+        td.append(span);
+        return td;
+      }
+
+      function makeTokenCell(item) {
+        const td = document.createElement("td");
+        const wrap = document.createElement("div");
+        const name = document.createElement("strong");
+        const symbol = document.createElement("span");
+        wrap.className = "token-name";
+        name.textContent = text(item.name);
+        symbol.textContent = text(item.symbol);
+        wrap.append(name, symbol);
+        td.append(wrap);
+        return td;
+      }
+
+      function makeAddressCell(item) {
+        const td = document.createElement("td");
+        const link = document.createElement("a");
+        link.className = "mono";
+        link.href = `https://solscan.io/token/${encodeURIComponent(item.address)}`;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        link.textContent = text(item.shortAddress);
+        td.append(link);
+        return td;
+      }
+
+      function renderRows(id, items, cells) {
+        const body = document.getElementById(id);
+        body.replaceChildren();
+
+        if (!items.length) {
+          const row = document.createElement("tr");
+          const cell = document.createElement("td");
+          cell.colSpan = 14;
+          cell.textContent = "暂无数据";
+          row.append(cell);
+          body.append(row);
+          return;
+        }
+
+        for (const item of items.slice(0, 20)) {
+          const row = document.createElement("tr");
+          for (const cell of cells(item)) {
+            row.append(cell);
+          }
+          body.append(row);
+        }
+      }
+
+      function renderError(id, message, colSpan) {
+        const body = document.getElementById(id);
+        const row = document.createElement("tr");
+        const cell = document.createElement("td");
+        cell.colSpan = colSpan;
+        cell.className = "error";
+        cell.textContent = message;
+        row.append(cell);
+        body.replaceChildren(row);
+      }
+
+      async function loadData() {
+        const response = await fetch("./data/meme.json", { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error("数据文件读取失败");
+        }
+        return response.json();
+      }
+
+      loadData()
+        .then((data) => {
+          const ungraduated = data.ungraduated ?? [];
+          const graduated = data.graduated ?? [];
+          const watchCount = [...ungraduated, ...graduated].filter((item) =>
+            ["重点看承接", "临近毕业观察"].includes(item.actionHint)
+          ).length;
+
+          document.getElementById("ungraduatedCount").textContent = fmtNum(ungraduated.length);
+          document.getElementById("graduatedCount").textContent = fmtNum(graduated.length);
+          document.getElementById("watchCount").textContent = fmtNum(watchCount);
+          document.getElementById("fetchedAt").textContent = fmtTime(data.fetchedAt);
+          document.getElementById("dataStatus").textContent = "真实数据已加载";
+
+          renderRows("ungraduatedRows", ungraduated, (item) => [
+            makeTokenCell(item),
+            makeAddressCell(item),
+            makeCell(item.protocol),
+            makeTag(item.stageLabel),
+            makeCell(fmtPct(item.bondingPercent)),
+            makeCell(fmtUsd(item.marketCapUsd)),
+            makeCell(fmtUsd(item.volumeUsd1h)),
+            makeCell(`${fmtNum(item.buyTxCount1h)} / ${fmtNum(item.sellTxCount1h)}`),
+            makeCell(fmtNum(item.holders)),
+            makeCell(fmtPct(item.top10HoldingsPercent)),
+            makeCell(fmtPct(item.devHoldingsPercent)),
+            makeCell(fmtPct(item.bundlersPercent)),
+            makeCell(fmtPct(item.snipersPercent)),
+            makeTag(item.actionHint)
+          ]);
+
+          renderRows("graduatedRows", graduated, (item) => [
+            makeTokenCell(item),
+            makeAddressCell(item),
+            makeCell(item.protocol),
+            makeCell(fmtTime(item.migratedEndAt)),
+            makeCell(fmtUsd(item.marketCapUsd)),
+            makeCell(fmtUsd(item.volumeUsd1h)),
+            makeCell(`${fmtNum(item.buyTxCount1h)} / ${fmtNum(item.sellTxCount1h)}`),
+            makeCell(fmtNum(item.holders)),
+            makeCell(fmtPct(item.top10HoldingsPercent)),
+            makeCell(fmtPct(item.bundlersPercent)),
+            makeCell(fmtPct(item.snipersPercent)),
+            makeCell(fmtPct(item.suspectedPhishingWalletPercent)),
+            makeTag(item.actionHint)
+          ]);
+        })
+        .catch((error) => {
+          document.getElementById("dataStatus").textContent = "数据加载失败";
+          document.getElementById("dataStatus").classList.add("error");
+          renderError("ungraduatedRows", error.message, 14);
+          renderError("graduatedRows", error.message, 13);
+        });
+    </script>
   </body>
 </html>

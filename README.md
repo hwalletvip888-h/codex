@@ -28,6 +28,14 @@ npm run check
 - GitHub Pages: https://hwalletvip888-h.github.io/codex/
 - 本地文件: [docs/index.html](docs/index.html)
 
+更新真实数据：
+
+```powershell
+npm run fetch:meme
+```
+
+该命令会调用 OKX Onchain OS，生成 `docs/data/meme.json`，面板会读取这个文件展示未毕业和刚毕业的 Solana meme 币数据。
+
 复制环境变量模板：
 
 ```powershell
