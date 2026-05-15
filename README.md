@@ -71,6 +71,7 @@ Copy-Item .env.example .env
 ## 参考评估
 
 - [Hummingbot API Notes](docs/HUMMINGBOT_API_NOTES.md)
+- [Hummingbot Execution Plan](docs/HUMMINGBOT_EXECUTION_PLAN.md)
 - [Meme Strategy](docs/MEME_STRATEGY.md)
 - [Project Memory](docs/PROJECT_MEMORY.md)
 - [Data Integration Matrix](docs/DATA_INTEGRATION_MATRIX.md)

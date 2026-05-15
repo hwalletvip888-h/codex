@@ -560,7 +560,8 @@ Router：`/archived-bots`
 4. OKX signal：聪明钱 / KOL / 鲸鱼信号和 leaderboard。
 5. OKX market：价格、K线、钱包 PnL。
 6. OKX swap quote：只生成交易草案，不自动执行。
-7. Hummingbot API：等我们有稳定策略后，再接 portfolio / market-data / backtesting / bot orchestration。
+7. Hummingbot Gateway：等我们有稳定筛选规则后，先接 Jupiter / Raydium / Meteora 的 quote-only。
+8. Hummingbot API：等 quote-only 和人工小额执行稳定后，再接 portfolio / market-data / backtesting / bot orchestration。
 
 ## Sources
 

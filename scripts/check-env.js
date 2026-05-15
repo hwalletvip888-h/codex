@@ -7,6 +7,7 @@ const requiredFiles = [
   "docs/index.html",
   "docs/data/meme.json",
   "docs/DATA_INTEGRATION_MATRIX.md",
+  "docs/HUMMINGBOT_EXECUTION_PLAN.md",
   "docs/RISK_CONTROL.md"
 ];
 

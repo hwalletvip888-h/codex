@@ -1,0 +1,14 @@
+services:
+  gateway:
+    image: hummingbot/gateway:latest
+    container_name: onchain-os-hummingbot-gateway
+    restart: unless-stopped
+    ports:
+      - "15888:15888"
+    volumes:
+      - ./gateway-files/conf:/home/gateway/conf
+      - ./gateway-files/logs:/home/gateway/logs
+      - ./gateway-files/certs:/home/gateway/certs
+    environment:
+      GATEWAY_PASSPHRASE: "change-me-before-use"
+      DEV: "true"
