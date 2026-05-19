@@ -14,6 +14,7 @@ const CONFIG = {
   feePct: 0.3,
   maxBuySlippagePct: 14,
   maxSellSlippagePct: 18,
+  stalePositionHaircutPct: 18,
   buyScoreThreshold: 58,
   watchScoreThreshold: 48,
   stopLossPct: -28,
@@ -397,6 +398,8 @@ function summarizeOpenPosition(position, token, analysis) {
   const grossValue = position.units * Math.max(1, toNumber(token.marketCapUsd));
   const sellSlip = estimateSlippagePct(token, grossValue, "sell");
   const liquidation = Math.max(0, grossValue - grossValue * (sellSlip / 100) - grossValue * (CONFIG.feePct / 100));
+  position.lastLiquidationUsd = round(liquidation, 6);
+  position.lastUnrealizedPnlUsd = round(liquidation - toNumber(position.costBasisUsd), 6);
   return {
     grossValue,
     liquidation,
@@ -406,6 +409,48 @@ function summarizeOpenPosition(position, token, analysis) {
       pnlUsd: liquidation - toNumber(position.costBasisUsd),
       reason: `持仓跟踪；${analysis.reason}`
     })
+  };
+}
+
+function summarizeStaleOpenPosition(position) {
+  const grossValue = position.units * Math.max(1, toNumber(position.lastMarketCapUsd || position.entryMarketCapUsd));
+  const haircutUsd = grossValue * (CONFIG.stalePositionHaircutPct / 100);
+  const feeUsd = grossValue * (CONFIG.feePct / 100);
+  const liquidation = Math.max(0, grossValue - haircutUsd - feeUsd);
+  const pnlUsd = liquidation - toNumber(position.costBasisUsd);
+  position.lastLiquidationUsd = round(liquidation, 6);
+  position.lastUnrealizedPnlUsd = round(pnlUsd, 6);
+
+  return {
+    liquidation,
+    pnlUsd,
+    decision: {
+      token: position.token,
+      symbol: position.symbol,
+      address: position.address,
+      shortAddress: position.shortAddress,
+      stage: position.stage,
+      stageLabel: position.stageLabel,
+      protocol: position.protocol,
+      bondingPercent: 0,
+      marketCapUsd: round(position.lastMarketCapUsd || position.entryMarketCapUsd, 2),
+      volumeUsd1h: 0,
+      buyTxCount1h: 0,
+      sellTxCount1h: 0,
+      buyRatioPct: 0,
+      holders: 0,
+      top10HoldingsPercent: 0,
+      score: 0,
+      decision: "数据暂缺",
+      buyUsd: 0,
+      sellUsd: 0,
+      estimatedSellUsd: round(liquidation, 2),
+      buySlippagePct: 0,
+      sellSlippagePct: CONFIG.stalePositionHaircutPct,
+      feeUsd: round(feeUsd, 2),
+      pnlUsd: round(pnlUsd, 2),
+      reason: "当前不在 OKX memepump 返回列表内，按最后已知市值保守折价估值，等待下一轮数据"
+    }
   };
 }
 
@@ -425,33 +470,7 @@ let sequence = 1;
 for (const position of state.positions.filter((item) => item.status === "open")) {
   const token = byAddress.get(position.address);
   if (!token) {
-    currentDecisions.push({
-      token: position.token,
-      symbol: position.symbol,
-      address: position.address,
-      shortAddress: position.shortAddress,
-      stage: position.stage,
-      stageLabel: position.stageLabel,
-      protocol: position.protocol,
-      bondingPercent: 0,
-      marketCapUsd: round(position.lastMarketCapUsd, 2),
-      volumeUsd1h: 0,
-      buyTxCount1h: 0,
-      sellTxCount1h: 0,
-      buyRatioPct: 0,
-      holders: 0,
-      top10HoldingsPercent: 0,
-      score: 0,
-      decision: "数据暂缺",
-      buyUsd: 0,
-      sellUsd: 0,
-      estimatedSellUsd: 0,
-      buySlippagePct: 0,
-      sellSlippagePct: 0,
-      feeUsd: 0,
-      pnlUsd: 0,
-      reason: "当前不在 OKX memepump 返回列表内，保留纸面仓位等待下一轮数据"
-    });
+    currentDecisions.push(summarizeStaleOpenPosition(position).decision);
     continue;
   }
 
@@ -529,6 +548,9 @@ let unrealizedPnlUsd = 0;
 for (const position of state.positions.filter((item) => item.status === "open")) {
   const token = byAddress.get(position.address);
   if (!token) {
+    const stale = summarizeStaleOpenPosition(position);
+    openValueUsd += stale.liquidation;
+    unrealizedPnlUsd += stale.pnlUsd;
     continue;
   }
   const analysis = scoreToken(token);
