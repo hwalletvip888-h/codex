@@ -1,0 +1,39 @@
+# H AI量化平台 — 全局配置
+# 所有路径相对于项目根目录
+
+platform:
+  name: "H AI量化平台"
+  version: "0.1.0"
+  data_dir: "data"
+  log_dir: "data/logs"
+
+onchainos:
+  # onchainos CLI 路径
+  cli_path: "C:\\Users\\Administrator\\onchainos-skills"
+  # API 限流 (请求/秒)
+  rate_limit: 5
+
+trading:
+  # 默认链
+  default_chain: solana
+  # 最大并发仓位
+  max_positions: 10
+  # 单笔最大仓位占比 (占资金%)
+  max_position_pct: 0.15
+  # 止损比例
+  stop_loss_pct: 0.20
+
+strategies:
+  # 策略扫描间隔 (秒)
+  scan_interval: 30
+  # 启用的策略模块
+  enabled:
+    - momentum_breakout
+    - whale_tracking
+    - new_token_snipe
+
+backtest:
+  # 默认回测周期 (天)
+  default_period_days: 30
+  # 初始资金 (USDC)
+  initial_capital: 1000
