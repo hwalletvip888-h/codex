@@ -61,6 +61,7 @@
 - Top10、sniper、bundle 风险加成
 - 买入和卖出方向不同，卖出滑点默认更保守
 - 如果旧持仓暂时不在本轮 memepump 榜单内，按最后已知市值做 18% 保守折价估值，并标注为“数据暂缺”
+- 如果数据暂缺超过 12 小时，或折价估值触发止损，按 35% 保守折价纸面退出并记录已实现盈亏
 
 该滑点是纸面估算，不等于 Jupiter / Raydium / Meteora 的真实 swap quote。后续接入 Hummingbot Gateway 或 OKX DEX quote 后，再替换为实时报价滑点。
 

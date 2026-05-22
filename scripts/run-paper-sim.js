@@ -15,6 +15,8 @@ const CONFIG = {
   maxBuySlippagePct: 14,
   maxSellSlippagePct: 18,
   stalePositionHaircutPct: 18,
+  staleExitAfterHours: 12,
+  staleExitHaircutPct: 35,
   buyScoreThreshold: 58,
   watchScoreThreshold: 48,
   stopLossPct: -28,
@@ -412,18 +414,30 @@ function summarizeOpenPosition(position, token, analysis) {
   };
 }
 
+function hoursBetween(start, end) {
+  const startMs = new Date(start).getTime();
+  const endMs = new Date(end).getTime();
+  if (!Number.isFinite(startMs) || !Number.isFinite(endMs) || endMs <= startMs) {
+    return 0;
+  }
+  return (endMs - startMs) / (60 * 60 * 1000);
+}
+
 function summarizeStaleOpenPosition(position) {
   const grossValue = position.units * Math.max(1, toNumber(position.lastMarketCapUsd || position.entryMarketCapUsd));
   const haircutUsd = grossValue * (CONFIG.stalePositionHaircutPct / 100);
   const feeUsd = grossValue * (CONFIG.feePct / 100);
   const liquidation = Math.max(0, grossValue - haircutUsd - feeUsd);
   const pnlUsd = liquidation - toNumber(position.costBasisUsd);
+  const staleHours = hoursBetween(position.lastUpdatedAt || position.openedAt, now);
   position.lastLiquidationUsd = round(liquidation, 6);
   position.lastUnrealizedPnlUsd = round(pnlUsd, 6);
+  position.staleHours = round(staleHours, 2);
 
   return {
     liquidation,
     pnlUsd,
+    staleHours,
     decision: {
       token: position.token,
       symbol: position.symbol,
@@ -449,7 +463,62 @@ function summarizeStaleOpenPosition(position) {
       sellSlippagePct: CONFIG.stalePositionHaircutPct,
       feeUsd: round(feeUsd, 2),
       pnlUsd: round(pnlUsd, 2),
-      reason: "当前不在 OKX memepump 返回列表内，按最后已知市值保守折价估值，等待下一轮数据"
+      reason: `当前不在 OKX memepump 返回列表内，按最后已知市值保守折价估值；数据暂缺约 ${round(staleHours, 1)} 小时`
+    }
+  };
+}
+
+function executeStaleExit(state, position, summary, now, runId, sequence, reason) {
+  const grossUsd = position.units * Math.max(1, toNumber(position.lastMarketCapUsd || position.entryMarketCapUsd));
+  const slippageUsd = grossUsd * (CONFIG.staleExitHaircutPct / 100);
+  const feeUsd = grossUsd * (CONFIG.feePct / 100);
+  const netUsd = Math.max(0, grossUsd - slippageUsd - feeUsd);
+  const pnlUsd = netUsd - toNumber(position.costBasisUsd);
+
+  state.capital.cashUsd = round(toNumber(state.capital.cashUsd) + netUsd, 6);
+  position.units = 0;
+  position.costBasisUsd = 0;
+  position.realizedPnlUsd = round(toNumber(position.realizedPnlUsd) + pnlUsd, 6);
+  position.status = "closed";
+  position.closedAt = now;
+  position.closeReason = reason;
+  position.lastLiquidationUsd = 0;
+  position.lastUnrealizedPnlUsd = 0;
+
+  const token = {
+    name: position.token,
+    symbol: position.symbol,
+    address: position.address,
+    shortAddress: position.shortAddress,
+    stage: position.stage,
+    stageLabel: position.stageLabel,
+    protocol: position.protocol
+  };
+  const trade = makeTrade(now, runId, "SELL", token, {
+    sequence,
+    grossUsd: round(grossUsd, 2),
+    netUsd: round(netUsd, 2),
+    slippagePct: CONFIG.staleExitHaircutPct,
+    slippageUsd: round(slippageUsd, 2),
+    feeUsd: round(feeUsd, 2),
+    marketCapUsd: round(position.lastMarketCapUsd || position.entryMarketCapUsd, 2),
+    score: 0,
+    realizedPnlUsd: round(pnlUsd, 2),
+    reason
+  });
+  state.trades.unshift(trade);
+
+  return {
+    trade,
+    decision: {
+      ...summary.decision,
+      decision: "模拟卖出",
+      sellUsd: round(netUsd, 2),
+      estimatedSellUsd: round(netUsd, 2),
+      sellSlippagePct: CONFIG.staleExitHaircutPct,
+      feeUsd: round(feeUsd, 2),
+      pnlUsd: round(pnlUsd, 2),
+      reason
     }
   };
 }
@@ -470,7 +539,23 @@ let sequence = 1;
 for (const position of state.positions.filter((item) => item.status === "open")) {
   const token = byAddress.get(position.address);
   if (!token) {
-    currentDecisions.push(summarizeStaleOpenPosition(position).decision);
+    const stale = summarizeStaleOpenPosition(position);
+    const stalePnlPct = safeRatio(stale.pnlUsd, position.costBasisUsd) * 100;
+    const shouldStaleExit =
+      stale.staleHours >= CONFIG.staleExitAfterHours ||
+      stalePnlPct <= CONFIG.stopLossPct;
+
+    if (shouldStaleExit) {
+      const reason =
+        stale.staleHours >= CONFIG.staleExitAfterHours
+          ? `数据暂缺超过 ${CONFIG.staleExitAfterHours} 小时，按 ${CONFIG.staleExitHaircutPct}% 保守折价纸面退出`
+          : `数据暂缺且折价估值触发 ${CONFIG.stopLossPct}% 纸面止损`;
+      const result = executeStaleExit(state, position, stale, now, runId, sequence, reason);
+      currentDecisions.push(result.decision);
+      sequence += 1;
+    } else {
+      currentDecisions.push(stale.decision);
+    }
     continue;
   }
 
