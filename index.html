@@ -174,6 +174,9 @@
       .archive-item { display: grid; gap: 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-2); padding: 12px; }
       .archive-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
       .archive-item p { color: var(--muted); font-size: 12px; line-height: 1.45; margin: 0; }
+      .pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; color: var(--muted); font-size: 13px; }
+      .pager-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+      .page-button { min-width: 34px; padding: 0 10px; }
       a { color: var(--cyan); text-decoration: none; }
       a:hover { text-decoration: underline; }
 
@@ -237,6 +240,7 @@
             </div>
           </div>
           <div class="table-wrap" id="mainTable"></div>
+          <div class="pager" id="pager"></div>
         </article>
 
         <aside class="grid">
@@ -305,8 +309,10 @@
       const compactUsd = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", notation: "compact", maximumFractionDigits: 2 });
       const num = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
       const time = new Intl.DateTimeFormat("zh-CN", { timeZone: "Asia/Hong_Kong", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
+      const PAGE_SIZE = 25;
       let state = null;
       let activeTab = "decisions";
+      let currentPage = 1;
 
       const $ = (id) => document.getElementById(id);
       const n = (value) => Number.isFinite(Number(value)) ? Number(value) : 0;
@@ -394,6 +400,37 @@
         return `<table><thead><tr>${headers.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows.join("")}</tbody></table>`;
       }
 
+      function pageItems(items) {
+        const totalPages = Math.max(1, Math.ceil(items.length / PAGE_SIZE));
+        currentPage = Math.min(Math.max(1, currentPage), totalPages);
+        const start = (currentPage - 1) * PAGE_SIZE;
+        return {
+          items: items.slice(start, start + PAGE_SIZE),
+          start,
+          totalPages
+        };
+      }
+
+      function renderPager(totalItems, start, totalPages) {
+        const end = Math.min(totalItems, start + PAGE_SIZE);
+        const pages = [];
+        const minPage = Math.max(1, currentPage - 2);
+        const maxPage = Math.min(totalPages, currentPage + 2);
+        for (let page = minPage; page <= maxPage; page += 1) {
+          pages.push(`<button class="page-button ${page === currentPage ? "active" : ""}" data-page="${page}">${page}</button>`);
+        }
+        $("pager").innerHTML = `
+          <span>第 ${currentPage} / ${totalPages} 页，显示 ${totalItems ? start + 1 : 0}-${end}，共 ${totalItems} 条</span>
+          <div class="pager-controls">
+            <button class="page-button" data-page="1" ${currentPage === 1 ? "disabled" : ""}>首页</button>
+            <button class="page-button" data-page="${currentPage - 1}" ${currentPage === 1 ? "disabled" : ""}>上一页</button>
+            ${pages.join("")}
+            <button class="page-button" data-page="${currentPage + 1}" ${currentPage === totalPages ? "disabled" : ""}>下一页</button>
+            <button class="page-button" data-page="${totalPages}" ${currentPage === totalPages ? "disabled" : ""}>末页</button>
+          </div>
+        `;
+      }
+
       function visibleDecisions() {
         const q = $("searchInput").value.trim().toLowerCase();
         const action = $("actionFilter").value;
@@ -419,7 +456,9 @@
       }
 
       function renderDecisions() {
-        const rows = visibleDecisions().slice(0, 100).map((item) => `
+        const allItems = visibleDecisions();
+        const page = pageItems(allItems);
+        const rows = page.items.map((item) => `
           <tr>
             <td>${when(item.timestamp)}</td><td>${esc(chainLabel(item.chain))}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
             <td>${num.format(n(item.score))}</td><td>${esc(label(item.walletType))}</td><td>${money(item.amountUsd, true)}</td>
@@ -428,20 +467,26 @@
             <td>${esc((item.blockers || []).map(blockerText).join("; ") || reasonText(item.reason))}</td>
           </tr>`);
         $("mainTable").innerHTML = table(["时间", "链", "币种", "地址", "动作", "评分", "信号类型", "信号金额", "钱包数", "卖出比例", "信号价", "下单额", "原因/阻断"], rows, "暂无匹配决策。");
+        renderPager(allItems.length, page.start, page.totalPages);
       }
 
       function renderTrades() {
-        const rows = (state.trades || []).slice(0, 100).map((item) => `
+        const allItems = state.trades || [];
+        const page = pageItems(allItems);
+        const rows = page.items.map((item) => `
           <tr>
             <td>${when(item.timestamp)}</td><td>${esc(chainLabel(item.chain))}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
             <td>${money(item.grossUsd)}</td><td>${money(item.netUsd)}</td><td>${money(item.feeUsd)}</td>
             <td>${num.format(n(item.units))}</td><td>${num.format(n(item.score))}</td><td>${esc(reasonText(item.reason))}</td>
           </tr>`);
         $("mainTable").innerHTML = table(["时间", "链", "币种", "地址", "动作", "下单额", "扣费后", "手续费", "模拟数量", "评分", "原因"], rows, "暂无模拟成交。");
+        renderPager(allItems.length, page.start, page.totalPages);
       }
 
       function renderPositions() {
-        const rows = (state.positions || []).slice(0, 100).map((item) => {
+        const allItems = state.positions || [];
+        const page = pageItems(allItems);
+        const rows = page.items.map((item) => {
           const pnl = n(item.lastValueUsd) - n(item.costBasisUsd);
           return `<tr>
               <td>${when(item.openedAt)}</td><td>${esc(chainLabel(item.chain))}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.status)}</td>
@@ -450,6 +495,7 @@
           </tr>`;
         });
         $("mainTable").innerHTML = table(["开仓时间", "链", "币种", "地址", "状态", "成本", "估值", "浮动盈亏", "入场价", "最新价", "更新时间"], rows, "暂无持仓。");
+        renderPager(allItems.length, page.start, page.totalPages);
       }
 
       function renderScanBars() {
@@ -549,12 +595,29 @@
       document.querySelectorAll("[data-tab]").forEach((button) => {
         button.addEventListener("click", () => {
           activeTab = button.dataset.tab;
+          currentPage = 1;
           document.querySelectorAll("[data-tab]").forEach((node) => node.classList.toggle("active", node === button));
           if (state) render();
         });
       });
-      $("searchInput").addEventListener("input", () => state && renderDecisions());
-      $("actionFilter").addEventListener("change", () => state && renderDecisions());
+      $("searchInput").addEventListener("input", () => {
+        currentPage = 1;
+        if (state) renderDecisions();
+      });
+      $("actionFilter").addEventListener("change", () => {
+        currentPage = 1;
+        if (state) renderDecisions();
+      });
+      $("pager").addEventListener("click", (event) => {
+        const target = event.target.closest("[data-page]");
+        if (!target || target.disabled) return;
+        currentPage = Number(target.dataset.page);
+        if (state) {
+          if (activeTab === "trades") renderTrades();
+          else if (activeTab === "positions") renderPositions();
+          else renderDecisions();
+        }
+      });
 
       fetch("./data/signal-paper.json", { cache: "no-store" })
         .then((response) => {
