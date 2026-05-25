@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-25T23:19:17.666Z",
+  "generatedAt": "2026-05-25T23:52:10.973Z",
   "latest": {
     "date": "2026-05-26",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-25T23:19:17.664Z",
-    "runCount": 5,
+    "generatedAt": "2026-05-25T23:52:10.971Z",
+    "runCount": 6,
     "statuses": {
-      "failed": 4,
+      "failed": 5,
       "ok": 1
     },
     "rawSignalCount": 51,
@@ -36,9 +36,10 @@
         "count": 9
       }
     ],
-    "mistakeCount": 4,
+    "mistakeCount": 5,
     "mistakeTypes": {
-      "AUTH_INVALID": 4
+      "AUTH_INVALID": 4,
+      "CLI_ERROR": 1
     },
     "accountResets": 1,
     "walletBlacklistCount": 0,
@@ -791,6 +792,36 @@
             "chain": "bsc"
           }
         ]
+      },
+      {
+        "key": "mistake:cli_error:global",
+        "title": "执行踩坑",
+        "status": "流程问题",
+        "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+        "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+        "score": 0,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "CLI_ERROR",
+          "symbol": "global",
+          "address": "",
+          "shortAddress": "",
+          "chain": "global"
+        },
+        "firstSeenAt": "2026-05-25T23:52:10.605Z",
+        "lastSeenAt": "2026-05-25T23:52:10.605Z",
+        "occurrences": 1,
+        "examples": [
+          {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          }
+        ]
       }
     ],
     "runs": [
@@ -999,6 +1030,40 @@
           "totalPnlUsd": 86.67,
           "totalPnlPct": 2.89
         }
+      },
+      {
+        "runId": "20260525235210",
+        "startedAt": "2026-05-25T23:52:10.605Z",
+        "finishedAt": "2026-05-25T23:52:10.745Z",
+        "status": "failed",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "CLI_ERROR",
+            "chain": "",
+            "message": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2565.3,
+          "openValueUsd": 521.37,
+          "equityUsd": 3086.67,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 86.67,
+          "totalPnlUsd": 86.67,
+          "totalPnlPct": 2.89
+        }
       }
     ]
   },
@@ -1006,10 +1071,10 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-25T23:19:17.664Z",
-      "runCount": 5,
+      "generatedAt": "2026-05-25T23:52:10.971Z",
+      "runCount": 6,
       "statuses": {
-        "failed": 4,
+        "failed": 5,
         "ok": 1
       },
       "rawSignalCount": 51,
@@ -1038,9 +1103,10 @@
           "count": 9
         }
       ],
-      "mistakeCount": 4,
+      "mistakeCount": 5,
       "mistakeTypes": {
-        "AUTH_INVALID": 4
+        "AUTH_INVALID": 4,
+        "CLI_ERROR": 1
       },
       "accountResets": 1,
       "walletBlacklistCount": 0,
@@ -1793,6 +1859,36 @@
               "chain": "bsc"
             }
           ]
+        },
+        {
+          "key": "mistake:cli_error:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T23:52:10.605Z",
+          "lastSeenAt": "2026-05-25T23:52:10.605Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
         }
       ],
       "runs": [
@@ -2001,13 +2097,47 @@
             "totalPnlUsd": 86.67,
             "totalPnlPct": 2.89
           }
+        },
+        {
+          "runId": "20260525235210",
+          "startedAt": "2026-05-25T23:52:10.605Z",
+          "finishedAt": "2026-05-25T23:52:10.745Z",
+          "status": "failed",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "CLI_ERROR",
+              "chain": "",
+              "message": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2565.3,
+            "openValueUsd": 521.37,
+            "equityUsd": 3086.67,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 86.67,
+            "totalPnlUsd": 86.67,
+            "totalPnlPct": 2.89
+          }
         }
       ]
     },
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-25T23:19:17.665Z",
+      "generatedAt": "2026-05-25T23:52:10.972Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -2779,6 +2909,36 @@
               "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
               "shortAddress": "0xed33...7777",
               "chain": "bsc"
+            }
+          ]
+        },
+        {
+          "key": "mistake:cli_error:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T23:52:10.605Z",
+          "lastSeenAt": "2026-05-25T23:52:10.605Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
             }
           ]
         }

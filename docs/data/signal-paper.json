@@ -3,7 +3,7 @@
   "mode": "signal-paper-auto",
   "source": "OKX Onchain OS signal list",
   "startedAt": "",
-  "updatedAt": "2026-05-25T23:19:17.164Z",
+  "updatedAt": "2026-05-25T23:52:10.605Z",
   "config": {
     "quoteAsset": "USDT paper capital",
     "scanChains": [
@@ -1572,6 +1572,46 @@
     }
   ],
   "runs": [
+    {
+      "id": "20260525235210",
+      "startedAt": "2026-05-25T23:52:10.605Z",
+      "finishedAt": "2026-05-25T23:52:10.745Z",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "status": "failed",
+      "commands": [
+        {
+          "command": "onchainos signal chains",
+          "ok": false,
+          "error": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "notifications": []
+        }
+      ],
+      "rawSignalCount": 0,
+      "decisions": [],
+      "trades": [],
+      "mistakes": [
+        {
+          "type": "CLI_ERROR",
+          "message": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+        }
+      ],
+      "notes": [],
+      "chainResults": [],
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2565.3,
+        "openValueUsd": 521.37,
+        "equityUsd": 3086.67,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": 86.67,
+        "totalPnlUsd": 86.67,
+        "totalPnlPct": 2.89
+      }
+    },
     {
       "id": "20260525231917",
       "startedAt": "2026-05-25T23:19:17.164Z",
@@ -31210,6 +31250,13 @@
   ],
   "mistakes": [
     {
+      "type": "CLI_ERROR",
+      "message": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+      "lesson": "Do not trade when source availability or payment/auth state is uncertain.",
+      "runId": "20260525235210",
+      "timestamp": "2026-05-25T23:52:10.605Z"
+    },
+    {
       "type": "AUTH_INVALID",
       "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
       "lesson": "Do not trade when source availability or payment/auth state is uncertain.",
@@ -31309,7 +31356,7 @@
     }
   ],
   "strategyArchive": {
-    "updatedAt": "2026-05-25T23:19:17.164Z",
+    "updatedAt": "2026-05-25T23:52:10.605Z",
     "best": [
       {
         "key": "entry:solana:whale:amount>=1500:wallets>=2:sold<=15",
@@ -32058,6 +32105,36 @@
             "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
             "shortAddress": "0xed33...7777",
             "chain": "bsc"
+          }
+        ]
+      },
+      {
+        "key": "mistake:cli_error:global",
+        "title": "执行踩坑",
+        "status": "流程问题",
+        "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+        "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+        "score": 0,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "CLI_ERROR",
+          "symbol": "global",
+          "address": "",
+          "shortAddress": "",
+          "chain": "global"
+        },
+        "firstSeenAt": "2026-05-25T23:52:10.605Z",
+        "lastSeenAt": "2026-05-25T23:52:10.605Z",
+        "occurrences": 1,
+        "examples": [
+          {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
           }
         ]
       }
