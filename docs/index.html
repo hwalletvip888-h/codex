@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Onchain OS | Signal Paper Desk</title>
+    <title>Onchain OS | 链上信号模拟盘</title>
     <style>
       :root {
         color-scheme: dark;
@@ -165,12 +165,16 @@
       .risk-meter { flex: 1; height: 8px; border-radius: 999px; background: #11161d; overflow: hidden; }
       .risk-fill { height: 100%; border-radius: inherit; background: var(--cyan); }
       .empty { color: var(--muted); padding: 14px 0; }
+      .file-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+      .file-card { display: grid; gap: 6px; min-height: 88px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-2); }
+      .file-card strong { font-size: 14px; }
+      .file-card span { color: var(--muted); font-size: 12px; line-height: 1.45; }
       a { color: var(--cyan); text-decoration: none; }
       a:hover { text-decoration: underline; }
 
       @media (max-width: 1180px) {
         .metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-        .layout, .two { grid-template-columns: 1fr; }
+        .layout, .two, .file-grid { grid-template-columns: 1fr; }
       }
       @media (max-width: 720px) {
         header, .metrics { grid-template-columns: 1fr; }
@@ -183,47 +187,47 @@
     <main>
       <header>
         <div>
-          <h1>Signal Paper Desk</h1>
+          <h1>链上信号模拟盘</h1>
           <p class="subtitle">
-            A GitHub Pages dashboard for the 3000U Onchain OS paper account. It reads only committed ledger data from <span class="mono">docs/data/signal-paper.json</span>: real scans, simulated orders, skipped signals, failures, and review notes.
+            3000U 模拟本金，按小时扫描 Solana 与 BSC/BNB Chain 的 OKX Onchain OS 链上信号。页面只读取已写入仓库的真实账本：扫描结果、模拟成交、跳过原因、失败记录和复盘说明。
           </p>
         </div>
         <div class="status">
           <span class="dot" id="statusDot" aria-hidden="true"></span>
-          <span id="statusText">Loading ledger</span>
+          <span id="statusText">正在读取账本</span>
         </div>
       </header>
 
       <section class="grid metrics" aria-label="Account metrics">
-        <article class="panel metric"><h3>Initial</h3><strong id="initialUsd">-</strong><span>paper USDT capital</span></article>
-        <article class="panel metric"><h3>Cash</h3><strong id="cashUsd">-</strong><span>available after fees</span></article>
-        <article class="panel metric"><h3>Open Value</h3><strong id="openValueUsd">-</strong><span>latest marked positions</span></article>
-        <article class="panel metric"><h3>Equity</h3><strong id="equityUsd">-</strong><span>cash plus open value</span></article>
-        <article class="panel metric"><h3>Total PnL</h3><strong id="pnlUsd">-</strong><span id="pnlPct">-</span></article>
-        <article class="panel metric"><h3>Last Scan</h3><strong id="lastRun">-</strong><span id="lastRunMeta">-</span></article>
+        <article class="panel metric"><h3>初始本金</h3><strong id="initialUsd">-</strong><span>USDT 计价模拟资金</span></article>
+        <article class="panel metric"><h3>可用现金</h3><strong id="cashUsd">-</strong><span>扣除模拟买入和手续费后</span></article>
+        <article class="panel metric"><h3>持仓估值</h3><strong id="openValueUsd">-</strong><span>按最新信号价格估算</span></article>
+        <article class="panel metric"><h3>当前权益</h3><strong id="equityUsd">-</strong><span>现金加持仓估值</span></article>
+        <article class="panel metric"><h3>累计盈亏</h3><strong id="pnlUsd">-</strong><span id="pnlPct">-</span></article>
+        <article class="panel metric"><h3>最近扫描</h3><strong id="lastRun">-</strong><span id="lastRunMeta">-</span></article>
       </section>
 
       <section class="grid layout">
         <article class="panel">
           <div class="toolbar">
             <div>
-              <h2>Signal Ledger</h2>
-              <p class="note">Filter the audit trail by action, token, symbol, wallet type, or blocker text.</p>
+              <h2>信号与交易流水</h2>
+              <p class="note">按动作、币种、地址、钱包类型或阻断原因筛选。币种名称保持原始链上数据，不做翻译。</p>
             </div>
             <div class="controls">
-              <input id="searchInput" type="search" placeholder="Search token, symbol, address" />
-              <select id="actionFilter" aria-label="Action filter">
-                <option value="all">All actions</option>
-                <option value="BUY">BUY</option>
-                <option value="SELL">SELL</option>
-                <option value="HOLD">HOLD</option>
-                <option value="WATCH">WATCH</option>
-                <option value="IGNORE">IGNORE</option>
+              <input id="searchInput" type="search" placeholder="搜索币种、符号、地址" />
+              <select id="actionFilter" aria-label="动作筛选">
+                <option value="all">全部动作</option>
+                <option value="BUY">买入</option>
+                <option value="SELL">卖出</option>
+                <option value="HOLD">持有</option>
+                <option value="WATCH">观察</option>
+                <option value="IGNORE">忽略</option>
               </select>
               <div class="tabs" aria-label="View switcher">
-                <button class="active" data-tab="decisions">Decisions</button>
-                <button data-tab="trades">Trades</button>
-                <button data-tab="positions">Positions</button>
+                <button class="active" data-tab="decisions">决策</button>
+                <button data-tab="trades">成交</button>
+                <button data-tab="positions">持仓</button>
               </div>
             </div>
           </div>
@@ -232,17 +236,17 @@
 
         <aside class="grid">
           <article class="panel">
-            <h2>Equity Curve</h2>
-            <svg class="sparkline" id="equityLine" role="img" aria-label="Equity curve"></svg>
-            <p class="note" id="equityNote">Waiting for account snapshots.</p>
+            <h2>权益曲线</h2>
+            <svg class="sparkline" id="equityLine" role="img" aria-label="权益曲线"></svg>
+            <p class="note" id="equityNote">等待资金快照。</p>
           </article>
           <article class="panel">
-            <h2>Scan Volume</h2>
-            <div class="bar-chart" id="scanBars" aria-label="Recent scan signal counts"></div>
-            <p class="note" id="scanNote">Waiting for scan records.</p>
+            <h2>扫描信号量</h2>
+            <div class="bar-chart" id="scanBars" aria-label="最近扫描信号数量"></div>
+            <p class="note" id="scanNote">等待扫描记录。</p>
           </article>
           <article class="panel">
-            <h2>Risk Blocks</h2>
+            <h2>风险阻断</h2>
             <div class="risk-list" id="riskList"></div>
           </article>
         </aside>
@@ -250,22 +254,24 @@
 
       <section class="grid two">
         <article class="panel">
-          <h2>Run Audit</h2>
+          <h2>每轮审计</h2>
           <div class="run-list" id="runList"></div>
         </article>
         <article class="panel">
-          <h2>Strategy Rules</h2>
+          <h2>策略参数</h2>
           <div class="table-wrap" id="configTable"></div>
         </article>
       </section>
 
       <section class="panel" style="margin-top: 14px">
-        <h2>Repository Links</h2>
-        <p class="note">
-          Stable dashboard: <a href="https://hwalletvip888-h.github.io/codex/">https://hwalletvip888-h.github.io/codex/</a>.
-          Ledger JSON: <a href="./data/signal-paper.json">docs/data/signal-paper.json</a>.
-          Local command: <span class="mono">npm run scan:signal</span>.
-        </p>
+        <h2>文件与审计入口</h2>
+        <p class="note">这些文件用于核对数据来源、模拟规则、自动扫描和页面发布。账本只记录真实扫描输出、模拟动作和失败原因。</p>
+        <div class="file-grid">
+          <a class="file-card" href="./data/signal-paper.json"><strong>信号模拟账本</strong><span>每轮扫描、决策、成交、持仓、错误和资金快照。</span></a>
+          <a class="file-card" href="https://github.com/hwalletvip888-h/codex/blob/main/scripts/run-signal-paper-trader.js"><strong>扫描脚本</strong><span>Solana + BSC 信号扫描、评分、买入、持仓更新和止损止盈。</span></a>
+          <a class="file-card" href="https://github.com/hwalletvip888-h/codex/blob/main/.github/workflows/signal-paper-scan.yml"><strong>定时任务</strong><span>GitHub Actions 每小时运行扫描并更新页面数据。</span></a>
+          <a class="file-card" href="https://github.com/hwalletvip888-h/codex"><strong>仓库主页</strong><span>查看提交历史、发布分支和所有项目文件。</span></a>
+        </div>
       </section>
     </main>
 
@@ -287,7 +293,70 @@
         return Number.isNaN(date.getTime()) ? "-" : time.format(date);
       };
       const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[ch]);
-      const tag = (value) => `<span class="tag ${esc(String(value || "").toLowerCase())}">${esc(value || "-")}</span>`;
+      const labels = {
+        BUY: "买入",
+        SELL: "卖出",
+        HOLD: "持有",
+        WATCH: "观察",
+        IGNORE: "忽略",
+        SKIP: "跳过",
+        open: "持仓中",
+        closed: "已平仓",
+        ok: "正常",
+        partial: "部分成功",
+        failed: "失败",
+        "Smart Money": "聪明钱",
+        Whale: "巨鲸",
+        "KOL/Influencer": "KOL/影响者",
+        Unknown: "未知"
+      };
+      const label = (value) => labels[value] || value || "-";
+      const chainLabel = (value) => {
+        const chain = String(value || "").toLowerCase();
+        if (chain === "bsc") return "BSC/BNB Chain";
+        if (chain === "solana") return "Solana";
+        return value || "-";
+      };
+      const configLabels = {
+        quoteAsset: "计价资产",
+        scanChains: "扫描链",
+        scanChain: "旧版扫描链",
+        signalLimit: "每链信号上限",
+        startingCapitalUsd: "初始本金",
+        reserveUsd: "保留现金",
+        maxOpenPositions: "最大持仓数",
+        maxNewBuysPerRun: "每轮最多新买入",
+        minBuyUsd: "单笔最小买入",
+        maxBuyUsd: "单笔最大买入",
+        feePct: "手续费比例",
+        buyScoreThreshold: "买入评分线",
+        watchScoreThreshold: "观察评分线",
+        minSignalAmountUsd: "最小信号金额",
+        minTriggerWalletCount: "最少触发钱包数",
+        maxSoldRatioPercent: "最大已卖出比例",
+        stopLossPct: "止损比例",
+        takeProfitPct: "止盈比例",
+        staleHoursBeforeReview: "数据陈旧复查小时数"
+      };
+      const reasonText = (value) => String(value || "-")
+        .replaceAll("amount ", "金额 ")
+        .replaceAll("wallets ", "钱包数 ")
+        .replaceAll("sold ", "卖出比例 ")
+        .replaceAll("type Smart Money", "类型 聪明钱")
+        .replaceAll("type Whale", "类型 巨鲸")
+        .replaceAll("type KOL/Influencer", "类型 KOL/影响者")
+        .replaceAll("Rule buy", "规则买入")
+        .replaceAll("Already holding; latest signal observed.", "已有持仓；记录最新信号。")
+        .replaceAll("Stop loss", "止损")
+        .replaceAll("Take profit", "止盈");
+      const blockerText = (value) => String(value || "-")
+        .replaceAll("amount <", "金额 <")
+        .replaceAll("sold ratio >", "卖出比例 >")
+        .replaceAll("wallet count <", "钱包数 <")
+        .replaceAll("missing token address", "缺少合约地址")
+        .replaceAll("missing signal price", "缺少信号价格")
+        .replaceAll("insufficient cash above reserve", "可用现金低于保留资金");
+      const tag = (value) => `<span class="tag ${esc(String(value || "").toLowerCase())}">${esc(label(value))}</span>`;
       const tokenCell = (item) => `<div class="token"><strong>${esc(item.token || item.symbol || "-")}</strong><span>${esc(item.symbol || "")}</span></div>`;
       const addressLink = (item) => {
         if (!item.address) return "-";
@@ -321,41 +390,41 @@
         $("pnlUsd").className = pnl >= 0 ? "positive" : "negative";
         $("pnlPct").textContent = `${pnl >= 0 ? "+" : ""}${pct(capital.totalPnlPct)}`;
         $("lastRun").textContent = latest.startedAt ? when(latest.startedAt) : "-";
-        $("lastRunMeta").textContent = latest.id ? `${latest.status} / ${latest.rawSignalCount || 0} signals / ${(latest.trades || []).length} trades` : "No scan yet";
+        $("lastRunMeta").textContent = latest.id ? `${label(latest.status)} / ${latest.rawSignalCount || 0} 条信号 / ${(latest.trades || []).length} 笔成交` : "暂无扫描";
       }
 
       function renderDecisions() {
         const rows = visibleDecisions().slice(0, 100).map((item) => `
           <tr>
-            <td>${when(item.timestamp)}</td><td>${esc(item.chain || "-")}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
-            <td>${num.format(n(item.score))}</td><td>${esc(item.walletType || "-")}</td><td>${money(item.amountUsd, true)}</td>
+            <td>${when(item.timestamp)}</td><td>${esc(chainLabel(item.chain))}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
+            <td>${num.format(n(item.score))}</td><td>${esc(label(item.walletType))}</td><td>${money(item.amountUsd, true)}</td>
             <td>${num.format(n(item.triggerWalletCount))}</td><td>${pct(item.soldRatioPercent)}</td>
             <td>${item.signalPriceUsd ? money(item.signalPriceUsd) : "-"}</td><td>${item.buyUsd ? money(item.buyUsd) : item.sellUsd ? money(item.sellUsd) : "-"}</td>
-            <td>${esc((item.blockers || []).join("; ") || item.reason || "-")}</td>
+            <td>${esc((item.blockers || []).map(blockerText).join("; ") || reasonText(item.reason))}</td>
           </tr>`);
-        $("mainTable").innerHTML = table(["Time", "Chain", "Token", "Address", "Action", "Score", "Type", "Signal", "Wallets", "Sold", "Price", "Order", "Reason"], rows, "No matching decisions.");
+        $("mainTable").innerHTML = table(["时间", "链", "币种", "地址", "动作", "评分", "信号类型", "信号金额", "钱包数", "卖出比例", "信号价", "下单额", "原因/阻断"], rows, "暂无匹配决策。");
       }
 
       function renderTrades() {
         const rows = (state.trades || []).slice(0, 100).map((item) => `
           <tr>
-            <td>${when(item.timestamp)}</td><td>${esc(item.chain || "-")}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
+            <td>${when(item.timestamp)}</td><td>${esc(chainLabel(item.chain))}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
             <td>${money(item.grossUsd)}</td><td>${money(item.netUsd)}</td><td>${money(item.feeUsd)}</td>
-            <td>${num.format(n(item.units))}</td><td>${num.format(n(item.score))}</td><td>${esc(item.reason || "-")}</td>
+            <td>${num.format(n(item.units))}</td><td>${num.format(n(item.score))}</td><td>${esc(reasonText(item.reason))}</td>
           </tr>`);
-        $("mainTable").innerHTML = table(["Time", "Chain", "Token", "Address", "Action", "Gross", "Net", "Fee", "Units", "Score", "Reason"], rows, "No paper trades yet.");
+        $("mainTable").innerHTML = table(["时间", "链", "币种", "地址", "动作", "下单额", "扣费后", "手续费", "模拟数量", "评分", "原因"], rows, "暂无模拟成交。");
       }
 
       function renderPositions() {
         const rows = (state.positions || []).slice(0, 100).map((item) => {
           const pnl = n(item.lastValueUsd) - n(item.costBasisUsd);
           return `<tr>
-              <td>${when(item.openedAt)}</td><td>${esc(item.chain || "-")}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.status)}</td>
+              <td>${when(item.openedAt)}</td><td>${esc(chainLabel(item.chain))}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.status)}</td>
             <td>${money(item.costBasisUsd)}</td><td>${money(item.lastValueUsd)}</td><td class="${pnl >= 0 ? "positive" : "negative"}">${pnl >= 0 ? "+" : ""}${money(pnl)}</td>
             <td>${item.entryPriceUsd ? money(item.entryPriceUsd) : "-"}</td><td>${item.lastPriceUsd ? money(item.lastPriceUsd) : "-"}</td><td>${when(item.lastUpdatedAt)}</td>
           </tr>`;
         });
-        $("mainTable").innerHTML = table(["Opened", "Chain", "Token", "Address", "Status", "Cost", "Value", "PnL", "Entry", "Last", "Updated"], rows, "No positions.");
+        $("mainTable").innerHTML = table(["开仓时间", "链", "币种", "地址", "状态", "成本", "估值", "浮动盈亏", "入场价", "最新价", "更新时间"], rows, "暂无持仓。");
       }
 
       function renderScanBars() {
@@ -366,7 +435,7 @@
           const color = run.status === "ok" ? "var(--violet)" : "var(--red)";
           return `<div class="bar" title="${esc(run.id)}: ${n(run.rawSignalCount)}" style="height:${height}px;background:${color}"></div>`;
         }).join("");
-        $("scanNote").textContent = runs.length ? `Last ${runs.length} runs. Peak scan count: ${max}. Red bars are failed runs.` : "No scan records.";
+        $("scanNote").textContent = runs.length ? `最近 ${runs.length} 轮，最高 ${max} 条信号。红色柱代表失败轮次。` : "暂无扫描记录。";
       }
 
       function renderEquity() {
@@ -384,7 +453,7 @@
         }).join(" ");
         $("equityLine").setAttribute("viewBox", `0 0 ${width} ${height}`);
         $("equityLine").innerHTML = `<path d="${path}" fill="none" stroke="var(--green)" stroke-width="3" stroke-linecap="round"/><line x1="0" y1="${height - pad}" x2="${width}" y2="${height - pad}" stroke="var(--line)"/>`;
-        $("equityNote").textContent = `Equity ${money(capital.equityUsd)} / initial ${money(capital.initialUsd)}.`;
+        $("equityNote").textContent = `当前权益 ${money(capital.equityUsd)} / 初始本金 ${money(capital.initialUsd)}。`;
       }
 
       function renderRiskBlocks() {
@@ -395,22 +464,25 @@
         const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
         const max = Math.max(1, ...top.map(([, value]) => value));
         $("riskList").innerHTML = top.length ? top.map(([name, value]) => `
-          <div class="risk-row"><span>${esc(name)}</span><div class="risk-meter"><div class="risk-fill" style="width:${(value / max) * 100}%"></div></div><strong>${value}</strong></div>
-        `).join("") : `<p class="empty">No blockers recorded.</p>`;
+          <div class="risk-row"><span>${esc(blockerText(name))}</span><div class="risk-meter"><div class="risk-fill" style="width:${(value / max) * 100}%"></div></div><strong>${value}</strong></div>
+        `).join("") : `<p class="empty">暂无阻断记录。</p>`;
       }
 
       function renderRuns() {
         const rows = (state.runs || []).slice(0, 10).map((run) => {
-          const issue = (run.mistakes || [])[0]?.message || (run.notes || [])[0] || "No recorded issue.";
-          return `<div class="run-item"><div class="run-top"><strong>${esc(run.id || "-")}</strong>${tag(run.status || "-")}</div><p class="note">${when(run.startedAt)} / ${n(run.rawSignalCount)} signals / ${(run.trades || []).length} trades</p><p class="note">${esc(issue)}</p></div>`;
+          const issue = (run.mistakes || [])[0]?.message || (run.notes || [])[0] || "本轮无错误记录。";
+          return `<div class="run-item"><div class="run-top"><strong>${esc(run.id || "-")}</strong>${tag(run.status || "-")}</div><p class="note">${when(run.startedAt)} / ${n(run.rawSignalCount)} 条信号 / ${(run.trades || []).length} 笔成交</p><p class="note">${esc(reasonText(issue))}</p></div>`;
         });
-        $("runList").innerHTML = rows.join("") || `<p class="empty">No runs recorded.</p>`;
+        $("runList").innerHTML = rows.join("") || `<p class="empty">暂无轮次记录。</p>`;
       }
 
       function renderConfig() {
         const cfg = state.config || {};
-        const rows = Object.entries(cfg).map(([key, value]) => `<tr><td class="mono">${esc(key)}</td><td>${esc(value)}</td></tr>`);
-        $("configTable").innerHTML = table(["Rule", "Value"], rows, "No config.");
+        const rows = Object.entries(cfg).map(([key, value]) => {
+          const displayValue = Array.isArray(value) ? value.map(chainLabel).join("、") : value;
+          return `<tr><td>${esc(configLabels[key] || key)}</td><td class="mono">${esc(displayValue)}</td></tr>`;
+        });
+        $("configTable").innerHTML = table(["规则", "数值"], rows, "暂无配置。");
       }
 
       function render() {
@@ -437,14 +509,14 @@
 
       fetch("./data/signal-paper.json", { cache: "no-store" })
         .then((response) => {
-          if (!response.ok) throw new Error(`Ledger read failed: ${response.status}`);
+          if (!response.ok) throw new Error(`账本读取失败：${response.status}`);
           return response.json();
         })
         .then((data) => {
           state = data;
           const latest = (data.runs || [])[0];
           $("statusDot").className = latest?.status === "ok" ? "dot ok" : latest ? "dot bad" : "dot";
-          $("statusText").textContent = latest ? `Last scan: ${latest.status}` : "Waiting for first scan";
+          $("statusText").textContent = latest ? `最近扫描：${label(latest.status)}` : "等待第一次扫描";
           render();
         })
         .catch((error) => {
