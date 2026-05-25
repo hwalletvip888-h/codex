@@ -1,0 +1,39 @@
+name: Signal paper scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Onchain OS CLI
+        shell: bash
+        run: |
+          curl -sSL https://raw.githubusercontent.com/okx/onchainos-skills/main/install.sh | bash
+
+      - name: Run signal paper scanner
+        env:
+          OKX_PROJECT_ID: ${{ secrets.OKX_PROJECT_ID }}
+          OKX_API_KEY: ${{ secrets.OKX_API_KEY }}
+          OKX_SECRET_KEY: ${{ secrets.OKX_SECRET_KEY }}
+          OKX_PASSPHRASE: ${{ secrets.OKX_PASSPHRASE }}
+          OKX_API_PASSPHRASE: ${{ secrets.OKX_API_PASSPHRASE }}
+        run: npm run scan:signal
+
+      - name: Commit updated paper ledger
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update signal paper ledger"
+          file_pattern: docs/data/signal-paper.json
