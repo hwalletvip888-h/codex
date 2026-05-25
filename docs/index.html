@@ -395,6 +395,9 @@
         scanChains: "扫描链",
         scanChain: "旧版扫描链",
         signalLimit: "每链信号上限",
+        signalWalletTypeParam: "接口钱包类型参数",
+        includedWalletTypes: "纳入信号类型",
+        excludedWalletTypes: "排除信号类型",
         startingCapitalUsd: "初始本金",
         reserveUsd: "保留现金",
         maxOpenPositions: "最大持仓数",
@@ -428,6 +431,7 @@
         .replaceAll("wallet count <", "钱包数 <")
         .replaceAll("missing token address", "缺少合约地址")
         .replaceAll("missing signal price", "缺少信号价格")
+        .replaceAll("excluded wallet type: Smart Money", "已排除聪明钱")
         .replaceAll("insufficient cash above reserve", "可用现金低于保留资金");
       const tag = (value) => `<span class="tag ${esc(String(value || "").toLowerCase())}">${esc(label(value))}</span>`;
       const tokenCell = (item) => `<div class="token"><strong>${esc(item.token || item.symbol || "-")}</strong><span>${esc(item.symbol || "")}</span></div>`;

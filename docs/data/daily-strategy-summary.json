@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-25T08:45:13.597Z",
+  "generatedAt": "2026-05-25T10:58:47.108Z",
   "latest": {
     "date": "2026-05-25",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-25T08:45:13.595Z",
-    "runCount": 15,
+    "generatedAt": "2026-05-25T10:58:47.107Z",
+    "runCount": 16,
     "statuses": {
       "failed": 10,
-      "ok": 5
+      "ok": 6
     },
-    "rawSignalCount": 400,
-    "decisionCount": 100,
+    "rawSignalCount": 451,
+    "decisionCount": 151,
     "actions": {
-      "IGNORE": 72,
-      "WATCH": 28
+      "IGNORE": 112,
+      "WATCH": 39
     },
     "tradeCount": 0,
     "buys": 0,
@@ -27,11 +27,11 @@
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 97
+        "count": 147
       },
       {
         "name": "amount < 500U",
-        "count": 52
+        "count": 60
       }
     ],
     "mistakeCount": 10,
@@ -338,8 +338,8 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 3006.32U; wallets 6; sold 55.25%; type KOL/Influencer",
-        "score": 55.3,
+        "reason": "amount 4800.25U; wallets 9; sold 63.01%; type KOL/Influencer",
+        "score": 56.8,
         "wins": 0,
         "losses": 0,
         "totalPnlUsd": 0,
@@ -351,49 +351,49 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-25T08:13:21.812Z",
-        "occurrences": 11,
+        "lastSeenAt": "2026-05-25T10:58:04.711Z",
+        "occurrences": 37,
         "examples": [
           {
-            "token": "ACE Index",
-            "symbol": "ACEDAQ",
-            "address": "d7uwwsnkph7yf1wdlntjcpfiiajs9cmfgj6tiqdwpump",
-            "shortAddress": "d7uwws...pump",
+            "token": "Penny To A Penny",
+            "symbol": "PENNY",
+            "address": "795btpfaaf6x9sfgog66ujtdjuwhyukortqh8fgppump",
+            "shortAddress": "795btp...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Hedge",
+            "symbol": "Hedge",
+            "address": "2yccabpwtuo3z1vifchtamkcc88safrbujdqzmfbpump",
+            "shortAddress": "2yccab...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Embrace The Wave",
+            "symbol": "Embrace",
+            "address": "4eif6waywkxe4tp2fgav76vmgzta3pggdq4etubppump",
+            "shortAddress": "4eif6w...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "StickDAO",
+            "symbol": "STICK",
+            "address": "829q82etuezkkjrpfrbb3bqmcqhikaqqhte3vbgopump",
+            "shortAddress": "829q82...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "I choose rich everytime",
+            "symbol": "RICH",
+            "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
+            "shortAddress": "5hilgy...pump",
             "chain": "solana"
           },
           {
             "token": "Enhanced Games",
-            "symbol": "ENHA",
-            "address": "agwmh5gfpkqetwoxxpo43p3sgr4ckxb5xyfevbjmpump",
-            "shortAddress": "agwmh5...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "GameFund",
-            "symbol": "GAMEFUND",
-            "address": "2etdrmbew39q3z8rx6nfinyzydpaykcuvvpqxrmjpump",
-            "shortAddress": "2etdrm...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "Pumba",
-            "symbol": "Pumba",
-            "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
-            "shortAddress": "67snfo...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "DICKMAXXING",
-            "symbol": "DICKMAXX",
-            "address": "e1cdrmcyqewe8xkxmefmtxv6fbsfa4sk6sxcq8rzpump",
-            "shortAddress": "e1cdrm...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "Asimov",
-            "symbol": "ASIMOV",
-            "address": "bxssbsxjjziena7na9fajvaqc5kbzsxpgrfxrr9mpump",
-            "shortAddress": "bxssbs...pump",
+            "symbol": "ENHANCED",
+            "address": "c6zb1e9yvhbrydqrpu47m2nnpy7nuq8lkma9j7prjteg",
+            "shortAddress": "c6zb1e...jteg",
             "chain": "solana"
           }
         ]
@@ -898,6 +898,48 @@
           "totalPnlUsd": 0,
           "totalPnlPct": 0
         }
+      },
+      {
+        "runId": "20260525105804",
+        "startedAt": "2026-05-25T10:58:04.711Z",
+        "finishedAt": "2026-05-25T10:58:38.817Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 51,
+        "decisions": 51,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 1,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
       }
     ]
   },
@@ -905,17 +947,17 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-25T08:45:13.595Z",
-      "runCount": 15,
+      "generatedAt": "2026-05-25T10:58:47.107Z",
+      "runCount": 16,
       "statuses": {
         "failed": 10,
-        "ok": 5
+        "ok": 6
       },
-      "rawSignalCount": 400,
-      "decisionCount": 100,
+      "rawSignalCount": 451,
+      "decisionCount": 151,
       "actions": {
-        "IGNORE": 72,
-        "WATCH": 28
+        "IGNORE": 112,
+        "WATCH": 39
       },
       "tradeCount": 0,
       "buys": 0,
@@ -928,11 +970,11 @@
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 97
+          "count": 147
         },
         {
           "name": "amount < 500U",
-          "count": 52
+          "count": 60
         }
       ],
       "mistakeCount": 10,
@@ -1239,8 +1281,8 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 3006.32U; wallets 6; sold 55.25%; type KOL/Influencer",
-          "score": 55.3,
+          "reason": "amount 4800.25U; wallets 9; sold 63.01%; type KOL/Influencer",
+          "score": 56.8,
           "wins": 0,
           "losses": 0,
           "totalPnlUsd": 0,
@@ -1252,49 +1294,49 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-25T08:13:21.812Z",
-          "occurrences": 11,
+          "lastSeenAt": "2026-05-25T10:58:04.711Z",
+          "occurrences": 37,
           "examples": [
             {
-              "token": "ACE Index",
-              "symbol": "ACEDAQ",
-              "address": "d7uwwsnkph7yf1wdlntjcpfiiajs9cmfgj6tiqdwpump",
-              "shortAddress": "d7uwws...pump",
+              "token": "Penny To A Penny",
+              "symbol": "PENNY",
+              "address": "795btpfaaf6x9sfgog66ujtdjuwhyukortqh8fgppump",
+              "shortAddress": "795btp...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Hedge",
+              "symbol": "Hedge",
+              "address": "2yccabpwtuo3z1vifchtamkcc88safrbujdqzmfbpump",
+              "shortAddress": "2yccab...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Embrace The Wave",
+              "symbol": "Embrace",
+              "address": "4eif6waywkxe4tp2fgav76vmgzta3pggdq4etubppump",
+              "shortAddress": "4eif6w...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "StickDAO",
+              "symbol": "STICK",
+              "address": "829q82etuezkkjrpfrbb3bqmcqhikaqqhte3vbgopump",
+              "shortAddress": "829q82...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "I choose rich everytime",
+              "symbol": "RICH",
+              "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
+              "shortAddress": "5hilgy...pump",
               "chain": "solana"
             },
             {
               "token": "Enhanced Games",
-              "symbol": "ENHA",
-              "address": "agwmh5gfpkqetwoxxpo43p3sgr4ckxb5xyfevbjmpump",
-              "shortAddress": "agwmh5...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "GameFund",
-              "symbol": "GAMEFUND",
-              "address": "2etdrmbew39q3z8rx6nfinyzydpaykcuvvpqxrmjpump",
-              "shortAddress": "2etdrm...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Pumba",
-              "symbol": "Pumba",
-              "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
-              "shortAddress": "67snfo...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "DICKMAXXING",
-              "symbol": "DICKMAXX",
-              "address": "e1cdrmcyqewe8xkxmefmtxv6fbsfa4sk6sxcq8rzpump",
-              "shortAddress": "e1cdrm...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Asimov",
-              "symbol": "ASIMOV",
-              "address": "bxssbsxjjziena7na9fajvaqc5kbzsxpgrfxrr9mpump",
-              "shortAddress": "bxssbs...pump",
+              "symbol": "ENHANCED",
+              "address": "c6zb1e9yvhbrydqrpu47m2nnpy7nuq8lkma9j7prjteg",
+              "shortAddress": "c6zb1e...jteg",
               "chain": "solana"
             }
           ]
@@ -1789,6 +1831,48 @@
             "previousTrades": 5,
             "previousDecisions": 300
           },
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
+        },
+        {
+          "runId": "20260525105804",
+          "startedAt": "2026-05-25T10:58:04.711Z",
+          "finishedAt": "2026-05-25T10:58:38.817Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 51,
+          "decisions": 51,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 1,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
           "capital": {
             "initialUsd": 3000,
             "cashUsd": 3000,

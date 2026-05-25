@@ -29,6 +29,9 @@ const CONFIG = {
   quoteAsset: "USDT paper capital",
   scanChains: CHAINS,
   signalLimit: 50,
+  signalWalletTypeParam: "2,3",
+  includedWalletTypes: ["KOL/Influencer", "Whale"],
+  excludedWalletTypes: ["Smart Money"],
   startingCapitalUsd: STARTING_CAPITAL_USD,
   reserveUsd: 900,
   maxOpenPositions: 8,
@@ -337,18 +340,20 @@ function normalizeSignal(item, index, requestTime, fallbackChain) {
 }
 
 function scoreSignal(signal) {
+  const isExcludedWalletType = CONFIG.excludedWalletTypes.includes(signal.walletType);
   const amountScore = Math.min(30, Math.log10(signal.amountUsd + 1) * 7);
   const walletScore = Math.min(25, signal.walletCount * 7);
   const soldScore = Math.max(0, 25 - signal.soldRatioPercent * 0.55);
   const typeScore =
-    signal.walletType === "Smart Money" ? 12 :
     signal.walletType === "Whale" ? 10 :
-    signal.walletType === "KOL/Influencer" ? 6 : 3;
+    signal.walletType === "KOL/Influencer" ? 6 :
+    signal.walletType === "Smart Money" ? -20 : 3;
   const completenessPenalty = (!signal.address ? 20 : 0) + (!signal.priceUsd ? 10 : 0);
   const score = Math.max(0, Math.min(100, amountScore + walletScore + soldScore + typeScore - completenessPenalty));
   const blockers = [];
   if (!signal.address) blockers.push("missing token address");
   if (!signal.priceUsd) blockers.push("missing signal price");
+  if (isExcludedWalletType) blockers.push(`excluded wallet type: ${signal.walletType}`);
   if (signal.amountUsd < CONFIG.minSignalAmountUsd) blockers.push(`amount < ${CONFIG.minSignalAmountUsd}U`);
   if (signal.walletCount < CONFIG.minTriggerWalletCount) blockers.push(`wallet count < ${CONFIG.minTriggerWalletCount}`);
   if (signal.soldRatioPercent > CONFIG.maxSoldRatioPercent) blockers.push(`sold ratio > ${CONFIG.maxSoldRatioPercent}%`);
@@ -652,7 +657,9 @@ if (!chainsResult.ok || chainsResult.confirming) {
       trades: 0,
       mistakes: []
     };
-    const listResult = runCli(["signal", "list", "--chain", chain, "--limit", String(CONFIG.signalLimit)]);
+    const listArgs = ["signal", "list", "--chain", chain, "--limit", String(CONFIG.signalLimit)];
+    if (CONFIG.signalWalletTypeParam) listArgs.push("--wallet-type", CONFIG.signalWalletTypeParam);
+    const listResult = runCli(listArgs);
     run.commands.push({
       command: listResult.command,
       ok: listResult.ok,
