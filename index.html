@@ -302,6 +302,12 @@
       </section>
 
       <section class="panel" style="margin-top: 14px">
+        <h2>聪明钱只读观察</h2>
+        <p class="note">聪明钱不参与买入，只单独查询并记录高卖出比例的钱包，用来判断哪些号以后要重点避开。</p>
+        <div class="archive-list" id="smartMoneyWatchlist"></div>
+      </section>
+
+      <section class="panel" style="margin-top: 14px">
         <div class="toolbar">
           <div>
             <h2>每日策略总结</h2>
@@ -321,6 +327,7 @@
           <a class="file-card" href="./data/daily-strategy-summary.json"><strong>每日策略总结</strong><span>每天汇总扫描、成交、阻断条件、盈亏和复盘结论。</span></a>
           <a class="file-card" href="./data/signal-paper.json"><strong>策略档案</strong><span>同一账本内的 strategyArchive 字段，记录最优、不及格和踩坑策略。</span></a>
           <a class="file-card" href="./data/signal-paper.json"><strong>钱包黑名单</strong><span>同一账本内的 walletBlacklist 字段，记录造成亏损的触发钱包。</span></a>
+          <a class="file-card" href="./data/signal-paper.json"><strong>聪明钱观察</strong><span>同一账本内的 smartMoneyWatchlist 字段，只读追踪高卖出比例聪明钱。</span></a>
           <a class="file-card" href="https://github.com/hwalletvip888-h/codex/blob/main/scripts/run-signal-paper-trader.js"><strong>扫描脚本</strong><span>Solana + BSC 信号扫描、评分、买入、持仓更新和止损止盈。</span></a>
           <a class="file-card" href="https://github.com/hwalletvip888-h/codex/blob/main/.github/workflows/signal-paper-scan.yml"><strong>定时任务</strong><span>GitHub Actions 每小时运行扫描并更新页面数据。</span></a>
           <a class="file-card" href="https://github.com/hwalletvip888-h/codex/blob/main/.github/workflows/daily-strategy-summary.yml"><strong>日报任务</strong><span>香港时间每天 23:55 自动生成策略模拟日报。</span></a>
@@ -406,6 +413,8 @@
         signalWalletTypeParam: "接口钱包类型参数",
         includedWalletTypes: "纳入信号类型",
         excludedWalletTypes: "排除信号类型",
+        smartMoneyResearchLimit: "聪明钱只读条数",
+        smartMoneyResearchSoldRatioPercent: "聪明钱观察卖出比例",
         startingCapitalUsd: "初始本金",
         reserveUsd: "保留现金",
         maxOpenPositions: "最大持仓数",
@@ -658,6 +667,23 @@
         }).join("") || `<p class="empty">暂无亏损钱包黑名单。后续出现亏损卖出后会自动入档。</p>`;
       }
 
+      function renderSmartMoneyWatchlist() {
+        const entries = state.smartMoneyWatchlist?.entries || [];
+        $("smartMoneyWatchlist").innerHTML = entries.slice(0, 12).map((item) => {
+          const token = (item.tokens || [])[0] || {};
+          return `
+            <div class="archive-item">
+              <div class="archive-top">
+                <strong class="mono">${esc(item.shortAddress || item.walletAddress || "-")}</strong>
+                ${tag("Smart Money")}
+              </div>
+              <p>${esc(chainLabel(item.chain))} / 出现 ${n(item.occurrences)} 次 / 高卖出比例 ${n(item.highSoldRatioCount)} 次</p>
+              <p>最近样本：${esc(token.token || "-")} ${esc(token.symbol || "")} / 卖出比例 ${pct(token.soldRatioPercent)}</p>
+            </div>
+          `;
+        }).join("") || `<p class="empty">暂无聪明钱观察记录。只读追踪跑完后会自动入档。</p>`;
+      }
+
       function renderDailySummary() {
         const latest = dailySummary?.latest;
         if (!latest) {
@@ -671,6 +697,7 @@
           ["模拟成交", `${latest.tradeCount} 笔`, `买入 ${latest.buys} / 卖出 ${latest.sells}`],
           ["已实现盈亏", `${latest.realizedPnlUsd >= 0 ? "+" : ""}${latest.realizedPnlUsd}U`, `买入金额 ${latest.buyUsd}U`],
           ["钱包黑名单", `${latest.walletBlacklistCount || 0} 个地址`, "亏损卖出后自动入档"],
+          ["聪明钱观察", `${latest.smartMoneyWatchlistCount || 0} 个地址`, "只读追踪，不参与买入"],
           ["主要阻断", latest.topBlockers?.[0]?.name || "暂无", latest.topBlockers?.[0] ? `${latest.topBlockers[0].count} 次` : "无"]
         ];
         $("dailySummary").innerHTML = cells.map(([title, value, meta]) => `
@@ -694,6 +721,7 @@
         renderConfig();
         renderStrategyArchive();
         renderWalletBlacklist();
+        renderSmartMoneyWatchlist();
         renderDailySummary();
         if (activeTab === "trades") renderTrades();
         else if (activeTab === "positions") renderPositions();
