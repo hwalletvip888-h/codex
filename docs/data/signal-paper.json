@@ -3,7 +3,7 @@
   "mode": "signal-paper-auto",
   "source": "OKX Onchain OS signal list",
   "startedAt": "",
-  "updatedAt": "2026-05-25T03:33:47.500Z",
+  "updatedAt": "2026-05-25T07:21:54.400Z",
   "config": {
     "quoteAsset": "USDT paper capital",
     "scanChains": [
@@ -6963,6 +6963,46 @@
     }
   ],
   "runs": [
+    {
+      "id": "20260525072154",
+      "startedAt": "2026-05-25T07:21:54.400Z",
+      "finishedAt": "2026-05-25T07:21:54.637Z",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "status": "failed",
+      "commands": [
+        {
+          "command": "onchainos signal chains",
+          "ok": false,
+          "error": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+          "notifications": []
+        }
+      ],
+      "rawSignalCount": 0,
+      "decisions": [],
+      "trades": [],
+      "mistakes": [
+        {
+          "type": "AUTH_INVALID",
+          "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+        }
+      ],
+      "notes": [],
+      "chainResults": [],
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2703.32,
+        "openValueUsd": 192.02,
+        "equityUsd": 2895.34,
+        "realizedPnlUsd": -104.09,
+        "unrealizedPnlUsd": -0.58,
+        "totalPnlUsd": -104.66,
+        "totalPnlPct": -3.49
+      }
+    },
     {
       "id": "20260525033347",
       "startedAt": "2026-05-25T03:33:47.500Z",
@@ -20019,6 +20059,13 @@
   "mistakes": [
     {
       "type": "AUTH_INVALID",
+      "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+      "lesson": "Do not trade when source availability or payment/auth state is uncertain.",
+      "runId": "20260525072154",
+      "timestamp": "2026-05-25T07:21:54.400Z"
+    },
+    {
+      "type": "AUTH_INVALID",
       "message": "API error (code=50114): Invalid Authority",
       "lesson": "Do not trade when source availability or payment/auth state is uncertain.",
       "runId": "20260525023435",
@@ -20082,7 +20129,7 @@
     }
   ],
   "strategyArchive": {
-    "updatedAt": "2026-05-25T03:33:47.500Z",
+    "updatedAt": "2026-05-25T07:21:54.400Z",
     "best": [
       {
         "key": "entry:bsc:smart money:amount>=500:wallets>=8:sold<=35",
@@ -20588,6 +20635,36 @@
             "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
             "shortAddress": "0xed33...7777",
             "chain": "bsc"
+          }
+        ]
+      },
+      {
+        "key": "mistake:auth_invalid:global",
+        "title": "执行踩坑",
+        "status": "流程问题",
+        "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+        "reason": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+        "score": 0,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "AUTH_INVALID",
+          "symbol": "global",
+          "address": "",
+          "shortAddress": "",
+          "chain": "global"
+        },
+        "firstSeenAt": "2026-05-25T07:21:54.400Z",
+        "lastSeenAt": "2026-05-25T07:21:54.400Z",
+        "occurrences": 1,
+        "examples": [
+          {
+            "token": "AUTH_INVALID",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
           }
         ]
       }
