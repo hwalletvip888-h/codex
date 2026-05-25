@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-25T11:59:09.590Z",
+  "generatedAt": "2026-05-25T15:27:23.854Z",
   "latest": {
     "date": "2026-05-25",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-25T11:59:09.588Z",
-    "runCount": 19,
+    "generatedAt": "2026-05-25T15:27:23.852Z",
+    "runCount": 20,
     "statuses": {
-      "failed": 11,
+      "failed": 12,
       "ok": 8
     },
     "rawSignalCount": 553,
@@ -34,10 +34,10 @@
         "count": 76
       }
     ],
-    "mistakeCount": 11,
+    "mistakeCount": 12,
     "mistakeTypes": {
-      "FILE_WRITE_ERROR": 6,
-      "AUTH_INVALID": 5
+      "AUTH_INVALID": 6,
+      "FILE_WRITE_ERROR": 6
     },
     "accountResets": 1,
     "walletBlacklistCount": 0,
@@ -629,8 +629,8 @@
           "chain": "global"
         },
         "firstSeenAt": "2026-05-25T07:21:54.400Z",
-        "lastSeenAt": "2026-05-25T11:59:09.014Z",
-        "occurrences": 2,
+        "lastSeenAt": "2026-05-25T15:27:23.334Z",
+        "occurrences": 3,
         "examples": [
           {
             "token": "AUTH_INVALID",
@@ -1269,6 +1269,40 @@
           "totalPnlUsd": 0,
           "totalPnlPct": 0
         }
+      },
+      {
+        "runId": "20260525152723",
+        "startedAt": "2026-05-25T15:27:23.334Z",
+        "finishedAt": "2026-05-25T15:27:23.659Z",
+        "status": "failed",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "AUTH_INVALID",
+            "chain": "",
+            "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
       }
     ]
   },
@@ -1276,10 +1310,10 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-25T11:59:09.588Z",
-      "runCount": 19,
+      "generatedAt": "2026-05-25T15:27:23.852Z",
+      "runCount": 20,
       "statuses": {
-        "failed": 11,
+        "failed": 12,
         "ok": 8
       },
       "rawSignalCount": 553,
@@ -1306,10 +1340,10 @@
           "count": 76
         }
       ],
-      "mistakeCount": 11,
+      "mistakeCount": 12,
       "mistakeTypes": {
-        "FILE_WRITE_ERROR": 6,
-        "AUTH_INVALID": 5
+        "AUTH_INVALID": 6,
+        "FILE_WRITE_ERROR": 6
       },
       "accountResets": 1,
       "walletBlacklistCount": 0,
@@ -1901,8 +1935,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-25T07:21:54.400Z",
-          "lastSeenAt": "2026-05-25T11:59:09.014Z",
-          "occurrences": 2,
+          "lastSeenAt": "2026-05-25T15:27:23.334Z",
+          "occurrences": 3,
           "examples": [
             {
               "token": "AUTH_INVALID",
@@ -2512,6 +2546,40 @@
           "runId": "20260525115909",
           "startedAt": "2026-05-25T11:59:09.014Z",
           "finishedAt": "2026-05-25T11:59:09.384Z",
+          "status": "failed",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "AUTH_INVALID",
+              "chain": "",
+              "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
+        },
+        {
+          "runId": "20260525152723",
+          "startedAt": "2026-05-25T15:27:23.334Z",
+          "finishedAt": "2026-05-25T15:27:23.659Z",
           "status": "failed",
           "chains": [
             "solana",
