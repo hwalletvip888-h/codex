@@ -158,6 +158,16 @@ function newState(now) {
     decisions: [],
     runs: [],
     mistakes: [],
+    session: {
+      id: now.replace(/[-:.TZ]/g, "").slice(0, 14),
+      startedAt: now,
+      lastAuthOkAt: "",
+      lastAuthFailureAt: "",
+      authState: "unknown",
+      authRecoveries: 0,
+      resetReason: "initial"
+    },
+    accountResets: [],
     strategyArchive: {
       updatedAt: now,
       best: [],
@@ -176,6 +186,18 @@ function normalizeState(state, now) {
   base.decisions = Array.isArray(base.decisions) ? base.decisions : [];
   base.runs = Array.isArray(base.runs) ? base.runs : [];
   base.mistakes = Array.isArray(base.mistakes) ? base.mistakes : [];
+  base.session = base.session && typeof base.session === "object"
+    ? {
+        id: base.session.id || (base.startedAt || now).replace(/[-:.TZ]/g, "").slice(0, 14),
+        startedAt: base.session.startedAt || base.startedAt || now,
+        lastAuthOkAt: base.session.lastAuthOkAt || "",
+        lastAuthFailureAt: base.session.lastAuthFailureAt || "",
+        authState: base.session.authState || "unknown",
+        authRecoveries: toNumber(base.session.authRecoveries),
+        resetReason: base.session.resetReason || "legacy"
+      }
+    : newState(now).session;
+  base.accountResets = Array.isArray(base.accountResets) ? base.accountResets : [];
   base.strategyArchive = base.strategyArchive && typeof base.strategyArchive === "object"
     ? base.strategyArchive
     : { updatedAt: now, best: [], rejected: [], lessons: [] };
@@ -202,6 +224,54 @@ function classifyIssue(result) {
   if (/non-JSON/i.test(text)) return "NON_JSON_OUTPUT";
   if (result.confirming) return "PAYMENT_CONFIRMATION_REQUIRED";
   return result.ok ? "" : "CLI_ERROR";
+}
+
+function isAuthIssueType(type) {
+  return type === "AUTH_INVALID";
+}
+
+function latestRunHadAuthFailure(state) {
+  const latest = (state.runs || [])[0];
+  return Boolean((latest?.mistakes || []).some((mistake) => isAuthIssueType(mistake.type)));
+}
+
+function hasUnrecoveredAuthFailure(session) {
+  const failedAt = session?.lastAuthFailureAt ? new Date(session.lastAuthFailureAt).getTime() : 0;
+  const okAt = session?.lastAuthOkAt ? new Date(session.lastAuthOkAt).getTime() : 0;
+  return failedAt > 0 && failedAt >= okAt;
+}
+
+function resetPaperAccountForRelogin(state, now, run, reason) {
+  const previousSession = { ...(state.session || {}) };
+  const previousCapital = { ...(state.capital || {}) };
+  const resetRecord = {
+    timestamp: now,
+    runId: run.id,
+    reason,
+    previousSession,
+    previousCapital,
+    previousOpenPositions: (state.positions || []).filter((item) => item.status === "open").length,
+    previousTrades: (state.trades || []).length,
+    previousDecisions: (state.decisions || []).length
+  };
+
+  state.accountResets.unshift(resetRecord);
+  state.accountResets = state.accountResets.slice(0, 50);
+  state.capital = { ...newState(now).capital };
+  state.positions = [];
+  state.trades = [];
+  state.decisions = [];
+  state.session = {
+    id: run.id,
+    startedAt: now,
+    lastAuthOkAt: now,
+    lastAuthFailureAt: "",
+    authState: "online",
+    authRecoveries: toNumber(previousSession.authRecoveries) + 1,
+    resetReason: reason
+  };
+  run.accountReset = resetRecord;
+  run.notes.push("授权恢复或重新登录后，已按规则重置模拟本金为 3000U。历史轮次保留用于审计，不混入新会话本金。");
 }
 
 function normalizeSignal(item, index, requestTime, fallbackChain) {
@@ -546,6 +616,10 @@ run.commands.push({
 if (!chainsResult.ok || chainsResult.confirming) {
   const issue = classifyIssue(chainsResult);
   run.status = "failed";
+  if (isAuthIssueType(issue)) {
+    state.session.lastAuthFailureAt = now;
+    state.session.authState = "auth_failed";
+  }
   run.mistakes.push({
     type: issue,
     message: chainsResult.error || "Unable to verify supported signal chains",
@@ -555,6 +629,13 @@ if (!chainsResult.ok || chainsResult.confirming) {
     run.notes.push("Market API may require OKX Agent Payments Protocol confirmation. No payment was confirmed and no fake data was used.");
   }
 } else {
+  if (latestRunHadAuthFailure(state) || hasUnrecoveredAuthFailure(state.session)) {
+    resetPaperAccountForRelogin(state, now, run, "auth_recovered_after_login");
+  } else {
+    state.session.lastAuthOkAt = now;
+    state.session.authState = "online";
+  }
+
   const openByAddress = new Map(
     state.positions
       .filter((item) => item.status === "open")

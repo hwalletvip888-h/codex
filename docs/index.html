@@ -76,7 +76,7 @@
       .dot.bad { background: var(--red); }
 
       .grid { display: grid; gap: 14px; }
-      .metrics { grid-template-columns: repeat(6, minmax(0, 1fr)); margin-top: 18px; }
+      .metrics { grid-template-columns: repeat(7, minmax(0, 1fr)); margin-top: 18px; }
       .layout { grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.65fr); margin-top: 14px; align-items: start; }
       .two { grid-template-columns: 1fr 1fr; margin-top: 14px; }
 
@@ -212,6 +212,7 @@
         <article class="panel metric"><h3>持仓估值</h3><strong id="openValueUsd">-</strong><span>按最新信号价格估算</span></article>
         <article class="panel metric"><h3>当前权益</h3><strong id="equityUsd">-</strong><span>现金加持仓估值</span></article>
         <article class="panel metric"><h3>累计盈亏</h3><strong id="pnlUsd">-</strong><span id="pnlPct">-</span></article>
+        <article class="panel metric"><h3>在线时长</h3><strong id="onlineDuration">-</strong><span id="onlineMeta">等待会话记录</span></article>
         <article class="panel metric"><h3>最近扫描</h3><strong id="lastRun">-</strong><span id="lastRunMeta">-</span></article>
       </section>
 
@@ -322,6 +323,29 @@
         if (!value) return "-";
         const date = new Date(value);
         return Number.isNaN(date.getTime()) ? "-" : time.format(date);
+      };
+      const ageMs = (value, end = new Date()) => {
+        const date = new Date(value);
+        return Number.isNaN(date.getTime()) ? 0 : Math.max(0, end.getTime() - date.getTime());
+      };
+      const durationText = (ms) => {
+        const minutes = Math.floor(ms / 60000);
+        const days = Math.floor(minutes / 1440);
+        const hours = Math.floor((minutes % 1440) / 60);
+        const mins = minutes % 60;
+        if (days > 0) return `${days}天 ${hours}小时`;
+        if (hours > 0) return `${hours}小时 ${mins}分钟`;
+        return `${Math.max(0, mins)}分钟`;
+      };
+      const health = (data) => {
+        const latest = (data.runs || [])[0];
+        if (!latest) return { state: "waiting", text: "等待第一次扫描", dot: "dot" };
+        const stale = ageMs(latest.finishedAt || latest.startedAt) > 150 * 60000;
+        const authFailed = latest.status === "failed" && (latest.mistakes || []).some((item) => item.type === "AUTH_INVALID");
+        if (stale) return { state: "offline", text: `离线超时：${durationText(ageMs(latest.finishedAt || latest.startedAt))} 未更新`, dot: "dot bad" };
+        if (authFailed) return { state: "auth_failed", text: "授权失效：等待重新登录", dot: "dot bad" };
+        if (latest.status === "ok" || latest.status === "partial") return { state: "online", text: `在线运行：${label(latest.status)}`, dot: "dot ok" };
+        return { state: "failed", text: `最近扫描：${label(latest.status)}`, dot: "dot bad" };
       };
       const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[ch]);
       const labels = {
@@ -443,6 +467,10 @@
       function renderMetrics() {
         const capital = state.capital || {};
         const latest = (state.runs || [])[0] || {};
+        const session = state.session || {};
+        const currentHealth = health(state);
+        const sessionStart = session.startedAt || state.startedAt || latest.startedAt;
+        const lastSeenAt = latest.finishedAt || latest.startedAt || state.updatedAt;
         $("initialUsd").textContent = money(capital.initialUsd);
         $("cashUsd").textContent = money(capital.cashUsd);
         $("openValueUsd").textContent = money(capital.openValueUsd);
@@ -451,6 +479,8 @@
         $("pnlUsd").textContent = `${pnl >= 0 ? "+" : ""}${money(pnl)}`;
         $("pnlUsd").className = pnl >= 0 ? "positive" : "negative";
         $("pnlPct").textContent = `${pnl >= 0 ? "+" : ""}${pct(capital.totalPnlPct)}`;
+        $("onlineDuration").textContent = currentHealth.state === "offline" ? "已离线" : durationText(ageMs(sessionStart, new Date(lastSeenAt || Date.now())));
+        $("onlineMeta").textContent = sessionStart ? `本轮会话 ${when(sessionStart)} 开始 / ${currentHealth.text}` : currentHealth.text;
         $("lastRun").textContent = latest.startedAt ? when(latest.startedAt) : "-";
         $("lastRunMeta").textContent = latest.id ? `${label(latest.status)} / ${latest.rawSignalCount || 0} 条信号 / ${(latest.trades || []).length} 笔成交` : "暂无扫描";
       }
@@ -580,6 +610,9 @@
       }
 
       function render() {
+        const currentHealth = health(state);
+        $("statusDot").className = currentHealth.dot;
+        $("statusText").textContent = currentHealth.text;
         renderMetrics();
         renderScanBars();
         renderEquity();
@@ -618,6 +651,13 @@
           else renderDecisions();
         }
       });
+      window.setInterval(() => {
+        if (!state) return;
+        const currentHealth = health(state);
+        $("statusDot").className = currentHealth.dot;
+        $("statusText").textContent = currentHealth.text;
+        renderMetrics();
+      }, 60000);
 
       fetch("./data/signal-paper.json", { cache: "no-store" })
         .then((response) => {
@@ -626,9 +666,9 @@
         })
         .then((data) => {
           state = data;
-          const latest = (data.runs || [])[0];
-          $("statusDot").className = latest?.status === "ok" ? "dot ok" : latest ? "dot bad" : "dot";
-          $("statusText").textContent = latest ? `最近扫描：${label(latest.status)}` : "等待第一次扫描";
+          const currentHealth = health(data);
+          $("statusDot").className = currentHealth.dot;
+          $("statusText").textContent = currentHealth.text;
           render();
         })
         .catch((error) => {
