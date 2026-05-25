@@ -32,7 +32,15 @@ jobs:
           OKX_SECRET_KEY: ${{ secrets.OKX_SECRET_KEY }}
           OKX_PASSPHRASE: ${{ secrets.OKX_PASSPHRASE }}
           OKX_API_PASSPHRASE: ${{ secrets.OKX_API_PASSPHRASE }}
-        run: npm run scan:signal
+        shell: bash
+        run: |
+          set -euo pipefail
+          export OKX_PROJECT_ID="$(printf '%s' "${OKX_PROJECT_ID:-}" | tr -d '\r\n')"
+          export OKX_API_KEY="$(printf '%s' "${OKX_API_KEY:-}" | tr -d '\r\n')"
+          export OKX_SECRET_KEY="$(printf '%s' "${OKX_SECRET_KEY:-}" | tr -d '\r\n')"
+          export OKX_PASSPHRASE="$(printf '%s' "${OKX_PASSPHRASE:-}" | tr -d '\r\n')"
+          export OKX_API_PASSPHRASE="$(printf '%s' "${OKX_API_PASSPHRASE:-}" | tr -d '\r\n')"
+          npm run scan:signal
 
       - name: Refresh operation log and daily summary
         if: always()
