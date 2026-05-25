@@ -30,6 +30,8 @@ const CONFIG = {
   scanChains: CHAINS,
   signalLimit: 50,
   signalWalletTypeParam: "2,3",
+  smartMoneyResearchLimit: 20,
+  smartMoneyResearchSoldRatioPercent: 80,
   includedWalletTypes: ["KOL/Influencer", "Whale"],
   excludedWalletTypes: ["Smart Money"],
   startingCapitalUsd: STARTING_CAPITAL_USD,
@@ -183,6 +185,10 @@ function newState(now) {
       updatedAt: now,
       entries: []
     },
+    smartMoneyWatchlist: {
+      updatedAt: now,
+      entries: []
+    },
     strategyArchive: {
       updatedAt: now,
       best: [],
@@ -217,6 +223,10 @@ function normalizeState(state, now) {
     ? base.walletBlacklist
     : { updatedAt: now, entries: [] };
   base.walletBlacklist.entries = Array.isArray(base.walletBlacklist.entries) ? base.walletBlacklist.entries : [];
+  base.smartMoneyWatchlist = base.smartMoneyWatchlist && typeof base.smartMoneyWatchlist === "object"
+    ? base.smartMoneyWatchlist
+    : { updatedAt: now, entries: [] };
+  base.smartMoneyWatchlist.entries = Array.isArray(base.smartMoneyWatchlist.entries) ? base.smartMoneyWatchlist.entries : [];
   base.strategyArchive = base.strategyArchive && typeof base.strategyArchive === "object"
     ? base.strategyArchive
     : { updatedAt: now, best: [], rejected: [], lessons: [] };
@@ -352,6 +362,55 @@ function upsertWalletBlacklist(state, trade, now) {
   state.walletBlacklist.updatedAt = now;
   state.walletBlacklist.entries = entries
     .sort((a, b) => Math.abs(toNumber(b.totalLossUsd)) - Math.abs(toNumber(a.totalLossUsd)) || toNumber(b.lossCount) - toNumber(a.lossCount))
+    .slice(0, 500);
+}
+
+function upsertSmartMoneyWatchlist(state, signal, now, reason) {
+  if (signal.walletType !== "Smart Money" || !signal.triggerWalletAddresses.length) return;
+  const entries = state.smartMoneyWatchlist.entries;
+  for (const walletAddress of signal.triggerWalletAddresses) {
+    const key = blacklistKey(signal.chain, walletAddress);
+    let entry = entries.find((item) => blacklistKey(item.chain, item.walletAddress) === key);
+    if (!entry) {
+      entry = {
+        walletAddress,
+        shortAddress: shortAddress(walletAddress),
+        chain: signal.chain,
+        walletType: signal.walletType,
+        status: "watch_only",
+        firstSeenAt: now,
+        lastSeenAt: now,
+        occurrences: 0,
+        highSoldRatioCount: 0,
+        tokens: [],
+        reasons: []
+      };
+      entries.push(entry);
+    }
+    entry.lastSeenAt = now;
+    entry.occurrences = toNumber(entry.occurrences) + 1;
+    if (signal.soldRatioPercent >= CONFIG.smartMoneyResearchSoldRatioPercent) {
+      entry.highSoldRatioCount = toNumber(entry.highSoldRatioCount) + 1;
+    }
+    if (!entry.tokens.some((item) => item.address === signal.address)) {
+      entry.tokens.unshift({
+        token: signal.token,
+        symbol: signal.symbol,
+        address: signal.address,
+        shortAddress: signal.shortAddress,
+        soldRatioPercent: round(signal.soldRatioPercent, 2),
+        amountUsd: round(signal.amountUsd, 2)
+      });
+      entry.tokens = entry.tokens.slice(0, 10);
+    }
+    if (reason && !entry.reasons.includes(reason)) {
+      entry.reasons.unshift(reason);
+      entry.reasons = entry.reasons.slice(0, 10);
+    }
+  }
+  state.smartMoneyWatchlist.updatedAt = now;
+  state.smartMoneyWatchlist.entries = entries
+    .sort((a, b) => toNumber(b.highSoldRatioCount) - toNumber(a.highSoldRatioCount) || toNumber(b.occurrences) - toNumber(a.occurrences))
     .slice(0, 500);
 }
 
@@ -745,8 +804,44 @@ if (!chainsResult.ok || chainsResult.confirming) {
       status: "started",
       rawSignalCount: 0,
       trades: 0,
+      smartMoneyResearchCount: 0,
       mistakes: []
     };
+    const smartMoneyResearch = runCli([
+      "signal",
+      "list",
+      "--chain",
+      chain,
+      "--limit",
+      String(CONFIG.smartMoneyResearchLimit),
+      "--wallet-type",
+      "1"
+    ]);
+    run.commands.push({
+      command: smartMoneyResearch.command,
+      ok: smartMoneyResearch.ok,
+      confirming: smartMoneyResearch.confirming,
+      error: smartMoneyResearch.error,
+      notifications: notificationSummary(smartMoneyResearch.notifications),
+      purpose: "smart-money-watch-only"
+    });
+    if (smartMoneyResearch.ok && !smartMoneyResearch.confirming) {
+      const researchSignals = arrayFromData(smartMoneyResearch.parsed).map((item, index) => normalizeSignal(item, index + 1, "", chain));
+      chainResult.smartMoneyResearchCount = researchSignals.length;
+      for (const signal of researchSignals) {
+        if (signal.soldRatioPercent >= CONFIG.smartMoneyResearchSoldRatioPercent) {
+          upsertSmartMoneyWatchlist(state, signal, now, `watch only; sold ratio ${round(signal.soldRatioPercent, 2)}%`);
+        }
+      }
+    } else {
+      chainResult.mistakes.push({
+        type: classifyIssue(smartMoneyResearch),
+        message: smartMoneyResearch.error || `Unable to research smart money wallets for ${chain}`,
+        lesson: "Smart Money research is watch-only and must never create trades.",
+        chain
+      });
+    }
+
     const listArgs = ["signal", "list", "--chain", chain, "--limit", String(CONFIG.signalLimit)];
     if (CONFIG.signalWalletTypeParam) listArgs.push("--wallet-type", CONFIG.signalWalletTypeParam);
     const listResult = runCli(listArgs);
