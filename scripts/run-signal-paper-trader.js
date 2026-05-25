@@ -3,7 +3,10 @@ import { existsSync, readFileSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const OUT_FILE = "docs/data/signal-paper.json";
-const CHAIN = process.env.SIGNAL_CHAIN || "solana";
+const CHAINS = (process.env.SIGNAL_CHAINS || process.env.SIGNAL_CHAIN || "solana,bsc")
+  .split(",")
+  .map((chain) => chain.trim())
+  .filter(Boolean);
 const STARTING_CAPITAL_USD = 3000;
 
 function loadDotEnv(path = ".env") {
@@ -24,7 +27,7 @@ loadDotEnv();
 
 const CONFIG = {
   quoteAsset: "USDT paper capital",
-  scanChain: CHAIN,
+  scanChains: CHAINS,
   signalLimit: 50,
   startingCapitalUsd: STARTING_CAPITAL_USD,
   reserveUsd: 900,
@@ -61,6 +64,10 @@ function firstDefined(...values) {
 function shortAddress(address) {
   if (!address) return "";
   return address.length > 12 ? `${address.slice(0, 6)}...${address.slice(-4)}` : address;
+}
+
+function positionKey(chain, address) {
+  return `${String(chain || "").toLowerCase()}:${String(address || "").toLowerCase()}`;
 }
 
 function arrayFromData(payload) {
@@ -185,7 +192,7 @@ function classifyIssue(result) {
   return result.ok ? "" : "CLI_ERROR";
 }
 
-function normalizeSignal(item, index, requestTime) {
+function normalizeSignal(item, index, requestTime, fallbackChain) {
   const token = item.token || item.baseToken || {};
   const address = String(firstDefined(
     item.tokenAddress,
@@ -236,7 +243,7 @@ function normalizeSignal(item, index, requestTime) {
     symbol: firstDefined(item.symbol, item.tokenSymbol, token.symbol, "") || "",
     address,
     shortAddress: shortAddress(address),
-    chain: firstDefined(item.chain, item.chainName, CHAIN) || CHAIN,
+    chain: firstDefined(item.chain, item.chainName, fallbackChain) || fallbackChain,
     walletType,
     amountUsd,
     walletCount,
@@ -361,14 +368,15 @@ const run = {
   id: runId,
   startedAt: now,
   finishedAt: "",
-  chain: CHAIN,
+  chains: CHAINS,
   status: "started",
   commands: [],
   rawSignalCount: 0,
   decisions: [],
   trades: [],
   mistakes: [],
-  notes: []
+  notes: [],
+  chainResults: []
 };
 
 const chainsResult = runCli(["signal", "chains"]);
@@ -392,36 +400,55 @@ if (!chainsResult.ok || chainsResult.confirming) {
     run.notes.push("Market API may require OKX Agent Payments Protocol confirmation. No payment was confirmed and no fake data was used.");
   }
 } else {
-  const listResult = runCli(["signal", "list", "--chain", CHAIN, "--limit", String(CONFIG.signalLimit)]);
-  run.commands.push({
-    command: listResult.command,
-    ok: listResult.ok,
-    confirming: listResult.confirming,
-    error: listResult.error,
-    notifications: notificationSummary(listResult.notifications)
-  });
+  const openByAddress = new Map(
+    state.positions
+      .filter((item) => item.status === "open")
+      .map((item) => [positionKey(item.chain, item.address), item])
+  );
+  let sequence = 1;
+  let buysThisRun = 0;
 
-  if (!listResult.ok || listResult.confirming) {
-    const issue = classifyIssue(listResult);
-    run.status = "failed";
-    run.mistakes.push({
-      type: issue,
-      message: listResult.error || "Unable to fetch signal list",
-      lesson: "A failed scan is recorded as failed; never backfill trades from memory or guesses."
+  for (const chain of CHAINS) {
+    const chainResult = {
+      chain,
+      status: "started",
+      rawSignalCount: 0,
+      trades: 0,
+      mistakes: []
+    };
+    const listResult = runCli(["signal", "list", "--chain", chain, "--limit", String(CONFIG.signalLimit)]);
+    run.commands.push({
+      command: listResult.command,
+      ok: listResult.ok,
+      confirming: listResult.confirming,
+      error: listResult.error,
+      notifications: notificationSummary(listResult.notifications)
     });
-  } else {
-    const requestTime = listResult.parsed?.requestTime || listResult.parsed?.data?.requestTime || "";
-    const signals = arrayFromData(listResult.parsed).map((item, index) => normalizeSignal(item, index + 1, requestTime));
-    run.rawSignalCount = signals.length;
-    run.status = "ok";
 
-    const openByAddress = new Map(state.positions.filter((item) => item.status === "open").map((item) => [item.address, item]));
-    let sequence = 1;
-    let buysThisRun = 0;
+    if (!listResult.ok || listResult.confirming) {
+      const issue = classifyIssue(listResult);
+      const mistake = {
+        type: issue,
+        message: listResult.error || `Unable to fetch signal list for ${chain}`,
+        lesson: "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+        chain
+      };
+      chainResult.status = "failed";
+      chainResult.mistakes.push(mistake);
+      run.mistakes.push(mistake);
+      run.chainResults.push(chainResult);
+      continue;
+    }
+
+    const requestTime = listResult.parsed?.requestTime || listResult.parsed?.data?.requestTime || "";
+    const signals = arrayFromData(listResult.parsed).map((item, index) => normalizeSignal(item, index + 1, requestTime, chain));
+    chainResult.rawSignalCount = signals.length;
+    chainResult.status = "ok";
+    run.rawSignalCount += signals.length;
 
     for (const signal of signals) {
       const analysis = scoreSignal(signal);
-      const existing = openByAddress.get(signal.address);
+      const existing = openByAddress.get(positionKey(signal.chain, signal.address));
       const decision = {
         timestamp: now,
         runId,
@@ -482,8 +509,8 @@ if (!chainsResult.ok || chainsResult.confirming) {
             }
           };
           state.positions.push(position);
-          openByAddress.set(signal.address, position);
-          buysThisRun += 1;
+            openByAddress.set(positionKey(signal.chain, signal.address), position);
+            buysThisRun += 1;
           decision.action = "BUY";
           decision.buyUsd = round(grossUsd, 2);
           decision.feeUsd = round(feeUsd, 2);
@@ -499,6 +526,7 @@ if (!chainsResult.ok || chainsResult.confirming) {
           });
           state.trades.unshift(trade);
           run.trades.push(trade);
+          chainResult.trades += 1;
           sequence += 1;
         } else {
           decision.action = "SKIP";
@@ -524,6 +552,7 @@ if (!chainsResult.ok || chainsResult.confirming) {
             sequence,
             `Stop loss ${round(pnlPct, 2)}%; ${analysis.reason}`
           );
+          chainResult.trades += 1;
           sequence += 1;
           decision.action = "SELL";
           decision.sellUsd = trade.netUsd;
@@ -541,6 +570,7 @@ if (!chainsResult.ok || chainsResult.confirming) {
             sequence,
             `Take profit ${round(pnlPct, 2)}%; ${analysis.reason}`
           );
+          chainResult.trades += 1;
           sequence += 1;
           decision.action = "SELL";
           decision.sellUsd = trade.netUsd;
@@ -561,9 +591,13 @@ if (!chainsResult.ok || chainsResult.confirming) {
     }
 
     if (!signals.length) {
-      run.notes.push("Signal endpoint returned zero rows. No trades were created.");
+      run.notes.push(`${chain}: signal endpoint returned zero rows. No trades were created.`);
     }
+    run.chainResults.push(chainResult);
   }
+
+  const okChains = run.chainResults.filter((item) => item.status === "ok").length;
+  run.status = okChains > 0 ? (okChains === run.chainResults.length ? "ok" : "partial") : "failed";
 }
 
 const runDecisionSummaries = run.decisions.map((item) => ({

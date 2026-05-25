@@ -327,35 +327,35 @@
       function renderDecisions() {
         const rows = visibleDecisions().slice(0, 100).map((item) => `
           <tr>
-            <td>${when(item.timestamp)}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
+            <td>${when(item.timestamp)}</td><td>${esc(item.chain || "-")}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
             <td>${num.format(n(item.score))}</td><td>${esc(item.walletType || "-")}</td><td>${money(item.amountUsd, true)}</td>
             <td>${num.format(n(item.triggerWalletCount))}</td><td>${pct(item.soldRatioPercent)}</td>
             <td>${item.signalPriceUsd ? money(item.signalPriceUsd) : "-"}</td><td>${item.buyUsd ? money(item.buyUsd) : item.sellUsd ? money(item.sellUsd) : "-"}</td>
             <td>${esc((item.blockers || []).join("; ") || item.reason || "-")}</td>
           </tr>`);
-        $("mainTable").innerHTML = table(["Time", "Token", "Address", "Action", "Score", "Type", "Signal", "Wallets", "Sold", "Price", "Order", "Reason"], rows, "No matching decisions.");
+        $("mainTable").innerHTML = table(["Time", "Chain", "Token", "Address", "Action", "Score", "Type", "Signal", "Wallets", "Sold", "Price", "Order", "Reason"], rows, "No matching decisions.");
       }
 
       function renderTrades() {
         const rows = (state.trades || []).slice(0, 100).map((item) => `
           <tr>
-            <td>${when(item.timestamp)}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
+            <td>${when(item.timestamp)}</td><td>${esc(item.chain || "-")}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
             <td>${money(item.grossUsd)}</td><td>${money(item.netUsd)}</td><td>${money(item.feeUsd)}</td>
             <td>${num.format(n(item.units))}</td><td>${num.format(n(item.score))}</td><td>${esc(item.reason || "-")}</td>
           </tr>`);
-        $("mainTable").innerHTML = table(["Time", "Token", "Address", "Action", "Gross", "Net", "Fee", "Units", "Score", "Reason"], rows, "No paper trades yet.");
+        $("mainTable").innerHTML = table(["Time", "Chain", "Token", "Address", "Action", "Gross", "Net", "Fee", "Units", "Score", "Reason"], rows, "No paper trades yet.");
       }
 
       function renderPositions() {
         const rows = (state.positions || []).slice(0, 100).map((item) => {
           const pnl = n(item.lastValueUsd) - n(item.costBasisUsd);
           return `<tr>
-            <td>${when(item.openedAt)}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.status)}</td>
+              <td>${when(item.openedAt)}</td><td>${esc(item.chain || "-")}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.status)}</td>
             <td>${money(item.costBasisUsd)}</td><td>${money(item.lastValueUsd)}</td><td class="${pnl >= 0 ? "positive" : "negative"}">${pnl >= 0 ? "+" : ""}${money(pnl)}</td>
             <td>${item.entryPriceUsd ? money(item.entryPriceUsd) : "-"}</td><td>${item.lastPriceUsd ? money(item.lastPriceUsd) : "-"}</td><td>${when(item.lastUpdatedAt)}</td>
           </tr>`;
         });
-        $("mainTable").innerHTML = table(["Opened", "Token", "Address", "Status", "Cost", "Value", "PnL", "Entry", "Last", "Updated"], rows, "No positions.");
+        $("mainTable").innerHTML = table(["Opened", "Chain", "Token", "Address", "Status", "Cost", "Value", "PnL", "Entry", "Last", "Updated"], rows, "No positions.");
       }
 
       function renderScanBars() {

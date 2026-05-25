@@ -5,11 +5,7 @@
   "description": "On-chain earning research and automation workspace.",
   "type": "module",
   "scripts": {
-    "check": "node scripts/check-env.js",
-    "docs": "node scripts/check-env.js --docs",
-    "fetch:meme": "node scripts/fetch-meme-data.js",
-    "simulate:meme": "node scripts/run-paper-sim.js",
-    "update:meme": "npm run fetch:meme && npm run simulate:meme",
+    "check": "node --check scripts/run-signal-paper-trader.js",
     "scan:signal": "node scripts/run-signal-paper-trader.js"
   },
   "engines": {
