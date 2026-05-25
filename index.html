@@ -296,6 +296,12 @@
       </section>
 
       <section class="panel" style="margin-top: 14px">
+        <h2>钱包黑名单</h2>
+        <p class="note">模拟亏损卖出后，自动把入场信号里的触发钱包地址入档；后续任何信号撞到这些地址都会被硬拦截。</p>
+        <div class="archive-list" id="walletBlacklist"></div>
+      </section>
+
+      <section class="panel" style="margin-top: 14px">
         <div class="toolbar">
           <div>
             <h2>每日策略总结</h2>
@@ -314,6 +320,7 @@
           <a class="file-card" href="./data/operation-log.json"><strong>操作日志</strong><span>每一轮扫描命令、状态、链结果、错误、重置和资金快照。</span></a>
           <a class="file-card" href="./data/daily-strategy-summary.json"><strong>每日策略总结</strong><span>每天汇总扫描、成交、阻断条件、盈亏和复盘结论。</span></a>
           <a class="file-card" href="./data/signal-paper.json"><strong>策略档案</strong><span>同一账本内的 strategyArchive 字段，记录最优、不及格和踩坑策略。</span></a>
+          <a class="file-card" href="./data/signal-paper.json"><strong>钱包黑名单</strong><span>同一账本内的 walletBlacklist 字段，记录造成亏损的触发钱包。</span></a>
           <a class="file-card" href="https://github.com/hwalletvip888-h/codex/blob/main/scripts/run-signal-paper-trader.js"><strong>扫描脚本</strong><span>Solana + BSC 信号扫描、评分、买入、持仓更新和止损止盈。</span></a>
           <a class="file-card" href="https://github.com/hwalletvip888-h/codex/blob/main/.github/workflows/signal-paper-scan.yml"><strong>定时任务</strong><span>GitHub Actions 每小时运行扫描并更新页面数据。</span></a>
           <a class="file-card" href="https://github.com/hwalletvip888-h/codex/blob/main/.github/workflows/daily-strategy-summary.yml"><strong>日报任务</strong><span>香港时间每天 23:55 自动生成策略模拟日报。</span></a>
@@ -378,6 +385,7 @@
         ok: "正常",
         partial: "部分成功",
         failed: "失败",
+        blacklisted: "黑名单",
         "Smart Money": "聪明钱",
         Whale: "巨鲸",
         "KOL/Influencer": "KOL/影响者",
@@ -432,6 +440,7 @@
         .replaceAll("missing token address", "缺少合约地址")
         .replaceAll("missing signal price", "缺少信号价格")
         .replaceAll("excluded wallet type: Smart Money", "已排除聪明钱")
+        .replaceAll("blacklisted source wallet:", "命中黑名单钱包：")
         .replaceAll("insufficient cash above reserve", "可用现金低于保留资金");
       const tag = (value) => `<span class="tag ${esc(String(value || "").toLowerCase())}">${esc(label(value))}</span>`;
       const tokenCell = (item) => `<div class="token"><strong>${esc(item.token || item.symbol || "-")}</strong><span>${esc(item.symbol || "")}</span></div>`;
@@ -631,6 +640,24 @@
         $("lessonArchive").innerHTML = (archive.lessons || []).slice(0, 6).map(archiveCard).join("") || `<p class="empty">暂无踩坑记录。</p>`;
       }
 
+      function renderWalletBlacklist() {
+        const entries = state.walletBlacklist?.entries || [];
+        $("walletBlacklist").innerHTML = entries.slice(0, 12).map((item) => {
+          const token = (item.tokens || [])[0] || {};
+          const loss = n(item.totalLossUsd);
+          return `
+            <div class="archive-item">
+              <div class="archive-top">
+                <strong class="mono">${esc(item.shortAddress || item.walletAddress || "-")}</strong>
+                ${tag(item.walletType || "blacklisted")}
+              </div>
+              <p>${esc(chainLabel(item.chain))} / 亏损次数 ${n(item.lossCount)} / 累计亏损 <span class="negative">${money(loss)}</span></p>
+              <p>最近样本：${esc(token.token || "-")} ${esc(token.symbol || "")} / ${esc(token.shortAddress || "")}</p>
+            </div>
+          `;
+        }).join("") || `<p class="empty">暂无亏损钱包黑名单。后续出现亏损卖出后会自动入档。</p>`;
+      }
+
       function renderDailySummary() {
         const latest = dailySummary?.latest;
         if (!latest) {
@@ -643,6 +670,7 @@
           ["权益变化", `${latest.equityStartUsd}U -> ${latest.equityEndUsd}U`, `${latest.equityChangeUsd >= 0 ? "+" : ""}${latest.equityChangeUsd}U`],
           ["模拟成交", `${latest.tradeCount} 笔`, `买入 ${latest.buys} / 卖出 ${latest.sells}`],
           ["已实现盈亏", `${latest.realizedPnlUsd >= 0 ? "+" : ""}${latest.realizedPnlUsd}U`, `买入金额 ${latest.buyUsd}U`],
+          ["钱包黑名单", `${latest.walletBlacklistCount || 0} 个地址`, "亏损卖出后自动入档"],
           ["主要阻断", latest.topBlockers?.[0]?.name || "暂无", latest.topBlockers?.[0] ? `${latest.topBlockers[0].count} 次` : "无"]
         ];
         $("dailySummary").innerHTML = cells.map(([title, value, meta]) => `
@@ -665,6 +693,7 @@
         renderRuns();
         renderConfig();
         renderStrategyArchive();
+        renderWalletBlacklist();
         renderDailySummary();
         if (activeTab === "trades") renderTrades();
         else if (activeTab === "positions") renderPositions();
