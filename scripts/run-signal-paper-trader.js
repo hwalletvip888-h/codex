@@ -157,7 +157,13 @@ function newState(now) {
     trades: [],
     decisions: [],
     runs: [],
-    mistakes: []
+    mistakes: [],
+    strategyArchive: {
+      updatedAt: now,
+      best: [],
+      rejected: [],
+      lessons: []
+    }
   };
 }
 
@@ -170,6 +176,12 @@ function normalizeState(state, now) {
   base.decisions = Array.isArray(base.decisions) ? base.decisions : [];
   base.runs = Array.isArray(base.runs) ? base.runs : [];
   base.mistakes = Array.isArray(base.mistakes) ? base.mistakes : [];
+  base.strategyArchive = base.strategyArchive && typeof base.strategyArchive === "object"
+    ? base.strategyArchive
+    : { updatedAt: now, best: [], rejected: [], lessons: [] };
+  base.strategyArchive.best = Array.isArray(base.strategyArchive.best) ? base.strategyArchive.best : [];
+  base.strategyArchive.rejected = Array.isArray(base.strategyArchive.rejected) ? base.strategyArchive.rejected : [];
+  base.strategyArchive.lessons = Array.isArray(base.strategyArchive.lessons) ? base.strategyArchive.lessons : [];
   return base;
 }
 
@@ -357,6 +369,149 @@ function updateCapital(state) {
     totalPnlUsd: round(equityUsd - STARTING_CAPITAL_USD, 2),
     totalPnlPct: round(((equityUsd - STARTING_CAPITAL_USD) / STARTING_CAPITAL_USD) * 100, 2)
   };
+}
+
+function strategyKey(prefix, fields) {
+  return `${prefix}:${fields.map((field) => String(field ?? "").toLowerCase()).join(":")}`;
+}
+
+function sampleToken(item) {
+  return {
+    token: item.token,
+    symbol: item.symbol,
+    address: item.address,
+    shortAddress: item.shortAddress,
+    chain: item.chain
+  };
+}
+
+function upsertArchiveEntry(list, entry, now) {
+  const existing = list.find((item) => item.key === entry.key);
+  if (!existing) {
+    list.unshift({
+      ...entry,
+      firstSeenAt: now,
+      lastSeenAt: now,
+      occurrences: 1,
+      examples: entry.example ? [entry.example] : []
+    });
+    return;
+  }
+
+  existing.lastSeenAt = now;
+  existing.occurrences = toNumber(existing.occurrences) + 1;
+  existing.score = round(Math.max(toNumber(existing.score), toNumber(entry.score)), 1);
+  existing.totalPnlUsd = round(toNumber(existing.totalPnlUsd) + toNumber(entry.totalPnlUsd), 2);
+  existing.wins = toNumber(existing.wins) + toNumber(entry.wins);
+  existing.losses = toNumber(existing.losses) + toNumber(entry.losses);
+  existing.status = entry.status || existing.status;
+  existing.rule = entry.rule || existing.rule;
+  existing.reason = entry.reason || existing.reason;
+  if (entry.example && !existing.examples.some((item) => item.address === entry.example.address && item.chain === entry.example.chain)) {
+    existing.examples.unshift(entry.example);
+    existing.examples = existing.examples.slice(0, 6);
+  }
+}
+
+function archiveStrategyLearnings(state, run, now) {
+  const archive = state.strategyArchive;
+  archive.updatedAt = now;
+
+  for (const decision of run.decisions) {
+    const chain = decision.chain || "unknown";
+    const walletType = decision.walletType || "Unknown";
+    const soldBucket = decision.soldRatioPercent <= 15 ? "sold<=15" : decision.soldRatioPercent <= 35 ? "sold<=35" : "sold>35";
+    const amountBucket = decision.amountUsd >= 1500 ? "amount>=1500" : decision.amountUsd >= 500 ? "amount>=500" : "amount<500";
+    const walletBucket = decision.triggerWalletCount >= 8 ? "wallets>=8" : decision.triggerWalletCount >= 2 ? "wallets>=2" : "wallets<2";
+
+    if (decision.action === "BUY") {
+      upsertArchiveEntry(archive.best, {
+        key: strategyKey("entry", [chain, walletType, amountBucket, walletBucket, soldBucket]),
+        title: `${chain} ${walletType} 入场模型`,
+        status: "候选最优",
+        rule: `评分 >= ${CONFIG.buyScoreThreshold}，金额/钱包数达标，已卖出比例 <= ${CONFIG.maxSoldRatioPercent}%`,
+        reason: decision.reason,
+        score: decision.score,
+        wins: 0,
+        losses: 0,
+        totalPnlUsd: 0,
+        example: sampleToken(decision)
+      }, now);
+    }
+
+    for (const blocker of decision.blockers || []) {
+      upsertArchiveEntry(archive.rejected, {
+        key: strategyKey("blocker", [chain, walletType, blocker]),
+        title: `${chain} ${walletType} 不及格条件`,
+        status: "归档拦截",
+        rule: blocker,
+        reason: decision.reason,
+        score: decision.score,
+        wins: 0,
+        losses: 0,
+        totalPnlUsd: 0,
+        example: sampleToken(decision)
+      }, now);
+    }
+  }
+
+  for (const trade of run.trades) {
+    if (trade.action !== "SELL") continue;
+    const pnl = toNumber(trade.realizedPnlUsd);
+    const target = pnl >= 0 ? archive.best : archive.rejected;
+    upsertArchiveEntry(target, {
+      key: strategyKey(pnl >= 0 ? "exit-win" : "exit-loss", [trade.chain, trade.walletType, trade.reason]),
+      title: pnl >= 0 ? `${trade.chain} 止盈/退出有效样本` : `${trade.chain} 亏损/止损样本`,
+      status: pnl >= 0 ? "已验证盈利" : "已归档亏损",
+      rule: trade.reason,
+      reason: trade.reason,
+      score: trade.score,
+      wins: pnl >= 0 ? 1 : 0,
+      losses: pnl < 0 ? 1 : 0,
+      totalPnlUsd: pnl,
+      example: sampleToken(trade)
+    }, now);
+
+    if (pnl < 0) {
+      upsertArchiveEntry(archive.lessons, {
+        key: strategyKey("lesson", [trade.chain, trade.address, trade.reason]),
+        title: "亏损复盘",
+        status: "需避免重复",
+        rule: "触发止损或亏损退出后自动归档",
+        reason: `${trade.token} ${trade.symbol || ""}: ${trade.reason}`,
+        score: trade.score,
+        wins: 0,
+        losses: 1,
+        totalPnlUsd: pnl,
+        example: sampleToken(trade)
+      }, now);
+    }
+  }
+
+  for (const mistake of run.mistakes || []) {
+    upsertArchiveEntry(archive.lessons, {
+      key: strategyKey("mistake", [mistake.type, mistake.chain || "global"]),
+      title: "执行踩坑",
+      status: "流程问题",
+      rule: mistake.lesson || "失败轮次必须照实记录",
+      reason: mistake.message,
+      score: 0,
+      wins: 0,
+      losses: 0,
+      totalPnlUsd: 0,
+      example: { token: mistake.type, symbol: mistake.chain || "global", address: "", shortAddress: "", chain: mistake.chain || "global" }
+    }, now);
+  }
+
+  archive.best = archive.best
+    .sort((a, b) => (b.wins - b.losses) - (a.wins - a.losses) || b.occurrences - a.occurrences || b.score - a.score)
+    .slice(0, 80);
+  archive.rejected = archive.rejected
+    .sort((a, b) => b.occurrences - a.occurrences || b.losses - a.losses || b.score - a.score)
+    .slice(0, 120);
+  archive.lessons = archive.lessons
+    .sort((a, b) => b.occurrences - a.occurrences || b.losses - a.losses)
+    .slice(0, 80);
 }
 
 const now = new Date().toISOString();
@@ -629,6 +784,7 @@ for (const mistake of run.mistakes) {
 }
 state.mistakes = state.mistakes.slice(0, 200);
 updateCapital(state);
+archiveStrategyLearnings(state, run, now);
 run.finishedAt = new Date().toISOString();
 run.capital = { ...state.capital };
 state.runs.unshift(run);
