@@ -1,10 +1,80 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-25T23:52:10.972Z",
+  "generatedAt": "2026-05-25T23:55:31.528Z",
   "source": "docs/data/signal-paper.json",
-  "totalRuns": 25,
-  "latestRunId": "20260525235210",
+  "totalRuns": 26,
+  "latestRunId": "20260525235529",
   "entries": [
+    {
+      "runId": "20260525235529",
+      "startedAt": "2026-05-25T23:55:29.939Z",
+      "finishedAt": "2026-05-25T23:55:31.329Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 51,
+      "decisions": 51,
+      "trades": 4,
+      "mistakes": [],
+      "notes": [
+        "授权恢复或重新登录后，已按规则重置模拟本金为 3000U。历史轮次保留用于审计，不混入新会话本金。"
+      ],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 4,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 1,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": {
+        "timestamp": "2026-05-25T23:55:29.939Z",
+        "runId": "20260525235529",
+        "reason": "auth_recovered_after_login",
+        "previousSession": {
+          "id": "20260525195059",
+          "startedAt": "2026-05-25T19:50:59.186Z",
+          "lastAuthOkAt": "2026-05-25T19:50:59.186Z",
+          "lastAuthFailureAt": "2026-05-25T23:19:17.164Z",
+          "authState": "auth_failed",
+          "authRecoveries": 2,
+          "resetReason": "auth_recovered_after_login"
+        },
+        "previousCapital": {
+          "initialUsd": 3000,
+          "cashUsd": 2565.3,
+          "openValueUsd": 521.37,
+          "equityUsd": 3086.67,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 86.67,
+          "totalPnlUsd": 86.67,
+          "totalPnlPct": 2.89
+        },
+        "previousOpenPositions": 2,
+        "previousTrades": 2,
+        "previousDecisions": 51
+      },
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2562.77,
+        "openValueUsd": 401.74,
+        "equityUsd": 2964.51,
+        "realizedPnlUsd": -111.43,
+        "unrealizedPnlUsd": 75.94,
+        "totalPnlUsd": -35.49,
+        "totalPnlPct": -1.18
+      }
+    },
     {
       "runId": "20260525235210",
       "startedAt": "2026-05-25T23:52:10.605Z",
