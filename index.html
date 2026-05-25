@@ -1,235 +1,140 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Onchain OS | SOL 链迷因币监控面板</title>
+    <title>Onchain OS | Signal Paper Desk</title>
     <style>
       :root {
         color-scheme: dark;
-        --bg: #090d11;
-        --panel: #121923;
-        --panel-soft: #172130;
-        --text: #edf4f8;
-        --muted: #9fb0bd;
-        --line: #263546;
-        --green: #52d273;
-        --cyan: #49c6e5;
-        --yellow: #f5c542;
+        --bg: #0f1115;
+        --panel: #171a20;
+        --panel-2: #20252d;
+        --line: #303640;
+        --text: #f2f4f8;
+        --muted: #aab3c2;
+        --green: #58d68d;
         --red: #ff6b6b;
-        --blue: #7aa2ff;
+        --amber: #f5c542;
+        --cyan: #54c6eb;
+        --violet: #a98bff;
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
-        background: var(--bg);
+        background:
+          linear-gradient(180deg, rgba(84, 198, 235, 0.08), transparent 280px),
+          var(--bg);
         color: var(--text);
-        font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          "Segoe UI", sans-serif;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
 
       main {
-        width: min(1440px, calc(100% - 32px));
+        width: min(1540px, calc(100% - 32px));
         margin: 0 auto;
-        padding: 28px 0 40px;
+        padding: 26px 0 42px;
       }
 
       header {
         display: grid;
-        gap: 16px;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 18px;
         align-items: end;
+        padding-bottom: 18px;
         border-bottom: 1px solid var(--line);
-        padding-bottom: 22px;
       }
 
-      h1,
-      h2,
-      h3,
-      p {
-        margin: 0;
-      }
-
-      h1 {
-        font-size: 34px;
-        line-height: 1.1;
-        letter-spacing: 0;
-      }
-
-      h2 {
-        font-size: 18px;
-        margin-bottom: 14px;
-      }
-
-      h3 {
-        font-size: 14px;
-        color: var(--muted);
-        font-weight: 600;
-      }
+      h1, h2, h3, p { margin: 0; }
+      h1 { font-size: clamp(28px, 4vw, 46px); line-height: 1.05; letter-spacing: 0; }
+      h2 { font-size: 17px; margin-bottom: 12px; }
+      h3 { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; }
 
       .subtitle {
+        max-width: 960px;
         margin-top: 10px;
         color: var(--muted);
-        max-width: 920px;
-        line-height: 1.7;
+        line-height: 1.6;
       }
 
       .status {
-        display: flex;
-        gap: 10px;
+        display: inline-flex;
         align-items: center;
-        justify-content: flex-end;
-        color: var(--muted);
-        font-size: 14px;
-      }
-
-      .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--green);
-      }
-
-      .grid {
-        display: grid;
-        gap: 16px;
-      }
-
-      .metrics {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin-top: 22px;
-      }
-
-      .layout {
-        grid-template-columns: 1fr;
-        margin-top: 16px;
-      }
-
-      .split {
-        grid-template-columns: 1fr 1fr;
-        margin-top: 16px;
-      }
-
-      .card {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        padding: 18px;
-      }
-
-      .metric {
-        min-height: 112px;
-      }
-
-      .metric strong {
-        display: block;
-        font-size: 28px;
-        margin-top: 12px;
-      }
-
-      .metric span {
-        display: block;
-        color: var(--muted);
-        margin-top: 8px;
-        font-size: 13px;
-      }
-
-      .simulation {
-        margin-top: 16px;
-      }
-
-      .sim-summary {
-        display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
         gap: 10px;
-        margin: 14px 0;
-      }
-
-      .sim-kpi {
-        min-height: 78px;
-        padding: 12px;
+        min-height: 38px;
+        padding: 0 12px;
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: var(--panel-soft);
+        background: var(--panel);
+        color: var(--muted);
+        white-space: nowrap;
       }
 
-      .sim-kpi strong {
-        display: block;
-        margin-top: 8px;
-        font-size: 20px;
+      .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--amber); }
+      .dot.ok { background: var(--green); }
+      .dot.bad { background: var(--red); }
+
+      .grid { display: grid; gap: 14px; }
+      .metrics { grid-template-columns: repeat(6, minmax(0, 1fr)); margin-top: 18px; }
+      .layout { grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.65fr); margin-top: 14px; align-items: start; }
+      .two { grid-template-columns: 1fr 1fr; margin-top: 14px; }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(23, 26, 32, 0.94);
+        padding: 16px;
       }
 
-      .positive {
-        color: var(--green);
-      }
+      .metric { min-height: 112px; }
+      .metric strong { display: block; margin-top: 10px; font-size: 25px; }
+      .metric span, .note { color: var(--muted); font-size: 13px; line-height: 1.55; }
+      .note { margin-top: 8px; }
+      .positive { color: var(--green); }
+      .negative { color: var(--red); }
 
-      .negative {
-        color: var(--red);
-      }
-
-      .section-head {
+      .toolbar {
         display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         align-items: center;
         justify-content: space-between;
-        gap: 12px;
         margin-bottom: 12px;
       }
 
-      .table-wrap {
-        overflow-x: auto;
-      }
-
-      table {
-        width: 100%;
-        min-width: 1180px;
-        border-collapse: collapse;
-        font-size: 14px;
-      }
-
-      th,
-      td {
-        text-align: left;
-        border-bottom: 1px solid var(--line);
-        padding: 12px 8px;
-        vertical-align: middle;
-      }
-
-      th {
-        color: var(--muted);
-        font-weight: 600;
-      }
-
-      tr:last-child td {
-        border-bottom: 0;
-      }
-
-      .token-name {
-        display: grid;
+      .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+      .tabs {
+        display: inline-flex;
         gap: 4px;
-        min-width: 130px;
+        padding: 4px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel-2);
       }
 
-      .token-name strong {
-        font-size: 14px;
+      button, select, input {
+        min-height: 34px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--panel-2);
+        color: var(--text);
       }
 
-      .token-name span {
-        color: var(--muted);
-        font-size: 12px;
-      }
+      button { padding: 0 12px; cursor: pointer; }
+      button.active { background: var(--cyan); color: #061016; border-color: var(--cyan); }
+      select { padding: 0 10px; }
+      input { width: 220px; padding: 0 10px; }
 
-      .mono {
-        font-family:
-          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", monospace;
-        color: var(--cyan);
-        white-space: nowrap;
-      }
+      .table-wrap { overflow-x: auto; }
+      table { width: 100%; min-width: 1120px; border-collapse: collapse; font-size: 13px; }
+      th, td { padding: 11px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+      th { color: var(--muted); font-weight: 700; }
+      tr:last-child td { border-bottom: 0; }
+
+      .token { display: grid; gap: 3px; min-width: 150px; }
+      .token span { color: var(--muted); font-size: 12px; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; color: var(--cyan); white-space: nowrap; }
 
       .tag {
         display: inline-flex;
@@ -238,99 +143,39 @@
         border-radius: 999px;
         padding: 2px 9px;
         border: 1px solid var(--line);
-        background: var(--panel-soft);
+        background: var(--panel-2);
         color: var(--text);
-        font-size: 12px;
         white-space: nowrap;
       }
+      .tag.buy, .tag.ok, .tag.open { color: var(--green); }
+      .tag.hold, .tag.watch { color: var(--amber); }
+      .tag.failed, .tag.sell, .tag.skip, .tag.ignore, .tag.closed { color: var(--red); }
 
-      .tag.green {
-        color: var(--green);
-      }
-
-      .tag.yellow {
-        color: var(--yellow);
-      }
-
-      .tag.red {
-        color: var(--red);
-      }
-
-      .tag.blue {
-        color: var(--blue);
-      }
-
-      .field-list {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-      }
-
-      .field {
-        min-height: 72px;
+      .bar-chart { display: grid; align-items: end; grid-template-columns: repeat(24, minmax(6px, 1fr)); gap: 5px; height: 150px; padding-top: 10px; }
+      .bar { min-height: 3px; border-radius: 4px 4px 0 0; background: var(--violet); }
+      .sparkline { width: 100%; height: 82px; display: block; }
+      .run-list, .risk-list { display: grid; gap: 10px; }
+      .run-item, .risk-row {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel-2);
         padding: 12px;
-        background: var(--panel-soft);
-        border: 1px solid var(--line);
-        border-radius: 8px;
       }
+      .run-top, .risk-row { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+      .risk-meter { flex: 1; height: 8px; border-radius: 999px; background: #11161d; overflow: hidden; }
+      .risk-fill { height: 100%; border-radius: inherit; background: var(--cyan); }
+      .empty { color: var(--muted); padding: 14px 0; }
+      a { color: var(--cyan); text-decoration: none; }
+      a:hover { text-decoration: underline; }
 
-      .field p {
-        color: var(--muted);
-        margin-top: 6px;
-        line-height: 1.55;
-        font-size: 13px;
+      @media (max-width: 1180px) {
+        .metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .layout, .two { grid-template-columns: 1fr; }
       }
-
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 16px;
-      }
-
-      a {
-        color: var(--cyan);
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      .link-button {
-        display: inline-flex;
-        align-items: center;
-        min-height: 36px;
-        padding: 0 12px;
-        border-radius: 8px;
-        border: 1px solid var(--line);
-        background: var(--panel-soft);
-        color: var(--text);
-      }
-
-      .notes {
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.65;
-        margin-top: 12px;
-      }
-
-      .error {
-        color: var(--red);
-      }
-
-      @media (max-width: 980px) {
-        header,
-        .metrics,
-        .sim-summary,
-        .split,
-        .field-list {
-          grid-template-columns: 1fr;
-        }
-
-        .status {
-          justify-content: flex-start;
-        }
+      @media (max-width: 720px) {
+        header, .metrics { grid-template-columns: 1fr; }
+        main { width: min(100% - 20px, 1540px); }
+        input { width: 100%; }
       }
     </style>
   </head>
@@ -338,574 +183,274 @@
     <main>
       <header>
         <div>
-          <h1>Onchain OS SOL 链迷因币监控面板</h1>
+          <h1>Signal Paper Desk</h1>
           <p class="subtitle">
-            面板展示还未毕业的迷因币和刚毕业的迷因币真实数据。数据来自 OKX Onchain OS，当前只做研究、观察、拦截和交易草案，不自动买入，不自动广播交易。
+            A GitHub Pages dashboard for the 3000U Onchain OS paper account. It reads only committed ledger data from <span class="mono">docs/data/signal-paper.json</span>: real scans, simulated orders, skipped signals, failures, and review notes.
           </p>
         </div>
         <div class="status">
-          <span class="dot" aria-hidden="true"></span>
-          <span id="dataStatus">正在加载真实数据</span>
+          <span class="dot" id="statusDot" aria-hidden="true"></span>
+          <span id="statusText">Loading ledger</span>
         </div>
       </header>
 
-      <section class="grid metrics" aria-label="核心指标">
-        <article class="card metric">
-          <h3>未毕业池</h3>
-          <strong id="ungraduatedCount">-</strong>
-          <span>新创建、迁移中、发射进度未完成</span>
-        </article>
-        <article class="card metric">
-          <h3>刚毕业池</h3>
-          <strong id="graduatedCount">-</strong>
-          <span>毕业后三天内，观察承接和出货</span>
-        </article>
-        <article class="card metric">
-          <h3>重点看承接</h3>
-          <strong id="watchCount">-</strong>
-          <span>成交量高，头部持仓不过分集中</span>
-        </article>
-        <article class="card metric">
-          <h3>数据更新时间</h3>
-          <strong id="fetchedAt">-</strong>
-          <span>香港时间，来自本地生成的数据文件</span>
-        </article>
-      </section>
-
-      <section class="card simulation">
-        <div class="section-head">
-          <div>
-            <h2>1000U SOL 等值纸面交易实验</h2>
-            <p class="notes">
-              自动模式只用真实链上数据推进模拟账本，买入和卖出都扣估算滑点与手续费；不连接钱包、不签名、不广播真实交易。
-            </p>
-          </div>
-          <span class="tag green" id="simulationMode">纸面自动模式</span>
-        </div>
-
-        <div class="sim-summary" aria-label="纸面交易实验资金">
-          <div class="sim-kpi">
-            <h3>初始本金</h3>
-            <strong id="simInitial">-</strong>
-          </div>
-          <div class="sim-kpi">
-            <h3>当前现金</h3>
-            <strong id="simCash">-</strong>
-          </div>
-          <div class="sim-kpi">
-            <h3>持仓估值</h3>
-            <strong id="simOpenValue">-</strong>
-          </div>
-          <div class="sim-kpi">
-            <h3>当前权益</h3>
-            <strong id="simEquity">-</strong>
-          </div>
-          <div class="sim-kpi">
-            <h3>累计盈亏</h3>
-            <strong id="simPnl">-</strong>
-          </div>
-        </div>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>代币</th>
-                <th>动作</th>
-                <th>评分</th>
-                <th>阶段</th>
-                <th>毕业进度</th>
-                <th>1小时量</th>
-                <th>买盘占比</th>
-                <th>持币人数</th>
-                <th>模拟买入</th>
-                <th>模拟卖出</th>
-                <th>买入滑点</th>
-                <th>卖出滑点</th>
-                <th>估算盈亏</th>
-                <th>原因</th>
-              </tr>
-            </thead>
-            <tbody id="simulationRows">
-              <tr>
-                <td colspan="14">正在加载纸面实验</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="section-head" style="margin-top: 18px">
-          <h2>最近纸面成交</h2>
-          <span class="tag blue">记录真实数据驱动的模拟买卖</span>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>时间</th>
-                <th>代币</th>
-                <th>动作</th>
-                <th>买入金额</th>
-                <th>卖出金额</th>
-                <th>扣减后金额</th>
-                <th>滑点</th>
-                <th>手续费</th>
-                <th>评分</th>
-                <th>已实现盈亏</th>
-                <th>原因</th>
-              </tr>
-            </thead>
-            <tbody id="tradeRows">
-              <tr>
-                <td colspan="11">正在加载纸面成交</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="notes" id="simulationUpdated">等待模拟账本加载。</p>
+      <section class="grid metrics" aria-label="Account metrics">
+        <article class="panel metric"><h3>Initial</h3><strong id="initialUsd">-</strong><span>paper USDT capital</span></article>
+        <article class="panel metric"><h3>Cash</h3><strong id="cashUsd">-</strong><span>available after fees</span></article>
+        <article class="panel metric"><h3>Open Value</h3><strong id="openValueUsd">-</strong><span>latest marked positions</span></article>
+        <article class="panel metric"><h3>Equity</h3><strong id="equityUsd">-</strong><span>cash plus open value</span></article>
+        <article class="panel metric"><h3>Total PnL</h3><strong id="pnlUsd">-</strong><span id="pnlPct">-</span></article>
+        <article class="panel metric"><h3>Last Scan</h3><strong id="lastRun">-</strong><span id="lastRunMeta">-</span></article>
       </section>
 
       <section class="grid layout">
-        <article class="card">
-          <div class="section-head">
-            <h2>未毕业迷因币观察池</h2>
-            <span class="tag yellow">优先看风险和进度</span>
+        <article class="panel">
+          <div class="toolbar">
+            <div>
+              <h2>Signal Ledger</h2>
+              <p class="note">Filter the audit trail by action, token, symbol, wallet type, or blocker text.</p>
+            </div>
+            <div class="controls">
+              <input id="searchInput" type="search" placeholder="Search token, symbol, address" />
+              <select id="actionFilter" aria-label="Action filter">
+                <option value="all">All actions</option>
+                <option value="BUY">BUY</option>
+                <option value="SELL">SELL</option>
+                <option value="HOLD">HOLD</option>
+                <option value="WATCH">WATCH</option>
+                <option value="IGNORE">IGNORE</option>
+              </select>
+              <div class="tabs" aria-label="View switcher">
+                <button class="active" data-tab="decisions">Decisions</button>
+                <button data-tab="trades">Trades</button>
+                <button data-tab="positions">Positions</button>
+              </div>
+            </div>
           </div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>代币</th>
-                  <th>地址</th>
-                  <th>来源</th>
-                  <th>阶段</th>
-                  <th>发射进度</th>
-                  <th>市值</th>
-                  <th>1小时量</th>
-                  <th>买/卖</th>
-                  <th>持有人</th>
-                  <th>头部10</th>
-                  <th>开发者</th>
-                  <th>捆绑</th>
-                  <th>狙击</th>
-                  <th>判断</th>
-                </tr>
-              </thead>
-              <tbody id="ungraduatedRows">
-                <tr>
-                  <td colspan="14">正在加载</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="notes">
-            未毕业池主要看：发射进度、买盘是否真实、开发者历史、同车钱包、捆绑交易、狙击钱包、头部持仓、是否具备毕业后的承接可能。
-          </p>
+          <div class="table-wrap" id="mainTable"></div>
         </article>
 
-        <article class="card">
-          <div class="section-head">
-            <h2>刚毕业迷因币追踪池</h2>
-            <span class="tag green">重点看承接和退出</span>
-          </div>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>代币</th>
-                  <th>地址</th>
-                  <th>来源</th>
-                  <th>毕业时间</th>
-                  <th>市值</th>
-                  <th>1小时量</th>
-                  <th>买/卖</th>
-                  <th>持有人</th>
-                  <th>头部10</th>
-                  <th>捆绑</th>
-                  <th>狙击</th>
-                  <th>疑似钓鱼</th>
-                  <th>判断</th>
-                </tr>
-              </thead>
-              <tbody id="graduatedRows">
-                <tr>
-                  <td colspan="13">正在加载</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="notes">
-            刚毕业池主要看：毕业后的市值变化、真实成交量、持有人增长、聪明钱是否继续持有、卖出路径、滑点、回撤结构和是否出现开发者出货。
-          </p>
+        <aside class="grid">
+          <article class="panel">
+            <h2>Equity Curve</h2>
+            <svg class="sparkline" id="equityLine" role="img" aria-label="Equity curve"></svg>
+            <p class="note" id="equityNote">Waiting for account snapshots.</p>
+          </article>
+          <article class="panel">
+            <h2>Scan Volume</h2>
+            <div class="bar-chart" id="scanBars" aria-label="Recent scan signal counts"></div>
+            <p class="note" id="scanNote">Waiting for scan records.</p>
+          </article>
+          <article class="panel">
+            <h2>Risk Blocks</h2>
+            <div class="risk-list" id="riskList"></div>
+          </article>
+        </aside>
+      </section>
+
+      <section class="grid two">
+        <article class="panel">
+          <h2>Run Audit</h2>
+          <div class="run-list" id="runList"></div>
+        </article>
+        <article class="panel">
+          <h2>Strategy Rules</h2>
+          <div class="table-wrap" id="configTable"></div>
         </article>
       </section>
 
-      <section class="grid split">
-        <article class="card">
-          <h2>未毕业币需要展示的信息</h2>
-          <div class="field-list">
-            <div class="field">
-              <h3>基础信息</h3>
-              <p>代币名称、铸币地址、池子地址、创建时间、阶段、发射进度、协议来源。</p>
-            </div>
-            <div class="field">
-              <h3>市场信息</h3>
-              <p>当前价格、市值、流动性、成交量、买卖笔数、买盘占比、价格变化。</p>
-            </div>
-            <div class="field">
-              <h3>持仓信息</h3>
-              <p>持有人数量、头部持仓比例、新钱包比例、同车钱包、持仓簇集中度。</p>
-            </div>
-            <div class="field">
-              <h3>风险信息</h3>
-              <p>开发者历史、开发者持仓、相似项目、捆绑交易、狙击钱包、可疑出货。</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <h2>刚毕业币需要展示的信息</h2>
-          <div class="field-list">
-            <div class="field">
-              <h3>毕业信息</h3>
-              <p>毕业时间、毕业市值、毕业池子、迁移后交易场所、初始流动性。</p>
-            </div>
-            <div class="field">
-              <h3>承接信息</h3>
-              <p>毕业后成交量、价格回撤、持有人增长、买卖方向、聪明钱持仓变化。</p>
-            </div>
-            <div class="field">
-              <h3>退出信息</h3>
-              <p>卖出路径、预估滑点、报价、价格影响、可卖状态、止损条件。</p>
-            </div>
-            <div class="field">
-              <h3>复盘信息</h3>
-              <p>入选原因、拦截原因、交易草案、实际执行、收益亏损、是否按计划执行。</p>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="card" style="margin-top: 16px">
-        <h2>项目文档</h2>
-        <div class="links">
-          <a class="link-button" href="./data/meme.json">真实数据文件</a>
-          <a class="link-button" href="./data/simulation.json">纸面实验账本</a>
-          <a class="link-button" href="./PROJECT_MEMORY.md">项目记忆</a>
-          <a class="link-button" href="./MEME_STRATEGY.md">迷因币策略</a>
-          <a class="link-button" href="./PAPER_SIMULATION.md">纸面实验规则</a>
-          <a class="link-button" href="./DATA_INTEGRATION_MATRIX.md">数据对接矩阵</a>
-          <a class="link-button" href="./RISK_CONTROL.md">风险控制</a>
-          <a class="link-button" href="./HUMMINGBOT_API_NOTES.md">Hummingbot 评估</a>
-          <a class="link-button" href="./HUMMINGBOT_EXECUTION_PLAN.md">Hummingbot 执行规划</a>
-        </div>
+      <section class="panel" style="margin-top: 14px">
+        <h2>Repository Links</h2>
+        <p class="note">
+          Stable dashboard: <a href="https://hwalletvip888-h.github.io/codex/">https://hwalletvip888-h.github.io/codex/</a>.
+          Ledger JSON: <a href="./data/signal-paper.json">docs/data/signal-paper.json</a>.
+          Local command: <span class="mono">npm run scan:signal</span>.
+        </p>
       </section>
     </main>
 
     <script>
-      const numberFmt = new Intl.NumberFormat("zh-CN");
-      const usdFmt = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-        notation: "compact",
-        maximumFractionDigits: 2
-      });
-      const timeFmt = new Intl.DateTimeFormat("zh-CN", {
-        timeZone: "Asia/Hong_Kong",
-        month: "2-digit",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit"
-      });
+      const usd = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 2 });
+      const compactUsd = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", notation: "compact", maximumFractionDigits: 2 });
+      const num = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
+      const time = new Intl.DateTimeFormat("zh-CN", { timeZone: "Asia/Hong_Kong", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
+      let state = null;
+      let activeTab = "decisions";
 
-      function text(value) {
-        return value === null || value === undefined || value === "" ? "-" : String(value);
-      }
-
-      function fmtUsd(value) {
-        return Number.isFinite(value) ? usdFmt.format(value) : "-";
-      }
-
-      function fmtSignedUsd(value) {
-        if (!Number.isFinite(value)) {
-          return "-";
-        }
-        const prefix = value > 0 ? "+" : "";
-        return `${prefix}${usdFmt.format(value)}`;
-      }
-
-      function fmtPct(value) {
-        return Number.isFinite(value) ? `${value.toFixed(value >= 10 ? 1 : 2)}%` : "-";
-      }
-
-      function fmtNum(value) {
-        return Number.isFinite(value) ? numberFmt.format(value) : "-";
-      }
-
-      function fmtTime(value) {
-        if (!value) {
-          return "-";
-        }
+      const $ = (id) => document.getElementById(id);
+      const n = (value) => Number.isFinite(Number(value)) ? Number(value) : 0;
+      const money = (value, compact = false) => (compact ? compactUsd : usd).format(n(value));
+      const pct = (value) => `${num.format(n(value))}%`;
+      const when = (value) => {
+        if (!value) return "-";
         const date = new Date(value);
-        return Number.isNaN(date.getTime()) ? "-" : timeFmt.format(date);
+        return Number.isNaN(date.getTime()) ? "-" : time.format(date);
+      };
+      const esc = (value) => String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[ch]);
+      const tag = (value) => `<span class="tag ${esc(String(value || "").toLowerCase())}">${esc(value || "-")}</span>`;
+      const tokenCell = (item) => `<div class="token"><strong>${esc(item.token || item.symbol || "-")}</strong><span>${esc(item.symbol || "")}</span></div>`;
+      const addressLink = (item) => {
+        if (!item.address) return "-";
+        const label = item.shortAddress || `${item.address.slice(0, 6)}...${item.address.slice(-4)}`;
+        return `<a class="mono" href="https://solscan.io/token/${encodeURIComponent(item.address)}" target="_blank" rel="noreferrer">${esc(label)}</a>`;
+      };
+
+      function table(headers, rows, emptyText) {
+        if (!rows.length) return `<p class="empty">${esc(emptyText)}</p>`;
+        return `<table><thead><tr>${headers.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows.join("")}</tbody></table>`;
       }
 
-      function tagClass(value) {
-        if (value === "高风险" || value === "跳过" || value === "模拟卖出") {
-          return "red";
-        }
-        if (value === "重点看承接" || value === "临近毕业观察" || value === "模拟买入") {
-          return "green";
-        }
-        if (value === "需复查" || value === "继续持仓" || value === "观察") {
-          return "yellow";
-        }
-        return "blue";
-      }
-
-      function makeCell(value, className) {
-        const td = document.createElement("td");
-        if (className) {
-          td.className = className;
-        }
-        td.textContent = text(value);
-        return td;
-      }
-
-      function makePnlCell(value) {
-        const numeric = Number(value);
-        return makeCell(fmtSignedUsd(numeric), numeric >= 0 ? "positive" : "negative");
-      }
-
-      function makeTag(value) {
-        const td = document.createElement("td");
-        const span = document.createElement("span");
-        span.className = `tag ${tagClass(value)}`;
-        span.textContent = text(value);
-        td.append(span);
-        return td;
-      }
-
-      function makeTokenCell(item) {
-        const td = document.createElement("td");
-        const wrap = document.createElement("div");
-        const name = document.createElement("strong");
-        const symbol = document.createElement("span");
-        wrap.className = "token-name";
-        name.textContent = text(item.name);
-        symbol.textContent = text(item.symbol);
-        wrap.append(name, symbol);
-        td.append(wrap);
-        return td;
-      }
-
-      function makeAddressCell(item) {
-        const td = document.createElement("td");
-        const link = document.createElement("a");
-        link.className = "mono";
-        link.href = `https://solscan.io/token/${encodeURIComponent(item.address)}`;
-        link.target = "_blank";
-        link.rel = "noreferrer";
-        link.textContent = text(item.shortAddress);
-        td.append(link);
-        return td;
-      }
-
-      function renderRows(id, items, cells) {
-        const body = document.getElementById(id);
-        body.replaceChildren();
-
-        if (!items.length) {
-          const row = document.createElement("tr");
-          const cell = document.createElement("td");
-          cell.colSpan = 14;
-          cell.textContent = "暂无数据";
-          row.append(cell);
-          body.append(row);
-          return;
-        }
-
-        for (const item of items.slice(0, 20)) {
-          const row = document.createElement("tr");
-          for (const cell of cells(item)) {
-            row.append(cell);
-          }
-          body.append(row);
-        }
-      }
-
-      function renderError(id, message, colSpan) {
-        const body = document.getElementById(id);
-        const row = document.createElement("tr");
-        const cell = document.createElement("td");
-        cell.colSpan = colSpan;
-        cell.className = "error";
-        cell.textContent = message;
-        row.append(cell);
-        body.replaceChildren(row);
-      }
-
-      async function loadJson(path) {
-        const response = await fetch(path, { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error("数据文件读取失败");
-        }
-        return response.json();
-      }
-
-      function setPnlText(id, value) {
-        const node = document.getElementById(id);
-        node.textContent = fmtSignedUsd(value);
-        node.className = value >= 0 ? "positive" : "negative";
-      }
-
-      function renderSimulationRows(items) {
-        const body = document.getElementById("simulationRows");
-        body.replaceChildren();
-
-        if (!items.length) {
-          const row = document.createElement("tr");
-          const cell = document.createElement("td");
-          cell.colSpan = 14;
-          cell.textContent = "暂无纸面实验数据";
-          row.append(cell);
-          body.append(row);
-          return;
-        }
-
-        for (const item of items.slice(0, 24)) {
-          const row = document.createElement("tr");
-          row.append(
-            makeTokenCell({ name: item.token, symbol: item.symbol }),
-            makeTag(item.decision),
-            makeCell(fmtNum(item.score)),
-            makeTag(item.stageLabel),
-            makeCell(fmtPct(item.bondingPercent)),
-            makeCell(fmtUsd(item.volumeUsd1h)),
-            makeCell(fmtPct(item.buyRatioPct)),
-            makeCell(fmtNum(item.holders)),
-            makeCell(fmtUsd(item.buyUsd)),
-            makeCell(fmtUsd(item.sellUsd || item.estimatedSellUsd)),
-            makeCell(fmtPct(item.buySlippagePct)),
-            makeCell(fmtPct(item.sellSlippagePct)),
-            makePnlCell(Number(item.pnlUsd)),
-            makeCell(item.reason)
-          );
-          body.append(row);
-        }
-      }
-
-      function renderTradeRows(items) {
-        const body = document.getElementById("tradeRows");
-        body.replaceChildren();
-
-        if (!items.length) {
-          const row = document.createElement("tr");
-          const cell = document.createElement("td");
-          cell.colSpan = 11;
-          cell.textContent = "暂无纸面成交";
-          row.append(cell);
-          body.append(row);
-          return;
-        }
-
-        for (const item of items.slice(0, 12)) {
-          const row = document.createElement("tr");
-          const isBuy = item.action === "BUY";
-          const isSell = item.action === "SELL";
-          row.append(
-            makeCell(fmtTime(item.timestamp)),
-            makeTokenCell({ name: item.token, symbol: item.symbol }),
-            makeTag(isBuy ? "模拟买入" : "模拟卖出"),
-            makeCell(isBuy ? fmtUsd(item.grossUsd) : "-"),
-            makeCell(isSell ? fmtUsd(item.grossUsd) : "-"),
-            makeCell(fmtUsd(item.netUsd)),
-            makeCell(fmtPct(item.slippagePct)),
-            makeCell(fmtUsd(item.feeUsd)),
-            makeCell(fmtNum(item.score)),
-            makePnlCell(Number(item.realizedPnlUsd ?? 0)),
-            makeCell(item.reason)
-          );
-          body.append(row);
-        }
-      }
-
-      function renderSimulation(data) {
-        const capital = data.capital ?? {};
-        document.getElementById("simInitial").textContent = fmtUsd(Number(capital.initialUsd));
-        document.getElementById("simCash").textContent = fmtUsd(Number(capital.cashUsd));
-        document.getElementById("simOpenValue").textContent = fmtUsd(Number(capital.openValueUsd));
-        document.getElementById("simEquity").textContent = fmtUsd(Number(capital.equityUsd));
-        setPnlText("simPnl", Number(capital.totalPnlUsd));
-        document.getElementById("simulationMode").textContent = data.mode === "paper-auto" ? "纸面自动模式" : "纸面模式";
-        document.getElementById("simulationUpdated").textContent =
-          `账本更新：${fmtTime(data.updatedAt)}；真实数据：${fmtTime(data.sourceMemeFetchedAt)}；当前不执行真实交易。`;
-        renderSimulationRows(data.decisions ?? []);
-        renderTradeRows(data.trades ?? []);
-      }
-
-      loadJson("./data/simulation.json")
-        .then(renderSimulation)
-        .catch((error) => {
-          document.getElementById("simulationMode").textContent = "实验加载失败";
-          document.getElementById("simulationMode").className = "tag red";
-          document.getElementById("simulationUpdated").textContent = error.message;
-          renderError("simulationRows", error.message, 14);
-          renderError("tradeRows", error.message, 11);
+      function visibleDecisions() {
+        const q = $("searchInput").value.trim().toLowerCase();
+        const action = $("actionFilter").value;
+        return (state.decisions || []).filter((item) => {
+          const text = [item.token, item.symbol, item.address, item.walletType, item.reason, ...(item.blockers || [])].join(" ").toLowerCase();
+          return (!q || text.includes(q)) && (action === "all" || item.action === action);
         });
+      }
 
-      loadJson("./data/meme.json")
+      function renderMetrics() {
+        const capital = state.capital || {};
+        const latest = (state.runs || [])[0] || {};
+        $("initialUsd").textContent = money(capital.initialUsd);
+        $("cashUsd").textContent = money(capital.cashUsd);
+        $("openValueUsd").textContent = money(capital.openValueUsd);
+        $("equityUsd").textContent = money(capital.equityUsd);
+        const pnl = n(capital.totalPnlUsd);
+        $("pnlUsd").textContent = `${pnl >= 0 ? "+" : ""}${money(pnl)}`;
+        $("pnlUsd").className = pnl >= 0 ? "positive" : "negative";
+        $("pnlPct").textContent = `${pnl >= 0 ? "+" : ""}${pct(capital.totalPnlPct)}`;
+        $("lastRun").textContent = latest.startedAt ? when(latest.startedAt) : "-";
+        $("lastRunMeta").textContent = latest.id ? `${latest.status} / ${latest.rawSignalCount || 0} signals / ${(latest.trades || []).length} trades` : "No scan yet";
+      }
+
+      function renderDecisions() {
+        const rows = visibleDecisions().slice(0, 100).map((item) => `
+          <tr>
+            <td>${when(item.timestamp)}</td><td>${esc(item.chain || "-")}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
+            <td>${num.format(n(item.score))}</td><td>${esc(item.walletType || "-")}</td><td>${money(item.amountUsd, true)}</td>
+            <td>${num.format(n(item.triggerWalletCount))}</td><td>${pct(item.soldRatioPercent)}</td>
+            <td>${item.signalPriceUsd ? money(item.signalPriceUsd) : "-"}</td><td>${item.buyUsd ? money(item.buyUsd) : item.sellUsd ? money(item.sellUsd) : "-"}</td>
+            <td>${esc((item.blockers || []).join("; ") || item.reason || "-")}</td>
+          </tr>`);
+        $("mainTable").innerHTML = table(["Time", "Chain", "Token", "Address", "Action", "Score", "Type", "Signal", "Wallets", "Sold", "Price", "Order", "Reason"], rows, "No matching decisions.");
+      }
+
+      function renderTrades() {
+        const rows = (state.trades || []).slice(0, 100).map((item) => `
+          <tr>
+            <td>${when(item.timestamp)}</td><td>${esc(item.chain || "-")}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.action)}</td>
+            <td>${money(item.grossUsd)}</td><td>${money(item.netUsd)}</td><td>${money(item.feeUsd)}</td>
+            <td>${num.format(n(item.units))}</td><td>${num.format(n(item.score))}</td><td>${esc(item.reason || "-")}</td>
+          </tr>`);
+        $("mainTable").innerHTML = table(["Time", "Chain", "Token", "Address", "Action", "Gross", "Net", "Fee", "Units", "Score", "Reason"], rows, "No paper trades yet.");
+      }
+
+      function renderPositions() {
+        const rows = (state.positions || []).slice(0, 100).map((item) => {
+          const pnl = n(item.lastValueUsd) - n(item.costBasisUsd);
+          return `<tr>
+              <td>${when(item.openedAt)}</td><td>${esc(item.chain || "-")}</td><td>${tokenCell(item)}</td><td>${addressLink(item)}</td><td>${tag(item.status)}</td>
+            <td>${money(item.costBasisUsd)}</td><td>${money(item.lastValueUsd)}</td><td class="${pnl >= 0 ? "positive" : "negative"}">${pnl >= 0 ? "+" : ""}${money(pnl)}</td>
+            <td>${item.entryPriceUsd ? money(item.entryPriceUsd) : "-"}</td><td>${item.lastPriceUsd ? money(item.lastPriceUsd) : "-"}</td><td>${when(item.lastUpdatedAt)}</td>
+          </tr>`;
+        });
+        $("mainTable").innerHTML = table(["Opened", "Chain", "Token", "Address", "Status", "Cost", "Value", "PnL", "Entry", "Last", "Updated"], rows, "No positions.");
+      }
+
+      function renderScanBars() {
+        const runs = [...(state.runs || [])].slice(0, 24).reverse();
+        const max = Math.max(1, ...runs.map((run) => n(run.rawSignalCount)));
+        $("scanBars").innerHTML = runs.map((run) => {
+          const height = Math.max(3, (n(run.rawSignalCount) / max) * 140);
+          const color = run.status === "ok" ? "var(--violet)" : "var(--red)";
+          return `<div class="bar" title="${esc(run.id)}: ${n(run.rawSignalCount)}" style="height:${height}px;background:${color}"></div>`;
+        }).join("");
+        $("scanNote").textContent = runs.length ? `Last ${runs.length} runs. Peak scan count: ${max}. Red bars are failed runs.` : "No scan records.";
+      }
+
+      function renderEquity() {
+        const runs = [...(state.runs || [])].slice(0, 30).reverse();
+        const capital = state.capital || {};
+        const points = runs.map((run, index) => ({ x: index, y: n(run.capital?.equityUsd || capital.equityUsd || capital.initialUsd) }));
+        if (!points.length) points.push({ x: 0, y: n(capital.equityUsd || capital.initialUsd) });
+        const min = Math.min(...points.map((p) => p.y), n(capital.initialUsd));
+        const max = Math.max(...points.map((p) => p.y), n(capital.initialUsd), min + 1);
+        const width = 520, height = 82, pad = 8;
+        const path = points.map((p, i) => {
+          const x = pad + (points.length === 1 ? width / 2 : (p.x / (points.length - 1)) * (width - pad * 2));
+          const y = height - pad - ((p.y - min) / (max - min)) * (height - pad * 2);
+          return `${i ? "L" : "M"}${x.toFixed(1)} ${y.toFixed(1)}`;
+        }).join(" ");
+        $("equityLine").setAttribute("viewBox", `0 0 ${width} ${height}`);
+        $("equityLine").innerHTML = `<path d="${path}" fill="none" stroke="var(--green)" stroke-width="3" stroke-linecap="round"/><line x1="0" y1="${height - pad}" x2="${width}" y2="${height - pad}" stroke="var(--line)"/>`;
+        $("equityNote").textContent = `Equity ${money(capital.equityUsd)} / initial ${money(capital.initialUsd)}.`;
+      }
+
+      function renderRiskBlocks() {
+        const counts = new Map();
+        for (const item of state.decisions || []) {
+          for (const blocker of item.blockers || []) counts.set(blocker, (counts.get(blocker) || 0) + 1);
+        }
+        const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
+        const max = Math.max(1, ...top.map(([, value]) => value));
+        $("riskList").innerHTML = top.length ? top.map(([name, value]) => `
+          <div class="risk-row"><span>${esc(name)}</span><div class="risk-meter"><div class="risk-fill" style="width:${(value / max) * 100}%"></div></div><strong>${value}</strong></div>
+        `).join("") : `<p class="empty">No blockers recorded.</p>`;
+      }
+
+      function renderRuns() {
+        const rows = (state.runs || []).slice(0, 10).map((run) => {
+          const issue = (run.mistakes || [])[0]?.message || (run.notes || [])[0] || "No recorded issue.";
+          return `<div class="run-item"><div class="run-top"><strong>${esc(run.id || "-")}</strong>${tag(run.status || "-")}</div><p class="note">${when(run.startedAt)} / ${n(run.rawSignalCount)} signals / ${(run.trades || []).length} trades</p><p class="note">${esc(issue)}</p></div>`;
+        });
+        $("runList").innerHTML = rows.join("") || `<p class="empty">No runs recorded.</p>`;
+      }
+
+      function renderConfig() {
+        const cfg = state.config || {};
+        const rows = Object.entries(cfg).map(([key, value]) => `<tr><td class="mono">${esc(key)}</td><td>${esc(value)}</td></tr>`);
+        $("configTable").innerHTML = table(["Rule", "Value"], rows, "No config.");
+      }
+
+      function render() {
+        renderMetrics();
+        renderScanBars();
+        renderEquity();
+        renderRiskBlocks();
+        renderRuns();
+        renderConfig();
+        if (activeTab === "trades") renderTrades();
+        else if (activeTab === "positions") renderPositions();
+        else renderDecisions();
+      }
+
+      document.querySelectorAll("[data-tab]").forEach((button) => {
+        button.addEventListener("click", () => {
+          activeTab = button.dataset.tab;
+          document.querySelectorAll("[data-tab]").forEach((node) => node.classList.toggle("active", node === button));
+          if (state) render();
+        });
+      });
+      $("searchInput").addEventListener("input", () => state && renderDecisions());
+      $("actionFilter").addEventListener("change", () => state && renderDecisions());
+
+      fetch("./data/signal-paper.json", { cache: "no-store" })
+        .then((response) => {
+          if (!response.ok) throw new Error(`Ledger read failed: ${response.status}`);
+          return response.json();
+        })
         .then((data) => {
-          const ungraduated = data.ungraduated ?? [];
-          const graduated = data.graduated ?? [];
-          const watchCount = [...ungraduated, ...graduated].filter((item) =>
-            ["重点看承接", "临近毕业观察"].includes(item.actionHint)
-          ).length;
-
-          document.getElementById("ungraduatedCount").textContent = fmtNum(ungraduated.length);
-          document.getElementById("graduatedCount").textContent = fmtNum(graduated.length);
-          document.getElementById("watchCount").textContent = fmtNum(watchCount);
-          document.getElementById("fetchedAt").textContent = fmtTime(data.fetchedAt);
-          document.getElementById("dataStatus").textContent = "真实数据已加载";
-
-          renderRows("ungraduatedRows", ungraduated, (item) => [
-            makeTokenCell(item),
-            makeAddressCell(item),
-            makeCell(item.protocol),
-            makeTag(item.stageLabel),
-            makeCell(fmtPct(item.bondingPercent)),
-            makeCell(fmtUsd(item.marketCapUsd)),
-            makeCell(fmtUsd(item.volumeUsd1h)),
-            makeCell(`${fmtNum(item.buyTxCount1h)} / ${fmtNum(item.sellTxCount1h)}`),
-            makeCell(fmtNum(item.holders)),
-            makeCell(fmtPct(item.top10HoldingsPercent)),
-            makeCell(fmtPct(item.devHoldingsPercent)),
-            makeCell(fmtPct(item.bundlersPercent)),
-            makeCell(fmtPct(item.snipersPercent)),
-            makeTag(item.actionHint)
-          ]);
-
-          renderRows("graduatedRows", graduated, (item) => [
-            makeTokenCell(item),
-            makeAddressCell(item),
-            makeCell(item.protocol),
-            makeCell(fmtTime(item.migratedEndAt)),
-            makeCell(fmtUsd(item.marketCapUsd)),
-            makeCell(fmtUsd(item.volumeUsd1h)),
-            makeCell(`${fmtNum(item.buyTxCount1h)} / ${fmtNum(item.sellTxCount1h)}`),
-            makeCell(fmtNum(item.holders)),
-            makeCell(fmtPct(item.top10HoldingsPercent)),
-            makeCell(fmtPct(item.bundlersPercent)),
-            makeCell(fmtPct(item.snipersPercent)),
-            makeCell(fmtPct(item.suspectedPhishingWalletPercent)),
-            makeTag(item.actionHint)
-          ]);
+          state = data;
+          const latest = (data.runs || [])[0];
+          $("statusDot").className = latest?.status === "ok" ? "dot ok" : latest ? "dot bad" : "dot";
+          $("statusText").textContent = latest ? `Last scan: ${latest.status}` : "Waiting for first scan";
+          render();
         })
         .catch((error) => {
-          document.getElementById("dataStatus").textContent = "数据加载失败";
-          document.getElementById("dataStatus").classList.add("error");
-          renderError("ungraduatedRows", error.message, 14);
-          renderError("graduatedRows", error.message, 13);
+          $("statusDot").className = "dot bad";
+          $("statusText").textContent = error.message;
+          $("mainTable").innerHTML = `<p class="empty">${esc(error.message)}</p>`;
         });
     </script>
   </body>
