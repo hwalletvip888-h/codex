@@ -1,0 +1,1806 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-25T08:45:13.597Z",
+  "latest": {
+    "date": "2026-05-25",
+    "timeZone": "Asia/Hong_Kong",
+    "generatedAt": "2026-05-25T08:45:13.595Z",
+    "runCount": 15,
+    "statuses": {
+      "failed": 10,
+      "ok": 5
+    },
+    "rawSignalCount": 400,
+    "decisionCount": 100,
+    "actions": {
+      "IGNORE": 72,
+      "WATCH": 28
+    },
+    "tradeCount": 0,
+    "buys": 0,
+    "sells": 0,
+    "buyUsd": 0,
+    "realizedPnlUsd": 0,
+    "equityStartUsd": 3000,
+    "equityEndUsd": 3000,
+    "equityChangeUsd": 0,
+    "topBlockers": [
+      {
+        "name": "sold ratio > 35%",
+        "count": 97
+      },
+      {
+        "name": "amount < 500U",
+        "count": 52
+      }
+    ],
+    "mistakeCount": 10,
+    "mistakeTypes": {
+      "FILE_WRITE_ERROR": 6,
+      "AUTH_INVALID": 4
+    },
+    "accountResets": 1,
+    "bestStrategies": [
+      {
+        "key": "entry:bsc:smart money:amount>=500:wallets>=8:sold<=35",
+        "title": "bsc Smart Money 入场模型",
+        "status": "候选最优",
+        "rule": "评分 >= 70，金额/钱包数达标，已卖出比例 <= 35%",
+        "reason": "Rule buy; amount 565.41U; wallets 11; sold 16.74%; type Smart Money",
+        "score": 72.1,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "Dragon",
+          "symbol": "Dragon",
+          "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+          "shortAddress": "0xed33...7777",
+          "chain": "bsc"
+        },
+        "firstSeenAt": "2026-05-25T03:33:47.500Z",
+        "lastSeenAt": "2026-05-25T03:33:47.500Z",
+        "occurrences": 1,
+        "examples": [
+          {
+            "token": "Dragon",
+            "symbol": "Dragon",
+            "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+            "shortAddress": "0xed33...7777",
+            "chain": "bsc"
+          }
+        ]
+      }
+    ],
+    "rejectedStrategies": [
+      {
+        "key": "blocker:bsc:smart money:sold ratio > 35%",
+        "title": "bsc Smart Money 不及格条件",
+        "status": "归档拦截",
+        "rule": "sold ratio > 35%",
+        "reason": "amount 1227U; wallets 3; sold 78.88%; type Smart Money",
+        "score": 67.9,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "Sea Z",
+          "symbol": "SEAZ",
+          "address": "0x9ba3393b555ab3f3d3830c870e7bfeda09b24444",
+          "shortAddress": "0x9ba3...4444",
+          "chain": "bsc"
+        },
+        "firstSeenAt": "2026-05-25T03:33:47.500Z",
+        "lastSeenAt": "2026-05-25T08:13:21.812Z",
+        "occurrences": 95,
+        "examples": [
+          {
+            "token": "Freedom of Money",
+            "symbol": "Freedom of Money",
+            "address": "0x3e17ee3b1895dd1a7cf993a89769c5e029584444",
+            "shortAddress": "0x3e17...4444",
+            "chain": "bsc"
+          },
+          {
+            "token": "Terminus",
+            "symbol": "Terminus",
+            "address": "0x7d74a3497856d0f463af55cd489823a98dfa6666",
+            "shortAddress": "0x7d74...6666",
+            "chain": "bsc"
+          },
+          {
+            "token": "Maple",
+            "symbol": "Maple",
+            "address": "0x06aee50283c94d72a62394437fd6f2e917577777",
+            "shortAddress": "0x06ae...7777",
+            "chain": "bsc"
+          },
+          {
+            "token": "今年开分最高的国产电影",
+            "symbol": "给阿嬷的情书",
+            "address": "0x0352b5401c4d8bcb40bf17cc5e139935109a4444",
+            "shortAddress": "0x0352...4444",
+            "chain": "bsc"
+          },
+          {
+            "token": "Fetch",
+            "symbol": "FET",
+            "address": "0x031b41e504677879370e9dbcf937283a8691fa7f",
+            "shortAddress": "0x031b...fa7f",
+            "chain": "bsc"
+          },
+          {
+            "token": "全网爆火表情包",
+            "symbol": "背手负鼠",
+            "address": "0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444",
+            "shortAddress": "0x5f6f...4444",
+            "chain": "bsc"
+          }
+        ]
+      },
+      {
+        "key": "blocker:solana:smart money:sold ratio > 35%",
+        "title": "solana Smart Money 不及格条件",
+        "status": "归档拦截",
+        "rule": "sold ratio > 35%",
+        "reason": "amount 929.03U; wallets 5; sold 84.1%; type Smart Money",
+        "score": 61,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "Maybe This Is The One",
+          "symbol": "THEONE",
+          "address": "fmsl3bkizj3523ttfhugxnjplf6jqv7cyv3jpnjapump",
+          "shortAddress": "fmsl3b...pump",
+          "chain": "solana"
+        },
+        "firstSeenAt": "2026-05-25T03:33:47.500Z",
+        "lastSeenAt": "2026-05-25T08:13:21.812Z",
+        "occurrences": 76,
+        "examples": [
+          {
+            "token": "Golden Ball",
+            "symbol": "Ball",
+            "address": "h3ph7frvidjqqtpbpztdhvumzu97vkbgphkngyegpump",
+            "shortAddress": "h3ph7f...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "penispoop420",
+            "symbol": "PP420",
+            "address": "ac8escj4ufro8pifkun7diurcccktg4jvarb3mpmpump",
+            "shortAddress": "ac8esc...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "The Lonestar Tick",
+            "symbol": "TICK ",
+            "address": "4ekxurxac4tt7nrbr164vpz9v7jwahseq3ynfbanpump",
+            "shortAddress": "4ekxur...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "DIAMOND HANDS",
+            "symbol": "DIAMOND",
+            "address": "b5jkqn49w6oswthpzu9y7hsgkabbawa7vxhj3bpcpump",
+            "shortAddress": "b5jkqn...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "The Official Coconut Wata Coin",
+            "symbol": "WATA",
+            "address": "8edovucn43mkvpxzatwupnrcntnjse1dkwgqucsspump",
+            "shortAddress": "8edovu...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "BioHash",
+            "symbol": "BioHash",
+            "address": "4spepkv1xx5vt8fkjxf5eaxlafgnh9s2auircf5wpump",
+            "shortAddress": "4spepk...pump",
+            "chain": "solana"
+          }
+        ]
+      },
+      {
+        "key": "blocker:solana:smart money:amount < 500u",
+        "title": "solana Smart Money 不及格条件",
+        "status": "归档拦截",
+        "rule": "amount < 500U",
+        "reason": "amount 341.38U; wallets 3; sold 100%; type Smart Money",
+        "score": 60.4,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "Maybe This Is The One",
+          "symbol": "THEONE",
+          "address": "fmsl3bkizj3523ttfhugxnjplf6jqv7cyv3jpnjapump",
+          "shortAddress": "fmsl3b...pump",
+          "chain": "solana"
+        },
+        "firstSeenAt": "2026-05-25T03:33:47.500Z",
+        "lastSeenAt": "2026-05-25T08:13:21.812Z",
+        "occurrences": 56,
+        "examples": [
+          {
+            "token": "penispoop420",
+            "symbol": "PP420",
+            "address": "ac8escj4ufro8pifkun7diurcccktg4jvarb3mpmpump",
+            "shortAddress": "ac8esc...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "The Lonestar Tick",
+            "symbol": "TICK ",
+            "address": "4ekxurxac4tt7nrbr164vpz9v7jwahseq3ynfbanpump",
+            "shortAddress": "4ekxur...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "DIAMOND HANDS",
+            "symbol": "DIAMOND",
+            "address": "b5jkqn49w6oswthpzu9y7hsgkabbawa7vxhj3bpcpump",
+            "shortAddress": "b5jkqn...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "The Official Coconut Wata Coin",
+            "symbol": "WATA",
+            "address": "8edovucn43mkvpxzatwupnrcntnjse1dkwgqucsspump",
+            "shortAddress": "8edovu...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "BioHash",
+            "symbol": "BioHash",
+            "address": "4spepkv1xx5vt8fkjxf5eaxlafgnh9s2auircf5wpump",
+            "shortAddress": "4spepk...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Manifesting",
+            "symbol": "MANIFEST",
+            "address": "bcdwqban8dyb5yjtsob6tdhawokxv28k2ozuoderpump",
+            "shortAddress": "bcdwqb...pump",
+            "chain": "solana"
+          }
+        ]
+      },
+      {
+        "key": "blocker:bsc:smart money:amount < 500u",
+        "title": "bsc Smart Money 不及格条件",
+        "status": "归档拦截",
+        "rule": "amount < 500U",
+        "reason": "amount 282.23U; wallets 3; sold 82.9%; type Smart Money",
+        "score": 69.9,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "Sea Z",
+          "symbol": "SEAZ",
+          "address": "0x9ba3393b555ab3f3d3830c870e7bfeda09b24444",
+          "shortAddress": "0x9ba3...4444",
+          "chain": "bsc"
+        },
+        "firstSeenAt": "2026-05-25T03:33:47.500Z",
+        "lastSeenAt": "2026-05-25T08:13:21.812Z",
+        "occurrences": 43,
+        "examples": [
+          {
+            "token": "Terminus",
+            "symbol": "Terminus",
+            "address": "0x7d74a3497856d0f463af55cd489823a98dfa6666",
+            "shortAddress": "0x7d74...6666",
+            "chain": "bsc"
+          },
+          {
+            "token": "全网爆火表情包",
+            "symbol": "背手负鼠",
+            "address": "0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444",
+            "shortAddress": "0x5f6f...4444",
+            "chain": "bsc"
+          },
+          {
+            "token": "巴西队",
+            "symbol": "巴西队",
+            "address": "0x5f3f8fa5f412184c5032f9554f62a1d3275c7777",
+            "shortAddress": "0x5f3f...7777",
+            "chain": "bsc"
+          },
+          {
+            "token": "Freedom of Money Art",
+            "symbol": "FOMA",
+            "address": "0x03a0a8700fa3809c6c2d637babd841296da57777",
+            "shortAddress": "0x03a0...7777",
+            "chain": "bsc"
+          },
+          {
+            "token": "那份独有家乡味道和善意的酱香饼",
+            "symbol": "酱香饼",
+            "address": "0xbee4c96b8392027ae33326021f548cb561b34444",
+            "shortAddress": "0xbee4...4444",
+            "chain": "bsc"
+          },
+          {
+            "token": "niubi.com跳转他的推特",
+            "symbol": "王纯",
+            "address": "0x5524631e3dc1d2cc7bd5cb391ddb296467a64444",
+            "shortAddress": "0x5524...4444",
+            "chain": "bsc"
+          }
+        ]
+      },
+      {
+        "key": "blocker:solana:kol/influencer:sold ratio > 35%",
+        "title": "solana KOL/Influencer 不及格条件",
+        "status": "归档拦截",
+        "rule": "sold ratio > 35%",
+        "reason": "amount 3006.32U; wallets 6; sold 55.25%; type KOL/Influencer",
+        "score": 55.3,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "Pumba",
+          "symbol": "Pumba",
+          "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
+          "shortAddress": "67snfo...pump",
+          "chain": "solana"
+        },
+        "firstSeenAt": "2026-05-25T03:33:47.500Z",
+        "lastSeenAt": "2026-05-25T08:13:21.812Z",
+        "occurrences": 11,
+        "examples": [
+          {
+            "token": "ACE Index",
+            "symbol": "ACEDAQ",
+            "address": "d7uwwsnkph7yf1wdlntjcpfiiajs9cmfgj6tiqdwpump",
+            "shortAddress": "d7uwws...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Enhanced Games",
+            "symbol": "ENHA",
+            "address": "agwmh5gfpkqetwoxxpo43p3sgr4ckxb5xyfevbjmpump",
+            "shortAddress": "agwmh5...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "GameFund",
+            "symbol": "GAMEFUND",
+            "address": "2etdrmbew39q3z8rx6nfinyzydpaykcuvvpqxrmjpump",
+            "shortAddress": "2etdrm...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Pumba",
+            "symbol": "Pumba",
+            "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
+            "shortAddress": "67snfo...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "DICKMAXXING",
+            "symbol": "DICKMAXX",
+            "address": "e1cdrmcyqewe8xkxmefmtxv6fbsfa4sk6sxcq8rzpump",
+            "shortAddress": "e1cdrm...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Asimov",
+            "symbol": "ASIMOV",
+            "address": "bxssbsxjjziena7na9fajvaqc5kbzsxpgrfxrr9mpump",
+            "shortAddress": "bxssbs...pump",
+            "chain": "solana"
+          }
+        ]
+      }
+    ],
+    "lessons": [
+      {
+        "key": "lesson:bsc:0xed33570fb7985ae71bf6abc8ac4d49c7d0257777:stop loss -36.18%; amount 273.25u; wallets 7; sold 16.74%; type smart money",
+        "title": "亏损复盘",
+        "status": "需避免重复",
+        "rule": "触发止损或亏损退出后自动归档",
+        "reason": "Dragon Dragon: Stop loss -36.18%; amount 273.25U; wallets 7; sold 16.74%; type Smart Money",
+        "score": 69.9,
+        "wins": 0,
+        "losses": 1,
+        "totalPnlUsd": -52.04,
+        "example": {
+          "token": "Dragon",
+          "symbol": "Dragon",
+          "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+          "shortAddress": "0xed33...7777",
+          "chain": "bsc"
+        },
+        "firstSeenAt": "2026-05-25T03:33:47.500Z",
+        "lastSeenAt": "2026-05-25T03:33:47.500Z",
+        "occurrences": 1,
+        "examples": [
+          {
+            "token": "Dragon",
+            "symbol": "Dragon",
+            "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+            "shortAddress": "0xed33...7777",
+            "chain": "bsc"
+          }
+        ]
+      },
+      {
+        "key": "mistake:auth_invalid:global",
+        "title": "执行踩坑",
+        "status": "流程问题",
+        "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+        "reason": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+        "score": 0,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "AUTH_INVALID",
+          "symbol": "global",
+          "address": "",
+          "shortAddress": "",
+          "chain": "global"
+        },
+        "firstSeenAt": "2026-05-25T07:21:54.400Z",
+        "lastSeenAt": "2026-05-25T07:21:54.400Z",
+        "occurrences": 1,
+        "examples": [
+          {
+            "token": "AUTH_INVALID",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          }
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "runId": "20260524193337",
+        "startedAt": "2026-05-24T19:33:37.998Z",
+        "finishedAt": "2026-05-24T19:33:48.698Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "AUTH_INVALID",
+            "chain": "",
+            "message": "API error (code=50114): Invalid Authority",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260524203920",
+        "startedAt": "2026-05-24T20:39:20.455Z",
+        "finishedAt": "2026-05-24T20:39:20.455Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "FILE_WRITE_ERROR",
+            "chain": "",
+            "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+            "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+          }
+        ],
+        "notes": [
+          "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+        ],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260524214019",
+        "startedAt": "2026-05-24T21:40:19.652Z",
+        "finishedAt": "2026-05-24T21:40:19.652Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "FILE_WRITE_ERROR",
+            "chain": "",
+            "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+            "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+          }
+        ],
+        "notes": [
+          "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+        ],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260524224029",
+        "startedAt": "2026-05-24T22:40:29.999Z",
+        "finishedAt": "2026-05-24T22:40:29.999Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "FILE_WRITE_ERROR",
+            "chain": "",
+            "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+            "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+          }
+        ],
+        "notes": [
+          "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+        ],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260524234244",
+        "startedAt": "2026-05-24T23:42:44.258Z",
+        "finishedAt": "2026-05-24T23:42:44.258Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "FILE_WRITE_ERROR",
+            "chain": "",
+            "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+            "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+          }
+        ],
+        "notes": [
+          "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+        ],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260525004251",
+        "startedAt": "2026-05-25T00:42:51.578Z",
+        "finishedAt": "2026-05-25T00:42:51.578Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "FILE_WRITE_ERROR",
+            "chain": "",
+            "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+            "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+          }
+        ],
+        "notes": [
+          "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+        ],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260525014434",
+        "startedAt": "2026-05-25T01:44:34.028Z",
+        "finishedAt": "2026-05-25T01:44:34.028Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "FILE_WRITE_ERROR",
+            "chain": "",
+            "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+            "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+          }
+        ],
+        "notes": [
+          "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+        ],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260525023340",
+        "startedAt": "2026-05-25T02:33:40.432Z",
+        "finishedAt": "2026-05-25T02:33:51.308Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "AUTH_INVALID",
+            "chain": "",
+            "message": "API error (code=50114): Invalid Authority",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260525023435",
+        "startedAt": "2026-05-25T02:34:35.587Z",
+        "finishedAt": "2026-05-25T02:34:46.267Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "AUTH_INVALID",
+            "chain": "",
+            "message": "API error (code=50114): Invalid Authority",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260525023755",
+        "startedAt": "2026-05-25T02:37:55.717Z",
+        "finishedAt": "2026-05-25T02:38:16.680Z",
+        "status": "ok",
+        "chains": [],
+        "rawSignalCount": 50,
+        "decisions": 50,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
+      },
+      {
+        "runId": "20260525024945",
+        "startedAt": "2026-05-25T02:49:45.619Z",
+        "finishedAt": "2026-05-25T02:50:06.440Z",
+        "status": "ok",
+        "chains": [],
+        "rawSignalCount": 50,
+        "decisions": 50,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
+      },
+      {
+        "runId": "20260525030148",
+        "startedAt": "2026-05-25T03:01:48.220Z",
+        "finishedAt": "2026-05-25T03:02:19.794Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 100,
+        "decisions": 100,
+        "trades": 3,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 3,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2755.36,
+          "openValueUsd": 192.02,
+          "equityUsd": 2947.38,
+          "realizedPnlUsd": -52.04,
+          "unrealizedPnlUsd": -0.58,
+          "totalPnlUsd": -52.62,
+          "totalPnlPct": -1.75
+        }
+      },
+      {
+        "runId": "20260525033347",
+        "startedAt": "2026-05-25T03:33:47.500Z",
+        "finishedAt": "2026-05-25T03:34:19.488Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 100,
+        "decisions": 100,
+        "trades": 2,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 2,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2703.32,
+          "openValueUsd": 192.02,
+          "equityUsd": 2895.34,
+          "realizedPnlUsd": -104.09,
+          "unrealizedPnlUsd": -0.58,
+          "totalPnlUsd": -104.66,
+          "totalPnlPct": -3.49
+        }
+      },
+      {
+        "runId": "20260525072154",
+        "startedAt": "2026-05-25T07:21:54.400Z",
+        "finishedAt": "2026-05-25T07:21:54.637Z",
+        "status": "failed",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "AUTH_INVALID",
+            "chain": "",
+            "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2703.32,
+          "openValueUsd": 192.02,
+          "equityUsd": 2895.34,
+          "realizedPnlUsd": -104.09,
+          "unrealizedPnlUsd": -0.58,
+          "totalPnlUsd": -104.66,
+          "totalPnlPct": -3.49
+        }
+      },
+      {
+        "runId": "20260525081321",
+        "startedAt": "2026-05-25T08:13:21.812Z",
+        "finishedAt": "2026-05-25T08:13:55.611Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 100,
+        "decisions": 100,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [
+          "授权恢复或重新登录后，已按规则重置模拟本金为 3000U。历史轮次保留用于审计，不混入新会话本金。"
+        ],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": {
+          "timestamp": "2026-05-25T08:13:21.812Z",
+          "runId": "20260525081321",
+          "reason": "auth_recovered_after_login",
+          "previousSession": {
+            "id": "20260525081321",
+            "startedAt": "2026-05-25T08:13:21.812Z",
+            "lastAuthOkAt": "",
+            "lastAuthFailureAt": "",
+            "authState": "unknown",
+            "authRecoveries": 0,
+            "resetReason": "initial"
+          },
+          "previousCapital": {
+            "initialUsd": 3000,
+            "cashUsd": 2703.32,
+            "openValueUsd": 192.02,
+            "equityUsd": 2895.34,
+            "realizedPnlUsd": -104.09,
+            "unrealizedPnlUsd": -0.58,
+            "totalPnlUsd": -104.66,
+            "totalPnlPct": -3.49
+          },
+          "previousOpenPositions": 1,
+          "previousTrades": 5,
+          "previousDecisions": 300
+        },
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
+      }
+    ]
+  },
+  "summaries": [
+    {
+      "date": "2026-05-25",
+      "timeZone": "Asia/Hong_Kong",
+      "generatedAt": "2026-05-25T08:45:13.595Z",
+      "runCount": 15,
+      "statuses": {
+        "failed": 10,
+        "ok": 5
+      },
+      "rawSignalCount": 400,
+      "decisionCount": 100,
+      "actions": {
+        "IGNORE": 72,
+        "WATCH": 28
+      },
+      "tradeCount": 0,
+      "buys": 0,
+      "sells": 0,
+      "buyUsd": 0,
+      "realizedPnlUsd": 0,
+      "equityStartUsd": 3000,
+      "equityEndUsd": 3000,
+      "equityChangeUsd": 0,
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 97
+        },
+        {
+          "name": "amount < 500U",
+          "count": 52
+        }
+      ],
+      "mistakeCount": 10,
+      "mistakeTypes": {
+        "FILE_WRITE_ERROR": 6,
+        "AUTH_INVALID": 4
+      },
+      "accountResets": 1,
+      "bestStrategies": [
+        {
+          "key": "entry:bsc:smart money:amount>=500:wallets>=8:sold<=35",
+          "title": "bsc Smart Money 入场模型",
+          "status": "候选最优",
+          "rule": "评分 >= 70，金额/钱包数达标，已卖出比例 <= 35%",
+          "reason": "Rule buy; amount 565.41U; wallets 11; sold 16.74%; type Smart Money",
+          "score": 72.1,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Dragon",
+            "symbol": "Dragon",
+            "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+            "shortAddress": "0xed33...7777",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T03:33:47.500Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "Dragon",
+              "symbol": "Dragon",
+              "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+              "shortAddress": "0xed33...7777",
+              "chain": "bsc"
+            }
+          ]
+        }
+      ],
+      "rejectedStrategies": [
+        {
+          "key": "blocker:bsc:smart money:sold ratio > 35%",
+          "title": "bsc Smart Money 不及格条件",
+          "status": "归档拦截",
+          "rule": "sold ratio > 35%",
+          "reason": "amount 1227U; wallets 3; sold 78.88%; type Smart Money",
+          "score": 67.9,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Sea Z",
+            "symbol": "SEAZ",
+            "address": "0x9ba3393b555ab3f3d3830c870e7bfeda09b24444",
+            "shortAddress": "0x9ba3...4444",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T08:13:21.812Z",
+          "occurrences": 95,
+          "examples": [
+            {
+              "token": "Freedom of Money",
+              "symbol": "Freedom of Money",
+              "address": "0x3e17ee3b1895dd1a7cf993a89769c5e029584444",
+              "shortAddress": "0x3e17...4444",
+              "chain": "bsc"
+            },
+            {
+              "token": "Terminus",
+              "symbol": "Terminus",
+              "address": "0x7d74a3497856d0f463af55cd489823a98dfa6666",
+              "shortAddress": "0x7d74...6666",
+              "chain": "bsc"
+            },
+            {
+              "token": "Maple",
+              "symbol": "Maple",
+              "address": "0x06aee50283c94d72a62394437fd6f2e917577777",
+              "shortAddress": "0x06ae...7777",
+              "chain": "bsc"
+            },
+            {
+              "token": "今年开分最高的国产电影",
+              "symbol": "给阿嬷的情书",
+              "address": "0x0352b5401c4d8bcb40bf17cc5e139935109a4444",
+              "shortAddress": "0x0352...4444",
+              "chain": "bsc"
+            },
+            {
+              "token": "Fetch",
+              "symbol": "FET",
+              "address": "0x031b41e504677879370e9dbcf937283a8691fa7f",
+              "shortAddress": "0x031b...fa7f",
+              "chain": "bsc"
+            },
+            {
+              "token": "全网爆火表情包",
+              "symbol": "背手负鼠",
+              "address": "0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444",
+              "shortAddress": "0x5f6f...4444",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
+          "key": "blocker:solana:smart money:sold ratio > 35%",
+          "title": "solana Smart Money 不及格条件",
+          "status": "归档拦截",
+          "rule": "sold ratio > 35%",
+          "reason": "amount 929.03U; wallets 5; sold 84.1%; type Smart Money",
+          "score": 61,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Maybe This Is The One",
+            "symbol": "THEONE",
+            "address": "fmsl3bkizj3523ttfhugxnjplf6jqv7cyv3jpnjapump",
+            "shortAddress": "fmsl3b...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T08:13:21.812Z",
+          "occurrences": 76,
+          "examples": [
+            {
+              "token": "Golden Ball",
+              "symbol": "Ball",
+              "address": "h3ph7frvidjqqtpbpztdhvumzu97vkbgphkngyegpump",
+              "shortAddress": "h3ph7f...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "penispoop420",
+              "symbol": "PP420",
+              "address": "ac8escj4ufro8pifkun7diurcccktg4jvarb3mpmpump",
+              "shortAddress": "ac8esc...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "The Lonestar Tick",
+              "symbol": "TICK ",
+              "address": "4ekxurxac4tt7nrbr164vpz9v7jwahseq3ynfbanpump",
+              "shortAddress": "4ekxur...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "DIAMOND HANDS",
+              "symbol": "DIAMOND",
+              "address": "b5jkqn49w6oswthpzu9y7hsgkabbawa7vxhj3bpcpump",
+              "shortAddress": "b5jkqn...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "The Official Coconut Wata Coin",
+              "symbol": "WATA",
+              "address": "8edovucn43mkvpxzatwupnrcntnjse1dkwgqucsspump",
+              "shortAddress": "8edovu...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "BioHash",
+              "symbol": "BioHash",
+              "address": "4spepkv1xx5vt8fkjxf5eaxlafgnh9s2auircf5wpump",
+              "shortAddress": "4spepk...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "blocker:solana:smart money:amount < 500u",
+          "title": "solana Smart Money 不及格条件",
+          "status": "归档拦截",
+          "rule": "amount < 500U",
+          "reason": "amount 341.38U; wallets 3; sold 100%; type Smart Money",
+          "score": 60.4,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Maybe This Is The One",
+            "symbol": "THEONE",
+            "address": "fmsl3bkizj3523ttfhugxnjplf6jqv7cyv3jpnjapump",
+            "shortAddress": "fmsl3b...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T08:13:21.812Z",
+          "occurrences": 56,
+          "examples": [
+            {
+              "token": "penispoop420",
+              "symbol": "PP420",
+              "address": "ac8escj4ufro8pifkun7diurcccktg4jvarb3mpmpump",
+              "shortAddress": "ac8esc...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "The Lonestar Tick",
+              "symbol": "TICK ",
+              "address": "4ekxurxac4tt7nrbr164vpz9v7jwahseq3ynfbanpump",
+              "shortAddress": "4ekxur...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "DIAMOND HANDS",
+              "symbol": "DIAMOND",
+              "address": "b5jkqn49w6oswthpzu9y7hsgkabbawa7vxhj3bpcpump",
+              "shortAddress": "b5jkqn...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "The Official Coconut Wata Coin",
+              "symbol": "WATA",
+              "address": "8edovucn43mkvpxzatwupnrcntnjse1dkwgqucsspump",
+              "shortAddress": "8edovu...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "BioHash",
+              "symbol": "BioHash",
+              "address": "4spepkv1xx5vt8fkjxf5eaxlafgnh9s2auircf5wpump",
+              "shortAddress": "4spepk...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Manifesting",
+              "symbol": "MANIFEST",
+              "address": "bcdwqban8dyb5yjtsob6tdhawokxv28k2ozuoderpump",
+              "shortAddress": "bcdwqb...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "blocker:bsc:smart money:amount < 500u",
+          "title": "bsc Smart Money 不及格条件",
+          "status": "归档拦截",
+          "rule": "amount < 500U",
+          "reason": "amount 282.23U; wallets 3; sold 82.9%; type Smart Money",
+          "score": 69.9,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Sea Z",
+            "symbol": "SEAZ",
+            "address": "0x9ba3393b555ab3f3d3830c870e7bfeda09b24444",
+            "shortAddress": "0x9ba3...4444",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T08:13:21.812Z",
+          "occurrences": 43,
+          "examples": [
+            {
+              "token": "Terminus",
+              "symbol": "Terminus",
+              "address": "0x7d74a3497856d0f463af55cd489823a98dfa6666",
+              "shortAddress": "0x7d74...6666",
+              "chain": "bsc"
+            },
+            {
+              "token": "全网爆火表情包",
+              "symbol": "背手负鼠",
+              "address": "0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444",
+              "shortAddress": "0x5f6f...4444",
+              "chain": "bsc"
+            },
+            {
+              "token": "巴西队",
+              "symbol": "巴西队",
+              "address": "0x5f3f8fa5f412184c5032f9554f62a1d3275c7777",
+              "shortAddress": "0x5f3f...7777",
+              "chain": "bsc"
+            },
+            {
+              "token": "Freedom of Money Art",
+              "symbol": "FOMA",
+              "address": "0x03a0a8700fa3809c6c2d637babd841296da57777",
+              "shortAddress": "0x03a0...7777",
+              "chain": "bsc"
+            },
+            {
+              "token": "那份独有家乡味道和善意的酱香饼",
+              "symbol": "酱香饼",
+              "address": "0xbee4c96b8392027ae33326021f548cb561b34444",
+              "shortAddress": "0xbee4...4444",
+              "chain": "bsc"
+            },
+            {
+              "token": "niubi.com跳转他的推特",
+              "symbol": "王纯",
+              "address": "0x5524631e3dc1d2cc7bd5cb391ddb296467a64444",
+              "shortAddress": "0x5524...4444",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
+          "key": "blocker:solana:kol/influencer:sold ratio > 35%",
+          "title": "solana KOL/Influencer 不及格条件",
+          "status": "归档拦截",
+          "rule": "sold ratio > 35%",
+          "reason": "amount 3006.32U; wallets 6; sold 55.25%; type KOL/Influencer",
+          "score": 55.3,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Pumba",
+            "symbol": "Pumba",
+            "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
+            "shortAddress": "67snfo...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T08:13:21.812Z",
+          "occurrences": 11,
+          "examples": [
+            {
+              "token": "ACE Index",
+              "symbol": "ACEDAQ",
+              "address": "d7uwwsnkph7yf1wdlntjcpfiiajs9cmfgj6tiqdwpump",
+              "shortAddress": "d7uwws...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Enhanced Games",
+              "symbol": "ENHA",
+              "address": "agwmh5gfpkqetwoxxpo43p3sgr4ckxb5xyfevbjmpump",
+              "shortAddress": "agwmh5...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "GameFund",
+              "symbol": "GAMEFUND",
+              "address": "2etdrmbew39q3z8rx6nfinyzydpaykcuvvpqxrmjpump",
+              "shortAddress": "2etdrm...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Pumba",
+              "symbol": "Pumba",
+              "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
+              "shortAddress": "67snfo...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "DICKMAXXING",
+              "symbol": "DICKMAXX",
+              "address": "e1cdrmcyqewe8xkxmefmtxv6fbsfa4sk6sxcq8rzpump",
+              "shortAddress": "e1cdrm...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Asimov",
+              "symbol": "ASIMOV",
+              "address": "bxssbsxjjziena7na9fajvaqc5kbzsxpgrfxrr9mpump",
+              "shortAddress": "bxssbs...pump",
+              "chain": "solana"
+            }
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "key": "lesson:bsc:0xed33570fb7985ae71bf6abc8ac4d49c7d0257777:stop loss -36.18%; amount 273.25u; wallets 7; sold 16.74%; type smart money",
+          "title": "亏损复盘",
+          "status": "需避免重复",
+          "rule": "触发止损或亏损退出后自动归档",
+          "reason": "Dragon Dragon: Stop loss -36.18%; amount 273.25U; wallets 7; sold 16.74%; type Smart Money",
+          "score": 69.9,
+          "wins": 0,
+          "losses": 1,
+          "totalPnlUsd": -52.04,
+          "example": {
+            "token": "Dragon",
+            "symbol": "Dragon",
+            "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+            "shortAddress": "0xed33...7777",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T03:33:47.500Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "Dragon",
+              "symbol": "Dragon",
+              "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+              "shortAddress": "0xed33...7777",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
+          "key": "mistake:auth_invalid:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "AUTH_INVALID",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T07:21:54.400Z",
+          "lastSeenAt": "2026-05-25T07:21:54.400Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "AUTH_INVALID",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        }
+      ],
+      "runs": [
+        {
+          "runId": "20260524193337",
+          "startedAt": "2026-05-24T19:33:37.998Z",
+          "finishedAt": "2026-05-24T19:33:48.698Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "AUTH_INVALID",
+              "chain": "",
+              "message": "API error (code=50114): Invalid Authority",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260524203920",
+          "startedAt": "2026-05-24T20:39:20.455Z",
+          "finishedAt": "2026-05-24T20:39:20.455Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "FILE_WRITE_ERROR",
+              "chain": "",
+              "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+              "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+            }
+          ],
+          "notes": [
+            "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+          ],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260524214019",
+          "startedAt": "2026-05-24T21:40:19.652Z",
+          "finishedAt": "2026-05-24T21:40:19.652Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "FILE_WRITE_ERROR",
+              "chain": "",
+              "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+              "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+            }
+          ],
+          "notes": [
+            "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+          ],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260524224029",
+          "startedAt": "2026-05-24T22:40:29.999Z",
+          "finishedAt": "2026-05-24T22:40:29.999Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "FILE_WRITE_ERROR",
+              "chain": "",
+              "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+              "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+            }
+          ],
+          "notes": [
+            "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+          ],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260524234244",
+          "startedAt": "2026-05-24T23:42:44.258Z",
+          "finishedAt": "2026-05-24T23:42:44.258Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "FILE_WRITE_ERROR",
+              "chain": "",
+              "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+              "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+            }
+          ],
+          "notes": [
+            "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+          ],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260525004251",
+          "startedAt": "2026-05-25T00:42:51.578Z",
+          "finishedAt": "2026-05-25T00:42:51.578Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "FILE_WRITE_ERROR",
+              "chain": "",
+              "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+              "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+            }
+          ],
+          "notes": [
+            "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+          ],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260525014434",
+          "startedAt": "2026-05-25T01:44:34.028Z",
+          "finishedAt": "2026-05-25T01:44:34.028Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "FILE_WRITE_ERROR",
+              "chain": "",
+              "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+              "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+            }
+          ],
+          "notes": [
+            "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+          ],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260525023340",
+          "startedAt": "2026-05-25T02:33:40.432Z",
+          "finishedAt": "2026-05-25T02:33:51.308Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "AUTH_INVALID",
+              "chain": "",
+              "message": "API error (code=50114): Invalid Authority",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260525023435",
+          "startedAt": "2026-05-25T02:34:35.587Z",
+          "finishedAt": "2026-05-25T02:34:46.267Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "AUTH_INVALID",
+              "chain": "",
+              "message": "API error (code=50114): Invalid Authority",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260525023755",
+          "startedAt": "2026-05-25T02:37:55.717Z",
+          "finishedAt": "2026-05-25T02:38:16.680Z",
+          "status": "ok",
+          "chains": [],
+          "rawSignalCount": 50,
+          "decisions": 50,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
+        },
+        {
+          "runId": "20260525024945",
+          "startedAt": "2026-05-25T02:49:45.619Z",
+          "finishedAt": "2026-05-25T02:50:06.440Z",
+          "status": "ok",
+          "chains": [],
+          "rawSignalCount": 50,
+          "decisions": 50,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
+        },
+        {
+          "runId": "20260525030148",
+          "startedAt": "2026-05-25T03:01:48.220Z",
+          "finishedAt": "2026-05-25T03:02:19.794Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 100,
+          "decisions": 100,
+          "trades": 3,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 3,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2755.36,
+            "openValueUsd": 192.02,
+            "equityUsd": 2947.38,
+            "realizedPnlUsd": -52.04,
+            "unrealizedPnlUsd": -0.58,
+            "totalPnlUsd": -52.62,
+            "totalPnlPct": -1.75
+          }
+        },
+        {
+          "runId": "20260525033347",
+          "startedAt": "2026-05-25T03:33:47.500Z",
+          "finishedAt": "2026-05-25T03:34:19.488Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 100,
+          "decisions": 100,
+          "trades": 2,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 2,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2703.32,
+            "openValueUsd": 192.02,
+            "equityUsd": 2895.34,
+            "realizedPnlUsd": -104.09,
+            "unrealizedPnlUsd": -0.58,
+            "totalPnlUsd": -104.66,
+            "totalPnlPct": -3.49
+          }
+        },
+        {
+          "runId": "20260525072154",
+          "startedAt": "2026-05-25T07:21:54.400Z",
+          "finishedAt": "2026-05-25T07:21:54.637Z",
+          "status": "failed",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "AUTH_INVALID",
+              "chain": "",
+              "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2703.32,
+            "openValueUsd": 192.02,
+            "equityUsd": 2895.34,
+            "realizedPnlUsd": -104.09,
+            "unrealizedPnlUsd": -0.58,
+            "totalPnlUsd": -104.66,
+            "totalPnlPct": -3.49
+          }
+        },
+        {
+          "runId": "20260525081321",
+          "startedAt": "2026-05-25T08:13:21.812Z",
+          "finishedAt": "2026-05-25T08:13:55.611Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 100,
+          "decisions": 100,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [
+            "授权恢复或重新登录后，已按规则重置模拟本金为 3000U。历史轮次保留用于审计，不混入新会话本金。"
+          ],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": {
+            "timestamp": "2026-05-25T08:13:21.812Z",
+            "runId": "20260525081321",
+            "reason": "auth_recovered_after_login",
+            "previousSession": {
+              "id": "20260525081321",
+              "startedAt": "2026-05-25T08:13:21.812Z",
+              "lastAuthOkAt": "",
+              "lastAuthFailureAt": "",
+              "authState": "unknown",
+              "authRecoveries": 0,
+              "resetReason": "initial"
+            },
+            "previousCapital": {
+              "initialUsd": 3000,
+              "cashUsd": 2703.32,
+              "openValueUsd": 192.02,
+              "equityUsd": 2895.34,
+              "realizedPnlUsd": -104.09,
+              "unrealizedPnlUsd": -0.58,
+              "totalPnlUsd": -104.66,
+              "totalPnlPct": -3.49
+            },
+            "previousOpenPositions": 1,
+            "previousTrades": 5,
+            "previousDecisions": 300
+          },
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
+        }
+      ]
+    }
+  ]
+}

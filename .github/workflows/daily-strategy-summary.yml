@@ -1,15 +1,15 @@
-name: Signal paper scan
+name: Daily strategy summary
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "7 * * * *"
+    - cron: "55 15 * * *"
 
 permissions:
   contents: write
 
 jobs:
-  scan:
+  summarize:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,30 +18,16 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install Onchain OS CLI
-        shell: bash
-        run: |
-          curl -sSL https://raw.githubusercontent.com/okx/onchainos-skills/main/install.sh | bash
-
-      - name: Run signal paper scanner
-        env:
-          OKX_PROJECT_ID: ${{ secrets.OKX_PROJECT_ID }}
-          OKX_API_KEY: ${{ secrets.OKX_API_KEY }}
-          OKX_SECRET_KEY: ${{ secrets.OKX_SECRET_KEY }}
-          OKX_PASSPHRASE: ${{ secrets.OKX_PASSPHRASE }}
-          OKX_API_PASSPHRASE: ${{ secrets.OKX_API_PASSPHRASE }}
-        run: npm run scan:signal
-
-      - name: Refresh operation log and daily summary
+      - name: Write daily strategy summary
         run: npm run summarize:daily
 
-      - name: Commit updated paper ledger
+      - name: Commit daily summary
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update signal paper ledger"
-          file_pattern: docs/data/signal-paper.json docs/data/operation-log.json docs/data/daily-strategy-summary.json docs/reports/*.md
+          commit_message: "Write daily strategy summary"
+          file_pattern: docs/data/operation-log.json docs/data/daily-strategy-summary.json docs/reports/*.md
 
-      - name: Publish GitHub Pages data
+      - name: Publish daily summary to GitHub Pages
         shell: bash
         run: |
           set -euo pipefail
@@ -61,6 +47,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No GitHub Pages changes."
           else
-            git commit -m "Publish signal paper ledger"
+            git commit -m "Publish daily strategy summary"
             git push origin HEAD:gh-pages
           fi
