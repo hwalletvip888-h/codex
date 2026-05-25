@@ -24,6 +24,8 @@ jobs:
           curl -sSL https://raw.githubusercontent.com/okx/onchainos-skills/main/install.sh | bash
 
       - name: Run signal paper scanner
+        id: scan
+        continue-on-error: true
         env:
           OKX_PROJECT_ID: ${{ secrets.OKX_PROJECT_ID }}
           OKX_API_KEY: ${{ secrets.OKX_API_KEY }}
@@ -33,15 +35,19 @@ jobs:
         run: npm run scan:signal
 
       - name: Refresh operation log and daily summary
+        if: always()
+        continue-on-error: true
         run: npm run summarize:daily
 
       - name: Commit updated paper ledger
+        if: always()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update signal paper ledger"
           file_pattern: docs/data/signal-paper.json docs/data/operation-log.json docs/data/daily-strategy-summary.json docs/reports/*.md
 
       - name: Publish GitHub Pages data
+        if: always()
         shell: bash
         run: |
           set -euo pipefail
