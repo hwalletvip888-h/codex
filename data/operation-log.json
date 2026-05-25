@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-25T08:45:13.595Z",
+  "source": "docs/data/signal-paper.json",
+  "totalRuns": 15,
+  "latestRunId": "20260525081321",
+  "entries": [
+    {
+      "runId": "20260525081321",
+      "startedAt": "2026-05-25T08:13:21.812Z",
+      "finishedAt": "2026-05-25T08:13:55.611Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 100,
+      "decisions": 100,
+      "trades": 0,
+      "mistakes": [],
+      "notes": [
+        "授权恢复或重新登录后，已按规则重置模拟本金为 3000U。历史轮次保留用于审计，不混入新会话本金。"
+      ],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": {
+        "timestamp": "2026-05-25T08:13:21.812Z",
+        "runId": "20260525081321",
+        "reason": "auth_recovered_after_login",
+        "previousSession": {
+          "id": "20260525081321",
+          "startedAt": "2026-05-25T08:13:21.812Z",
+          "lastAuthOkAt": "",
+          "lastAuthFailureAt": "",
+          "authState": "unknown",
+          "authRecoveries": 0,
+          "resetReason": "initial"
+        },
+        "previousCapital": {
+          "initialUsd": 3000,
+          "cashUsd": 2703.32,
+          "openValueUsd": 192.02,
+          "equityUsd": 2895.34,
+          "realizedPnlUsd": -104.09,
+          "unrealizedPnlUsd": -0.58,
+          "totalPnlUsd": -104.66,
+          "totalPnlPct": -3.49
+        },
+        "previousOpenPositions": 1,
+        "previousTrades": 5,
+        "previousDecisions": 300
+      },
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 3000,
+        "openValueUsd": 0,
+        "equityUsd": 3000,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": 0,
+        "totalPnlUsd": 0,
+        "totalPnlPct": 0
+      }
+    },
+    {
+      "runId": "20260525072154",
+      "startedAt": "2026-05-25T07:21:54.400Z",
+      "finishedAt": "2026-05-25T07:21:54.637Z",
+      "status": "failed",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "AUTH_INVALID",
+          "chain": "",
+          "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+        }
+      ],
+      "notes": [],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2703.32,
+        "openValueUsd": 192.02,
+        "equityUsd": 2895.34,
+        "realizedPnlUsd": -104.09,
+        "unrealizedPnlUsd": -0.58,
+        "totalPnlUsd": -104.66,
+        "totalPnlPct": -3.49
+      }
+    },
+    {
+      "runId": "20260525033347",
+      "startedAt": "2026-05-25T03:33:47.500Z",
+      "finishedAt": "2026-05-25T03:34:19.488Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 100,
+      "decisions": 100,
+      "trades": 2,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 2,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2703.32,
+        "openValueUsd": 192.02,
+        "equityUsd": 2895.34,
+        "realizedPnlUsd": -104.09,
+        "unrealizedPnlUsd": -0.58,
+        "totalPnlUsd": -104.66,
+        "totalPnlPct": -3.49
+      }
+    },
+    {
+      "runId": "20260525030148",
+      "startedAt": "2026-05-25T03:01:48.220Z",
+      "finishedAt": "2026-05-25T03:02:19.794Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 100,
+      "decisions": 100,
+      "trades": 3,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 3,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2755.36,
+        "openValueUsd": 192.02,
+        "equityUsd": 2947.38,
+        "realizedPnlUsd": -52.04,
+        "unrealizedPnlUsd": -0.58,
+        "totalPnlUsd": -52.62,
+        "totalPnlPct": -1.75
+      }
+    },
+    {
+      "runId": "20260525024945",
+      "startedAt": "2026-05-25T02:49:45.619Z",
+      "finishedAt": "2026-05-25T02:50:06.440Z",
+      "status": "ok",
+      "chains": [],
+      "rawSignalCount": 50,
+      "decisions": 50,
+      "trades": 0,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 3000,
+        "openValueUsd": 0,
+        "equityUsd": 3000,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": 0,
+        "totalPnlUsd": 0,
+        "totalPnlPct": 0
+      }
+    },
+    {
+      "runId": "20260525023755",
+      "startedAt": "2026-05-25T02:37:55.717Z",
+      "finishedAt": "2026-05-25T02:38:16.680Z",
+      "status": "ok",
+      "chains": [],
+      "rawSignalCount": 50,
+      "decisions": 50,
+      "trades": 0,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
+    {
+      "runId": "20260525023435",
+      "startedAt": "2026-05-25T02:34:35.587Z",
+      "finishedAt": "2026-05-25T02:34:46.267Z",
+      "status": "failed",
+      "chains": [],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "AUTH_INVALID",
+          "chain": "",
+          "message": "API error (code=50114): Invalid Authority",
+          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+        }
+      ],
+      "notes": [],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
+    {
+      "runId": "20260525023340",
+      "startedAt": "2026-05-25T02:33:40.432Z",
+      "finishedAt": "2026-05-25T02:33:51.308Z",
+      "status": "failed",
+      "chains": [],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "AUTH_INVALID",
+          "chain": "",
+          "message": "API error (code=50114): Invalid Authority",
+          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+        }
+      ],
+      "notes": [],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
+    {
+      "runId": "20260525014434",
+      "startedAt": "2026-05-25T01:44:34.028Z",
+      "finishedAt": "2026-05-25T01:44:34.028Z",
+      "status": "failed",
+      "chains": [],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "FILE_WRITE_ERROR",
+          "chain": "",
+          "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+          "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+        }
+      ],
+      "notes": [
+        "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+      ],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
+    {
+      "runId": "20260525004251",
+      "startedAt": "2026-05-25T00:42:51.578Z",
+      "finishedAt": "2026-05-25T00:42:51.578Z",
+      "status": "failed",
+      "chains": [],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "FILE_WRITE_ERROR",
+          "chain": "",
+          "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+          "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+        }
+      ],
+      "notes": [
+        "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+      ],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
+    {
+      "runId": "20260524234244",
+      "startedAt": "2026-05-24T23:42:44.258Z",
+      "finishedAt": "2026-05-24T23:42:44.258Z",
+      "status": "failed",
+      "chains": [],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "FILE_WRITE_ERROR",
+          "chain": "",
+          "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+          "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+        }
+      ],
+      "notes": [
+        "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+      ],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
+    {
+      "runId": "20260524224029",
+      "startedAt": "2026-05-24T22:40:29.999Z",
+      "finishedAt": "2026-05-24T22:40:29.999Z",
+      "status": "failed",
+      "chains": [],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "FILE_WRITE_ERROR",
+          "chain": "",
+          "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+          "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+        }
+      ],
+      "notes": [
+        "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+      ],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
+    {
+      "runId": "20260524214019",
+      "startedAt": "2026-05-24T21:40:19.652Z",
+      "finishedAt": "2026-05-24T21:40:19.652Z",
+      "status": "failed",
+      "chains": [],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "FILE_WRITE_ERROR",
+          "chain": "",
+          "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+          "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+        }
+      ],
+      "notes": [
+        "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+      ],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
+    {
+      "runId": "20260524203920",
+      "startedAt": "2026-05-24T20:39:20.455Z",
+      "finishedAt": "2026-05-24T20:39:20.455Z",
+      "status": "failed",
+      "chains": [],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "FILE_WRITE_ERROR",
+          "chain": "",
+          "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+          "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+        }
+      ],
+      "notes": [
+        "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+      ],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
+    {
+      "runId": "20260524193337",
+      "startedAt": "2026-05-24T19:33:37.998Z",
+      "finishedAt": "2026-05-24T19:33:48.698Z",
+      "status": "failed",
+      "chains": [],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "AUTH_INVALID",
+          "chain": "",
+          "message": "API error (code=50114): Invalid Authority",
+          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+        }
+      ],
+      "notes": [],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    }
+  ]
+}
