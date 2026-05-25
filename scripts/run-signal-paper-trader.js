@@ -69,6 +69,14 @@ function shortAddress(address) {
   return address.length > 12 ? `${address.slice(0, 6)}...${address.slice(-4)}` : address;
 }
 
+function parseWalletAddresses(value) {
+  if (Array.isArray(value)) return value.map((item) => String(item).trim()).filter(Boolean);
+  return String(value || "")
+    .split(/[,\s]+/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
 function positionKey(chain, address) {
   return `${String(chain || "").toLowerCase()}:${String(address || "").toLowerCase()}`;
 }
@@ -171,6 +179,10 @@ function newState(now) {
       resetReason: "initial"
     },
     accountResets: [],
+    walletBlacklist: {
+      updatedAt: now,
+      entries: []
+    },
     strategyArchive: {
       updatedAt: now,
       best: [],
@@ -201,6 +213,10 @@ function normalizeState(state, now) {
       }
     : newState(now).session;
   base.accountResets = Array.isArray(base.accountResets) ? base.accountResets : [];
+  base.walletBlacklist = base.walletBlacklist && typeof base.walletBlacklist === "object"
+    ? base.walletBlacklist
+    : { updatedAt: now, entries: [] };
+  base.walletBlacklist.entries = Array.isArray(base.walletBlacklist.entries) ? base.walletBlacklist.entries : [];
   base.strategyArchive = base.strategyArchive && typeof base.strategyArchive === "object"
     ? base.strategyArchive
     : { updatedAt: now, best: [], rejected: [], lessons: [] };
@@ -277,6 +293,68 @@ function resetPaperAccountForRelogin(state, now, run, reason) {
   run.notes.push("授权恢复或重新登录后，已按规则重置模拟本金为 3000U。历史轮次保留用于审计，不混入新会话本金。");
 }
 
+function blacklistKey(chain, walletAddress) {
+  return `${String(chain || "").toLowerCase()}:${String(walletAddress || "").toLowerCase()}`;
+}
+
+function blacklistHits(state, signal) {
+  const entries = state.walletBlacklist?.entries || [];
+  if (!entries.length || !signal.triggerWalletAddresses?.length) return [];
+  const blocked = new Map(entries.map((entry) => [blacklistKey(entry.chain, entry.walletAddress), entry]));
+  return signal.triggerWalletAddresses
+    .map((walletAddress) => blocked.get(blacklistKey(signal.chain, walletAddress)))
+    .filter(Boolean);
+}
+
+function upsertWalletBlacklist(state, trade, now) {
+  if (trade.action !== "SELL" || toNumber(trade.realizedPnlUsd) >= 0) return;
+  const walletAddresses = parseWalletAddresses(trade.triggerWalletAddresses);
+  if (!walletAddresses.length) return;
+  const entries = state.walletBlacklist.entries;
+  for (const walletAddress of walletAddresses) {
+    const key = blacklistKey(trade.chain, walletAddress);
+    let entry = entries.find((item) => blacklistKey(item.chain, item.walletAddress) === key);
+    if (!entry) {
+      entry = {
+        walletAddress,
+        shortAddress: shortAddress(walletAddress),
+        chain: trade.chain,
+        walletType: trade.walletType,
+        status: "blacklisted",
+        firstSeenAt: now,
+        lastSeenAt: now,
+        lossCount: 0,
+        totalLossUsd: 0,
+        tokens: [],
+        reasons: []
+      };
+      entries.push(entry);
+    }
+    entry.lastSeenAt = now;
+    entry.lossCount = toNumber(entry.lossCount) + 1;
+    entry.totalLossUsd = round(toNumber(entry.totalLossUsd) + Math.min(0, toNumber(trade.realizedPnlUsd)), 2);
+    if (!entry.tokens.some((item) => item.address === trade.address)) {
+      entry.tokens.unshift({
+        token: trade.token,
+        symbol: trade.symbol,
+        address: trade.address,
+        shortAddress: trade.shortAddress,
+        runId: trade.runId,
+        realizedPnlUsd: trade.realizedPnlUsd
+      });
+      entry.tokens = entry.tokens.slice(0, 10);
+    }
+    if (trade.reason && !entry.reasons.includes(trade.reason)) {
+      entry.reasons.unshift(trade.reason);
+      entry.reasons = entry.reasons.slice(0, 10);
+    }
+  }
+  state.walletBlacklist.updatedAt = now;
+  state.walletBlacklist.entries = entries
+    .sort((a, b) => Math.abs(toNumber(b.totalLossUsd)) - Math.abs(toNumber(a.totalLossUsd)) || toNumber(b.lossCount) - toNumber(a.lossCount))
+    .slice(0, 500);
+}
+
 function normalizeSignal(item, index, requestTime, fallbackChain) {
   const token = item.token || item.baseToken || {};
   const address = String(firstDefined(
@@ -330,6 +408,13 @@ function normalizeSignal(item, index, requestTime, fallbackChain) {
     shortAddress: shortAddress(address),
     chain: firstDefined(item.chain, item.chainName, fallbackChain) || fallbackChain,
     walletType,
+    triggerWalletAddresses: parseWalletAddresses(firstDefined(
+      item.triggerWalletAddress,
+      item.triggerWalletAddresses,
+      item.walletAddress,
+      item.walletAddresses,
+      item.addresses
+    )),
     amountUsd,
     walletCount,
     soldRatioPercent,
@@ -339,8 +424,9 @@ function normalizeSignal(item, index, requestTime, fallbackChain) {
   };
 }
 
-function scoreSignal(signal) {
+function scoreSignal(signal, state) {
   const isExcludedWalletType = CONFIG.excludedWalletTypes.includes(signal.walletType);
+  const blockedWallets = blacklistHits(state, signal);
   const amountScore = Math.min(30, Math.log10(signal.amountUsd + 1) * 7);
   const walletScore = Math.min(25, signal.walletCount * 7);
   const soldScore = Math.max(0, 25 - signal.soldRatioPercent * 0.55);
@@ -354,6 +440,7 @@ function scoreSignal(signal) {
   if (!signal.address) blockers.push("missing token address");
   if (!signal.priceUsd) blockers.push("missing signal price");
   if (isExcludedWalletType) blockers.push(`excluded wallet type: ${signal.walletType}`);
+  for (const entry of blockedWallets.slice(0, 3)) blockers.push(`blacklisted source wallet: ${entry.shortAddress || shortAddress(entry.walletAddress)}`);
   if (signal.amountUsd < CONFIG.minSignalAmountUsd) blockers.push(`amount < ${CONFIG.minSignalAmountUsd}U`);
   if (signal.walletCount < CONFIG.minTriggerWalletCount) blockers.push(`wallet count < ${CONFIG.minTriggerWalletCount}`);
   if (signal.soldRatioPercent > CONFIG.maxSoldRatioPercent) blockers.push(`sold ratio > ${CONFIG.maxSoldRatioPercent}%`);
@@ -388,6 +475,7 @@ function makeTrade(runId, timestamp, action, signal, values) {
     shortAddress: signal.shortAddress,
     chain: signal.chain,
     walletType: signal.walletType,
+    triggerWalletAddresses: signal.triggerWalletAddresses || [],
     signalAmountUsd: round(signal.amountUsd, 2),
     triggerWalletCount: signal.walletCount,
     soldRatioPercent: round(signal.soldRatioPercent, 2),
@@ -416,11 +504,13 @@ function executeSell(state, run, runId, timestamp, position, signal, analysis, s
     feeUsd: round(feeUsd, 2),
     units: position.units,
     score: analysis.score,
+    triggerWalletAddresses: position.entrySignal?.triggerWalletAddresses || signal.triggerWalletAddresses || [],
     realizedPnlUsd: round(pnlUsd, 2),
     reason
   });
   state.trades.unshift(trade);
   run.trades.push(trade);
+  upsertWalletBlacklist(state, trade, timestamp);
   return trade;
 }
 
@@ -690,7 +780,7 @@ if (!chainsResult.ok || chainsResult.confirming) {
     run.rawSignalCount += signals.length;
 
     for (const signal of signals) {
-      const analysis = scoreSignal(signal);
+      const analysis = scoreSignal(signal, state);
       const existing = openByAddress.get(positionKey(signal.chain, signal.address));
       const decision = {
         timestamp: now,
@@ -701,6 +791,7 @@ if (!chainsResult.ok || chainsResult.confirming) {
         shortAddress: signal.shortAddress,
         chain: signal.chain,
         walletType: signal.walletType,
+        triggerWalletAddresses: signal.triggerWalletAddresses,
         amountUsd: round(signal.amountUsd, 2),
         triggerWalletCount: signal.walletCount,
         soldRatioPercent: round(signal.soldRatioPercent, 2),
@@ -746,6 +837,7 @@ if (!chainsResult.ok || chainsResult.confirming) {
             entrySignal: {
               amountUsd: round(signal.amountUsd, 2),
               triggerWalletCount: signal.walletCount,
+              triggerWalletAddresses: signal.triggerWalletAddresses,
               soldRatioPercent: round(signal.soldRatioPercent, 2),
               walletType: signal.walletType,
               score: analysis.score
@@ -852,6 +944,7 @@ const runDecisionSummaries = run.decisions.map((item) => ({
   shortAddress: item.shortAddress,
   chain: item.chain,
   walletType: item.walletType,
+  triggerWalletAddresses: item.triggerWalletAddresses || [],
   action: item.action,
   score: item.score,
   amountUsd: item.amountUsd,

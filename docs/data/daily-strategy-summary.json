@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-25T10:58:47.108Z",
+  "generatedAt": "2026-05-25T11:06:43.203Z",
   "latest": {
     "date": "2026-05-25",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-25T10:58:47.107Z",
-    "runCount": 16,
+    "generatedAt": "2026-05-25T11:06:43.202Z",
+    "runCount": 17,
     "statuses": {
       "failed": 10,
-      "ok": 6
+      "ok": 7
     },
-    "rawSignalCount": 451,
-    "decisionCount": 151,
+    "rawSignalCount": 502,
+    "decisionCount": 202,
     "actions": {
-      "IGNORE": 112,
-      "WATCH": 39
+      "IGNORE": 152,
+      "WATCH": 50
     },
     "tradeCount": 0,
     "buys": 0,
@@ -27,11 +27,11 @@
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 147
+        "count": 197
       },
       {
         "name": "amount < 500U",
-        "count": 60
+        "count": 68
       }
     ],
     "mistakeCount": 10,
@@ -40,6 +40,8 @@
       "AUTH_INVALID": 4
     },
     "accountResets": 1,
+    "walletBlacklistCount": 0,
+    "latestBlacklistedWallets": [],
     "bestStrategies": [
       {
         "key": "entry:bsc:smart money:amount>=500:wallets>=8:sold<=35",
@@ -204,6 +206,71 @@
         ]
       },
       {
+        "key": "blocker:solana:kol/influencer:sold ratio > 35%",
+        "title": "solana KOL/Influencer 不及格条件",
+        "status": "归档拦截",
+        "rule": "sold ratio > 35%",
+        "reason": "amount 4800.25U; wallets 9; sold 63.01%; type KOL/Influencer",
+        "score": 56.8,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "Pumba",
+          "symbol": "Pumba",
+          "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
+          "shortAddress": "67snfo...pump",
+          "chain": "solana"
+        },
+        "firstSeenAt": "2026-05-25T03:33:47.500Z",
+        "lastSeenAt": "2026-05-25T11:05:05.649Z",
+        "occurrences": 63,
+        "examples": [
+          {
+            "token": "Penny To A Penny",
+            "symbol": "PENNY",
+            "address": "795btpfaaf6x9sfgog66ujtdjuwhyukortqh8fgppump",
+            "shortAddress": "795btp...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Hedge",
+            "symbol": "Hedge",
+            "address": "2yccabpwtuo3z1vifchtamkcc88safrbujdqzmfbpump",
+            "shortAddress": "2yccab...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Embrace The Wave",
+            "symbol": "Embrace",
+            "address": "4eif6waywkxe4tp2fgav76vmgzta3pggdq4etubppump",
+            "shortAddress": "4eif6w...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "StickDAO",
+            "symbol": "STICK",
+            "address": "829q82etuezkkjrpfrbb3bqmcqhikaqqhte3vbgopump",
+            "shortAddress": "829q82...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "I choose rich everytime",
+            "symbol": "RICH",
+            "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
+            "shortAddress": "5hilgy...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Enhanced Games",
+            "symbol": "ENHANCED",
+            "address": "c6zb1e9yvhbrydqrpu47m2nnpy7nuq8lkma9j7prjteg",
+            "shortAddress": "c6zb1e...jteg",
+            "chain": "solana"
+          }
+        ]
+      },
+      {
         "key": "blocker:solana:smart money:amount < 500u",
         "title": "solana Smart Money 不及格条件",
         "status": "归档拦截",
@@ -269,131 +336,66 @@
         ]
       },
       {
-        "key": "blocker:bsc:smart money:amount < 500u",
-        "title": "bsc Smart Money 不及格条件",
-        "status": "归档拦截",
-        "rule": "amount < 500U",
-        "reason": "amount 282.23U; wallets 3; sold 82.9%; type Smart Money",
-        "score": 69.9,
-        "wins": 0,
-        "losses": 0,
-        "totalPnlUsd": 0,
-        "example": {
-          "token": "Sea Z",
-          "symbol": "SEAZ",
-          "address": "0x9ba3393b555ab3f3d3830c870e7bfeda09b24444",
-          "shortAddress": "0x9ba3...4444",
-          "chain": "bsc"
-        },
-        "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-25T08:13:21.812Z",
-        "occurrences": 43,
-        "examples": [
-          {
-            "token": "Terminus",
-            "symbol": "Terminus",
-            "address": "0x7d74a3497856d0f463af55cd489823a98dfa6666",
-            "shortAddress": "0x7d74...6666",
-            "chain": "bsc"
-          },
-          {
-            "token": "全网爆火表情包",
-            "symbol": "背手负鼠",
-            "address": "0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444",
-            "shortAddress": "0x5f6f...4444",
-            "chain": "bsc"
-          },
-          {
-            "token": "巴西队",
-            "symbol": "巴西队",
-            "address": "0x5f3f8fa5f412184c5032f9554f62a1d3275c7777",
-            "shortAddress": "0x5f3f...7777",
-            "chain": "bsc"
-          },
-          {
-            "token": "Freedom of Money Art",
-            "symbol": "FOMA",
-            "address": "0x03a0a8700fa3809c6c2d637babd841296da57777",
-            "shortAddress": "0x03a0...7777",
-            "chain": "bsc"
-          },
-          {
-            "token": "那份独有家乡味道和善意的酱香饼",
-            "symbol": "酱香饼",
-            "address": "0xbee4c96b8392027ae33326021f548cb561b34444",
-            "shortAddress": "0xbee4...4444",
-            "chain": "bsc"
-          },
-          {
-            "token": "niubi.com跳转他的推特",
-            "symbol": "王纯",
-            "address": "0x5524631e3dc1d2cc7bd5cb391ddb296467a64444",
-            "shortAddress": "0x5524...4444",
-            "chain": "bsc"
-          }
-        ]
-      },
-      {
-        "key": "blocker:solana:kol/influencer:sold ratio > 35%",
-        "title": "solana KOL/Influencer 不及格条件",
+        "key": "blocker:solana:whale:sold ratio > 35%",
+        "title": "solana Whale 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 4800.25U; wallets 9; sold 63.01%; type KOL/Influencer",
-        "score": 56.8,
+        "reason": "amount 1594.52U; wallets 3; sold 49.21%; type Whale",
+        "score": 60.9,
         "wins": 0,
         "losses": 0,
         "totalPnlUsd": 0,
         "example": {
-          "token": "Pumba",
-          "symbol": "Pumba",
-          "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
-          "shortAddress": "67snfo...pump",
+          "token": "Enhanced Games",
+          "symbol": "ENHA",
+          "address": "agwmh5gfpkqetwoxxpo43p3sgr4ckxb5xyfevbjmpump",
+          "shortAddress": "agwmh5...pump",
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-25T10:58:04.711Z",
-        "occurrences": 37,
+        "lastSeenAt": "2026-05-25T11:05:05.649Z",
+        "occurrences": 55,
         "examples": [
           {
-            "token": "Penny To A Penny",
+            "token": "Marscoin",
+            "symbol": "MARS",
+            "address": "9q57bttjzmnjub9dgeurntsrfvf6ffhztekkgckmpump",
+            "shortAddress": "9q57bt...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "JAMES",
+            "symbol": "JAMES",
+            "address": "45wm4ef4xcfckvvhji9kibbnwdx5x77m1g6rmu7ipump",
+            "shortAddress": "45wm4e...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Penny Lane",
             "symbol": "PENNY",
-            "address": "795btpfaaf6x9sfgog66ujtdjuwhyukortqh8fgppump",
-            "shortAddress": "795btp...pump",
+            "address": "grycawuknkfadlpjmblx1u462kmxacr9qfs4emcjfqsu",
+            "shortAddress": "grycaw...fqsu",
             "chain": "solana"
           },
           {
-            "token": "Hedge",
-            "symbol": "Hedge",
-            "address": "2yccabpwtuo3z1vifchtamkcc88safrbujdqzmfbpump",
-            "shortAddress": "2yccab...pump",
+            "token": "TROLL",
+            "symbol": "TROLL",
+            "address": "5uuh9rtdispq6hks6bp4ndu9pnjpxrxuiw6shbtbhgh2",
+            "shortAddress": "5uuh9r...hgh2",
             "chain": "solana"
           },
           {
-            "token": "Embrace The Wave",
-            "symbol": "Embrace",
-            "address": "4eif6waywkxe4tp2fgav76vmgzta3pggdq4etubppump",
-            "shortAddress": "4eif6w...pump",
+            "token": "kaimo",
+            "symbol": "KAIMO",
+            "address": "8qzddk7iqzgcpwk3dylkrmrosc8fbyfbbkgv3xveasy",
+            "shortAddress": "8qzddk...easy",
             "chain": "solana"
           },
           {
-            "token": "StickDAO",
-            "symbol": "STICK",
-            "address": "829q82etuezkkjrpfrbb3bqmcqhikaqqhte3vbgopump",
-            "shortAddress": "829q82...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "I choose rich everytime",
-            "symbol": "RICH",
-            "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
-            "shortAddress": "5hilgy...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "Enhanced Games",
-            "symbol": "ENHANCED",
-            "address": "c6zb1e9yvhbrydqrpu47m2nnpy7nuq8lkma9j7prjteg",
-            "shortAddress": "c6zb1e...jteg",
+            "token": "Tralalero Tralala",
+            "symbol": "TRALALERO",
+            "address": "2mbq3mrkskf6nng5x29rbk4b9f7cwr4n1eqj18nsvirl",
+            "shortAddress": "2mbq3m...virl",
             "chain": "solana"
           }
         ]
@@ -940,6 +942,48 @@
           "totalPnlUsd": 0,
           "totalPnlPct": 0
         }
+      },
+      {
+        "runId": "20260525110505",
+        "startedAt": "2026-05-25T11:05:05.649Z",
+        "finishedAt": "2026-05-25T11:05:36.877Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 51,
+        "decisions": 51,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 1,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
       }
     ]
   },
@@ -947,17 +991,17 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-25T10:58:47.107Z",
-      "runCount": 16,
+      "generatedAt": "2026-05-25T11:06:43.202Z",
+      "runCount": 17,
       "statuses": {
         "failed": 10,
-        "ok": 6
+        "ok": 7
       },
-      "rawSignalCount": 451,
-      "decisionCount": 151,
+      "rawSignalCount": 502,
+      "decisionCount": 202,
       "actions": {
-        "IGNORE": 112,
-        "WATCH": 39
+        "IGNORE": 152,
+        "WATCH": 50
       },
       "tradeCount": 0,
       "buys": 0,
@@ -970,11 +1014,11 @@
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 147
+          "count": 197
         },
         {
           "name": "amount < 500U",
-          "count": 60
+          "count": 68
         }
       ],
       "mistakeCount": 10,
@@ -983,6 +1027,8 @@
         "AUTH_INVALID": 4
       },
       "accountResets": 1,
+      "walletBlacklistCount": 0,
+      "latestBlacklistedWallets": [],
       "bestStrategies": [
         {
           "key": "entry:bsc:smart money:amount>=500:wallets>=8:sold<=35",
@@ -1147,6 +1193,71 @@
           ]
         },
         {
+          "key": "blocker:solana:kol/influencer:sold ratio > 35%",
+          "title": "solana KOL/Influencer 不及格条件",
+          "status": "归档拦截",
+          "rule": "sold ratio > 35%",
+          "reason": "amount 4800.25U; wallets 9; sold 63.01%; type KOL/Influencer",
+          "score": 56.8,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Pumba",
+            "symbol": "Pumba",
+            "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
+            "shortAddress": "67snfo...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T11:05:05.649Z",
+          "occurrences": 63,
+          "examples": [
+            {
+              "token": "Penny To A Penny",
+              "symbol": "PENNY",
+              "address": "795btpfaaf6x9sfgog66ujtdjuwhyukortqh8fgppump",
+              "shortAddress": "795btp...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Hedge",
+              "symbol": "Hedge",
+              "address": "2yccabpwtuo3z1vifchtamkcc88safrbujdqzmfbpump",
+              "shortAddress": "2yccab...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Embrace The Wave",
+              "symbol": "Embrace",
+              "address": "4eif6waywkxe4tp2fgav76vmgzta3pggdq4etubppump",
+              "shortAddress": "4eif6w...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "StickDAO",
+              "symbol": "STICK",
+              "address": "829q82etuezkkjrpfrbb3bqmcqhikaqqhte3vbgopump",
+              "shortAddress": "829q82...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "I choose rich everytime",
+              "symbol": "RICH",
+              "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
+              "shortAddress": "5hilgy...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Enhanced Games",
+              "symbol": "ENHANCED",
+              "address": "c6zb1e9yvhbrydqrpu47m2nnpy7nuq8lkma9j7prjteg",
+              "shortAddress": "c6zb1e...jteg",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
           "key": "blocker:solana:smart money:amount < 500u",
           "title": "solana Smart Money 不及格条件",
           "status": "归档拦截",
@@ -1212,131 +1323,66 @@
           ]
         },
         {
-          "key": "blocker:bsc:smart money:amount < 500u",
-          "title": "bsc Smart Money 不及格条件",
-          "status": "归档拦截",
-          "rule": "amount < 500U",
-          "reason": "amount 282.23U; wallets 3; sold 82.9%; type Smart Money",
-          "score": 69.9,
-          "wins": 0,
-          "losses": 0,
-          "totalPnlUsd": 0,
-          "example": {
-            "token": "Sea Z",
-            "symbol": "SEAZ",
-            "address": "0x9ba3393b555ab3f3d3830c870e7bfeda09b24444",
-            "shortAddress": "0x9ba3...4444",
-            "chain": "bsc"
-          },
-          "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-25T08:13:21.812Z",
-          "occurrences": 43,
-          "examples": [
-            {
-              "token": "Terminus",
-              "symbol": "Terminus",
-              "address": "0x7d74a3497856d0f463af55cd489823a98dfa6666",
-              "shortAddress": "0x7d74...6666",
-              "chain": "bsc"
-            },
-            {
-              "token": "全网爆火表情包",
-              "symbol": "背手负鼠",
-              "address": "0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444",
-              "shortAddress": "0x5f6f...4444",
-              "chain": "bsc"
-            },
-            {
-              "token": "巴西队",
-              "symbol": "巴西队",
-              "address": "0x5f3f8fa5f412184c5032f9554f62a1d3275c7777",
-              "shortAddress": "0x5f3f...7777",
-              "chain": "bsc"
-            },
-            {
-              "token": "Freedom of Money Art",
-              "symbol": "FOMA",
-              "address": "0x03a0a8700fa3809c6c2d637babd841296da57777",
-              "shortAddress": "0x03a0...7777",
-              "chain": "bsc"
-            },
-            {
-              "token": "那份独有家乡味道和善意的酱香饼",
-              "symbol": "酱香饼",
-              "address": "0xbee4c96b8392027ae33326021f548cb561b34444",
-              "shortAddress": "0xbee4...4444",
-              "chain": "bsc"
-            },
-            {
-              "token": "niubi.com跳转他的推特",
-              "symbol": "王纯",
-              "address": "0x5524631e3dc1d2cc7bd5cb391ddb296467a64444",
-              "shortAddress": "0x5524...4444",
-              "chain": "bsc"
-            }
-          ]
-        },
-        {
-          "key": "blocker:solana:kol/influencer:sold ratio > 35%",
-          "title": "solana KOL/Influencer 不及格条件",
+          "key": "blocker:solana:whale:sold ratio > 35%",
+          "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4800.25U; wallets 9; sold 63.01%; type KOL/Influencer",
-          "score": 56.8,
+          "reason": "amount 1594.52U; wallets 3; sold 49.21%; type Whale",
+          "score": 60.9,
           "wins": 0,
           "losses": 0,
           "totalPnlUsd": 0,
           "example": {
-            "token": "Pumba",
-            "symbol": "Pumba",
-            "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
-            "shortAddress": "67snfo...pump",
+            "token": "Enhanced Games",
+            "symbol": "ENHA",
+            "address": "agwmh5gfpkqetwoxxpo43p3sgr4ckxb5xyfevbjmpump",
+            "shortAddress": "agwmh5...pump",
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-25T10:58:04.711Z",
-          "occurrences": 37,
+          "lastSeenAt": "2026-05-25T11:05:05.649Z",
+          "occurrences": 55,
           "examples": [
             {
-              "token": "Penny To A Penny",
+              "token": "Marscoin",
+              "symbol": "MARS",
+              "address": "9q57bttjzmnjub9dgeurntsrfvf6ffhztekkgckmpump",
+              "shortAddress": "9q57bt...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "JAMES",
+              "symbol": "JAMES",
+              "address": "45wm4ef4xcfckvvhji9kibbnwdx5x77m1g6rmu7ipump",
+              "shortAddress": "45wm4e...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Penny Lane",
               "symbol": "PENNY",
-              "address": "795btpfaaf6x9sfgog66ujtdjuwhyukortqh8fgppump",
-              "shortAddress": "795btp...pump",
+              "address": "grycawuknkfadlpjmblx1u462kmxacr9qfs4emcjfqsu",
+              "shortAddress": "grycaw...fqsu",
               "chain": "solana"
             },
             {
-              "token": "Hedge",
-              "symbol": "Hedge",
-              "address": "2yccabpwtuo3z1vifchtamkcc88safrbujdqzmfbpump",
-              "shortAddress": "2yccab...pump",
+              "token": "TROLL",
+              "symbol": "TROLL",
+              "address": "5uuh9rtdispq6hks6bp4ndu9pnjpxrxuiw6shbtbhgh2",
+              "shortAddress": "5uuh9r...hgh2",
               "chain": "solana"
             },
             {
-              "token": "Embrace The Wave",
-              "symbol": "Embrace",
-              "address": "4eif6waywkxe4tp2fgav76vmgzta3pggdq4etubppump",
-              "shortAddress": "4eif6w...pump",
+              "token": "kaimo",
+              "symbol": "KAIMO",
+              "address": "8qzddk7iqzgcpwk3dylkrmrosc8fbyfbbkgv3xveasy",
+              "shortAddress": "8qzddk...easy",
               "chain": "solana"
             },
             {
-              "token": "StickDAO",
-              "symbol": "STICK",
-              "address": "829q82etuezkkjrpfrbb3bqmcqhikaqqhte3vbgopump",
-              "shortAddress": "829q82...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "I choose rich everytime",
-              "symbol": "RICH",
-              "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
-              "shortAddress": "5hilgy...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Enhanced Games",
-              "symbol": "ENHANCED",
-              "address": "c6zb1e9yvhbrydqrpu47m2nnpy7nuq8lkma9j7prjteg",
-              "shortAddress": "c6zb1e...jteg",
+              "token": "Tralalero Tralala",
+              "symbol": "TRALALERO",
+              "address": "2mbq3mrkskf6nng5x29rbk4b9f7cwr4n1eqj18nsvirl",
+              "shortAddress": "2mbq3m...virl",
               "chain": "solana"
             }
           ]
@@ -1846,6 +1892,48 @@
           "runId": "20260525105804",
           "startedAt": "2026-05-25T10:58:04.711Z",
           "finishedAt": "2026-05-25T10:58:38.817Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 51,
+          "decisions": 51,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 1,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
+        },
+        {
+          "runId": "20260525110505",
+          "startedAt": "2026-05-25T11:05:05.649Z",
+          "finishedAt": "2026-05-25T11:05:36.877Z",
           "status": "ok",
           "chains": [
             "solana",
