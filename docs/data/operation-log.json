@@ -1,76 +1,50 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-25T15:27:23.853Z",
+  "generatedAt": "2026-05-25T15:55:44.576Z",
   "source": "docs/data/signal-paper.json",
-  "totalRuns": 20,
-  "latestRunId": "20260525152723",
+  "totalRuns": 19,
+  "latestRunId": "20260525155250",
   "entries": [
     {
-      "runId": "20260525152723",
-      "startedAt": "2026-05-25T15:27:23.334Z",
-      "finishedAt": "2026-05-25T15:27:23.659Z",
-      "status": "failed",
+      "runId": "20260525155250",
+      "startedAt": "2026-05-25T15:52:50.990Z",
+      "finishedAt": "2026-05-25T15:53:43.024Z",
+      "status": "ok",
       "chains": [
         "solana",
         "bsc"
       ],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
+      "rawSignalCount": 51,
+      "decisions": 51,
+      "trades": 2,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
         {
-          "type": "AUTH_INVALID",
-          "chain": "",
-          "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
-          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 2,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 1,
+          "trades": 0,
+          "mistakes": []
         }
       ],
-      "notes": [],
-      "chainResults": [],
       "accountReset": null,
       "capital": {
         "initialUsd": 3000,
-        "cashUsd": 3000,
-        "openValueUsd": 0,
-        "equityUsd": 3000,
+        "cashUsd": 2433.3,
+        "openValueUsd": 719.33,
+        "equityUsd": 3152.63,
         "realizedPnlUsd": 0,
-        "unrealizedPnlUsd": 0,
-        "totalPnlUsd": 0,
-        "totalPnlPct": 0
-      }
-    },
-    {
-      "runId": "20260525115909",
-      "startedAt": "2026-05-25T11:59:09.014Z",
-      "finishedAt": "2026-05-25T11:59:09.384Z",
-      "status": "failed",
-      "chains": [
-        "solana",
-        "bsc"
-      ],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
-        {
-          "type": "AUTH_INVALID",
-          "chain": "",
-          "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
-          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
-        }
-      ],
-      "notes": [],
-      "chainResults": [],
-      "accountReset": null,
-      "capital": {
-        "initialUsd": 3000,
-        "cashUsd": 3000,
-        "openValueUsd": 0,
-        "equityUsd": 3000,
-        "realizedPnlUsd": 0,
-        "unrealizedPnlUsd": 0,
-        "totalPnlUsd": 0,
-        "totalPnlPct": 0
+        "unrealizedPnlUsd": 152.63,
+        "totalPnlUsd": 152.63,
+        "totalPnlPct": 5.09
       }
     },
     {
