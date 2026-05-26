@@ -1,72 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-26T03:20:36.739Z",
+  "generatedAt": "2026-05-26T03:24:43.569Z",
   "latest": {
     "date": "2026-05-26",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-26T03:20:36.737Z",
-    "runCount": 9,
+    "generatedAt": "2026-05-26T03:24:43.567Z",
+    "runCount": 10,
     "statuses": {
       "failed": 5,
-      "ok": 4
+      "ok": 5
     },
     "rawSignalCount": 204,
-    "decisionCount": 153,
-    "actions": {
-      "IGNORE": 100,
-      "WATCH": 36,
-      "HOLD": 11,
-      "BUY": 4,
-      "SELL": 2
-    },
-    "tradeCount": 6,
-    "buys": 4,
-    "sells": 2,
-    "buyUsd": 874.9,
-    "realizedPnlUsd": -175.13,
+    "decisionCount": 0,
+    "actions": {},
+    "tradeCount": 0,
+    "buys": 0,
+    "sells": 0,
+    "buyUsd": 0,
+    "realizedPnlUsd": 0,
     "equityStartUsd": 3152.63,
-    "equityEndUsd": 2900.54,
-    "equityChangeUsd": -252.09,
-    "topBlockers": [
-      {
-        "name": "sold ratio > 35%",
-        "count": 133
-      },
-      {
-        "name": "amount < 500U",
-        "count": 25
-      },
-      {
-        "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 10
-      },
-      {
-        "name": "blacklisted source wallet: DENzuu...kX1M",
-        "count": 7
-      },
-      {
-        "name": "blacklisted source wallet: Jwedjx...w3Re",
-        "count": 4
-      },
-      {
-        "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-        "count": 4
-      },
-      {
-        "name": "blacklisted source wallet: 9x2FKx...MrPg",
-        "count": 4
-      },
-      {
-        "name": "blacklisted source wallet: 49XA1a...TKAm",
-        "count": 4
-      }
-    ],
+    "equityEndUsd": 3000,
+    "equityChangeUsd": -152.63,
+    "topBlockers": [],
     "mistakeCount": 5,
     "mistakeTypes": {
       "AUTH_INVALID": 4,
       "CLI_ERROR": 1
     },
-    "accountResets": 2,
+    "accountResets": 3,
     "walletBlacklistCount": 7,
     "latestBlacklistedWallets": [
       {
@@ -1402,6 +1363,61 @@
           "totalPnlUsd": -99.46,
           "totalPnlPct": -3.32
         }
+      },
+      {
+        "runId": "20260526032424",
+        "startedAt": "2026-05-26T03:24:24.345Z",
+        "finishedAt": "2026-05-26T03:24:24.345Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [
+          "手动重新开始模拟账户，已重置本金为 3000U 并重新开始计时。"
+        ],
+        "chainResults": [],
+        "accountReset": {
+          "timestamp": "2026-05-26T03:24:24.345Z",
+          "runId": "20260526032424",
+          "reason": "manual_restart",
+          "previousSession": {
+            "id": "20260525235529",
+            "startedAt": "2026-05-25T23:55:29.939Z",
+            "lastAuthOkAt": "2026-05-26T03:19:35.655Z",
+            "lastAuthFailureAt": "",
+            "authState": "online",
+            "authRecoveries": 3,
+            "resetReason": "auth_recovered_after_login"
+          },
+          "previousCapital": {
+            "initialUsd": 3000,
+            "cashUsd": 2412.17,
+            "openValueUsd": 488.37,
+            "equityUsd": 2900.54,
+            "realizedPnlUsd": -175.13,
+            "unrealizedPnlUsd": 75.67,
+            "totalPnlUsd": -99.46,
+            "totalPnlPct": -3.32
+          },
+          "previousOpenPositions": 2,
+          "previousTrades": 6,
+          "previousDecisions": 153
+        },
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
       }
     ]
   },
@@ -1409,69 +1425,30 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-26T03:20:36.737Z",
-      "runCount": 9,
+      "generatedAt": "2026-05-26T03:24:43.567Z",
+      "runCount": 10,
       "statuses": {
         "failed": 5,
-        "ok": 4
+        "ok": 5
       },
       "rawSignalCount": 204,
-      "decisionCount": 153,
-      "actions": {
-        "IGNORE": 100,
-        "WATCH": 36,
-        "HOLD": 11,
-        "BUY": 4,
-        "SELL": 2
-      },
-      "tradeCount": 6,
-      "buys": 4,
-      "sells": 2,
-      "buyUsd": 874.9,
-      "realizedPnlUsd": -175.13,
+      "decisionCount": 0,
+      "actions": {},
+      "tradeCount": 0,
+      "buys": 0,
+      "sells": 0,
+      "buyUsd": 0,
+      "realizedPnlUsd": 0,
       "equityStartUsd": 3152.63,
-      "equityEndUsd": 2900.54,
-      "equityChangeUsd": -252.09,
-      "topBlockers": [
-        {
-          "name": "sold ratio > 35%",
-          "count": 133
-        },
-        {
-          "name": "amount < 500U",
-          "count": 25
-        },
-        {
-          "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 10
-        },
-        {
-          "name": "blacklisted source wallet: DENzuu...kX1M",
-          "count": 7
-        },
-        {
-          "name": "blacklisted source wallet: Jwedjx...w3Re",
-          "count": 4
-        },
-        {
-          "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-          "count": 4
-        },
-        {
-          "name": "blacklisted source wallet: 9x2FKx...MrPg",
-          "count": 4
-        },
-        {
-          "name": "blacklisted source wallet: 49XA1a...TKAm",
-          "count": 4
-        }
-      ],
+      "equityEndUsd": 3000,
+      "equityChangeUsd": -152.63,
+      "topBlockers": [],
       "mistakeCount": 5,
       "mistakeTypes": {
         "AUTH_INVALID": 4,
         "CLI_ERROR": 1
       },
-      "accountResets": 2,
+      "accountResets": 3,
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
         {
@@ -2807,13 +2784,68 @@
             "totalPnlUsd": -99.46,
             "totalPnlPct": -3.32
           }
+        },
+        {
+          "runId": "20260526032424",
+          "startedAt": "2026-05-26T03:24:24.345Z",
+          "finishedAt": "2026-05-26T03:24:24.345Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [
+            "手动重新开始模拟账户，已重置本金为 3000U 并重新开始计时。"
+          ],
+          "chainResults": [],
+          "accountReset": {
+            "timestamp": "2026-05-26T03:24:24.345Z",
+            "runId": "20260526032424",
+            "reason": "manual_restart",
+            "previousSession": {
+              "id": "20260525235529",
+              "startedAt": "2026-05-25T23:55:29.939Z",
+              "lastAuthOkAt": "2026-05-26T03:19:35.655Z",
+              "lastAuthFailureAt": "",
+              "authState": "online",
+              "authRecoveries": 3,
+              "resetReason": "auth_recovered_after_login"
+            },
+            "previousCapital": {
+              "initialUsd": 3000,
+              "cashUsd": 2412.17,
+              "openValueUsd": 488.37,
+              "equityUsd": 2900.54,
+              "realizedPnlUsd": -175.13,
+              "unrealizedPnlUsd": 75.67,
+              "totalPnlUsd": -99.46,
+              "totalPnlPct": -3.32
+            },
+            "previousOpenPositions": 2,
+            "previousTrades": 6,
+            "previousDecisions": 153
+          },
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
         }
       ]
     },
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-26T03:20:36.738Z",
+      "generatedAt": "2026-05-26T03:24:43.568Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -2827,9 +2859,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 2900.54,
+      "equityStartUsd": 3000,
       "equityEndUsd": 3152.63,
-      "equityChangeUsd": 252.09,
+      "equityChangeUsd": 152.63,
       "topBlockers": [],
       "mistakeCount": 10,
       "mistakeTypes": {
