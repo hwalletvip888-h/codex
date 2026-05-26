@@ -1,44 +1,64 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-25T23:55:31.530Z",
+  "generatedAt": "2026-05-26T03:02:14.014Z",
   "latest": {
     "date": "2026-05-26",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-25T23:55:31.527Z",
-    "runCount": 7,
+    "generatedAt": "2026-05-26T03:02:14.013Z",
+    "runCount": 8,
     "statuses": {
       "failed": 5,
-      "ok": 2
+      "ok": 3
     },
-    "rawSignalCount": 102,
-    "decisionCount": 51,
+    "rawSignalCount": 153,
+    "decisionCount": 102,
     "actions": {
-      "IGNORE": 34,
-      "WATCH": 11,
-      "BUY": 3,
-      "HOLD": 2,
-      "SELL": 1
+      "IGNORE": 66,
+      "WATCH": 23,
+      "HOLD": 7,
+      "BUY": 4,
+      "SELL": 2
     },
-    "tradeCount": 4,
-    "buys": 3,
-    "sells": 1,
-    "buyUsd": 615.2,
-    "realizedPnlUsd": -111.43,
+    "tradeCount": 6,
+    "buys": 4,
+    "sells": 2,
+    "buyUsd": 874.9,
+    "realizedPnlUsd": -175.13,
     "equityStartUsd": 3152.63,
-    "equityEndUsd": 2964.51,
-    "equityChangeUsd": -188.12,
+    "equityEndUsd": 2900.54,
+    "equityChangeUsd": -252.09,
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 41
+        "count": 87
       },
       {
         "name": "amount < 500U",
-        "count": 9
+        "count": 17
+      },
+      {
+        "name": "blacklisted source wallet: 9nP8di...wpE6",
+        "count": 5
       },
       {
         "name": "blacklisted source wallet: DENzuu...kX1M",
-        "count": 1
+        "count": 4
+      },
+      {
+        "name": "blacklisted source wallet: Jwedjx...w3Re",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: 9x2FKx...MrPg",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: 49XA1a...TKAm",
+        "count": 2
       }
     ],
     "mistakeCount": 5,
@@ -47,7 +67,7 @@
       "CLI_ERROR": 1
     },
     "accountResets": 2,
-    "walletBlacklistCount": 4,
+    "walletBlacklistCount": 7,
     "latestBlacklistedWallets": [
       {
         "walletAddress": "9x2FKx31Zpe1HDEaEntehZFEywmkFxcRujadRZEjMrPg",
@@ -144,9 +164,33 @@
         "reasons": [
           "Stop loss -38.32%; amount 717.29U; wallets 3; sold 0.59%; type Whale"
         ]
+      },
+      {
+        "walletAddress": "9nP8diLFigo1wmWxg2R1k4JEHnmw6MtUvmeDudVfwpE6",
+        "shortAddress": "9nP8di...wpE6",
+        "chain": "solana",
+        "walletType": "KOL/Influencer",
+        "status": "blacklisted",
+        "firstSeenAt": "2026-05-26T03:01:09.732Z",
+        "lastSeenAt": "2026-05-26T03:01:09.732Z",
+        "lossCount": 1,
+        "totalLossUsd": -63.7,
+        "tokens": [
+          {
+            "token": "GOONCOIN",
+            "symbol": "GOONC",
+            "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+            "shortAddress": "brokrs...4a6c",
+            "runId": "20260526030109",
+            "realizedPnlUsd": -63.7
+          }
+        ],
+        "reasons": [
+          "Stop loss -36.68%; amount 262.68U; wallets 3; sold 72.34%; type KOL/Influencer"
+        ]
       }
     ],
-    "smartMoneyWatchlistCount": 186,
+    "smartMoneyWatchlistCount": 211,
     "latestSmartMoneyWatchlist": [
       {
         "walletAddress": "F1m5PSaeH9XPesLAmcv3rJaxkevEt7HJ1Puy6Ttb7JAL",
@@ -206,10 +250,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-25T23:55:29.939Z",
-        "occurrences": 7,
-        "highSoldRatioCount": 7,
+        "lastSeenAt": "2026-05-26T03:01:09.732Z",
+        "occurrences": 8,
+        "highSoldRatioCount": 8,
         "tokens": [
+          {
+            "token": "Generational Wealth",
+            "symbol": "GENWEALTH",
+            "address": "5gdkymihdbettncbjr1yaeqmcegjkvfrkumraagmpump",
+            "shortAddress": "5gdkym...pump",
+            "soldRatioPercent": 91.6,
+            "amountUsd": 229.79
+          },
           {
             "token": "Bitcoin Bank",
             "symbol": "BTCBANK",
@@ -260,6 +312,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 91.6%",
           "watch only; sold ratio 97.29%",
           "watch only; sold ratio 85.28%",
           "watch only; sold ratio 90.48%",
@@ -273,9 +326,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-05-25T23:55:29.939Z",
-        "occurrences": 6,
-        "highSoldRatioCount": 6,
+        "lastSeenAt": "2026-05-26T03:01:09.732Z",
+        "occurrences": 8,
+        "highSoldRatioCount": 8,
         "tokens": [
           {
             "token": "提子",
@@ -297,9 +350,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-05-25T23:55:29.939Z",
-        "occurrences": 6,
-        "highSoldRatioCount": 6,
+        "lastSeenAt": "2026-05-26T03:01:09.732Z",
+        "occurrences": 8,
+        "highSoldRatioCount": 8,
         "tokens": [
           {
             "token": "提子",
@@ -321,9 +374,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-05-25T23:55:29.939Z",
-        "occurrences": 6,
-        "highSoldRatioCount": 6,
+        "lastSeenAt": "2026-05-26T03:01:09.732Z",
+        "occurrences": 8,
+        "highSoldRatioCount": 8,
         "tokens": [
           {
             "token": "提子",
@@ -345,7 +398,7 @@
         "title": "solana Whale 入场模型",
         "status": "候选最优",
         "rule": "评分 >= 70，金额/钱包数达标，已卖出比例 <= 35%",
-        "reason": "Rule buy; amount 4804.7U; wallets 4; sold 0.59%; type Whale",
+        "reason": "Rule buy; amount 6509.62U; wallets 3; sold 0%; type Whale",
         "score": 87,
         "wins": 0,
         "losses": 0,
@@ -358,8 +411,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-05-25T23:55:29.939Z",
-        "occurrences": 4,
+        "lastSeenAt": "2026-05-26T03:01:09.732Z",
+        "occurrences": 5,
         "examples": [
           {
             "token": "again",
@@ -481,7 +534,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 318.23U; wallets 3; sold 54.17%; type KOL/Influencer",
+        "reason": "amount 842U; wallets 3; sold 56.94%; type KOL/Influencer",
         "score": 56.8,
         "wins": 0,
         "losses": 0,
@@ -494,16 +547,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-25T23:55:29.939Z",
-        "occurrences": 164,
+        "lastSeenAt": "2026-05-26T03:01:09.732Z",
+        "occurrences": 187,
         "examples": [
-          {
-            "token": "I choose rich everytime",
-            "symbol": "RICH",
-            "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
-            "shortAddress": "5hilgy...pump",
-            "chain": "solana"
-          },
           {
             "token": "Tralalero Tralala",
             "symbol": "TRALALERO",
@@ -538,6 +584,13 @@
             "address": "br1jxelqyp34ydrw4gbeplashetyz8ecmt2fvmnypump",
             "shortAddress": "br1jxe...pump",
             "chain": "solana"
+          },
+          {
+            "token": "Gooncoin",
+            "symbol": "Gooncoin",
+            "address": "5cewq1xpd7df7ei1j14zuupd8bkvw74ygcqzl1jkpump",
+            "shortAddress": "5cewq1...pump",
+            "chain": "solana"
           }
         ]
       },
@@ -547,7 +600,7 @@
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
         "reason": "amount 1858.25U; wallets 3; sold 82.27%; type Whale",
-        "score": 60.9,
+        "score": 64.7,
         "wins": 0,
         "losses": 0,
         "totalPnlUsd": 0,
@@ -559,8 +612,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-25T23:55:29.939Z",
-        "occurrences": 129,
+        "lastSeenAt": "2026-05-26T03:01:09.732Z",
+        "occurrences": 151,
         "examples": [
           {
             "token": "Tralalero Tralala",
@@ -830,6 +883,36 @@
             "address": "",
             "shortAddress": "",
             "chain": "global"
+          }
+        ]
+      },
+      {
+        "key": "lesson:solana:brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c:stop loss -36.68%; amount 262.68u; wallets 3; sold 72.34%; type kol/influencer",
+        "title": "亏损复盘",
+        "status": "需避免重复",
+        "rule": "触发止损或亏损退出后自动归档",
+        "reason": "GOONCOIN GOONC: Stop loss -36.68%; amount 262.68U; wallets 3; sold 72.34%; type KOL/Influencer",
+        "score": 43.9,
+        "wins": 0,
+        "losses": 1,
+        "totalPnlUsd": -63.7,
+        "example": {
+          "token": "GOONCOIN",
+          "symbol": "GOONC",
+          "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+          "shortAddress": "brokrs...4a6c",
+          "chain": "solana"
+        },
+        "firstSeenAt": "2026-05-26T03:01:09.732Z",
+        "lastSeenAt": "2026-05-26T03:01:09.732Z",
+        "occurrences": 1,
+        "examples": [
+          {
+            "token": "GOONCOIN",
+            "symbol": "GOONC",
+            "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+            "shortAddress": "brokrs...4a6c",
+            "chain": "solana"
           }
         ]
       },
@@ -1234,6 +1317,48 @@
           "totalPnlUsd": -35.49,
           "totalPnlPct": -1.18
         }
+      },
+      {
+        "runId": "20260526030109",
+        "startedAt": "2026-05-26T03:01:09.732Z",
+        "finishedAt": "2026-05-26T03:02:01.757Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 51,
+        "decisions": 51,
+        "trades": 2,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 2,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 1,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2412.17,
+          "openValueUsd": 488.37,
+          "equityUsd": 2900.54,
+          "realizedPnlUsd": -175.13,
+          "unrealizedPnlUsd": 75.67,
+          "totalPnlUsd": -99.46,
+          "totalPnlPct": -3.32
+        }
       }
     ]
   },
@@ -1241,41 +1366,61 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-25T23:55:31.527Z",
-      "runCount": 7,
+      "generatedAt": "2026-05-26T03:02:14.013Z",
+      "runCount": 8,
       "statuses": {
         "failed": 5,
-        "ok": 2
+        "ok": 3
       },
-      "rawSignalCount": 102,
-      "decisionCount": 51,
+      "rawSignalCount": 153,
+      "decisionCount": 102,
       "actions": {
-        "IGNORE": 34,
-        "WATCH": 11,
-        "BUY": 3,
-        "HOLD": 2,
-        "SELL": 1
+        "IGNORE": 66,
+        "WATCH": 23,
+        "HOLD": 7,
+        "BUY": 4,
+        "SELL": 2
       },
-      "tradeCount": 4,
-      "buys": 3,
-      "sells": 1,
-      "buyUsd": 615.2,
-      "realizedPnlUsd": -111.43,
+      "tradeCount": 6,
+      "buys": 4,
+      "sells": 2,
+      "buyUsd": 874.9,
+      "realizedPnlUsd": -175.13,
       "equityStartUsd": 3152.63,
-      "equityEndUsd": 2964.51,
-      "equityChangeUsd": -188.12,
+      "equityEndUsd": 2900.54,
+      "equityChangeUsd": -252.09,
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 41
+          "count": 87
         },
         {
           "name": "amount < 500U",
-          "count": 9
+          "count": 17
+        },
+        {
+          "name": "blacklisted source wallet: 9nP8di...wpE6",
+          "count": 5
         },
         {
           "name": "blacklisted source wallet: DENzuu...kX1M",
-          "count": 1
+          "count": 4
+        },
+        {
+          "name": "blacklisted source wallet: Jwedjx...w3Re",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: 9x2FKx...MrPg",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: 49XA1a...TKAm",
+          "count": 2
         }
       ],
       "mistakeCount": 5,
@@ -1284,7 +1429,7 @@
         "CLI_ERROR": 1
       },
       "accountResets": 2,
-      "walletBlacklistCount": 4,
+      "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
         {
           "walletAddress": "9x2FKx31Zpe1HDEaEntehZFEywmkFxcRujadRZEjMrPg",
@@ -1381,9 +1526,33 @@
           "reasons": [
             "Stop loss -38.32%; amount 717.29U; wallets 3; sold 0.59%; type Whale"
           ]
+        },
+        {
+          "walletAddress": "9nP8diLFigo1wmWxg2R1k4JEHnmw6MtUvmeDudVfwpE6",
+          "shortAddress": "9nP8di...wpE6",
+          "chain": "solana",
+          "walletType": "KOL/Influencer",
+          "status": "blacklisted",
+          "firstSeenAt": "2026-05-26T03:01:09.732Z",
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "lossCount": 1,
+          "totalLossUsd": -63.7,
+          "tokens": [
+            {
+              "token": "GOONCOIN",
+              "symbol": "GOONC",
+              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+              "shortAddress": "brokrs...4a6c",
+              "runId": "20260526030109",
+              "realizedPnlUsd": -63.7
+            }
+          ],
+          "reasons": [
+            "Stop loss -36.68%; amount 262.68U; wallets 3; sold 72.34%; type KOL/Influencer"
+          ]
         }
       ],
-      "smartMoneyWatchlistCount": 186,
+      "smartMoneyWatchlistCount": 211,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "F1m5PSaeH9XPesLAmcv3rJaxkevEt7HJ1Puy6Ttb7JAL",
@@ -1443,10 +1612,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 7,
-          "highSoldRatioCount": 7,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 8,
+          "highSoldRatioCount": 8,
           "tokens": [
+            {
+              "token": "Generational Wealth",
+              "symbol": "GENWEALTH",
+              "address": "5gdkymihdbettncbjr1yaeqmcegjkvfrkumraagmpump",
+              "shortAddress": "5gdkym...pump",
+              "soldRatioPercent": 91.6,
+              "amountUsd": 229.79
+            },
             {
               "token": "Bitcoin Bank",
               "symbol": "BTCBANK",
@@ -1497,6 +1674,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.6%",
             "watch only; sold ratio 97.29%",
             "watch only; sold ratio 85.28%",
             "watch only; sold ratio 90.48%",
@@ -1510,9 +1688,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 6,
-          "highSoldRatioCount": 6,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 8,
+          "highSoldRatioCount": 8,
           "tokens": [
             {
               "token": "提子",
@@ -1534,9 +1712,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 6,
-          "highSoldRatioCount": 6,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 8,
+          "highSoldRatioCount": 8,
           "tokens": [
             {
               "token": "提子",
@@ -1558,9 +1736,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 6,
-          "highSoldRatioCount": 6,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 8,
+          "highSoldRatioCount": 8,
           "tokens": [
             {
               "token": "提子",
@@ -1582,7 +1760,7 @@
           "title": "solana Whale 入场模型",
           "status": "候选最优",
           "rule": "评分 >= 70，金额/钱包数达标，已卖出比例 <= 35%",
-          "reason": "Rule buy; amount 4804.7U; wallets 4; sold 0.59%; type Whale",
+          "reason": "Rule buy; amount 6509.62U; wallets 3; sold 0%; type Whale",
           "score": 87,
           "wins": 0,
           "losses": 0,
@@ -1595,8 +1773,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 4,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 5,
           "examples": [
             {
               "token": "again",
@@ -1718,7 +1896,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 318.23U; wallets 3; sold 54.17%; type KOL/Influencer",
+          "reason": "amount 842U; wallets 3; sold 56.94%; type KOL/Influencer",
           "score": 56.8,
           "wins": 0,
           "losses": 0,
@@ -1731,16 +1909,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 164,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 187,
           "examples": [
-            {
-              "token": "I choose rich everytime",
-              "symbol": "RICH",
-              "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
-              "shortAddress": "5hilgy...pump",
-              "chain": "solana"
-            },
             {
               "token": "Tralalero Tralala",
               "symbol": "TRALALERO",
@@ -1775,6 +1946,13 @@
               "address": "br1jxelqyp34ydrw4gbeplashetyz8ecmt2fvmnypump",
               "shortAddress": "br1jxe...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Gooncoin",
+              "symbol": "Gooncoin",
+              "address": "5cewq1xpd7df7ei1j14zuupd8bkvw74ygcqzl1jkpump",
+              "shortAddress": "5cewq1...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -1784,7 +1962,7 @@
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
           "reason": "amount 1858.25U; wallets 3; sold 82.27%; type Whale",
-          "score": 60.9,
+          "score": 64.7,
           "wins": 0,
           "losses": 0,
           "totalPnlUsd": 0,
@@ -1796,8 +1974,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 129,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 151,
           "examples": [
             {
               "token": "Tralalero Tralala",
@@ -2067,6 +2245,36 @@
               "address": "",
               "shortAddress": "",
               "chain": "global"
+            }
+          ]
+        },
+        {
+          "key": "lesson:solana:brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c:stop loss -36.68%; amount 262.68u; wallets 3; sold 72.34%; type kol/influencer",
+          "title": "亏损复盘",
+          "status": "需避免重复",
+          "rule": "触发止损或亏损退出后自动归档",
+          "reason": "GOONCOIN GOONC: Stop loss -36.68%; amount 262.68U; wallets 3; sold 72.34%; type KOL/Influencer",
+          "score": 43.9,
+          "wins": 0,
+          "losses": 1,
+          "totalPnlUsd": -63.7,
+          "example": {
+            "token": "GOONCOIN",
+            "symbol": "GOONC",
+            "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+            "shortAddress": "brokrs...4a6c",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-26T03:01:09.732Z",
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "GOONCOIN",
+              "symbol": "GOONC",
+              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+              "shortAddress": "brokrs...4a6c",
+              "chain": "solana"
             }
           ]
         },
@@ -2471,13 +2679,55 @@
             "totalPnlUsd": -35.49,
             "totalPnlPct": -1.18
           }
+        },
+        {
+          "runId": "20260526030109",
+          "startedAt": "2026-05-26T03:01:09.732Z",
+          "finishedAt": "2026-05-26T03:02:01.757Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 51,
+          "decisions": 51,
+          "trades": 2,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 2,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 1,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2412.17,
+            "openValueUsd": 488.37,
+            "equityUsd": 2900.54,
+            "realizedPnlUsd": -175.13,
+            "unrealizedPnlUsd": 75.67,
+            "totalPnlUsd": -99.46,
+            "totalPnlPct": -3.32
+          }
         }
       ]
     },
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-25T23:55:31.528Z",
+      "generatedAt": "2026-05-26T03:02:14.013Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -2491,9 +2741,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 2964.51,
+      "equityStartUsd": 2900.54,
       "equityEndUsd": 3152.63,
-      "equityChangeUsd": 188.12,
+      "equityChangeUsd": 252.09,
       "topBlockers": [],
       "mistakeCount": 10,
       "mistakeTypes": {
@@ -2501,7 +2751,7 @@
         "AUTH_INVALID": 4
       },
       "accountResets": 1,
-      "walletBlacklistCount": 4,
+      "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
         {
           "walletAddress": "9x2FKx31Zpe1HDEaEntehZFEywmkFxcRujadRZEjMrPg",
@@ -2598,9 +2848,33 @@
           "reasons": [
             "Stop loss -38.32%; amount 717.29U; wallets 3; sold 0.59%; type Whale"
           ]
+        },
+        {
+          "walletAddress": "9nP8diLFigo1wmWxg2R1k4JEHnmw6MtUvmeDudVfwpE6",
+          "shortAddress": "9nP8di...wpE6",
+          "chain": "solana",
+          "walletType": "KOL/Influencer",
+          "status": "blacklisted",
+          "firstSeenAt": "2026-05-26T03:01:09.732Z",
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "lossCount": 1,
+          "totalLossUsd": -63.7,
+          "tokens": [
+            {
+              "token": "GOONCOIN",
+              "symbol": "GOONC",
+              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+              "shortAddress": "brokrs...4a6c",
+              "runId": "20260526030109",
+              "realizedPnlUsd": -63.7
+            }
+          ],
+          "reasons": [
+            "Stop loss -36.68%; amount 262.68U; wallets 3; sold 72.34%; type KOL/Influencer"
+          ]
         }
       ],
-      "smartMoneyWatchlistCount": 186,
+      "smartMoneyWatchlistCount": 211,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "F1m5PSaeH9XPesLAmcv3rJaxkevEt7HJ1Puy6Ttb7JAL",
@@ -2660,10 +2934,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 7,
-          "highSoldRatioCount": 7,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 8,
+          "highSoldRatioCount": 8,
           "tokens": [
+            {
+              "token": "Generational Wealth",
+              "symbol": "GENWEALTH",
+              "address": "5gdkymihdbettncbjr1yaeqmcegjkvfrkumraagmpump",
+              "shortAddress": "5gdkym...pump",
+              "soldRatioPercent": 91.6,
+              "amountUsd": 229.79
+            },
             {
               "token": "Bitcoin Bank",
               "symbol": "BTCBANK",
@@ -2714,6 +2996,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.6%",
             "watch only; sold ratio 97.29%",
             "watch only; sold ratio 85.28%",
             "watch only; sold ratio 90.48%",
@@ -2727,9 +3010,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 6,
-          "highSoldRatioCount": 6,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 8,
+          "highSoldRatioCount": 8,
           "tokens": [
             {
               "token": "提子",
@@ -2751,9 +3034,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 6,
-          "highSoldRatioCount": 6,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 8,
+          "highSoldRatioCount": 8,
           "tokens": [
             {
               "token": "提子",
@@ -2775,9 +3058,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 6,
-          "highSoldRatioCount": 6,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 8,
+          "highSoldRatioCount": 8,
           "tokens": [
             {
               "token": "提子",
@@ -2799,7 +3082,7 @@
           "title": "solana Whale 入场模型",
           "status": "候选最优",
           "rule": "评分 >= 70，金额/钱包数达标，已卖出比例 <= 35%",
-          "reason": "Rule buy; amount 4804.7U; wallets 4; sold 0.59%; type Whale",
+          "reason": "Rule buy; amount 6509.62U; wallets 3; sold 0%; type Whale",
           "score": 87,
           "wins": 0,
           "losses": 0,
@@ -2812,8 +3095,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 4,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 5,
           "examples": [
             {
               "token": "again",
@@ -2935,7 +3218,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 318.23U; wallets 3; sold 54.17%; type KOL/Influencer",
+          "reason": "amount 842U; wallets 3; sold 56.94%; type KOL/Influencer",
           "score": 56.8,
           "wins": 0,
           "losses": 0,
@@ -2948,16 +3231,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 164,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 187,
           "examples": [
-            {
-              "token": "I choose rich everytime",
-              "symbol": "RICH",
-              "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
-              "shortAddress": "5hilgy...pump",
-              "chain": "solana"
-            },
             {
               "token": "Tralalero Tralala",
               "symbol": "TRALALERO",
@@ -2992,6 +3268,13 @@
               "address": "br1jxelqyp34ydrw4gbeplashetyz8ecmt2fvmnypump",
               "shortAddress": "br1jxe...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Gooncoin",
+              "symbol": "Gooncoin",
+              "address": "5cewq1xpd7df7ei1j14zuupd8bkvw74ygcqzl1jkpump",
+              "shortAddress": "5cewq1...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -3001,7 +3284,7 @@
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
           "reason": "amount 1858.25U; wallets 3; sold 82.27%; type Whale",
-          "score": 60.9,
+          "score": 64.7,
           "wins": 0,
           "losses": 0,
           "totalPnlUsd": 0,
@@ -3013,8 +3296,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-25T23:55:29.939Z",
-          "occurrences": 129,
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 151,
           "examples": [
             {
               "token": "Tralalero Tralala",
@@ -3284,6 +3567,36 @@
               "address": "",
               "shortAddress": "",
               "chain": "global"
+            }
+          ]
+        },
+        {
+          "key": "lesson:solana:brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c:stop loss -36.68%; amount 262.68u; wallets 3; sold 72.34%; type kol/influencer",
+          "title": "亏损复盘",
+          "status": "需避免重复",
+          "rule": "触发止损或亏损退出后自动归档",
+          "reason": "GOONCOIN GOONC: Stop loss -36.68%; amount 262.68U; wallets 3; sold 72.34%; type KOL/Influencer",
+          "score": 43.9,
+          "wins": 0,
+          "losses": 1,
+          "totalPnlUsd": -63.7,
+          "example": {
+            "token": "GOONCOIN",
+            "symbol": "GOONC",
+            "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+            "shortAddress": "brokrs...4a6c",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-26T03:01:09.732Z",
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "GOONCOIN",
+              "symbol": "GOONC",
+              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+              "shortAddress": "brokrs...4a6c",
+              "chain": "solana"
             }
           ]
         },
