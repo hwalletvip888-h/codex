@@ -1,36 +1,36 @@
 # 2026-05-27 策略模拟日报
 
-生成时间：2026-05-27T14:10:28.436Z
+生成时间：2026-05-27T14:12:14.698Z
 时区：Asia/Hong_Kong
 
 ## 当日结果
 
-- 扫描轮次：4
-- 原始信号：150
-- 决策记录：150
-- 模拟成交：7 笔，买入 5 笔，卖出 2 笔
-- 买入金额：906.9U
+- 扫描轮次：5
+- 原始信号：200
+- 决策记录：200
+- 模拟成交：8 笔，买入 6 笔，卖出 2 笔
+- 买入金额：1069.8U
 - 已实现盈亏：796.29U
-- 权益变化：2980.47U -> 3991.08U（1010.61U）
+- 权益变化：2980.47U -> 3990.59U（1010.12U）
 - 账户重置：0 次
 - 钱包黑名单：7 个地址
 - 聪明钱只读观察：273 个地址
 
 ## 操作状态
 
-- ok: 3 轮
+- ok: 4 轮
 - failed: 1 轮
 
 ## 主要阻断条件
 
-- sold ratio > 35%: 129 次
-- amount < 500U: 23 次
-- blacklisted source wallet: 9x2FKx...MrPg: 12 次
-- blacklisted source wallet: 9nP8di...wpE6: 6 次
-- blacklisted source wallet: Jwedjx...w3Re: 6 次
-- blacklisted source wallet: 4hAwSV...pFmJ: 6 次
-- blacklisted source wallet: 49XA1a...TKAm: 6 次
-- blacklisted source wallet: DENzuu...kX1M: 6 次
+- sold ratio > 35%: 170 次
+- amount < 500U: 30 次
+- blacklisted source wallet: 9x2FKx...MrPg: 16 次
+- blacklisted source wallet: 9nP8di...wpE6: 8 次
+- blacklisted source wallet: Jwedjx...w3Re: 8 次
+- blacklisted source wallet: 4hAwSV...pFmJ: 8 次
+- blacklisted source wallet: 49XA1a...TKAm: 8 次
+- blacklisted source wallet: DENzuu...kX1M: 8 次
 
 ## 今日复盘
 
