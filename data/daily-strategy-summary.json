@@ -1,70 +1,45 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-27T15:55:01.661Z",
+  "generatedAt": "2026-05-27T16:12:15.434Z",
   "latest": {
-    "date": "2026-05-27",
+    "date": "2026-05-28",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-27T15:55:01.659Z",
-    "runCount": 6,
+    "generatedAt": "2026-05-27T16:12:15.431Z",
+    "runCount": 1,
     "statuses": {
-      "ok": 5,
-      "failed": 1
+      "ok": 1
     },
-    "rawSignalCount": 250,
-    "decisionCount": 250,
+    "rawSignalCount": 50,
+    "decisionCount": 50,
     "actions": {
-      "IGNORE": 145,
-      "WATCH": 76,
-      "HOLD": 21,
-      "BUY": 6,
-      "SELL": 2
+      "IGNORE": 30,
+      "WATCH": 14,
+      "HOLD": 6
     },
-    "tradeCount": 8,
-    "buys": 6,
-    "sells": 2,
-    "buyUsd": 1069.8,
-    "realizedPnlUsd": 796.29,
-    "equityStartUsd": 2980.47,
+    "tradeCount": 0,
+    "buys": 0,
+    "sells": 0,
+    "buyUsd": 0,
+    "realizedPnlUsd": 0,
+    "equityStartUsd": 3990.59,
     "equityEndUsd": 3990.59,
-    "equityChangeUsd": 1010.12,
+    "equityChangeUsd": 0,
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 213
+        "count": 45
       },
       {
         "name": "amount < 500U",
-        "count": 38
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: 9x2FKx...MrPg",
-        "count": 18
-      },
-      {
-        "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 9
-      },
-      {
-        "name": "blacklisted source wallet: Jwedjx...w3Re",
-        "count": 9
-      },
-      {
-        "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-        "count": 9
-      },
-      {
-        "name": "blacklisted source wallet: 49XA1a...TKAm",
-        "count": 8
-      },
-      {
-        "name": "blacklisted source wallet: DENzuu...kX1M",
-        "count": 8
+        "count": 2
       }
     ],
-    "mistakeCount": 1,
-    "mistakeTypes": {
-      "FILE_WRITE_ERROR": 1
-    },
+    "mistakeCount": 0,
+    "mistakeTypes": {},
     "accountResets": 0,
     "walletBlacklistCount": 7,
     "latestBlacklistedWallets": [
@@ -189,7 +164,7 @@
         ]
       }
     ],
-    "smartMoneyWatchlistCount": 287,
+    "smartMoneyWatchlistCount": 295,
     "latestSmartMoneyWatchlist": [
       {
         "walletAddress": "71pAfN1nJhcLaezSRYvwdsNFE9PnY9hNfcxB4nZ1gdAp",
@@ -198,9 +173,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-27T15:12:13.665Z",
-        "occurrences": 19,
-        "highSoldRatioCount": 19,
+        "lastSeenAt": "2026-05-27T16:12:13.549Z",
+        "occurrences": 22,
+        "highSoldRatioCount": 22,
         "tokens": [
           {
             "token": "Just a Rich Guy",
@@ -268,6 +243,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 85.68%",
           "watch only; sold ratio 85.55%",
           "watch only; sold ratio 90.81%",
           "watch only; sold ratio 85.62%",
@@ -280,15 +256,93 @@
         ]
       },
       {
+        "walletAddress": "ng6MaDBBuLP7YD8Wx8uLtAQ4Scmv77UTsVeYnP2AGqF",
+        "shortAddress": "ng6MaD...AGqF",
+        "chain": "solana",
+        "walletType": "Smart Money",
+        "status": "watch_only",
+        "firstSeenAt": "2026-05-26T22:55:39.434Z",
+        "lastSeenAt": "2026-05-27T16:12:13.549Z",
+        "occurrences": 20,
+        "highSoldRatioCount": 20,
+        "tokens": [
+          {
+            "token": "CLUDE",
+            "symbol": "Clude",
+            "address": "awgcdt2gd8jadbybyyzy1ikxfwokpngreqou24zupump",
+            "shortAddress": "awgcdt...pump",
+            "soldRatioPercent": 80.35,
+            "amountUsd": 1179.67
+          },
+          {
+            "token": "Kintara",
+            "symbol": "KINS",
+            "address": "tqj8yfmagrg7oorpqkvgyr52r96rftamvwfth9bpump",
+            "shortAddress": "tqj8yf...pump",
+            "soldRatioPercent": 92.71,
+            "amountUsd": 193.84
+          },
+          {
+            "token": "ALTSEASON",
+            "symbol": "ALTSZN",
+            "address": "ccld8htaklwtqhatqpwbqjtuca72fnb9e1ckrtezpump",
+            "shortAddress": "ccld8h...pump",
+            "soldRatioPercent": 81.84,
+            "amountUsd": 169.98
+          },
+          {
+            "token": "Pod the Squire",
+            "symbol": "SQUIRE",
+            "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
+            "shortAddress": "en2nnx...4rza",
+            "soldRatioPercent": 100,
+            "amountUsd": 74.94
+          },
+          {
+            "token": "Make Aliens Great Again ",
+            "symbol": "MAGA",
+            "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
+            "shortAddress": "hon2rh...pump",
+            "soldRatioPercent": 100,
+            "amountUsd": 304.87
+          },
+          {
+            "token": "FIFA WORLD CUP",
+            "symbol": "FWC",
+            "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
+            "shortAddress": "hxwrnz...pump",
+            "soldRatioPercent": 100,
+            "amountUsd": 873.99
+          },
+          {
+            "token": "Virl.fun",
+            "symbol": "VIRL",
+            "address": "biywh8eq2cbghwmhkwcnfticcwjwn7r1q4qn9hsypump",
+            "shortAddress": "biywh8...pump",
+            "soldRatioPercent": 95.51,
+            "amountUsd": 157.54
+          }
+        ],
+        "reasons": [
+          "watch only; sold ratio 80.45%",
+          "watch only; sold ratio 92.88%",
+          "watch only; sold ratio 80.35%",
+          "watch only; sold ratio 92.71%",
+          "watch only; sold ratio 81.84%",
+          "watch only; sold ratio 100%",
+          "watch only; sold ratio 95.51%"
+        ]
+      },
+      {
         "walletAddress": "6thKzh1NhiPMNWXvqLUem3GAjUgkxBCyLToxZ28z4nVi",
         "shortAddress": "6thKzh...4nVi",
         "chain": "solana",
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-27T15:12:13.665Z",
-        "occurrences": 17,
-        "highSoldRatioCount": 17,
+        "lastSeenAt": "2026-05-27T16:12:13.549Z",
+        "occurrences": 19,
+        "highSoldRatioCount": 19,
         "tokens": [
           {
             "token": "World Cup Coin",
@@ -348,6 +402,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 85.53%",
           "watch only; sold ratio 93.53%",
           "watch only; sold ratio 85.4%",
           "watch only; sold ratio 80.8%",
@@ -361,9 +416,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-27T15:12:13.665Z",
-        "occurrences": 16,
-        "highSoldRatioCount": 16,
+        "lastSeenAt": "2026-05-27T16:12:13.549Z",
+        "occurrences": 18,
+        "highSoldRatioCount": 18,
         "tokens": [
           {
             "token": "Make Aliens Great Again ",
@@ -447,6 +502,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 91.08%",
           "watch only; sold ratio 90.5%",
           "watch only; sold ratio 89.7%",
           "watch only; sold ratio 90.19%",
@@ -457,55 +513,31 @@
         ]
       },
       {
-        "walletAddress": "ng6MaDBBuLP7YD8Wx8uLtAQ4Scmv77UTsVeYnP2AGqF",
-        "shortAddress": "ng6MaD...AGqF",
+        "walletAddress": "4boUqjQLC6SpTmzY9J63gcGSpqdasKCdThTZ6ciQkvCx",
+        "shortAddress": "4boUqj...kvCx",
         "chain": "solana",
         "walletType": "Smart Money",
         "status": "watch_only",
-        "firstSeenAt": "2026-05-26T22:55:39.434Z",
-        "lastSeenAt": "2026-05-27T15:12:13.665Z",
+        "firstSeenAt": "2026-05-25T11:10:31.629Z",
+        "lastSeenAt": "2026-05-27T16:12:13.549Z",
         "occurrences": 16,
         "highSoldRatioCount": 16,
         "tokens": [
           {
-            "token": "CLUDE",
-            "symbol": "Clude",
-            "address": "awgcdt2gd8jadbybyyzy1ikxfwokpngreqou24zupump",
-            "shortAddress": "awgcdt...pump",
-            "soldRatioPercent": 80.35,
-            "amountUsd": 1179.67
+            "token": "World Cup Coin",
+            "symbol": "WORLDCUP",
+            "address": "33eum82laahtv5ykuq1bdweviserh5cnfxqvnlt5pump",
+            "shortAddress": "33eum8...pump",
+            "soldRatioPercent": 93.12,
+            "amountUsd": 507.36
           },
           {
-            "token": "Kintara",
-            "symbol": "KINS",
-            "address": "tqj8yfmagrg7oorpqkvgyr52r96rftamvwfth9bpump",
-            "shortAddress": "tqj8yf...pump",
-            "soldRatioPercent": 92.71,
-            "amountUsd": 193.84
-          },
-          {
-            "token": "ALTSEASON",
-            "symbol": "ALTSZN",
-            "address": "ccld8htaklwtqhatqpwbqjtuca72fnb9e1ckrtezpump",
-            "shortAddress": "ccld8h...pump",
-            "soldRatioPercent": 81.84,
-            "amountUsd": 169.98
-          },
-          {
-            "token": "Pod the Squire",
-            "symbol": "SQUIRE",
-            "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
-            "shortAddress": "en2nnx...4rza",
+            "token": "France",
+            "symbol": "FRANCE",
+            "address": "2gxem4einzolmsq5k7s6rhzcaeksu2hrfoubpqsopump",
+            "shortAddress": "2gxem4...pump",
             "soldRatioPercent": 100,
-            "amountUsd": 74.94
-          },
-          {
-            "token": "Make Aliens Great Again ",
-            "symbol": "MAGA",
-            "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
-            "shortAddress": "hon2rh...pump",
-            "soldRatioPercent": 100,
-            "amountUsd": 304.87
+            "amountUsd": 189.86
           },
           {
             "token": "FIFA WORLD CUP",
@@ -522,74 +554,22 @@
             "shortAddress": "biywh8...pump",
             "soldRatioPercent": 95.51,
             "amountUsd": 157.54
-          }
-        ],
-        "reasons": [
-          "watch only; sold ratio 80.35%",
-          "watch only; sold ratio 92.71%",
-          "watch only; sold ratio 81.84%",
-          "watch only; sold ratio 100%",
-          "watch only; sold ratio 95.51%"
-        ]
-      },
-      {
-        "walletAddress": "6sRb45Ap8ubWxPRgKLkKSkAPLQqQnN8QpXqdN7DGahJb",
-        "shortAddress": "6sRb45...ahJb",
-        "chain": "solana",
-        "walletType": "Smart Money",
-        "status": "watch_only",
-        "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-27T15:12:13.665Z",
-        "occurrences": 15,
-        "highSoldRatioCount": 15,
-        "tokens": [
-          {
-            "token": "France",
-            "symbol": "FRANCE",
-            "address": "2gxem4einzolmsq5k7s6rhzcaeksu2hrfoubpqsopump",
-            "shortAddress": "2gxem4...pump",
-            "soldRatioPercent": 100,
-            "amountUsd": 189.86
           },
           {
             "token": "PokeFUN",
             "symbol": "POKE",
             "address": "fadnlno4xc8ot3bcgbhfquuskg93jkfpr8pccr76pump",
             "shortAddress": "fadnln...pump",
-            "soldRatioPercent": 92.64,
-            "amountUsd": 625.96
+            "soldRatioPercent": 88.07,
+            "amountUsd": 231.78
           },
           {
-            "token": "FIFA WORLD CUP",
-            "symbol": "FWC",
-            "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
-            "shortAddress": "hxwrnz...pump",
-            "soldRatioPercent": 100,
-            "amountUsd": 873.99
-          },
-          {
-            "token": "The Most Valuable Currency",
-            "symbol": "ATTENTION",
-            "address": "9dvozm5bvutdsrnan1wvepxfaqw6oymyrrw5laqcpump",
-            "shortAddress": "9dvozm...pump",
-            "soldRatioPercent": 80.77,
-            "amountUsd": 173.33
-          },
-          {
-            "token": "alpha-gal syndrome",
-            "symbol": "AGS",
-            "address": "carsfgusmc69ufrmdpwyy6sjmmfrazgcqjyscfiby3am",
-            "shortAddress": "carsfg...y3am",
-            "soldRatioPercent": 100,
-            "amountUsd": 129.68
-          },
-          {
-            "token": "ay oh see",
-            "symbol": "aoc",
-            "address": "3gjbts3yv6atxr5wpy9pviakfgosprvt74hveuegov1b",
-            "shortAddress": "3gjbts...ov1b",
-            "soldRatioPercent": 100,
-            "amountUsd": 281.05
+            "token": "Federated States of Gapla",
+            "symbol": "GAPLA",
+            "address": "3y3x6bk6zpzpafj1kyj7b33hbfm7ip5tqqpylwjhpump",
+            "shortAddress": "3y3x6b...pump",
+            "soldRatioPercent": 95.83,
+            "amountUsd": 215.27
           },
           {
             "token": "ttt",
@@ -598,23 +578,18 @@
             "shortAddress": "7j8txt...ps7o",
             "soldRatioPercent": 90.9,
             "amountUsd": 774.8
-          },
-          {
-            "token": "Federated States of Gapla",
-            "symbol": "GAPLA",
-            "address": "3y3x6bk6zpzpafj1kyj7b33hbfm7ip5tqqpylwjhpump",
-            "shortAddress": "3y3x6b...pump",
-            "soldRatioPercent": 95.73,
-            "amountUsd": 818.02
           }
         ],
         "reasons": [
+          "watch only; sold ratio 93.16%",
           "watch only; sold ratio 92.71%",
+          "watch only; sold ratio 93.12%",
           "watch only; sold ratio 92.64%",
-          "watch only; sold ratio 80.77%",
+          "watch only; sold ratio 95.51%",
           "watch only; sold ratio 100%",
-          "watch only; sold ratio 90.9%",
-          "watch only; sold ratio 95.73%"
+          "watch only; sold ratio 88.07%",
+          "watch only; sold ratio 95.83%",
+          "watch only; sold ratio 90.9%"
         ]
       }
     ],
@@ -804,7 +779,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 262.68U; wallets 3; sold 75.24%; type KOL/Influencer",
+        "reason": "amount 2627.67U; wallets 6; sold 87.08%; type KOL/Influencer",
         "score": 60.9,
         "wins": 0,
         "losses": 0,
@@ -817,16 +792,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-27T15:12:13.665Z",
-        "occurrences": 345,
+        "lastSeenAt": "2026-05-27T16:12:13.549Z",
+        "occurrences": 377,
         "examples": [
-          {
-            "token": "GOONCOIN",
-            "symbol": "GOONC",
-            "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
-            "shortAddress": "brokrs...4a6c",
-            "chain": "solana"
-          },
           {
             "token": "just buy a dollar",
             "symbol": "dollar",
@@ -861,6 +829,13 @@
             "address": "36zrtqoab5mhhysap1ystwuahsk6grvuttz6cuvfm9e1",
             "shortAddress": "36zrtq...m9e1",
             "chain": "solana"
+          },
+          {
+            "token": "Longcat",
+            "symbol": "Shiro",
+            "address": "8wjmzfshdg1nxnookvfqdrd3wqvfd7neeazf3e1wpump",
+            "shortAddress": "8wjmzf...pump",
+            "chain": "solana"
           }
         ]
       },
@@ -869,7 +844,7 @@
         "title": "solana Whale 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 4965.31U; wallets 6; sold 92.77%; type Whale",
+        "reason": "amount 392.02U; wallets 3; sold 97.39%; type Whale",
         "score": 68.2,
         "wins": 0,
         "losses": 0,
@@ -882,23 +857,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-27T15:12:13.665Z",
-        "occurrences": 251,
+        "lastSeenAt": "2026-05-27T16:12:13.549Z",
+        "occurrences": 264,
         "examples": [
-          {
-            "token": "GOONCOIN",
-            "symbol": "GOONC",
-            "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
-            "shortAddress": "brokrs...4a6c",
-            "chain": "solana"
-          },
-          {
-            "token": "Brume",
-            "symbol": "BRUME",
-            "address": "chth5gxpawqfxlyuhrqy82viumxewbsvjxccaht7pump",
-            "shortAddress": "chth5g...pump",
-            "chain": "solana"
-          },
           {
             "token": "Tralalero Tralala",
             "symbol": "TRALALERO",
@@ -925,6 +886,20 @@
             "symbol": "Hippo",
             "address": "6tw9kzl3b4afdyjng7nulhpuozdrgduku4ucvmwjpump",
             "shortAddress": "6tw9kz...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "memestock",
+            "symbol": "MEME",
+            "address": "bkjajvzbry13acp171vapim7oh29uufueuurstrmeme",
+            "shortAddress": "bkjajv...meme",
+            "chain": "solana"
+          },
+          {
+            "token": "Football Capital Markets",
+            "symbol": "FCM",
+            "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+            "shortAddress": "hkpi2s...pump",
             "chain": "solana"
           }
         ]
@@ -1077,8 +1052,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-27T15:12:13.665Z",
-        "occurrences": 60,
+        "lastSeenAt": "2026-05-27T16:12:13.549Z",
+        "occurrences": 66,
         "examples": [
           {
             "token": "xHermes",
@@ -1279,209 +1254,9 @@
     ],
     "runs": [
       {
-        "runId": "20260526225539",
-        "startedAt": "2026-05-26T22:55:39.434Z",
-        "finishedAt": "2026-05-26T22:55:41.097Z",
-        "status": "ok",
-        "chains": [
-          "solana",
-          "bsc"
-        ],
-        "rawSignalCount": 50,
-        "decisions": 50,
-        "trades": 2,
-        "mistakes": [],
-        "notes": [
-          "bsc: signal endpoint returned zero rows. No trades were created."
-        ],
-        "chainResults": [
-          {
-            "chain": "solana",
-            "status": "ok",
-            "rawSignalCount": 50,
-            "trades": 2,
-            "mistakes": []
-          },
-          {
-            "chain": "bsc",
-            "status": "ok",
-            "rawSignalCount": 0,
-            "trades": 0,
-            "mistakes": []
-          }
-        ],
-        "accountReset": null,
-        "capital": {
-          "initialUsd": 3000,
-          "cashUsd": 2585.1,
-          "openValueUsd": 395.37,
-          "equityUsd": 2980.47,
-          "realizedPnlUsd": 0,
-          "unrealizedPnlUsd": -19.53,
-          "totalPnlUsd": -19.53,
-          "totalPnlPct": -0.65
-        }
-      },
-      {
-        "runId": "20260527044540",
-        "startedAt": "2026-05-27T04:45:40.976Z",
-        "finishedAt": "2026-05-27T04:45:40.976Z",
-        "status": "failed",
-        "chains": [],
-        "rawSignalCount": 0,
-        "decisions": 0,
-        "trades": 0,
-        "mistakes": [
-          {
-            "type": "FILE_WRITE_ERROR",
-            "chain": "",
-            "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
-            "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
-          }
-        ],
-        "notes": [
-          "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
-        ],
-        "chainResults": [],
-        "accountReset": null,
-        "capital": null
-      },
-      {
-        "runId": "20260527140923",
-        "startedAt": "2026-05-27T14:09:23.468Z",
-        "finishedAt": "2026-05-27T14:09:25.839Z",
-        "status": "ok",
-        "chains": [
-          "solana",
-          "bsc"
-        ],
-        "rawSignalCount": 50,
-        "decisions": 50,
-        "trades": 5,
-        "mistakes": [],
-        "notes": [
-          "bsc: signal endpoint returned zero rows. No trades were created."
-        ],
-        "chainResults": [
-          {
-            "chain": "solana",
-            "status": "ok",
-            "rawSignalCount": 50,
-            "trades": 5,
-            "mistakes": []
-          },
-          {
-            "chain": "bsc",
-            "status": "ok",
-            "rawSignalCount": 0,
-            "trades": 0,
-            "mistakes": []
-          }
-        ],
-        "accountReset": null,
-        "capital": {
-          "initialUsd": 3000,
-          "cashUsd": 3311.99,
-          "openValueUsd": 679.09,
-          "equityUsd": 3991.08,
-          "realizedPnlUsd": 313.16,
-          "unrealizedPnlUsd": -16.51,
-          "totalPnlUsd": 991.08,
-          "totalPnlPct": 33.04
-        }
-      },
-      {
-        "runId": "20260527141025",
-        "startedAt": "2026-05-27T14:10:25.902Z",
-        "finishedAt": "2026-05-27T14:10:28.169Z",
-        "status": "ok",
-        "chains": [
-          "solana",
-          "bsc"
-        ],
-        "rawSignalCount": 50,
-        "decisions": 50,
-        "trades": 0,
-        "mistakes": [],
-        "notes": [
-          "bsc: signal endpoint returned zero rows. No trades were created."
-        ],
-        "chainResults": [
-          {
-            "chain": "solana",
-            "status": "ok",
-            "rawSignalCount": 50,
-            "trades": 0,
-            "mistakes": []
-          },
-          {
-            "chain": "bsc",
-            "status": "ok",
-            "rawSignalCount": 0,
-            "trades": 0,
-            "mistakes": []
-          }
-        ],
-        "accountReset": null,
-        "capital": {
-          "initialUsd": 3000,
-          "cashUsd": 3311.99,
-          "openValueUsd": 679.09,
-          "equityUsd": 3991.08,
-          "realizedPnlUsd": 313.16,
-          "unrealizedPnlUsd": -16.51,
-          "totalPnlUsd": 991.08,
-          "totalPnlPct": 33.04
-        }
-      },
-      {
-        "runId": "20260527141212",
-        "startedAt": "2026-05-27T14:12:12.607Z",
-        "finishedAt": "2026-05-27T14:12:14.446Z",
-        "status": "ok",
-        "chains": [
-          "solana",
-          "bsc"
-        ],
-        "rawSignalCount": 50,
-        "decisions": 50,
-        "trades": 1,
-        "mistakes": [],
-        "notes": [
-          "bsc: signal endpoint returned zero rows. No trades were created."
-        ],
-        "chainResults": [
-          {
-            "chain": "solana",
-            "status": "ok",
-            "rawSignalCount": 50,
-            "trades": 1,
-            "mistakes": []
-          },
-          {
-            "chain": "bsc",
-            "status": "ok",
-            "rawSignalCount": 0,
-            "trades": 0,
-            "mistakes": []
-          }
-        ],
-        "accountReset": null,
-        "capital": {
-          "initialUsd": 3000,
-          "cashUsd": 3149.09,
-          "openValueUsd": 841.5,
-          "equityUsd": 3990.59,
-          "realizedPnlUsd": 313.16,
-          "unrealizedPnlUsd": -17,
-          "totalPnlUsd": 990.59,
-          "totalPnlPct": 33.02
-        }
-      },
-      {
-        "runId": "20260527151213",
-        "startedAt": "2026-05-27T15:12:13.665Z",
-        "finishedAt": "2026-05-27T15:12:15.472Z",
+        "runId": "20260527161213",
+        "startedAt": "2026-05-27T16:12:13.549Z",
+        "finishedAt": "2026-05-27T16:12:15.187Z",
         "status": "ok",
         "chains": [
           "solana",
@@ -1526,69 +1301,44 @@
   },
   "summaries": [
     {
-      "date": "2026-05-27",
+      "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-27T15:55:01.659Z",
-      "runCount": 6,
+      "generatedAt": "2026-05-27T16:12:15.431Z",
+      "runCount": 1,
       "statuses": {
-        "ok": 5,
-        "failed": 1
+        "ok": 1
       },
-      "rawSignalCount": 250,
-      "decisionCount": 250,
+      "rawSignalCount": 50,
+      "decisionCount": 50,
       "actions": {
-        "IGNORE": 145,
-        "WATCH": 76,
-        "HOLD": 21,
-        "BUY": 6,
-        "SELL": 2
+        "IGNORE": 30,
+        "WATCH": 14,
+        "HOLD": 6
       },
-      "tradeCount": 8,
-      "buys": 6,
-      "sells": 2,
-      "buyUsd": 1069.8,
-      "realizedPnlUsd": 796.29,
-      "equityStartUsd": 2980.47,
+      "tradeCount": 0,
+      "buys": 0,
+      "sells": 0,
+      "buyUsd": 0,
+      "realizedPnlUsd": 0,
+      "equityStartUsd": 3990.59,
       "equityEndUsd": 3990.59,
-      "equityChangeUsd": 1010.12,
+      "equityChangeUsd": 0,
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 213
+          "count": 45
         },
         {
           "name": "amount < 500U",
-          "count": 38
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: 9x2FKx...MrPg",
-          "count": 18
-        },
-        {
-          "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 9
-        },
-        {
-          "name": "blacklisted source wallet: Jwedjx...w3Re",
-          "count": 9
-        },
-        {
-          "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-          "count": 9
-        },
-        {
-          "name": "blacklisted source wallet: 49XA1a...TKAm",
-          "count": 8
-        },
-        {
-          "name": "blacklisted source wallet: DENzuu...kX1M",
-          "count": 8
+          "count": 2
         }
       ],
-      "mistakeCount": 1,
-      "mistakeTypes": {
-        "FILE_WRITE_ERROR": 1
-      },
+      "mistakeCount": 0,
+      "mistakeTypes": {},
       "accountResets": 0,
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -1713,7 +1463,7 @@
           ]
         }
       ],
-      "smartMoneyWatchlistCount": 287,
+      "smartMoneyWatchlistCount": 295,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "71pAfN1nJhcLaezSRYvwdsNFE9PnY9hNfcxB4nZ1gdAp",
@@ -1722,9 +1472,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 19,
-          "highSoldRatioCount": 19,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 22,
+          "highSoldRatioCount": 22,
           "tokens": [
             {
               "token": "Just a Rich Guy",
@@ -1792,6 +1542,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.68%",
             "watch only; sold ratio 85.55%",
             "watch only; sold ratio 90.81%",
             "watch only; sold ratio 85.62%",
@@ -1804,15 +1555,93 @@
           ]
         },
         {
+          "walletAddress": "ng6MaDBBuLP7YD8Wx8uLtAQ4Scmv77UTsVeYnP2AGqF",
+          "shortAddress": "ng6MaD...AGqF",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-26T22:55:39.434Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 20,
+          "highSoldRatioCount": 20,
+          "tokens": [
+            {
+              "token": "CLUDE",
+              "symbol": "Clude",
+              "address": "awgcdt2gd8jadbybyyzy1ikxfwokpngreqou24zupump",
+              "shortAddress": "awgcdt...pump",
+              "soldRatioPercent": 80.35,
+              "amountUsd": 1179.67
+            },
+            {
+              "token": "Kintara",
+              "symbol": "KINS",
+              "address": "tqj8yfmagrg7oorpqkvgyr52r96rftamvwfth9bpump",
+              "shortAddress": "tqj8yf...pump",
+              "soldRatioPercent": 92.71,
+              "amountUsd": 193.84
+            },
+            {
+              "token": "ALTSEASON",
+              "symbol": "ALTSZN",
+              "address": "ccld8htaklwtqhatqpwbqjtuca72fnb9e1ckrtezpump",
+              "shortAddress": "ccld8h...pump",
+              "soldRatioPercent": 81.84,
+              "amountUsd": 169.98
+            },
+            {
+              "token": "Pod the Squire",
+              "symbol": "SQUIRE",
+              "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
+              "shortAddress": "en2nnx...4rza",
+              "soldRatioPercent": 100,
+              "amountUsd": 74.94
+            },
+            {
+              "token": "Make Aliens Great Again ",
+              "symbol": "MAGA",
+              "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
+              "shortAddress": "hon2rh...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 304.87
+            },
+            {
+              "token": "FIFA WORLD CUP",
+              "symbol": "FWC",
+              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
+              "shortAddress": "hxwrnz...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 873.99
+            },
+            {
+              "token": "Virl.fun",
+              "symbol": "VIRL",
+              "address": "biywh8eq2cbghwmhkwcnfticcwjwn7r1q4qn9hsypump",
+              "shortAddress": "biywh8...pump",
+              "soldRatioPercent": 95.51,
+              "amountUsd": 157.54
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 80.45%",
+            "watch only; sold ratio 92.88%",
+            "watch only; sold ratio 80.35%",
+            "watch only; sold ratio 92.71%",
+            "watch only; sold ratio 81.84%",
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 95.51%"
+          ]
+        },
+        {
           "walletAddress": "6thKzh1NhiPMNWXvqLUem3GAjUgkxBCyLToxZ28z4nVi",
           "shortAddress": "6thKzh...4nVi",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 17,
-          "highSoldRatioCount": 17,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 19,
+          "highSoldRatioCount": 19,
           "tokens": [
             {
               "token": "World Cup Coin",
@@ -1872,6 +1701,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.53%",
             "watch only; sold ratio 93.53%",
             "watch only; sold ratio 85.4%",
             "watch only; sold ratio 80.8%",
@@ -1885,9 +1715,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 16,
-          "highSoldRatioCount": 16,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 18,
+          "highSoldRatioCount": 18,
           "tokens": [
             {
               "token": "Make Aliens Great Again ",
@@ -1971,6 +1801,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.08%",
             "watch only; sold ratio 90.5%",
             "watch only; sold ratio 89.7%",
             "watch only; sold ratio 90.19%",
@@ -1981,55 +1812,31 @@
           ]
         },
         {
-          "walletAddress": "ng6MaDBBuLP7YD8Wx8uLtAQ4Scmv77UTsVeYnP2AGqF",
-          "shortAddress": "ng6MaD...AGqF",
+          "walletAddress": "4boUqjQLC6SpTmzY9J63gcGSpqdasKCdThTZ6ciQkvCx",
+          "shortAddress": "4boUqj...kvCx",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
-          "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
+          "firstSeenAt": "2026-05-25T11:10:31.629Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
           "occurrences": 16,
           "highSoldRatioCount": 16,
           "tokens": [
             {
-              "token": "CLUDE",
-              "symbol": "Clude",
-              "address": "awgcdt2gd8jadbybyyzy1ikxfwokpngreqou24zupump",
-              "shortAddress": "awgcdt...pump",
-              "soldRatioPercent": 80.35,
-              "amountUsd": 1179.67
+              "token": "World Cup Coin",
+              "symbol": "WORLDCUP",
+              "address": "33eum82laahtv5ykuq1bdweviserh5cnfxqvnlt5pump",
+              "shortAddress": "33eum8...pump",
+              "soldRatioPercent": 93.12,
+              "amountUsd": 507.36
             },
             {
-              "token": "Kintara",
-              "symbol": "KINS",
-              "address": "tqj8yfmagrg7oorpqkvgyr52r96rftamvwfth9bpump",
-              "shortAddress": "tqj8yf...pump",
-              "soldRatioPercent": 92.71,
-              "amountUsd": 193.84
-            },
-            {
-              "token": "ALTSEASON",
-              "symbol": "ALTSZN",
-              "address": "ccld8htaklwtqhatqpwbqjtuca72fnb9e1ckrtezpump",
-              "shortAddress": "ccld8h...pump",
-              "soldRatioPercent": 81.84,
-              "amountUsd": 169.98
-            },
-            {
-              "token": "Pod the Squire",
-              "symbol": "SQUIRE",
-              "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
-              "shortAddress": "en2nnx...4rza",
+              "token": "France",
+              "symbol": "FRANCE",
+              "address": "2gxem4einzolmsq5k7s6rhzcaeksu2hrfoubpqsopump",
+              "shortAddress": "2gxem4...pump",
               "soldRatioPercent": 100,
-              "amountUsd": 74.94
-            },
-            {
-              "token": "Make Aliens Great Again ",
-              "symbol": "MAGA",
-              "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
-              "shortAddress": "hon2rh...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 304.87
+              "amountUsd": 189.86
             },
             {
               "token": "FIFA WORLD CUP",
@@ -2046,74 +1853,22 @@
               "shortAddress": "biywh8...pump",
               "soldRatioPercent": 95.51,
               "amountUsd": 157.54
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 80.35%",
-            "watch only; sold ratio 92.71%",
-            "watch only; sold ratio 81.84%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 95.51%"
-          ]
-        },
-        {
-          "walletAddress": "6sRb45Ap8ubWxPRgKLkKSkAPLQqQnN8QpXqdN7DGahJb",
-          "shortAddress": "6sRb45...ahJb",
-          "chain": "solana",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 15,
-          "highSoldRatioCount": 15,
-          "tokens": [
-            {
-              "token": "France",
-              "symbol": "FRANCE",
-              "address": "2gxem4einzolmsq5k7s6rhzcaeksu2hrfoubpqsopump",
-              "shortAddress": "2gxem4...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 189.86
             },
             {
               "token": "PokeFUN",
               "symbol": "POKE",
               "address": "fadnlno4xc8ot3bcgbhfquuskg93jkfpr8pccr76pump",
               "shortAddress": "fadnln...pump",
-              "soldRatioPercent": 92.64,
-              "amountUsd": 625.96
+              "soldRatioPercent": 88.07,
+              "amountUsd": 231.78
             },
             {
-              "token": "FIFA WORLD CUP",
-              "symbol": "FWC",
-              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
-              "shortAddress": "hxwrnz...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 873.99
-            },
-            {
-              "token": "The Most Valuable Currency",
-              "symbol": "ATTENTION",
-              "address": "9dvozm5bvutdsrnan1wvepxfaqw6oymyrrw5laqcpump",
-              "shortAddress": "9dvozm...pump",
-              "soldRatioPercent": 80.77,
-              "amountUsd": 173.33
-            },
-            {
-              "token": "alpha-gal syndrome",
-              "symbol": "AGS",
-              "address": "carsfgusmc69ufrmdpwyy6sjmmfrazgcqjyscfiby3am",
-              "shortAddress": "carsfg...y3am",
-              "soldRatioPercent": 100,
-              "amountUsd": 129.68
-            },
-            {
-              "token": "ay oh see",
-              "symbol": "aoc",
-              "address": "3gjbts3yv6atxr5wpy9pviakfgosprvt74hveuegov1b",
-              "shortAddress": "3gjbts...ov1b",
-              "soldRatioPercent": 100,
-              "amountUsd": 281.05
+              "token": "Federated States of Gapla",
+              "symbol": "GAPLA",
+              "address": "3y3x6bk6zpzpafj1kyj7b33hbfm7ip5tqqpylwjhpump",
+              "shortAddress": "3y3x6b...pump",
+              "soldRatioPercent": 95.83,
+              "amountUsd": 215.27
             },
             {
               "token": "ttt",
@@ -2122,23 +1877,18 @@
               "shortAddress": "7j8txt...ps7o",
               "soldRatioPercent": 90.9,
               "amountUsd": 774.8
-            },
-            {
-              "token": "Federated States of Gapla",
-              "symbol": "GAPLA",
-              "address": "3y3x6bk6zpzpafj1kyj7b33hbfm7ip5tqqpylwjhpump",
-              "shortAddress": "3y3x6b...pump",
-              "soldRatioPercent": 95.73,
-              "amountUsd": 818.02
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.16%",
             "watch only; sold ratio 92.71%",
+            "watch only; sold ratio 93.12%",
             "watch only; sold ratio 92.64%",
-            "watch only; sold ratio 80.77%",
+            "watch only; sold ratio 95.51%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 90.9%",
-            "watch only; sold ratio 95.73%"
+            "watch only; sold ratio 88.07%",
+            "watch only; sold ratio 95.83%",
+            "watch only; sold ratio 90.9%"
           ]
         }
       ],
@@ -2328,7 +2078,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 262.68U; wallets 3; sold 75.24%; type KOL/Influencer",
+          "reason": "amount 2627.67U; wallets 6; sold 87.08%; type KOL/Influencer",
           "score": 60.9,
           "wins": 0,
           "losses": 0,
@@ -2341,16 +2091,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 345,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 377,
           "examples": [
-            {
-              "token": "GOONCOIN",
-              "symbol": "GOONC",
-              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
-              "shortAddress": "brokrs...4a6c",
-              "chain": "solana"
-            },
             {
               "token": "just buy a dollar",
               "symbol": "dollar",
@@ -2385,6 +2128,13 @@
               "address": "36zrtqoab5mhhysap1ystwuahsk6grvuttz6cuvfm9e1",
               "shortAddress": "36zrtq...m9e1",
               "chain": "solana"
+            },
+            {
+              "token": "Longcat",
+              "symbol": "Shiro",
+              "address": "8wjmzfshdg1nxnookvfqdrd3wqvfd7neeazf3e1wpump",
+              "shortAddress": "8wjmzf...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -2393,7 +2143,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4965.31U; wallets 6; sold 92.77%; type Whale",
+          "reason": "amount 392.02U; wallets 3; sold 97.39%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -2406,23 +2156,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 251,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 264,
           "examples": [
-            {
-              "token": "GOONCOIN",
-              "symbol": "GOONC",
-              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
-              "shortAddress": "brokrs...4a6c",
-              "chain": "solana"
-            },
-            {
-              "token": "Brume",
-              "symbol": "BRUME",
-              "address": "chth5gxpawqfxlyuhrqy82viumxewbsvjxccaht7pump",
-              "shortAddress": "chth5g...pump",
-              "chain": "solana"
-            },
             {
               "token": "Tralalero Tralala",
               "symbol": "TRALALERO",
@@ -2449,6 +2185,20 @@
               "symbol": "Hippo",
               "address": "6tw9kzl3b4afdyjng7nulhpuozdrgduku4ucvmwjpump",
               "shortAddress": "6tw9kz...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "memestock",
+              "symbol": "MEME",
+              "address": "bkjajvzbry13acp171vapim7oh29uufueuurstrmeme",
+              "shortAddress": "bkjajv...meme",
+              "chain": "solana"
+            },
+            {
+              "token": "Football Capital Markets",
+              "symbol": "FCM",
+              "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+              "shortAddress": "hkpi2s...pump",
               "chain": "solana"
             }
           ]
@@ -2601,8 +2351,1331 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 60,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 66,
+          "examples": [
+            {
+              "token": "xHermes",
+              "symbol": "XHERMES",
+              "address": "ek95j96tmbhgkkvnfdjgzoqkpsz6cqmgkg34pr9fpump",
+              "shortAddress": "ek95j9...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Fabutollah",
+              "symbol": "FABUTOLLAH",
+              "address": "ewxrb5kghrtnkco7tpajc4powuq9gbvewpicmtdkpump",
+              "shortAddress": "ewxrb5...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Tralalero Tralala",
+              "symbol": "TRALALERO",
+              "address": "2mbq3mrkskf6nng5x29rbk4b9f7cwr4n1eqj18nsvirl",
+              "shortAddress": "2mbq3m...virl",
+              "chain": "solana"
+            },
+            {
+              "token": "Hungry Hippo",
+              "symbol": "Hippo",
+              "address": "6tw9kzl3b4afdyjng7nulhpuozdrgduku4ucvmwjpump",
+              "shortAddress": "6tw9kz...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "memestock",
+              "symbol": "MEME",
+              "address": "bkjajvzbry13acp171vapim7oh29uufueuurstrmeme",
+              "shortAddress": "bkjajv...meme",
+              "chain": "solana"
+            },
+            {
+              "token": "Standing Boy",
+              "symbol": "STAND",
+              "address": "fm7vaerfzf7eu4byway8ygslqywgrgyqmecqhs9pump",
+              "shortAddress": "fm7vae...pump",
+              "chain": "solana"
+            }
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "key": "mistake:auth_invalid:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "AUTH_INVALID",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T07:21:54.400Z",
+          "lastSeenAt": "2026-05-25T23:19:17.164Z",
+          "occurrences": 5,
+          "examples": [
+            {
+              "token": "AUTH_INVALID",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
+          "key": "lesson:solana:brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c:stop loss -36.68%; amount 262.68u; wallets 3; sold 72.34%; type kol/influencer",
+          "title": "亏损复盘",
+          "status": "需避免重复",
+          "rule": "触发止损或亏损退出后自动归档",
+          "reason": "GOONCOIN GOONC: Stop loss -36.68%; amount 262.68U; wallets 3; sold 72.34%; type KOL/Influencer",
+          "score": 43.9,
+          "wins": 0,
+          "losses": 1,
+          "totalPnlUsd": -63.7,
+          "example": {
+            "token": "GOONCOIN",
+            "symbol": "GOONC",
+            "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+            "shortAddress": "brokrs...4a6c",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-26T03:01:09.732Z",
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "GOONCOIN",
+              "symbol": "GOONC",
+              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+              "shortAddress": "brokrs...4a6c",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "lesson:solana:hwuhne4q14yp68ex5mwha6bjcazn2kfthvso3nyspump:stop loss -38.32%; amount 717.29u; wallets 3; sold 0.59%; type whale",
+          "title": "亏损复盘",
+          "status": "需避免重复",
+          "rule": "触发止损或亏损退出后自动归档",
+          "reason": "again again: Stop loss -38.32%; amount 717.29U; wallets 3; sold 0.59%; type Whale",
+          "score": 75.7,
+          "wins": 0,
+          "losses": 1,
+          "totalPnlUsd": -111.43,
+          "example": {
+            "token": "again",
+            "symbol": "again",
+            "address": "hwuhne4q14yp68ex5mwha6bjcazn2kfthvso3nyspump",
+            "shortAddress": "hwuhne...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T23:55:29.939Z",
+          "lastSeenAt": "2026-05-25T23:55:29.939Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "again",
+              "symbol": "again",
+              "address": "hwuhne4q14yp68ex5mwha6bjcazn2kfthvso3nyspump",
+              "shortAddress": "hwuhne...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "lesson:bsc:0xed33570fb7985ae71bf6abc8ac4d49c7d0257777:stop loss -36.18%; amount 273.25u; wallets 7; sold 16.74%; type smart money",
+          "title": "亏损复盘",
+          "status": "需避免重复",
+          "rule": "触发止损或亏损退出后自动归档",
+          "reason": "Dragon Dragon: Stop loss -36.18%; amount 273.25U; wallets 7; sold 16.74%; type Smart Money",
+          "score": 69.9,
+          "wins": 0,
+          "losses": 1,
+          "totalPnlUsd": -52.04,
+          "example": {
+            "token": "Dragon",
+            "symbol": "Dragon",
+            "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+            "shortAddress": "0xed33...7777",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T03:33:47.500Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "Dragon",
+              "symbol": "Dragon",
+              "address": "0xed33570fb7985ae71bf6abc8ac4d49c7d0257777",
+              "shortAddress": "0xed33...7777",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
+          "key": "mistake:cli_error:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T23:52:10.605Z",
+          "lastSeenAt": "2026-05-25T23:52:10.605Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        }
+      ],
+      "runs": [
+        {
+          "runId": "20260527161213",
+          "startedAt": "2026-05-27T16:12:13.549Z",
+          "finishedAt": "2026-05-27T16:12:15.187Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 50,
+          "decisions": 50,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [
+            "bsc: signal endpoint returned zero rows. No trades were created."
+          ],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 0,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3149.09,
+            "openValueUsd": 841.5,
+            "equityUsd": 3990.59,
+            "realizedPnlUsd": 313.16,
+            "unrealizedPnlUsd": -17,
+            "totalPnlUsd": 990.59,
+            "totalPnlPct": 33.02
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "timeZone": "Asia/Hong_Kong",
+      "generatedAt": "2026-05-27T16:12:15.432Z",
+      "runCount": 6,
+      "statuses": {
+        "ok": 5,
+        "failed": 1
+      },
+      "rawSignalCount": 250,
+      "decisionCount": 250,
+      "actions": {
+        "IGNORE": 145,
+        "WATCH": 76,
+        "HOLD": 21,
+        "BUY": 6,
+        "SELL": 2
+      },
+      "tradeCount": 8,
+      "buys": 6,
+      "sells": 2,
+      "buyUsd": 1069.8,
+      "realizedPnlUsd": 796.29,
+      "equityStartUsd": 2980.47,
+      "equityEndUsd": 3990.59,
+      "equityChangeUsd": 1010.12,
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 213
+        },
+        {
+          "name": "amount < 500U",
+          "count": 38
+        },
+        {
+          "name": "blacklisted source wallet: 9x2FKx...MrPg",
+          "count": 18
+        },
+        {
+          "name": "blacklisted source wallet: 9nP8di...wpE6",
+          "count": 9
+        },
+        {
+          "name": "blacklisted source wallet: Jwedjx...w3Re",
+          "count": 9
+        },
+        {
+          "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+          "count": 9
+        },
+        {
+          "name": "blacklisted source wallet: 49XA1a...TKAm",
+          "count": 8
+        },
+        {
+          "name": "blacklisted source wallet: DENzuu...kX1M",
+          "count": 8
+        }
+      ],
+      "mistakeCount": 1,
+      "mistakeTypes": {
+        "FILE_WRITE_ERROR": 1
+      },
+      "accountResets": 0,
+      "walletBlacklistCount": 7,
+      "latestBlacklistedWallets": [
+        {
+          "walletAddress": "9x2FKx31Zpe1HDEaEntehZFEywmkFxcRujadRZEjMrPg",
+          "shortAddress": "9x2FKx...MrPg",
+          "chain": "solana",
+          "walletType": "Whale",
+          "status": "blacklisted",
+          "firstSeenAt": "2026-05-25T23:55:29.939Z",
+          "lastSeenAt": "2026-05-25T23:55:29.939Z",
+          "lossCount": 1,
+          "totalLossUsd": -111.43,
+          "tokens": [
+            {
+              "token": "again",
+              "symbol": "again",
+              "address": "hwuhne4q14yp68ex5mwha6bjcazn2kfthvso3nyspump",
+              "shortAddress": "hwuhne...pump",
+              "runId": "20260525235529",
+              "realizedPnlUsd": -111.43
+            }
+          ],
+          "reasons": [
+            "Stop loss -38.32%; amount 717.29U; wallets 3; sold 0.59%; type Whale"
+          ]
+        },
+        {
+          "walletAddress": "49XA1awsqMJuueDhk98yd13PX3pNBPMfZFUAUZvLTKAm",
+          "shortAddress": "49XA1a...TKAm",
+          "chain": "solana",
+          "walletType": "Whale",
+          "status": "blacklisted",
+          "firstSeenAt": "2026-05-25T23:55:29.939Z",
+          "lastSeenAt": "2026-05-25T23:55:29.939Z",
+          "lossCount": 1,
+          "totalLossUsd": -111.43,
+          "tokens": [
+            {
+              "token": "again",
+              "symbol": "again",
+              "address": "hwuhne4q14yp68ex5mwha6bjcazn2kfthvso3nyspump",
+              "shortAddress": "hwuhne...pump",
+              "runId": "20260525235529",
+              "realizedPnlUsd": -111.43
+            }
+          ],
+          "reasons": [
+            "Stop loss -38.32%; amount 717.29U; wallets 3; sold 0.59%; type Whale"
+          ]
+        },
+        {
+          "walletAddress": "DENzuuxpY5Q18rJwZcjVUUSQn3ScsYLm9z4GnJqnkX1M",
+          "shortAddress": "DENzuu...kX1M",
+          "chain": "solana",
+          "walletType": "Whale",
+          "status": "blacklisted",
+          "firstSeenAt": "2026-05-25T23:55:29.939Z",
+          "lastSeenAt": "2026-05-25T23:55:29.939Z",
+          "lossCount": 1,
+          "totalLossUsd": -111.43,
+          "tokens": [
+            {
+              "token": "again",
+              "symbol": "again",
+              "address": "hwuhne4q14yp68ex5mwha6bjcazn2kfthvso3nyspump",
+              "shortAddress": "hwuhne...pump",
+              "runId": "20260525235529",
+              "realizedPnlUsd": -111.43
+            }
+          ],
+          "reasons": [
+            "Stop loss -38.32%; amount 717.29U; wallets 3; sold 0.59%; type Whale"
+          ]
+        },
+        {
+          "walletAddress": "8eqN4D9RrSWTwFJgvoHHrSo8AgA7AcWSqxDQfeuHv86w",
+          "shortAddress": "8eqN4D...v86w",
+          "chain": "solana",
+          "walletType": "Whale",
+          "status": "blacklisted",
+          "firstSeenAt": "2026-05-25T23:55:29.939Z",
+          "lastSeenAt": "2026-05-25T23:55:29.939Z",
+          "lossCount": 1,
+          "totalLossUsd": -111.43,
+          "tokens": [
+            {
+              "token": "again",
+              "symbol": "again",
+              "address": "hwuhne4q14yp68ex5mwha6bjcazn2kfthvso3nyspump",
+              "shortAddress": "hwuhne...pump",
+              "runId": "20260525235529",
+              "realizedPnlUsd": -111.43
+            }
+          ],
+          "reasons": [
+            "Stop loss -38.32%; amount 717.29U; wallets 3; sold 0.59%; type Whale"
+          ]
+        },
+        {
+          "walletAddress": "9nP8diLFigo1wmWxg2R1k4JEHnmw6MtUvmeDudVfwpE6",
+          "shortAddress": "9nP8di...wpE6",
+          "chain": "solana",
+          "walletType": "KOL/Influencer",
+          "status": "blacklisted",
+          "firstSeenAt": "2026-05-26T03:01:09.732Z",
+          "lastSeenAt": "2026-05-26T03:01:09.732Z",
+          "lossCount": 1,
+          "totalLossUsd": -63.7,
+          "tokens": [
+            {
+              "token": "GOONCOIN",
+              "symbol": "GOONC",
+              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
+              "shortAddress": "brokrs...4a6c",
+              "runId": "20260526030109",
+              "realizedPnlUsd": -63.7
+            }
+          ],
+          "reasons": [
+            "Stop loss -36.68%; amount 262.68U; wallets 3; sold 72.34%; type KOL/Influencer"
+          ]
+        }
+      ],
+      "smartMoneyWatchlistCount": 295,
+      "latestSmartMoneyWatchlist": [
+        {
+          "walletAddress": "71pAfN1nJhcLaezSRYvwdsNFE9PnY9hNfcxB4nZ1gdAp",
+          "shortAddress": "71pAfN...gdAp",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T11:10:31.629Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 22,
+          "highSoldRatioCount": 22,
+          "tokens": [
+            {
+              "token": "Just a Rich Guy",
+              "symbol": "RICHGUY",
+              "address": "4mhkuvwwjhhu9fwrbi85mdsssxqwcgxduexvpzkrpump",
+              "shortAddress": "4mhkuv...pump",
+              "soldRatioPercent": 90.81,
+              "amountUsd": 306.33
+            },
+            {
+              "token": "Ferrari Luce",
+              "symbol": "Luce",
+              "address": "8qwqmaobvgwgvupffgfqiiky3222xmttgut2wfmfpump",
+              "shortAddress": "8qwqma...pump",
+              "soldRatioPercent": 85.62,
+              "amountUsd": 273.88
+            },
+            {
+              "token": "Dogwifgun",
+              "symbol": "Dogwifgun",
+              "address": "gqnxybbftnjob7rzhfefngymlghu4jlik22xhrsrpump",
+              "shortAddress": "gqnxyb...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 330.78
+            },
+            {
+              "token": "grail",
+              "symbol": "grail",
+              "address": "3x6apzqjkgf33zet8cbkax7logqkrhnx6firzva5pump",
+              "shortAddress": "3x6apz...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 227.38
+            },
+            {
+              "token": "cig",
+              "symbol": "CIG",
+              "address": "cig9axeezqmuts9wxzmb8s5dapsvj2b8jnrrmnwrdyz",
+              "shortAddress": "cig9ax...rdyz",
+              "soldRatioPercent": 93.52,
+              "amountUsd": 639.84
+            },
+            {
+              "token": "Bitcoin Bank",
+              "symbol": "BTCBANK",
+              "address": "9s96g11xgshczudfjqkqzqxzvubqgjxsysj1wrgxpump",
+              "shortAddress": "9s96g1...pump",
+              "soldRatioPercent": 96.2,
+              "amountUsd": 458.45
+            },
+            {
+              "token": "penispoop420",
+              "symbol": "PP420",
+              "address": "ac8escj4ufro8pifkun7diurcccktg4jvarb3mpmpump",
+              "shortAddress": "ac8esc...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 425.82
+            },
+            {
+              "token": "Generational Wealth",
+              "symbol": "GENWEALTH",
+              "address": "5gdkymihdbettncbjr1yaeqmcegjkvfrkumraagmpump",
+              "shortAddress": "5gdkym...pump",
+              "soldRatioPercent": 98.83,
+              "amountUsd": 238.93
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 85.68%",
+            "watch only; sold ratio 85.55%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 85.62%",
+            "watch only; sold ratio 95.36%",
+            "watch only; sold ratio 91.6%",
+            "watch only; sold ratio 93.52%",
+            "watch only; sold ratio 96.2%",
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 98.83%"
+          ]
+        },
+        {
+          "walletAddress": "ng6MaDBBuLP7YD8Wx8uLtAQ4Scmv77UTsVeYnP2AGqF",
+          "shortAddress": "ng6MaD...AGqF",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-26T22:55:39.434Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 20,
+          "highSoldRatioCount": 20,
+          "tokens": [
+            {
+              "token": "CLUDE",
+              "symbol": "Clude",
+              "address": "awgcdt2gd8jadbybyyzy1ikxfwokpngreqou24zupump",
+              "shortAddress": "awgcdt...pump",
+              "soldRatioPercent": 80.35,
+              "amountUsd": 1179.67
+            },
+            {
+              "token": "Kintara",
+              "symbol": "KINS",
+              "address": "tqj8yfmagrg7oorpqkvgyr52r96rftamvwfth9bpump",
+              "shortAddress": "tqj8yf...pump",
+              "soldRatioPercent": 92.71,
+              "amountUsd": 193.84
+            },
+            {
+              "token": "ALTSEASON",
+              "symbol": "ALTSZN",
+              "address": "ccld8htaklwtqhatqpwbqjtuca72fnb9e1ckrtezpump",
+              "shortAddress": "ccld8h...pump",
+              "soldRatioPercent": 81.84,
+              "amountUsd": 169.98
+            },
+            {
+              "token": "Pod the Squire",
+              "symbol": "SQUIRE",
+              "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
+              "shortAddress": "en2nnx...4rza",
+              "soldRatioPercent": 100,
+              "amountUsd": 74.94
+            },
+            {
+              "token": "Make Aliens Great Again ",
+              "symbol": "MAGA",
+              "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
+              "shortAddress": "hon2rh...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 304.87
+            },
+            {
+              "token": "FIFA WORLD CUP",
+              "symbol": "FWC",
+              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
+              "shortAddress": "hxwrnz...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 873.99
+            },
+            {
+              "token": "Virl.fun",
+              "symbol": "VIRL",
+              "address": "biywh8eq2cbghwmhkwcnfticcwjwn7r1q4qn9hsypump",
+              "shortAddress": "biywh8...pump",
+              "soldRatioPercent": 95.51,
+              "amountUsd": 157.54
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 80.45%",
+            "watch only; sold ratio 92.88%",
+            "watch only; sold ratio 80.35%",
+            "watch only; sold ratio 92.71%",
+            "watch only; sold ratio 81.84%",
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 95.51%"
+          ]
+        },
+        {
+          "walletAddress": "6thKzh1NhiPMNWXvqLUem3GAjUgkxBCyLToxZ28z4nVi",
+          "shortAddress": "6thKzh...4nVi",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T11:10:31.629Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 19,
+          "highSoldRatioCount": 19,
+          "tokens": [
+            {
+              "token": "World Cup Coin",
+              "symbol": "WORLDCUP",
+              "address": "33eum82laahtv5ykuq1bdweviserh5cnfxqvnlt5pump",
+              "shortAddress": "33eum8...pump",
+              "soldRatioPercent": 93.53,
+              "amountUsd": 619.9
+            },
+            {
+              "token": "TROLL",
+              "symbol": "TROLL",
+              "address": "5uuh9rtdispq6hks6bp4ndu9pnjpxrxuiw6shbtbhgh2",
+              "shortAddress": "5uuh9r...hgh2",
+              "soldRatioPercent": 85.4,
+              "amountUsd": 2122.97
+            },
+            {
+              "token": "FIFA WORLD CUP",
+              "symbol": "FWC",
+              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
+              "shortAddress": "hxwrnz...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 873.99
+            },
+            {
+              "token": "Pod the Squire",
+              "symbol": "SQUIRE",
+              "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
+              "shortAddress": "en2nnx...4rza",
+              "soldRatioPercent": 100,
+              "amountUsd": 339.39
+            },
+            {
+              "token": "Red Kitten Crew",
+              "symbol": "RKC",
+              "address": "7hgfxftrbbqsytaeycqjglqrnjll6tww9ek4re3apump",
+              "shortAddress": "7hgfxf...pump",
+              "soldRatioPercent": 80.8,
+              "amountUsd": 694.69
+            },
+            {
+              "token": "Virl.fun",
+              "symbol": "VIRL",
+              "address": "biywh8eq2cbghwmhkwcnfticcwjwn7r1q4qn9hsypump",
+              "shortAddress": "biywh8...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 246.87
+            },
+            {
+              "token": "Manifesting",
+              "symbol": "MANIFEST",
+              "address": "bcdwqban8dyb5yjtsob6tdhawokxv28k2ozuoderpump",
+              "shortAddress": "bcdwqb...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 963.27
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 85.53%",
+            "watch only; sold ratio 93.53%",
+            "watch only; sold ratio 85.4%",
+            "watch only; sold ratio 80.8%",
+            "watch only; sold ratio 100%"
+          ]
+        },
+        {
+          "walletAddress": "ESZERcwH15AHRVyeapZer1xFQqb11JyhYuEjPukHvBge",
+          "shortAddress": "ESZERc...vBge",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T11:10:31.629Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 18,
+          "highSoldRatioCount": 18,
+          "tokens": [
+            {
+              "token": "Make Aliens Great Again ",
+              "symbol": "MAGA",
+              "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
+              "shortAddress": "hon2rh...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 304.87
+            },
+            {
+              "token": "I choose rich everytime",
+              "symbol": "RICH",
+              "address": "5hilgyybrayppuwnfa38agfz8ietnahwkapixcfspump",
+              "shortAddress": "5hilgy...pump",
+              "soldRatioPercent": 89.7,
+              "amountUsd": 342.56
+            },
+            {
+              "token": "FIFA WORLD CUP",
+              "symbol": "FWC",
+              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
+              "shortAddress": "hxwrnz...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 873.99
+            },
+            {
+              "token": "EbolaVirus",
+              "symbol": "Ebola",
+              "address": "5vicjeyytdbqmske74vwqedvme5cmea3vr1at8rxb9t1",
+              "shortAddress": "5vicje...b9t1",
+              "soldRatioPercent": 100,
+              "amountUsd": 355.85
+            },
+            {
+              "token": "The Chubby Elephant",
+              "symbol": "ชั้ง",
+              "address": "2kbh6ucr8titebubknynvjuksfwaifbj7naptkqwpump",
+              "shortAddress": "2kbh6u...pump",
+              "soldRatioPercent": 90.19,
+              "amountUsd": 439.55
+            },
+            {
+              "token": "Baby Troll",
+              "symbol": "BABYTROLL",
+              "address": "6qdzmx4c9rl2x3ns3swz8ueo4zredpjdxpaempo7pump",
+              "shortAddress": "6qdzmx...pump",
+              "soldRatioPercent": 95.82,
+              "amountUsd": 172.2
+            },
+            {
+              "token": "G Cult",
+              "symbol": "G",
+              "address": "dwx9yjh6numq1hecnsnzneimcbrtbaozxvdgs4ocpump",
+              "shortAddress": "dwx9yj...pump",
+              "soldRatioPercent": 98.08,
+              "amountUsd": 1602.88
+            },
+            {
+              "token": "IDLE Protocol",
+              "symbol": "IDLE",
+              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
+              "shortAddress": "ajlhrx...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 173.27
+            },
+            {
+              "token": "Pod the Squire",
+              "symbol": "SQUIRE",
+              "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
+              "shortAddress": "en2nnx...4rza",
+              "soldRatioPercent": 100,
+              "amountUsd": 339.39
+            },
+            {
+              "token": "Red Kitten Crew",
+              "symbol": "RKC",
+              "address": "7hgfxftrbbqsytaeycqjglqrnjll6tww9ek4re3apump",
+              "shortAddress": "7hgfxf...pump",
+              "soldRatioPercent": 80.8,
+              "amountUsd": 694.69
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 91.08%",
+            "watch only; sold ratio 90.5%",
+            "watch only; sold ratio 89.7%",
+            "watch only; sold ratio 90.19%",
+            "watch only; sold ratio 95.82%",
+            "watch only; sold ratio 98.08%",
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 80.8%"
+          ]
+        },
+        {
+          "walletAddress": "4boUqjQLC6SpTmzY9J63gcGSpqdasKCdThTZ6ciQkvCx",
+          "shortAddress": "4boUqj...kvCx",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T11:10:31.629Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 16,
+          "highSoldRatioCount": 16,
+          "tokens": [
+            {
+              "token": "World Cup Coin",
+              "symbol": "WORLDCUP",
+              "address": "33eum82laahtv5ykuq1bdweviserh5cnfxqvnlt5pump",
+              "shortAddress": "33eum8...pump",
+              "soldRatioPercent": 93.12,
+              "amountUsd": 507.36
+            },
+            {
+              "token": "France",
+              "symbol": "FRANCE",
+              "address": "2gxem4einzolmsq5k7s6rhzcaeksu2hrfoubpqsopump",
+              "shortAddress": "2gxem4...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 189.86
+            },
+            {
+              "token": "FIFA WORLD CUP",
+              "symbol": "FWC",
+              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
+              "shortAddress": "hxwrnz...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 873.99
+            },
+            {
+              "token": "Virl.fun",
+              "symbol": "VIRL",
+              "address": "biywh8eq2cbghwmhkwcnfticcwjwn7r1q4qn9hsypump",
+              "shortAddress": "biywh8...pump",
+              "soldRatioPercent": 95.51,
+              "amountUsd": 157.54
+            },
+            {
+              "token": "PokeFUN",
+              "symbol": "POKE",
+              "address": "fadnlno4xc8ot3bcgbhfquuskg93jkfpr8pccr76pump",
+              "shortAddress": "fadnln...pump",
+              "soldRatioPercent": 88.07,
+              "amountUsd": 231.78
+            },
+            {
+              "token": "Federated States of Gapla",
+              "symbol": "GAPLA",
+              "address": "3y3x6bk6zpzpafj1kyj7b33hbfm7ip5tqqpylwjhpump",
+              "shortAddress": "3y3x6b...pump",
+              "soldRatioPercent": 95.83,
+              "amountUsd": 215.27
+            },
+            {
+              "token": "ttt",
+              "symbol": "tttt",
+              "address": "7j8txtscvwrwmknzxzcsretmg9fguqfb37eatgvsps7o",
+              "shortAddress": "7j8txt...ps7o",
+              "soldRatioPercent": 90.9,
+              "amountUsd": 774.8
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 93.16%",
+            "watch only; sold ratio 92.71%",
+            "watch only; sold ratio 93.12%",
+            "watch only; sold ratio 92.64%",
+            "watch only; sold ratio 95.51%",
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 88.07%",
+            "watch only; sold ratio 95.83%",
+            "watch only; sold ratio 90.9%"
+          ]
+        }
+      ],
+      "bestStrategies": [
+        {
+          "key": "exit-win:solana:whale:take profit 229.64%; amount 2224.35u; wallets 3; sold 37.09%; type whale",
+          "title": "solana 止盈/退出有效样本",
+          "status": "已验证盈利",
+          "rule": "Take profit 229.64%; amount 2224.35U; wallets 3; sold 37.09%; type Whale",
+          "reason": "Take profit 229.64%; amount 2224.35U; wallets 3; sold 37.09%; type Whale",
+          "score": 59,
+          "wins": 1,
+          "losses": 0,
+          "totalPnlUsd": 483.13,
+          "example": {
+            "token": "Football Capital Markets",
+            "symbol": "FCM",
+            "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+            "shortAddress": "hkpi2s...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-27T14:09:23.468Z",
+          "lastSeenAt": "2026-05-27T14:09:23.468Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "Football Capital Markets",
+              "symbol": "FCM",
+              "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+              "shortAddress": "hkpi2s...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "exit-win:solana:kol/influencer:take profit 148.95%; amount 6026.91u; wallets 3; sold 91.72%; type kol/influencer",
+          "title": "solana 止盈/退出有效样本",
+          "status": "已验证盈利",
+          "rule": "Take profit 148.95%; amount 6026.91U; wallets 3; sold 91.72%; type KOL/Influencer",
+          "reason": "Take profit 148.95%; amount 6026.91U; wallets 3; sold 91.72%; type KOL/Influencer",
+          "score": 53.5,
+          "wins": 1,
+          "losses": 0,
+          "totalPnlUsd": 313.16,
+          "example": {
+            "token": "Football Capital Markets",
+            "symbol": "FCM",
+            "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+            "shortAddress": "hkpi2s...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-27T14:09:23.468Z",
+          "lastSeenAt": "2026-05-27T14:09:23.468Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "Football Capital Markets",
+              "symbol": "FCM",
+              "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+              "shortAddress": "hkpi2s...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "entry:solana:whale:amount>=1500:wallets>=2:sold<=15",
+          "title": "solana Whale 入场模型",
+          "status": "候选最优",
+          "rule": "评分 >= 70，金额/钱包数达标，已卖出比例 <= 35%",
+          "reason": "Rule buy; amount 1877.66U; wallets 3; sold 0%; type Whale",
+          "score": 87,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "HOPPY",
+            "symbol": "HOPPY",
+            "address": "2rwndxkxwkakhgje7dzivvbk5qxtpwnczj1jpnxapump",
+            "shortAddress": "2rwndx...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-05-27T14:09:23.468Z",
+          "occurrences": 6,
+          "examples": [
+            {
+              "token": "Fabutollah",
+              "symbol": "FABUTOLLAH",
+              "address": "ewxrb5kghrtnkco7tpajc4powuq9gbvewpicmtdkpump",
+              "shortAddress": "ewxrb5...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "again",
+              "symbol": "again",
+              "address": "hwuhne4q14yp68ex5mwha6bjcazn2kfthvso3nyspump",
+              "shortAddress": "hwuhne...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "TOES",
+              "symbol": "TOESCOIN",
+              "address": "6ehectmcc85anf4x9cwx8huvwghxqtvkdhkvf2hdpump",
+              "shortAddress": "6ehect...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "HOPPY",
+              "symbol": "HOPPY",
+              "address": "2rwndxkxwkakhgje7dzivvbk5qxtpwnczj1jpnxapump",
+              "shortAddress": "2rwndx...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "entry:solana:whale:amount>=1500:wallets>=2:sold<=35",
+          "title": "solana Whale 入场模型",
+          "status": "候选最优",
+          "rule": "评分 >= 70，金额/钱包数达标，已卖出比例 <= 35%",
+          "reason": "Rule buy; amount 12033.95U; wallets 4; sold 18.6%; type Whale",
+          "score": 78.3,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "HOPPY",
+            "symbol": "HOPPY",
+            "address": "2rwndxkxwkakhgje7dzivvbk5qxtpwnczj1jpnxapump",
+            "shortAddress": "2rwndx...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T19:50:59.186Z",
+          "lastSeenAt": "2026-05-26T22:55:39.434Z",
+          "occurrences": 3,
+          "examples": [
+            {
+              "token": "Football Capital Markets",
+              "symbol": "FCM",
+              "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+              "shortAddress": "hkpi2s...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "HOPPY",
+              "symbol": "HOPPY",
+              "address": "2rwndxkxwkakhgje7dzivvbk5qxtpwnczj1jpnxapump",
+              "shortAddress": "2rwndx...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "entry:solana:kol/influencer:amount>=1500:wallets>=2:sold<=15",
+          "title": "solana KOL/Influencer 入场模型",
+          "status": "候选最优",
+          "rule": "评分 >= 70，金额/钱包数达标，已卖出比例 <= 35%",
+          "reason": "Rule buy; amount 4469.73U; wallets 3; sold 0%; type KOL/Influencer",
+          "score": 77.6,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "goblintown",
+            "symbol": "goblintown",
+            "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+            "shortAddress": "dj15qj...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-26T22:55:39.434Z",
+          "lastSeenAt": "2026-05-26T22:55:39.434Z",
+          "occurrences": 1,
+          "examples": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "chain": "solana"
+            }
+          ]
+        }
+      ],
+      "rejectedStrategies": [
+        {
+          "key": "blocker:solana:kol/influencer:sold ratio > 35%",
+          "title": "solana KOL/Influencer 不及格条件",
+          "status": "归档拦截",
+          "rule": "sold ratio > 35%",
+          "reason": "amount 2627.67U; wallets 6; sold 87.08%; type KOL/Influencer",
+          "score": 60.9,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Pumba",
+            "symbol": "Pumba",
+            "address": "67snfowd7pfy3cwbwzas7mwdblq1apvhjbqditw1pump",
+            "shortAddress": "67snfo...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 377,
+          "examples": [
+            {
+              "token": "just buy a dollar",
+              "symbol": "dollar",
+              "address": "ch4sscgswzbvxydnemtcazhvgxpr63h5rqb6mk4mpump",
+              "shortAddress": "ch4ssc...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "The Collectoor",
+              "symbol": "COLLECTOOR",
+              "address": "ayrkq1c9yzkaethuoagdedmgh32immnqgrxnvjarpump",
+              "shortAddress": "ayrkq1...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "GOONCOIN",
+              "symbol": "GOONC",
+              "address": "dsbyvyczxor52a7tz38u1ek3qddbq8psxm91ri7apump",
+              "shortAddress": "dsbyvy...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "BREAKZ",
+              "symbol": "BREAKZ",
+              "address": "etnesvgmbhhx6crkbmrnlwkww4flcwuyvimutq8tpump",
+              "shortAddress": "etnesv...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Cookie",
+              "symbol": "COOK",
+              "address": "36zrtqoab5mhhysap1ystwuahsk6grvuttz6cuvfm9e1",
+              "shortAddress": "36zrtq...m9e1",
+              "chain": "solana"
+            },
+            {
+              "token": "Longcat",
+              "symbol": "Shiro",
+              "address": "8wjmzfshdg1nxnookvfqdrd3wqvfd7neeazf3e1wpump",
+              "shortAddress": "8wjmzf...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "blocker:solana:whale:sold ratio > 35%",
+          "title": "solana Whale 不及格条件",
+          "status": "归档拦截",
+          "rule": "sold ratio > 35%",
+          "reason": "amount 392.02U; wallets 3; sold 97.39%; type Whale",
+          "score": 68.2,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Enhanced Games",
+            "symbol": "ENHA",
+            "address": "agwmh5gfpkqetwoxxpo43p3sgr4ckxb5xyfevbjmpump",
+            "shortAddress": "agwmh5...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 264,
+          "examples": [
+            {
+              "token": "Tralalero Tralala",
+              "symbol": "TRALALERO",
+              "address": "2mbq3mrkskf6nng5x29rbk4b9f7cwr4n1eqj18nsvirl",
+              "shortAddress": "2mbq3m...virl",
+              "chain": "solana"
+            },
+            {
+              "token": "TROLL",
+              "symbol": "TROLL",
+              "address": "5uuh9rtdispq6hks6bp4ndu9pnjpxrxuiw6shbtbhgh2",
+              "shortAddress": "5uuh9r...hgh2",
+              "chain": "solana"
+            },
+            {
+              "token": "ZINC",
+              "symbol": "ZINC",
+              "address": "zinc155bs4mspk8gxqj4r5hkvdqxcw253ptyq5sgyfi",
+              "shortAddress": "zinc15...gyfi",
+              "chain": "solana"
+            },
+            {
+              "token": "Hungry Hippo",
+              "symbol": "Hippo",
+              "address": "6tw9kzl3b4afdyjng7nulhpuozdrgduku4ucvmwjpump",
+              "shortAddress": "6tw9kz...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "memestock",
+              "symbol": "MEME",
+              "address": "bkjajvzbry13acp171vapim7oh29uufueuurstrmeme",
+              "shortAddress": "bkjajv...meme",
+              "chain": "solana"
+            },
+            {
+              "token": "Football Capital Markets",
+              "symbol": "FCM",
+              "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+              "shortAddress": "hkpi2s...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "blocker:bsc:smart money:sold ratio > 35%",
+          "title": "bsc Smart Money 不及格条件",
+          "status": "归档拦截",
+          "rule": "sold ratio > 35%",
+          "reason": "amount 1227U; wallets 3; sold 78.88%; type Smart Money",
+          "score": 67.9,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Sea Z",
+            "symbol": "SEAZ",
+            "address": "0x9ba3393b555ab3f3d3830c870e7bfeda09b24444",
+            "shortAddress": "0x9ba3...4444",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T08:13:21.812Z",
+          "occurrences": 95,
+          "examples": [
+            {
+              "token": "Freedom of Money",
+              "symbol": "Freedom of Money",
+              "address": "0x3e17ee3b1895dd1a7cf993a89769c5e029584444",
+              "shortAddress": "0x3e17...4444",
+              "chain": "bsc"
+            },
+            {
+              "token": "Terminus",
+              "symbol": "Terminus",
+              "address": "0x7d74a3497856d0f463af55cd489823a98dfa6666",
+              "shortAddress": "0x7d74...6666",
+              "chain": "bsc"
+            },
+            {
+              "token": "Maple",
+              "symbol": "Maple",
+              "address": "0x06aee50283c94d72a62394437fd6f2e917577777",
+              "shortAddress": "0x06ae...7777",
+              "chain": "bsc"
+            },
+            {
+              "token": "今年开分最高的国产电影",
+              "symbol": "给阿嬷的情书",
+              "address": "0x0352b5401c4d8bcb40bf17cc5e139935109a4444",
+              "shortAddress": "0x0352...4444",
+              "chain": "bsc"
+            },
+            {
+              "token": "Fetch",
+              "symbol": "FET",
+              "address": "0x031b41e504677879370e9dbcf937283a8691fa7f",
+              "shortAddress": "0x031b...fa7f",
+              "chain": "bsc"
+            },
+            {
+              "token": "全网爆火表情包",
+              "symbol": "背手负鼠",
+              "address": "0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444",
+              "shortAddress": "0x5f6f...4444",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
+          "key": "blocker:solana:smart money:sold ratio > 35%",
+          "title": "solana Smart Money 不及格条件",
+          "status": "归档拦截",
+          "rule": "sold ratio > 35%",
+          "reason": "amount 929.03U; wallets 5; sold 84.1%; type Smart Money",
+          "score": 61,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Maybe This Is The One",
+            "symbol": "THEONE",
+            "address": "fmsl3bkizj3523ttfhugxnjplf6jqv7cyv3jpnjapump",
+            "shortAddress": "fmsl3b...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-25T08:13:21.812Z",
+          "occurrences": 76,
+          "examples": [
+            {
+              "token": "Golden Ball",
+              "symbol": "Ball",
+              "address": "h3ph7frvidjqqtpbpztdhvumzu97vkbgphkngyegpump",
+              "shortAddress": "h3ph7f...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "penispoop420",
+              "symbol": "PP420",
+              "address": "ac8escj4ufro8pifkun7diurcccktg4jvarb3mpmpump",
+              "shortAddress": "ac8esc...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "The Lonestar Tick",
+              "symbol": "TICK ",
+              "address": "4ekxurxac4tt7nrbr164vpz9v7jwahseq3ynfbanpump",
+              "shortAddress": "4ekxur...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "DIAMOND HANDS",
+              "symbol": "DIAMOND",
+              "address": "b5jkqn49w6oswthpzu9y7hsgkabbawa7vxhj3bpcpump",
+              "shortAddress": "b5jkqn...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "The Official Coconut Wata Coin",
+              "symbol": "WATA",
+              "address": "8edovucn43mkvpxzatwupnrcntnjse1dkwgqucsspump",
+              "shortAddress": "8edovu...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "BioHash",
+              "symbol": "BioHash",
+              "address": "4spepkv1xx5vt8fkjxf5eaxlafgnh9s2auircf5wpump",
+              "shortAddress": "4spepk...pump",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "key": "blocker:solana:whale:amount < 500u",
+          "title": "solana Whale 不及格条件",
+          "status": "归档拦截",
+          "rule": "amount < 500U",
+          "reason": "amount 392.02U; wallets 3; sold 97.39%; type Whale",
+          "score": 73.4,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "Enhanced Games",
+            "symbol": "ENHA",
+            "address": "agwmh5gfpkqetwoxxpo43p3sgr4ckxb5xyfevbjmpump",
+            "shortAddress": "agwmh5...pump",
+            "chain": "solana"
+          },
+          "firstSeenAt": "2026-05-25T03:33:47.500Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 66,
           "examples": [
             {
               "token": "xHermes",
@@ -3051,7 +4124,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-27T15:55:01.660Z",
+      "generatedAt": "2026-05-27T16:12:15.432Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -3198,7 +4271,7 @@
           ]
         }
       ],
-      "smartMoneyWatchlistCount": 287,
+      "smartMoneyWatchlistCount": 295,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "71pAfN1nJhcLaezSRYvwdsNFE9PnY9hNfcxB4nZ1gdAp",
@@ -3207,9 +4280,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 19,
-          "highSoldRatioCount": 19,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 22,
+          "highSoldRatioCount": 22,
           "tokens": [
             {
               "token": "Just a Rich Guy",
@@ -3277,6 +4350,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.68%",
             "watch only; sold ratio 85.55%",
             "watch only; sold ratio 90.81%",
             "watch only; sold ratio 85.62%",
@@ -3289,15 +4363,93 @@
           ]
         },
         {
+          "walletAddress": "ng6MaDBBuLP7YD8Wx8uLtAQ4Scmv77UTsVeYnP2AGqF",
+          "shortAddress": "ng6MaD...AGqF",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-26T22:55:39.434Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 20,
+          "highSoldRatioCount": 20,
+          "tokens": [
+            {
+              "token": "CLUDE",
+              "symbol": "Clude",
+              "address": "awgcdt2gd8jadbybyyzy1ikxfwokpngreqou24zupump",
+              "shortAddress": "awgcdt...pump",
+              "soldRatioPercent": 80.35,
+              "amountUsd": 1179.67
+            },
+            {
+              "token": "Kintara",
+              "symbol": "KINS",
+              "address": "tqj8yfmagrg7oorpqkvgyr52r96rftamvwfth9bpump",
+              "shortAddress": "tqj8yf...pump",
+              "soldRatioPercent": 92.71,
+              "amountUsd": 193.84
+            },
+            {
+              "token": "ALTSEASON",
+              "symbol": "ALTSZN",
+              "address": "ccld8htaklwtqhatqpwbqjtuca72fnb9e1ckrtezpump",
+              "shortAddress": "ccld8h...pump",
+              "soldRatioPercent": 81.84,
+              "amountUsd": 169.98
+            },
+            {
+              "token": "Pod the Squire",
+              "symbol": "SQUIRE",
+              "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
+              "shortAddress": "en2nnx...4rza",
+              "soldRatioPercent": 100,
+              "amountUsd": 74.94
+            },
+            {
+              "token": "Make Aliens Great Again ",
+              "symbol": "MAGA",
+              "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
+              "shortAddress": "hon2rh...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 304.87
+            },
+            {
+              "token": "FIFA WORLD CUP",
+              "symbol": "FWC",
+              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
+              "shortAddress": "hxwrnz...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 873.99
+            },
+            {
+              "token": "Virl.fun",
+              "symbol": "VIRL",
+              "address": "biywh8eq2cbghwmhkwcnfticcwjwn7r1q4qn9hsypump",
+              "shortAddress": "biywh8...pump",
+              "soldRatioPercent": 95.51,
+              "amountUsd": 157.54
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 80.45%",
+            "watch only; sold ratio 92.88%",
+            "watch only; sold ratio 80.35%",
+            "watch only; sold ratio 92.71%",
+            "watch only; sold ratio 81.84%",
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 95.51%"
+          ]
+        },
+        {
           "walletAddress": "6thKzh1NhiPMNWXvqLUem3GAjUgkxBCyLToxZ28z4nVi",
           "shortAddress": "6thKzh...4nVi",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 17,
-          "highSoldRatioCount": 17,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 19,
+          "highSoldRatioCount": 19,
           "tokens": [
             {
               "token": "World Cup Coin",
@@ -3357,6 +4509,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.53%",
             "watch only; sold ratio 93.53%",
             "watch only; sold ratio 85.4%",
             "watch only; sold ratio 80.8%",
@@ -3370,9 +4523,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 16,
-          "highSoldRatioCount": 16,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 18,
+          "highSoldRatioCount": 18,
           "tokens": [
             {
               "token": "Make Aliens Great Again ",
@@ -3456,6 +4609,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.08%",
             "watch only; sold ratio 90.5%",
             "watch only; sold ratio 89.7%",
             "watch only; sold ratio 90.19%",
@@ -3466,55 +4620,31 @@
           ]
         },
         {
-          "walletAddress": "ng6MaDBBuLP7YD8Wx8uLtAQ4Scmv77UTsVeYnP2AGqF",
-          "shortAddress": "ng6MaD...AGqF",
+          "walletAddress": "4boUqjQLC6SpTmzY9J63gcGSpqdasKCdThTZ6ciQkvCx",
+          "shortAddress": "4boUqj...kvCx",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
-          "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
+          "firstSeenAt": "2026-05-25T11:10:31.629Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
           "occurrences": 16,
           "highSoldRatioCount": 16,
           "tokens": [
             {
-              "token": "CLUDE",
-              "symbol": "Clude",
-              "address": "awgcdt2gd8jadbybyyzy1ikxfwokpngreqou24zupump",
-              "shortAddress": "awgcdt...pump",
-              "soldRatioPercent": 80.35,
-              "amountUsd": 1179.67
+              "token": "World Cup Coin",
+              "symbol": "WORLDCUP",
+              "address": "33eum82laahtv5ykuq1bdweviserh5cnfxqvnlt5pump",
+              "shortAddress": "33eum8...pump",
+              "soldRatioPercent": 93.12,
+              "amountUsd": 507.36
             },
             {
-              "token": "Kintara",
-              "symbol": "KINS",
-              "address": "tqj8yfmagrg7oorpqkvgyr52r96rftamvwfth9bpump",
-              "shortAddress": "tqj8yf...pump",
-              "soldRatioPercent": 92.71,
-              "amountUsd": 193.84
-            },
-            {
-              "token": "ALTSEASON",
-              "symbol": "ALTSZN",
-              "address": "ccld8htaklwtqhatqpwbqjtuca72fnb9e1ckrtezpump",
-              "shortAddress": "ccld8h...pump",
-              "soldRatioPercent": 81.84,
-              "amountUsd": 169.98
-            },
-            {
-              "token": "Pod the Squire",
-              "symbol": "SQUIRE",
-              "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
-              "shortAddress": "en2nnx...4rza",
+              "token": "France",
+              "symbol": "FRANCE",
+              "address": "2gxem4einzolmsq5k7s6rhzcaeksu2hrfoubpqsopump",
+              "shortAddress": "2gxem4...pump",
               "soldRatioPercent": 100,
-              "amountUsd": 74.94
-            },
-            {
-              "token": "Make Aliens Great Again ",
-              "symbol": "MAGA",
-              "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
-              "shortAddress": "hon2rh...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 304.87
+              "amountUsd": 189.86
             },
             {
               "token": "FIFA WORLD CUP",
@@ -3531,74 +4661,22 @@
               "shortAddress": "biywh8...pump",
               "soldRatioPercent": 95.51,
               "amountUsd": 157.54
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 80.35%",
-            "watch only; sold ratio 92.71%",
-            "watch only; sold ratio 81.84%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 95.51%"
-          ]
-        },
-        {
-          "walletAddress": "6sRb45Ap8ubWxPRgKLkKSkAPLQqQnN8QpXqdN7DGahJb",
-          "shortAddress": "6sRb45...ahJb",
-          "chain": "solana",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 15,
-          "highSoldRatioCount": 15,
-          "tokens": [
-            {
-              "token": "France",
-              "symbol": "FRANCE",
-              "address": "2gxem4einzolmsq5k7s6rhzcaeksu2hrfoubpqsopump",
-              "shortAddress": "2gxem4...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 189.86
             },
             {
               "token": "PokeFUN",
               "symbol": "POKE",
               "address": "fadnlno4xc8ot3bcgbhfquuskg93jkfpr8pccr76pump",
               "shortAddress": "fadnln...pump",
-              "soldRatioPercent": 92.64,
-              "amountUsd": 625.96
+              "soldRatioPercent": 88.07,
+              "amountUsd": 231.78
             },
             {
-              "token": "FIFA WORLD CUP",
-              "symbol": "FWC",
-              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
-              "shortAddress": "hxwrnz...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 873.99
-            },
-            {
-              "token": "The Most Valuable Currency",
-              "symbol": "ATTENTION",
-              "address": "9dvozm5bvutdsrnan1wvepxfaqw6oymyrrw5laqcpump",
-              "shortAddress": "9dvozm...pump",
-              "soldRatioPercent": 80.77,
-              "amountUsd": 173.33
-            },
-            {
-              "token": "alpha-gal syndrome",
-              "symbol": "AGS",
-              "address": "carsfgusmc69ufrmdpwyy6sjmmfrazgcqjyscfiby3am",
-              "shortAddress": "carsfg...y3am",
-              "soldRatioPercent": 100,
-              "amountUsd": 129.68
-            },
-            {
-              "token": "ay oh see",
-              "symbol": "aoc",
-              "address": "3gjbts3yv6atxr5wpy9pviakfgosprvt74hveuegov1b",
-              "shortAddress": "3gjbts...ov1b",
-              "soldRatioPercent": 100,
-              "amountUsd": 281.05
+              "token": "Federated States of Gapla",
+              "symbol": "GAPLA",
+              "address": "3y3x6bk6zpzpafj1kyj7b33hbfm7ip5tqqpylwjhpump",
+              "shortAddress": "3y3x6b...pump",
+              "soldRatioPercent": 95.83,
+              "amountUsd": 215.27
             },
             {
               "token": "ttt",
@@ -3607,23 +4685,18 @@
               "shortAddress": "7j8txt...ps7o",
               "soldRatioPercent": 90.9,
               "amountUsd": 774.8
-            },
-            {
-              "token": "Federated States of Gapla",
-              "symbol": "GAPLA",
-              "address": "3y3x6bk6zpzpafj1kyj7b33hbfm7ip5tqqpylwjhpump",
-              "shortAddress": "3y3x6b...pump",
-              "soldRatioPercent": 95.73,
-              "amountUsd": 818.02
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.16%",
             "watch only; sold ratio 92.71%",
+            "watch only; sold ratio 93.12%",
             "watch only; sold ratio 92.64%",
-            "watch only; sold ratio 80.77%",
+            "watch only; sold ratio 95.51%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 90.9%",
-            "watch only; sold ratio 95.73%"
+            "watch only; sold ratio 88.07%",
+            "watch only; sold ratio 95.83%",
+            "watch only; sold ratio 90.9%"
           ]
         }
       ],
@@ -3813,7 +4886,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 262.68U; wallets 3; sold 75.24%; type KOL/Influencer",
+          "reason": "amount 2627.67U; wallets 6; sold 87.08%; type KOL/Influencer",
           "score": 60.9,
           "wins": 0,
           "losses": 0,
@@ -3826,16 +4899,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 345,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 377,
           "examples": [
-            {
-              "token": "GOONCOIN",
-              "symbol": "GOONC",
-              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
-              "shortAddress": "brokrs...4a6c",
-              "chain": "solana"
-            },
             {
               "token": "just buy a dollar",
               "symbol": "dollar",
@@ -3870,6 +4936,13 @@
               "address": "36zrtqoab5mhhysap1ystwuahsk6grvuttz6cuvfm9e1",
               "shortAddress": "36zrtq...m9e1",
               "chain": "solana"
+            },
+            {
+              "token": "Longcat",
+              "symbol": "Shiro",
+              "address": "8wjmzfshdg1nxnookvfqdrd3wqvfd7neeazf3e1wpump",
+              "shortAddress": "8wjmzf...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -3878,7 +4951,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4965.31U; wallets 6; sold 92.77%; type Whale",
+          "reason": "amount 392.02U; wallets 3; sold 97.39%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -3891,23 +4964,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 251,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 264,
           "examples": [
-            {
-              "token": "GOONCOIN",
-              "symbol": "GOONC",
-              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
-              "shortAddress": "brokrs...4a6c",
-              "chain": "solana"
-            },
-            {
-              "token": "Brume",
-              "symbol": "BRUME",
-              "address": "chth5gxpawqfxlyuhrqy82viumxewbsvjxccaht7pump",
-              "shortAddress": "chth5g...pump",
-              "chain": "solana"
-            },
             {
               "token": "Tralalero Tralala",
               "symbol": "TRALALERO",
@@ -3934,6 +4993,20 @@
               "symbol": "Hippo",
               "address": "6tw9kzl3b4afdyjng7nulhpuozdrgduku4ucvmwjpump",
               "shortAddress": "6tw9kz...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "memestock",
+              "symbol": "MEME",
+              "address": "bkjajvzbry13acp171vapim7oh29uufueuurstrmeme",
+              "shortAddress": "bkjajv...meme",
+              "chain": "solana"
+            },
+            {
+              "token": "Football Capital Markets",
+              "symbol": "FCM",
+              "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+              "shortAddress": "hkpi2s...pump",
               "chain": "solana"
             }
           ]
@@ -4086,8 +5159,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 60,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 66,
           "examples": [
             {
               "token": "xHermes",
@@ -4741,7 +5814,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-27T15:55:01.660Z",
+      "generatedAt": "2026-05-27T16:12:15.432Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -4888,7 +5961,7 @@
           ]
         }
       ],
-      "smartMoneyWatchlistCount": 287,
+      "smartMoneyWatchlistCount": 295,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "71pAfN1nJhcLaezSRYvwdsNFE9PnY9hNfcxB4nZ1gdAp",
@@ -4897,9 +5970,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 19,
-          "highSoldRatioCount": 19,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 22,
+          "highSoldRatioCount": 22,
           "tokens": [
             {
               "token": "Just a Rich Guy",
@@ -4967,6 +6040,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.68%",
             "watch only; sold ratio 85.55%",
             "watch only; sold ratio 90.81%",
             "watch only; sold ratio 85.62%",
@@ -4979,15 +6053,93 @@
           ]
         },
         {
+          "walletAddress": "ng6MaDBBuLP7YD8Wx8uLtAQ4Scmv77UTsVeYnP2AGqF",
+          "shortAddress": "ng6MaD...AGqF",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-26T22:55:39.434Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 20,
+          "highSoldRatioCount": 20,
+          "tokens": [
+            {
+              "token": "CLUDE",
+              "symbol": "Clude",
+              "address": "awgcdt2gd8jadbybyyzy1ikxfwokpngreqou24zupump",
+              "shortAddress": "awgcdt...pump",
+              "soldRatioPercent": 80.35,
+              "amountUsd": 1179.67
+            },
+            {
+              "token": "Kintara",
+              "symbol": "KINS",
+              "address": "tqj8yfmagrg7oorpqkvgyr52r96rftamvwfth9bpump",
+              "shortAddress": "tqj8yf...pump",
+              "soldRatioPercent": 92.71,
+              "amountUsd": 193.84
+            },
+            {
+              "token": "ALTSEASON",
+              "symbol": "ALTSZN",
+              "address": "ccld8htaklwtqhatqpwbqjtuca72fnb9e1ckrtezpump",
+              "shortAddress": "ccld8h...pump",
+              "soldRatioPercent": 81.84,
+              "amountUsd": 169.98
+            },
+            {
+              "token": "Pod the Squire",
+              "symbol": "SQUIRE",
+              "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
+              "shortAddress": "en2nnx...4rza",
+              "soldRatioPercent": 100,
+              "amountUsd": 74.94
+            },
+            {
+              "token": "Make Aliens Great Again ",
+              "symbol": "MAGA",
+              "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
+              "shortAddress": "hon2rh...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 304.87
+            },
+            {
+              "token": "FIFA WORLD CUP",
+              "symbol": "FWC",
+              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
+              "shortAddress": "hxwrnz...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 873.99
+            },
+            {
+              "token": "Virl.fun",
+              "symbol": "VIRL",
+              "address": "biywh8eq2cbghwmhkwcnfticcwjwn7r1q4qn9hsypump",
+              "shortAddress": "biywh8...pump",
+              "soldRatioPercent": 95.51,
+              "amountUsd": 157.54
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 80.45%",
+            "watch only; sold ratio 92.88%",
+            "watch only; sold ratio 80.35%",
+            "watch only; sold ratio 92.71%",
+            "watch only; sold ratio 81.84%",
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 95.51%"
+          ]
+        },
+        {
           "walletAddress": "6thKzh1NhiPMNWXvqLUem3GAjUgkxBCyLToxZ28z4nVi",
           "shortAddress": "6thKzh...4nVi",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 17,
-          "highSoldRatioCount": 17,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 19,
+          "highSoldRatioCount": 19,
           "tokens": [
             {
               "token": "World Cup Coin",
@@ -5047,6 +6199,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.53%",
             "watch only; sold ratio 93.53%",
             "watch only; sold ratio 85.4%",
             "watch only; sold ratio 80.8%",
@@ -5060,9 +6213,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 16,
-          "highSoldRatioCount": 16,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 18,
+          "highSoldRatioCount": 18,
           "tokens": [
             {
               "token": "Make Aliens Great Again ",
@@ -5146,6 +6299,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.08%",
             "watch only; sold ratio 90.5%",
             "watch only; sold ratio 89.7%",
             "watch only; sold ratio 90.19%",
@@ -5156,55 +6310,31 @@
           ]
         },
         {
-          "walletAddress": "ng6MaDBBuLP7YD8Wx8uLtAQ4Scmv77UTsVeYnP2AGqF",
-          "shortAddress": "ng6MaD...AGqF",
+          "walletAddress": "4boUqjQLC6SpTmzY9J63gcGSpqdasKCdThTZ6ciQkvCx",
+          "shortAddress": "4boUqj...kvCx",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
-          "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
+          "firstSeenAt": "2026-05-25T11:10:31.629Z",
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
           "occurrences": 16,
           "highSoldRatioCount": 16,
           "tokens": [
             {
-              "token": "CLUDE",
-              "symbol": "Clude",
-              "address": "awgcdt2gd8jadbybyyzy1ikxfwokpngreqou24zupump",
-              "shortAddress": "awgcdt...pump",
-              "soldRatioPercent": 80.35,
-              "amountUsd": 1179.67
+              "token": "World Cup Coin",
+              "symbol": "WORLDCUP",
+              "address": "33eum82laahtv5ykuq1bdweviserh5cnfxqvnlt5pump",
+              "shortAddress": "33eum8...pump",
+              "soldRatioPercent": 93.12,
+              "amountUsd": 507.36
             },
             {
-              "token": "Kintara",
-              "symbol": "KINS",
-              "address": "tqj8yfmagrg7oorpqkvgyr52r96rftamvwfth9bpump",
-              "shortAddress": "tqj8yf...pump",
-              "soldRatioPercent": 92.71,
-              "amountUsd": 193.84
-            },
-            {
-              "token": "ALTSEASON",
-              "symbol": "ALTSZN",
-              "address": "ccld8htaklwtqhatqpwbqjtuca72fnb9e1ckrtezpump",
-              "shortAddress": "ccld8h...pump",
-              "soldRatioPercent": 81.84,
-              "amountUsd": 169.98
-            },
-            {
-              "token": "Pod the Squire",
-              "symbol": "SQUIRE",
-              "address": "en2nnxrg8uui6x2sjkznpd2et6rb9rdsoqnnaena4rza",
-              "shortAddress": "en2nnx...4rza",
+              "token": "France",
+              "symbol": "FRANCE",
+              "address": "2gxem4einzolmsq5k7s6rhzcaeksu2hrfoubpqsopump",
+              "shortAddress": "2gxem4...pump",
               "soldRatioPercent": 100,
-              "amountUsd": 74.94
-            },
-            {
-              "token": "Make Aliens Great Again ",
-              "symbol": "MAGA",
-              "address": "hon2rhaiqkcdtuzl5ga2vjxpr7t1mpck2ut2ahkcpump",
-              "shortAddress": "hon2rh...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 304.87
+              "amountUsd": 189.86
             },
             {
               "token": "FIFA WORLD CUP",
@@ -5221,74 +6351,22 @@
               "shortAddress": "biywh8...pump",
               "soldRatioPercent": 95.51,
               "amountUsd": 157.54
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 80.35%",
-            "watch only; sold ratio 92.71%",
-            "watch only; sold ratio 81.84%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 95.51%"
-          ]
-        },
-        {
-          "walletAddress": "6sRb45Ap8ubWxPRgKLkKSkAPLQqQnN8QpXqdN7DGahJb",
-          "shortAddress": "6sRb45...ahJb",
-          "chain": "solana",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 15,
-          "highSoldRatioCount": 15,
-          "tokens": [
-            {
-              "token": "France",
-              "symbol": "FRANCE",
-              "address": "2gxem4einzolmsq5k7s6rhzcaeksu2hrfoubpqsopump",
-              "shortAddress": "2gxem4...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 189.86
             },
             {
               "token": "PokeFUN",
               "symbol": "POKE",
               "address": "fadnlno4xc8ot3bcgbhfquuskg93jkfpr8pccr76pump",
               "shortAddress": "fadnln...pump",
-              "soldRatioPercent": 92.64,
-              "amountUsd": 625.96
+              "soldRatioPercent": 88.07,
+              "amountUsd": 231.78
             },
             {
-              "token": "FIFA WORLD CUP",
-              "symbol": "FWC",
-              "address": "hxwrnzznqf5iyf3ckmw3ftazqvubb53ohzpjpsnupump",
-              "shortAddress": "hxwrnz...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 873.99
-            },
-            {
-              "token": "The Most Valuable Currency",
-              "symbol": "ATTENTION",
-              "address": "9dvozm5bvutdsrnan1wvepxfaqw6oymyrrw5laqcpump",
-              "shortAddress": "9dvozm...pump",
-              "soldRatioPercent": 80.77,
-              "amountUsd": 173.33
-            },
-            {
-              "token": "alpha-gal syndrome",
-              "symbol": "AGS",
-              "address": "carsfgusmc69ufrmdpwyy6sjmmfrazgcqjyscfiby3am",
-              "shortAddress": "carsfg...y3am",
-              "soldRatioPercent": 100,
-              "amountUsd": 129.68
-            },
-            {
-              "token": "ay oh see",
-              "symbol": "aoc",
-              "address": "3gjbts3yv6atxr5wpy9pviakfgosprvt74hveuegov1b",
-              "shortAddress": "3gjbts...ov1b",
-              "soldRatioPercent": 100,
-              "amountUsd": 281.05
+              "token": "Federated States of Gapla",
+              "symbol": "GAPLA",
+              "address": "3y3x6bk6zpzpafj1kyj7b33hbfm7ip5tqqpylwjhpump",
+              "shortAddress": "3y3x6b...pump",
+              "soldRatioPercent": 95.83,
+              "amountUsd": 215.27
             },
             {
               "token": "ttt",
@@ -5297,23 +6375,18 @@
               "shortAddress": "7j8txt...ps7o",
               "soldRatioPercent": 90.9,
               "amountUsd": 774.8
-            },
-            {
-              "token": "Federated States of Gapla",
-              "symbol": "GAPLA",
-              "address": "3y3x6bk6zpzpafj1kyj7b33hbfm7ip5tqqpylwjhpump",
-              "shortAddress": "3y3x6b...pump",
-              "soldRatioPercent": 95.73,
-              "amountUsd": 818.02
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.16%",
             "watch only; sold ratio 92.71%",
+            "watch only; sold ratio 93.12%",
             "watch only; sold ratio 92.64%",
-            "watch only; sold ratio 80.77%",
+            "watch only; sold ratio 95.51%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 90.9%",
-            "watch only; sold ratio 95.73%"
+            "watch only; sold ratio 88.07%",
+            "watch only; sold ratio 95.83%",
+            "watch only; sold ratio 90.9%"
           ]
         }
       ],
@@ -5503,7 +6576,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 262.68U; wallets 3; sold 75.24%; type KOL/Influencer",
+          "reason": "amount 2627.67U; wallets 6; sold 87.08%; type KOL/Influencer",
           "score": 60.9,
           "wins": 0,
           "losses": 0,
@@ -5516,16 +6589,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 345,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 377,
           "examples": [
-            {
-              "token": "GOONCOIN",
-              "symbol": "GOONC",
-              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
-              "shortAddress": "brokrs...4a6c",
-              "chain": "solana"
-            },
             {
               "token": "just buy a dollar",
               "symbol": "dollar",
@@ -5560,6 +6626,13 @@
               "address": "36zrtqoab5mhhysap1ystwuahsk6grvuttz6cuvfm9e1",
               "shortAddress": "36zrtq...m9e1",
               "chain": "solana"
+            },
+            {
+              "token": "Longcat",
+              "symbol": "Shiro",
+              "address": "8wjmzfshdg1nxnookvfqdrd3wqvfd7neeazf3e1wpump",
+              "shortAddress": "8wjmzf...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -5568,7 +6641,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4965.31U; wallets 6; sold 92.77%; type Whale",
+          "reason": "amount 392.02U; wallets 3; sold 97.39%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -5581,23 +6654,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 251,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 264,
           "examples": [
-            {
-              "token": "GOONCOIN",
-              "symbol": "GOONC",
-              "address": "brokrssp3ceu1rohxgxhhvor357ya49aezwhktty4a6c",
-              "shortAddress": "brokrs...4a6c",
-              "chain": "solana"
-            },
-            {
-              "token": "Brume",
-              "symbol": "BRUME",
-              "address": "chth5gxpawqfxlyuhrqy82viumxewbsvjxccaht7pump",
-              "shortAddress": "chth5g...pump",
-              "chain": "solana"
-            },
             {
               "token": "Tralalero Tralala",
               "symbol": "TRALALERO",
@@ -5624,6 +6683,20 @@
               "symbol": "Hippo",
               "address": "6tw9kzl3b4afdyjng7nulhpuozdrgduku4ucvmwjpump",
               "shortAddress": "6tw9kz...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "memestock",
+              "symbol": "MEME",
+              "address": "bkjajvzbry13acp171vapim7oh29uufueuurstrmeme",
+              "shortAddress": "bkjajv...meme",
+              "chain": "solana"
+            },
+            {
+              "token": "Football Capital Markets",
+              "symbol": "FCM",
+              "address": "hkpi2sknwm5logyy1bz4zytq5revvco2aywd1typpump",
+              "shortAddress": "hkpi2s...pump",
               "chain": "solana"
             }
           ]
@@ -5776,8 +6849,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-27T15:12:13.665Z",
-          "occurrences": 60,
+          "lastSeenAt": "2026-05-27T16:12:13.549Z",
+          "occurrences": 66,
           "examples": [
             {
               "token": "xHermes",
