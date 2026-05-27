@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-26T22:55:49.852Z",
+  "generatedAt": "2026-05-27T14:05:15.067Z",
   "latest": {
     "date": "2026-05-27",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-26T22:55:49.851Z",
-    "runCount": 1,
+    "generatedAt": "2026-05-27T14:05:15.065Z",
+    "runCount": 2,
     "statuses": {
-      "ok": 1
+      "ok": 1,
+      "failed": 1
     },
     "rawSignalCount": 50,
     "decisionCount": 50,
@@ -59,8 +60,10 @@
         "count": 2
       }
     ],
-    "mistakeCount": 0,
-    "mistakeTypes": {},
+    "mistakeCount": 1,
+    "mistakeTypes": {
+      "FILE_WRITE_ERROR": 1
+    },
     "accountResets": 0,
     "walletBlacklistCount": 7,
     "latestBlacklistedWallets": [
@@ -1126,6 +1129,30 @@
           "totalPnlUsd": -19.53,
           "totalPnlPct": -0.65
         }
+      },
+      {
+        "runId": "20260527044540",
+        "startedAt": "2026-05-27T04:45:40.976Z",
+        "finishedAt": "2026-05-27T04:45:40.976Z",
+        "status": "failed",
+        "chains": [],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "FILE_WRITE_ERROR",
+            "chain": "",
+            "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+            "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+          }
+        ],
+        "notes": [
+          "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+        ],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": null
       }
     ]
   },
@@ -1133,10 +1160,11 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-26T22:55:49.851Z",
-      "runCount": 1,
+      "generatedAt": "2026-05-27T14:05:15.065Z",
+      "runCount": 2,
       "statuses": {
-        "ok": 1
+        "ok": 1,
+        "failed": 1
       },
       "rawSignalCount": 50,
       "decisionCount": 50,
@@ -1188,8 +1216,10 @@
           "count": 2
         }
       ],
-      "mistakeCount": 0,
-      "mistakeTypes": {},
+      "mistakeCount": 1,
+      "mistakeTypes": {
+        "FILE_WRITE_ERROR": 1
+      },
       "accountResets": 0,
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -2255,13 +2285,37 @@
             "totalPnlUsd": -19.53,
             "totalPnlPct": -0.65
           }
+        },
+        {
+          "runId": "20260527044540",
+          "startedAt": "2026-05-27T04:45:40.976Z",
+          "finishedAt": "2026-05-27T04:45:40.976Z",
+          "status": "failed",
+          "chains": [],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "FILE_WRITE_ERROR",
+              "chain": "",
+              "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+              "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+            }
+          ],
+          "notes": [
+            "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+          ],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": null
         }
       ]
     },
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-26T22:55:49.851Z",
+      "generatedAt": "2026-05-27T14:05:15.065Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -3760,7 +3814,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-26T22:55:49.851Z",
+      "generatedAt": "2026-05-27T14:05:15.066Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,

@@ -3,7 +3,7 @@
   "mode": "signal-paper-auto",
   "source": "OKX Onchain OS signal list",
   "startedAt": "",
-  "updatedAt": "2026-05-26T22:55:39.434Z",
+  "updatedAt": "2026-05-27T04:45:40.976Z",
   "config": {
     "quoteAsset": "USDT paper capital",
     "scanChains": [
@@ -1566,6 +1566,37 @@
     }
   ],
   "runs": [
+    {
+      "id": "20260527044540",
+      "startedAt": "2026-05-27T04:45:40.976Z",
+      "finishedAt": "2026-05-27T04:45:40.976Z",
+      "chains": [],
+      "status": "failed",
+      "commands": [
+        {
+          "command": "npm run scan:signal",
+          "ok": false,
+          "error": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+          "notifications": []
+        }
+      ],
+      "rawSignalCount": 0,
+      "decisions": [],
+      "trades": [],
+      "mistakes": [
+        {
+          "type": "FILE_WRITE_ERROR",
+          "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+          "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
+        }
+      ],
+      "notes": [
+        "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
+      ],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": null
+    },
     {
       "id": "20260526225539",
       "startedAt": "2026-05-26T22:55:39.434Z",
@@ -41416,6 +41447,13 @@
     }
   ],
   "mistakes": [
+    {
+      "type": "FILE_WRITE_ERROR",
+      "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
+      "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run.",
+      "runId": "20260527044540",
+      "timestamp": "2026-05-27T04:45:40.976Z"
+    },
     {
       "type": "CLI_ERROR",
       "message": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
