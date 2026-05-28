@@ -1,10 +1,59 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-28T06:58:59.762Z",
+  "generatedAt": "2026-05-28T07:29:49.189Z",
   "source": "docs/data/signal-paper.json",
-  "totalRuns": 57,
-  "latestRunId": "20260528065857",
+  "totalRuns": 58,
+  "latestRunId": "20260528072858",
   "entries": [
+    {
+      "runId": "20260528072858",
+      "startedAt": "2026-05-28T07:28:58.268Z",
+      "finishedAt": "2026-05-28T07:29:48.910Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 54,
+      "decisions": 54,
+      "trades": 1,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 1,
+          "mistakes": [
+            {
+              "type": "CLI_ERROR",
+              "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+              "lesson": "Smart Money research is watch-only and must never create trades.",
+              "chain": "solana"
+            }
+          ]
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 4,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2712.6,
+        "openValueUsd": 394.55,
+        "equityUsd": 3107.15,
+        "realizedPnlUsd": 122,
+        "unrealizedPnlUsd": -14.85,
+        "totalPnlUsd": 107.15,
+        "totalPnlPct": 3.57
+      }
+    },
     {
       "runId": "20260528065857",
       "startedAt": "2026-05-28T06:58:57.670Z",
