@@ -319,12 +319,19 @@
       </section>
 
       <section class="panel" style="margin-top: 14px">
+        <h2>10轮周期总结</h2>
+        <p class="note">每 30 分钟扫描一轮，满 10 轮后自动总结并重置模拟本金为 3000U。</p>
+        <div class="archive-list" id="cycleSummaryList"></div>
+      </section>
+
+      <section class="panel" style="margin-top: 14px">
         <h2>文件与审计入口</h2>
         <p class="note">这些文件用于核对数据来源、模拟规则、自动扫描和页面发布。账本只记录真实扫描输出、模拟动作和失败原因。</p>
         <div class="file-grid">
           <a class="file-card" href="./data/signal-paper.json"><strong>信号模拟账本</strong><span>每轮扫描、决策、成交、持仓、错误和资金快照。</span></a>
           <a class="file-card" href="./data/operation-log.json"><strong>操作日志</strong><span>每一轮扫描命令、状态、链结果、错误、重置和资金快照。</span></a>
           <a class="file-card" href="./data/daily-strategy-summary.json"><strong>每日策略总结</strong><span>每天汇总扫描、成交、阻断条件、盈亏和复盘结论。</span></a>
+          <a class="file-card" href="./data/signal-paper.json"><strong>10轮周期总结</strong><span>同一账本内的 cycleSummaries 字段，满 10 轮自动总结并重置本金。</span></a>
           <a class="file-card" href="./data/signal-paper.json"><strong>策略档案</strong><span>同一账本内的 strategyArchive 字段，记录最优、不及格和踩坑策略。</span></a>
           <a class="file-card" href="./data/signal-paper.json"><strong>钱包黑名单</strong><span>同一账本内的 walletBlacklist 字段，记录造成亏损的触发钱包。</span></a>
           <a class="file-card" href="./data/signal-paper.json"><strong>聪明钱观察</strong><span>同一账本内的 smartMoneyWatchlist 字段，只读追踪高卖出比例聪明钱。</span></a>
@@ -393,6 +400,8 @@
         partial: "部分成功",
         failed: "失败",
         blacklisted: "黑名单",
+        "completed_10_run_cycle": "完成10轮",
+        completed_cycle_reset: "周期重置",
         "Smart Money": "聪明钱",
         Whale: "巨鲸",
         "KOL/Influencer": "KOL/影响者",
@@ -410,6 +419,8 @@
         scanChains: "扫描链",
         scanChain: "旧版扫描链",
         signalLimit: "每链信号上限",
+        scanIntervalMinutes: "扫描间隔分钟",
+        cycleLengthRuns: "每周期轮数",
         signalWalletTypeParam: "接口钱包类型参数",
         includedWalletTypes: "纳入信号类型",
         excludedWalletTypes: "排除信号类型",
@@ -667,6 +678,23 @@
         }).join("") || `<p class="empty">暂无亏损钱包黑名单。后续出现亏损卖出后会自动入档。</p>`;
       }
 
+      function renderCycleSummaries() {
+        const entries = state.cycleSummaries || [];
+        $("cycleSummaryList").innerHTML = entries.slice(0, 8).map((item) => {
+          const pnl = n(item.equityChangeUsd);
+          return `
+            <div class="archive-item">
+              <div class="archive-top">
+                <strong>${esc(item.id || "-")}</strong>
+                ${tag(item.reason || "周期总结")}
+              </div>
+              <p>${when(item.startedAt)} - ${when(item.finishedAt)} / ${n(item.runCount)} 轮 / ${n(item.rawSignalCount)} 条信号 / ${n(item.tradeCount)} 笔成交</p>
+              <p>权益 ${money(item.equityStartUsd)} -> ${money(item.equityEndUsd)} / <span class="${pnl >= 0 ? "positive" : "negative"}">${pnl >= 0 ? "+" : ""}${money(pnl)}</span></p>
+            </div>
+          `;
+        }).join("") || `<p class="empty">暂无周期总结；满 10 轮后自动入档。</p>`;
+      }
+
       function renderSmartMoneyWatchlist() {
         const entries = state.smartMoneyWatchlist?.entries || [];
         $("smartMoneyWatchlist").innerHTML = entries.slice(0, 12).map((item) => {
@@ -720,6 +748,7 @@
         renderRuns();
         renderConfig();
         renderStrategyArchive();
+        renderCycleSummaries();
         renderWalletBlacklist();
         renderSmartMoneyWatchlist();
         renderDailySummary();

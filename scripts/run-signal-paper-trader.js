@@ -29,6 +29,8 @@ const CONFIG = {
   quoteAsset: "USDT paper capital",
   scanChains: CHAINS,
   signalLimit: 50,
+  scanIntervalMinutes: 30,
+  cycleLengthRuns: 10,
   signalWalletTypeParam: "2,3",
   smartMoneyResearchLimit: 20,
   smartMoneyResearchSoldRatioPercent: 80,
@@ -181,6 +183,7 @@ function newState(now) {
       resetReason: "initial"
     },
     accountResets: [],
+    cycleSummaries: [],
     walletBlacklist: {
       updatedAt: now,
       entries: []
@@ -219,6 +222,7 @@ function normalizeState(state, now) {
       }
     : newState(now).session;
   base.accountResets = Array.isArray(base.accountResets) ? base.accountResets : [];
+  base.cycleSummaries = Array.isArray(base.cycleSummaries) ? base.cycleSummaries : [];
   base.walletBlacklist = base.walletBlacklist && typeof base.walletBlacklist === "object"
     ? base.walletBlacklist
     : { updatedAt: now, entries: [] };
@@ -301,6 +305,101 @@ function resetPaperAccountForRelogin(state, now, run, reason) {
   };
   run.accountReset = resetRecord;
   run.notes.push("授权恢复或重新登录后，已按规则重置模拟本金为 3000U。历史轮次保留用于审计，不混入新会话本金。");
+}
+
+function isScanRun(run) {
+  return Boolean(run?.commands?.length || toNumber(run?.rawSignalCount) > 0 || (run?.trades || []).length);
+}
+
+function summarizeCycle(runs, state, now, reason) {
+  const ordered = [...runs].reverse();
+  const first = ordered[0] || {};
+  const last = ordered.at(-1) || {};
+  const trades = ordered.flatMap((run) => run.trades || []);
+  const decisions = ordered.flatMap((run) => run.decisions || []);
+  const mistakes = ordered.flatMap((run) => run.mistakes || []);
+  const buyTrades = trades.filter((trade) => trade.action === "BUY");
+  const sellTrades = trades.filter((trade) => trade.action === "SELL");
+  const blockers = {};
+  for (const decision of decisions) {
+    for (const blocker of decision.blockers || []) blockers[blocker] = (blockers[blocker] || 0) + 1;
+  }
+  const topBlockers = Object.entries(blockers)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 8)
+    .map(([name, count]) => ({ name, count }));
+  const equityStartUsd = toNumber(first.capital?.equityUsd, STARTING_CAPITAL_USD);
+  const equityEndUsd = toNumber(last.capital?.equityUsd, state.capital?.equityUsd);
+  return {
+    id: `cycle-${last.id || now.replace(/[-:.TZ]/g, "").slice(0, 14)}`,
+    reason,
+    generatedAt: now,
+    startedAt: first.startedAt || now,
+    finishedAt: last.finishedAt || last.startedAt || now,
+    runCount: runs.length,
+    runIds: runs.map((run) => run.id),
+    rawSignalCount: runs.reduce((sum, run) => sum + toNumber(run.rawSignalCount), 0),
+    tradeCount: trades.length,
+    buys: buyTrades.length,
+    sells: sellTrades.length,
+    buyUsd: round(buyTrades.reduce((sum, trade) => sum + toNumber(trade.grossUsd), 0), 2),
+    realizedPnlUsd: round(sellTrades.reduce((sum, trade) => sum + toNumber(trade.realizedPnlUsd), 0), 2),
+    equityStartUsd: round(equityStartUsd, 2),
+    equityEndUsd: round(equityEndUsd, 2),
+    equityChangeUsd: round(equityEndUsd - equityStartUsd, 2),
+    topBlockers,
+    mistakeCount: mistakes.length,
+    openPositionsBeforeReset: (state.positions || []).filter((item) => item.status === "open").length,
+    walletBlacklistCount: state.walletBlacklist?.entries?.length || 0,
+    smartMoneyWatchlistCount: state.smartMoneyWatchlist?.entries?.length || 0
+  };
+}
+
+function maybeResetCompletedCycle(state, run, now) {
+  if (!isScanRun(run)) return;
+  const sessionStartedAt = new Date(state.session?.startedAt || state.startedAt || now).getTime();
+  const cycleRuns = [run, ...(state.runs || [])]
+    .filter((item) => isScanRun(item))
+    .filter((item) => {
+      const startedAt = new Date(item.startedAt || 0).getTime();
+      return Number.isFinite(startedAt) && startedAt >= sessionStartedAt;
+    })
+    .slice(0, CONFIG.cycleLengthRuns);
+  if (cycleRuns.length < CONFIG.cycleLengthRuns) return;
+
+  const summary = summarizeCycle(cycleRuns, state, now, `completed_${CONFIG.cycleLengthRuns}_run_cycle`);
+  const resetRecord = {
+    timestamp: now,
+    runId: run.id,
+    reason: "completed_cycle_reset",
+    cycleSummaryId: summary.id,
+    previousSession: { ...(state.session || {}) },
+    previousCapital: { ...(state.capital || {}) },
+    previousOpenPositions: (state.positions || []).filter((item) => item.status === "open").length,
+    previousTrades: (state.trades || []).length,
+    previousDecisions: (state.decisions || []).length
+  };
+
+  state.cycleSummaries.unshift(summary);
+  state.cycleSummaries = state.cycleSummaries.slice(0, 100);
+  state.accountResets.unshift(resetRecord);
+  state.accountResets = state.accountResets.slice(0, 50);
+  state.capital = { ...newState(now).capital };
+  state.positions = [];
+  state.trades = [];
+  state.decisions = [];
+  state.session = {
+    id: `${run.id}-cycle`,
+    startedAt: now,
+    lastAuthOkAt: now,
+    lastAuthFailureAt: "",
+    authState: "online",
+    authRecoveries: toNumber(resetRecord.previousSession.authRecoveries),
+    resetReason: "completed_cycle_reset"
+  };
+  run.cycleSummary = summary;
+  run.accountReset = resetRecord;
+  run.notes.push(`已完成 ${CONFIG.cycleLengthRuns} 轮周期，总结已入档，并自动重置模拟本金为 3000U。`);
 }
 
 function blacklistKey(chain, walletAddress) {
@@ -1063,6 +1162,7 @@ updateCapital(state);
 archiveStrategyLearnings(state, run, now);
 run.finishedAt = new Date().toISOString();
 run.capital = { ...state.capital };
+maybeResetCompletedCycle(state, run, now);
 state.runs.unshift(run);
 state.runs = state.runs.slice(0, 200);
 
