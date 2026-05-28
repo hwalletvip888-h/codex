@@ -179,6 +179,7 @@
       .summary-cell strong { display: block; margin-top: 8px; font-size: 20px; }
       .pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; color: var(--muted); font-size: 13px; }
       .pager-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+      .list-pager { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-top: 2px; color: var(--muted); font-size: 12px; }
       .page-button { min-width: 34px; padding: 0 10px; }
       a { color: var(--cyan); text-decoration: none; }
       a:hover { text-decoration: underline; }
@@ -349,10 +350,20 @@
       const num = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
       const time = new Intl.DateTimeFormat("zh-CN", { timeZone: "Asia/Hong_Kong", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
       const PAGE_SIZE = 25;
+      const LIST_PAGE_SIZE = 8;
       let state = null;
       let dailySummary = null;
       let activeTab = "decisions";
       let currentPage = 1;
+      const listPages = {
+        runs: 1,
+        bestArchive: 1,
+        rejectedArchive: 1,
+        lessonArchive: 1,
+        walletBlacklist: 1,
+        smartMoneyWatchlist: 1,
+        cycleSummaryList: 1
+      };
 
       const $ = (id) => document.getElementById(id);
       const n = (value) => Number.isFinite(Number(value)) ? Number(value) : 0;
@@ -506,6 +517,50 @@
         `;
       }
 
+      function listPageItems(key, items, size = LIST_PAGE_SIZE) {
+        const totalPages = Math.max(1, Math.ceil(items.length / size));
+        listPages[key] = Math.min(Math.max(1, listPages[key] || 1), totalPages);
+        const start = (listPages[key] - 1) * size;
+        return {
+          items: items.slice(start, start + size),
+          start,
+          totalPages,
+          size
+        };
+      }
+
+      function renderListPager(key, totalItems, start, totalPages, size) {
+        if (totalItems <= size) return "";
+        const end = Math.min(totalItems, start + size);
+        const current = listPages[key] || 1;
+        const pages = [];
+        const minPage = Math.max(1, current - 2);
+        const maxPage = Math.min(totalPages, current + 2);
+        for (let page = minPage; page <= maxPage; page += 1) {
+          pages.push(`<button class="page-button ${page === current ? "active" : ""}" data-list-page-key="${key}" data-list-page="${page}">${page}</button>`);
+        }
+        return `
+          <div class="list-pager">
+            <span>第 ${current} / ${totalPages} 页，显示 ${start + 1}-${end}，共 ${totalItems} 条</span>
+            <div class="pager-controls">
+              <button class="page-button" data-list-page-key="${key}" data-list-page="1" ${current === 1 ? "disabled" : ""}>首页</button>
+              <button class="page-button" data-list-page-key="${key}" data-list-page="${current - 1}" ${current === 1 ? "disabled" : ""}>上一页</button>
+              ${pages.join("")}
+              <button class="page-button" data-list-page-key="${key}" data-list-page="${current + 1}" ${current === totalPages ? "disabled" : ""}>下一页</button>
+              <button class="page-button" data-list-page-key="${key}" data-list-page="${totalPages}" ${current === totalPages ? "disabled" : ""}>末页</button>
+            </div>
+          </div>
+        `;
+      }
+
+      function renderListByKey(key) {
+        if (key === "runs") renderRuns();
+        else if (key === "bestArchive" || key === "rejectedArchive" || key === "lessonArchive") renderStrategyArchive();
+        else if (key === "walletBlacklist") renderWalletBlacklist();
+        else if (key === "smartMoneyWatchlist") renderSmartMoneyWatchlist();
+        else if (key === "cycleSummaryList") renderCycleSummaries();
+      }
+
       function visibleDecisions() {
         const q = $("searchInput").value.trim().toLowerCase();
         const action = $("actionFilter").value;
@@ -621,11 +676,13 @@
       }
 
       function renderRuns() {
-        const rows = (state.runs || []).slice(0, 10).map((run) => {
+        const allItems = state.runs || [];
+        const page = listPageItems("runs", allItems, 8);
+        const rows = page.items.map((run) => {
           const issue = (run.mistakes || [])[0]?.message || (run.notes || [])[0] || "本轮无错误记录。";
           return `<div class="run-item"><div class="run-top"><strong>${esc(run.id || "-")}</strong>${tag(run.status || "-")}</div><p class="note">${when(run.startedAt)} / ${n(run.rawSignalCount)} 条信号 / ${(run.trades || []).length} 笔成交</p><p class="note">${esc(reasonText(issue))}</p></div>`;
         });
-        $("runList").innerHTML = rows.join("") || `<p class="empty">暂无轮次记录。</p>`;
+        $("runList").innerHTML = (rows.join("") || `<p class="empty">暂无轮次记录。</p>`) + renderListPager("runs", allItems.length, page.start, page.totalPages, page.size);
       }
 
       function renderConfig() {
@@ -655,14 +712,21 @@
 
       function renderStrategyArchive() {
         const archive = state.strategyArchive || {};
-        $("bestArchive").innerHTML = (archive.best || []).slice(0, 6).map(archiveCard).join("") || `<p class="empty">暂无入档策略。</p>`;
-        $("rejectedArchive").innerHTML = (archive.rejected || []).slice(0, 6).map(archiveCard).join("") || `<p class="empty">暂无不及格归档。</p>`;
-        $("lessonArchive").innerHTML = (archive.lessons || []).slice(0, 6).map(archiveCard).join("") || `<p class="empty">暂无踩坑记录。</p>`;
+        renderArchiveList("bestArchive", archive.best || [], "暂无入档策略。");
+        renderArchiveList("rejectedArchive", archive.rejected || [], "暂无不及格归档。");
+        renderArchiveList("lessonArchive", archive.lessons || [], "暂无踩坑记录。");
+      }
+
+      function renderArchiveList(key, entries, emptyText) {
+        const page = listPageItems(key, entries, 6);
+        const cards = page.items.map(archiveCard).join("") || `<p class="empty">${esc(emptyText)}</p>`;
+        $(key).innerHTML = cards + renderListPager(key, entries.length, page.start, page.totalPages, page.size);
       }
 
       function renderWalletBlacklist() {
         const entries = state.walletBlacklist?.entries || [];
-        $("walletBlacklist").innerHTML = entries.slice(0, 12).map((item) => {
+        const page = listPageItems("walletBlacklist", entries, 8);
+        const cards = page.items.map((item) => {
           const token = (item.tokens || [])[0] || {};
           const loss = n(item.totalLossUsd);
           return `
@@ -676,11 +740,13 @@
             </div>
           `;
         }).join("") || `<p class="empty">暂无亏损钱包黑名单。后续出现亏损卖出后会自动入档。</p>`;
+        $("walletBlacklist").innerHTML = cards + renderListPager("walletBlacklist", entries.length, page.start, page.totalPages, page.size);
       }
 
       function renderCycleSummaries() {
         const entries = state.cycleSummaries || [];
-        $("cycleSummaryList").innerHTML = entries.slice(0, 8).map((item) => {
+        const page = listPageItems("cycleSummaryList", entries, 8);
+        const cards = page.items.map((item) => {
           const pnl = n(item.equityChangeUsd);
           return `
             <div class="archive-item">
@@ -693,11 +759,13 @@
             </div>
           `;
         }).join("") || `<p class="empty">暂无周期总结；满 10 轮后自动入档。</p>`;
+        $("cycleSummaryList").innerHTML = cards + renderListPager("cycleSummaryList", entries.length, page.start, page.totalPages, page.size);
       }
 
       function renderSmartMoneyWatchlist() {
         const entries = state.smartMoneyWatchlist?.entries || [];
-        $("smartMoneyWatchlist").innerHTML = entries.slice(0, 12).map((item) => {
+        const page = listPageItems("smartMoneyWatchlist", entries, 8);
+        const cards = page.items.map((item) => {
           const token = (item.tokens || [])[0] || {};
           return `
             <div class="archive-item">
@@ -710,6 +778,7 @@
             </div>
           `;
         }).join("") || `<p class="empty">暂无聪明钱观察记录。只读追踪跑完后会自动入档。</p>`;
+        $("smartMoneyWatchlist").innerHTML = cards + renderListPager("smartMoneyWatchlist", entries.length, page.start, page.totalPages, page.size);
       }
 
       function renderDailySummary() {
@@ -782,6 +851,13 @@
           else if (activeTab === "positions") renderPositions();
           else renderDecisions();
         }
+      });
+      document.addEventListener("click", (event) => {
+        const target = event.target.closest("[data-list-page-key]");
+        if (!target || target.disabled) return;
+        const key = target.dataset.listPageKey;
+        listPages[key] = Number(target.dataset.listPage);
+        if (state) renderListByKey(key);
       });
       window.setInterval(() => {
         if (!state) return;
