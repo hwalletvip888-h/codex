@@ -392,8 +392,10 @@
         if (!latest) return { state: "waiting", text: "等待第一次扫描", dot: "dot" };
         const stale = ageMs(latest.finishedAt || latest.startedAt) > 150 * 60000;
         const authFailed = latest.status === "failed" && (latest.mistakes || []).some((item) => item.type === "AUTH_INVALID");
+        const regionRestricted = latest.status === "failed" && (latest.mistakes || []).some((item) => item.type === "REGION_RESTRICTED");
         if (stale) return { state: "offline", text: `离线超时：${durationText(ageMs(latest.finishedAt || latest.startedAt))} 未更新`, dot: "dot bad" };
         if (authFailed) return { state: "auth_failed", text: "授权失效：等待重新登录", dot: "dot bad" };
+        if (regionRestricted) return { state: "region_restricted", text: "服务受限：API Key 或地区无权限", dot: "dot bad" };
         if (latest.status === "ok" || latest.status === "partial") return { state: "online", text: `在线运行：${label(latest.status)}`, dot: "dot ok" };
         return { state: "failed", text: `最近扫描：${label(latest.status)}`, dot: "dot bad" };
       };
@@ -410,6 +412,8 @@
         ok: "正常",
         partial: "部分成功",
         failed: "失败",
+        REGION_RESTRICTED: "地区/API权限受限",
+        AUTH_INVALID: "授权失效",
         blacklisted: "黑名单",
         "completed_10_run_cycle": "完成10轮",
         completed_cycle_reset: "周期重置",
