@@ -308,7 +308,8 @@ function resetPaperAccountForRelogin(state, now, run, reason) {
 }
 
 function isScanRun(run) {
-  return Boolean(run?.commands?.length || toNumber(run?.rawSignalCount) > 0 || (run?.trades || []).length);
+  if (!["ok", "partial"].includes(run?.status)) return false;
+  return Boolean(toNumber(run?.rawSignalCount) > 0 || (run?.decisions || []).length || (run?.trades || []).length);
 }
 
 function summarizeCycle(runs, state, now, reason) {
