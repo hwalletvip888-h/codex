@@ -1,33 +1,34 @@
 # 2026-05-29 策略模拟日报
 
-生成时间：2026-05-29T13:29:00.516Z
+生成时间：2026-05-29T13:59:01.727Z
 时区：Asia/Hong_Kong
 
 ## 当日结果
 
-- 扫描轮次：31
-- 原始信号：763
-- 决策记录：385
-- 模拟成交：7 笔，买入 4 笔，卖出 3 笔
-- 买入金额：484.4U
-- 已实现盈亏：366U
-- 权益变化：3242.95U -> 3365.64U（122.69U）
+- 扫描轮次：32
+- 原始信号：818
+- 决策记录：440
+- 模拟成交：10 笔，买入 5 笔，卖出 5 笔
+- 买入金额：715.5U
+- 已实现盈亏：362.26U
+- 权益变化：3242.95U -> 3362.26U（119.31U）
 - 账户重置：2 次
 - 周期总结：2 次
-- 钱包黑名单：7 个地址
-- 聪明钱只读观察：495 个地址
+- 钱包黑名单：10 个地址
+- 聪明钱只读观察：497 个地址
 
 ## 操作状态
 
 - failed: 17 轮
-- ok: 14 轮
+- ok: 15 轮
 
 ## 主要阻断条件
 
-- sold ratio > 35%: 330 次
-- amount < 500U: 55 次
-- blacklisted source wallet: 4hAwSV...pFmJ: 7 次
-- blacklisted source wallet: 9nP8di...wpE6: 7 次
+- sold ratio > 35%: 377 次
+- amount < 500U: 62 次
+- blacklisted source wallet: 4hAwSV...pFmJ: 8 次
+- blacklisted source wallet: 9nP8di...wpE6: 8 次
+- blacklisted source wallet: 8M2quY...twNh: 1 次
 
 ## 今日复盘
 
