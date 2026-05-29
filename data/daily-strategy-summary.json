@@ -1,103 +1,84 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T00:59:00.550Z",
+  "generatedAt": "2026-05-29T01:29:00.671Z",
   "latest": {
     "date": "2026-05-29",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-29T00:59:00.545Z",
-    "runCount": 5,
+    "generatedAt": "2026-05-29T01:29:00.666Z",
+    "runCount": 6,
     "statuses": {
-      "ok": 5
+      "ok": 6
     },
-    "rawSignalCount": 270,
-    "decisionCount": 270,
-    "actions": {
-      "IGNORE": 174,
-      "WATCH": 80,
-      "HOLD": 11,
-      "SELL": 3,
-      "BUY": 2
-    },
-    "tradeCount": 5,
-    "buys": 2,
-    "sells": 3,
-    "buyUsd": 242.2,
-    "realizedPnlUsd": 366,
+    "rawSignalCount": 324,
+    "decisionCount": 0,
+    "actions": {},
+    "tradeCount": 0,
+    "buys": 0,
+    "sells": 0,
+    "buyUsd": 0,
+    "realizedPnlUsd": 0,
     "equityStartUsd": 3242.95,
-    "equityEndUsd": 3472.98,
-    "equityChangeUsd": 230.03,
-    "topBlockers": [
-      {
-        "name": "sold ratio > 35%",
-        "count": 226
-      },
-      {
-        "name": "amount < 500U",
-        "count": 25
-      },
-      {
-        "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-        "count": 5
-      },
-      {
-        "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 5
-      }
-    ],
+    "equityEndUsd": 3472.62,
+    "equityChangeUsd": 229.67,
+    "topBlockers": [],
     "mistakeCount": 0,
     "mistakeTypes": {},
-    "accountResets": 0,
-    "cycleSummaries": 0,
+    "accountResets": 1,
+    "cycleSummaries": 1,
     "latestCycleSummary": {
-      "id": "cycle-20260528112857",
+      "id": "cycle-20260529012858",
       "reason": "completed_10_run_cycle",
-      "generatedAt": "2026-05-28T11:28:57.709Z",
-      "startedAt": "2026-05-28T06:28:58.872Z",
-      "finishedAt": "2026-05-28T11:28:59.576Z",
+      "generatedAt": "2026-05-29T01:28:58.117Z",
+      "startedAt": "2026-05-28T11:28:57.709Z",
+      "finishedAt": "2026-05-29T01:29:00.390Z",
       "runCount": 10,
       "runIds": [
-        "20260528112857",
-        "20260528105857",
-        "20260528102857",
-        "20260528095857",
-        "20260528092857",
-        "20260528085857",
-        "20260528082857",
-        "20260528072858",
-        "20260528065857",
-        "20260528062858"
+        "20260529012858",
+        "20260529005857",
+        "20260529002857",
+        "20260528235857",
+        "20260528232857",
+        "20260528225858",
+        "20260528125857",
+        "20260528122857",
+        "20260528115857",
+        "20260528112857"
       ],
       "rawSignalCount": 540,
       "tradeCount": 12,
       "buys": 8,
       "sells": 4,
-      "buyUsd": 1136,
+      "buyUsd": 1075.5,
       "realizedPnlUsd": 488,
-      "equityStartUsd": 3471.48,
-      "equityEndUsd": 3472.79,
-      "equityChangeUsd": 1.31,
+      "equityStartUsd": 3472.79,
+      "equityEndUsd": 3472.62,
+      "equityChangeUsd": -0.17,
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 448
+          "count": 452
         },
         {
           "name": "amount < 500U",
-          "count": 39
-        },
-        {
-          "name": "blacklisted source wallet: 9x2FKx...MrPg",
-          "count": 20
+          "count": 47
         },
         {
           "name": "blacklisted source wallet: 9nP8di...wpE6",
           "count": 10
+        },
+        {
+          "name": "blacklisted source wallet: 9x2FKx...MrPg",
+          "count": 8
+        },
+        {
+          "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+          "count": 6
         }
       ],
       "mistakeCount": 0,
       "openPositionsBeforeReset": 3,
       "walletBlacklistCount": 7,
-      "smartMoneyWatchlistCount": 410
+      "smartMoneyWatchlistCount": 442
     },
     "walletBlacklistCount": 7,
     "latestBlacklistedWallets": [
@@ -222,7 +203,7 @@
         ]
       }
     ],
-    "smartMoneyWatchlistCount": 440,
+    "smartMoneyWatchlistCount": 442,
     "latestSmartMoneyWatchlist": [
       {
         "walletAddress": "0x2b969a5d35c000ca3efd791a54b9c766e3187ec7",
@@ -231,9 +212,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-05-29T00:58:57.922Z",
-        "occurrences": 122,
-        "highSoldRatioCount": 122,
+        "lastSeenAt": "2026-05-29T01:28:58.117Z",
+        "occurrences": 125,
+        "highSoldRatioCount": 125,
         "tokens": [
           {
             "token": "Red Doge",
@@ -301,7 +282,88 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 81.01%",
           "watch only; sold ratio 100%",
+          "watch only; sold ratio 83.06%",
+          "watch only; sold ratio 85.02%",
+          "watch only; sold ratio 82.78%",
+          "watch only; sold ratio 95.93%",
+          "watch only; sold ratio 95.81%",
+          "watch only; sold ratio 83.61%",
+          "watch only; sold ratio 80.04%",
+          "watch only; sold ratio 89%"
+        ]
+      },
+      {
+        "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
+        "shortAddress": "0xf40f...a5e3",
+        "chain": "bsc",
+        "walletType": "Smart Money",
+        "status": "watch_only",
+        "firstSeenAt": "2026-05-25T15:52:50.990Z",
+        "lastSeenAt": "2026-05-29T01:28:58.117Z",
+        "occurrences": 119,
+        "highSoldRatioCount": 119,
+        "tokens": [
+          {
+            "token": "时间银行",
+            "symbol": "时间银行",
+            "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
+            "shortAddress": "0xb38b...7777",
+            "soldRatioPercent": 83.06,
+            "amountUsd": 1954.57
+          },
+          {
+            "token": "原来也是",
+            "symbol": "甜Go",
+            "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
+            "shortAddress": "0x0e67...ffff",
+            "soldRatioPercent": 85.02,
+            "amountUsd": 259.76
+          },
+          {
+            "token": "何一是光源",
+            "symbol": "光源",
+            "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
+            "shortAddress": "0x95d8...4444",
+            "soldRatioPercent": 82.78,
+            "amountUsd": 2258.91
+          },
+          {
+            "token": "玩家何一",
+            "symbol": "玩家何一",
+            "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
+            "shortAddress": "0xc72d...4444",
+            "soldRatioPercent": 83.61,
+            "amountUsd": 2235.64
+          },
+          {
+            "token": "MemeDAO",
+            "symbol": "MemeDAO",
+            "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
+            "shortAddress": "0x2c6b...ffff",
+            "soldRatioPercent": 80.04,
+            "amountUsd": 536.74
+          },
+          {
+            "token": "首创双拉Mint发射台协议",
+            "symbol": "FlapGen",
+            "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
+            "shortAddress": "0xe27b...7777",
+            "soldRatioPercent": 89,
+            "amountUsd": 773.68
+          },
+          {
+            "token": "提子",
+            "symbol": "提子",
+            "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
+            "shortAddress": "0x86e5...4444",
+            "soldRatioPercent": 93.59,
+            "amountUsd": 404.14
+          }
+        ],
+        "reasons": [
+          "watch only; sold ratio 81.01%",
           "watch only; sold ratio 83.06%",
           "watch only; sold ratio 85.02%",
           "watch only; sold ratio 82.78%",
@@ -416,86 +478,6 @@
           "watch only; sold ratio 95.81%",
           "watch only; sold ratio 83.61%",
           "watch only; sold ratio 80.04%",
-          "watch only; sold ratio 93.59%"
-        ]
-      },
-      {
-        "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
-        "shortAddress": "0xf40f...a5e3",
-        "chain": "bsc",
-        "walletType": "Smart Money",
-        "status": "watch_only",
-        "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-05-29T00:58:57.922Z",
-        "occurrences": 117,
-        "highSoldRatioCount": 117,
-        "tokens": [
-          {
-            "token": "时间银行",
-            "symbol": "时间银行",
-            "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
-            "shortAddress": "0xb38b...7777",
-            "soldRatioPercent": 83.06,
-            "amountUsd": 1954.57
-          },
-          {
-            "token": "原来也是",
-            "symbol": "甜Go",
-            "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
-            "shortAddress": "0x0e67...ffff",
-            "soldRatioPercent": 85.02,
-            "amountUsd": 259.76
-          },
-          {
-            "token": "何一是光源",
-            "symbol": "光源",
-            "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
-            "shortAddress": "0x95d8...4444",
-            "soldRatioPercent": 82.78,
-            "amountUsd": 2258.91
-          },
-          {
-            "token": "玩家何一",
-            "symbol": "玩家何一",
-            "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
-            "shortAddress": "0xc72d...4444",
-            "soldRatioPercent": 83.61,
-            "amountUsd": 2235.64
-          },
-          {
-            "token": "MemeDAO",
-            "symbol": "MemeDAO",
-            "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
-            "shortAddress": "0x2c6b...ffff",
-            "soldRatioPercent": 80.04,
-            "amountUsd": 536.74
-          },
-          {
-            "token": "首创双拉Mint发射台协议",
-            "symbol": "FlapGen",
-            "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
-            "shortAddress": "0xe27b...7777",
-            "soldRatioPercent": 89,
-            "amountUsd": 773.68
-          },
-          {
-            "token": "提子",
-            "symbol": "提子",
-            "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
-            "shortAddress": "0x86e5...4444",
-            "soldRatioPercent": 93.59,
-            "amountUsd": 404.14
-          }
-        ],
-        "reasons": [
-          "watch only; sold ratio 83.06%",
-          "watch only; sold ratio 85.02%",
-          "watch only; sold ratio 82.78%",
-          "watch only; sold ratio 95.93%",
-          "watch only; sold ratio 95.81%",
-          "watch only; sold ratio 83.61%",
-          "watch only; sold ratio 80.04%",
-          "watch only; sold ratio 89%",
           "watch only; sold ratio 93.59%"
         ]
       },
@@ -665,8 +647,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-26T22:55:39.434Z",
-        "lastSeenAt": "2026-05-29T00:28:57.928Z",
-        "occurrences": 20,
+        "lastSeenAt": "2026-05-29T01:28:58.117Z",
+        "occurrences": 21,
         "examples": [
           {
             "token": "Bloomer",
@@ -718,8 +700,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-29T00:58:57.922Z",
-        "occurrences": 1562,
+        "lastSeenAt": "2026-05-29T01:28:58.117Z",
+        "occurrences": 1594,
         "examples": [
           {
             "token": "Justice for Gosling",
@@ -770,7 +752,7 @@
         "title": "solana Whale 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "Take profit 101.35%; amount 1280.3U; wallets 3; sold 100%; type Whale",
+        "reason": "amount 1280.3U; wallets 3; sold 100%; type Whale",
         "score": 68.2,
         "wins": 0,
         "losses": 0,
@@ -783,8 +765,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-29T00:58:57.922Z",
-        "occurrences": 722,
+        "lastSeenAt": "2026-05-29T01:28:58.117Z",
+        "occurrences": 735,
         "examples": [
           {
             "token": "Bloomer",
@@ -848,8 +830,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-29T00:58:57.922Z",
-        "occurrences": 208,
+        "lastSeenAt": "2026-05-29T01:28:58.117Z",
+        "occurrences": 212,
         "examples": [
           {
             "token": "aliens.gov",
@@ -1360,6 +1342,77 @@
           "totalPnlUsd": 472.98,
           "totalPnlPct": 15.77
         }
+      },
+      {
+        "runId": "20260529012858",
+        "startedAt": "2026-05-29T01:28:58.117Z",
+        "finishedAt": "2026-05-29T01:29:00.390Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 54,
+        "decisions": 54,
+        "trades": 1,
+        "mistakes": [],
+        "notes": [
+          "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
+        ],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 1,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 4,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": {
+          "timestamp": "2026-05-29T01:28:58.117Z",
+          "runId": "20260529012858",
+          "reason": "completed_cycle_reset",
+          "cycleSummaryId": "cycle-20260529012858",
+          "previousSession": {
+            "id": "20260528112857-cycle",
+            "startedAt": "2026-05-28T11:28:57.709Z",
+            "lastAuthOkAt": "2026-05-29T01:28:58.117Z",
+            "lastAuthFailureAt": "",
+            "authState": "online",
+            "authRecoveries": 3,
+            "resetReason": "completed_cycle_reset"
+          },
+          "previousCapital": {
+            "initialUsd": 3000,
+            "cashUsd": 3018,
+            "openValueUsd": 454.62,
+            "equityUsd": 3472.62,
+            "realizedPnlUsd": 488,
+            "unrealizedPnlUsd": -15.38,
+            "totalPnlUsd": 472.62,
+            "totalPnlPct": 15.75
+          },
+          "previousOpenPositions": 3,
+          "previousTrades": 11,
+          "previousDecisions": 486
+        },
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3018,
+          "openValueUsd": 454.62,
+          "equityUsd": 3472.62,
+          "realizedPnlUsd": 488,
+          "unrealizedPnlUsd": -15.38,
+          "totalPnlUsd": 472.62,
+          "totalPnlPct": 15.75
+        }
       }
     ]
   },
@@ -1367,100 +1420,81 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T00:59:00.545Z",
-      "runCount": 5,
+      "generatedAt": "2026-05-29T01:29:00.666Z",
+      "runCount": 6,
       "statuses": {
-        "ok": 5
+        "ok": 6
       },
-      "rawSignalCount": 270,
-      "decisionCount": 270,
-      "actions": {
-        "IGNORE": 174,
-        "WATCH": 80,
-        "HOLD": 11,
-        "SELL": 3,
-        "BUY": 2
-      },
-      "tradeCount": 5,
-      "buys": 2,
-      "sells": 3,
-      "buyUsd": 242.2,
-      "realizedPnlUsd": 366,
+      "rawSignalCount": 324,
+      "decisionCount": 0,
+      "actions": {},
+      "tradeCount": 0,
+      "buys": 0,
+      "sells": 0,
+      "buyUsd": 0,
+      "realizedPnlUsd": 0,
       "equityStartUsd": 3242.95,
-      "equityEndUsd": 3472.98,
-      "equityChangeUsd": 230.03,
-      "topBlockers": [
-        {
-          "name": "sold ratio > 35%",
-          "count": 226
-        },
-        {
-          "name": "amount < 500U",
-          "count": 25
-        },
-        {
-          "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-          "count": 5
-        },
-        {
-          "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 5
-        }
-      ],
+      "equityEndUsd": 3472.62,
+      "equityChangeUsd": 229.67,
+      "topBlockers": [],
       "mistakeCount": 0,
       "mistakeTypes": {},
-      "accountResets": 0,
-      "cycleSummaries": 0,
+      "accountResets": 1,
+      "cycleSummaries": 1,
       "latestCycleSummary": {
-        "id": "cycle-20260528112857",
+        "id": "cycle-20260529012858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-28T11:28:57.709Z",
-        "startedAt": "2026-05-28T06:28:58.872Z",
-        "finishedAt": "2026-05-28T11:28:59.576Z",
+        "generatedAt": "2026-05-29T01:28:58.117Z",
+        "startedAt": "2026-05-28T11:28:57.709Z",
+        "finishedAt": "2026-05-29T01:29:00.390Z",
         "runCount": 10,
         "runIds": [
-          "20260528112857",
-          "20260528105857",
-          "20260528102857",
-          "20260528095857",
-          "20260528092857",
-          "20260528085857",
-          "20260528082857",
-          "20260528072858",
-          "20260528065857",
-          "20260528062858"
+          "20260529012858",
+          "20260529005857",
+          "20260529002857",
+          "20260528235857",
+          "20260528232857",
+          "20260528225858",
+          "20260528125857",
+          "20260528122857",
+          "20260528115857",
+          "20260528112857"
         ],
         "rawSignalCount": 540,
         "tradeCount": 12,
         "buys": 8,
         "sells": 4,
-        "buyUsd": 1136,
+        "buyUsd": 1075.5,
         "realizedPnlUsd": 488,
-        "equityStartUsd": 3471.48,
-        "equityEndUsd": 3472.79,
-        "equityChangeUsd": 1.31,
+        "equityStartUsd": 3472.79,
+        "equityEndUsd": 3472.62,
+        "equityChangeUsd": -0.17,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 448
+            "count": 452
           },
           {
             "name": "amount < 500U",
-            "count": 39
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 20
+            "count": 47
           },
           {
             "name": "blacklisted source wallet: 9nP8di...wpE6",
             "count": 10
+          },
+          {
+            "name": "blacklisted source wallet: 9x2FKx...MrPg",
+            "count": 8
+          },
+          {
+            "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+            "count": 6
           }
         ],
         "mistakeCount": 0,
         "openPositionsBeforeReset": 3,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 410
+        "smartMoneyWatchlistCount": 442
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -1585,7 +1619,7 @@
           ]
         }
       ],
-      "smartMoneyWatchlistCount": 440,
+      "smartMoneyWatchlistCount": 442,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "0x2b969a5d35c000ca3efd791a54b9c766e3187ec7",
@@ -1594,9 +1628,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 122,
-          "highSoldRatioCount": 122,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 125,
+          "highSoldRatioCount": 125,
           "tokens": [
             {
               "token": "Red Doge",
@@ -1664,7 +1698,88 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 100%",
+            "watch only; sold ratio 83.06%",
+            "watch only; sold ratio 85.02%",
+            "watch only; sold ratio 82.78%",
+            "watch only; sold ratio 95.93%",
+            "watch only; sold ratio 95.81%",
+            "watch only; sold ratio 83.61%",
+            "watch only; sold ratio 80.04%",
+            "watch only; sold ratio 89%"
+          ]
+        },
+        {
+          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
+          "shortAddress": "0xf40f...a5e3",
+          "chain": "bsc",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 119,
+          "highSoldRatioCount": 119,
+          "tokens": [
+            {
+              "token": "时间银行",
+              "symbol": "时间银行",
+              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
+              "shortAddress": "0xb38b...7777",
+              "soldRatioPercent": 83.06,
+              "amountUsd": 1954.57
+            },
+            {
+              "token": "原来也是",
+              "symbol": "甜Go",
+              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
+              "shortAddress": "0x0e67...ffff",
+              "soldRatioPercent": 85.02,
+              "amountUsd": 259.76
+            },
+            {
+              "token": "何一是光源",
+              "symbol": "光源",
+              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
+              "shortAddress": "0x95d8...4444",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 2258.91
+            },
+            {
+              "token": "玩家何一",
+              "symbol": "玩家何一",
+              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
+              "shortAddress": "0xc72d...4444",
+              "soldRatioPercent": 83.61,
+              "amountUsd": 2235.64
+            },
+            {
+              "token": "MemeDAO",
+              "symbol": "MemeDAO",
+              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
+              "shortAddress": "0x2c6b...ffff",
+              "soldRatioPercent": 80.04,
+              "amountUsd": 536.74
+            },
+            {
+              "token": "首创双拉Mint发射台协议",
+              "symbol": "FlapGen",
+              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
+              "shortAddress": "0xe27b...7777",
+              "soldRatioPercent": 89,
+              "amountUsd": 773.68
+            },
+            {
+              "token": "提子",
+              "symbol": "提子",
+              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
+              "shortAddress": "0x86e5...4444",
+              "soldRatioPercent": 93.59,
+              "amountUsd": 404.14
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 83.06%",
             "watch only; sold ratio 85.02%",
             "watch only; sold ratio 82.78%",
@@ -1779,86 +1894,6 @@
             "watch only; sold ratio 95.81%",
             "watch only; sold ratio 83.61%",
             "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 93.59%"
-          ]
-        },
-        {
-          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
-          "shortAddress": "0xf40f...a5e3",
-          "chain": "bsc",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
-          "tokens": [
-            {
-              "token": "时间银行",
-              "symbol": "时间银行",
-              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
-              "shortAddress": "0xb38b...7777",
-              "soldRatioPercent": 83.06,
-              "amountUsd": 1954.57
-            },
-            {
-              "token": "原来也是",
-              "symbol": "甜Go",
-              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
-              "shortAddress": "0x0e67...ffff",
-              "soldRatioPercent": 85.02,
-              "amountUsd": 259.76
-            },
-            {
-              "token": "何一是光源",
-              "symbol": "光源",
-              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
-              "shortAddress": "0x95d8...4444",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 2258.91
-            },
-            {
-              "token": "玩家何一",
-              "symbol": "玩家何一",
-              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
-              "shortAddress": "0xc72d...4444",
-              "soldRatioPercent": 83.61,
-              "amountUsd": 2235.64
-            },
-            {
-              "token": "MemeDAO",
-              "symbol": "MemeDAO",
-              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
-              "shortAddress": "0x2c6b...ffff",
-              "soldRatioPercent": 80.04,
-              "amountUsd": 536.74
-            },
-            {
-              "token": "首创双拉Mint发射台协议",
-              "symbol": "FlapGen",
-              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
-              "shortAddress": "0xe27b...7777",
-              "soldRatioPercent": 89,
-              "amountUsd": 773.68
-            },
-            {
-              "token": "提子",
-              "symbol": "提子",
-              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
-              "shortAddress": "0x86e5...4444",
-              "soldRatioPercent": 93.59,
-              "amountUsd": 404.14
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 83.06%",
-            "watch only; sold ratio 85.02%",
-            "watch only; sold ratio 82.78%",
-            "watch only; sold ratio 95.93%",
-            "watch only; sold ratio 95.81%",
-            "watch only; sold ratio 83.61%",
-            "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 89%",
             "watch only; sold ratio 93.59%"
           ]
         },
@@ -2028,8 +2063,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-29T00:28:57.928Z",
-          "occurrences": 20,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 21,
           "examples": [
             {
               "token": "Bloomer",
@@ -2081,8 +2116,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 1562,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 1594,
           "examples": [
             {
               "token": "Justice for Gosling",
@@ -2133,7 +2168,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "Take profit 101.35%; amount 1280.3U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1280.3U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -2146,8 +2181,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 722,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 735,
           "examples": [
             {
               "token": "Bloomer",
@@ -2211,8 +2246,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 208,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 212,
           "examples": [
             {
               "token": "aliens.gov",
@@ -2723,106 +2758,158 @@
             "totalPnlUsd": 472.98,
             "totalPnlPct": 15.77
           }
+        },
+        {
+          "runId": "20260529012858",
+          "startedAt": "2026-05-29T01:28:58.117Z",
+          "finishedAt": "2026-05-29T01:29:00.390Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 54,
+          "decisions": 54,
+          "trades": 1,
+          "mistakes": [],
+          "notes": [
+            "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
+          ],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 1,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 4,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": {
+            "timestamp": "2026-05-29T01:28:58.117Z",
+            "runId": "20260529012858",
+            "reason": "completed_cycle_reset",
+            "cycleSummaryId": "cycle-20260529012858",
+            "previousSession": {
+              "id": "20260528112857-cycle",
+              "startedAt": "2026-05-28T11:28:57.709Z",
+              "lastAuthOkAt": "2026-05-29T01:28:58.117Z",
+              "lastAuthFailureAt": "",
+              "authState": "online",
+              "authRecoveries": 3,
+              "resetReason": "completed_cycle_reset"
+            },
+            "previousCapital": {
+              "initialUsd": 3000,
+              "cashUsd": 3018,
+              "openValueUsd": 454.62,
+              "equityUsd": 3472.62,
+              "realizedPnlUsd": 488,
+              "unrealizedPnlUsd": -15.38,
+              "totalPnlUsd": 472.62,
+              "totalPnlPct": 15.75
+            },
+            "previousOpenPositions": 3,
+            "previousTrades": 11,
+            "previousDecisions": 486
+          },
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3018,
+            "openValueUsd": 454.62,
+            "equityUsd": 3472.62,
+            "realizedPnlUsd": 488,
+            "unrealizedPnlUsd": -15.38,
+            "totalPnlUsd": 472.62,
+            "totalPnlPct": 15.75
+          }
         }
       ]
     },
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T00:59:00.546Z",
+      "generatedAt": "2026-05-29T01:29:00.667Z",
       "runCount": 33,
       "statuses": {
         "ok": 33
       },
       "rawSignalCount": 1761,
-      "decisionCount": 162,
-      "actions": {
-        "IGNORE": 98,
-        "WATCH": 49,
-        "HOLD": 10,
-        "BUY": 4,
-        "SELL": 1
-      },
-      "tradeCount": 5,
-      "buys": 4,
-      "sells": 1,
-      "buyUsd": 591.1,
-      "realizedPnlUsd": 122,
+      "decisionCount": 0,
+      "actions": {},
+      "tradeCount": 0,
+      "buys": 0,
+      "sells": 0,
+      "buyUsd": 0,
+      "realizedPnlUsd": 0,
       "equityStartUsd": 3990.59,
       "equityEndUsd": 3106.82,
       "equityChangeUsd": -883.77,
-      "topBlockers": [
-        {
-          "name": "sold ratio > 35%",
-          "count": 135
-        },
-        {
-          "name": "amount < 500U",
-          "count": 12
-        },
-        {
-          "name": "blacklisted source wallet: 9x2FKx...MrPg",
-          "count": 6
-        },
-        {
-          "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 3
-        }
-      ],
+      "topBlockers": [],
       "mistakeCount": 0,
       "mistakeTypes": {},
       "accountResets": 3,
       "cycleSummaries": 3,
       "latestCycleSummary": {
-        "id": "cycle-20260528112857",
+        "id": "cycle-20260529012858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-28T11:28:57.709Z",
-        "startedAt": "2026-05-28T06:28:58.872Z",
-        "finishedAt": "2026-05-28T11:28:59.576Z",
+        "generatedAt": "2026-05-29T01:28:58.117Z",
+        "startedAt": "2026-05-28T11:28:57.709Z",
+        "finishedAt": "2026-05-29T01:29:00.390Z",
         "runCount": 10,
         "runIds": [
-          "20260528112857",
-          "20260528105857",
-          "20260528102857",
-          "20260528095857",
-          "20260528092857",
-          "20260528085857",
-          "20260528082857",
-          "20260528072858",
-          "20260528065857",
-          "20260528062858"
+          "20260529012858",
+          "20260529005857",
+          "20260529002857",
+          "20260528235857",
+          "20260528232857",
+          "20260528225858",
+          "20260528125857",
+          "20260528122857",
+          "20260528115857",
+          "20260528112857"
         ],
         "rawSignalCount": 540,
         "tradeCount": 12,
         "buys": 8,
         "sells": 4,
-        "buyUsd": 1136,
+        "buyUsd": 1075.5,
         "realizedPnlUsd": 488,
-        "equityStartUsd": 3471.48,
-        "equityEndUsd": 3472.79,
-        "equityChangeUsd": 1.31,
+        "equityStartUsd": 3472.79,
+        "equityEndUsd": 3472.62,
+        "equityChangeUsd": -0.17,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 448
+            "count": 452
           },
           {
             "name": "amount < 500U",
-            "count": 39
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 20
+            "count": 47
           },
           {
             "name": "blacklisted source wallet: 9nP8di...wpE6",
             "count": 10
+          },
+          {
+            "name": "blacklisted source wallet: 9x2FKx...MrPg",
+            "count": 8
+          },
+          {
+            "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+            "count": 6
           }
         ],
         "mistakeCount": 0,
         "openPositionsBeforeReset": 3,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 410
+        "smartMoneyWatchlistCount": 442
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -2947,7 +3034,7 @@
           ]
         }
       ],
-      "smartMoneyWatchlistCount": 440,
+      "smartMoneyWatchlistCount": 442,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "0x2b969a5d35c000ca3efd791a54b9c766e3187ec7",
@@ -2956,9 +3043,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 122,
-          "highSoldRatioCount": 122,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 125,
+          "highSoldRatioCount": 125,
           "tokens": [
             {
               "token": "Red Doge",
@@ -3026,7 +3113,88 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 100%",
+            "watch only; sold ratio 83.06%",
+            "watch only; sold ratio 85.02%",
+            "watch only; sold ratio 82.78%",
+            "watch only; sold ratio 95.93%",
+            "watch only; sold ratio 95.81%",
+            "watch only; sold ratio 83.61%",
+            "watch only; sold ratio 80.04%",
+            "watch only; sold ratio 89%"
+          ]
+        },
+        {
+          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
+          "shortAddress": "0xf40f...a5e3",
+          "chain": "bsc",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 119,
+          "highSoldRatioCount": 119,
+          "tokens": [
+            {
+              "token": "时间银行",
+              "symbol": "时间银行",
+              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
+              "shortAddress": "0xb38b...7777",
+              "soldRatioPercent": 83.06,
+              "amountUsd": 1954.57
+            },
+            {
+              "token": "原来也是",
+              "symbol": "甜Go",
+              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
+              "shortAddress": "0x0e67...ffff",
+              "soldRatioPercent": 85.02,
+              "amountUsd": 259.76
+            },
+            {
+              "token": "何一是光源",
+              "symbol": "光源",
+              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
+              "shortAddress": "0x95d8...4444",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 2258.91
+            },
+            {
+              "token": "玩家何一",
+              "symbol": "玩家何一",
+              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
+              "shortAddress": "0xc72d...4444",
+              "soldRatioPercent": 83.61,
+              "amountUsd": 2235.64
+            },
+            {
+              "token": "MemeDAO",
+              "symbol": "MemeDAO",
+              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
+              "shortAddress": "0x2c6b...ffff",
+              "soldRatioPercent": 80.04,
+              "amountUsd": 536.74
+            },
+            {
+              "token": "首创双拉Mint发射台协议",
+              "symbol": "FlapGen",
+              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
+              "shortAddress": "0xe27b...7777",
+              "soldRatioPercent": 89,
+              "amountUsd": 773.68
+            },
+            {
+              "token": "提子",
+              "symbol": "提子",
+              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
+              "shortAddress": "0x86e5...4444",
+              "soldRatioPercent": 93.59,
+              "amountUsd": 404.14
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 83.06%",
             "watch only; sold ratio 85.02%",
             "watch only; sold ratio 82.78%",
@@ -3141,86 +3309,6 @@
             "watch only; sold ratio 95.81%",
             "watch only; sold ratio 83.61%",
             "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 93.59%"
-          ]
-        },
-        {
-          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
-          "shortAddress": "0xf40f...a5e3",
-          "chain": "bsc",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
-          "tokens": [
-            {
-              "token": "时间银行",
-              "symbol": "时间银行",
-              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
-              "shortAddress": "0xb38b...7777",
-              "soldRatioPercent": 83.06,
-              "amountUsd": 1954.57
-            },
-            {
-              "token": "原来也是",
-              "symbol": "甜Go",
-              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
-              "shortAddress": "0x0e67...ffff",
-              "soldRatioPercent": 85.02,
-              "amountUsd": 259.76
-            },
-            {
-              "token": "何一是光源",
-              "symbol": "光源",
-              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
-              "shortAddress": "0x95d8...4444",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 2258.91
-            },
-            {
-              "token": "玩家何一",
-              "symbol": "玩家何一",
-              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
-              "shortAddress": "0xc72d...4444",
-              "soldRatioPercent": 83.61,
-              "amountUsd": 2235.64
-            },
-            {
-              "token": "MemeDAO",
-              "symbol": "MemeDAO",
-              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
-              "shortAddress": "0x2c6b...ffff",
-              "soldRatioPercent": 80.04,
-              "amountUsd": 536.74
-            },
-            {
-              "token": "首创双拉Mint发射台协议",
-              "symbol": "FlapGen",
-              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
-              "shortAddress": "0xe27b...7777",
-              "soldRatioPercent": 89,
-              "amountUsd": 773.68
-            },
-            {
-              "token": "提子",
-              "symbol": "提子",
-              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
-              "shortAddress": "0x86e5...4444",
-              "soldRatioPercent": 93.59,
-              "amountUsd": 404.14
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 83.06%",
-            "watch only; sold ratio 85.02%",
-            "watch only; sold ratio 82.78%",
-            "watch only; sold ratio 95.93%",
-            "watch only; sold ratio 95.81%",
-            "watch only; sold ratio 83.61%",
-            "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 89%",
             "watch only; sold ratio 93.59%"
           ]
         },
@@ -3390,8 +3478,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-29T00:28:57.928Z",
-          "occurrences": 20,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 21,
           "examples": [
             {
               "token": "Bloomer",
@@ -3443,8 +3531,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 1562,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 1594,
           "examples": [
             {
               "token": "Justice for Gosling",
@@ -3495,7 +3583,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "Take profit 101.35%; amount 1280.3U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1280.3U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -3508,8 +3596,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 722,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 735,
           "examples": [
             {
               "token": "Bloomer",
@@ -3573,8 +3661,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 208,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 212,
           "examples": [
             {
               "token": "aliens.gov",
@@ -5363,7 +5451,7 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T00:59:00.546Z",
+      "generatedAt": "2026-05-29T01:29:00.667Z",
       "runCount": 6,
       "statuses": {
         "ok": 5,
@@ -5388,55 +5476,59 @@
       "accountResets": 0,
       "cycleSummaries": 0,
       "latestCycleSummary": {
-        "id": "cycle-20260528112857",
+        "id": "cycle-20260529012858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-28T11:28:57.709Z",
-        "startedAt": "2026-05-28T06:28:58.872Z",
-        "finishedAt": "2026-05-28T11:28:59.576Z",
+        "generatedAt": "2026-05-29T01:28:58.117Z",
+        "startedAt": "2026-05-28T11:28:57.709Z",
+        "finishedAt": "2026-05-29T01:29:00.390Z",
         "runCount": 10,
         "runIds": [
-          "20260528112857",
-          "20260528105857",
-          "20260528102857",
-          "20260528095857",
-          "20260528092857",
-          "20260528085857",
-          "20260528082857",
-          "20260528072858",
-          "20260528065857",
-          "20260528062858"
+          "20260529012858",
+          "20260529005857",
+          "20260529002857",
+          "20260528235857",
+          "20260528232857",
+          "20260528225858",
+          "20260528125857",
+          "20260528122857",
+          "20260528115857",
+          "20260528112857"
         ],
         "rawSignalCount": 540,
         "tradeCount": 12,
         "buys": 8,
         "sells": 4,
-        "buyUsd": 1136,
+        "buyUsd": 1075.5,
         "realizedPnlUsd": 488,
-        "equityStartUsd": 3471.48,
-        "equityEndUsd": 3472.79,
-        "equityChangeUsd": 1.31,
+        "equityStartUsd": 3472.79,
+        "equityEndUsd": 3472.62,
+        "equityChangeUsd": -0.17,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 448
+            "count": 452
           },
           {
             "name": "amount < 500U",
-            "count": 39
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 20
+            "count": 47
           },
           {
             "name": "blacklisted source wallet: 9nP8di...wpE6",
             "count": 10
+          },
+          {
+            "name": "blacklisted source wallet: 9x2FKx...MrPg",
+            "count": 8
+          },
+          {
+            "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+            "count": 6
           }
         ],
         "mistakeCount": 0,
         "openPositionsBeforeReset": 3,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 410
+        "smartMoneyWatchlistCount": 442
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -5561,7 +5653,7 @@
           ]
         }
       ],
-      "smartMoneyWatchlistCount": 440,
+      "smartMoneyWatchlistCount": 442,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "0x2b969a5d35c000ca3efd791a54b9c766e3187ec7",
@@ -5570,9 +5662,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 122,
-          "highSoldRatioCount": 122,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 125,
+          "highSoldRatioCount": 125,
           "tokens": [
             {
               "token": "Red Doge",
@@ -5640,7 +5732,88 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 100%",
+            "watch only; sold ratio 83.06%",
+            "watch only; sold ratio 85.02%",
+            "watch only; sold ratio 82.78%",
+            "watch only; sold ratio 95.93%",
+            "watch only; sold ratio 95.81%",
+            "watch only; sold ratio 83.61%",
+            "watch only; sold ratio 80.04%",
+            "watch only; sold ratio 89%"
+          ]
+        },
+        {
+          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
+          "shortAddress": "0xf40f...a5e3",
+          "chain": "bsc",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 119,
+          "highSoldRatioCount": 119,
+          "tokens": [
+            {
+              "token": "时间银行",
+              "symbol": "时间银行",
+              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
+              "shortAddress": "0xb38b...7777",
+              "soldRatioPercent": 83.06,
+              "amountUsd": 1954.57
+            },
+            {
+              "token": "原来也是",
+              "symbol": "甜Go",
+              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
+              "shortAddress": "0x0e67...ffff",
+              "soldRatioPercent": 85.02,
+              "amountUsd": 259.76
+            },
+            {
+              "token": "何一是光源",
+              "symbol": "光源",
+              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
+              "shortAddress": "0x95d8...4444",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 2258.91
+            },
+            {
+              "token": "玩家何一",
+              "symbol": "玩家何一",
+              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
+              "shortAddress": "0xc72d...4444",
+              "soldRatioPercent": 83.61,
+              "amountUsd": 2235.64
+            },
+            {
+              "token": "MemeDAO",
+              "symbol": "MemeDAO",
+              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
+              "shortAddress": "0x2c6b...ffff",
+              "soldRatioPercent": 80.04,
+              "amountUsd": 536.74
+            },
+            {
+              "token": "首创双拉Mint发射台协议",
+              "symbol": "FlapGen",
+              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
+              "shortAddress": "0xe27b...7777",
+              "soldRatioPercent": 89,
+              "amountUsd": 773.68
+            },
+            {
+              "token": "提子",
+              "symbol": "提子",
+              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
+              "shortAddress": "0x86e5...4444",
+              "soldRatioPercent": 93.59,
+              "amountUsd": 404.14
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 83.06%",
             "watch only; sold ratio 85.02%",
             "watch only; sold ratio 82.78%",
@@ -5755,86 +5928,6 @@
             "watch only; sold ratio 95.81%",
             "watch only; sold ratio 83.61%",
             "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 93.59%"
-          ]
-        },
-        {
-          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
-          "shortAddress": "0xf40f...a5e3",
-          "chain": "bsc",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
-          "tokens": [
-            {
-              "token": "时间银行",
-              "symbol": "时间银行",
-              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
-              "shortAddress": "0xb38b...7777",
-              "soldRatioPercent": 83.06,
-              "amountUsd": 1954.57
-            },
-            {
-              "token": "原来也是",
-              "symbol": "甜Go",
-              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
-              "shortAddress": "0x0e67...ffff",
-              "soldRatioPercent": 85.02,
-              "amountUsd": 259.76
-            },
-            {
-              "token": "何一是光源",
-              "symbol": "光源",
-              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
-              "shortAddress": "0x95d8...4444",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 2258.91
-            },
-            {
-              "token": "玩家何一",
-              "symbol": "玩家何一",
-              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
-              "shortAddress": "0xc72d...4444",
-              "soldRatioPercent": 83.61,
-              "amountUsd": 2235.64
-            },
-            {
-              "token": "MemeDAO",
-              "symbol": "MemeDAO",
-              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
-              "shortAddress": "0x2c6b...ffff",
-              "soldRatioPercent": 80.04,
-              "amountUsd": 536.74
-            },
-            {
-              "token": "首创双拉Mint发射台协议",
-              "symbol": "FlapGen",
-              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
-              "shortAddress": "0xe27b...7777",
-              "soldRatioPercent": 89,
-              "amountUsd": 773.68
-            },
-            {
-              "token": "提子",
-              "symbol": "提子",
-              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
-              "shortAddress": "0x86e5...4444",
-              "soldRatioPercent": 93.59,
-              "amountUsd": 404.14
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 83.06%",
-            "watch only; sold ratio 85.02%",
-            "watch only; sold ratio 82.78%",
-            "watch only; sold ratio 95.93%",
-            "watch only; sold ratio 95.81%",
-            "watch only; sold ratio 83.61%",
-            "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 89%",
             "watch only; sold ratio 93.59%"
           ]
         },
@@ -6004,8 +6097,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-29T00:28:57.928Z",
-          "occurrences": 20,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 21,
           "examples": [
             {
               "token": "Bloomer",
@@ -6057,8 +6150,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 1562,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 1594,
           "examples": [
             {
               "token": "Justice for Gosling",
@@ -6109,7 +6202,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "Take profit 101.35%; amount 1280.3U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1280.3U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -6122,8 +6215,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 722,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 735,
           "examples": [
             {
               "token": "Bloomer",
@@ -6187,8 +6280,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 208,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 212,
           "examples": [
             {
               "token": "aliens.gov",
@@ -6739,7 +6832,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T00:59:00.546Z",
+      "generatedAt": "2026-05-29T01:29:00.667Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -6765,55 +6858,59 @@
       "accountResets": 3,
       "cycleSummaries": 0,
       "latestCycleSummary": {
-        "id": "cycle-20260528112857",
+        "id": "cycle-20260529012858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-28T11:28:57.709Z",
-        "startedAt": "2026-05-28T06:28:58.872Z",
-        "finishedAt": "2026-05-28T11:28:59.576Z",
+        "generatedAt": "2026-05-29T01:28:58.117Z",
+        "startedAt": "2026-05-28T11:28:57.709Z",
+        "finishedAt": "2026-05-29T01:29:00.390Z",
         "runCount": 10,
         "runIds": [
-          "20260528112857",
-          "20260528105857",
-          "20260528102857",
-          "20260528095857",
-          "20260528092857",
-          "20260528085857",
-          "20260528082857",
-          "20260528072858",
-          "20260528065857",
-          "20260528062858"
+          "20260529012858",
+          "20260529005857",
+          "20260529002857",
+          "20260528235857",
+          "20260528232857",
+          "20260528225858",
+          "20260528125857",
+          "20260528122857",
+          "20260528115857",
+          "20260528112857"
         ],
         "rawSignalCount": 540,
         "tradeCount": 12,
         "buys": 8,
         "sells": 4,
-        "buyUsd": 1136,
+        "buyUsd": 1075.5,
         "realizedPnlUsd": 488,
-        "equityStartUsd": 3471.48,
-        "equityEndUsd": 3472.79,
-        "equityChangeUsd": 1.31,
+        "equityStartUsd": 3472.79,
+        "equityEndUsd": 3472.62,
+        "equityChangeUsd": -0.17,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 448
+            "count": 452
           },
           {
             "name": "amount < 500U",
-            "count": 39
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 20
+            "count": 47
           },
           {
             "name": "blacklisted source wallet: 9nP8di...wpE6",
             "count": 10
+          },
+          {
+            "name": "blacklisted source wallet: 9x2FKx...MrPg",
+            "count": 8
+          },
+          {
+            "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+            "count": 6
           }
         ],
         "mistakeCount": 0,
         "openPositionsBeforeReset": 3,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 410
+        "smartMoneyWatchlistCount": 442
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -6938,7 +7035,7 @@
           ]
         }
       ],
-      "smartMoneyWatchlistCount": 440,
+      "smartMoneyWatchlistCount": 442,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "0x2b969a5d35c000ca3efd791a54b9c766e3187ec7",
@@ -6947,9 +7044,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 122,
-          "highSoldRatioCount": 122,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 125,
+          "highSoldRatioCount": 125,
           "tokens": [
             {
               "token": "Red Doge",
@@ -7017,7 +7114,88 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 100%",
+            "watch only; sold ratio 83.06%",
+            "watch only; sold ratio 85.02%",
+            "watch only; sold ratio 82.78%",
+            "watch only; sold ratio 95.93%",
+            "watch only; sold ratio 95.81%",
+            "watch only; sold ratio 83.61%",
+            "watch only; sold ratio 80.04%",
+            "watch only; sold ratio 89%"
+          ]
+        },
+        {
+          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
+          "shortAddress": "0xf40f...a5e3",
+          "chain": "bsc",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 119,
+          "highSoldRatioCount": 119,
+          "tokens": [
+            {
+              "token": "时间银行",
+              "symbol": "时间银行",
+              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
+              "shortAddress": "0xb38b...7777",
+              "soldRatioPercent": 83.06,
+              "amountUsd": 1954.57
+            },
+            {
+              "token": "原来也是",
+              "symbol": "甜Go",
+              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
+              "shortAddress": "0x0e67...ffff",
+              "soldRatioPercent": 85.02,
+              "amountUsd": 259.76
+            },
+            {
+              "token": "何一是光源",
+              "symbol": "光源",
+              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
+              "shortAddress": "0x95d8...4444",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 2258.91
+            },
+            {
+              "token": "玩家何一",
+              "symbol": "玩家何一",
+              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
+              "shortAddress": "0xc72d...4444",
+              "soldRatioPercent": 83.61,
+              "amountUsd": 2235.64
+            },
+            {
+              "token": "MemeDAO",
+              "symbol": "MemeDAO",
+              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
+              "shortAddress": "0x2c6b...ffff",
+              "soldRatioPercent": 80.04,
+              "amountUsd": 536.74
+            },
+            {
+              "token": "首创双拉Mint发射台协议",
+              "symbol": "FlapGen",
+              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
+              "shortAddress": "0xe27b...7777",
+              "soldRatioPercent": 89,
+              "amountUsd": 773.68
+            },
+            {
+              "token": "提子",
+              "symbol": "提子",
+              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
+              "shortAddress": "0x86e5...4444",
+              "soldRatioPercent": 93.59,
+              "amountUsd": 404.14
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 83.06%",
             "watch only; sold ratio 85.02%",
             "watch only; sold ratio 82.78%",
@@ -7132,86 +7310,6 @@
             "watch only; sold ratio 95.81%",
             "watch only; sold ratio 83.61%",
             "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 93.59%"
-          ]
-        },
-        {
-          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
-          "shortAddress": "0xf40f...a5e3",
-          "chain": "bsc",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
-          "tokens": [
-            {
-              "token": "时间银行",
-              "symbol": "时间银行",
-              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
-              "shortAddress": "0xb38b...7777",
-              "soldRatioPercent": 83.06,
-              "amountUsd": 1954.57
-            },
-            {
-              "token": "原来也是",
-              "symbol": "甜Go",
-              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
-              "shortAddress": "0x0e67...ffff",
-              "soldRatioPercent": 85.02,
-              "amountUsd": 259.76
-            },
-            {
-              "token": "何一是光源",
-              "symbol": "光源",
-              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
-              "shortAddress": "0x95d8...4444",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 2258.91
-            },
-            {
-              "token": "玩家何一",
-              "symbol": "玩家何一",
-              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
-              "shortAddress": "0xc72d...4444",
-              "soldRatioPercent": 83.61,
-              "amountUsd": 2235.64
-            },
-            {
-              "token": "MemeDAO",
-              "symbol": "MemeDAO",
-              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
-              "shortAddress": "0x2c6b...ffff",
-              "soldRatioPercent": 80.04,
-              "amountUsd": 536.74
-            },
-            {
-              "token": "首创双拉Mint发射台协议",
-              "symbol": "FlapGen",
-              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
-              "shortAddress": "0xe27b...7777",
-              "soldRatioPercent": 89,
-              "amountUsd": 773.68
-            },
-            {
-              "token": "提子",
-              "symbol": "提子",
-              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
-              "shortAddress": "0x86e5...4444",
-              "soldRatioPercent": 93.59,
-              "amountUsd": 404.14
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 83.06%",
-            "watch only; sold ratio 85.02%",
-            "watch only; sold ratio 82.78%",
-            "watch only; sold ratio 95.93%",
-            "watch only; sold ratio 95.81%",
-            "watch only; sold ratio 83.61%",
-            "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 89%",
             "watch only; sold ratio 93.59%"
           ]
         },
@@ -7381,8 +7479,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-29T00:28:57.928Z",
-          "occurrences": 20,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 21,
           "examples": [
             {
               "token": "Bloomer",
@@ -7434,8 +7532,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 1562,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 1594,
           "examples": [
             {
               "token": "Justice for Gosling",
@@ -7486,7 +7584,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "Take profit 101.35%; amount 1280.3U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1280.3U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -7499,8 +7597,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 722,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 735,
           "examples": [
             {
               "token": "Bloomer",
@@ -7564,8 +7662,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 208,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 212,
           "examples": [
             {
               "token": "aliens.gov",
@@ -8321,7 +8419,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T00:59:00.546Z",
+      "generatedAt": "2026-05-29T01:29:00.667Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -8335,9 +8433,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 3472.98,
+      "equityStartUsd": 3000,
       "equityEndUsd": 3152.63,
-      "equityChangeUsd": -320.35,
+      "equityChangeUsd": 152.63,
       "topBlockers": [],
       "mistakeCount": 10,
       "mistakeTypes": {
@@ -8347,55 +8445,59 @@
       "accountResets": 1,
       "cycleSummaries": 0,
       "latestCycleSummary": {
-        "id": "cycle-20260528112857",
+        "id": "cycle-20260529012858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-28T11:28:57.709Z",
-        "startedAt": "2026-05-28T06:28:58.872Z",
-        "finishedAt": "2026-05-28T11:28:59.576Z",
+        "generatedAt": "2026-05-29T01:28:58.117Z",
+        "startedAt": "2026-05-28T11:28:57.709Z",
+        "finishedAt": "2026-05-29T01:29:00.390Z",
         "runCount": 10,
         "runIds": [
-          "20260528112857",
-          "20260528105857",
-          "20260528102857",
-          "20260528095857",
-          "20260528092857",
-          "20260528085857",
-          "20260528082857",
-          "20260528072858",
-          "20260528065857",
-          "20260528062858"
+          "20260529012858",
+          "20260529005857",
+          "20260529002857",
+          "20260528235857",
+          "20260528232857",
+          "20260528225858",
+          "20260528125857",
+          "20260528122857",
+          "20260528115857",
+          "20260528112857"
         ],
         "rawSignalCount": 540,
         "tradeCount": 12,
         "buys": 8,
         "sells": 4,
-        "buyUsd": 1136,
+        "buyUsd": 1075.5,
         "realizedPnlUsd": 488,
-        "equityStartUsd": 3471.48,
-        "equityEndUsd": 3472.79,
-        "equityChangeUsd": 1.31,
+        "equityStartUsd": 3472.79,
+        "equityEndUsd": 3472.62,
+        "equityChangeUsd": -0.17,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 448
+            "count": 452
           },
           {
             "name": "amount < 500U",
-            "count": 39
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 20
+            "count": 47
           },
           {
             "name": "blacklisted source wallet: 9nP8di...wpE6",
             "count": 10
+          },
+          {
+            "name": "blacklisted source wallet: 9x2FKx...MrPg",
+            "count": 8
+          },
+          {
+            "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+            "count": 6
           }
         ],
         "mistakeCount": 0,
         "openPositionsBeforeReset": 3,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 410
+        "smartMoneyWatchlistCount": 442
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -8520,7 +8622,7 @@
           ]
         }
       ],
-      "smartMoneyWatchlistCount": 440,
+      "smartMoneyWatchlistCount": 442,
       "latestSmartMoneyWatchlist": [
         {
           "walletAddress": "0x2b969a5d35c000ca3efd791a54b9c766e3187ec7",
@@ -8529,9 +8631,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 122,
-          "highSoldRatioCount": 122,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 125,
+          "highSoldRatioCount": 125,
           "tokens": [
             {
               "token": "Red Doge",
@@ -8599,7 +8701,88 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 100%",
+            "watch only; sold ratio 83.06%",
+            "watch only; sold ratio 85.02%",
+            "watch only; sold ratio 82.78%",
+            "watch only; sold ratio 95.93%",
+            "watch only; sold ratio 95.81%",
+            "watch only; sold ratio 83.61%",
+            "watch only; sold ratio 80.04%",
+            "watch only; sold ratio 89%"
+          ]
+        },
+        {
+          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
+          "shortAddress": "0xf40f...a5e3",
+          "chain": "bsc",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 119,
+          "highSoldRatioCount": 119,
+          "tokens": [
+            {
+              "token": "时间银行",
+              "symbol": "时间银行",
+              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
+              "shortAddress": "0xb38b...7777",
+              "soldRatioPercent": 83.06,
+              "amountUsd": 1954.57
+            },
+            {
+              "token": "原来也是",
+              "symbol": "甜Go",
+              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
+              "shortAddress": "0x0e67...ffff",
+              "soldRatioPercent": 85.02,
+              "amountUsd": 259.76
+            },
+            {
+              "token": "何一是光源",
+              "symbol": "光源",
+              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
+              "shortAddress": "0x95d8...4444",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 2258.91
+            },
+            {
+              "token": "玩家何一",
+              "symbol": "玩家何一",
+              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
+              "shortAddress": "0xc72d...4444",
+              "soldRatioPercent": 83.61,
+              "amountUsd": 2235.64
+            },
+            {
+              "token": "MemeDAO",
+              "symbol": "MemeDAO",
+              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
+              "shortAddress": "0x2c6b...ffff",
+              "soldRatioPercent": 80.04,
+              "amountUsd": 536.74
+            },
+            {
+              "token": "首创双拉Mint发射台协议",
+              "symbol": "FlapGen",
+              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
+              "shortAddress": "0xe27b...7777",
+              "soldRatioPercent": 89,
+              "amountUsd": 773.68
+            },
+            {
+              "token": "提子",
+              "symbol": "提子",
+              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
+              "shortAddress": "0x86e5...4444",
+              "soldRatioPercent": 93.59,
+              "amountUsd": 404.14
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 81.01%",
             "watch only; sold ratio 83.06%",
             "watch only; sold ratio 85.02%",
             "watch only; sold ratio 82.78%",
@@ -8714,86 +8897,6 @@
             "watch only; sold ratio 95.81%",
             "watch only; sold ratio 83.61%",
             "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 93.59%"
-          ]
-        },
-        {
-          "walletAddress": "0xf40f1925aae3d4d86c8e6f41e16511e345a2a5e3",
-          "shortAddress": "0xf40f...a5e3",
-          "chain": "bsc",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
-          "tokens": [
-            {
-              "token": "时间银行",
-              "symbol": "时间银行",
-              "address": "0xb38b47d4eac984e48bb1566a855473e881cd7777",
-              "shortAddress": "0xb38b...7777",
-              "soldRatioPercent": 83.06,
-              "amountUsd": 1954.57
-            },
-            {
-              "token": "原来也是",
-              "symbol": "甜Go",
-              "address": "0x0e67a60db15de9096f328401d9cba29a1753ffff",
-              "shortAddress": "0x0e67...ffff",
-              "soldRatioPercent": 85.02,
-              "amountUsd": 259.76
-            },
-            {
-              "token": "何一是光源",
-              "symbol": "光源",
-              "address": "0x95d88f75d95db41928e8b51f361622a53c534444",
-              "shortAddress": "0x95d8...4444",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 2258.91
-            },
-            {
-              "token": "玩家何一",
-              "symbol": "玩家何一",
-              "address": "0xc72dcb26938d4dac6989d78cfa9650847dbd4444",
-              "shortAddress": "0xc72d...4444",
-              "soldRatioPercent": 83.61,
-              "amountUsd": 2235.64
-            },
-            {
-              "token": "MemeDAO",
-              "symbol": "MemeDAO",
-              "address": "0x2c6b660aee714c3e886a260558fffb6e2e20ffff",
-              "shortAddress": "0x2c6b...ffff",
-              "soldRatioPercent": 80.04,
-              "amountUsd": 536.74
-            },
-            {
-              "token": "首创双拉Mint发射台协议",
-              "symbol": "FlapGen",
-              "address": "0xe27b6b0521b7324b5a187bd0c401211e43ae7777",
-              "shortAddress": "0xe27b...7777",
-              "soldRatioPercent": 89,
-              "amountUsd": 773.68
-            },
-            {
-              "token": "提子",
-              "symbol": "提子",
-              "address": "0x86e5c85bd7b3232c5448535e0653f03883794444",
-              "shortAddress": "0x86e5...4444",
-              "soldRatioPercent": 93.59,
-              "amountUsd": 404.14
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 83.06%",
-            "watch only; sold ratio 85.02%",
-            "watch only; sold ratio 82.78%",
-            "watch only; sold ratio 95.93%",
-            "watch only; sold ratio 95.81%",
-            "watch only; sold ratio 83.61%",
-            "watch only; sold ratio 80.04%",
-            "watch only; sold ratio 89%",
             "watch only; sold ratio 93.59%"
           ]
         },
@@ -8963,8 +9066,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-29T00:28:57.928Z",
-          "occurrences": 20,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 21,
           "examples": [
             {
               "token": "Bloomer",
@@ -9016,8 +9119,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 1562,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 1594,
           "examples": [
             {
               "token": "Justice for Gosling",
@@ -9068,7 +9171,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "Take profit 101.35%; amount 1280.3U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1280.3U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -9081,8 +9184,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 722,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 735,
           "examples": [
             {
               "token": "Bloomer",
@@ -9146,8 +9249,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T00:58:57.922Z",
-          "occurrences": 208,
+          "lastSeenAt": "2026-05-29T01:28:58.117Z",
+          "occurrences": 212,
           "examples": [
             {
               "token": "aliens.gov",
