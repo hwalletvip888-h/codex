@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T01:59:00.297Z",
+  "generatedAt": "2026-05-29T02:28:58.770Z",
   "latest": {
     "date": "2026-05-29",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-29T01:59:00.292Z",
-    "runCount": 7,
+    "generatedAt": "2026-05-29T02:28:58.766Z",
+    "runCount": 8,
     "statuses": {
-      "ok": 7
+      "ok": 7,
+      "failed": 1
     },
     "rawSignalCount": 378,
     "decisionCount": 54,
@@ -42,8 +43,10 @@
         "count": 1
       }
     ],
-    "mistakeCount": 0,
-    "mistakeTypes": {},
+    "mistakeCount": 1,
+    "mistakeTypes": {
+      "REGION_RESTRICTED": 1
+    },
     "accountResets": 1,
     "cycleSummaries": 1,
     "latestCycleSummary": {
@@ -1123,28 +1126,28 @@
         ]
       },
       {
-        "key": "mistake:cli_error:global",
+        "key": "mistake:region_restricted:global",
         "title": "执行踩坑",
         "status": "流程问题",
         "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-        "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+        "reason": "API error (code=50125): Your API key or regions have no access to current services",
         "score": 0,
         "wins": 0,
         "losses": 0,
         "totalPnlUsd": 0,
         "example": {
-          "token": "CLI_ERROR",
+          "token": "REGION_RESTRICTED",
           "symbol": "global",
           "address": "",
           "shortAddress": "",
           "chain": "global"
         },
-        "firstSeenAt": "2026-05-25T23:52:10.605Z",
-        "lastSeenAt": "2026-05-25T23:52:10.605Z",
+        "firstSeenAt": "2026-05-29T02:28:58.078Z",
+        "lastSeenAt": "2026-05-29T02:28:58.078Z",
         "occurrences": 1,
         "examples": [
           {
-            "token": "CLI_ERROR",
+            "token": "REGION_RESTRICTED",
             "symbol": "global",
             "address": "",
             "shortAddress": "",
@@ -1476,6 +1479,40 @@
           "totalPnlUsd": -0.36,
           "totalPnlPct": -0.01
         }
+      },
+      {
+        "runId": "20260529022858",
+        "startedAt": "2026-05-29T02:28:58.078Z",
+        "finishedAt": "2026-05-29T02:28:58.478Z",
+        "status": "failed",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "REGION_RESTRICTED",
+            "chain": "",
+            "message": "API error (code=50125): Your API key or regions have no access to current services",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2878.9,
+          "openValueUsd": 120.74,
+          "equityUsd": 2999.64,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -0.36,
+          "totalPnlUsd": -0.36,
+          "totalPnlPct": -0.01
+        }
       }
     ]
   },
@@ -1483,10 +1520,11 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T01:59:00.292Z",
-      "runCount": 7,
+      "generatedAt": "2026-05-29T02:28:58.766Z",
+      "runCount": 8,
       "statuses": {
-        "ok": 7
+        "ok": 7,
+        "failed": 1
       },
       "rawSignalCount": 378,
       "decisionCount": 54,
@@ -1521,8 +1559,10 @@
           "count": 1
         }
       ],
-      "mistakeCount": 0,
-      "mistakeTypes": {},
+      "mistakeCount": 1,
+      "mistakeTypes": {
+        "REGION_RESTRICTED": 1
+      },
       "accountResets": 1,
       "cycleSummaries": 1,
       "latestCycleSummary": {
@@ -2602,28 +2642,28 @@
           ]
         },
         {
-          "key": "mistake:cli_error:global",
+          "key": "mistake:region_restricted:global",
           "title": "执行踩坑",
           "status": "流程问题",
           "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
           "score": 0,
           "wins": 0,
           "losses": 0,
           "totalPnlUsd": 0,
           "example": {
-            "token": "CLI_ERROR",
+            "token": "REGION_RESTRICTED",
             "symbol": "global",
             "address": "",
             "shortAddress": "",
             "chain": "global"
           },
-          "firstSeenAt": "2026-05-25T23:52:10.605Z",
-          "lastSeenAt": "2026-05-25T23:52:10.605Z",
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T02:28:58.078Z",
           "occurrences": 1,
           "examples": [
             {
-              "token": "CLI_ERROR",
+              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
@@ -2955,13 +2995,47 @@
             "totalPnlUsd": -0.36,
             "totalPnlPct": -0.01
           }
+        },
+        {
+          "runId": "20260529022858",
+          "startedAt": "2026-05-29T02:28:58.078Z",
+          "finishedAt": "2026-05-29T02:28:58.478Z",
+          "status": "failed",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "REGION_RESTRICTED",
+              "chain": "",
+              "message": "API error (code=50125): Your API key or regions have no access to current services",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2878.9,
+            "openValueUsd": 120.74,
+            "equityUsd": 2999.64,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -0.36,
+            "totalPnlUsd": -0.36,
+            "totalPnlPct": -0.01
+          }
         }
       ]
     },
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T01:59:00.292Z",
+      "generatedAt": "2026-05-29T02:28:58.766Z",
       "runCount": 33,
       "statuses": {
         "ok": 33
@@ -4059,28 +4133,28 @@
           ]
         },
         {
-          "key": "mistake:cli_error:global",
+          "key": "mistake:region_restricted:global",
           "title": "执行踩坑",
           "status": "流程问题",
           "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
           "score": 0,
           "wins": 0,
           "losses": 0,
           "totalPnlUsd": 0,
           "example": {
-            "token": "CLI_ERROR",
+            "token": "REGION_RESTRICTED",
             "symbol": "global",
             "address": "",
             "shortAddress": "",
             "chain": "global"
           },
-          "firstSeenAt": "2026-05-25T23:52:10.605Z",
-          "lastSeenAt": "2026-05-25T23:52:10.605Z",
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T02:28:58.078Z",
           "occurrences": 1,
           "examples": [
             {
-              "token": "CLI_ERROR",
+              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
@@ -5577,7 +5651,7 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T01:59:00.292Z",
+      "generatedAt": "2026-05-29T02:28:58.766Z",
       "runCount": 6,
       "statuses": {
         "ok": 5,
@@ -6678,28 +6752,28 @@
           ]
         },
         {
-          "key": "mistake:cli_error:global",
+          "key": "mistake:region_restricted:global",
           "title": "执行踩坑",
           "status": "流程问题",
           "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
           "score": 0,
           "wins": 0,
           "losses": 0,
           "totalPnlUsd": 0,
           "example": {
-            "token": "CLI_ERROR",
+            "token": "REGION_RESTRICTED",
             "symbol": "global",
             "address": "",
             "shortAddress": "",
             "chain": "global"
           },
-          "firstSeenAt": "2026-05-25T23:52:10.605Z",
-          "lastSeenAt": "2026-05-25T23:52:10.605Z",
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T02:28:58.078Z",
           "occurrences": 1,
           "examples": [
             {
-              "token": "CLI_ERROR",
+              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
@@ -6958,7 +7032,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T01:59:00.293Z",
+      "generatedAt": "2026-05-29T02:28:58.766Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -8060,28 +8134,28 @@
           ]
         },
         {
-          "key": "mistake:cli_error:global",
+          "key": "mistake:region_restricted:global",
           "title": "执行踩坑",
           "status": "流程问题",
           "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
           "score": 0,
           "wins": 0,
           "losses": 0,
           "totalPnlUsd": 0,
           "example": {
-            "token": "CLI_ERROR",
+            "token": "REGION_RESTRICTED",
             "symbol": "global",
             "address": "",
             "shortAddress": "",
             "chain": "global"
           },
-          "firstSeenAt": "2026-05-25T23:52:10.605Z",
-          "lastSeenAt": "2026-05-25T23:52:10.605Z",
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T02:28:58.078Z",
           "occurrences": 1,
           "examples": [
             {
-              "token": "CLI_ERROR",
+              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
@@ -8545,7 +8619,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T01:59:00.293Z",
+      "generatedAt": "2026-05-29T02:28:58.767Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -9647,28 +9721,28 @@
           ]
         },
         {
-          "key": "mistake:cli_error:global",
+          "key": "mistake:region_restricted:global",
           "title": "执行踩坑",
           "status": "流程问题",
           "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
           "score": 0,
           "wins": 0,
           "losses": 0,
           "totalPnlUsd": 0,
           "example": {
-            "token": "CLI_ERROR",
+            "token": "REGION_RESTRICTED",
             "symbol": "global",
             "address": "",
             "shortAddress": "",
             "chain": "global"
           },
-          "firstSeenAt": "2026-05-25T23:52:10.605Z",
-          "lastSeenAt": "2026-05-25T23:52:10.605Z",
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T02:28:58.078Z",
           "occurrences": 1,
           "examples": [
             {
-              "token": "CLI_ERROR",
+              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
