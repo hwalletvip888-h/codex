@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T02:58:58.999Z",
+  "generatedAt": "2026-05-29T03:28:58.914Z",
   "latest": {
     "date": "2026-05-29",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-29T02:58:58.994Z",
-    "runCount": 9,
+    "generatedAt": "2026-05-29T03:28:58.910Z",
+    "runCount": 10,
     "statuses": {
       "ok": 7,
-      "failed": 2
+      "failed": 3
     },
     "rawSignalCount": 378,
     "decisionCount": 54,
@@ -43,9 +43,9 @@
         "count": 1
       }
     ],
-    "mistakeCount": 2,
+    "mistakeCount": 3,
     "mistakeTypes": {
-      "REGION_RESTRICTED": 2
+      "REGION_RESTRICTED": 3
     },
     "accountResets": 1,
     "cycleSummaries": 1,
@@ -1053,8 +1053,8 @@
           "chain": "global"
         },
         "firstSeenAt": "2026-05-29T02:28:58.078Z",
-        "lastSeenAt": "2026-05-29T02:58:58.295Z",
-        "occurrences": 2,
+        "lastSeenAt": "2026-05-29T03:28:57.921Z",
+        "occurrences": 3,
         "examples": [
           {
             "token": "REGION_RESTRICTED",
@@ -1547,6 +1547,40 @@
           "totalPnlUsd": -0.36,
           "totalPnlPct": -0.01
         }
+      },
+      {
+        "runId": "20260529032857",
+        "startedAt": "2026-05-29T03:28:57.921Z",
+        "finishedAt": "2026-05-29T03:28:58.638Z",
+        "status": "failed",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "REGION_RESTRICTED",
+            "chain": "",
+            "message": "API error (code=50125): Your API key or regions have no access to current services",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2878.9,
+          "openValueUsd": 120.74,
+          "equityUsd": 2999.64,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -0.36,
+          "totalPnlUsd": -0.36,
+          "totalPnlPct": -0.01
+        }
       }
     ]
   },
@@ -1554,11 +1588,11 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T02:58:58.994Z",
-      "runCount": 9,
+      "generatedAt": "2026-05-29T03:28:58.910Z",
+      "runCount": 10,
       "statuses": {
         "ok": 7,
-        "failed": 2
+        "failed": 3
       },
       "rawSignalCount": 378,
       "decisionCount": 54,
@@ -1593,9 +1627,9 @@
           "count": 1
         }
       ],
-      "mistakeCount": 2,
+      "mistakeCount": 3,
       "mistakeTypes": {
-        "REGION_RESTRICTED": 2
+        "REGION_RESTRICTED": 3
       },
       "accountResets": 1,
       "cycleSummaries": 1,
@@ -2603,8 +2637,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T02:58:58.295Z",
-          "occurrences": 2,
+          "lastSeenAt": "2026-05-29T03:28:57.921Z",
+          "occurrences": 3,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
@@ -3097,13 +3131,47 @@
             "totalPnlUsd": -0.36,
             "totalPnlPct": -0.01
           }
+        },
+        {
+          "runId": "20260529032857",
+          "startedAt": "2026-05-29T03:28:57.921Z",
+          "finishedAt": "2026-05-29T03:28:58.638Z",
+          "status": "failed",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "REGION_RESTRICTED",
+              "chain": "",
+              "message": "API error (code=50125): Your API key or regions have no access to current services",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2878.9,
+            "openValueUsd": 120.74,
+            "equityUsd": 2999.64,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -0.36,
+            "totalPnlUsd": -0.36,
+            "totalPnlPct": -0.01
+          }
         }
       ]
     },
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T02:58:58.995Z",
+      "generatedAt": "2026-05-29T03:28:58.910Z",
       "runCount": 33,
       "statuses": {
         "ok": 33
@@ -4128,8 +4196,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T02:58:58.295Z",
-          "occurrences": 2,
+          "lastSeenAt": "2026-05-29T03:28:57.921Z",
+          "occurrences": 3,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
@@ -5719,7 +5787,7 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T02:58:58.995Z",
+      "generatedAt": "2026-05-29T03:28:58.911Z",
       "runCount": 6,
       "statuses": {
         "ok": 5,
@@ -6747,8 +6815,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T02:58:58.295Z",
-          "occurrences": 2,
+          "lastSeenAt": "2026-05-29T03:28:57.921Z",
+          "occurrences": 3,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
@@ -7100,7 +7168,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T02:58:58.995Z",
+      "generatedAt": "2026-05-29T03:28:58.911Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -8129,8 +8197,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T02:58:58.295Z",
-          "occurrences": 2,
+          "lastSeenAt": "2026-05-29T03:28:57.921Z",
+          "occurrences": 3,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
@@ -8687,7 +8755,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T02:58:58.996Z",
+      "generatedAt": "2026-05-29T03:28:58.911Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -9716,8 +9784,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T02:58:58.295Z",
-          "occurrences": 2,
+          "lastSeenAt": "2026-05-29T03:28:57.921Z",
+          "occurrences": 3,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
