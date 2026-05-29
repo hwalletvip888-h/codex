@@ -1,10 +1,73 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T05:28:58.626Z",
+  "generatedAt": "2026-05-29T05:58:58.836Z",
   "source": "docs/data/signal-paper.json",
-  "totalRuns": 82,
-  "latestRunId": "20260529052857",
+  "totalRuns": 83,
+  "latestRunId": "20260529055858",
   "entries": [
+    {
+      "runId": "20260529055858",
+      "startedAt": "2026-05-29T05:58:58.113Z",
+      "finishedAt": "2026-05-29T05:58:58.563Z",
+      "status": "failed",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "REGION_RESTRICTED",
+          "chain": "",
+          "message": "API error (code=50125): Your API key or regions have no access to current services",
+          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+        }
+      ],
+      "notes": [
+        "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
+      ],
+      "chainResults": [],
+      "accountReset": {
+        "timestamp": "2026-05-29T05:58:58.113Z",
+        "runId": "20260529055858",
+        "reason": "completed_cycle_reset",
+        "cycleSummaryId": "cycle-20260529055858",
+        "previousSession": {
+          "id": "20260529012858-cycle",
+          "startedAt": "2026-05-29T01:28:58.117Z",
+          "lastAuthOkAt": "2026-05-29T01:58:57.991Z",
+          "lastAuthFailureAt": "",
+          "authState": "online",
+          "authRecoveries": 3,
+          "resetReason": "completed_cycle_reset"
+        },
+        "previousCapital": {
+          "initialUsd": 3000,
+          "cashUsd": 2878.9,
+          "openValueUsd": 120.74,
+          "equityUsd": 2999.64,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -0.36,
+          "totalPnlUsd": -0.36,
+          "totalPnlPct": -0.01
+        },
+        "previousOpenPositions": 1,
+        "previousTrades": 1,
+        "previousDecisions": 54
+      },
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2878.9,
+        "openValueUsd": 120.74,
+        "equityUsd": 2999.64,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": -0.36,
+        "totalPnlUsd": -0.36,
+        "totalPnlPct": -0.01
+      }
+    },
     {
       "runId": "20260529052857",
       "startedAt": "2026-05-29T05:28:57.950Z",

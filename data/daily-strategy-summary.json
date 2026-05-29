@@ -1,108 +1,83 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T05:28:58.631Z",
+  "generatedAt": "2026-05-29T05:58:58.840Z",
   "latest": {
     "date": "2026-05-29",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-29T05:28:58.625Z",
-    "runCount": 14,
+    "generatedAt": "2026-05-29T05:58:58.835Z",
+    "runCount": 15,
     "statuses": {
-      "ok": 7,
-      "failed": 7
+      "failed": 8,
+      "ok": 7
     },
     "rawSignalCount": 378,
-    "decisionCount": 54,
-    "actions": {
-      "IGNORE": 37,
-      "WATCH": 16,
-      "BUY": 1
-    },
-    "tradeCount": 1,
-    "buys": 1,
+    "decisionCount": 0,
+    "actions": {},
+    "tradeCount": 0,
+    "buys": 0,
     "sells": 0,
-    "buyUsd": 121.1,
+    "buyUsd": 0,
     "realizedPnlUsd": 0,
     "equityStartUsd": 3242.95,
     "equityEndUsd": 2999.64,
     "equityChangeUsd": -243.31,
-    "topBlockers": [
-      {
-        "name": "sold ratio > 35%",
-        "count": 47
-      },
-      {
-        "name": "amount < 500U",
-        "count": 6
-      },
-      {
-        "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-        "count": 1
-      },
-      {
-        "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 1
-      }
-    ],
-    "mistakeCount": 7,
+    "topBlockers": [],
+    "mistakeCount": 8,
     "mistakeTypes": {
-      "REGION_RESTRICTED": 7
+      "REGION_RESTRICTED": 8
     },
-    "accountResets": 1,
-    "cycleSummaries": 1,
+    "accountResets": 2,
+    "cycleSummaries": 2,
     "latestCycleSummary": {
-      "id": "cycle-20260529012858",
+      "id": "cycle-20260529055858",
       "reason": "completed_10_run_cycle",
-      "generatedAt": "2026-05-29T01:28:58.117Z",
-      "startedAt": "2026-05-28T11:28:57.709Z",
-      "finishedAt": "2026-05-29T01:29:00.390Z",
+      "generatedAt": "2026-05-29T05:58:58.113Z",
+      "startedAt": "2026-05-29T01:28:58.117Z",
+      "finishedAt": "2026-05-29T05:58:58.563Z",
       "runCount": 10,
       "runIds": [
-        "20260529012858",
-        "20260529005857",
-        "20260529002857",
-        "20260528235857",
-        "20260528232857",
-        "20260528225858",
-        "20260528125857",
-        "20260528122857",
-        "20260528115857",
-        "20260528112857"
+        "20260529055858",
+        "20260529052857",
+        "20260529045858",
+        "20260529042857",
+        "20260529035858",
+        "20260529032857",
+        "20260529025858",
+        "20260529022858",
+        "20260529015857",
+        "20260529012858"
       ],
-      "rawSignalCount": 540,
-      "tradeCount": 12,
-      "buys": 8,
-      "sells": 4,
-      "buyUsd": 1075.5,
-      "realizedPnlUsd": 488,
-      "equityStartUsd": 3472.79,
-      "equityEndUsd": 3472.62,
-      "equityChangeUsd": -0.17,
+      "rawSignalCount": 108,
+      "tradeCount": 2,
+      "buys": 2,
+      "sells": 0,
+      "buyUsd": 242.2,
+      "realizedPnlUsd": 0,
+      "equityStartUsd": 3472.62,
+      "equityEndUsd": 2999.64,
+      "equityChangeUsd": -472.98,
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 452
+          "count": 93
         },
         {
           "name": "amount < 500U",
-          "count": 47
-        },
-        {
-          "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 10
-        },
-        {
-          "name": "blacklisted source wallet: 9x2FKx...MrPg",
-          "count": 8
+          "count": 12
         },
         {
           "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-          "count": 6
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: 9nP8di...wpE6",
+          "count": 2
         }
       ],
-      "mistakeCount": 0,
-      "openPositionsBeforeReset": 3,
+      "mistakeCount": 8,
+      "openPositionsBeforeReset": 1,
       "walletBlacklistCount": 7,
-      "smartMoneyWatchlistCount": 442
+      "smartMoneyWatchlistCount": 443
     },
     "walletBlacklistCount": 7,
     "latestBlacklistedWallets": [
@@ -1023,8 +998,8 @@
           "chain": "global"
         },
         "firstSeenAt": "2026-05-29T02:28:58.078Z",
-        "lastSeenAt": "2026-05-29T05:28:57.950Z",
-        "occurrences": 7,
+        "lastSeenAt": "2026-05-29T05:58:58.113Z",
+        "occurrences": 8,
         "examples": [
           {
             "token": "REGION_RESTRICTED",
@@ -1717,6 +1692,69 @@
           "totalPnlUsd": -0.36,
           "totalPnlPct": -0.01
         }
+      },
+      {
+        "runId": "20260529055858",
+        "startedAt": "2026-05-29T05:58:58.113Z",
+        "finishedAt": "2026-05-29T05:58:58.563Z",
+        "status": "failed",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "REGION_RESTRICTED",
+            "chain": "",
+            "message": "API error (code=50125): Your API key or regions have no access to current services",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [
+          "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
+        ],
+        "chainResults": [],
+        "accountReset": {
+          "timestamp": "2026-05-29T05:58:58.113Z",
+          "runId": "20260529055858",
+          "reason": "completed_cycle_reset",
+          "cycleSummaryId": "cycle-20260529055858",
+          "previousSession": {
+            "id": "20260529012858-cycle",
+            "startedAt": "2026-05-29T01:28:58.117Z",
+            "lastAuthOkAt": "2026-05-29T01:58:57.991Z",
+            "lastAuthFailureAt": "",
+            "authState": "online",
+            "authRecoveries": 3,
+            "resetReason": "completed_cycle_reset"
+          },
+          "previousCapital": {
+            "initialUsd": 3000,
+            "cashUsd": 2878.9,
+            "openValueUsd": 120.74,
+            "equityUsd": 2999.64,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -0.36,
+            "totalPnlUsd": -0.36,
+            "totalPnlPct": -0.01
+          },
+          "previousOpenPositions": 1,
+          "previousTrades": 1,
+          "previousDecisions": 54
+        },
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2878.9,
+          "openValueUsd": 120.74,
+          "equityUsd": 2999.64,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -0.36,
+          "totalPnlUsd": -0.36,
+          "totalPnlPct": -0.01
+        }
       }
     ]
   },
@@ -1724,105 +1762,80 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T05:28:58.625Z",
-      "runCount": 14,
+      "generatedAt": "2026-05-29T05:58:58.835Z",
+      "runCount": 15,
       "statuses": {
-        "ok": 7,
-        "failed": 7
+        "failed": 8,
+        "ok": 7
       },
       "rawSignalCount": 378,
-      "decisionCount": 54,
-      "actions": {
-        "IGNORE": 37,
-        "WATCH": 16,
-        "BUY": 1
-      },
-      "tradeCount": 1,
-      "buys": 1,
+      "decisionCount": 0,
+      "actions": {},
+      "tradeCount": 0,
+      "buys": 0,
       "sells": 0,
-      "buyUsd": 121.1,
+      "buyUsd": 0,
       "realizedPnlUsd": 0,
       "equityStartUsd": 3242.95,
       "equityEndUsd": 2999.64,
       "equityChangeUsd": -243.31,
-      "topBlockers": [
-        {
-          "name": "sold ratio > 35%",
-          "count": 47
-        },
-        {
-          "name": "amount < 500U",
-          "count": 6
-        },
-        {
-          "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-          "count": 1
-        },
-        {
-          "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 1
-        }
-      ],
-      "mistakeCount": 7,
+      "topBlockers": [],
+      "mistakeCount": 8,
       "mistakeTypes": {
-        "REGION_RESTRICTED": 7
+        "REGION_RESTRICTED": 8
       },
-      "accountResets": 1,
-      "cycleSummaries": 1,
+      "accountResets": 2,
+      "cycleSummaries": 2,
       "latestCycleSummary": {
-        "id": "cycle-20260529012858",
+        "id": "cycle-20260529055858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-29T01:28:58.117Z",
-        "startedAt": "2026-05-28T11:28:57.709Z",
-        "finishedAt": "2026-05-29T01:29:00.390Z",
+        "generatedAt": "2026-05-29T05:58:58.113Z",
+        "startedAt": "2026-05-29T01:28:58.117Z",
+        "finishedAt": "2026-05-29T05:58:58.563Z",
         "runCount": 10,
         "runIds": [
-          "20260529012858",
-          "20260529005857",
-          "20260529002857",
-          "20260528235857",
-          "20260528232857",
-          "20260528225858",
-          "20260528125857",
-          "20260528122857",
-          "20260528115857",
-          "20260528112857"
+          "20260529055858",
+          "20260529052857",
+          "20260529045858",
+          "20260529042857",
+          "20260529035858",
+          "20260529032857",
+          "20260529025858",
+          "20260529022858",
+          "20260529015857",
+          "20260529012858"
         ],
-        "rawSignalCount": 540,
-        "tradeCount": 12,
-        "buys": 8,
-        "sells": 4,
-        "buyUsd": 1075.5,
-        "realizedPnlUsd": 488,
-        "equityStartUsd": 3472.79,
-        "equityEndUsd": 3472.62,
-        "equityChangeUsd": -0.17,
+        "rawSignalCount": 108,
+        "tradeCount": 2,
+        "buys": 2,
+        "sells": 0,
+        "buyUsd": 242.2,
+        "realizedPnlUsd": 0,
+        "equityStartUsd": 3472.62,
+        "equityEndUsd": 2999.64,
+        "equityChangeUsd": -472.98,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 452
+            "count": 93
           },
           {
             "name": "amount < 500U",
-            "count": 47
-          },
-          {
-            "name": "blacklisted source wallet: 9nP8di...wpE6",
-            "count": 10
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 8
+            "count": 12
           },
           {
             "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-            "count": 6
+            "count": 2
+          },
+          {
+            "name": "blacklisted source wallet: 9nP8di...wpE6",
+            "count": 2
           }
         ],
-        "mistakeCount": 0,
-        "openPositionsBeforeReset": 3,
+        "mistakeCount": 8,
+        "openPositionsBeforeReset": 1,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 442
+        "smartMoneyWatchlistCount": 443
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -2743,8 +2756,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T05:28:57.950Z",
-          "occurrences": 7,
+          "lastSeenAt": "2026-05-29T05:58:58.113Z",
+          "occurrences": 8,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
@@ -3437,13 +3450,76 @@
             "totalPnlUsd": -0.36,
             "totalPnlPct": -0.01
           }
+        },
+        {
+          "runId": "20260529055858",
+          "startedAt": "2026-05-29T05:58:58.113Z",
+          "finishedAt": "2026-05-29T05:58:58.563Z",
+          "status": "failed",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "REGION_RESTRICTED",
+              "chain": "",
+              "message": "API error (code=50125): Your API key or regions have no access to current services",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [
+            "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
+          ],
+          "chainResults": [],
+          "accountReset": {
+            "timestamp": "2026-05-29T05:58:58.113Z",
+            "runId": "20260529055858",
+            "reason": "completed_cycle_reset",
+            "cycleSummaryId": "cycle-20260529055858",
+            "previousSession": {
+              "id": "20260529012858-cycle",
+              "startedAt": "2026-05-29T01:28:58.117Z",
+              "lastAuthOkAt": "2026-05-29T01:58:57.991Z",
+              "lastAuthFailureAt": "",
+              "authState": "online",
+              "authRecoveries": 3,
+              "resetReason": "completed_cycle_reset"
+            },
+            "previousCapital": {
+              "initialUsd": 3000,
+              "cashUsd": 2878.9,
+              "openValueUsd": 120.74,
+              "equityUsd": 2999.64,
+              "realizedPnlUsd": 0,
+              "unrealizedPnlUsd": -0.36,
+              "totalPnlUsd": -0.36,
+              "totalPnlPct": -0.01
+            },
+            "previousOpenPositions": 1,
+            "previousTrades": 1,
+            "previousDecisions": 54
+          },
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2878.9,
+            "openValueUsd": 120.74,
+            "equityUsd": 2999.64,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -0.36,
+            "totalPnlUsd": -0.36,
+            "totalPnlPct": -0.01
+          }
         }
       ]
     },
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T05:28:58.626Z",
+      "generatedAt": "2026-05-29T05:58:58.836Z",
       "runCount": 33,
       "statuses": {
         "ok": 33
@@ -3465,59 +3541,55 @@
       "accountResets": 3,
       "cycleSummaries": 3,
       "latestCycleSummary": {
-        "id": "cycle-20260529012858",
+        "id": "cycle-20260529055858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-29T01:28:58.117Z",
-        "startedAt": "2026-05-28T11:28:57.709Z",
-        "finishedAt": "2026-05-29T01:29:00.390Z",
+        "generatedAt": "2026-05-29T05:58:58.113Z",
+        "startedAt": "2026-05-29T01:28:58.117Z",
+        "finishedAt": "2026-05-29T05:58:58.563Z",
         "runCount": 10,
         "runIds": [
-          "20260529012858",
-          "20260529005857",
-          "20260529002857",
-          "20260528235857",
-          "20260528232857",
-          "20260528225858",
-          "20260528125857",
-          "20260528122857",
-          "20260528115857",
-          "20260528112857"
+          "20260529055858",
+          "20260529052857",
+          "20260529045858",
+          "20260529042857",
+          "20260529035858",
+          "20260529032857",
+          "20260529025858",
+          "20260529022858",
+          "20260529015857",
+          "20260529012858"
         ],
-        "rawSignalCount": 540,
-        "tradeCount": 12,
-        "buys": 8,
-        "sells": 4,
-        "buyUsd": 1075.5,
-        "realizedPnlUsd": 488,
-        "equityStartUsd": 3472.79,
-        "equityEndUsd": 3472.62,
-        "equityChangeUsd": -0.17,
+        "rawSignalCount": 108,
+        "tradeCount": 2,
+        "buys": 2,
+        "sells": 0,
+        "buyUsd": 242.2,
+        "realizedPnlUsd": 0,
+        "equityStartUsd": 3472.62,
+        "equityEndUsd": 2999.64,
+        "equityChangeUsd": -472.98,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 452
+            "count": 93
           },
           {
             "name": "amount < 500U",
-            "count": 47
-          },
-          {
-            "name": "blacklisted source wallet: 9nP8di...wpE6",
-            "count": 10
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 8
+            "count": 12
           },
           {
             "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-            "count": 6
+            "count": 2
+          },
+          {
+            "name": "blacklisted source wallet: 9nP8di...wpE6",
+            "count": 2
           }
         ],
-        "mistakeCount": 0,
-        "openPositionsBeforeReset": 3,
+        "mistakeCount": 8,
+        "openPositionsBeforeReset": 1,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 442
+        "smartMoneyWatchlistCount": 443
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -4438,8 +4510,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T05:28:57.950Z",
-          "occurrences": 7,
+          "lastSeenAt": "2026-05-29T05:58:58.113Z",
+          "occurrences": 8,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
@@ -6059,7 +6131,7 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T05:28:58.626Z",
+      "generatedAt": "2026-05-29T05:58:58.836Z",
       "runCount": 6,
       "statuses": {
         "ok": 5,
@@ -6084,59 +6156,55 @@
       "accountResets": 0,
       "cycleSummaries": 0,
       "latestCycleSummary": {
-        "id": "cycle-20260529012858",
+        "id": "cycle-20260529055858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-29T01:28:58.117Z",
-        "startedAt": "2026-05-28T11:28:57.709Z",
-        "finishedAt": "2026-05-29T01:29:00.390Z",
+        "generatedAt": "2026-05-29T05:58:58.113Z",
+        "startedAt": "2026-05-29T01:28:58.117Z",
+        "finishedAt": "2026-05-29T05:58:58.563Z",
         "runCount": 10,
         "runIds": [
-          "20260529012858",
-          "20260529005857",
-          "20260529002857",
-          "20260528235857",
-          "20260528232857",
-          "20260528225858",
-          "20260528125857",
-          "20260528122857",
-          "20260528115857",
-          "20260528112857"
+          "20260529055858",
+          "20260529052857",
+          "20260529045858",
+          "20260529042857",
+          "20260529035858",
+          "20260529032857",
+          "20260529025858",
+          "20260529022858",
+          "20260529015857",
+          "20260529012858"
         ],
-        "rawSignalCount": 540,
-        "tradeCount": 12,
-        "buys": 8,
-        "sells": 4,
-        "buyUsd": 1075.5,
-        "realizedPnlUsd": 488,
-        "equityStartUsd": 3472.79,
-        "equityEndUsd": 3472.62,
-        "equityChangeUsd": -0.17,
+        "rawSignalCount": 108,
+        "tradeCount": 2,
+        "buys": 2,
+        "sells": 0,
+        "buyUsd": 242.2,
+        "realizedPnlUsd": 0,
+        "equityStartUsd": 3472.62,
+        "equityEndUsd": 2999.64,
+        "equityChangeUsd": -472.98,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 452
+            "count": 93
           },
           {
             "name": "amount < 500U",
-            "count": 47
-          },
-          {
-            "name": "blacklisted source wallet: 9nP8di...wpE6",
-            "count": 10
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 8
+            "count": 12
           },
           {
             "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-            "count": 6
+            "count": 2
+          },
+          {
+            "name": "blacklisted source wallet: 9nP8di...wpE6",
+            "count": 2
           }
         ],
-        "mistakeCount": 0,
-        "openPositionsBeforeReset": 3,
+        "mistakeCount": 8,
+        "openPositionsBeforeReset": 1,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 442
+        "smartMoneyWatchlistCount": 443
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -7057,8 +7125,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T05:28:57.950Z",
-          "occurrences": 7,
+          "lastSeenAt": "2026-05-29T05:58:58.113Z",
+          "occurrences": 8,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
@@ -7440,7 +7508,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T05:28:58.626Z",
+      "generatedAt": "2026-05-29T05:58:58.836Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -7466,59 +7534,55 @@
       "accountResets": 3,
       "cycleSummaries": 0,
       "latestCycleSummary": {
-        "id": "cycle-20260529012858",
+        "id": "cycle-20260529055858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-29T01:28:58.117Z",
-        "startedAt": "2026-05-28T11:28:57.709Z",
-        "finishedAt": "2026-05-29T01:29:00.390Z",
+        "generatedAt": "2026-05-29T05:58:58.113Z",
+        "startedAt": "2026-05-29T01:28:58.117Z",
+        "finishedAt": "2026-05-29T05:58:58.563Z",
         "runCount": 10,
         "runIds": [
-          "20260529012858",
-          "20260529005857",
-          "20260529002857",
-          "20260528235857",
-          "20260528232857",
-          "20260528225858",
-          "20260528125857",
-          "20260528122857",
-          "20260528115857",
-          "20260528112857"
+          "20260529055858",
+          "20260529052857",
+          "20260529045858",
+          "20260529042857",
+          "20260529035858",
+          "20260529032857",
+          "20260529025858",
+          "20260529022858",
+          "20260529015857",
+          "20260529012858"
         ],
-        "rawSignalCount": 540,
-        "tradeCount": 12,
-        "buys": 8,
-        "sells": 4,
-        "buyUsd": 1075.5,
-        "realizedPnlUsd": 488,
-        "equityStartUsd": 3472.79,
-        "equityEndUsd": 3472.62,
-        "equityChangeUsd": -0.17,
+        "rawSignalCount": 108,
+        "tradeCount": 2,
+        "buys": 2,
+        "sells": 0,
+        "buyUsd": 242.2,
+        "realizedPnlUsd": 0,
+        "equityStartUsd": 3472.62,
+        "equityEndUsd": 2999.64,
+        "equityChangeUsd": -472.98,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 452
+            "count": 93
           },
           {
             "name": "amount < 500U",
-            "count": 47
-          },
-          {
-            "name": "blacklisted source wallet: 9nP8di...wpE6",
-            "count": 10
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 8
+            "count": 12
           },
           {
             "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-            "count": 6
+            "count": 2
+          },
+          {
+            "name": "blacklisted source wallet: 9nP8di...wpE6",
+            "count": 2
           }
         ],
-        "mistakeCount": 0,
-        "openPositionsBeforeReset": 3,
+        "mistakeCount": 8,
+        "openPositionsBeforeReset": 1,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 442
+        "smartMoneyWatchlistCount": 443
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -8439,8 +8503,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T05:28:57.950Z",
-          "occurrences": 7,
+          "lastSeenAt": "2026-05-29T05:58:58.113Z",
+          "occurrences": 8,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
@@ -9027,7 +9091,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T05:28:58.626Z",
+      "generatedAt": "2026-05-29T05:58:58.836Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -9041,9 +9105,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 2999.64,
+      "equityStartUsd": 3000,
       "equityEndUsd": 3152.63,
-      "equityChangeUsd": 152.99,
+      "equityChangeUsd": 152.63,
       "topBlockers": [],
       "mistakeCount": 10,
       "mistakeTypes": {
@@ -9053,59 +9117,55 @@
       "accountResets": 1,
       "cycleSummaries": 0,
       "latestCycleSummary": {
-        "id": "cycle-20260529012858",
+        "id": "cycle-20260529055858",
         "reason": "completed_10_run_cycle",
-        "generatedAt": "2026-05-29T01:28:58.117Z",
-        "startedAt": "2026-05-28T11:28:57.709Z",
-        "finishedAt": "2026-05-29T01:29:00.390Z",
+        "generatedAt": "2026-05-29T05:58:58.113Z",
+        "startedAt": "2026-05-29T01:28:58.117Z",
+        "finishedAt": "2026-05-29T05:58:58.563Z",
         "runCount": 10,
         "runIds": [
-          "20260529012858",
-          "20260529005857",
-          "20260529002857",
-          "20260528235857",
-          "20260528232857",
-          "20260528225858",
-          "20260528125857",
-          "20260528122857",
-          "20260528115857",
-          "20260528112857"
+          "20260529055858",
+          "20260529052857",
+          "20260529045858",
+          "20260529042857",
+          "20260529035858",
+          "20260529032857",
+          "20260529025858",
+          "20260529022858",
+          "20260529015857",
+          "20260529012858"
         ],
-        "rawSignalCount": 540,
-        "tradeCount": 12,
-        "buys": 8,
-        "sells": 4,
-        "buyUsd": 1075.5,
-        "realizedPnlUsd": 488,
-        "equityStartUsd": 3472.79,
-        "equityEndUsd": 3472.62,
-        "equityChangeUsd": -0.17,
+        "rawSignalCount": 108,
+        "tradeCount": 2,
+        "buys": 2,
+        "sells": 0,
+        "buyUsd": 242.2,
+        "realizedPnlUsd": 0,
+        "equityStartUsd": 3472.62,
+        "equityEndUsd": 2999.64,
+        "equityChangeUsd": -472.98,
         "topBlockers": [
           {
             "name": "sold ratio > 35%",
-            "count": 452
+            "count": 93
           },
           {
             "name": "amount < 500U",
-            "count": 47
-          },
-          {
-            "name": "blacklisted source wallet: 9nP8di...wpE6",
-            "count": 10
-          },
-          {
-            "name": "blacklisted source wallet: 9x2FKx...MrPg",
-            "count": 8
+            "count": 12
           },
           {
             "name": "blacklisted source wallet: 4hAwSV...pFmJ",
-            "count": 6
+            "count": 2
+          },
+          {
+            "name": "blacklisted source wallet: 9nP8di...wpE6",
+            "count": 2
           }
         ],
-        "mistakeCount": 0,
-        "openPositionsBeforeReset": 3,
+        "mistakeCount": 8,
+        "openPositionsBeforeReset": 1,
         "walletBlacklistCount": 7,
-        "smartMoneyWatchlistCount": 442
+        "smartMoneyWatchlistCount": 443
       },
       "walletBlacklistCount": 7,
       "latestBlacklistedWallets": [
@@ -10026,8 +10086,8 @@
             "chain": "global"
           },
           "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T05:28:57.950Z",
-          "occurrences": 7,
+          "lastSeenAt": "2026-05-29T05:58:58.113Z",
+          "occurrences": 8,
           "examples": [
             {
               "token": "REGION_RESTRICTED",
