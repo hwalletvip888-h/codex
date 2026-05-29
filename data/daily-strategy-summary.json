@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T04:28:58.610Z",
+  "generatedAt": "2026-05-29T04:58:58.792Z",
   "latest": {
     "date": "2026-05-29",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-29T04:28:58.605Z",
-    "runCount": 12,
+    "generatedAt": "2026-05-29T04:58:58.787Z",
+    "runCount": 13,
     "statuses": {
       "ok": 7,
-      "failed": 5
+      "failed": 6
     },
     "rawSignalCount": 378,
     "decisionCount": 54,
@@ -43,9 +43,9 @@
         "count": 1
       }
     ],
-    "mistakeCount": 5,
+    "mistakeCount": 6,
     "mistakeTypes": {
-      "REGION_RESTRICTED": 5
+      "REGION_RESTRICTED": 6
     },
     "accountResets": 1,
     "cycleSummaries": 1,
@@ -1006,6 +1006,36 @@
     ],
     "lessons": [
       {
+        "key": "mistake:region_restricted:global",
+        "title": "执行踩坑",
+        "status": "流程问题",
+        "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+        "reason": "API error (code=50125): Your API key or regions have no access to current services",
+        "score": 0,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "REGION_RESTRICTED",
+          "symbol": "global",
+          "address": "",
+          "shortAddress": "",
+          "chain": "global"
+        },
+        "firstSeenAt": "2026-05-29T02:28:58.078Z",
+        "lastSeenAt": "2026-05-29T04:58:58.079Z",
+        "occurrences": 6,
+        "examples": [
+          {
+            "token": "REGION_RESTRICTED",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          }
+        ]
+      },
+      {
         "key": "mistake:auth_invalid:global",
         "title": "执行踩坑",
         "status": "流程问题",
@@ -1028,36 +1058,6 @@
         "examples": [
           {
             "token": "AUTH_INVALID",
-            "symbol": "global",
-            "address": "",
-            "shortAddress": "",
-            "chain": "global"
-          }
-        ]
-      },
-      {
-        "key": "mistake:region_restricted:global",
-        "title": "执行踩坑",
-        "status": "流程问题",
-        "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-        "reason": "API error (code=50125): Your API key or regions have no access to current services",
-        "score": 0,
-        "wins": 0,
-        "losses": 0,
-        "totalPnlUsd": 0,
-        "example": {
-          "token": "REGION_RESTRICTED",
-          "symbol": "global",
-          "address": "",
-          "shortAddress": "",
-          "chain": "global"
-        },
-        "firstSeenAt": "2026-05-29T02:28:58.078Z",
-        "lastSeenAt": "2026-05-29T04:28:57.959Z",
-        "occurrences": 5,
-        "examples": [
-          {
-            "token": "REGION_RESTRICTED",
             "symbol": "global",
             "address": "",
             "shortAddress": "",
@@ -1649,6 +1649,40 @@
           "totalPnlUsd": -0.36,
           "totalPnlPct": -0.01
         }
+      },
+      {
+        "runId": "20260529045858",
+        "startedAt": "2026-05-29T04:58:58.079Z",
+        "finishedAt": "2026-05-29T04:58:58.492Z",
+        "status": "failed",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "REGION_RESTRICTED",
+            "chain": "",
+            "message": "API error (code=50125): Your API key or regions have no access to current services",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2878.9,
+          "openValueUsd": 120.74,
+          "equityUsd": 2999.64,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -0.36,
+          "totalPnlUsd": -0.36,
+          "totalPnlPct": -0.01
+        }
       }
     ]
   },
@@ -1656,11 +1690,11 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T04:28:58.605Z",
-      "runCount": 12,
+      "generatedAt": "2026-05-29T04:58:58.787Z",
+      "runCount": 13,
       "statuses": {
         "ok": 7,
-        "failed": 5
+        "failed": 6
       },
       "rawSignalCount": 378,
       "decisionCount": 54,
@@ -1695,9 +1729,9 @@
           "count": 1
         }
       ],
-      "mistakeCount": 5,
+      "mistakeCount": 6,
       "mistakeTypes": {
-        "REGION_RESTRICTED": 5
+        "REGION_RESTRICTED": 6
       },
       "accountResets": 1,
       "cycleSummaries": 1,
@@ -2658,6 +2692,36 @@
       ],
       "lessons": [
         {
+          "key": "mistake:region_restricted:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "REGION_RESTRICTED",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T04:58:58.079Z",
+          "occurrences": 6,
+          "examples": [
+            {
+              "token": "REGION_RESTRICTED",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "mistake:auth_invalid:global",
           "title": "执行踩坑",
           "status": "流程问题",
@@ -2680,36 +2744,6 @@
           "examples": [
             {
               "token": "AUTH_INVALID",
-              "symbol": "global",
-              "address": "",
-              "shortAddress": "",
-              "chain": "global"
-            }
-          ]
-        },
-        {
-          "key": "mistake:region_restricted:global",
-          "title": "执行踩坑",
-          "status": "流程问题",
-          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "API error (code=50125): Your API key or regions have no access to current services",
-          "score": 0,
-          "wins": 0,
-          "losses": 0,
-          "totalPnlUsd": 0,
-          "example": {
-            "token": "REGION_RESTRICTED",
-            "symbol": "global",
-            "address": "",
-            "shortAddress": "",
-            "chain": "global"
-          },
-          "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T04:28:57.959Z",
-          "occurrences": 5,
-          "examples": [
-            {
-              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
@@ -3301,13 +3335,47 @@
             "totalPnlUsd": -0.36,
             "totalPnlPct": -0.01
           }
+        },
+        {
+          "runId": "20260529045858",
+          "startedAt": "2026-05-29T04:58:58.079Z",
+          "finishedAt": "2026-05-29T04:58:58.492Z",
+          "status": "failed",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "REGION_RESTRICTED",
+              "chain": "",
+              "message": "API error (code=50125): Your API key or regions have no access to current services",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2878.9,
+            "openValueUsd": 120.74,
+            "equityUsd": 2999.64,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -0.36,
+            "totalPnlUsd": -0.36,
+            "totalPnlPct": -0.01
+          }
         }
       ]
     },
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T04:28:58.605Z",
+      "generatedAt": "2026-05-29T04:58:58.788Z",
       "runCount": 33,
       "statuses": {
         "ok": 33
@@ -4285,6 +4353,36 @@
       ],
       "lessons": [
         {
+          "key": "mistake:region_restricted:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "REGION_RESTRICTED",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T04:58:58.079Z",
+          "occurrences": 6,
+          "examples": [
+            {
+              "token": "REGION_RESTRICTED",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "mistake:auth_invalid:global",
           "title": "执行踩坑",
           "status": "流程问题",
@@ -4307,36 +4405,6 @@
           "examples": [
             {
               "token": "AUTH_INVALID",
-              "symbol": "global",
-              "address": "",
-              "shortAddress": "",
-              "chain": "global"
-            }
-          ]
-        },
-        {
-          "key": "mistake:region_restricted:global",
-          "title": "执行踩坑",
-          "status": "流程问题",
-          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "API error (code=50125): Your API key or regions have no access to current services",
-          "score": 0,
-          "wins": 0,
-          "losses": 0,
-          "totalPnlUsd": 0,
-          "example": {
-            "token": "REGION_RESTRICTED",
-            "symbol": "global",
-            "address": "",
-            "shortAddress": "",
-            "chain": "global"
-          },
-          "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T04:28:57.959Z",
-          "occurrences": 5,
-          "examples": [
-            {
-              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
@@ -5923,7 +5991,7 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T04:28:58.605Z",
+      "generatedAt": "2026-05-29T04:58:58.788Z",
       "runCount": 6,
       "statuses": {
         "ok": 5,
@@ -6904,6 +6972,36 @@
       ],
       "lessons": [
         {
+          "key": "mistake:region_restricted:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "REGION_RESTRICTED",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T04:58:58.079Z",
+          "occurrences": 6,
+          "examples": [
+            {
+              "token": "REGION_RESTRICTED",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "mistake:auth_invalid:global",
           "title": "执行踩坑",
           "status": "流程问题",
@@ -6926,36 +7024,6 @@
           "examples": [
             {
               "token": "AUTH_INVALID",
-              "symbol": "global",
-              "address": "",
-              "shortAddress": "",
-              "chain": "global"
-            }
-          ]
-        },
-        {
-          "key": "mistake:region_restricted:global",
-          "title": "执行踩坑",
-          "status": "流程问题",
-          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "API error (code=50125): Your API key or regions have no access to current services",
-          "score": 0,
-          "wins": 0,
-          "losses": 0,
-          "totalPnlUsd": 0,
-          "example": {
-            "token": "REGION_RESTRICTED",
-            "symbol": "global",
-            "address": "",
-            "shortAddress": "",
-            "chain": "global"
-          },
-          "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T04:28:57.959Z",
-          "occurrences": 5,
-          "examples": [
-            {
-              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
@@ -7304,7 +7372,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T04:28:58.606Z",
+      "generatedAt": "2026-05-29T04:58:58.788Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -8286,6 +8354,36 @@
       ],
       "lessons": [
         {
+          "key": "mistake:region_restricted:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "REGION_RESTRICTED",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T04:58:58.079Z",
+          "occurrences": 6,
+          "examples": [
+            {
+              "token": "REGION_RESTRICTED",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "mistake:auth_invalid:global",
           "title": "执行踩坑",
           "status": "流程问题",
@@ -8308,36 +8406,6 @@
           "examples": [
             {
               "token": "AUTH_INVALID",
-              "symbol": "global",
-              "address": "",
-              "shortAddress": "",
-              "chain": "global"
-            }
-          ]
-        },
-        {
-          "key": "mistake:region_restricted:global",
-          "title": "执行踩坑",
-          "status": "流程问题",
-          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "API error (code=50125): Your API key or regions have no access to current services",
-          "score": 0,
-          "wins": 0,
-          "losses": 0,
-          "totalPnlUsd": 0,
-          "example": {
-            "token": "REGION_RESTRICTED",
-            "symbol": "global",
-            "address": "",
-            "shortAddress": "",
-            "chain": "global"
-          },
-          "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T04:28:57.959Z",
-          "occurrences": 5,
-          "examples": [
-            {
-              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
@@ -8891,7 +8959,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T04:28:58.606Z",
+      "generatedAt": "2026-05-29T04:58:58.788Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -9873,6 +9941,36 @@
       ],
       "lessons": [
         {
+          "key": "mistake:region_restricted:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "API error (code=50125): Your API key or regions have no access to current services",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "REGION_RESTRICTED",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-29T02:28:58.078Z",
+          "lastSeenAt": "2026-05-29T04:58:58.079Z",
+          "occurrences": 6,
+          "examples": [
+            {
+              "token": "REGION_RESTRICTED",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "mistake:auth_invalid:global",
           "title": "执行踩坑",
           "status": "流程问题",
@@ -9895,36 +9993,6 @@
           "examples": [
             {
               "token": "AUTH_INVALID",
-              "symbol": "global",
-              "address": "",
-              "shortAddress": "",
-              "chain": "global"
-            }
-          ]
-        },
-        {
-          "key": "mistake:region_restricted:global",
-          "title": "执行踩坑",
-          "status": "流程问题",
-          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
-          "reason": "API error (code=50125): Your API key or regions have no access to current services",
-          "score": 0,
-          "wins": 0,
-          "losses": 0,
-          "totalPnlUsd": 0,
-          "example": {
-            "token": "REGION_RESTRICTED",
-            "symbol": "global",
-            "address": "",
-            "shortAddress": "",
-            "chain": "global"
-          },
-          "firstSeenAt": "2026-05-29T02:28:58.078Z",
-          "lastSeenAt": "2026-05-29T04:28:57.959Z",
-          "occurrences": 5,
-          "examples": [
-            {
-              "token": "REGION_RESTRICTED",
               "symbol": "global",
               "address": "",
               "shortAddress": "",
