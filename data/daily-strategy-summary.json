@@ -1,26 +1,54 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-29T19:29:00.467Z",
+  "generatedAt": "2026-05-29T19:58:59.870Z",
   "latest": {
     "date": "2026-05-30",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-29T19:29:00.464Z",
-    "runCount": 7,
+    "generatedAt": "2026-05-29T19:58:59.867Z",
+    "runCount": 8,
     "statuses": {
-      "ok": 7
+      "ok": 8
     },
-    "rawSignalCount": 385,
-    "decisionCount": 0,
-    "actions": {},
+    "rawSignalCount": 440,
+    "decisionCount": 55,
+    "actions": {
+      "IGNORE": 36,
+      "WATCH": 19
+    },
     "tradeCount": 0,
     "buys": 0,
     "sells": 0,
     "buyUsd": 0,
     "realizedPnlUsd": 0,
     "equityStartUsd": 3121.64,
-    "equityEndUsd": 3243.54,
-    "equityChangeUsd": 121.9,
-    "topBlockers": [],
+    "equityEndUsd": 3000,
+    "equityChangeUsd": -121.64,
+    "topBlockers": [
+      {
+        "name": "sold ratio > 35%",
+        "count": 48
+      },
+      {
+        "name": "amount < 500U",
+        "count": 9
+      },
+      {
+        "name": "blacklisted source wallet: 8M2quY...twNh",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: 85ieYF...zXuh",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: EvRYKm...mVqk",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+        "count": 1
+      }
+    ],
     "mistakeCount": 0,
     "mistakeTypes": {},
     "accountResets": 1,
@@ -220,9 +248,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-05-29T19:28:57.934Z",
-        "occurrences": 156,
-        "highSoldRatioCount": 156,
+        "lastSeenAt": "2026-05-29T19:58:57.656Z",
+        "occurrences": 157,
+        "highSoldRatioCount": 157,
         "tokens": [
           {
             "token": "菜单客服小猫",
@@ -325,9 +353,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-05-29T19:28:57.934Z",
-        "occurrences": 149,
-        "highSoldRatioCount": 149,
+        "lastSeenAt": "2026-05-29T19:58:57.656Z",
+        "occurrences": 150,
+        "highSoldRatioCount": 150,
         "tokens": [
           {
             "token": "菜单客服小猫",
@@ -546,9 +574,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-29T19:28:57.934Z",
-        "occurrences": 117,
-        "highSoldRatioCount": 117,
+        "lastSeenAt": "2026-05-29T19:58:57.656Z",
+        "occurrences": 118,
+        "highSoldRatioCount": 118,
         "tokens": [
           {
             "token": "SpaceX",
@@ -632,6 +660,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 92.83%",
           "watch only; sold ratio 92.86%",
           "watch only; sold ratio 92.85%",
           "watch only; sold ratio 95.46%",
@@ -640,8 +669,7 @@
           "watch only; sold ratio 95.22%",
           "watch only; sold ratio 84.99%",
           "watch only; sold ratio 88.99%",
-          "watch only; sold ratio 95.12%",
-          "watch only; sold ratio 86.08%"
+          "watch only; sold ratio 95.12%"
         ]
       }
     ],
@@ -831,7 +859,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 1647.64U; wallets 3; sold 75.53%; type KOL/Influencer",
+        "reason": "amount 1690.63U; wallets 3; sold 100%; type KOL/Influencer",
         "score": 62,
         "wins": 0,
         "losses": 0,
@@ -844,16 +872,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-29T19:28:57.934Z",
-        "occurrences": 2294,
+        "lastSeenAt": "2026-05-29T19:58:57.656Z",
+        "occurrences": 2330,
         "examples": [
-          {
-            "token": "wrapped bulls",
-            "symbol": "wBULL",
-            "address": "gahvusc7xamfqt6gr1jwhu2tezfyqmeqyesykbspump",
-            "shortAddress": "gahvus...pump",
-            "chain": "solana"
-          },
           {
             "token": "Introverted Development",
             "symbol": "ID",
@@ -888,6 +909,13 @@
             "address": "9bnujxevygayue2zrn5zh9hhjh6cn6gpk4zohzxxpump",
             "shortAddress": "9bnujx...pump",
             "chain": "solana"
+          },
+          {
+            "token": "140KG",
+            "symbol": "$140KG",
+            "address": "7qngqgxjqud1rey9mjbtuwmj6exyy6lplybrxe36pump",
+            "shortAddress": "7qngqg...pump",
+            "chain": "solana"
           }
         ]
       },
@@ -909,8 +937,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-29T19:28:57.934Z",
-        "occurrences": 964,
+        "lastSeenAt": "2026-05-29T19:58:57.656Z",
+        "occurrences": 975,
         "examples": [
           {
             "token": "Cali",
@@ -974,8 +1002,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-29T19:28:57.934Z",
-        "occurrences": 279,
+        "lastSeenAt": "2026-05-29T19:58:57.656Z",
+        "occurrences": 282,
         "examples": [
           {
             "token": "aliens.gov",
@@ -1039,8 +1067,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-05-29T19:28:57.934Z",
-        "occurrences": 145,
+        "lastSeenAt": "2026-05-29T19:58:57.656Z",
+        "occurrences": 151,
         "examples": [
           {
             "token": "Coin Communities",
@@ -1627,6 +1655,48 @@
           "totalPnlUsd": 243.54,
           "totalPnlPct": 8.12
         }
+      },
+      {
+        "runId": "20260529195857",
+        "startedAt": "2026-05-29T19:58:57.656Z",
+        "finishedAt": "2026-05-29T19:58:59.566Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 55,
+        "decisions": 55,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 5,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
       }
     ]
   },
@@ -1634,23 +1704,51 @@
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T19:29:00.464Z",
-      "runCount": 7,
+      "generatedAt": "2026-05-29T19:58:59.867Z",
+      "runCount": 8,
       "statuses": {
-        "ok": 7
+        "ok": 8
       },
-      "rawSignalCount": 385,
-      "decisionCount": 0,
-      "actions": {},
+      "rawSignalCount": 440,
+      "decisionCount": 55,
+      "actions": {
+        "IGNORE": 36,
+        "WATCH": 19
+      },
       "tradeCount": 0,
       "buys": 0,
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
       "equityStartUsd": 3121.64,
-      "equityEndUsd": 3243.54,
-      "equityChangeUsd": 121.9,
-      "topBlockers": [],
+      "equityEndUsd": 3000,
+      "equityChangeUsd": -121.64,
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 48
+        },
+        {
+          "name": "amount < 500U",
+          "count": 9
+        },
+        {
+          "name": "blacklisted source wallet: 8M2quY...twNh",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: 85ieYF...zXuh",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: EvRYKm...mVqk",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 4hAwSV...pFmJ",
+          "count": 1
+        }
+      ],
       "mistakeCount": 0,
       "mistakeTypes": {},
       "accountResets": 1,
@@ -1850,9 +1948,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 156,
-          "highSoldRatioCount": 156,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 157,
+          "highSoldRatioCount": 157,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -1955,9 +2053,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 149,
-          "highSoldRatioCount": 149,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 150,
+          "highSoldRatioCount": 150,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -2176,9 +2274,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 118,
+          "highSoldRatioCount": 118,
           "tokens": [
             {
               "token": "SpaceX",
@@ -2262,6 +2360,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 92.83%",
             "watch only; sold ratio 92.86%",
             "watch only; sold ratio 92.85%",
             "watch only; sold ratio 95.46%",
@@ -2270,8 +2369,7 @@
             "watch only; sold ratio 95.22%",
             "watch only; sold ratio 84.99%",
             "watch only; sold ratio 88.99%",
-            "watch only; sold ratio 95.12%",
-            "watch only; sold ratio 86.08%"
+            "watch only; sold ratio 95.12%"
           ]
         }
       ],
@@ -2461,7 +2559,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1647.64U; wallets 3; sold 75.53%; type KOL/Influencer",
+          "reason": "amount 1690.63U; wallets 3; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -2474,16 +2572,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 2294,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 2330,
           "examples": [
-            {
-              "token": "wrapped bulls",
-              "symbol": "wBULL",
-              "address": "gahvusc7xamfqt6gr1jwhu2tezfyqmeqyesykbspump",
-              "shortAddress": "gahvus...pump",
-              "chain": "solana"
-            },
             {
               "token": "Introverted Development",
               "symbol": "ID",
@@ -2518,6 +2609,13 @@
               "address": "9bnujxevygayue2zrn5zh9hhjh6cn6gpk4zohzxxpump",
               "shortAddress": "9bnujx...pump",
               "chain": "solana"
+            },
+            {
+              "token": "140KG",
+              "symbol": "$140KG",
+              "address": "7qngqgxjqud1rey9mjbtuwmj6exyy6lplybrxe36pump",
+              "shortAddress": "7qngqg...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -2539,8 +2637,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 964,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 975,
           "examples": [
             {
               "token": "Cali",
@@ -2604,8 +2702,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 279,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 282,
           "examples": [
             {
               "token": "aliens.gov",
@@ -2669,8 +2767,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 145,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 151,
           "examples": [
             {
               "token": "Coin Communities",
@@ -3257,13 +3355,55 @@
             "totalPnlUsd": 243.54,
             "totalPnlPct": 8.12
           }
+        },
+        {
+          "runId": "20260529195857",
+          "startedAt": "2026-05-29T19:58:57.656Z",
+          "finishedAt": "2026-05-29T19:58:59.566Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 55,
+          "decisions": 55,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 5,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
         }
       ]
     },
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T19:29:00.465Z",
+      "generatedAt": "2026-05-29T19:58:59.868Z",
       "runCount": 36,
       "statuses": {
         "ok": 19,
@@ -3482,9 +3622,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 156,
-          "highSoldRatioCount": 156,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 157,
+          "highSoldRatioCount": 157,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -3587,9 +3727,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 149,
-          "highSoldRatioCount": 149,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 150,
+          "highSoldRatioCount": 150,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -3808,9 +3948,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 118,
+          "highSoldRatioCount": 118,
           "tokens": [
             {
               "token": "SpaceX",
@@ -3894,6 +4034,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 92.83%",
             "watch only; sold ratio 92.86%",
             "watch only; sold ratio 92.85%",
             "watch only; sold ratio 95.46%",
@@ -3902,8 +4043,7 @@
             "watch only; sold ratio 95.22%",
             "watch only; sold ratio 84.99%",
             "watch only; sold ratio 88.99%",
-            "watch only; sold ratio 95.12%",
-            "watch only; sold ratio 86.08%"
+            "watch only; sold ratio 95.12%"
           ]
         }
       ],
@@ -4093,7 +4233,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1647.64U; wallets 3; sold 75.53%; type KOL/Influencer",
+          "reason": "amount 1690.63U; wallets 3; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -4106,16 +4246,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 2294,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 2330,
           "examples": [
-            {
-              "token": "wrapped bulls",
-              "symbol": "wBULL",
-              "address": "gahvusc7xamfqt6gr1jwhu2tezfyqmeqyesykbspump",
-              "shortAddress": "gahvus...pump",
-              "chain": "solana"
-            },
             {
               "token": "Introverted Development",
               "symbol": "ID",
@@ -4150,6 +4283,13 @@
               "address": "9bnujxevygayue2zrn5zh9hhjh6cn6gpk4zohzxxpump",
               "shortAddress": "9bnujx...pump",
               "chain": "solana"
+            },
+            {
+              "token": "140KG",
+              "symbol": "$140KG",
+              "address": "7qngqgxjqud1rey9mjbtuwmj6exyy6lplybrxe36pump",
+              "shortAddress": "7qngqg...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -4171,8 +4311,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 964,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 975,
           "examples": [
             {
               "token": "Cali",
@@ -4236,8 +4376,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 279,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 282,
           "examples": [
             {
               "token": "aliens.gov",
@@ -4301,8 +4441,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 145,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 151,
           "examples": [
             {
               "token": "Coin Communities",
@@ -6035,7 +6175,7 @@
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T19:29:00.465Z",
+      "generatedAt": "2026-05-29T19:58:59.868Z",
       "runCount": 33,
       "statuses": {
         "ok": 33
@@ -6251,9 +6391,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 156,
-          "highSoldRatioCount": 156,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 157,
+          "highSoldRatioCount": 157,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -6356,9 +6496,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 149,
-          "highSoldRatioCount": 149,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 150,
+          "highSoldRatioCount": 150,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -6577,9 +6717,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 118,
+          "highSoldRatioCount": 118,
           "tokens": [
             {
               "token": "SpaceX",
@@ -6663,6 +6803,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 92.83%",
             "watch only; sold ratio 92.86%",
             "watch only; sold ratio 92.85%",
             "watch only; sold ratio 95.46%",
@@ -6671,8 +6812,7 @@
             "watch only; sold ratio 95.22%",
             "watch only; sold ratio 84.99%",
             "watch only; sold ratio 88.99%",
-            "watch only; sold ratio 95.12%",
-            "watch only; sold ratio 86.08%"
+            "watch only; sold ratio 95.12%"
           ]
         }
       ],
@@ -6862,7 +7002,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1647.64U; wallets 3; sold 75.53%; type KOL/Influencer",
+          "reason": "amount 1690.63U; wallets 3; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -6875,16 +7015,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 2294,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 2330,
           "examples": [
-            {
-              "token": "wrapped bulls",
-              "symbol": "wBULL",
-              "address": "gahvusc7xamfqt6gr1jwhu2tezfyqmeqyesykbspump",
-              "shortAddress": "gahvus...pump",
-              "chain": "solana"
-            },
             {
               "token": "Introverted Development",
               "symbol": "ID",
@@ -6919,6 +7052,13 @@
               "address": "9bnujxevygayue2zrn5zh9hhjh6cn6gpk4zohzxxpump",
               "shortAddress": "9bnujx...pump",
               "chain": "solana"
+            },
+            {
+              "token": "140KG",
+              "symbol": "$140KG",
+              "address": "7qngqgxjqud1rey9mjbtuwmj6exyy6lplybrxe36pump",
+              "shortAddress": "7qngqg...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -6940,8 +7080,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 964,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 975,
           "examples": [
             {
               "token": "Cali",
@@ -7005,8 +7145,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 279,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 282,
           "examples": [
             {
               "token": "aliens.gov",
@@ -7070,8 +7210,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 145,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 151,
           "examples": [
             {
               "token": "Coin Communities",
@@ -8823,7 +8963,7 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T19:29:00.465Z",
+      "generatedAt": "2026-05-29T19:58:59.868Z",
       "runCount": 6,
       "statuses": {
         "ok": 5,
@@ -9042,9 +9182,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 156,
-          "highSoldRatioCount": 156,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 157,
+          "highSoldRatioCount": 157,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -9147,9 +9287,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 149,
-          "highSoldRatioCount": 149,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 150,
+          "highSoldRatioCount": 150,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -9368,9 +9508,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 118,
+          "highSoldRatioCount": 118,
           "tokens": [
             {
               "token": "SpaceX",
@@ -9454,6 +9594,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 92.83%",
             "watch only; sold ratio 92.86%",
             "watch only; sold ratio 92.85%",
             "watch only; sold ratio 95.46%",
@@ -9462,8 +9603,7 @@
             "watch only; sold ratio 95.22%",
             "watch only; sold ratio 84.99%",
             "watch only; sold ratio 88.99%",
-            "watch only; sold ratio 95.12%",
-            "watch only; sold ratio 86.08%"
+            "watch only; sold ratio 95.12%"
           ]
         }
       ],
@@ -9653,7 +9793,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1647.64U; wallets 3; sold 75.53%; type KOL/Influencer",
+          "reason": "amount 1690.63U; wallets 3; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -9666,16 +9806,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 2294,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 2330,
           "examples": [
-            {
-              "token": "wrapped bulls",
-              "symbol": "wBULL",
-              "address": "gahvusc7xamfqt6gr1jwhu2tezfyqmeqyesykbspump",
-              "shortAddress": "gahvus...pump",
-              "chain": "solana"
-            },
             {
               "token": "Introverted Development",
               "symbol": "ID",
@@ -9710,6 +9843,13 @@
               "address": "9bnujxevygayue2zrn5zh9hhjh6cn6gpk4zohzxxpump",
               "shortAddress": "9bnujx...pump",
               "chain": "solana"
+            },
+            {
+              "token": "140KG",
+              "symbol": "$140KG",
+              "address": "7qngqgxjqud1rey9mjbtuwmj6exyy6lplybrxe36pump",
+              "shortAddress": "7qngqg...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -9731,8 +9871,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 964,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 975,
           "examples": [
             {
               "token": "Cali",
@@ -9796,8 +9936,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 279,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 282,
           "examples": [
             {
               "token": "aliens.gov",
@@ -9861,8 +10001,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 145,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 151,
           "examples": [
             {
               "token": "Coin Communities",
@@ -10376,7 +10516,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T19:29:00.465Z",
+      "generatedAt": "2026-05-29T19:58:59.868Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -10596,9 +10736,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 156,
-          "highSoldRatioCount": 156,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 157,
+          "highSoldRatioCount": 157,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -10701,9 +10841,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 149,
-          "highSoldRatioCount": 149,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 150,
+          "highSoldRatioCount": 150,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -10922,9 +11062,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 118,
+          "highSoldRatioCount": 118,
           "tokens": [
             {
               "token": "SpaceX",
@@ -11008,6 +11148,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 92.83%",
             "watch only; sold ratio 92.86%",
             "watch only; sold ratio 92.85%",
             "watch only; sold ratio 95.46%",
@@ -11016,8 +11157,7 @@
             "watch only; sold ratio 95.22%",
             "watch only; sold ratio 84.99%",
             "watch only; sold ratio 88.99%",
-            "watch only; sold ratio 95.12%",
-            "watch only; sold ratio 86.08%"
+            "watch only; sold ratio 95.12%"
           ]
         }
       ],
@@ -11207,7 +11347,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1647.64U; wallets 3; sold 75.53%; type KOL/Influencer",
+          "reason": "amount 1690.63U; wallets 3; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -11220,16 +11360,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 2294,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 2330,
           "examples": [
-            {
-              "token": "wrapped bulls",
-              "symbol": "wBULL",
-              "address": "gahvusc7xamfqt6gr1jwhu2tezfyqmeqyesykbspump",
-              "shortAddress": "gahvus...pump",
-              "chain": "solana"
-            },
             {
               "token": "Introverted Development",
               "symbol": "ID",
@@ -11264,6 +11397,13 @@
               "address": "9bnujxevygayue2zrn5zh9hhjh6cn6gpk4zohzxxpump",
               "shortAddress": "9bnujx...pump",
               "chain": "solana"
+            },
+            {
+              "token": "140KG",
+              "symbol": "$140KG",
+              "address": "7qngqgxjqud1rey9mjbtuwmj6exyy6lplybrxe36pump",
+              "shortAddress": "7qngqg...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -11285,8 +11425,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 964,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 975,
           "examples": [
             {
               "token": "Cali",
@@ -11350,8 +11490,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 279,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 282,
           "examples": [
             {
               "token": "aliens.gov",
@@ -11415,8 +11555,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 145,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 151,
           "examples": [
             {
               "token": "Coin Communities",
@@ -12135,7 +12275,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-29T19:29:00.465Z",
+      "generatedAt": "2026-05-29T19:58:59.869Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -12355,9 +12495,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 156,
-          "highSoldRatioCount": 156,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 157,
+          "highSoldRatioCount": 157,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -12460,9 +12600,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 149,
-          "highSoldRatioCount": 149,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 150,
+          "highSoldRatioCount": 150,
           "tokens": [
             {
               "token": "菜单客服小猫",
@@ -12681,9 +12821,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 117,
-          "highSoldRatioCount": 117,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 118,
+          "highSoldRatioCount": 118,
           "tokens": [
             {
               "token": "SpaceX",
@@ -12767,6 +12907,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 92.83%",
             "watch only; sold ratio 92.86%",
             "watch only; sold ratio 92.85%",
             "watch only; sold ratio 95.46%",
@@ -12775,8 +12916,7 @@
             "watch only; sold ratio 95.22%",
             "watch only; sold ratio 84.99%",
             "watch only; sold ratio 88.99%",
-            "watch only; sold ratio 95.12%",
-            "watch only; sold ratio 86.08%"
+            "watch only; sold ratio 95.12%"
           ]
         }
       ],
@@ -12966,7 +13106,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1647.64U; wallets 3; sold 75.53%; type KOL/Influencer",
+          "reason": "amount 1690.63U; wallets 3; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -12979,16 +13119,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 2294,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 2330,
           "examples": [
-            {
-              "token": "wrapped bulls",
-              "symbol": "wBULL",
-              "address": "gahvusc7xamfqt6gr1jwhu2tezfyqmeqyesykbspump",
-              "shortAddress": "gahvus...pump",
-              "chain": "solana"
-            },
             {
               "token": "Introverted Development",
               "symbol": "ID",
@@ -13023,6 +13156,13 @@
               "address": "9bnujxevygayue2zrn5zh9hhjh6cn6gpk4zohzxxpump",
               "shortAddress": "9bnujx...pump",
               "chain": "solana"
+            },
+            {
+              "token": "140KG",
+              "symbol": "$140KG",
+              "address": "7qngqgxjqud1rey9mjbtuwmj6exyy6lplybrxe36pump",
+              "shortAddress": "7qngqg...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -13044,8 +13184,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 964,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 975,
           "examples": [
             {
               "token": "Cali",
@@ -13109,8 +13249,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 279,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 282,
           "examples": [
             {
               "token": "aliens.gov",
@@ -13174,8 +13314,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-29T19:28:57.934Z",
-          "occurrences": 145,
+          "lastSeenAt": "2026-05-29T19:58:57.656Z",
+          "occurrences": 151,
           "examples": [
             {
               "token": "Coin Communities",
