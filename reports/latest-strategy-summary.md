@@ -1,13 +1,13 @@
 # 2026-05-30 策略模拟日报
 
-生成时间：2026-05-30T01:28:59.879Z
+生成时间：2026-05-30T01:59:01.690Z
 时区：Asia/Hong_Kong
 
 ## 当日结果
 
-- 扫描轮次：19
-- 原始信号：1045
-- 决策记录：165
+- 扫描轮次：20
+- 原始信号：1100
+- 决策记录：220
 - 模拟成交：0 笔，买入 0 笔，卖出 0 笔
 - 买入金额：0U
 - 已实现盈亏：0U
@@ -19,16 +19,16 @@
 
 ## 操作状态
 
-- ok: 19 轮
+- ok: 20 轮
 
 ## 主要阻断条件
 
-- sold ratio > 35%: 144 次
-- amount < 500U: 24 次
-- blacklisted source wallet: 8M2quY...twNh: 6 次
-- blacklisted source wallet: 85ieYF...zXuh: 3 次
-- blacklisted source wallet: EvRYKm...mVqk: 3 次
-- blacklisted source wallet: 4hAwSV...pFmJ: 3 次
+- sold ratio > 35%: 192 次
+- amount < 500U: 32 次
+- blacklisted source wallet: 8M2quY...twNh: 8 次
+- blacklisted source wallet: 85ieYF...zXuh: 4 次
+- blacklisted source wallet: EvRYKm...mVqk: 4 次
+- blacklisted source wallet: 4hAwSV...pFmJ: 4 次
 
 ## 今日复盘
 
