@@ -1,17 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-31T03:29:00.256Z",
+  "generatedAt": "2026-05-31T03:59:00.567Z",
   "latest": {
     "date": "2026-05-31",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-31T03:29:00.252Z",
-    "runCount": 23,
+    "generatedAt": "2026-05-31T03:59:00.563Z",
+    "runCount": 24,
     "statuses": {
-      "ok": 23
+      "ok": 24
     },
-    "rawSignalCount": 1288,
-    "decisionCount": 0,
-    "actions": {},
+    "rawSignalCount": 1344,
+    "decisionCount": 56,
+    "actions": {
+      "IGNORE": 36,
+      "WATCH": 20
+    },
     "tradeCount": 0,
     "buys": 0,
     "sells": 0,
@@ -20,7 +23,40 @@
     "equityStartUsd": 3146.4,
     "equityEndUsd": 3000,
     "equityChangeUsd": -146.4,
-    "topBlockers": [],
+    "topBlockers": [
+      {
+        "name": "sold ratio > 35%",
+        "count": 48
+      },
+      {
+        "name": "amount < 500U",
+        "count": 9
+      },
+      {
+        "name": "blacklisted source wallet: 8M2quY...twNh",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: 4rchtQ...kZi7",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: DNHWLD...aE8D",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 4dKgEi...6QNZ",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 85ieYF...zXuh",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: EvRYKm...mVqk",
+        "count": 1
+      }
+    ],
     "mistakeCount": 0,
     "mistakeTypes": {},
     "accountResets": 3,
@@ -224,9 +260,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T03:28:58.054Z",
-        "occurrences": 283,
-        "highSoldRatioCount": 283,
+        "lastSeenAt": "2026-05-31T03:58:58.101Z",
+        "occurrences": 285,
+        "highSoldRatioCount": 285,
         "tokens": [
           {
             "token": "Hog McCrankerson",
@@ -329,9 +365,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T03:28:58.054Z",
-        "occurrences": 218,
-        "highSoldRatioCount": 218,
+        "lastSeenAt": "2026-05-31T03:58:58.101Z",
+        "occurrences": 220,
+        "highSoldRatioCount": 220,
         "tokens": [
           {
             "token": "America Is Back",
@@ -434,9 +470,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T03:28:58.054Z",
-        "occurrences": 209,
-        "highSoldRatioCount": 209,
+        "lastSeenAt": "2026-05-31T03:58:58.101Z",
+        "occurrences": 212,
+        "highSoldRatioCount": 212,
         "tokens": [
           {
             "token": "The Most Valuable Currency",
@@ -520,6 +556,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 87.7%",
           "watch only; sold ratio 86.14%",
           "watch only; sold ratio 100%",
           "watch only; sold ratio 85.57%",
@@ -528,8 +565,7 @@
           "watch only; sold ratio 83.83%",
           "watch only; sold ratio 87.82%",
           "watch only; sold ratio 88.16%",
-          "watch only; sold ratio 88.81%",
-          "watch only; sold ratio 88.23%"
+          "watch only; sold ratio 88.81%"
         ]
       },
       {
@@ -539,9 +575,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-26T22:55:39.434Z",
-        "lastSeenAt": "2026-05-31T03:28:58.054Z",
-        "occurrences": 182,
-        "highSoldRatioCount": 182,
+        "lastSeenAt": "2026-05-31T03:58:58.101Z",
+        "occurrences": 184,
+        "highSoldRatioCount": 184,
         "tokens": [
           {
             "token": "Kintara",
@@ -914,8 +950,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-31T03:28:58.054Z",
-        "occurrences": 4517,
+        "lastSeenAt": "2026-05-31T03:58:58.101Z",
+        "occurrences": 4552,
         "examples": [
           {
             "token": "Kintara",
@@ -979,8 +1015,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-31T03:28:58.054Z",
-        "occurrences": 1646,
+        "lastSeenAt": "2026-05-31T03:58:58.101Z",
+        "occurrences": 1658,
         "examples": [
           {
             "token": "Cali",
@@ -1044,9 +1080,16 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-05-31T03:28:58.054Z",
-        "occurrences": 532,
+        "lastSeenAt": "2026-05-31T03:58:58.101Z",
+        "occurrences": 539,
         "examples": [
+          {
+            "token": "Faggotcoin",
+            "symbol": "Faggotcoin",
+            "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+            "shortAddress": "e61zfk...pump",
+            "chain": "solana"
+          },
           {
             "token": "A Dell",
             "symbol": "ADELL",
@@ -1081,13 +1124,6 @@
             "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
             "shortAddress": "ohamp5...pump",
             "chain": "solana"
-          },
-          {
-            "token": "gork",
-            "symbol": "GORK",
-            "address": "8v73gwnzcvszyp6phnjnl2vsdrewcggoy7phbp3vxc1k",
-            "shortAddress": "8v73gw...xc1k",
-            "chain": "solana"
           }
         ]
       },
@@ -1109,8 +1145,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-31T03:28:58.054Z",
-        "occurrences": 409,
+        "lastSeenAt": "2026-05-31T03:58:58.101Z",
+        "occurrences": 411,
         "examples": [
           {
             "token": "aliens.gov",
@@ -1174,8 +1210,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-29T13:58:58.928Z",
-        "lastSeenAt": "2026-05-31T03:28:58.054Z",
-        "occurrences": 150,
+        "lastSeenAt": "2026-05-31T03:58:58.101Z",
+        "occurrences": 152,
         "examples": [
           {
             "token": "INDEX",
@@ -2406,6 +2442,48 @@
           "totalPnlUsd": 0,
           "totalPnlPct": 0
         }
+      },
+      {
+        "runId": "20260531035858",
+        "startedAt": "2026-05-31T03:58:58.101Z",
+        "finishedAt": "2026-05-31T03:59:00.206Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 56,
+        "decisions": 56,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 6,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
       }
     ]
   },
@@ -2413,14 +2491,17 @@
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T03:29:00.252Z",
-      "runCount": 23,
+      "generatedAt": "2026-05-31T03:59:00.563Z",
+      "runCount": 24,
       "statuses": {
-        "ok": 23
+        "ok": 24
       },
-      "rawSignalCount": 1288,
-      "decisionCount": 0,
-      "actions": {},
+      "rawSignalCount": 1344,
+      "decisionCount": 56,
+      "actions": {
+        "IGNORE": 36,
+        "WATCH": 20
+      },
       "tradeCount": 0,
       "buys": 0,
       "sells": 0,
@@ -2429,7 +2510,40 @@
       "equityStartUsd": 3146.4,
       "equityEndUsd": 3000,
       "equityChangeUsd": -146.4,
-      "topBlockers": [],
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 48
+        },
+        {
+          "name": "amount < 500U",
+          "count": 9
+        },
+        {
+          "name": "blacklisted source wallet: 8M2quY...twNh",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: 4rchtQ...kZi7",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: DNHWLD...aE8D",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 4dKgEi...6QNZ",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 85ieYF...zXuh",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: EvRYKm...mVqk",
+          "count": 1
+        }
+      ],
       "mistakeCount": 0,
       "mistakeTypes": {},
       "accountResets": 3,
@@ -2633,9 +2747,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Hog McCrankerson",
@@ -2738,9 +2852,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 218,
-          "highSoldRatioCount": 218,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 220,
+          "highSoldRatioCount": 220,
           "tokens": [
             {
               "token": "America Is Back",
@@ -2843,9 +2957,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 209,
-          "highSoldRatioCount": 209,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 212,
+          "highSoldRatioCount": 212,
           "tokens": [
             {
               "token": "The Most Valuable Currency",
@@ -2929,6 +3043,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.7%",
             "watch only; sold ratio 86.14%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85.57%",
@@ -2937,8 +3052,7 @@
             "watch only; sold ratio 83.83%",
             "watch only; sold ratio 87.82%",
             "watch only; sold ratio 88.16%",
-            "watch only; sold ratio 88.81%",
-            "watch only; sold ratio 88.23%"
+            "watch only; sold ratio 88.81%"
           ]
         },
         {
@@ -2948,9 +3062,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 182,
-          "highSoldRatioCount": 182,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 184,
+          "highSoldRatioCount": 184,
           "tokens": [
             {
               "token": "Kintara",
@@ -3323,8 +3437,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 4517,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 4552,
           "examples": [
             {
               "token": "Kintara",
@@ -3388,8 +3502,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 1646,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 1658,
           "examples": [
             {
               "token": "Cali",
@@ -3453,9 +3567,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 539,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
             {
               "token": "A Dell",
               "symbol": "ADELL",
@@ -3490,13 +3611,6 @@
               "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
               "shortAddress": "ohamp5...pump",
               "chain": "solana"
-            },
-            {
-              "token": "gork",
-              "symbol": "GORK",
-              "address": "8v73gwnzcvszyp6phnjnl2vsdrewcggoy7phbp3vxc1k",
-              "shortAddress": "8v73gw...xc1k",
-              "chain": "solana"
             }
           ]
         },
@@ -3518,8 +3632,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 409,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 411,
           "examples": [
             {
               "token": "aliens.gov",
@@ -3583,8 +3697,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 150,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 152,
           "examples": [
             {
               "token": "INDEX",
@@ -4815,13 +4929,55 @@
             "totalPnlUsd": 0,
             "totalPnlPct": 0
           }
+        },
+        {
+          "runId": "20260531035858",
+          "startedAt": "2026-05-31T03:58:58.101Z",
+          "finishedAt": "2026-05-31T03:59:00.206Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 56,
+          "decisions": 56,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 6,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
         }
       ]
     },
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T03:29:00.252Z",
+      "generatedAt": "2026-05-31T03:59:00.564Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -5041,9 +5197,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Hog McCrankerson",
@@ -5146,9 +5302,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 218,
-          "highSoldRatioCount": 218,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 220,
+          "highSoldRatioCount": 220,
           "tokens": [
             {
               "token": "America Is Back",
@@ -5251,9 +5407,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 209,
-          "highSoldRatioCount": 209,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 212,
+          "highSoldRatioCount": 212,
           "tokens": [
             {
               "token": "The Most Valuable Currency",
@@ -5337,6 +5493,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.7%",
             "watch only; sold ratio 86.14%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85.57%",
@@ -5345,8 +5502,7 @@
             "watch only; sold ratio 83.83%",
             "watch only; sold ratio 87.82%",
             "watch only; sold ratio 88.16%",
-            "watch only; sold ratio 88.81%",
-            "watch only; sold ratio 88.23%"
+            "watch only; sold ratio 88.81%"
           ]
         },
         {
@@ -5356,9 +5512,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 182,
-          "highSoldRatioCount": 182,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 184,
+          "highSoldRatioCount": 184,
           "tokens": [
             {
               "token": "Kintara",
@@ -5731,8 +5887,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 4517,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 4552,
           "examples": [
             {
               "token": "Kintara",
@@ -5796,8 +5952,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 1646,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 1658,
           "examples": [
             {
               "token": "Cali",
@@ -5861,9 +6017,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 539,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
             {
               "token": "A Dell",
               "symbol": "ADELL",
@@ -5898,13 +6061,6 @@
               "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
               "shortAddress": "ohamp5...pump",
               "chain": "solana"
-            },
-            {
-              "token": "gork",
-              "symbol": "GORK",
-              "address": "8v73gwnzcvszyp6phnjnl2vsdrewcggoy7phbp3vxc1k",
-              "shortAddress": "8v73gw...xc1k",
-              "chain": "solana"
             }
           ]
         },
@@ -5926,8 +6082,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 409,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 411,
           "examples": [
             {
               "token": "aliens.gov",
@@ -5991,8 +6147,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 150,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 152,
           "examples": [
             {
               "token": "INDEX",
@@ -8295,7 +8451,7 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T03:29:00.253Z",
+      "generatedAt": "2026-05-31T03:59:00.564Z",
       "runCount": 36,
       "statuses": {
         "ok": 19,
@@ -8518,9 +8674,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Hog McCrankerson",
@@ -8623,9 +8779,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 218,
-          "highSoldRatioCount": 218,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 220,
+          "highSoldRatioCount": 220,
           "tokens": [
             {
               "token": "America Is Back",
@@ -8728,9 +8884,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 209,
-          "highSoldRatioCount": 209,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 212,
+          "highSoldRatioCount": 212,
           "tokens": [
             {
               "token": "The Most Valuable Currency",
@@ -8814,6 +8970,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.7%",
             "watch only; sold ratio 86.14%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85.57%",
@@ -8822,8 +8979,7 @@
             "watch only; sold ratio 83.83%",
             "watch only; sold ratio 87.82%",
             "watch only; sold ratio 88.16%",
-            "watch only; sold ratio 88.81%",
-            "watch only; sold ratio 88.23%"
+            "watch only; sold ratio 88.81%"
           ]
         },
         {
@@ -8833,9 +8989,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 182,
-          "highSoldRatioCount": 182,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 184,
+          "highSoldRatioCount": 184,
           "tokens": [
             {
               "token": "Kintara",
@@ -9208,8 +9364,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 4517,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 4552,
           "examples": [
             {
               "token": "Kintara",
@@ -9273,8 +9429,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 1646,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 1658,
           "examples": [
             {
               "token": "Cali",
@@ -9338,9 +9494,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 539,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
             {
               "token": "A Dell",
               "symbol": "ADELL",
@@ -9375,13 +9538,6 @@
               "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
               "shortAddress": "ohamp5...pump",
               "chain": "solana"
-            },
-            {
-              "token": "gork",
-              "symbol": "GORK",
-              "address": "8v73gwnzcvszyp6phnjnl2vsdrewcggoy7phbp3vxc1k",
-              "shortAddress": "8v73gw...xc1k",
-              "chain": "solana"
             }
           ]
         },
@@ -9403,8 +9559,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 409,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 411,
           "examples": [
             {
               "token": "aliens.gov",
@@ -9468,8 +9624,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 150,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 152,
           "examples": [
             {
               "token": "INDEX",
@@ -11116,7 +11272,7 @@
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T03:29:00.253Z",
+      "generatedAt": "2026-05-31T03:59:00.565Z",
       "runCount": 33,
       "statuses": {
         "ok": 33
@@ -11336,9 +11492,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Hog McCrankerson",
@@ -11441,9 +11597,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 218,
-          "highSoldRatioCount": 218,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 220,
+          "highSoldRatioCount": 220,
           "tokens": [
             {
               "token": "America Is Back",
@@ -11546,9 +11702,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 209,
-          "highSoldRatioCount": 209,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 212,
+          "highSoldRatioCount": 212,
           "tokens": [
             {
               "token": "The Most Valuable Currency",
@@ -11632,6 +11788,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.7%",
             "watch only; sold ratio 86.14%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85.57%",
@@ -11640,8 +11797,7 @@
             "watch only; sold ratio 83.83%",
             "watch only; sold ratio 87.82%",
             "watch only; sold ratio 88.16%",
-            "watch only; sold ratio 88.81%",
-            "watch only; sold ratio 88.23%"
+            "watch only; sold ratio 88.81%"
           ]
         },
         {
@@ -11651,9 +11807,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 182,
-          "highSoldRatioCount": 182,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 184,
+          "highSoldRatioCount": 184,
           "tokens": [
             {
               "token": "Kintara",
@@ -12026,8 +12182,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 4517,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 4552,
           "examples": [
             {
               "token": "Kintara",
@@ -12091,8 +12247,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 1646,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 1658,
           "examples": [
             {
               "token": "Cali",
@@ -12156,9 +12312,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 539,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
             {
               "token": "A Dell",
               "symbol": "ADELL",
@@ -12193,13 +12356,6 @@
               "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
               "shortAddress": "ohamp5...pump",
               "chain": "solana"
-            },
-            {
-              "token": "gork",
-              "symbol": "GORK",
-              "address": "8v73gwnzcvszyp6phnjnl2vsdrewcggoy7phbp3vxc1k",
-              "shortAddress": "8v73gw...xc1k",
-              "chain": "solana"
             }
           ]
         },
@@ -12221,8 +12377,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 409,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 411,
           "examples": [
             {
               "token": "aliens.gov",
@@ -12286,8 +12442,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 150,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 152,
           "examples": [
             {
               "token": "INDEX",
@@ -13953,7 +14109,7 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T03:29:00.253Z",
+      "generatedAt": "2026-05-31T03:59:00.565Z",
       "runCount": 6,
       "statuses": {
         "ok": 5,
@@ -14176,9 +14332,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Hog McCrankerson",
@@ -14281,9 +14437,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 218,
-          "highSoldRatioCount": 218,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 220,
+          "highSoldRatioCount": 220,
           "tokens": [
             {
               "token": "America Is Back",
@@ -14386,9 +14542,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 209,
-          "highSoldRatioCount": 209,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 212,
+          "highSoldRatioCount": 212,
           "tokens": [
             {
               "token": "The Most Valuable Currency",
@@ -14472,6 +14628,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.7%",
             "watch only; sold ratio 86.14%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85.57%",
@@ -14480,8 +14637,7 @@
             "watch only; sold ratio 83.83%",
             "watch only; sold ratio 87.82%",
             "watch only; sold ratio 88.16%",
-            "watch only; sold ratio 88.81%",
-            "watch only; sold ratio 88.23%"
+            "watch only; sold ratio 88.81%"
           ]
         },
         {
@@ -14491,9 +14647,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 182,
-          "highSoldRatioCount": 182,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 184,
+          "highSoldRatioCount": 184,
           "tokens": [
             {
               "token": "Kintara",
@@ -14866,8 +15022,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 4517,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 4552,
           "examples": [
             {
               "token": "Kintara",
@@ -14931,8 +15087,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 1646,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 1658,
           "examples": [
             {
               "token": "Cali",
@@ -14996,9 +15152,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 539,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
             {
               "token": "A Dell",
               "symbol": "ADELL",
@@ -15033,13 +15196,6 @@
               "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
               "shortAddress": "ohamp5...pump",
               "chain": "solana"
-            },
-            {
-              "token": "gork",
-              "symbol": "GORK",
-              "address": "8v73gwnzcvszyp6phnjnl2vsdrewcggoy7phbp3vxc1k",
-              "shortAddress": "8v73gw...xc1k",
-              "chain": "solana"
             }
           ]
         },
@@ -15061,8 +15217,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 409,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 411,
           "examples": [
             {
               "token": "aliens.gov",
@@ -15126,8 +15282,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 150,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 152,
           "examples": [
             {
               "token": "INDEX",
@@ -15555,7 +15711,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T03:29:00.253Z",
+      "generatedAt": "2026-05-31T03:59:00.565Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -15779,9 +15935,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Hog McCrankerson",
@@ -15884,9 +16040,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 218,
-          "highSoldRatioCount": 218,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 220,
+          "highSoldRatioCount": 220,
           "tokens": [
             {
               "token": "America Is Back",
@@ -15989,9 +16145,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 209,
-          "highSoldRatioCount": 209,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 212,
+          "highSoldRatioCount": 212,
           "tokens": [
             {
               "token": "The Most Valuable Currency",
@@ -16075,6 +16231,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.7%",
             "watch only; sold ratio 86.14%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85.57%",
@@ -16083,8 +16240,7 @@
             "watch only; sold ratio 83.83%",
             "watch only; sold ratio 87.82%",
             "watch only; sold ratio 88.16%",
-            "watch only; sold ratio 88.81%",
-            "watch only; sold ratio 88.23%"
+            "watch only; sold ratio 88.81%"
           ]
         },
         {
@@ -16094,9 +16250,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 182,
-          "highSoldRatioCount": 182,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 184,
+          "highSoldRatioCount": 184,
           "tokens": [
             {
               "token": "Kintara",
@@ -16469,8 +16625,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 4517,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 4552,
           "examples": [
             {
               "token": "Kintara",
@@ -16534,8 +16690,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 1646,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 1658,
           "examples": [
             {
               "token": "Cali",
@@ -16599,9 +16755,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 539,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
             {
               "token": "A Dell",
               "symbol": "ADELL",
@@ -16636,13 +16799,6 @@
               "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
               "shortAddress": "ohamp5...pump",
               "chain": "solana"
-            },
-            {
-              "token": "gork",
-              "symbol": "GORK",
-              "address": "8v73gwnzcvszyp6phnjnl2vsdrewcggoy7phbp3vxc1k",
-              "shortAddress": "8v73gw...xc1k",
-              "chain": "solana"
             }
           ]
         },
@@ -16664,8 +16820,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 409,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 411,
           "examples": [
             {
               "token": "aliens.gov",
@@ -16729,8 +16885,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 150,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 152,
           "examples": [
             {
               "token": "INDEX",
@@ -17363,7 +17519,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T03:29:00.254Z",
+      "generatedAt": "2026-05-31T03:59:00.566Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -17587,9 +17743,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Hog McCrankerson",
@@ -17692,9 +17848,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 218,
-          "highSoldRatioCount": 218,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 220,
+          "highSoldRatioCount": 220,
           "tokens": [
             {
               "token": "America Is Back",
@@ -17797,9 +17953,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 209,
-          "highSoldRatioCount": 209,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 212,
+          "highSoldRatioCount": 212,
           "tokens": [
             {
               "token": "The Most Valuable Currency",
@@ -17883,6 +18039,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.7%",
             "watch only; sold ratio 86.14%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85.57%",
@@ -17891,8 +18048,7 @@
             "watch only; sold ratio 83.83%",
             "watch only; sold ratio 87.82%",
             "watch only; sold ratio 88.16%",
-            "watch only; sold ratio 88.81%",
-            "watch only; sold ratio 88.23%"
+            "watch only; sold ratio 88.81%"
           ]
         },
         {
@@ -17902,9 +18058,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 182,
-          "highSoldRatioCount": 182,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 184,
+          "highSoldRatioCount": 184,
           "tokens": [
             {
               "token": "Kintara",
@@ -18277,8 +18433,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 4517,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 4552,
           "examples": [
             {
               "token": "Kintara",
@@ -18342,8 +18498,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 1646,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 1658,
           "examples": [
             {
               "token": "Cali",
@@ -18407,9 +18563,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 539,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
             {
               "token": "A Dell",
               "symbol": "ADELL",
@@ -18444,13 +18607,6 @@
               "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
               "shortAddress": "ohamp5...pump",
               "chain": "solana"
-            },
-            {
-              "token": "gork",
-              "symbol": "GORK",
-              "address": "8v73gwnzcvszyp6phnjnl2vsdrewcggoy7phbp3vxc1k",
-              "shortAddress": "8v73gw...xc1k",
-              "chain": "solana"
             }
           ]
         },
@@ -18472,8 +18628,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 409,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 411,
           "examples": [
             {
               "token": "aliens.gov",
@@ -18537,8 +18693,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T03:28:58.054Z",
-          "occurrences": 150,
+          "lastSeenAt": "2026-05-31T03:58:58.101Z",
+          "occurrences": 152,
           "examples": [
             {
               "token": "INDEX",
