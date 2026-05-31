@@ -1,10 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-31T17:29:50.252Z",
+  "generatedAt": "2026-05-31T18:00:04.293Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260531172857",
+  "latestRunId": "20260531175859",
   "entries": [
+    {
+      "runId": "20260531175859",
+      "startedAt": "2026-05-31T17:58:59.563Z",
+      "finishedAt": "2026-05-31T18:00:03.747Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 59,
+      "decisions": 59,
+      "trades": 0,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 9,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 3000,
+        "openValueUsd": 0,
+        "equityUsd": 3000,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": 0,
+        "totalPnlUsd": 0,
+        "totalPnlPct": 0
+      }
+    },
     {
       "runId": "20260531172857",
       "startedAt": "2026-05-31T17:28:57.747Z",
@@ -8593,30 +8635,6 @@
       "runId": "20260524224029",
       "startedAt": "2026-05-24T22:40:29.999Z",
       "finishedAt": "2026-05-24T22:40:29.999Z",
-      "status": "failed",
-      "chains": [],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
-        {
-          "type": "FILE_WRITE_ERROR",
-          "chain": "",
-          "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
-          "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
-        }
-      ],
-      "notes": [
-        "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
-      ],
-      "chainResults": [],
-      "accountReset": null,
-      "capital": null
-    },
-    {
-      "runId": "20260524214019",
-      "startedAt": "2026-05-24T21:40:19.652Z",
-      "finishedAt": "2026-05-24T21:40:19.652Z",
       "status": "failed",
       "chains": [],
       "rawSignalCount": 0,
