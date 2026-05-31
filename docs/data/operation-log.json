@@ -1,10 +1,81 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-31T16:29:50.166Z",
+  "generatedAt": "2026-05-31T16:59:50.484Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260531162857",
+  "latestRunId": "20260531165857",
   "entries": [
+    {
+      "runId": "20260531165857",
+      "startedAt": "2026-05-31T16:58:57.759Z",
+      "finishedAt": "2026-05-31T16:59:49.898Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 59,
+      "decisions": 59,
+      "trades": 0,
+      "mistakes": [],
+      "notes": [
+        "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
+      ],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 9,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": {
+        "timestamp": "2026-05-31T16:58:57.759Z",
+        "runId": "20260531165857",
+        "reason": "completed_cycle_reset",
+        "cycleSummaryId": "cycle-20260531165857",
+        "previousSession": {
+          "id": "20260531122858-cycle",
+          "startedAt": "2026-05-31T12:28:58.192Z",
+          "lastAuthOkAt": "2026-05-31T16:58:57.759Z",
+          "lastAuthFailureAt": "",
+          "authState": "online",
+          "authRecoveries": 3,
+          "resetReason": "completed_cycle_reset"
+        },
+        "previousCapital": {
+          "initialUsd": 3000,
+          "cashUsd": 2604.9,
+          "openValueUsd": 393.91,
+          "equityUsd": 2998.81,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -1.19,
+          "totalPnlUsd": -1.19,
+          "totalPnlPct": -0.04
+        },
+        "previousOpenPositions": 2,
+        "previousTrades": 2,
+        "previousDecisions": 500
+      },
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2604.9,
+        "openValueUsd": 393.91,
+        "equityUsd": 2998.81,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": -1.19,
+        "totalPnlUsd": -1.19,
+        "totalPnlPct": -0.04
+      }
+    },
     {
       "runId": "20260531162857",
       "startedAt": "2026-05-31T16:28:57.667Z",
@@ -8544,28 +8615,6 @@
       "notes": [
         "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
       ],
-      "chainResults": [],
-      "accountReset": null,
-      "capital": null
-    },
-    {
-      "runId": "20260524193337",
-      "startedAt": "2026-05-24T19:33:37.998Z",
-      "finishedAt": "2026-05-24T19:33:48.698Z",
-      "status": "failed",
-      "chains": [],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
-        {
-          "type": "AUTH_INVALID",
-          "chain": "",
-          "message": "API error (code=50114): Invalid Authority",
-          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
-        }
-      ],
-      "notes": [],
       "chainResults": [],
       "accountReset": null,
       "capital": null
