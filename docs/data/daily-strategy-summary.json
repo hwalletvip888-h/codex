@@ -1,26 +1,64 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-31T21:29:50.180Z",
+  "generatedAt": "2026-05-31T21:59:51.178Z",
   "latest": {
     "date": "2026-06-01",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-31T21:29:50.176Z",
-    "runCount": 11,
+    "generatedAt": "2026-05-31T21:59:51.174Z",
+    "runCount": 12,
     "statuses": {
-      "ok": 11
+      "ok": 12
     },
-    "rawSignalCount": 648,
-    "decisionCount": 0,
-    "actions": {},
-    "tradeCount": 0,
-    "buys": 0,
+    "rawSignalCount": 706,
+    "decisionCount": 58,
+    "actions": {
+      "IGNORE": 39,
+      "WATCH": 17,
+      "BUY": 1,
+      "HOLD": 1
+    },
+    "tradeCount": 1,
+    "buys": 1,
     "sells": 0,
-    "buyUsd": 0,
+    "buyUsd": 320.2,
     "realizedPnlUsd": 0,
     "equityStartUsd": 2998.81,
     "equityEndUsd": 3025.07,
     "equityChangeUsd": 26.26,
-    "topBlockers": [],
+    "topBlockers": [
+      {
+        "name": "sold ratio > 35%",
+        "count": 48
+      },
+      {
+        "name": "amount < 500U",
+        "count": 10
+      },
+      {
+        "name": "blacklisted source wallet: 9nP8di...wpE6",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 4rchtQ...kZi7",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: DNHWLD...aE8D",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 4dKgEi...6QNZ",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 8M2quY...twNh",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 85ieYF...zXuh",
+        "count": 1
+      }
+    ],
     "mistakeCount": 0,
     "mistakeTypes": {},
     "accountResets": 2,
@@ -224,9 +262,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 353,
-        "highSoldRatioCount": 353,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 354,
+        "highSoldRatioCount": 354,
         "tokens": [
           {
             "token": "HermesWorld",
@@ -329,9 +367,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 313,
-        "highSoldRatioCount": 313,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 317,
+        "highSoldRatioCount": 317,
         "tokens": [
           {
             "token": "Odysseus",
@@ -415,16 +453,16 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 100%",
+          "watch only; sold ratio 97.63%",
+          "watch only; sold ratio 90.86%",
           "watch only; sold ratio 97.81%",
           "watch only; sold ratio 97.62%",
           "watch only; sold ratio 90.79%",
           "watch only; sold ratio 97.32%",
           "watch only; sold ratio 97.6%",
           "watch only; sold ratio 97.66%",
-          "watch only; sold ratio 97.04%",
-          "watch only; sold ratio 96.52%",
-          "watch only; sold ratio 100%",
-          "watch only; sold ratio 96.54%"
+          "watch only; sold ratio 97.04%"
         ]
       },
       {
@@ -434,9 +472,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 303,
-        "highSoldRatioCount": 303,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 305,
+        "highSoldRatioCount": 305,
         "tokens": [
           {
             "token": "Spettro - AI Agent CLI",
@@ -539,9 +577,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 254,
-        "highSoldRatioCount": 254,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 255,
+        "highSoldRatioCount": 255,
         "tokens": [
           {
             "token": "Spettro - AI Agent CLI",
@@ -644,9 +682,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-26T22:55:39.434Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 245,
-        "highSoldRatioCount": 245,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 247,
+        "highSoldRatioCount": 247,
         "tokens": [
           {
             "token": "SpaceX",
@@ -730,6 +768,8 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 97.63%",
+          "watch only; sold ratio 90.3%",
           "watch only; sold ratio 97.62%",
           "watch only; sold ratio 97.6%",
           "watch only; sold ratio 96.4%",
@@ -737,9 +777,7 @@
           "watch only; sold ratio 96.43%",
           "watch only; sold ratio 96.41%",
           "watch only; sold ratio 96.46%",
-          "watch only; sold ratio 96.44%",
-          "watch only; sold ratio 96.49%",
-          "watch only; sold ratio 87.58%"
+          "watch only; sold ratio 96.44%"
         ]
       }
     ],
@@ -914,8 +952,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 5801,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 5836,
         "examples": [
           {
             "token": "Tim Payne",
@@ -979,8 +1017,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 2041,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 2051,
         "examples": [
           {
             "token": "The Trillion Bill",
@@ -1044,8 +1082,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 782,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 788,
         "examples": [
           {
             "token": "Hypergamy",
@@ -1109,8 +1147,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 481,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 483,
         "examples": [
           {
             "token": "aliens.gov",
@@ -1174,8 +1212,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-29T13:58:58.928Z",
-        "lastSeenAt": "2026-05-31T21:28:57.793Z",
-        "occurrences": 214,
+        "lastSeenAt": "2026-05-31T21:58:57.808Z",
+        "occurrences": 215,
         "examples": [
           {
             "token": "INDEX",
@@ -1873,6 +1911,48 @@
           "totalPnlUsd": 25.07,
           "totalPnlPct": 0.84
         }
+      },
+      {
+        "runId": "20260531215857",
+        "startedAt": "2026-05-31T21:58:57.808Z",
+        "finishedAt": "2026-05-31T21:59:50.652Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 58,
+        "decisions": 58,
+        "trades": 1,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 49,
+            "trades": 1,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 9,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2679.8,
+          "openValueUsd": 345.27,
+          "equityUsd": 3025.07,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 25.07,
+          "totalPnlUsd": 25.07,
+          "totalPnlPct": 0.84
+        }
       }
     ]
   },
@@ -1880,23 +1960,61 @@
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T21:29:50.176Z",
-      "runCount": 11,
+      "generatedAt": "2026-05-31T21:59:51.174Z",
+      "runCount": 12,
       "statuses": {
-        "ok": 11
+        "ok": 12
       },
-      "rawSignalCount": 648,
-      "decisionCount": 0,
-      "actions": {},
-      "tradeCount": 0,
-      "buys": 0,
+      "rawSignalCount": 706,
+      "decisionCount": 58,
+      "actions": {
+        "IGNORE": 39,
+        "WATCH": 17,
+        "BUY": 1,
+        "HOLD": 1
+      },
+      "tradeCount": 1,
+      "buys": 1,
       "sells": 0,
-      "buyUsd": 0,
+      "buyUsd": 320.2,
       "realizedPnlUsd": 0,
       "equityStartUsd": 2998.81,
       "equityEndUsd": 3025.07,
       "equityChangeUsd": 26.26,
-      "topBlockers": [],
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 48
+        },
+        {
+          "name": "amount < 500U",
+          "count": 10
+        },
+        {
+          "name": "blacklisted source wallet: 9nP8di...wpE6",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 4rchtQ...kZi7",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: DNHWLD...aE8D",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 4dKgEi...6QNZ",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 8M2quY...twNh",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 85ieYF...zXuh",
+          "count": 1
+        }
+      ],
       "mistakeCount": 0,
       "mistakeTypes": {},
       "accountResets": 2,
@@ -2100,9 +2218,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "HermesWorld",
@@ -2205,9 +2323,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 313,
-          "highSoldRatioCount": 313,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 317,
+          "highSoldRatioCount": 317,
           "tokens": [
             {
               "token": "Odysseus",
@@ -2291,16 +2409,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.86%",
             "watch only; sold ratio 97.81%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 90.79%",
             "watch only; sold ratio 97.32%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 97.04%",
-            "watch only; sold ratio 96.52%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 96.54%"
+            "watch only; sold ratio 97.04%"
           ]
         },
         {
@@ -2310,9 +2428,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 303,
-          "highSoldRatioCount": 303,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 305,
+          "highSoldRatioCount": 305,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -2415,9 +2533,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 254,
-          "highSoldRatioCount": 254,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 255,
+          "highSoldRatioCount": 255,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -2520,9 +2638,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 245,
-          "highSoldRatioCount": 245,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 247,
+          "highSoldRatioCount": 247,
           "tokens": [
             {
               "token": "SpaceX",
@@ -2606,6 +2724,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.3%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 96.4%",
@@ -2613,9 +2733,7 @@
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 96.44%",
-            "watch only; sold ratio 96.49%",
-            "watch only; sold ratio 87.58%"
+            "watch only; sold ratio 96.44%"
           ]
         }
       ],
@@ -2790,8 +2908,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 5801,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 5836,
           "examples": [
             {
               "token": "Tim Payne",
@@ -2855,8 +2973,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 2041,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 2051,
           "examples": [
             {
               "token": "The Trillion Bill",
@@ -2920,8 +3038,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 782,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 788,
           "examples": [
             {
               "token": "Hypergamy",
@@ -2985,8 +3103,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 481,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 483,
           "examples": [
             {
               "token": "aliens.gov",
@@ -3050,8 +3168,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 214,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 215,
           "examples": [
             {
               "token": "INDEX",
@@ -3749,13 +3867,55 @@
             "totalPnlUsd": 25.07,
             "totalPnlPct": 0.84
           }
+        },
+        {
+          "runId": "20260531215857",
+          "startedAt": "2026-05-31T21:58:57.808Z",
+          "finishedAt": "2026-05-31T21:59:50.652Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 58,
+          "decisions": 58,
+          "trades": 1,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 49,
+              "trades": 1,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 9,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2679.8,
+            "openValueUsd": 345.27,
+            "equityUsd": 3025.07,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 25.07,
+            "totalPnlUsd": 25.07,
+            "totalPnlPct": 0.84
+          }
         }
       ]
     },
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T21:29:50.177Z",
+      "generatedAt": "2026-05-31T21:59:51.174Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -3975,9 +4135,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "HermesWorld",
@@ -4080,9 +4240,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 313,
-          "highSoldRatioCount": 313,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 317,
+          "highSoldRatioCount": 317,
           "tokens": [
             {
               "token": "Odysseus",
@@ -4166,16 +4326,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.86%",
             "watch only; sold ratio 97.81%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 90.79%",
             "watch only; sold ratio 97.32%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 97.04%",
-            "watch only; sold ratio 96.52%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 96.54%"
+            "watch only; sold ratio 97.04%"
           ]
         },
         {
@@ -4185,9 +4345,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 303,
-          "highSoldRatioCount": 303,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 305,
+          "highSoldRatioCount": 305,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -4290,9 +4450,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 254,
-          "highSoldRatioCount": 254,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 255,
+          "highSoldRatioCount": 255,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -4395,9 +4555,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 245,
-          "highSoldRatioCount": 245,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 247,
+          "highSoldRatioCount": 247,
           "tokens": [
             {
               "token": "SpaceX",
@@ -4481,6 +4641,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.3%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 96.4%",
@@ -4488,9 +4650,7 @@
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 96.44%",
-            "watch only; sold ratio 96.49%",
-            "watch only; sold ratio 87.58%"
+            "watch only; sold ratio 96.44%"
           ]
         }
       ],
@@ -4665,8 +4825,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 5801,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 5836,
           "examples": [
             {
               "token": "Tim Payne",
@@ -4730,8 +4890,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 2041,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 2051,
           "examples": [
             {
               "token": "The Trillion Bill",
@@ -4795,8 +4955,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 782,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 788,
           "examples": [
             {
               "token": "Hypergamy",
@@ -4860,8 +5020,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 481,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 483,
           "examples": [
             {
               "token": "aliens.gov",
@@ -4925,8 +5085,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 214,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 215,
           "examples": [
             {
               "token": "INDEX",
@@ -7271,7 +7431,7 @@
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T21:29:50.177Z",
+      "generatedAt": "2026-05-31T21:59:51.175Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -7491,9 +7651,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "HermesWorld",
@@ -7596,9 +7756,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 313,
-          "highSoldRatioCount": 313,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 317,
+          "highSoldRatioCount": 317,
           "tokens": [
             {
               "token": "Odysseus",
@@ -7682,16 +7842,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.86%",
             "watch only; sold ratio 97.81%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 90.79%",
             "watch only; sold ratio 97.32%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 97.04%",
-            "watch only; sold ratio 96.52%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 96.54%"
+            "watch only; sold ratio 97.04%"
           ]
         },
         {
@@ -7701,9 +7861,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 303,
-          "highSoldRatioCount": 303,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 305,
+          "highSoldRatioCount": 305,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -7806,9 +7966,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 254,
-          "highSoldRatioCount": 254,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 255,
+          "highSoldRatioCount": 255,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -7911,9 +8071,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 245,
-          "highSoldRatioCount": 245,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 247,
+          "highSoldRatioCount": 247,
           "tokens": [
             {
               "token": "SpaceX",
@@ -7997,6 +8157,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.3%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 96.4%",
@@ -8004,9 +8166,7 @@
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 96.44%",
-            "watch only; sold ratio 96.49%",
-            "watch only; sold ratio 87.58%"
+            "watch only; sold ratio 96.44%"
           ]
         }
       ],
@@ -8181,8 +8341,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 5801,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 5836,
           "examples": [
             {
               "token": "Tim Payne",
@@ -8246,8 +8406,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 2041,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 2051,
           "examples": [
             {
               "token": "The Trillion Bill",
@@ -8311,8 +8471,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 782,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 788,
           "examples": [
             {
               "token": "Hypergamy",
@@ -8376,8 +8536,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 481,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 483,
           "examples": [
             {
               "token": "aliens.gov",
@@ -8441,8 +8601,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 214,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 215,
           "examples": [
             {
               "token": "INDEX",
@@ -10745,7 +10905,7 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T21:29:50.177Z",
+      "generatedAt": "2026-05-31T21:59:51.175Z",
       "runCount": 36,
       "statuses": {
         "ok": 19,
@@ -10968,9 +11128,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "HermesWorld",
@@ -11073,9 +11233,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 313,
-          "highSoldRatioCount": 313,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 317,
+          "highSoldRatioCount": 317,
           "tokens": [
             {
               "token": "Odysseus",
@@ -11159,16 +11319,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.86%",
             "watch only; sold ratio 97.81%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 90.79%",
             "watch only; sold ratio 97.32%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 97.04%",
-            "watch only; sold ratio 96.52%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 96.54%"
+            "watch only; sold ratio 97.04%"
           ]
         },
         {
@@ -11178,9 +11338,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 303,
-          "highSoldRatioCount": 303,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 305,
+          "highSoldRatioCount": 305,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -11283,9 +11443,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 254,
-          "highSoldRatioCount": 254,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 255,
+          "highSoldRatioCount": 255,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -11388,9 +11548,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 245,
-          "highSoldRatioCount": 245,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 247,
+          "highSoldRatioCount": 247,
           "tokens": [
             {
               "token": "SpaceX",
@@ -11474,6 +11634,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.3%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 96.4%",
@@ -11481,9 +11643,7 @@
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 96.44%",
-            "watch only; sold ratio 96.49%",
-            "watch only; sold ratio 87.58%"
+            "watch only; sold ratio 96.44%"
           ]
         }
       ],
@@ -11658,8 +11818,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 5801,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 5836,
           "examples": [
             {
               "token": "Tim Payne",
@@ -11723,8 +11883,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 2041,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 2051,
           "examples": [
             {
               "token": "The Trillion Bill",
@@ -11788,8 +11948,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 782,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 788,
           "examples": [
             {
               "token": "Hypergamy",
@@ -11853,8 +12013,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 481,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 483,
           "examples": [
             {
               "token": "aliens.gov",
@@ -11918,8 +12078,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 214,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 215,
           "examples": [
             {
               "token": "INDEX",
@@ -13566,7 +13726,7 @@
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T21:29:50.178Z",
+      "generatedAt": "2026-05-31T21:59:51.175Z",
       "runCount": 33,
       "statuses": {
         "ok": 33
@@ -13786,9 +13946,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "HermesWorld",
@@ -13891,9 +14051,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 313,
-          "highSoldRatioCount": 313,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 317,
+          "highSoldRatioCount": 317,
           "tokens": [
             {
               "token": "Odysseus",
@@ -13977,16 +14137,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.86%",
             "watch only; sold ratio 97.81%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 90.79%",
             "watch only; sold ratio 97.32%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 97.04%",
-            "watch only; sold ratio 96.52%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 96.54%"
+            "watch only; sold ratio 97.04%"
           ]
         },
         {
@@ -13996,9 +14156,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 303,
-          "highSoldRatioCount": 303,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 305,
+          "highSoldRatioCount": 305,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -14101,9 +14261,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 254,
-          "highSoldRatioCount": 254,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 255,
+          "highSoldRatioCount": 255,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -14206,9 +14366,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 245,
-          "highSoldRatioCount": 245,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 247,
+          "highSoldRatioCount": 247,
           "tokens": [
             {
               "token": "SpaceX",
@@ -14292,6 +14452,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.3%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 96.4%",
@@ -14299,9 +14461,7 @@
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 96.44%",
-            "watch only; sold ratio 96.49%",
-            "watch only; sold ratio 87.58%"
+            "watch only; sold ratio 96.44%"
           ]
         }
       ],
@@ -14476,8 +14636,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 5801,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 5836,
           "examples": [
             {
               "token": "Tim Payne",
@@ -14541,8 +14701,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 2041,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 2051,
           "examples": [
             {
               "token": "The Trillion Bill",
@@ -14606,8 +14766,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 782,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 788,
           "examples": [
             {
               "token": "Hypergamy",
@@ -14671,8 +14831,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 481,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 483,
           "examples": [
             {
               "token": "aliens.gov",
@@ -14736,8 +14896,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 214,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 215,
           "examples": [
             {
               "token": "INDEX",
@@ -16403,7 +16563,7 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T21:29:50.178Z",
+      "generatedAt": "2026-05-31T21:59:51.176Z",
       "runCount": 6,
       "statuses": {
         "ok": 5,
@@ -16626,9 +16786,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "HermesWorld",
@@ -16731,9 +16891,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 313,
-          "highSoldRatioCount": 313,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 317,
+          "highSoldRatioCount": 317,
           "tokens": [
             {
               "token": "Odysseus",
@@ -16817,16 +16977,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.86%",
             "watch only; sold ratio 97.81%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 90.79%",
             "watch only; sold ratio 97.32%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 97.04%",
-            "watch only; sold ratio 96.52%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 96.54%"
+            "watch only; sold ratio 97.04%"
           ]
         },
         {
@@ -16836,9 +16996,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 303,
-          "highSoldRatioCount": 303,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 305,
+          "highSoldRatioCount": 305,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -16941,9 +17101,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 254,
-          "highSoldRatioCount": 254,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 255,
+          "highSoldRatioCount": 255,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -17046,9 +17206,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 245,
-          "highSoldRatioCount": 245,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 247,
+          "highSoldRatioCount": 247,
           "tokens": [
             {
               "token": "SpaceX",
@@ -17132,6 +17292,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.3%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 96.4%",
@@ -17139,9 +17301,7 @@
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 96.44%",
-            "watch only; sold ratio 96.49%",
-            "watch only; sold ratio 87.58%"
+            "watch only; sold ratio 96.44%"
           ]
         }
       ],
@@ -17316,8 +17476,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 5801,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 5836,
           "examples": [
             {
               "token": "Tim Payne",
@@ -17381,8 +17541,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 2041,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 2051,
           "examples": [
             {
               "token": "The Trillion Bill",
@@ -17446,8 +17606,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 782,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 788,
           "examples": [
             {
               "token": "Hypergamy",
@@ -17511,8 +17671,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 481,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 483,
           "examples": [
             {
               "token": "aliens.gov",
@@ -17576,8 +17736,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 214,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 215,
           "examples": [
             {
               "token": "INDEX",
@@ -18005,7 +18165,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T21:29:50.178Z",
+      "generatedAt": "2026-05-31T21:59:51.176Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -18229,9 +18389,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "HermesWorld",
@@ -18334,9 +18494,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 313,
-          "highSoldRatioCount": 313,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 317,
+          "highSoldRatioCount": 317,
           "tokens": [
             {
               "token": "Odysseus",
@@ -18420,16 +18580,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.86%",
             "watch only; sold ratio 97.81%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 90.79%",
             "watch only; sold ratio 97.32%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 97.04%",
-            "watch only; sold ratio 96.52%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 96.54%"
+            "watch only; sold ratio 97.04%"
           ]
         },
         {
@@ -18439,9 +18599,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 303,
-          "highSoldRatioCount": 303,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 305,
+          "highSoldRatioCount": 305,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -18544,9 +18704,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 254,
-          "highSoldRatioCount": 254,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 255,
+          "highSoldRatioCount": 255,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -18649,9 +18809,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 245,
-          "highSoldRatioCount": 245,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 247,
+          "highSoldRatioCount": 247,
           "tokens": [
             {
               "token": "SpaceX",
@@ -18735,6 +18895,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.3%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 96.4%",
@@ -18742,9 +18904,7 @@
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 96.44%",
-            "watch only; sold ratio 96.49%",
-            "watch only; sold ratio 87.58%"
+            "watch only; sold ratio 96.44%"
           ]
         }
       ],
@@ -18919,8 +19079,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 5801,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 5836,
           "examples": [
             {
               "token": "Tim Payne",
@@ -18984,8 +19144,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 2041,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 2051,
           "examples": [
             {
               "token": "The Trillion Bill",
@@ -19049,8 +19209,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 782,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 788,
           "examples": [
             {
               "token": "Hypergamy",
@@ -19114,8 +19274,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 481,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 483,
           "examples": [
             {
               "token": "aliens.gov",
@@ -19179,8 +19339,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 214,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 215,
           "examples": [
             {
               "token": "INDEX",
@@ -19813,13 +19973,13 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T21:29:50.178Z",
-      "runCount": 9,
+      "generatedAt": "2026-05-31T21:59:51.176Z",
+      "runCount": 8,
       "statuses": {
-        "ok": 8,
+        "ok": 7,
         "failed": 1
       },
-      "rawSignalCount": 554,
+      "rawSignalCount": 504,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -19827,9 +19987,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 3000,
+      "equityStartUsd": 2947.38,
       "equityEndUsd": 3152.63,
-      "equityChangeUsd": 152.63,
+      "equityChangeUsd": 205.25,
       "topBlockers": [],
       "mistakeCount": 1,
       "mistakeTypes": {
@@ -20036,9 +20196,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "HermesWorld",
@@ -20141,9 +20301,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 313,
-          "highSoldRatioCount": 313,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 317,
+          "highSoldRatioCount": 317,
           "tokens": [
             {
               "token": "Odysseus",
@@ -20227,16 +20387,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.86%",
             "watch only; sold ratio 97.81%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 90.79%",
             "watch only; sold ratio 97.32%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 97.04%",
-            "watch only; sold ratio 96.52%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 96.54%"
+            "watch only; sold ratio 97.04%"
           ]
         },
         {
@@ -20246,9 +20406,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 303,
-          "highSoldRatioCount": 303,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 305,
+          "highSoldRatioCount": 305,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -20351,9 +20511,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 254,
-          "highSoldRatioCount": 254,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 255,
+          "highSoldRatioCount": 255,
           "tokens": [
             {
               "token": "Spettro - AI Agent CLI",
@@ -20456,9 +20616,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 245,
-          "highSoldRatioCount": 245,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 247,
+          "highSoldRatioCount": 247,
           "tokens": [
             {
               "token": "SpaceX",
@@ -20542,6 +20702,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.63%",
+            "watch only; sold ratio 90.3%",
             "watch only; sold ratio 97.62%",
             "watch only; sold ratio 97.6%",
             "watch only; sold ratio 96.4%",
@@ -20549,9 +20711,7 @@
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 96.44%",
-            "watch only; sold ratio 96.49%",
-            "watch only; sold ratio 87.58%"
+            "watch only; sold ratio 96.44%"
           ]
         }
       ],
@@ -20726,8 +20886,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 5801,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 5836,
           "examples": [
             {
               "token": "Tim Payne",
@@ -20791,8 +20951,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 2041,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 2051,
           "examples": [
             {
               "token": "The Trillion Bill",
@@ -20856,8 +21016,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 782,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 788,
           "examples": [
             {
               "token": "Hypergamy",
@@ -20921,8 +21081,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 481,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 483,
           "examples": [
             {
               "token": "aliens.gov",
@@ -20986,8 +21146,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T21:28:57.793Z",
-          "occurrences": 214,
+          "lastSeenAt": "2026-05-31T21:58:57.808Z",
+          "occurrences": 215,
           "examples": [
             {
               "token": "INDEX",
@@ -21166,30 +21326,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260525024945",
-          "startedAt": "2026-05-25T02:49:45.619Z",
-          "finishedAt": "2026-05-25T02:50:06.440Z",
-          "status": "ok",
-          "chains": [],
-          "rawSignalCount": 50,
-          "decisions": 50,
-          "trades": 0,
-          "mistakes": [],
-          "notes": [],
-          "chainResults": [],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 3000,
-            "openValueUsd": 0,
-            "equityUsd": 3000,
-            "realizedPnlUsd": 0,
-            "unrealizedPnlUsd": 0,
-            "totalPnlUsd": 0,
-            "totalPnlPct": 0
-          }
-        },
         {
           "runId": "20260525030148",
           "startedAt": "2026-05-25T03:01:48.220Z",
