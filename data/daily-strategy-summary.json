@@ -1,60 +1,61 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-31T14:29:50.995Z",
+  "generatedAt": "2026-05-31T14:59:50.232Z",
   "latest": {
     "date": "2026-05-31",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-05-31T14:29:50.991Z",
-    "runCount": 45,
+    "generatedAt": "2026-05-31T14:59:50.228Z",
+    "runCount": 46,
     "statuses": {
-      "ok": 45
+      "ok": 46
     },
-    "rawSignalCount": 2570,
-    "decisionCount": 236,
+    "rawSignalCount": 2629,
+    "decisionCount": 295,
     "actions": {
-      "IGNORE": 158,
-      "WATCH": 78
+      "IGNORE": 198,
+      "WATCH": 96,
+      "BUY": 1
     },
-    "tradeCount": 0,
-    "buys": 0,
+    "tradeCount": 1,
+    "buys": 1,
     "sells": 0,
-    "buyUsd": 0,
+    "buyUsd": 149.7,
     "realizedPnlUsd": 0,
     "equityStartUsd": 3146.4,
-    "equityEndUsd": 3000,
-    "equityChangeUsd": -146.4,
+    "equityEndUsd": 2999.55,
+    "equityChangeUsd": -146.85,
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 196
+        "count": 245
       },
       {
         "name": "amount < 500U",
-        "count": 44
+        "count": 55
       },
       {
         "name": "blacklisted source wallet: 8M2quY...twNh",
-        "count": 8
+        "count": 10
       },
       {
         "name": "blacklisted source wallet: 4rchtQ...kZi7",
-        "count": 4
+        "count": 5
       },
       {
         "name": "blacklisted source wallet: DNHWLD...aE8D",
-        "count": 4
+        "count": 5
       },
       {
         "name": "blacklisted source wallet: 4dKgEi...6QNZ",
-        "count": 4
+        "count": 5
       },
       {
         "name": "blacklisted source wallet: 85ieYF...zXuh",
-        "count": 4
+        "count": 5
       },
       {
         "name": "blacklisted source wallet: EvRYKm...mVqk",
-        "count": 4
+        "count": 5
       }
     ],
     "mistakeCount": 0,
@@ -260,9 +261,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 338,
-        "highSoldRatioCount": 338,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 341,
+        "highSoldRatioCount": 341,
         "tokens": [
           {
             "token": "FAHHHH",
@@ -346,6 +347,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 81.08%",
           "watch only; sold ratio 80.29%",
           "watch only; sold ratio 80.82%",
           "watch only; sold ratio 98.75%",
@@ -354,8 +356,7 @@
           "watch only; sold ratio 98.8%",
           "watch only; sold ratio 98.78%",
           "watch only; sold ratio 98.74%",
-          "watch only; sold ratio 100%",
-          "watch only; sold ratio 98.72%"
+          "watch only; sold ratio 100%"
         ]
       },
       {
@@ -365,9 +366,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 271,
-        "highSoldRatioCount": 271,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 272,
+        "highSoldRatioCount": 272,
         "tokens": [
           {
             "token": "TOPLESS",
@@ -451,6 +452,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 96.4%",
           "watch only; sold ratio 83.81%",
           "watch only; sold ratio 96.42%",
           "watch only; sold ratio 84.4%",
@@ -459,8 +461,7 @@
           "watch only; sold ratio 96.41%",
           "watch only; sold ratio 81.28%",
           "watch only; sold ratio 96.46%",
-          "watch only; sold ratio 80.15%",
-          "watch only; sold ratio 96.44%"
+          "watch only; sold ratio 80.15%"
         ]
       },
       {
@@ -470,10 +471,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 267,
-        "highSoldRatioCount": 267,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 270,
+        "highSoldRatioCount": 270,
         "tokens": [
+          {
+            "token": "EbolaVirus",
+            "symbol": "Ebola",
+            "address": "5vicjeyytdbqmske74vwqedvme5cmea3vr1at8rxb9t1",
+            "shortAddress": "5vicje...b9t1",
+            "soldRatioPercent": 100,
+            "amountUsd": 250.23
+          },
           {
             "token": "FAHHHH",
             "symbol": "FAHHHH",
@@ -545,17 +554,11 @@
             "shortAddress": "5pg6vs...m7hf",
             "soldRatioPercent": 100,
             "amountUsd": 148.04
-          },
-          {
-            "token": "ISOR",
-            "symbol": "ISOR",
-            "address": "eabfxkmwb5a4yvoztdna8qu4dp44x14hvmog29yqpump",
-            "shortAddress": "eabfxk...pump",
-            "soldRatioPercent": 84.43,
-            "amountUsd": 391.71
           }
         ],
         "reasons": [
+          "watch only; sold ratio 100%",
+          "watch only; sold ratio 81.08%",
           "watch only; sold ratio 80.29%",
           "watch only; sold ratio 80.82%",
           "watch only; sold ratio 87.58%",
@@ -563,9 +566,7 @@
           "watch only; sold ratio 85.82%",
           "watch only; sold ratio 85.04%",
           "watch only; sold ratio 82.91%",
-          "watch only; sold ratio 99.54%",
-          "watch only; sold ratio 99.5%",
-          "watch only; sold ratio 100%"
+          "watch only; sold ratio 99.54%"
         ]
       },
       {
@@ -575,9 +576,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-26T22:55:39.434Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 239,
-        "highSoldRatioCount": 239,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 240,
+        "highSoldRatioCount": 240,
         "tokens": [
           {
             "token": "SpaceX",
@@ -661,6 +662,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 96.4%",
           "watch only; sold ratio 96.42%",
           "watch only; sold ratio 96.43%",
           "watch only; sold ratio 96.41%",
@@ -669,8 +671,7 @@
           "watch only; sold ratio 96.49%",
           "watch only; sold ratio 87.58%",
           "watch only; sold ratio 96.45%",
-          "watch only; sold ratio 86.71%",
-          "watch only; sold ratio 85.82%"
+          "watch only; sold ratio 86.71%"
         ]
       },
       {
@@ -680,9 +681,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 238,
-        "highSoldRatioCount": 238,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 240,
+        "highSoldRatioCount": 240,
         "tokens": [
           {
             "token": "PARADOX",
@@ -950,8 +951,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 5289,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 5324,
         "examples": [
           {
             "token": "Kintara",
@@ -1015,8 +1016,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 1894,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 1905,
         "examples": [
           {
             "token": "Donald Trump",
@@ -1080,9 +1081,16 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 686,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 693,
         "examples": [
+          {
+            "token": "cummunity",
+            "symbol": "CUM",
+            "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
+            "shortAddress": "oqu4dd...pump",
+            "chain": "solana"
+          },
           {
             "token": "锄头",
             "symbol": "锄头",
@@ -1117,13 +1125,6 @@
             "address": "b428p1rqok8l3yfcuev75oz5c4au2edrhfqmxibxpump",
             "shortAddress": "b428p1...pump",
             "chain": "solana"
-          },
-          {
-            "token": "TOPLESS",
-            "symbol": "TOPLESS",
-            "address": "eudgqrfvudezfxsrpwa9xbewj6pkgdvfkuuef7qbpump",
-            "shortAddress": "eudgqr...pump",
-            "chain": "solana"
           }
         ]
       },
@@ -1145,8 +1146,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 453,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 455,
         "examples": [
           {
             "token": "aliens.gov",
@@ -1210,8 +1211,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-29T13:58:58.928Z",
-        "lastSeenAt": "2026-05-31T14:28:58.276Z",
-        "occurrences": 194,
+        "lastSeenAt": "2026-05-31T14:58:57.606Z",
+        "occurrences": 196,
         "examples": [
           {
             "token": "INDEX",
@@ -3424,6 +3425,48 @@
           "totalPnlUsd": 0,
           "totalPnlPct": 0
         }
+      },
+      {
+        "runId": "20260531145857",
+        "startedAt": "2026-05-31T14:58:57.606Z",
+        "finishedAt": "2026-05-31T14:59:49.762Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 59,
+        "decisions": 59,
+        "trades": 1,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 1,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 9,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2850.3,
+          "openValueUsd": 149.25,
+          "equityUsd": 2999.55,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -0.45,
+          "totalPnlUsd": -0.45,
+          "totalPnlPct": -0.01
+        }
       }
     ]
   },
@@ -3431,57 +3474,58 @@
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T14:29:50.991Z",
-      "runCount": 45,
+      "generatedAt": "2026-05-31T14:59:50.228Z",
+      "runCount": 46,
       "statuses": {
-        "ok": 45
+        "ok": 46
       },
-      "rawSignalCount": 2570,
-      "decisionCount": 236,
+      "rawSignalCount": 2629,
+      "decisionCount": 295,
       "actions": {
-        "IGNORE": 158,
-        "WATCH": 78
+        "IGNORE": 198,
+        "WATCH": 96,
+        "BUY": 1
       },
-      "tradeCount": 0,
-      "buys": 0,
+      "tradeCount": 1,
+      "buys": 1,
       "sells": 0,
-      "buyUsd": 0,
+      "buyUsd": 149.7,
       "realizedPnlUsd": 0,
       "equityStartUsd": 3146.4,
-      "equityEndUsd": 3000,
-      "equityChangeUsd": -146.4,
+      "equityEndUsd": 2999.55,
+      "equityChangeUsd": -146.85,
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 196
+          "count": 245
         },
         {
           "name": "amount < 500U",
-          "count": 44
+          "count": 55
         },
         {
           "name": "blacklisted source wallet: 8M2quY...twNh",
-          "count": 8
+          "count": 10
         },
         {
           "name": "blacklisted source wallet: 4rchtQ...kZi7",
-          "count": 4
+          "count": 5
         },
         {
           "name": "blacklisted source wallet: DNHWLD...aE8D",
-          "count": 4
+          "count": 5
         },
         {
           "name": "blacklisted source wallet: 4dKgEi...6QNZ",
-          "count": 4
+          "count": 5
         },
         {
           "name": "blacklisted source wallet: 85ieYF...zXuh",
-          "count": 4
+          "count": 5
         },
         {
           "name": "blacklisted source wallet: EvRYKm...mVqk",
-          "count": 4
+          "count": 5
         }
       ],
       "mistakeCount": 0,
@@ -3687,9 +3731,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 338,
-          "highSoldRatioCount": 338,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 341,
+          "highSoldRatioCount": 341,
           "tokens": [
             {
               "token": "FAHHHH",
@@ -3773,6 +3817,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 98.75%",
@@ -3781,8 +3826,7 @@
             "watch only; sold ratio 98.8%",
             "watch only; sold ratio 98.78%",
             "watch only; sold ratio 98.74%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 98.72%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -3792,9 +3836,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 271,
-          "highSoldRatioCount": 271,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 272,
+          "highSoldRatioCount": 272,
           "tokens": [
             {
               "token": "TOPLESS",
@@ -3878,6 +3922,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 83.81%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 84.4%",
@@ -3886,8 +3931,7 @@
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 81.28%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 80.15%",
-            "watch only; sold ratio 96.44%"
+            "watch only; sold ratio 80.15%"
           ]
         },
         {
@@ -3897,10 +3941,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 267,
-          "highSoldRatioCount": 267,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 270,
+          "highSoldRatioCount": 270,
           "tokens": [
+            {
+              "token": "EbolaVirus",
+              "symbol": "Ebola",
+              "address": "5vicjeyytdbqmske74vwqedvme5cmea3vr1at8rxb9t1",
+              "shortAddress": "5vicje...b9t1",
+              "soldRatioPercent": 100,
+              "amountUsd": 250.23
+            },
             {
               "token": "FAHHHH",
               "symbol": "FAHHHH",
@@ -3972,17 +4024,11 @@
               "shortAddress": "5pg6vs...m7hf",
               "soldRatioPercent": 100,
               "amountUsd": 148.04
-            },
-            {
-              "token": "ISOR",
-              "symbol": "ISOR",
-              "address": "eabfxkmwb5a4yvoztdna8qu4dp44x14hvmog29yqpump",
-              "shortAddress": "eabfxk...pump",
-              "soldRatioPercent": 84.43,
-              "amountUsd": 391.71
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 87.58%",
@@ -3990,9 +4036,7 @@
             "watch only; sold ratio 85.82%",
             "watch only; sold ratio 85.04%",
             "watch only; sold ratio 82.91%",
-            "watch only; sold ratio 99.54%",
-            "watch only; sold ratio 99.5%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 99.54%"
           ]
         },
         {
@@ -4002,9 +4046,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 239,
-          "highSoldRatioCount": 239,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "SpaceX",
@@ -4088,6 +4132,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
@@ -4096,8 +4141,7 @@
             "watch only; sold ratio 96.49%",
             "watch only; sold ratio 87.58%",
             "watch only; sold ratio 96.45%",
-            "watch only; sold ratio 86.71%",
-            "watch only; sold ratio 85.82%"
+            "watch only; sold ratio 86.71%"
           ]
         },
         {
@@ -4107,9 +4151,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 238,
-          "highSoldRatioCount": 238,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "PARADOX",
@@ -4377,8 +4421,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 5289,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 5324,
           "examples": [
             {
               "token": "Kintara",
@@ -4442,8 +4486,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 1894,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 1905,
           "examples": [
             {
               "token": "Donald Trump",
@@ -4507,9 +4551,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 686,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 693,
           "examples": [
+            {
+              "token": "cummunity",
+              "symbol": "CUM",
+              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
+              "shortAddress": "oqu4dd...pump",
+              "chain": "solana"
+            },
             {
               "token": "锄头",
               "symbol": "锄头",
@@ -4544,13 +4595,6 @@
               "address": "b428p1rqok8l3yfcuev75oz5c4au2edrhfqmxibxpump",
               "shortAddress": "b428p1...pump",
               "chain": "solana"
-            },
-            {
-              "token": "TOPLESS",
-              "symbol": "TOPLESS",
-              "address": "eudgqrfvudezfxsrpwa9xbewj6pkgdvfkuuef7qbpump",
-              "shortAddress": "eudgqr...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -4572,8 +4616,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 453,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 455,
           "examples": [
             {
               "token": "aliens.gov",
@@ -4637,8 +4681,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 194,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 196,
           "examples": [
             {
               "token": "INDEX",
@@ -6851,13 +6895,55 @@
             "totalPnlUsd": 0,
             "totalPnlPct": 0
           }
+        },
+        {
+          "runId": "20260531145857",
+          "startedAt": "2026-05-31T14:58:57.606Z",
+          "finishedAt": "2026-05-31T14:59:49.762Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 59,
+          "decisions": 59,
+          "trades": 1,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 1,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 9,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2850.3,
+            "openValueUsd": 149.25,
+            "equityUsd": 2999.55,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -0.45,
+            "totalPnlUsd": -0.45,
+            "totalPnlPct": -0.01
+          }
         }
       ]
     },
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T14:29:50.991Z",
+      "generatedAt": "2026-05-31T14:59:50.228Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -7077,9 +7163,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 338,
-          "highSoldRatioCount": 338,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 341,
+          "highSoldRatioCount": 341,
           "tokens": [
             {
               "token": "FAHHHH",
@@ -7163,6 +7249,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 98.75%",
@@ -7171,8 +7258,7 @@
             "watch only; sold ratio 98.8%",
             "watch only; sold ratio 98.78%",
             "watch only; sold ratio 98.74%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 98.72%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -7182,9 +7268,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 271,
-          "highSoldRatioCount": 271,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 272,
+          "highSoldRatioCount": 272,
           "tokens": [
             {
               "token": "TOPLESS",
@@ -7268,6 +7354,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 83.81%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 84.4%",
@@ -7276,8 +7363,7 @@
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 81.28%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 80.15%",
-            "watch only; sold ratio 96.44%"
+            "watch only; sold ratio 80.15%"
           ]
         },
         {
@@ -7287,10 +7373,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 267,
-          "highSoldRatioCount": 267,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 270,
+          "highSoldRatioCount": 270,
           "tokens": [
+            {
+              "token": "EbolaVirus",
+              "symbol": "Ebola",
+              "address": "5vicjeyytdbqmske74vwqedvme5cmea3vr1at8rxb9t1",
+              "shortAddress": "5vicje...b9t1",
+              "soldRatioPercent": 100,
+              "amountUsd": 250.23
+            },
             {
               "token": "FAHHHH",
               "symbol": "FAHHHH",
@@ -7362,17 +7456,11 @@
               "shortAddress": "5pg6vs...m7hf",
               "soldRatioPercent": 100,
               "amountUsd": 148.04
-            },
-            {
-              "token": "ISOR",
-              "symbol": "ISOR",
-              "address": "eabfxkmwb5a4yvoztdna8qu4dp44x14hvmog29yqpump",
-              "shortAddress": "eabfxk...pump",
-              "soldRatioPercent": 84.43,
-              "amountUsd": 391.71
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 87.58%",
@@ -7380,9 +7468,7 @@
             "watch only; sold ratio 85.82%",
             "watch only; sold ratio 85.04%",
             "watch only; sold ratio 82.91%",
-            "watch only; sold ratio 99.54%",
-            "watch only; sold ratio 99.5%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 99.54%"
           ]
         },
         {
@@ -7392,9 +7478,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 239,
-          "highSoldRatioCount": 239,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "SpaceX",
@@ -7478,6 +7564,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
@@ -7486,8 +7573,7 @@
             "watch only; sold ratio 96.49%",
             "watch only; sold ratio 87.58%",
             "watch only; sold ratio 96.45%",
-            "watch only; sold ratio 86.71%",
-            "watch only; sold ratio 85.82%"
+            "watch only; sold ratio 86.71%"
           ]
         },
         {
@@ -7497,9 +7583,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 238,
-          "highSoldRatioCount": 238,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "PARADOX",
@@ -7767,8 +7853,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 5289,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 5324,
           "examples": [
             {
               "token": "Kintara",
@@ -7832,8 +7918,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 1894,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 1905,
           "examples": [
             {
               "token": "Donald Trump",
@@ -7897,9 +7983,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 686,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 693,
           "examples": [
+            {
+              "token": "cummunity",
+              "symbol": "CUM",
+              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
+              "shortAddress": "oqu4dd...pump",
+              "chain": "solana"
+            },
             {
               "token": "锄头",
               "symbol": "锄头",
@@ -7934,13 +8027,6 @@
               "address": "b428p1rqok8l3yfcuev75oz5c4au2edrhfqmxibxpump",
               "shortAddress": "b428p1...pump",
               "chain": "solana"
-            },
-            {
-              "token": "TOPLESS",
-              "symbol": "TOPLESS",
-              "address": "eudgqrfvudezfxsrpwa9xbewj6pkgdvfkuuef7qbpump",
-              "shortAddress": "eudgqr...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -7962,8 +8048,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 453,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 455,
           "examples": [
             {
               "token": "aliens.gov",
@@ -8027,8 +8113,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 194,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 196,
           "examples": [
             {
               "token": "INDEX",
@@ -10331,7 +10417,7 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T14:29:50.992Z",
+      "generatedAt": "2026-05-31T14:59:50.229Z",
       "runCount": 36,
       "statuses": {
         "ok": 19,
@@ -10554,9 +10640,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 338,
-          "highSoldRatioCount": 338,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 341,
+          "highSoldRatioCount": 341,
           "tokens": [
             {
               "token": "FAHHHH",
@@ -10640,6 +10726,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 98.75%",
@@ -10648,8 +10735,7 @@
             "watch only; sold ratio 98.8%",
             "watch only; sold ratio 98.78%",
             "watch only; sold ratio 98.74%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 98.72%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -10659,9 +10745,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 271,
-          "highSoldRatioCount": 271,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 272,
+          "highSoldRatioCount": 272,
           "tokens": [
             {
               "token": "TOPLESS",
@@ -10745,6 +10831,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 83.81%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 84.4%",
@@ -10753,8 +10840,7 @@
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 81.28%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 80.15%",
-            "watch only; sold ratio 96.44%"
+            "watch only; sold ratio 80.15%"
           ]
         },
         {
@@ -10764,10 +10850,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 267,
-          "highSoldRatioCount": 267,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 270,
+          "highSoldRatioCount": 270,
           "tokens": [
+            {
+              "token": "EbolaVirus",
+              "symbol": "Ebola",
+              "address": "5vicjeyytdbqmske74vwqedvme5cmea3vr1at8rxb9t1",
+              "shortAddress": "5vicje...b9t1",
+              "soldRatioPercent": 100,
+              "amountUsd": 250.23
+            },
             {
               "token": "FAHHHH",
               "symbol": "FAHHHH",
@@ -10839,17 +10933,11 @@
               "shortAddress": "5pg6vs...m7hf",
               "soldRatioPercent": 100,
               "amountUsd": 148.04
-            },
-            {
-              "token": "ISOR",
-              "symbol": "ISOR",
-              "address": "eabfxkmwb5a4yvoztdna8qu4dp44x14hvmog29yqpump",
-              "shortAddress": "eabfxk...pump",
-              "soldRatioPercent": 84.43,
-              "amountUsd": 391.71
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 87.58%",
@@ -10857,9 +10945,7 @@
             "watch only; sold ratio 85.82%",
             "watch only; sold ratio 85.04%",
             "watch only; sold ratio 82.91%",
-            "watch only; sold ratio 99.54%",
-            "watch only; sold ratio 99.5%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 99.54%"
           ]
         },
         {
@@ -10869,9 +10955,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 239,
-          "highSoldRatioCount": 239,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "SpaceX",
@@ -10955,6 +11041,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
@@ -10963,8 +11050,7 @@
             "watch only; sold ratio 96.49%",
             "watch only; sold ratio 87.58%",
             "watch only; sold ratio 96.45%",
-            "watch only; sold ratio 86.71%",
-            "watch only; sold ratio 85.82%"
+            "watch only; sold ratio 86.71%"
           ]
         },
         {
@@ -10974,9 +11060,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 238,
-          "highSoldRatioCount": 238,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "PARADOX",
@@ -11244,8 +11330,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 5289,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 5324,
           "examples": [
             {
               "token": "Kintara",
@@ -11309,8 +11395,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 1894,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 1905,
           "examples": [
             {
               "token": "Donald Trump",
@@ -11374,9 +11460,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 686,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 693,
           "examples": [
+            {
+              "token": "cummunity",
+              "symbol": "CUM",
+              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
+              "shortAddress": "oqu4dd...pump",
+              "chain": "solana"
+            },
             {
               "token": "锄头",
               "symbol": "锄头",
@@ -11411,13 +11504,6 @@
               "address": "b428p1rqok8l3yfcuev75oz5c4au2edrhfqmxibxpump",
               "shortAddress": "b428p1...pump",
               "chain": "solana"
-            },
-            {
-              "token": "TOPLESS",
-              "symbol": "TOPLESS",
-              "address": "eudgqrfvudezfxsrpwa9xbewj6pkgdvfkuuef7qbpump",
-              "shortAddress": "eudgqr...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -11439,8 +11525,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 453,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 455,
           "examples": [
             {
               "token": "aliens.gov",
@@ -11504,8 +11590,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 194,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 196,
           "examples": [
             {
               "token": "INDEX",
@@ -13152,7 +13238,7 @@
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T14:29:50.992Z",
+      "generatedAt": "2026-05-31T14:59:50.229Z",
       "runCount": 33,
       "statuses": {
         "ok": 33
@@ -13372,9 +13458,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 338,
-          "highSoldRatioCount": 338,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 341,
+          "highSoldRatioCount": 341,
           "tokens": [
             {
               "token": "FAHHHH",
@@ -13458,6 +13544,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 98.75%",
@@ -13466,8 +13553,7 @@
             "watch only; sold ratio 98.8%",
             "watch only; sold ratio 98.78%",
             "watch only; sold ratio 98.74%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 98.72%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -13477,9 +13563,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 271,
-          "highSoldRatioCount": 271,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 272,
+          "highSoldRatioCount": 272,
           "tokens": [
             {
               "token": "TOPLESS",
@@ -13563,6 +13649,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 83.81%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 84.4%",
@@ -13571,8 +13658,7 @@
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 81.28%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 80.15%",
-            "watch only; sold ratio 96.44%"
+            "watch only; sold ratio 80.15%"
           ]
         },
         {
@@ -13582,10 +13668,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 267,
-          "highSoldRatioCount": 267,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 270,
+          "highSoldRatioCount": 270,
           "tokens": [
+            {
+              "token": "EbolaVirus",
+              "symbol": "Ebola",
+              "address": "5vicjeyytdbqmske74vwqedvme5cmea3vr1at8rxb9t1",
+              "shortAddress": "5vicje...b9t1",
+              "soldRatioPercent": 100,
+              "amountUsd": 250.23
+            },
             {
               "token": "FAHHHH",
               "symbol": "FAHHHH",
@@ -13657,17 +13751,11 @@
               "shortAddress": "5pg6vs...m7hf",
               "soldRatioPercent": 100,
               "amountUsd": 148.04
-            },
-            {
-              "token": "ISOR",
-              "symbol": "ISOR",
-              "address": "eabfxkmwb5a4yvoztdna8qu4dp44x14hvmog29yqpump",
-              "shortAddress": "eabfxk...pump",
-              "soldRatioPercent": 84.43,
-              "amountUsd": 391.71
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 87.58%",
@@ -13675,9 +13763,7 @@
             "watch only; sold ratio 85.82%",
             "watch only; sold ratio 85.04%",
             "watch only; sold ratio 82.91%",
-            "watch only; sold ratio 99.54%",
-            "watch only; sold ratio 99.5%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 99.54%"
           ]
         },
         {
@@ -13687,9 +13773,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 239,
-          "highSoldRatioCount": 239,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "SpaceX",
@@ -13773,6 +13859,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
@@ -13781,8 +13868,7 @@
             "watch only; sold ratio 96.49%",
             "watch only; sold ratio 87.58%",
             "watch only; sold ratio 96.45%",
-            "watch only; sold ratio 86.71%",
-            "watch only; sold ratio 85.82%"
+            "watch only; sold ratio 86.71%"
           ]
         },
         {
@@ -13792,9 +13878,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 238,
-          "highSoldRatioCount": 238,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "PARADOX",
@@ -14062,8 +14148,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 5289,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 5324,
           "examples": [
             {
               "token": "Kintara",
@@ -14127,8 +14213,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 1894,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 1905,
           "examples": [
             {
               "token": "Donald Trump",
@@ -14192,9 +14278,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 686,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 693,
           "examples": [
+            {
+              "token": "cummunity",
+              "symbol": "CUM",
+              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
+              "shortAddress": "oqu4dd...pump",
+              "chain": "solana"
+            },
             {
               "token": "锄头",
               "symbol": "锄头",
@@ -14229,13 +14322,6 @@
               "address": "b428p1rqok8l3yfcuev75oz5c4au2edrhfqmxibxpump",
               "shortAddress": "b428p1...pump",
               "chain": "solana"
-            },
-            {
-              "token": "TOPLESS",
-              "symbol": "TOPLESS",
-              "address": "eudgqrfvudezfxsrpwa9xbewj6pkgdvfkuuef7qbpump",
-              "shortAddress": "eudgqr...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -14257,8 +14343,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 453,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 455,
           "examples": [
             {
               "token": "aliens.gov",
@@ -14322,8 +14408,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 194,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 196,
           "examples": [
             {
               "token": "INDEX",
@@ -15989,7 +16075,7 @@
     {
       "date": "2026-05-27",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T14:29:50.992Z",
+      "generatedAt": "2026-05-31T14:59:50.229Z",
       "runCount": 6,
       "statuses": {
         "ok": 5,
@@ -16212,9 +16298,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 338,
-          "highSoldRatioCount": 338,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 341,
+          "highSoldRatioCount": 341,
           "tokens": [
             {
               "token": "FAHHHH",
@@ -16298,6 +16384,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 98.75%",
@@ -16306,8 +16393,7 @@
             "watch only; sold ratio 98.8%",
             "watch only; sold ratio 98.78%",
             "watch only; sold ratio 98.74%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 98.72%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -16317,9 +16403,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 271,
-          "highSoldRatioCount": 271,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 272,
+          "highSoldRatioCount": 272,
           "tokens": [
             {
               "token": "TOPLESS",
@@ -16403,6 +16489,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 83.81%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 84.4%",
@@ -16411,8 +16498,7 @@
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 81.28%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 80.15%",
-            "watch only; sold ratio 96.44%"
+            "watch only; sold ratio 80.15%"
           ]
         },
         {
@@ -16422,10 +16508,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 267,
-          "highSoldRatioCount": 267,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 270,
+          "highSoldRatioCount": 270,
           "tokens": [
+            {
+              "token": "EbolaVirus",
+              "symbol": "Ebola",
+              "address": "5vicjeyytdbqmske74vwqedvme5cmea3vr1at8rxb9t1",
+              "shortAddress": "5vicje...b9t1",
+              "soldRatioPercent": 100,
+              "amountUsd": 250.23
+            },
             {
               "token": "FAHHHH",
               "symbol": "FAHHHH",
@@ -16497,17 +16591,11 @@
               "shortAddress": "5pg6vs...m7hf",
               "soldRatioPercent": 100,
               "amountUsd": 148.04
-            },
-            {
-              "token": "ISOR",
-              "symbol": "ISOR",
-              "address": "eabfxkmwb5a4yvoztdna8qu4dp44x14hvmog29yqpump",
-              "shortAddress": "eabfxk...pump",
-              "soldRatioPercent": 84.43,
-              "amountUsd": 391.71
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 87.58%",
@@ -16515,9 +16603,7 @@
             "watch only; sold ratio 85.82%",
             "watch only; sold ratio 85.04%",
             "watch only; sold ratio 82.91%",
-            "watch only; sold ratio 99.54%",
-            "watch only; sold ratio 99.5%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 99.54%"
           ]
         },
         {
@@ -16527,9 +16613,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 239,
-          "highSoldRatioCount": 239,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "SpaceX",
@@ -16613,6 +16699,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
@@ -16621,8 +16708,7 @@
             "watch only; sold ratio 96.49%",
             "watch only; sold ratio 87.58%",
             "watch only; sold ratio 96.45%",
-            "watch only; sold ratio 86.71%",
-            "watch only; sold ratio 85.82%"
+            "watch only; sold ratio 86.71%"
           ]
         },
         {
@@ -16632,9 +16718,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 238,
-          "highSoldRatioCount": 238,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "PARADOX",
@@ -16902,8 +16988,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 5289,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 5324,
           "examples": [
             {
               "token": "Kintara",
@@ -16967,8 +17053,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 1894,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 1905,
           "examples": [
             {
               "token": "Donald Trump",
@@ -17032,9 +17118,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 686,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 693,
           "examples": [
+            {
+              "token": "cummunity",
+              "symbol": "CUM",
+              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
+              "shortAddress": "oqu4dd...pump",
+              "chain": "solana"
+            },
             {
               "token": "锄头",
               "symbol": "锄头",
@@ -17069,13 +17162,6 @@
               "address": "b428p1rqok8l3yfcuev75oz5c4au2edrhfqmxibxpump",
               "shortAddress": "b428p1...pump",
               "chain": "solana"
-            },
-            {
-              "token": "TOPLESS",
-              "symbol": "TOPLESS",
-              "address": "eudgqrfvudezfxsrpwa9xbewj6pkgdvfkuuef7qbpump",
-              "shortAddress": "eudgqr...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -17097,8 +17183,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 453,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 455,
           "examples": [
             {
               "token": "aliens.gov",
@@ -17162,8 +17248,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 194,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 196,
           "examples": [
             {
               "token": "INDEX",
@@ -17591,7 +17677,7 @@
     {
       "date": "2026-05-26",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T14:29:50.993Z",
+      "generatedAt": "2026-05-31T14:59:50.230Z",
       "runCount": 10,
       "statuses": {
         "failed": 5,
@@ -17815,9 +17901,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 338,
-          "highSoldRatioCount": 338,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 341,
+          "highSoldRatioCount": 341,
           "tokens": [
             {
               "token": "FAHHHH",
@@ -17901,6 +17987,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 98.75%",
@@ -17909,8 +17996,7 @@
             "watch only; sold ratio 98.8%",
             "watch only; sold ratio 98.78%",
             "watch only; sold ratio 98.74%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 98.72%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -17920,9 +18006,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 271,
-          "highSoldRatioCount": 271,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 272,
+          "highSoldRatioCount": 272,
           "tokens": [
             {
               "token": "TOPLESS",
@@ -18006,6 +18092,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 83.81%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 84.4%",
@@ -18014,8 +18101,7 @@
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 81.28%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 80.15%",
-            "watch only; sold ratio 96.44%"
+            "watch only; sold ratio 80.15%"
           ]
         },
         {
@@ -18025,10 +18111,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 267,
-          "highSoldRatioCount": 267,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 270,
+          "highSoldRatioCount": 270,
           "tokens": [
+            {
+              "token": "EbolaVirus",
+              "symbol": "Ebola",
+              "address": "5vicjeyytdbqmske74vwqedvme5cmea3vr1at8rxb9t1",
+              "shortAddress": "5vicje...b9t1",
+              "soldRatioPercent": 100,
+              "amountUsd": 250.23
+            },
             {
               "token": "FAHHHH",
               "symbol": "FAHHHH",
@@ -18100,17 +18194,11 @@
               "shortAddress": "5pg6vs...m7hf",
               "soldRatioPercent": 100,
               "amountUsd": 148.04
-            },
-            {
-              "token": "ISOR",
-              "symbol": "ISOR",
-              "address": "eabfxkmwb5a4yvoztdna8qu4dp44x14hvmog29yqpump",
-              "shortAddress": "eabfxk...pump",
-              "soldRatioPercent": 84.43,
-              "amountUsd": 391.71
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 87.58%",
@@ -18118,9 +18206,7 @@
             "watch only; sold ratio 85.82%",
             "watch only; sold ratio 85.04%",
             "watch only; sold ratio 82.91%",
-            "watch only; sold ratio 99.54%",
-            "watch only; sold ratio 99.5%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 99.54%"
           ]
         },
         {
@@ -18130,9 +18216,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 239,
-          "highSoldRatioCount": 239,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "SpaceX",
@@ -18216,6 +18302,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
@@ -18224,8 +18311,7 @@
             "watch only; sold ratio 96.49%",
             "watch only; sold ratio 87.58%",
             "watch only; sold ratio 96.45%",
-            "watch only; sold ratio 86.71%",
-            "watch only; sold ratio 85.82%"
+            "watch only; sold ratio 86.71%"
           ]
         },
         {
@@ -18235,9 +18321,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 238,
-          "highSoldRatioCount": 238,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "PARADOX",
@@ -18505,8 +18591,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 5289,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 5324,
           "examples": [
             {
               "token": "Kintara",
@@ -18570,8 +18656,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 1894,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 1905,
           "examples": [
             {
               "token": "Donald Trump",
@@ -18635,9 +18721,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 686,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 693,
           "examples": [
+            {
+              "token": "cummunity",
+              "symbol": "CUM",
+              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
+              "shortAddress": "oqu4dd...pump",
+              "chain": "solana"
+            },
             {
               "token": "锄头",
               "symbol": "锄头",
@@ -18672,13 +18765,6 @@
               "address": "b428p1rqok8l3yfcuev75oz5c4au2edrhfqmxibxpump",
               "shortAddress": "b428p1...pump",
               "chain": "solana"
-            },
-            {
-              "token": "TOPLESS",
-              "symbol": "TOPLESS",
-              "address": "eudgqrfvudezfxsrpwa9xbewj6pkgdvfkuuef7qbpump",
-              "shortAddress": "eudgqr...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -18700,8 +18786,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 453,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 455,
           "examples": [
             {
               "token": "aliens.gov",
@@ -18765,8 +18851,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 194,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 196,
           "examples": [
             {
               "token": "INDEX",
@@ -19399,7 +19485,7 @@
     {
       "date": "2026-05-25",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-05-31T14:29:50.993Z",
+      "generatedAt": "2026-05-31T14:59:50.230Z",
       "runCount": 19,
       "statuses": {
         "failed": 10,
@@ -19413,9 +19499,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 3000,
+      "equityStartUsd": 2999.55,
       "equityEndUsd": 3152.63,
-      "equityChangeUsd": 152.63,
+      "equityChangeUsd": 153.08,
       "topBlockers": [],
       "mistakeCount": 10,
       "mistakeTypes": {
@@ -19623,9 +19709,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 338,
-          "highSoldRatioCount": 338,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 341,
+          "highSoldRatioCount": 341,
           "tokens": [
             {
               "token": "FAHHHH",
@@ -19709,6 +19795,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 98.75%",
@@ -19717,8 +19804,7 @@
             "watch only; sold ratio 98.8%",
             "watch only; sold ratio 98.78%",
             "watch only; sold ratio 98.74%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 98.72%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -19728,9 +19814,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 271,
-          "highSoldRatioCount": 271,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 272,
+          "highSoldRatioCount": 272,
           "tokens": [
             {
               "token": "TOPLESS",
@@ -19814,6 +19900,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 83.81%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 84.4%",
@@ -19822,8 +19909,7 @@
             "watch only; sold ratio 96.41%",
             "watch only; sold ratio 81.28%",
             "watch only; sold ratio 96.46%",
-            "watch only; sold ratio 80.15%",
-            "watch only; sold ratio 96.44%"
+            "watch only; sold ratio 80.15%"
           ]
         },
         {
@@ -19833,10 +19919,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 267,
-          "highSoldRatioCount": 267,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 270,
+          "highSoldRatioCount": 270,
           "tokens": [
+            {
+              "token": "EbolaVirus",
+              "symbol": "Ebola",
+              "address": "5vicjeyytdbqmske74vwqedvme5cmea3vr1at8rxb9t1",
+              "shortAddress": "5vicje...b9t1",
+              "soldRatioPercent": 100,
+              "amountUsd": 250.23
+            },
             {
               "token": "FAHHHH",
               "symbol": "FAHHHH",
@@ -19908,17 +20002,11 @@
               "shortAddress": "5pg6vs...m7hf",
               "soldRatioPercent": 100,
               "amountUsd": 148.04
-            },
-            {
-              "token": "ISOR",
-              "symbol": "ISOR",
-              "address": "eabfxkmwb5a4yvoztdna8qu4dp44x14hvmog29yqpump",
-              "shortAddress": "eabfxk...pump",
-              "soldRatioPercent": 84.43,
-              "amountUsd": 391.71
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 81.08%",
             "watch only; sold ratio 80.29%",
             "watch only; sold ratio 80.82%",
             "watch only; sold ratio 87.58%",
@@ -19926,9 +20014,7 @@
             "watch only; sold ratio 85.82%",
             "watch only; sold ratio 85.04%",
             "watch only; sold ratio 82.91%",
-            "watch only; sold ratio 99.54%",
-            "watch only; sold ratio 99.5%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 99.54%"
           ]
         },
         {
@@ -19938,9 +20024,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 239,
-          "highSoldRatioCount": 239,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "SpaceX",
@@ -20024,6 +20110,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 96.4%",
             "watch only; sold ratio 96.42%",
             "watch only; sold ratio 96.43%",
             "watch only; sold ratio 96.41%",
@@ -20032,8 +20119,7 @@
             "watch only; sold ratio 96.49%",
             "watch only; sold ratio 87.58%",
             "watch only; sold ratio 96.45%",
-            "watch only; sold ratio 86.71%",
-            "watch only; sold ratio 85.82%"
+            "watch only; sold ratio 86.71%"
           ]
         },
         {
@@ -20043,9 +20129,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 238,
-          "highSoldRatioCount": 238,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 240,
+          "highSoldRatioCount": 240,
           "tokens": [
             {
               "token": "PARADOX",
@@ -20313,8 +20399,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 5289,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 5324,
           "examples": [
             {
               "token": "Kintara",
@@ -20378,8 +20464,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 1894,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 1905,
           "examples": [
             {
               "token": "Donald Trump",
@@ -20443,9 +20529,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 686,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 693,
           "examples": [
+            {
+              "token": "cummunity",
+              "symbol": "CUM",
+              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
+              "shortAddress": "oqu4dd...pump",
+              "chain": "solana"
+            },
             {
               "token": "锄头",
               "symbol": "锄头",
@@ -20480,13 +20573,6 @@
               "address": "b428p1rqok8l3yfcuev75oz5c4au2edrhfqmxibxpump",
               "shortAddress": "b428p1...pump",
               "chain": "solana"
-            },
-            {
-              "token": "TOPLESS",
-              "symbol": "TOPLESS",
-              "address": "eudgqrfvudezfxsrpwa9xbewj6pkgdvfkuuef7qbpump",
-              "shortAddress": "eudgqr...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -20508,8 +20594,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 453,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 455,
           "examples": [
             {
               "token": "aliens.gov",
@@ -20573,8 +20659,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-29T13:58:58.928Z",
-          "lastSeenAt": "2026-05-31T14:28:58.276Z",
-          "occurrences": 194,
+          "lastSeenAt": "2026-05-31T14:58:57.606Z",
+          "occurrences": 196,
           "examples": [
             {
               "token": "INDEX",
