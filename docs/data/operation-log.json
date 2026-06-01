@@ -1,10 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T06:59:52.209Z",
+  "generatedAt": "2026-06-01T07:29:50.852Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260601065859",
+  "latestRunId": "20260601072858",
   "entries": [
+    {
+      "runId": "20260601072858",
+      "startedAt": "2026-06-01T07:28:58.081Z",
+      "finishedAt": "2026-06-01T07:29:50.231Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 60,
+      "decisions": 60,
+      "trades": 0,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 10,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2867.9,
+        "openValueUsd": 142.44,
+        "equityUsd": 3010.34,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": 10.34,
+        "totalPnlUsd": 10.34,
+        "totalPnlPct": 0.34
+      }
+    },
     {
       "runId": "20260601065859",
       "startedAt": "2026-06-01T06:58:59.152Z",
@@ -8805,50 +8847,6 @@
       "chainResults": [],
       "accountReset": null,
       "capital": null
-    },
-    {
-      "runId": "20260526225539",
-      "startedAt": "2026-05-26T22:55:39.434Z",
-      "finishedAt": "2026-05-26T22:55:41.097Z",
-      "status": "ok",
-      "chains": [
-        "solana",
-        "bsc"
-      ],
-      "rawSignalCount": 50,
-      "decisions": 50,
-      "trades": 2,
-      "mistakes": [],
-      "notes": [
-        "bsc: signal endpoint returned zero rows. No trades were created."
-      ],
-      "chainResults": [
-        {
-          "chain": "solana",
-          "status": "ok",
-          "rawSignalCount": 50,
-          "trades": 2,
-          "mistakes": []
-        },
-        {
-          "chain": "bsc",
-          "status": "ok",
-          "rawSignalCount": 0,
-          "trades": 0,
-          "mistakes": []
-        }
-      ],
-      "accountReset": null,
-      "capital": {
-        "initialUsd": 3000,
-        "cashUsd": 2585.1,
-        "openValueUsd": 395.37,
-        "equityUsd": 2980.47,
-        "realizedPnlUsd": 0,
-        "unrealizedPnlUsd": -19.53,
-        "totalPnlUsd": -19.53,
-        "totalPnlPct": -0.65
-      }
     }
   ]
 }
