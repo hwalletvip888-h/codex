@@ -1,17 +1,17 @@
 # 2026-06-01 策略模拟日报
 
-生成时间：2026-06-01T04:59:51.123Z
+生成时间：2026-06-01T05:29:50.694Z
 时区：Asia/Hong_Kong
 
 ## 当日结果
 
-- 扫描轮次：26
-- 原始信号：1526
-- 决策记录：348
-- 模拟成交：1 笔，买入 1 笔，卖出 0 笔
-- 买入金额：131U
+- 扫描轮次：27
+- 原始信号：1585
+- 决策记录：407
+- 模拟成交：2 笔，买入 2 笔，卖出 0 笔
+- 买入金额：260.9U
 - 已实现盈亏：0U
-- 权益变化：2998.81U -> 3010.26U（11.45U）
+- 权益变化：2998.81U -> 3009.87U（11.06U）
 - 账户重置：3 次
 - 周期总结：3 次
 - 钱包黑名单：13 个地址
@@ -19,18 +19,18 @@
 
 ## 操作状态
 
-- ok: 26 轮
+- ok: 27 轮
 
 ## 主要阻断条件
 
-- sold ratio > 35%: 277 次
-- amount < 500U: 60 次
-- blacklisted source wallet: 9nP8di...wpE6: 6 次
-- blacklisted source wallet: 4rchtQ...kZi7: 6 次
-- blacklisted source wallet: DNHWLD...aE8D: 6 次
-- blacklisted source wallet: 4dKgEi...6QNZ: 6 次
-- blacklisted source wallet: 8M2quY...twNh: 6 次
-- blacklisted source wallet: 85ieYF...zXuh: 6 次
+- sold ratio > 35%: 323 次
+- amount < 500U: 69 次
+- blacklisted source wallet: 9nP8di...wpE6: 7 次
+- blacklisted source wallet: 4rchtQ...kZi7: 7 次
+- blacklisted source wallet: DNHWLD...aE8D: 7 次
+- blacklisted source wallet: 4dKgEi...6QNZ: 7 次
+- blacklisted source wallet: 8M2quY...twNh: 7 次
+- blacklisted source wallet: 85ieYF...zXuh: 7 次
 
 ## 今日复盘
 
