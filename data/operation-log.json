@@ -1,10 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T04:29:50.697Z",
+  "generatedAt": "2026-06-01T04:59:51.126Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260601042857",
+  "latestRunId": "20260601045858",
   "entries": [
+    {
+      "runId": "20260601045858",
+      "startedAt": "2026-06-01T04:58:58.001Z",
+      "finishedAt": "2026-06-01T04:59:50.480Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 57,
+      "decisions": 57,
+      "trades": 0,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 48,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 9,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2869,
+        "openValueUsd": 141.26,
+        "equityUsd": 3010.26,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": 10.26,
+        "totalPnlUsd": 10.26,
+        "totalPnlPct": 0.34
+      }
+    },
     {
       "runId": "20260601042857",
       "startedAt": "2026-06-01T04:28:57.986Z",
@@ -8818,40 +8860,6 @@
         "unrealizedPnlUsd": 75.94,
         "totalPnlUsd": -35.49,
         "totalPnlPct": -1.18
-      }
-    },
-    {
-      "runId": "20260525235210",
-      "startedAt": "2026-05-25T23:52:10.605Z",
-      "finishedAt": "2026-05-25T23:52:10.745Z",
-      "status": "failed",
-      "chains": [
-        "solana",
-        "bsc"
-      ],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
-        {
-          "type": "CLI_ERROR",
-          "chain": "",
-          "message": "Command failed: onchainos signal chains\n\nthread '<unnamed>' (2393) panicked at src/client.rs:525:44:\nvalid header value: InvalidHeaderValue\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
-          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
-        }
-      ],
-      "notes": [],
-      "chainResults": [],
-      "accountReset": null,
-      "capital": {
-        "initialUsd": 3000,
-        "cashUsd": 2565.3,
-        "openValueUsd": 521.37,
-        "equityUsd": 3086.67,
-        "realizedPnlUsd": 0,
-        "unrealizedPnlUsd": 86.67,
-        "totalPnlUsd": 86.67,
-        "totalPnlPct": 2.89
       }
     }
   ]
