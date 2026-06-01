@@ -1,10 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T01:59:52.256Z",
+  "generatedAt": "2026-06-01T02:29:50.460Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260601015858",
+  "latestRunId": "20260601022857",
   "entries": [
+    {
+      "runId": "20260601022857",
+      "startedAt": "2026-06-01T02:28:57.863Z",
+      "finishedAt": "2026-06-01T02:29:49.843Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 59,
+      "decisions": 59,
+      "trades": 1,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 1,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 9,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2869,
+        "openValueUsd": 141.26,
+        "equityUsd": 3010.26,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": 10.26,
+        "totalPnlUsd": 10.26,
+        "totalPnlPct": 0.34
+      }
+    },
     {
       "runId": "20260601015858",
       "startedAt": "2026-06-01T01:58:58.083Z",
@@ -8814,40 +8856,6 @@
         "unrealizedPnlUsd": 86.67,
         "totalPnlUsd": 86.67,
         "totalPnlPct": 2.89
-      }
-    },
-    {
-      "runId": "20260525175135",
-      "startedAt": "2026-05-25T17:51:35.614Z",
-      "finishedAt": "2026-05-25T17:51:35.870Z",
-      "status": "failed",
-      "chains": [
-        "solana",
-        "bsc"
-      ],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
-        {
-          "type": "AUTH_INVALID",
-          "chain": "",
-          "message": "API error (code=50114): Invalid Authority. You are not logged in, run `wallet login` to sign into OKX Agentic Wallet.",
-          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
-        }
-      ],
-      "notes": [],
-      "chainResults": [],
-      "accountReset": null,
-      "capital": {
-        "initialUsd": 3000,
-        "cashUsd": 2433.3,
-        "openValueUsd": 719.33,
-        "equityUsd": 3152.63,
-        "realizedPnlUsd": 0,
-        "unrealizedPnlUsd": 152.63,
-        "totalPnlUsd": 152.63,
-        "totalPnlPct": 5.09
       }
     }
   ]
