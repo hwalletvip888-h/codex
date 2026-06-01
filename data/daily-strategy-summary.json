@@ -1,26 +1,64 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T10:59:51.292Z",
+  "generatedAt": "2026-06-01T11:29:51.528Z",
   "latest": {
     "date": "2026-06-01",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-01T10:59:51.276Z",
-    "runCount": 38,
+    "generatedAt": "2026-06-01T11:29:51.518Z",
+    "runCount": 39,
     "statuses": {
-      "ok": 38
+      "ok": 39
     },
-    "rawSignalCount": 2258,
-    "decisionCount": 0,
-    "actions": {},
-    "tradeCount": 0,
-    "buys": 0,
+    "rawSignalCount": 2321,
+    "decisionCount": 63,
+    "actions": {
+      "IGNORE": 38,
+      "WATCH": 21,
+      "BUY": 2,
+      "HOLD": 2
+    },
+    "tradeCount": 2,
+    "buys": 2,
     "sells": 0,
-    "buyUsd": 0,
+    "buyUsd": 263.1,
     "realizedPnlUsd": 0,
     "equityStartUsd": 2998.81,
-    "equityEndUsd": 3015.89,
-    "equityChangeUsd": 17.08,
-    "topBlockers": [],
+    "equityEndUsd": 3014.87,
+    "equityChangeUsd": 16.06,
+    "topBlockers": [
+      {
+        "name": "sold ratio > 35%",
+        "count": 49
+      },
+      {
+        "name": "amount < 500U",
+        "count": 8
+      },
+      {
+        "name": "blacklisted source wallet: 9nP8di...wpE6",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 4rchtQ...kZi7",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: DNHWLD...aE8D",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 4dKgEi...6QNZ",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 8M2quY...twNh",
+        "count": 1
+      },
+      {
+        "name": "blacklisted source wallet: 85ieYF...zXuh",
+        "count": 1
+      }
+    ],
     "mistakeCount": 0,
     "mistakeTypes": {},
     "accountResets": 5,
@@ -329,10 +367,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-01T10:58:58.320Z",
-        "occurrences": 355,
-        "highSoldRatioCount": 355,
+        "lastSeenAt": "2026-06-01T11:28:58.279Z",
+        "occurrences": 360,
+        "highSoldRatioCount": 360,
         "tokens": [
+          {
+            "token": "The Official Dat Bih Gah Coin",
+            "symbol": "DATBIHGAH",
+            "address": "99n2yocr2m9e2nxrbqasugxrhydrifuknuq6tapupump",
+            "shortAddress": "99n2yo...pump",
+            "soldRatioPercent": 84.51,
+            "amountUsd": 1490.1
+          },
           {
             "token": "Justice For Henry Nowak",
             "symbol": "HENRY",
@@ -404,17 +450,11 @@
             "shortAddress": "9dvozm...pump",
             "soldRatioPercent": 83.83,
             "amountUsd": 511.51
-          },
-          {
-            "token": "America Is Back",
-            "symbol": "AMERICA",
-            "address": "ava8yucsd2yguspdv3hb2cjpdf8xahgwyxmchxwopump",
-            "shortAddress": "ava8yu...pump",
-            "soldRatioPercent": 100,
-            "amountUsd": 307.14
           }
         ],
         "reasons": [
+          "watch only; sold ratio 89.33%",
+          "watch only; sold ratio 84.51%",
           "watch only; sold ratio 89.28%",
           "watch only; sold ratio 89.26%",
           "watch only; sold ratio 89.24%",
@@ -422,9 +462,7 @@
           "watch only; sold ratio 90.67%",
           "watch only; sold ratio 91.24%",
           "watch only; sold ratio 90.97%",
-          "watch only; sold ratio 90.92%",
-          "watch only; sold ratio 91.02%",
-          "watch only; sold ratio 90.84%"
+          "watch only; sold ratio 90.92%"
         ]
       },
       {
@@ -539,9 +577,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-01T10:58:58.320Z",
-        "occurrences": 325,
-        "highSoldRatioCount": 325,
+        "lastSeenAt": "2026-06-01T11:28:58.279Z",
+        "occurrences": 326,
+        "highSoldRatioCount": 326,
         "tokens": [
           {
             "token": "Federated States of Gapla",
@@ -625,6 +663,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 93.34%",
           "watch only; sold ratio 93.32%",
           "watch only; sold ratio 93.05%",
           "watch only; sold ratio 93.31%",
@@ -633,8 +672,7 @@
           "watch only; sold ratio 98.26%",
           "watch only; sold ratio 85.95%",
           "watch only; sold ratio 98.32%",
-          "watch only; sold ratio 85.9%",
-          "watch only; sold ratio 86.04%"
+          "watch only; sold ratio 85.9%"
         ]
       },
       {
@@ -644,9 +682,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-26T22:55:39.434Z",
-        "lastSeenAt": "2026-06-01T10:58:58.320Z",
-        "occurrences": 287,
-        "highSoldRatioCount": 287,
+        "lastSeenAt": "2026-06-01T11:28:58.279Z",
+        "occurrences": 289,
+        "highSoldRatioCount": 289,
         "tokens": [
           {
             "token": "Staked Bank",
@@ -730,6 +768,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 89.33%",
           "watch only; sold ratio 89.28%",
           "watch only; sold ratio 93.39%",
           "watch only; sold ratio 93.24%",
@@ -738,8 +777,7 @@
           "watch only; sold ratio 88.44%",
           "watch only; sold ratio 89.24%",
           "watch only; sold ratio 89.96%",
-          "watch only; sold ratio 89.18%",
-          "watch only; sold ratio 84.84%"
+          "watch only; sold ratio 89.18%"
         ]
       }
     ],
@@ -914,8 +952,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-01T10:58:58.320Z",
-        "occurrences": 6715,
+        "lastSeenAt": "2026-06-01T11:28:58.279Z",
+        "occurrences": 6749,
         "examples": [
           {
             "token": "Faggotcoin",
@@ -979,8 +1017,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-01T10:58:58.320Z",
-        "occurrences": 2322,
+        "lastSeenAt": "2026-06-01T11:28:58.279Z",
+        "occurrences": 2333,
         "examples": [
           {
             "token": "Data House",
@@ -1044,8 +1082,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-01T10:58:58.320Z",
-        "occurrences": 943,
+        "lastSeenAt": "2026-06-01T11:28:58.279Z",
+        "occurrences": 949,
         "examples": [
           {
             "token": "Hypergamy",
@@ -1174,8 +1212,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-01T10:58:58.320Z",
-        "occurrences": 294,
+        "lastSeenAt": "2026-06-01T11:28:58.279Z",
+        "occurrences": 298,
         "examples": [
           {
             "token": "FSTOCK",
@@ -3101,6 +3139,48 @@
           "totalPnlUsd": 15.89,
           "totalPnlPct": 0.53
         }
+      },
+      {
+        "runId": "20260601112858",
+        "startedAt": "2026-06-01T11:28:58.279Z",
+        "finishedAt": "2026-06-01T11:29:50.767Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 63,
+        "decisions": 63,
+        "trades": 2,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 1,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 13,
+            "trades": 1,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2736.9,
+          "openValueUsd": 277.97,
+          "equityUsd": 3014.87,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 14.87,
+          "totalPnlUsd": 14.87,
+          "totalPnlPct": 0.5
+        }
       }
     ]
   },
@@ -3108,23 +3188,61 @@
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T10:59:51.276Z",
-      "runCount": 38,
+      "generatedAt": "2026-06-01T11:29:51.518Z",
+      "runCount": 39,
       "statuses": {
-        "ok": 38
+        "ok": 39
       },
-      "rawSignalCount": 2258,
-      "decisionCount": 0,
-      "actions": {},
-      "tradeCount": 0,
-      "buys": 0,
+      "rawSignalCount": 2321,
+      "decisionCount": 63,
+      "actions": {
+        "IGNORE": 38,
+        "WATCH": 21,
+        "BUY": 2,
+        "HOLD": 2
+      },
+      "tradeCount": 2,
+      "buys": 2,
       "sells": 0,
-      "buyUsd": 0,
+      "buyUsd": 263.1,
       "realizedPnlUsd": 0,
       "equityStartUsd": 2998.81,
-      "equityEndUsd": 3015.89,
-      "equityChangeUsd": 17.08,
-      "topBlockers": [],
+      "equityEndUsd": 3014.87,
+      "equityChangeUsd": 16.06,
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 49
+        },
+        {
+          "name": "amount < 500U",
+          "count": 8
+        },
+        {
+          "name": "blacklisted source wallet: 9nP8di...wpE6",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 4rchtQ...kZi7",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: DNHWLD...aE8D",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 4dKgEi...6QNZ",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 8M2quY...twNh",
+          "count": 1
+        },
+        {
+          "name": "blacklisted source wallet: 85ieYF...zXuh",
+          "count": 1
+        }
+      ],
       "mistakeCount": 0,
       "mistakeTypes": {},
       "accountResets": 5,
@@ -3433,10 +3551,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 355,
-          "highSoldRatioCount": 355,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 360,
+          "highSoldRatioCount": 360,
           "tokens": [
+            {
+              "token": "The Official Dat Bih Gah Coin",
+              "symbol": "DATBIHGAH",
+              "address": "99n2yocr2m9e2nxrbqasugxrhydrifuknuq6tapupump",
+              "shortAddress": "99n2yo...pump",
+              "soldRatioPercent": 84.51,
+              "amountUsd": 1490.1
+            },
             {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
@@ -3508,17 +3634,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 83.83,
               "amountUsd": 511.51
-            },
-            {
-              "token": "America Is Back",
-              "symbol": "AMERICA",
-              "address": "ava8yucsd2yguspdv3hb2cjpdf8xahgwyxmchxwopump",
-              "shortAddress": "ava8yu...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 307.14
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
+            "watch only; sold ratio 84.51%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 89.24%",
@@ -3526,9 +3646,7 @@
             "watch only; sold ratio 90.67%",
             "watch only; sold ratio 91.24%",
             "watch only; sold ratio 90.97%",
-            "watch only; sold ratio 90.92%",
-            "watch only; sold ratio 91.02%",
-            "watch only; sold ratio 90.84%"
+            "watch only; sold ratio 90.92%"
           ]
         },
         {
@@ -3643,9 +3761,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 326,
+          "highSoldRatioCount": 326,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -3729,6 +3847,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.34%",
             "watch only; sold ratio 93.32%",
             "watch only; sold ratio 93.05%",
             "watch only; sold ratio 93.31%",
@@ -3737,8 +3856,7 @@
             "watch only; sold ratio 98.26%",
             "watch only; sold ratio 85.95%",
             "watch only; sold ratio 98.32%",
-            "watch only; sold ratio 85.9%",
-            "watch only; sold ratio 86.04%"
+            "watch only; sold ratio 85.9%"
           ]
         },
         {
@@ -3748,9 +3866,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 287,
-          "highSoldRatioCount": 287,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 289,
+          "highSoldRatioCount": 289,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -3834,6 +3952,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
@@ -3842,8 +3961,7 @@
             "watch only; sold ratio 88.44%",
             "watch only; sold ratio 89.24%",
             "watch only; sold ratio 89.96%",
-            "watch only; sold ratio 89.18%",
-            "watch only; sold ratio 84.84%"
+            "watch only; sold ratio 89.18%"
           ]
         }
       ],
@@ -4018,8 +4136,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 6715,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 6749,
           "examples": [
             {
               "token": "Faggotcoin",
@@ -4083,8 +4201,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 2322,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 2333,
           "examples": [
             {
               "token": "Data House",
@@ -4148,8 +4266,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 943,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 949,
           "examples": [
             {
               "token": "Hypergamy",
@@ -4278,8 +4396,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 294,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 298,
           "examples": [
             {
               "token": "FSTOCK",
@@ -6205,13 +6323,55 @@
             "totalPnlUsd": 15.89,
             "totalPnlPct": 0.53
           }
+        },
+        {
+          "runId": "20260601112858",
+          "startedAt": "2026-06-01T11:28:58.279Z",
+          "finishedAt": "2026-06-01T11:29:50.767Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 63,
+          "decisions": 63,
+          "trades": 2,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 1,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 13,
+              "trades": 1,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2736.9,
+            "openValueUsd": 277.97,
+            "equityUsd": 3014.87,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 14.87,
+            "totalPnlUsd": 14.87,
+            "totalPnlPct": 0.5
+          }
         }
       ]
     },
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T10:59:51.277Z",
+      "generatedAt": "2026-06-01T11:29:51.519Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -6536,10 +6696,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 355,
-          "highSoldRatioCount": 355,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 360,
+          "highSoldRatioCount": 360,
           "tokens": [
+            {
+              "token": "The Official Dat Bih Gah Coin",
+              "symbol": "DATBIHGAH",
+              "address": "99n2yocr2m9e2nxrbqasugxrhydrifuknuq6tapupump",
+              "shortAddress": "99n2yo...pump",
+              "soldRatioPercent": 84.51,
+              "amountUsd": 1490.1
+            },
             {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
@@ -6611,17 +6779,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 83.83,
               "amountUsd": 511.51
-            },
-            {
-              "token": "America Is Back",
-              "symbol": "AMERICA",
-              "address": "ava8yucsd2yguspdv3hb2cjpdf8xahgwyxmchxwopump",
-              "shortAddress": "ava8yu...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 307.14
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
+            "watch only; sold ratio 84.51%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 89.24%",
@@ -6629,9 +6791,7 @@
             "watch only; sold ratio 90.67%",
             "watch only; sold ratio 91.24%",
             "watch only; sold ratio 90.97%",
-            "watch only; sold ratio 90.92%",
-            "watch only; sold ratio 91.02%",
-            "watch only; sold ratio 90.84%"
+            "watch only; sold ratio 90.92%"
           ]
         },
         {
@@ -6746,9 +6906,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 326,
+          "highSoldRatioCount": 326,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -6832,6 +6992,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.34%",
             "watch only; sold ratio 93.32%",
             "watch only; sold ratio 93.05%",
             "watch only; sold ratio 93.31%",
@@ -6840,8 +7001,7 @@
             "watch only; sold ratio 98.26%",
             "watch only; sold ratio 85.95%",
             "watch only; sold ratio 98.32%",
-            "watch only; sold ratio 85.9%",
-            "watch only; sold ratio 86.04%"
+            "watch only; sold ratio 85.9%"
           ]
         },
         {
@@ -6851,9 +7011,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 287,
-          "highSoldRatioCount": 287,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 289,
+          "highSoldRatioCount": 289,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -6937,6 +7097,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
@@ -6945,8 +7106,7 @@
             "watch only; sold ratio 88.44%",
             "watch only; sold ratio 89.24%",
             "watch only; sold ratio 89.96%",
-            "watch only; sold ratio 89.18%",
-            "watch only; sold ratio 84.84%"
+            "watch only; sold ratio 89.18%"
           ]
         }
       ],
@@ -7121,8 +7281,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 6715,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 6749,
           "examples": [
             {
               "token": "Faggotcoin",
@@ -7186,8 +7346,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 2322,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 2333,
           "examples": [
             {
               "token": "Data House",
@@ -7251,8 +7411,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 943,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 949,
           "examples": [
             {
               "token": "Hypergamy",
@@ -7381,8 +7541,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 294,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 298,
           "examples": [
             {
               "token": "FSTOCK",
@@ -9734,7 +9894,7 @@
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T10:59:51.278Z",
+      "generatedAt": "2026-06-01T11:29:51.520Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -10059,10 +10219,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 355,
-          "highSoldRatioCount": 355,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 360,
+          "highSoldRatioCount": 360,
           "tokens": [
+            {
+              "token": "The Official Dat Bih Gah Coin",
+              "symbol": "DATBIHGAH",
+              "address": "99n2yocr2m9e2nxrbqasugxrhydrifuknuq6tapupump",
+              "shortAddress": "99n2yo...pump",
+              "soldRatioPercent": 84.51,
+              "amountUsd": 1490.1
+            },
             {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
@@ -10134,17 +10302,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 83.83,
               "amountUsd": 511.51
-            },
-            {
-              "token": "America Is Back",
-              "symbol": "AMERICA",
-              "address": "ava8yucsd2yguspdv3hb2cjpdf8xahgwyxmchxwopump",
-              "shortAddress": "ava8yu...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 307.14
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
+            "watch only; sold ratio 84.51%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 89.24%",
@@ -10152,9 +10314,7 @@
             "watch only; sold ratio 90.67%",
             "watch only; sold ratio 91.24%",
             "watch only; sold ratio 90.97%",
-            "watch only; sold ratio 90.92%",
-            "watch only; sold ratio 91.02%",
-            "watch only; sold ratio 90.84%"
+            "watch only; sold ratio 90.92%"
           ]
         },
         {
@@ -10269,9 +10429,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 326,
+          "highSoldRatioCount": 326,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -10355,6 +10515,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.34%",
             "watch only; sold ratio 93.32%",
             "watch only; sold ratio 93.05%",
             "watch only; sold ratio 93.31%",
@@ -10363,8 +10524,7 @@
             "watch only; sold ratio 98.26%",
             "watch only; sold ratio 85.95%",
             "watch only; sold ratio 98.32%",
-            "watch only; sold ratio 85.9%",
-            "watch only; sold ratio 86.04%"
+            "watch only; sold ratio 85.9%"
           ]
         },
         {
@@ -10374,9 +10534,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 287,
-          "highSoldRatioCount": 287,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 289,
+          "highSoldRatioCount": 289,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -10460,6 +10620,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
@@ -10468,8 +10629,7 @@
             "watch only; sold ratio 88.44%",
             "watch only; sold ratio 89.24%",
             "watch only; sold ratio 89.96%",
-            "watch only; sold ratio 89.18%",
-            "watch only; sold ratio 84.84%"
+            "watch only; sold ratio 89.18%"
           ]
         }
       ],
@@ -10644,8 +10804,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 6715,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 6749,
           "examples": [
             {
               "token": "Faggotcoin",
@@ -10709,8 +10869,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 2322,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 2333,
           "examples": [
             {
               "token": "Data House",
@@ -10774,8 +10934,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 943,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 949,
           "examples": [
             {
               "token": "Hypergamy",
@@ -10904,8 +11064,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 294,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 298,
           "examples": [
             {
               "token": "FSTOCK",
@@ -13215,7 +13375,7 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T10:59:51.278Z",
+      "generatedAt": "2026-06-01T11:29:51.520Z",
       "runCount": 36,
       "statuses": {
         "ok": 19,
@@ -13543,10 +13703,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 355,
-          "highSoldRatioCount": 355,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 360,
+          "highSoldRatioCount": 360,
           "tokens": [
+            {
+              "token": "The Official Dat Bih Gah Coin",
+              "symbol": "DATBIHGAH",
+              "address": "99n2yocr2m9e2nxrbqasugxrhydrifuknuq6tapupump",
+              "shortAddress": "99n2yo...pump",
+              "soldRatioPercent": 84.51,
+              "amountUsd": 1490.1
+            },
             {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
@@ -13618,17 +13786,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 83.83,
               "amountUsd": 511.51
-            },
-            {
-              "token": "America Is Back",
-              "symbol": "AMERICA",
-              "address": "ava8yucsd2yguspdv3hb2cjpdf8xahgwyxmchxwopump",
-              "shortAddress": "ava8yu...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 307.14
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
+            "watch only; sold ratio 84.51%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 89.24%",
@@ -13636,9 +13798,7 @@
             "watch only; sold ratio 90.67%",
             "watch only; sold ratio 91.24%",
             "watch only; sold ratio 90.97%",
-            "watch only; sold ratio 90.92%",
-            "watch only; sold ratio 91.02%",
-            "watch only; sold ratio 90.84%"
+            "watch only; sold ratio 90.92%"
           ]
         },
         {
@@ -13753,9 +13913,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 326,
+          "highSoldRatioCount": 326,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -13839,6 +13999,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.34%",
             "watch only; sold ratio 93.32%",
             "watch only; sold ratio 93.05%",
             "watch only; sold ratio 93.31%",
@@ -13847,8 +14008,7 @@
             "watch only; sold ratio 98.26%",
             "watch only; sold ratio 85.95%",
             "watch only; sold ratio 98.32%",
-            "watch only; sold ratio 85.9%",
-            "watch only; sold ratio 86.04%"
+            "watch only; sold ratio 85.9%"
           ]
         },
         {
@@ -13858,9 +14018,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 287,
-          "highSoldRatioCount": 287,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 289,
+          "highSoldRatioCount": 289,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -13944,6 +14104,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
@@ -13952,8 +14113,7 @@
             "watch only; sold ratio 88.44%",
             "watch only; sold ratio 89.24%",
             "watch only; sold ratio 89.96%",
-            "watch only; sold ratio 89.18%",
-            "watch only; sold ratio 84.84%"
+            "watch only; sold ratio 89.18%"
           ]
         }
       ],
@@ -14128,8 +14288,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 6715,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 6749,
           "examples": [
             {
               "token": "Faggotcoin",
@@ -14193,8 +14353,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 2322,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 2333,
           "examples": [
             {
               "token": "Data House",
@@ -14258,8 +14418,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 943,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 949,
           "examples": [
             {
               "token": "Hypergamy",
@@ -14388,8 +14548,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 294,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 298,
           "examples": [
             {
               "token": "FSTOCK",
@@ -16043,12 +16203,12 @@
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T10:59:51.278Z",
-      "runCount": 31,
+      "generatedAt": "2026-06-01T11:29:51.520Z",
+      "runCount": 30,
       "statuses": {
-        "ok": 31
+        "ok": 30
       },
-      "rawSignalCount": 1658,
+      "rawSignalCount": 1605,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -16056,9 +16216,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 3989.51,
+      "equityStartUsd": 3959.59,
       "equityEndUsd": 3106.82,
-      "equityChangeUsd": -882.69,
+      "equityChangeUsd": -852.77,
       "topBlockers": [],
       "mistakeCount": 0,
       "mistakeTypes": {},
@@ -16368,10 +16528,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 355,
-          "highSoldRatioCount": 355,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 360,
+          "highSoldRatioCount": 360,
           "tokens": [
+            {
+              "token": "The Official Dat Bih Gah Coin",
+              "symbol": "DATBIHGAH",
+              "address": "99n2yocr2m9e2nxrbqasugxrhydrifuknuq6tapupump",
+              "shortAddress": "99n2yo...pump",
+              "soldRatioPercent": 84.51,
+              "amountUsd": 1490.1
+            },
             {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
@@ -16443,17 +16611,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 83.83,
               "amountUsd": 511.51
-            },
-            {
-              "token": "America Is Back",
-              "symbol": "AMERICA",
-              "address": "ava8yucsd2yguspdv3hb2cjpdf8xahgwyxmchxwopump",
-              "shortAddress": "ava8yu...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 307.14
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
+            "watch only; sold ratio 84.51%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 89.24%",
@@ -16461,9 +16623,7 @@
             "watch only; sold ratio 90.67%",
             "watch only; sold ratio 91.24%",
             "watch only; sold ratio 90.97%",
-            "watch only; sold ratio 90.92%",
-            "watch only; sold ratio 91.02%",
-            "watch only; sold ratio 90.84%"
+            "watch only; sold ratio 90.92%"
           ]
         },
         {
@@ -16578,9 +16738,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 326,
+          "highSoldRatioCount": 326,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -16664,6 +16824,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.34%",
             "watch only; sold ratio 93.32%",
             "watch only; sold ratio 93.05%",
             "watch only; sold ratio 93.31%",
@@ -16672,8 +16833,7 @@
             "watch only; sold ratio 98.26%",
             "watch only; sold ratio 85.95%",
             "watch only; sold ratio 98.32%",
-            "watch only; sold ratio 85.9%",
-            "watch only; sold ratio 86.04%"
+            "watch only; sold ratio 85.9%"
           ]
         },
         {
@@ -16683,9 +16843,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 287,
-          "highSoldRatioCount": 287,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 289,
+          "highSoldRatioCount": 289,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -16769,6 +16929,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 89.33%",
             "watch only; sold ratio 89.28%",
             "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
@@ -16777,8 +16938,7 @@
             "watch only; sold ratio 88.44%",
             "watch only; sold ratio 89.24%",
             "watch only; sold ratio 89.96%",
-            "watch only; sold ratio 89.18%",
-            "watch only; sold ratio 84.84%"
+            "watch only; sold ratio 89.18%"
           ]
         }
       ],
@@ -16953,8 +17113,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 6715,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 6749,
           "examples": [
             {
               "token": "Faggotcoin",
@@ -17018,8 +17178,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 2322,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 2333,
           "examples": [
             {
               "token": "Data House",
@@ -17083,8 +17243,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 943,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 949,
           "examples": [
             {
               "token": "Hypergamy",
@@ -17213,8 +17373,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T10:58:58.320Z",
-          "occurrences": 294,
+          "lastSeenAt": "2026-06-01T11:28:58.279Z",
+          "occurrences": 298,
           "examples": [
             {
               "token": "FSTOCK",
@@ -17400,48 +17560,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260527181213",
-          "startedAt": "2026-05-27T18:12:13.658Z",
-          "finishedAt": "2026-05-27T18:12:16.267Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 53,
-          "decisions": 53,
-          "trades": 0,
-          "mistakes": [],
-          "notes": [],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 0,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 3,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 2786.99,
-            "openValueUsd": 1202.52,
-            "equityUsd": 3989.51,
-            "realizedPnlUsd": 313.16,
-            "unrealizedPnlUsd": -18.08,
-            "totalPnlUsd": 989.51,
-            "totalPnlPct": 32.98
-          }
-        },
         {
           "runId": "20260527191213",
           "startedAt": "2026-05-27T19:12:13.674Z",
