@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T09:59:51.365Z",
+  "generatedAt": "2026-06-01T10:29:51.133Z",
   "latest": {
     "date": "2026-06-01",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-01T09:59:51.356Z",
-    "runCount": 36,
+    "generatedAt": "2026-06-01T10:29:51.124Z",
+    "runCount": 37,
     "statuses": {
-      "ok": 36
+      "ok": 37
     },
-    "rawSignalCount": 2132,
-    "decisionCount": 428,
+    "rawSignalCount": 2195,
+    "decisionCount": 491,
     "actions": {
-      "IGNORE": 265,
-      "WATCH": 141,
-      "HOLD": 19,
+      "IGNORE": 303,
+      "WATCH": 161,
+      "HOLD": 24,
       "BUY": 3
     },
     "tradeCount": 3,
@@ -28,35 +28,35 @@
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 333
+        "count": 382
       },
       {
         "name": "amount < 500U",
-        "count": 50
+        "count": 58
       },
       {
         "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 7
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: 4rchtQ...kZi7",
-        "count": 7
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: DNHWLD...aE8D",
-        "count": 7
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: 4dKgEi...6QNZ",
-        "count": 7
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: 8M2quY...twNh",
-        "count": 7
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: 85ieYF...zXuh",
-        "count": 7
+        "count": 8
       }
     ],
     "mistakeCount": 0,
@@ -367,9 +367,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-01T09:58:58.337Z",
-        "occurrences": 353,
-        "highSoldRatioCount": 353,
+        "lastSeenAt": "2026-06-01T10:28:58.316Z",
+        "occurrences": 354,
+        "highSoldRatioCount": 354,
         "tokens": [
           {
             "token": "Justice For Henry Nowak",
@@ -577,9 +577,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-01T09:58:58.337Z",
-        "occurrences": 323,
-        "highSoldRatioCount": 323,
+        "lastSeenAt": "2026-06-01T10:28:58.316Z",
+        "occurrences": 324,
+        "highSoldRatioCount": 324,
         "tokens": [
           {
             "token": "Federated States of Gapla",
@@ -682,9 +682,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-26T22:55:39.434Z",
-        "lastSeenAt": "2026-06-01T09:58:58.337Z",
-        "occurrences": 283,
-        "highSoldRatioCount": 283,
+        "lastSeenAt": "2026-06-01T10:28:58.316Z",
+        "occurrences": 285,
+        "highSoldRatioCount": 285,
         "tokens": [
           {
             "token": "Staked Bank",
@@ -768,6 +768,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 93.39%",
           "watch only; sold ratio 93.24%",
           "watch only; sold ratio 89.26%",
           "watch only; sold ratio 92.2%",
@@ -776,8 +777,7 @@
           "watch only; sold ratio 89.96%",
           "watch only; sold ratio 89.18%",
           "watch only; sold ratio 84.84%",
-          "watch only; sold ratio 84.75%",
-          "watch only; sold ratio 83.68%"
+          "watch only; sold ratio 84.75%"
         ]
       }
     ],
@@ -939,7 +939,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 1139.06U; wallets 3; sold 100%; type KOL/Influencer",
+        "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
         "score": 62,
         "wins": 0,
         "losses": 0,
@@ -952,9 +952,23 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-01T09:58:58.337Z",
-        "occurrences": 6647,
+        "lastSeenAt": "2026-06-01T10:28:58.316Z",
+        "occurrences": 6681,
         "examples": [
+          {
+            "token": "Faggotcoin",
+            "symbol": "Faggotcoin",
+            "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+            "shortAddress": "e61zfk...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "锄头",
+            "symbol": "锄头",
+            "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+            "shortAddress": "ohamp5...pump",
+            "chain": "solana"
+          },
           {
             "token": "Data House",
             "symbol": "DATAHOUSE",
@@ -982,20 +996,6 @@
             "address": "9xmqueznypbnhzkviqhezo19neqphvc4mwe62duypump",
             "shortAddress": "9xmque...pump",
             "chain": "solana"
-          },
-          {
-            "token": "just buy $8",
-            "symbol": "$8",
-            "address": "6aaybofxyp7hps2ujbz5osjz6yplr48ubnyhewgppump",
-            "shortAddress": "6aaybo...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "Just Hold $8 Worth",
-            "symbol": "8",
-            "address": "vhbzqcbfjvtqp3bu48xb9jqq6z66vblwtgw7dk5pump",
-            "shortAddress": "vhbzqc...pump",
-            "chain": "solana"
           }
         ]
       },
@@ -1017,8 +1017,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-01T09:58:58.337Z",
-        "occurrences": 2300,
+        "lastSeenAt": "2026-06-01T10:28:58.316Z",
+        "occurrences": 2311,
         "examples": [
           {
             "token": "Data House",
@@ -1069,7 +1069,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "amount < 500U",
-        "reason": "amount 102.23U; wallets 3; sold 85.41%; type KOL/Influencer",
+        "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
         "score": 70.6,
         "wins": 0,
         "losses": 0,
@@ -1082,8 +1082,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-01T09:58:58.337Z",
-        "occurrences": 931,
+        "lastSeenAt": "2026-06-01T10:28:58.316Z",
+        "occurrences": 937,
         "examples": [
           {
             "token": "Hypergamy",
@@ -1212,8 +1212,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-01T09:58:58.337Z",
-        "occurrences": 286,
+        "lastSeenAt": "2026-06-01T10:28:58.316Z",
+        "occurrences": 290,
         "examples": [
           {
             "token": "FSTOCK",
@@ -3026,6 +3026,48 @@
           "totalPnlUsd": 15.89,
           "totalPnlPct": 0.53
         }
+      },
+      {
+        "runId": "20260601102858",
+        "startedAt": "2026-06-01T10:28:58.316Z",
+        "finishedAt": "2026-06-01T10:29:50.550Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 63,
+        "decisions": 63,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 13,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2520.1,
+          "openValueUsd": 495.79,
+          "equityUsd": 3015.89,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 15.89,
+          "totalPnlUsd": 15.89,
+          "totalPnlPct": 0.53
+        }
       }
     ]
   },
@@ -3033,17 +3075,17 @@
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T09:59:51.356Z",
-      "runCount": 36,
+      "generatedAt": "2026-06-01T10:29:51.124Z",
+      "runCount": 37,
       "statuses": {
-        "ok": 36
+        "ok": 37
       },
-      "rawSignalCount": 2132,
-      "decisionCount": 428,
+      "rawSignalCount": 2195,
+      "decisionCount": 491,
       "actions": {
-        "IGNORE": 265,
-        "WATCH": 141,
-        "HOLD": 19,
+        "IGNORE": 303,
+        "WATCH": 161,
+        "HOLD": 24,
         "BUY": 3
       },
       "tradeCount": 3,
@@ -3057,35 +3099,35 @@
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 333
+          "count": 382
         },
         {
           "name": "amount < 500U",
-          "count": 50
+          "count": 58
         },
         {
           "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 7
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: 4rchtQ...kZi7",
-          "count": 7
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: DNHWLD...aE8D",
-          "count": 7
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: 4dKgEi...6QNZ",
-          "count": 7
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: 8M2quY...twNh",
-          "count": 7
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: 85ieYF...zXuh",
-          "count": 7
+          "count": 8
         }
       ],
       "mistakeCount": 0,
@@ -3396,9 +3438,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "Justice For Henry Nowak",
@@ -3606,9 +3648,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 323,
-          "highSoldRatioCount": 323,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 324,
+          "highSoldRatioCount": 324,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -3711,9 +3753,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -3797,6 +3839,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 92.2%",
@@ -3805,8 +3848,7 @@
             "watch only; sold ratio 89.96%",
             "watch only; sold ratio 89.18%",
             "watch only; sold ratio 84.84%",
-            "watch only; sold ratio 84.75%",
-            "watch only; sold ratio 83.68%"
+            "watch only; sold ratio 84.75%"
           ]
         }
       ],
@@ -3968,7 +4010,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1139.06U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -3981,9 +4023,23 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 6647,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 6681,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "chain": "solana"
+            },
             {
               "token": "Data House",
               "symbol": "DATAHOUSE",
@@ -4011,20 +4067,6 @@
               "address": "9xmqueznypbnhzkviqhezo19neqphvc4mwe62duypump",
               "shortAddress": "9xmque...pump",
               "chain": "solana"
-            },
-            {
-              "token": "just buy $8",
-              "symbol": "$8",
-              "address": "6aaybofxyp7hps2ujbz5osjz6yplr48ubnyhewgppump",
-              "shortAddress": "6aaybo...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Just Hold $8 Worth",
-              "symbol": "8",
-              "address": "vhbzqcbfjvtqp3bu48xb9jqq6z66vblwtgw7dk5pump",
-              "shortAddress": "vhbzqc...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -4046,8 +4088,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 2300,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 2311,
           "examples": [
             {
               "token": "Data House",
@@ -4098,7 +4140,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 102.23U; wallets 3; sold 85.41%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -4111,8 +4153,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 931,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 937,
           "examples": [
             {
               "token": "Hypergamy",
@@ -4241,8 +4283,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 286,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 290,
           "examples": [
             {
               "token": "FSTOCK",
@@ -6055,13 +6097,55 @@
             "totalPnlUsd": 15.89,
             "totalPnlPct": 0.53
           }
+        },
+        {
+          "runId": "20260601102858",
+          "startedAt": "2026-06-01T10:28:58.316Z",
+          "finishedAt": "2026-06-01T10:29:50.550Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 63,
+          "decisions": 63,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 13,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2520.1,
+            "openValueUsd": 495.79,
+            "equityUsd": 3015.89,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 15.89,
+            "totalPnlUsd": 15.89,
+            "totalPnlPct": 0.53
+          }
         }
       ]
     },
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T09:59:51.357Z",
+      "generatedAt": "2026-06-01T10:29:51.124Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -6386,9 +6470,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "Justice For Henry Nowak",
@@ -6596,9 +6680,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 323,
-          "highSoldRatioCount": 323,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 324,
+          "highSoldRatioCount": 324,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -6701,9 +6785,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -6787,6 +6871,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 92.2%",
@@ -6795,8 +6880,7 @@
             "watch only; sold ratio 89.96%",
             "watch only; sold ratio 89.18%",
             "watch only; sold ratio 84.84%",
-            "watch only; sold ratio 84.75%",
-            "watch only; sold ratio 83.68%"
+            "watch only; sold ratio 84.75%"
           ]
         }
       ],
@@ -6958,7 +7042,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1139.06U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -6971,9 +7055,23 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 6647,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 6681,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "chain": "solana"
+            },
             {
               "token": "Data House",
               "symbol": "DATAHOUSE",
@@ -7001,20 +7099,6 @@
               "address": "9xmqueznypbnhzkviqhezo19neqphvc4mwe62duypump",
               "shortAddress": "9xmque...pump",
               "chain": "solana"
-            },
-            {
-              "token": "just buy $8",
-              "symbol": "$8",
-              "address": "6aaybofxyp7hps2ujbz5osjz6yplr48ubnyhewgppump",
-              "shortAddress": "6aaybo...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Just Hold $8 Worth",
-              "symbol": "8",
-              "address": "vhbzqcbfjvtqp3bu48xb9jqq6z66vblwtgw7dk5pump",
-              "shortAddress": "vhbzqc...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -7036,8 +7120,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 2300,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 2311,
           "examples": [
             {
               "token": "Data House",
@@ -7088,7 +7172,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 102.23U; wallets 3; sold 85.41%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -7101,8 +7185,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 931,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 937,
           "examples": [
             {
               "token": "Hypergamy",
@@ -7231,8 +7315,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 286,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 290,
           "examples": [
             {
               "token": "FSTOCK",
@@ -9584,7 +9668,7 @@
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T09:59:51.357Z",
+      "generatedAt": "2026-06-01T10:29:51.125Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -9909,9 +9993,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "Justice For Henry Nowak",
@@ -10119,9 +10203,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 323,
-          "highSoldRatioCount": 323,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 324,
+          "highSoldRatioCount": 324,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -10224,9 +10308,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -10310,6 +10394,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 92.2%",
@@ -10318,8 +10403,7 @@
             "watch only; sold ratio 89.96%",
             "watch only; sold ratio 89.18%",
             "watch only; sold ratio 84.84%",
-            "watch only; sold ratio 84.75%",
-            "watch only; sold ratio 83.68%"
+            "watch only; sold ratio 84.75%"
           ]
         }
       ],
@@ -10481,7 +10565,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1139.06U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -10494,9 +10578,23 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 6647,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 6681,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "chain": "solana"
+            },
             {
               "token": "Data House",
               "symbol": "DATAHOUSE",
@@ -10524,20 +10622,6 @@
               "address": "9xmqueznypbnhzkviqhezo19neqphvc4mwe62duypump",
               "shortAddress": "9xmque...pump",
               "chain": "solana"
-            },
-            {
-              "token": "just buy $8",
-              "symbol": "$8",
-              "address": "6aaybofxyp7hps2ujbz5osjz6yplr48ubnyhewgppump",
-              "shortAddress": "6aaybo...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Just Hold $8 Worth",
-              "symbol": "8",
-              "address": "vhbzqcbfjvtqp3bu48xb9jqq6z66vblwtgw7dk5pump",
-              "shortAddress": "vhbzqc...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -10559,8 +10643,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 2300,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 2311,
           "examples": [
             {
               "token": "Data House",
@@ -10611,7 +10695,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 102.23U; wallets 3; sold 85.41%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -10624,8 +10708,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 931,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 937,
           "examples": [
             {
               "token": "Hypergamy",
@@ -10754,8 +10838,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 286,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 290,
           "examples": [
             {
               "token": "FSTOCK",
@@ -13065,7 +13149,7 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T09:59:51.358Z",
+      "generatedAt": "2026-06-01T10:29:51.125Z",
       "runCount": 36,
       "statuses": {
         "ok": 19,
@@ -13393,9 +13477,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "Justice For Henry Nowak",
@@ -13603,9 +13687,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 323,
-          "highSoldRatioCount": 323,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 324,
+          "highSoldRatioCount": 324,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -13708,9 +13792,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -13794,6 +13878,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 92.2%",
@@ -13802,8 +13887,7 @@
             "watch only; sold ratio 89.96%",
             "watch only; sold ratio 89.18%",
             "watch only; sold ratio 84.84%",
-            "watch only; sold ratio 84.75%",
-            "watch only; sold ratio 83.68%"
+            "watch only; sold ratio 84.75%"
           ]
         }
       ],
@@ -13965,7 +14049,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1139.06U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -13978,9 +14062,23 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 6647,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 6681,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "chain": "solana"
+            },
             {
               "token": "Data House",
               "symbol": "DATAHOUSE",
@@ -14008,20 +14106,6 @@
               "address": "9xmqueznypbnhzkviqhezo19neqphvc4mwe62duypump",
               "shortAddress": "9xmque...pump",
               "chain": "solana"
-            },
-            {
-              "token": "just buy $8",
-              "symbol": "$8",
-              "address": "6aaybofxyp7hps2ujbz5osjz6yplr48ubnyhewgppump",
-              "shortAddress": "6aaybo...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Just Hold $8 Worth",
-              "symbol": "8",
-              "address": "vhbzqcbfjvtqp3bu48xb9jqq6z66vblwtgw7dk5pump",
-              "shortAddress": "vhbzqc...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -14043,8 +14127,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 2300,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 2311,
           "examples": [
             {
               "token": "Data House",
@@ -14095,7 +14179,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 102.23U; wallets 3; sold 85.41%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -14108,8 +14192,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 931,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 937,
           "examples": [
             {
               "token": "Hypergamy",
@@ -14238,8 +14322,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 286,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 290,
           "examples": [
             {
               "token": "FSTOCK",
@@ -15893,12 +15977,12 @@
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T09:59:51.358Z",
-      "runCount": 33,
+      "generatedAt": "2026-06-01T10:29:51.125Z",
+      "runCount": 32,
       "statuses": {
-        "ok": 33
+        "ok": 32
       },
-      "rawSignalCount": 1761,
+      "rawSignalCount": 1711,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -15906,9 +15990,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 3990.59,
+      "equityStartUsd": 3989.51,
       "equityEndUsd": 3106.82,
-      "equityChangeUsd": -883.77,
+      "equityChangeUsd": -882.69,
       "topBlockers": [],
       "mistakeCount": 0,
       "mistakeTypes": {},
@@ -16218,9 +16302,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 353,
-          "highSoldRatioCount": 353,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 354,
+          "highSoldRatioCount": 354,
           "tokens": [
             {
               "token": "Justice For Henry Nowak",
@@ -16428,9 +16512,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 323,
-          "highSoldRatioCount": 323,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 324,
+          "highSoldRatioCount": 324,
           "tokens": [
             {
               "token": "Federated States of Gapla",
@@ -16533,9 +16617,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 283,
-          "highSoldRatioCount": 283,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 285,
+          "highSoldRatioCount": 285,
           "tokens": [
             {
               "token": "Staked Bank",
@@ -16619,6 +16703,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 93.39%",
             "watch only; sold ratio 93.24%",
             "watch only; sold ratio 89.26%",
             "watch only; sold ratio 92.2%",
@@ -16627,8 +16712,7 @@
             "watch only; sold ratio 89.96%",
             "watch only; sold ratio 89.18%",
             "watch only; sold ratio 84.84%",
-            "watch only; sold ratio 84.75%",
-            "watch only; sold ratio 83.68%"
+            "watch only; sold ratio 84.75%"
           ]
         }
       ],
@@ -16790,7 +16874,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1139.06U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -16803,9 +16887,23 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 6647,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 6681,
           "examples": [
+            {
+              "token": "Faggotcoin",
+              "symbol": "Faggotcoin",
+              "address": "e61zfkwqhtmzce4e4oopcgtknvyvfeeirgcraraupump",
+              "shortAddress": "e61zfk...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "chain": "solana"
+            },
             {
               "token": "Data House",
               "symbol": "DATAHOUSE",
@@ -16833,20 +16931,6 @@
               "address": "9xmqueznypbnhzkviqhezo19neqphvc4mwe62duypump",
               "shortAddress": "9xmque...pump",
               "chain": "solana"
-            },
-            {
-              "token": "just buy $8",
-              "symbol": "$8",
-              "address": "6aaybofxyp7hps2ujbz5osjz6yplr48ubnyhewgppump",
-              "shortAddress": "6aaybo...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Just Hold $8 Worth",
-              "symbol": "8",
-              "address": "vhbzqcbfjvtqp3bu48xb9jqq6z66vblwtgw7dk5pump",
-              "shortAddress": "vhbzqc...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -16868,8 +16952,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 2300,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 2311,
           "examples": [
             {
               "token": "Data House",
@@ -16920,7 +17004,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 102.23U; wallets 3; sold 85.41%; type KOL/Influencer",
+          "reason": "amount 390.22U; wallets 3; sold 76.89%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -16933,8 +17017,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 931,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 937,
           "examples": [
             {
               "token": "Hypergamy",
@@ -17063,8 +17147,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T09:58:58.337Z",
-          "occurrences": 286,
+          "lastSeenAt": "2026-06-01T10:28:58.316Z",
+          "occurrences": 290,
           "examples": [
             {
               "token": "FSTOCK",
@@ -17250,50 +17334,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260527161213",
-          "startedAt": "2026-05-27T16:12:13.549Z",
-          "finishedAt": "2026-05-27T16:12:15.187Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 50,
-          "decisions": 50,
-          "trades": 0,
-          "mistakes": [],
-          "notes": [
-            "bsc: signal endpoint returned zero rows. No trades were created."
-          ],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 0,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 0,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 3149.09,
-            "openValueUsd": 841.5,
-            "equityUsd": 3990.59,
-            "realizedPnlUsd": 313.16,
-            "unrealizedPnlUsd": -17,
-            "totalPnlUsd": 990.59,
-            "totalPnlPct": 33.02
-          }
-        },
         {
           "runId": "20260527171213",
           "startedAt": "2026-05-27T17:12:13.660Z",
