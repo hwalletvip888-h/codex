@@ -1,26 +1,57 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T19:59:54.108Z",
+  "generatedAt": "2026-06-01T20:29:50.874Z",
   "latest": {
     "date": "2026-06-02",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-01T19:59:54.092Z",
-    "runCount": 8,
+    "generatedAt": "2026-06-01T20:29:50.864Z",
+    "runCount": 9,
     "statuses": {
-      "ok": 8
+      "ok": 9
     },
-    "rawSignalCount": 509,
-    "decisionCount": 0,
-    "actions": {},
-    "tradeCount": 0,
-    "buys": 0,
-    "sells": 0,
-    "buyUsd": 0,
-    "realizedPnlUsd": 0,
+    "rawSignalCount": 574,
+    "decisionCount": 65,
+    "actions": {
+      "IGNORE": 33,
+      "WATCH": 26,
+      "BUY": 3,
+      "HOLD": 2,
+      "SELL": 1
+    },
+    "tradeCount": 4,
+    "buys": 3,
+    "sells": 1,
+    "buyUsd": 492,
+    "realizedPnlUsd": 143.08,
     "equityStartUsd": 3035.21,
-    "equityEndUsd": 3303.15,
-    "equityChangeUsd": 267.94,
-    "topBlockers": [],
+    "equityEndUsd": 3159.48,
+    "equityChangeUsd": 124.27,
+    "topBlockers": [
+      {
+        "name": "sold ratio > 35%",
+        "count": 48
+      },
+      {
+        "name": "amount < 500U",
+        "count": 5
+      },
+      {
+        "name": "blacklisted source wallet: hybgZh...pjbL",
+        "count": 3
+      },
+      {
+        "name": "blacklisted source wallet: 7udEMP...7SG7",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: G52j5e...TsZo",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: 9nP8di...wpE6",
+        "count": 1
+      }
+    ],
     "mistakeCount": 0,
     "mistakeTypes": {},
     "accountResets": 1,
@@ -224,10 +255,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-01T19:59:01.311Z",
-        "occurrences": 434,
-        "highSoldRatioCount": 434,
+        "lastSeenAt": "2026-06-01T20:28:58.174Z",
+        "occurrences": 435,
+        "highSoldRatioCount": 435,
         "tokens": [
+          {
+            "token": "Michul Sellor",
+            "symbol": "SELLOR",
+            "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+            "shortAddress": "124yn3...pump",
+            "soldRatioPercent": 87.24,
+            "amountUsd": 359.64
+          },
           {
             "token": "LUNA CLASSIC",
             "symbol": "LUNC",
@@ -299,17 +338,10 @@
             "shortAddress": "26yrpw...pump",
             "soldRatioPercent": 97.17,
             "amountUsd": 269
-          },
-          {
-            "token": "ttt",
-            "symbol": "tttt",
-            "address": "7j8txtscvwrwmknzxzcsretmg9fguqfb37eatgvsps7o",
-            "shortAddress": "7j8txt...ps7o",
-            "soldRatioPercent": 100,
-            "amountUsd": 337.67
           }
         ],
         "reasons": [
+          "watch only; sold ratio 87.24%",
           "watch only; sold ratio 100%",
           "watch only; sold ratio 85%",
           "watch only; sold ratio 88.56%",
@@ -318,8 +350,7 @@
           "watch only; sold ratio 88.53%",
           "watch only; sold ratio 88.43%",
           "watch only; sold ratio 84.85%",
-          "watch only; sold ratio 92.88%",
-          "watch only; sold ratio 93.9%"
+          "watch only; sold ratio 92.88%"
         ]
       },
       {
@@ -539,9 +570,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-01T19:59:01.311Z",
-        "occurrences": 346,
-        "highSoldRatioCount": 346,
+        "lastSeenAt": "2026-06-01T20:28:58.174Z",
+        "occurrences": 347,
+        "highSoldRatioCount": 347,
         "tokens": [
           {
             "token": "WOBBIN",
@@ -901,7 +932,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 1270.6U; wallets 3; sold 64.29%; type KOL/Influencer",
+        "reason": "amount 458.4U; wallets 3; sold 47.73%; type KOL/Influencer",
         "score": 62,
         "wins": 0,
         "losses": 0,
@@ -914,23 +945,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-01T19:59:01.311Z",
-        "occurrences": 7244,
+        "lastSeenAt": "2026-06-01T20:28:58.174Z",
+        "occurrences": 7269,
         "examples": [
-          {
-            "token": "Anthropic",
-            "symbol": "ANTH",
-            "address": "cg2kjtcdyzhgmo7mhoe25uy4i8wbnozzzvssno2kpump",
-            "shortAddress": "cg2kjt...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "chad",
-            "symbol": "CHAD",
-            "address": "pzubfxtuydylp2jewcmvwc1p1nhxwsqbyueovbcnqa3",
-            "shortAddress": "pzubfx...nqa3",
-            "chain": "solana"
-          },
           {
             "token": "TOPLESS",
             "symbol": "TOPLESS",
@@ -958,6 +975,20 @@
             "address": "hmferpvkozrefwou3dvzeegmdmyikzewbbdcsijdpump",
             "shortAddress": "hmferp...pump",
             "chain": "solana"
+          },
+          {
+            "token": "Odysseus\r\n",
+            "symbol": "Odysseus\r\n",
+            "address": "gmshygy1nquxw9ooza8uuntw1rxdkm5t7hp4ksyvpump",
+            "shortAddress": "gmshyg...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "deflationary coin",
+            "symbol": "USDC",
+            "address": "72rnqzmw97fmsbbxzg3ydfdngnk38bf6haktbmxgpump",
+            "shortAddress": "72rnqz...pump",
+            "chain": "solana"
           }
         ]
       },
@@ -979,8 +1010,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-01T19:59:01.311Z",
-        "occurrences": 2547,
+        "lastSeenAt": "2026-06-01T20:28:58.174Z",
+        "occurrences": 2561,
         "examples": [
           {
             "token": "Odysseus\r\n",
@@ -1044,8 +1075,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-01T19:59:01.311Z",
-        "occurrences": 1017,
+        "lastSeenAt": "2026-06-01T20:28:58.174Z",
+        "occurrences": 1020,
         "examples": [
           {
             "token": "Champions",
@@ -1174,8 +1205,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-01T19:59:01.311Z",
-        "occurrences": 413,
+        "lastSeenAt": "2026-06-01T20:28:58.174Z",
+        "occurrences": 422,
         "examples": [
           {
             "token": "WORK Medical Tech",
@@ -1739,6 +1770,48 @@
           "totalPnlUsd": 303.15,
           "totalPnlPct": 10.1
         }
+      },
+      {
+        "runId": "20260601202858",
+        "startedAt": "2026-06-01T20:28:58.174Z",
+        "finishedAt": "2026-06-01T20:29:50.309Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 65,
+        "decisions": 65,
+        "trades": 4,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 4,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 15,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2829.38,
+          "openValueUsd": 330.1,
+          "equityUsd": 3159.48,
+          "realizedPnlUsd": 143.08,
+          "unrealizedPnlUsd": 16.4,
+          "totalPnlUsd": 159.48,
+          "totalPnlPct": 5.32
+        }
       }
     ]
   },
@@ -1746,23 +1819,54 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T19:59:54.092Z",
-      "runCount": 8,
+      "generatedAt": "2026-06-01T20:29:50.864Z",
+      "runCount": 9,
       "statuses": {
-        "ok": 8
+        "ok": 9
       },
-      "rawSignalCount": 509,
-      "decisionCount": 0,
-      "actions": {},
-      "tradeCount": 0,
-      "buys": 0,
-      "sells": 0,
-      "buyUsd": 0,
-      "realizedPnlUsd": 0,
+      "rawSignalCount": 574,
+      "decisionCount": 65,
+      "actions": {
+        "IGNORE": 33,
+        "WATCH": 26,
+        "BUY": 3,
+        "HOLD": 2,
+        "SELL": 1
+      },
+      "tradeCount": 4,
+      "buys": 3,
+      "sells": 1,
+      "buyUsd": 492,
+      "realizedPnlUsd": 143.08,
       "equityStartUsd": 3035.21,
-      "equityEndUsd": 3303.15,
-      "equityChangeUsd": 267.94,
-      "topBlockers": [],
+      "equityEndUsd": 3159.48,
+      "equityChangeUsd": 124.27,
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 48
+        },
+        {
+          "name": "amount < 500U",
+          "count": 5
+        },
+        {
+          "name": "blacklisted source wallet: hybgZh...pjbL",
+          "count": 3
+        },
+        {
+          "name": "blacklisted source wallet: 7udEMP...7SG7",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: G52j5e...TsZo",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: 9nP8di...wpE6",
+          "count": 1
+        }
+      ],
       "mistakeCount": 0,
       "mistakeTypes": {},
       "accountResets": 1,
@@ -1966,10 +2070,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 434,
-          "highSoldRatioCount": 434,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 435,
+          "highSoldRatioCount": 435,
           "tokens": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 87.24,
+              "amountUsd": 359.64
+            },
             {
               "token": "LUNA CLASSIC",
               "symbol": "LUNC",
@@ -2041,17 +2153,10 @@
               "shortAddress": "26yrpw...pump",
               "soldRatioPercent": 97.17,
               "amountUsd": 269
-            },
-            {
-              "token": "ttt",
-              "symbol": "tttt",
-              "address": "7j8txtscvwrwmknzxzcsretmg9fguqfb37eatgvsps7o",
-              "shortAddress": "7j8txt...ps7o",
-              "soldRatioPercent": 100,
-              "amountUsd": 337.67
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.24%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
@@ -2060,8 +2165,7 @@
             "watch only; sold ratio 88.53%",
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
-            "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%"
+            "watch only; sold ratio 92.88%"
           ]
         },
         {
@@ -2281,9 +2385,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 346,
-          "highSoldRatioCount": 346,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 347,
+          "highSoldRatioCount": 347,
           "tokens": [
             {
               "token": "WOBBIN",
@@ -2643,7 +2747,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1270.6U; wallets 3; sold 64.29%; type KOL/Influencer",
+          "reason": "amount 458.4U; wallets 3; sold 47.73%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -2656,23 +2760,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 7244,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 7269,
           "examples": [
-            {
-              "token": "Anthropic",
-              "symbol": "ANTH",
-              "address": "cg2kjtcdyzhgmo7mhoe25uy4i8wbnozzzvssno2kpump",
-              "shortAddress": "cg2kjt...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "chad",
-              "symbol": "CHAD",
-              "address": "pzubfxtuydylp2jewcmvwc1p1nhxwsqbyueovbcnqa3",
-              "shortAddress": "pzubfx...nqa3",
-              "chain": "solana"
-            },
             {
               "token": "TOPLESS",
               "symbol": "TOPLESS",
@@ -2700,6 +2790,20 @@
               "address": "hmferpvkozrefwou3dvzeegmdmyikzewbbdcsijdpump",
               "shortAddress": "hmferp...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Odysseus\r\n",
+              "symbol": "Odysseus\r\n",
+              "address": "gmshygy1nquxw9ooza8uuntw1rxdkm5t7hp4ksyvpump",
+              "shortAddress": "gmshyg...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "deflationary coin",
+              "symbol": "USDC",
+              "address": "72rnqzmw97fmsbbxzg3ydfdngnk38bf6haktbmxgpump",
+              "shortAddress": "72rnqz...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -2721,8 +2825,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 2547,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 2561,
           "examples": [
             {
               "token": "Odysseus\r\n",
@@ -2786,8 +2890,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 1017,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 1020,
           "examples": [
             {
               "token": "Champions",
@@ -2916,8 +3020,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 413,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 422,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -3481,13 +3585,55 @@
             "totalPnlUsd": 303.15,
             "totalPnlPct": 10.1
           }
+        },
+        {
+          "runId": "20260601202858",
+          "startedAt": "2026-06-01T20:28:58.174Z",
+          "finishedAt": "2026-06-01T20:29:50.309Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 65,
+          "decisions": 65,
+          "trades": 4,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 4,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 15,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2829.38,
+            "openValueUsd": 330.1,
+            "equityUsd": 3159.48,
+            "realizedPnlUsd": 143.08,
+            "unrealizedPnlUsd": 16.4,
+            "totalPnlUsd": 159.48,
+            "totalPnlPct": 5.32
+          }
         }
       ]
     },
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T19:59:54.093Z",
+      "generatedAt": "2026-06-01T20:29:50.865Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -3707,10 +3853,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 434,
-          "highSoldRatioCount": 434,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 435,
+          "highSoldRatioCount": 435,
           "tokens": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 87.24,
+              "amountUsd": 359.64
+            },
             {
               "token": "LUNA CLASSIC",
               "symbol": "LUNC",
@@ -3782,17 +3936,10 @@
               "shortAddress": "26yrpw...pump",
               "soldRatioPercent": 97.17,
               "amountUsd": 269
-            },
-            {
-              "token": "ttt",
-              "symbol": "tttt",
-              "address": "7j8txtscvwrwmknzxzcsretmg9fguqfb37eatgvsps7o",
-              "shortAddress": "7j8txt...ps7o",
-              "soldRatioPercent": 100,
-              "amountUsd": 337.67
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.24%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
@@ -3801,8 +3948,7 @@
             "watch only; sold ratio 88.53%",
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
-            "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%"
+            "watch only; sold ratio 92.88%"
           ]
         },
         {
@@ -4022,9 +4168,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 346,
-          "highSoldRatioCount": 346,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 347,
+          "highSoldRatioCount": 347,
           "tokens": [
             {
               "token": "WOBBIN",
@@ -4384,7 +4530,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1270.6U; wallets 3; sold 64.29%; type KOL/Influencer",
+          "reason": "amount 458.4U; wallets 3; sold 47.73%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -4397,23 +4543,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 7244,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 7269,
           "examples": [
-            {
-              "token": "Anthropic",
-              "symbol": "ANTH",
-              "address": "cg2kjtcdyzhgmo7mhoe25uy4i8wbnozzzvssno2kpump",
-              "shortAddress": "cg2kjt...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "chad",
-              "symbol": "CHAD",
-              "address": "pzubfxtuydylp2jewcmvwc1p1nhxwsqbyueovbcnqa3",
-              "shortAddress": "pzubfx...nqa3",
-              "chain": "solana"
-            },
             {
               "token": "TOPLESS",
               "symbol": "TOPLESS",
@@ -4441,6 +4573,20 @@
               "address": "hmferpvkozrefwou3dvzeegmdmyikzewbbdcsijdpump",
               "shortAddress": "hmferp...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Odysseus\r\n",
+              "symbol": "Odysseus\r\n",
+              "address": "gmshygy1nquxw9ooza8uuntw1rxdkm5t7hp4ksyvpump",
+              "shortAddress": "gmshyg...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "deflationary coin",
+              "symbol": "USDC",
+              "address": "72rnqzmw97fmsbbxzg3ydfdngnk38bf6haktbmxgpump",
+              "shortAddress": "72rnqz...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -4462,8 +4608,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 2547,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 2561,
           "examples": [
             {
               "token": "Odysseus\r\n",
@@ -4527,8 +4673,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 1017,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 1020,
           "examples": [
             {
               "token": "Champions",
@@ -4657,8 +4803,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 413,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 422,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -7053,7 +7199,7 @@
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T19:59:54.093Z",
+      "generatedAt": "2026-06-01T20:29:50.865Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -7273,10 +7419,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 434,
-          "highSoldRatioCount": 434,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 435,
+          "highSoldRatioCount": 435,
           "tokens": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 87.24,
+              "amountUsd": 359.64
+            },
             {
               "token": "LUNA CLASSIC",
               "symbol": "LUNC",
@@ -7348,17 +7502,10 @@
               "shortAddress": "26yrpw...pump",
               "soldRatioPercent": 97.17,
               "amountUsd": 269
-            },
-            {
-              "token": "ttt",
-              "symbol": "tttt",
-              "address": "7j8txtscvwrwmknzxzcsretmg9fguqfb37eatgvsps7o",
-              "shortAddress": "7j8txt...ps7o",
-              "soldRatioPercent": 100,
-              "amountUsd": 337.67
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.24%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
@@ -7367,8 +7514,7 @@
             "watch only; sold ratio 88.53%",
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
-            "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%"
+            "watch only; sold ratio 92.88%"
           ]
         },
         {
@@ -7588,9 +7734,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 346,
-          "highSoldRatioCount": 346,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 347,
+          "highSoldRatioCount": 347,
           "tokens": [
             {
               "token": "WOBBIN",
@@ -7950,7 +8096,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1270.6U; wallets 3; sold 64.29%; type KOL/Influencer",
+          "reason": "amount 458.4U; wallets 3; sold 47.73%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -7963,23 +8109,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 7244,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 7269,
           "examples": [
-            {
-              "token": "Anthropic",
-              "symbol": "ANTH",
-              "address": "cg2kjtcdyzhgmo7mhoe25uy4i8wbnozzzvssno2kpump",
-              "shortAddress": "cg2kjt...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "chad",
-              "symbol": "CHAD",
-              "address": "pzubfxtuydylp2jewcmvwc1p1nhxwsqbyueovbcnqa3",
-              "shortAddress": "pzubfx...nqa3",
-              "chain": "solana"
-            },
             {
               "token": "TOPLESS",
               "symbol": "TOPLESS",
@@ -8007,6 +8139,20 @@
               "address": "hmferpvkozrefwou3dvzeegmdmyikzewbbdcsijdpump",
               "shortAddress": "hmferp...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Odysseus\r\n",
+              "symbol": "Odysseus\r\n",
+              "address": "gmshygy1nquxw9ooza8uuntw1rxdkm5t7hp4ksyvpump",
+              "shortAddress": "gmshyg...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "deflationary coin",
+              "symbol": "USDC",
+              "address": "72rnqzmw97fmsbbxzg3ydfdngnk38bf6haktbmxgpump",
+              "shortAddress": "72rnqz...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -8028,8 +8174,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 2547,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 2561,
           "examples": [
             {
               "token": "Odysseus\r\n",
@@ -8093,8 +8239,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 1017,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 1020,
           "examples": [
             {
               "token": "Champions",
@@ -8223,8 +8369,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 413,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 422,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -10590,7 +10736,7 @@
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T19:59:54.093Z",
+      "generatedAt": "2026-06-01T20:29:50.865Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -10810,10 +10956,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 434,
-          "highSoldRatioCount": 434,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 435,
+          "highSoldRatioCount": 435,
           "tokens": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 87.24,
+              "amountUsd": 359.64
+            },
             {
               "token": "LUNA CLASSIC",
               "symbol": "LUNC",
@@ -10885,17 +11039,10 @@
               "shortAddress": "26yrpw...pump",
               "soldRatioPercent": 97.17,
               "amountUsd": 269
-            },
-            {
-              "token": "ttt",
-              "symbol": "tttt",
-              "address": "7j8txtscvwrwmknzxzcsretmg9fguqfb37eatgvsps7o",
-              "shortAddress": "7j8txt...ps7o",
-              "soldRatioPercent": 100,
-              "amountUsd": 337.67
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.24%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
@@ -10904,8 +11051,7 @@
             "watch only; sold ratio 88.53%",
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
-            "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%"
+            "watch only; sold ratio 92.88%"
           ]
         },
         {
@@ -11125,9 +11271,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 346,
-          "highSoldRatioCount": 346,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 347,
+          "highSoldRatioCount": 347,
           "tokens": [
             {
               "token": "WOBBIN",
@@ -11487,7 +11633,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1270.6U; wallets 3; sold 64.29%; type KOL/Influencer",
+          "reason": "amount 458.4U; wallets 3; sold 47.73%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -11500,23 +11646,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 7244,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 7269,
           "examples": [
-            {
-              "token": "Anthropic",
-              "symbol": "ANTH",
-              "address": "cg2kjtcdyzhgmo7mhoe25uy4i8wbnozzzvssno2kpump",
-              "shortAddress": "cg2kjt...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "chad",
-              "symbol": "CHAD",
-              "address": "pzubfxtuydylp2jewcmvwc1p1nhxwsqbyueovbcnqa3",
-              "shortAddress": "pzubfx...nqa3",
-              "chain": "solana"
-            },
             {
               "token": "TOPLESS",
               "symbol": "TOPLESS",
@@ -11544,6 +11676,20 @@
               "address": "hmferpvkozrefwou3dvzeegmdmyikzewbbdcsijdpump",
               "shortAddress": "hmferp...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Odysseus\r\n",
+              "symbol": "Odysseus\r\n",
+              "address": "gmshygy1nquxw9ooza8uuntw1rxdkm5t7hp4ksyvpump",
+              "shortAddress": "gmshyg...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "deflationary coin",
+              "symbol": "USDC",
+              "address": "72rnqzmw97fmsbbxzg3ydfdngnk38bf6haktbmxgpump",
+              "shortAddress": "72rnqz...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -11565,8 +11711,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 2547,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 2561,
           "examples": [
             {
               "token": "Odysseus\r\n",
@@ -11630,8 +11776,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 1017,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 1020,
           "examples": [
             {
               "token": "Champions",
@@ -11760,8 +11906,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 413,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 422,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -14085,7 +14231,7 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T19:59:54.094Z",
+      "generatedAt": "2026-06-01T20:29:50.866Z",
       "runCount": 36,
       "statuses": {
         "ok": 19,
@@ -14308,10 +14454,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 434,
-          "highSoldRatioCount": 434,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 435,
+          "highSoldRatioCount": 435,
           "tokens": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 87.24,
+              "amountUsd": 359.64
+            },
             {
               "token": "LUNA CLASSIC",
               "symbol": "LUNC",
@@ -14383,17 +14537,10 @@
               "shortAddress": "26yrpw...pump",
               "soldRatioPercent": 97.17,
               "amountUsd": 269
-            },
-            {
-              "token": "ttt",
-              "symbol": "tttt",
-              "address": "7j8txtscvwrwmknzxzcsretmg9fguqfb37eatgvsps7o",
-              "shortAddress": "7j8txt...ps7o",
-              "soldRatioPercent": 100,
-              "amountUsd": 337.67
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.24%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
@@ -14402,8 +14549,7 @@
             "watch only; sold ratio 88.53%",
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
-            "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%"
+            "watch only; sold ratio 92.88%"
           ]
         },
         {
@@ -14623,9 +14769,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 346,
-          "highSoldRatioCount": 346,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 347,
+          "highSoldRatioCount": 347,
           "tokens": [
             {
               "token": "WOBBIN",
@@ -14985,7 +15131,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1270.6U; wallets 3; sold 64.29%; type KOL/Influencer",
+          "reason": "amount 458.4U; wallets 3; sold 47.73%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -14998,23 +15144,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 7244,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 7269,
           "examples": [
-            {
-              "token": "Anthropic",
-              "symbol": "ANTH",
-              "address": "cg2kjtcdyzhgmo7mhoe25uy4i8wbnozzzvssno2kpump",
-              "shortAddress": "cg2kjt...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "chad",
-              "symbol": "CHAD",
-              "address": "pzubfxtuydylp2jewcmvwc1p1nhxwsqbyueovbcnqa3",
-              "shortAddress": "pzubfx...nqa3",
-              "chain": "solana"
-            },
             {
               "token": "TOPLESS",
               "symbol": "TOPLESS",
@@ -15042,6 +15174,20 @@
               "address": "hmferpvkozrefwou3dvzeegmdmyikzewbbdcsijdpump",
               "shortAddress": "hmferp...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Odysseus\r\n",
+              "symbol": "Odysseus\r\n",
+              "address": "gmshygy1nquxw9ooza8uuntw1rxdkm5t7hp4ksyvpump",
+              "shortAddress": "gmshyg...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "deflationary coin",
+              "symbol": "USDC",
+              "address": "72rnqzmw97fmsbbxzg3ydfdngnk38bf6haktbmxgpump",
+              "shortAddress": "72rnqz...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -15063,8 +15209,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 2547,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 2561,
           "examples": [
             {
               "token": "Odysseus\r\n",
@@ -15128,8 +15274,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 1017,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 1020,
           "examples": [
             {
               "token": "Champions",
@@ -15258,8 +15404,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 413,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 422,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -16927,12 +17073,12 @@
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T19:59:54.094Z",
-      "runCount": 13,
+      "generatedAt": "2026-06-01T20:29:50.866Z",
+      "runCount": 12,
       "statuses": {
-        "ok": 13
+        "ok": 12
       },
-      "rawSignalCount": 702,
+      "rawSignalCount": 648,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -16940,9 +17086,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 3471.48,
+      "equityStartUsd": 2984.79,
       "equityEndUsd": 3106.82,
-      "equityChangeUsd": -364.66,
+      "equityChangeUsd": 122.03,
       "topBlockers": [],
       "mistakeCount": 0,
       "mistakeTypes": {},
@@ -17147,10 +17293,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 434,
-          "highSoldRatioCount": 434,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 435,
+          "highSoldRatioCount": 435,
           "tokens": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 87.24,
+              "amountUsd": 359.64
+            },
             {
               "token": "LUNA CLASSIC",
               "symbol": "LUNC",
@@ -17222,17 +17376,10 @@
               "shortAddress": "26yrpw...pump",
               "soldRatioPercent": 97.17,
               "amountUsd": 269
-            },
-            {
-              "token": "ttt",
-              "symbol": "tttt",
-              "address": "7j8txtscvwrwmknzxzcsretmg9fguqfb37eatgvsps7o",
-              "shortAddress": "7j8txt...ps7o",
-              "soldRatioPercent": 100,
-              "amountUsd": 337.67
             }
           ],
           "reasons": [
+            "watch only; sold ratio 87.24%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
@@ -17241,8 +17388,7 @@
             "watch only; sold ratio 88.53%",
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
-            "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%"
+            "watch only; sold ratio 92.88%"
           ]
         },
         {
@@ -17462,9 +17608,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 346,
-          "highSoldRatioCount": 346,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 347,
+          "highSoldRatioCount": 347,
           "tokens": [
             {
               "token": "WOBBIN",
@@ -17824,7 +17970,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1270.6U; wallets 3; sold 64.29%; type KOL/Influencer",
+          "reason": "amount 458.4U; wallets 3; sold 47.73%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -17837,23 +17983,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 7244,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 7269,
           "examples": [
-            {
-              "token": "Anthropic",
-              "symbol": "ANTH",
-              "address": "cg2kjtcdyzhgmo7mhoe25uy4i8wbnozzzvssno2kpump",
-              "shortAddress": "cg2kjt...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "chad",
-              "symbol": "CHAD",
-              "address": "pzubfxtuydylp2jewcmvwc1p1nhxwsqbyueovbcnqa3",
-              "shortAddress": "pzubfx...nqa3",
-              "chain": "solana"
-            },
             {
               "token": "TOPLESS",
               "symbol": "TOPLESS",
@@ -17881,6 +18013,20 @@
               "address": "hmferpvkozrefwou3dvzeegmdmyikzewbbdcsijdpump",
               "shortAddress": "hmferp...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Odysseus\r\n",
+              "symbol": "Odysseus\r\n",
+              "address": "gmshygy1nquxw9ooza8uuntw1rxdkm5t7hp4ksyvpump",
+              "shortAddress": "gmshyg...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "deflationary coin",
+              "symbol": "USDC",
+              "address": "72rnqzmw97fmsbbxzg3ydfdngnk38bf6haktbmxgpump",
+              "shortAddress": "72rnqz...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -17902,8 +18048,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 2547,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 2561,
           "examples": [
             {
               "token": "Odysseus\r\n",
@@ -17967,8 +18113,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 1017,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 1020,
           "examples": [
             {
               "token": "Champions",
@@ -18097,8 +18243,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T19:59:01.311Z",
-          "occurrences": 413,
+          "lastSeenAt": "2026-06-01T20:28:58.174Z",
+          "occurrences": 422,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -18298,77 +18444,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260528062858",
-          "startedAt": "2026-05-28T06:28:58.872Z",
-          "finishedAt": "2026-05-28T06:29:01.150Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 54,
-          "decisions": 54,
-          "trades": 1,
-          "mistakes": [],
-          "notes": [
-            "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
-          ],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 1,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 4,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": {
-            "timestamp": "2026-05-28T06:28:58.872Z",
-            "runId": "20260528062858",
-            "reason": "completed_cycle_reset",
-            "cycleSummaryId": "cycle-20260528062858",
-            "previousSession": {
-              "id": "20260528022437-cycle",
-              "startedAt": "2026-05-28T02:24:37.045Z",
-              "lastAuthOkAt": "2026-05-28T06:28:58.872Z",
-              "lastAuthFailureAt": "",
-              "authState": "online",
-              "authRecoveries": 3,
-              "resetReason": "completed_cycle_reset"
-            },
-            "previousCapital": {
-              "initialUsd": 3000,
-              "cashUsd": 2790.2,
-              "openValueUsd": 681.28,
-              "equityUsd": 3471.48,
-              "realizedPnlUsd": 488,
-              "unrealizedPnlUsd": -16.52,
-              "totalPnlUsd": 471.48,
-              "totalPnlPct": 15.72
-            },
-            "previousOpenPositions": 4,
-            "previousTrades": 12,
-            "previousDecisions": 480
-          },
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 2790.2,
-            "openValueUsd": 681.28,
-            "equityUsd": 3471.48,
-            "realizedPnlUsd": 488,
-            "unrealizedPnlUsd": -16.52,
-            "totalPnlUsd": 471.48,
-            "totalPnlPct": 15.72
-          }
-        },
         {
           "runId": "20260528065857",
           "startedAt": "2026-05-28T06:58:57.670Z",
