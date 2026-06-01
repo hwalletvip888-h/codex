@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T16:59:57.701Z",
+  "generatedAt": "2026-06-01T17:29:51.447Z",
   "latest": {
     "date": "2026-06-02",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-01T16:59:57.687Z",
-    "runCount": 2,
+    "generatedAt": "2026-06-01T17:29:51.435Z",
+    "runCount": 3,
     "statuses": {
-      "ok": 2
+      "ok": 3
     },
-    "rawSignalCount": 126,
-    "decisionCount": 126,
+    "rawSignalCount": 189,
+    "decisionCount": 189,
     "actions": {
-      "IGNORE": 70,
-      "WATCH": 47,
-      "HOLD": 7,
+      "IGNORE": 103,
+      "WATCH": 71,
+      "HOLD": 13,
       "BUY": 2
     },
     "tradeCount": 2,
@@ -28,35 +28,35 @@
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 95
+        "count": 141
       },
       {
         "name": "amount < 500U",
-        "count": 12
+        "count": 18
       },
       {
         "name": "blacklisted source wallet: hybgZh...pjbL",
-        "count": 6
+        "count": 9
       },
       {
         "name": "blacklisted source wallet: 7udEMP...7SG7",
-        "count": 4
+        "count": 6
       },
       {
         "name": "blacklisted source wallet: G52j5e...TsZo",
-        "count": 4
+        "count": 6
       },
       {
         "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 2
+        "count": 3
       },
       {
         "name": "blacklisted source wallet: 4rchtQ...kZi7",
-        "count": 2
+        "count": 3
       },
       {
         "name": "blacklisted source wallet: DNHWLD...aE8D",
-        "count": 2
+        "count": 3
       }
     ],
     "mistakeCount": 0,
@@ -262,10 +262,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-01T16:59:04.553Z",
-        "occurrences": 425,
-        "highSoldRatioCount": 425,
+        "lastSeenAt": "2026-06-01T17:28:58.291Z",
+        "occurrences": 427,
+        "highSoldRatioCount": 427,
         "tokens": [
+          {
+            "token": "Grand Arena",
+            "symbol": "ARENA",
+            "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+            "shortAddress": "ddrae7...pump",
+            "soldRatioPercent": 100,
+            "amountUsd": 198.13
+          },
           {
             "token": "The Spirit of Gambling",
             "symbol": "Tokabu",
@@ -337,17 +345,10 @@
             "shortAddress": "7zzgor...pump",
             "soldRatioPercent": 100,
             "amountUsd": 1362.17
-          },
-          {
-            "token": "Opal",
-            "symbol": "OPAL",
-            "address": "2pzs5syywjufvzxnfammrkpjkxgx6r5v8dnkytdcpump",
-            "shortAddress": "2pzs5s...pump",
-            "soldRatioPercent": 83.68,
-            "amountUsd": 1392.65
           }
         ],
         "reasons": [
+          "watch only; sold ratio 100%",
           "watch only; sold ratio 85%",
           "watch only; sold ratio 88.56%",
           "watch only; sold ratio 88.19%",
@@ -356,8 +357,7 @@
           "watch only; sold ratio 88.43%",
           "watch only; sold ratio 84.85%",
           "watch only; sold ratio 92.88%",
-          "watch only; sold ratio 93.9%",
-          "watch only; sold ratio 88.38%"
+          "watch only; sold ratio 93.9%"
         ]
       },
       {
@@ -939,7 +939,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 4370.05U; wallets 3; sold 47.86%; type KOL/Influencer",
+        "reason": "amount 4370.05U; wallets 3; sold 75.38%; type KOL/Influencer",
         "score": 62,
         "wins": 0,
         "losses": 0,
@@ -952,8 +952,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-01T16:59:04.553Z",
-        "occurrences": 7086,
+        "lastSeenAt": "2026-06-01T17:28:58.291Z",
+        "occurrences": 7112,
         "examples": [
           {
             "token": "Moonshot Packs",
@@ -1004,7 +1004,7 @@
         "title": "solana Whale 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 2727.95U; wallets 3; sold 35.81%; type Whale",
+        "reason": "amount 2727.95U; wallets 3; sold 40.01%; type Whale",
         "score": 68.2,
         "wins": 0,
         "losses": 0,
@@ -1017,8 +1017,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-01T16:59:04.553Z",
-        "occurrences": 2471,
+        "lastSeenAt": "2026-06-01T17:28:58.291Z",
+        "occurrences": 2484,
         "examples": [
           {
             "token": "Moonshot Packs",
@@ -1082,8 +1082,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-01T16:59:04.553Z",
-        "occurrences": 995,
+        "lastSeenAt": "2026-06-01T17:28:58.291Z",
+        "occurrences": 999,
         "examples": [
           {
             "token": "Champions",
@@ -1212,8 +1212,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-01T16:59:04.553Z",
-        "occurrences": 366,
+        "lastSeenAt": "2026-06-01T17:28:58.291Z",
+        "occurrences": 373,
         "examples": [
           {
             "token": "mcdoge",
@@ -1496,6 +1496,48 @@
           "totalPnlUsd": 34.64,
           "totalPnlPct": 1.15
         }
+      },
+      {
+        "runId": "20260601172858",
+        "startedAt": "2026-06-01T17:28:58.291Z",
+        "finishedAt": "2026-06-01T17:29:50.751Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 63,
+        "decisions": 63,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 13,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2446.4,
+          "openValueUsd": 588.24,
+          "equityUsd": 3034.64,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 34.64,
+          "totalPnlUsd": 34.64,
+          "totalPnlPct": 1.15
+        }
       }
     ]
   },
@@ -1503,17 +1545,17 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T16:59:57.687Z",
-      "runCount": 2,
+      "generatedAt": "2026-06-01T17:29:51.435Z",
+      "runCount": 3,
       "statuses": {
-        "ok": 2
+        "ok": 3
       },
-      "rawSignalCount": 126,
-      "decisionCount": 126,
+      "rawSignalCount": 189,
+      "decisionCount": 189,
       "actions": {
-        "IGNORE": 70,
-        "WATCH": 47,
-        "HOLD": 7,
+        "IGNORE": 103,
+        "WATCH": 71,
+        "HOLD": 13,
         "BUY": 2
       },
       "tradeCount": 2,
@@ -1527,35 +1569,35 @@
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 95
+          "count": 141
         },
         {
           "name": "amount < 500U",
-          "count": 12
+          "count": 18
         },
         {
           "name": "blacklisted source wallet: hybgZh...pjbL",
-          "count": 6
+          "count": 9
         },
         {
           "name": "blacklisted source wallet: 7udEMP...7SG7",
-          "count": 4
+          "count": 6
         },
         {
           "name": "blacklisted source wallet: G52j5e...TsZo",
-          "count": 4
+          "count": 6
         },
         {
           "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 2
+          "count": 3
         },
         {
           "name": "blacklisted source wallet: 4rchtQ...kZi7",
-          "count": 2
+          "count": 3
         },
         {
           "name": "blacklisted source wallet: DNHWLD...aE8D",
-          "count": 2
+          "count": 3
         }
       ],
       "mistakeCount": 0,
@@ -1761,10 +1803,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 425,
-          "highSoldRatioCount": 425,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 427,
+          "highSoldRatioCount": 427,
           "tokens": [
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 198.13
+            },
             {
               "token": "The Spirit of Gambling",
               "symbol": "Tokabu",
@@ -1836,17 +1886,10 @@
               "shortAddress": "7zzgor...pump",
               "soldRatioPercent": 100,
               "amountUsd": 1362.17
-            },
-            {
-              "token": "Opal",
-              "symbol": "OPAL",
-              "address": "2pzs5syywjufvzxnfammrkpjkxgx6r5v8dnkytdcpump",
-              "shortAddress": "2pzs5s...pump",
-              "soldRatioPercent": 83.68,
-              "amountUsd": 1392.65
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
             "watch only; sold ratio 88.19%",
@@ -1855,8 +1898,7 @@
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
             "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%",
-            "watch only; sold ratio 88.38%"
+            "watch only; sold ratio 93.9%"
           ]
         },
         {
@@ -2438,7 +2480,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4370.05U; wallets 3; sold 47.86%; type KOL/Influencer",
+          "reason": "amount 4370.05U; wallets 3; sold 75.38%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -2451,8 +2493,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 7086,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 7112,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -2503,7 +2545,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 2727.95U; wallets 3; sold 35.81%; type Whale",
+          "reason": "amount 2727.95U; wallets 3; sold 40.01%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -2516,8 +2558,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 2471,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 2484,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -2581,8 +2623,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 995,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 999,
           "examples": [
             {
               "token": "Champions",
@@ -2711,8 +2753,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 366,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 373,
           "examples": [
             {
               "token": "mcdoge",
@@ -2995,13 +3037,55 @@
             "totalPnlUsd": 34.64,
             "totalPnlPct": 1.15
           }
+        },
+        {
+          "runId": "20260601172858",
+          "startedAt": "2026-06-01T17:28:58.291Z",
+          "finishedAt": "2026-06-01T17:29:50.751Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 63,
+          "decisions": 63,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 13,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2446.4,
+            "openValueUsd": 588.24,
+            "equityUsd": 3034.64,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 34.64,
+            "totalPnlUsd": 34.64,
+            "totalPnlPct": 1.15
+          }
         }
       ]
     },
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T16:59:57.688Z",
+      "generatedAt": "2026-06-01T17:29:51.437Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -3259,10 +3343,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 425,
-          "highSoldRatioCount": 425,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 427,
+          "highSoldRatioCount": 427,
           "tokens": [
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 198.13
+            },
             {
               "token": "The Spirit of Gambling",
               "symbol": "Tokabu",
@@ -3334,17 +3426,10 @@
               "shortAddress": "7zzgor...pump",
               "soldRatioPercent": 100,
               "amountUsd": 1362.17
-            },
-            {
-              "token": "Opal",
-              "symbol": "OPAL",
-              "address": "2pzs5syywjufvzxnfammrkpjkxgx6r5v8dnkytdcpump",
-              "shortAddress": "2pzs5s...pump",
-              "soldRatioPercent": 83.68,
-              "amountUsd": 1392.65
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
             "watch only; sold ratio 88.19%",
@@ -3353,8 +3438,7 @@
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
             "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%",
-            "watch only; sold ratio 88.38%"
+            "watch only; sold ratio 93.9%"
           ]
         },
         {
@@ -3936,7 +4020,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4370.05U; wallets 3; sold 47.86%; type KOL/Influencer",
+          "reason": "amount 4370.05U; wallets 3; sold 75.38%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -3949,8 +4033,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 7086,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 7112,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -4001,7 +4085,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 2727.95U; wallets 3; sold 35.81%; type Whale",
+          "reason": "amount 2727.95U; wallets 3; sold 40.01%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -4014,8 +4098,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 2471,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 2484,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -4079,8 +4163,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 995,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 999,
           "examples": [
             {
               "token": "Champions",
@@ -4209,8 +4293,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 366,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 373,
           "examples": [
             {
               "token": "mcdoge",
@@ -6605,7 +6689,7 @@
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T16:59:57.689Z",
+      "generatedAt": "2026-06-01T17:29:51.437Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -6825,10 +6909,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 425,
-          "highSoldRatioCount": 425,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 427,
+          "highSoldRatioCount": 427,
           "tokens": [
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 198.13
+            },
             {
               "token": "The Spirit of Gambling",
               "symbol": "Tokabu",
@@ -6900,17 +6992,10 @@
               "shortAddress": "7zzgor...pump",
               "soldRatioPercent": 100,
               "amountUsd": 1362.17
-            },
-            {
-              "token": "Opal",
-              "symbol": "OPAL",
-              "address": "2pzs5syywjufvzxnfammrkpjkxgx6r5v8dnkytdcpump",
-              "shortAddress": "2pzs5s...pump",
-              "soldRatioPercent": 83.68,
-              "amountUsd": 1392.65
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
             "watch only; sold ratio 88.19%",
@@ -6919,8 +7004,7 @@
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
             "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%",
-            "watch only; sold ratio 88.38%"
+            "watch only; sold ratio 93.9%"
           ]
         },
         {
@@ -7502,7 +7586,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4370.05U; wallets 3; sold 47.86%; type KOL/Influencer",
+          "reason": "amount 4370.05U; wallets 3; sold 75.38%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -7515,8 +7599,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 7086,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 7112,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -7567,7 +7651,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 2727.95U; wallets 3; sold 35.81%; type Whale",
+          "reason": "amount 2727.95U; wallets 3; sold 40.01%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -7580,8 +7664,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 2471,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 2484,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -7645,8 +7729,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 995,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 999,
           "examples": [
             {
               "token": "Champions",
@@ -7775,8 +7859,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 366,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 373,
           "examples": [
             {
               "token": "mcdoge",
@@ -10142,7 +10226,7 @@
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T16:59:57.689Z",
+      "generatedAt": "2026-06-01T17:29:51.438Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -10362,10 +10446,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 425,
-          "highSoldRatioCount": 425,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 427,
+          "highSoldRatioCount": 427,
           "tokens": [
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 198.13
+            },
             {
               "token": "The Spirit of Gambling",
               "symbol": "Tokabu",
@@ -10437,17 +10529,10 @@
               "shortAddress": "7zzgor...pump",
               "soldRatioPercent": 100,
               "amountUsd": 1362.17
-            },
-            {
-              "token": "Opal",
-              "symbol": "OPAL",
-              "address": "2pzs5syywjufvzxnfammrkpjkxgx6r5v8dnkytdcpump",
-              "shortAddress": "2pzs5s...pump",
-              "soldRatioPercent": 83.68,
-              "amountUsd": 1392.65
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
             "watch only; sold ratio 88.19%",
@@ -10456,8 +10541,7 @@
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
             "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%",
-            "watch only; sold ratio 88.38%"
+            "watch only; sold ratio 93.9%"
           ]
         },
         {
@@ -11039,7 +11123,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4370.05U; wallets 3; sold 47.86%; type KOL/Influencer",
+          "reason": "amount 4370.05U; wallets 3; sold 75.38%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -11052,8 +11136,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 7086,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 7112,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -11104,7 +11188,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 2727.95U; wallets 3; sold 35.81%; type Whale",
+          "reason": "amount 2727.95U; wallets 3; sold 40.01%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -11117,8 +11201,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 2471,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 2484,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -11182,8 +11266,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 995,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 999,
           "examples": [
             {
               "token": "Champions",
@@ -11312,8 +11396,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 366,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 373,
           "examples": [
             {
               "token": "mcdoge",
@@ -13637,7 +13721,7 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T16:59:57.691Z",
+      "generatedAt": "2026-06-01T17:29:51.438Z",
       "runCount": 36,
       "statuses": {
         "ok": 19,
@@ -13860,10 +13944,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 425,
-          "highSoldRatioCount": 425,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 427,
+          "highSoldRatioCount": 427,
           "tokens": [
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 198.13
+            },
             {
               "token": "The Spirit of Gambling",
               "symbol": "Tokabu",
@@ -13935,17 +14027,10 @@
               "shortAddress": "7zzgor...pump",
               "soldRatioPercent": 100,
               "amountUsd": 1362.17
-            },
-            {
-              "token": "Opal",
-              "symbol": "OPAL",
-              "address": "2pzs5syywjufvzxnfammrkpjkxgx6r5v8dnkytdcpump",
-              "shortAddress": "2pzs5s...pump",
-              "soldRatioPercent": 83.68,
-              "amountUsd": 1392.65
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
             "watch only; sold ratio 88.19%",
@@ -13954,8 +14039,7 @@
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
             "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%",
-            "watch only; sold ratio 88.38%"
+            "watch only; sold ratio 93.9%"
           ]
         },
         {
@@ -14537,7 +14621,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4370.05U; wallets 3; sold 47.86%; type KOL/Influencer",
+          "reason": "amount 4370.05U; wallets 3; sold 75.38%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -14550,8 +14634,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 7086,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 7112,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -14602,7 +14686,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 2727.95U; wallets 3; sold 35.81%; type Whale",
+          "reason": "amount 2727.95U; wallets 3; sold 40.01%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -14615,8 +14699,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 2471,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 2484,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -14680,8 +14764,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 995,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 999,
           "examples": [
             {
               "token": "Champions",
@@ -14810,8 +14894,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 366,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 373,
           "examples": [
             {
               "token": "mcdoge",
@@ -16479,12 +16563,12 @@
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-01T16:59:57.691Z",
-      "runCount": 19,
+      "generatedAt": "2026-06-01T17:29:51.439Z",
+      "runCount": 18,
       "statuses": {
-        "ok": 19
+        "ok": 18
       },
-      "rawSignalCount": 1022,
+      "rawSignalCount": 969,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -16492,9 +16576,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 3105.95,
+      "equityStartUsd": 3228.31,
       "equityEndUsd": 3106.82,
-      "equityChangeUsd": 0.87,
+      "equityChangeUsd": -121.49,
       "topBlockers": [],
       "mistakeCount": 0,
       "mistakeTypes": {},
@@ -16699,10 +16783,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 425,
-          "highSoldRatioCount": 425,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 427,
+          "highSoldRatioCount": 427,
           "tokens": [
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 198.13
+            },
             {
               "token": "The Spirit of Gambling",
               "symbol": "Tokabu",
@@ -16774,17 +16866,10 @@
               "shortAddress": "7zzgor...pump",
               "soldRatioPercent": 100,
               "amountUsd": 1362.17
-            },
-            {
-              "token": "Opal",
-              "symbol": "OPAL",
-              "address": "2pzs5syywjufvzxnfammrkpjkxgx6r5v8dnkytdcpump",
-              "shortAddress": "2pzs5s...pump",
-              "soldRatioPercent": 83.68,
-              "amountUsd": 1392.65
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 85%",
             "watch only; sold ratio 88.56%",
             "watch only; sold ratio 88.19%",
@@ -16793,8 +16878,7 @@
             "watch only; sold ratio 88.43%",
             "watch only; sold ratio 84.85%",
             "watch only; sold ratio 92.88%",
-            "watch only; sold ratio 93.9%",
-            "watch only; sold ratio 88.38%"
+            "watch only; sold ratio 93.9%"
           ]
         },
         {
@@ -17376,7 +17460,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4370.05U; wallets 3; sold 47.86%; type KOL/Influencer",
+          "reason": "amount 4370.05U; wallets 3; sold 75.38%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -17389,8 +17473,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 7086,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 7112,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -17441,7 +17525,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 2727.95U; wallets 3; sold 35.81%; type Whale",
+          "reason": "amount 2727.95U; wallets 3; sold 40.01%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -17454,8 +17538,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 2471,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 2484,
           "examples": [
             {
               "token": "Moonshot Packs",
@@ -17519,8 +17603,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 995,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 999,
           "examples": [
             {
               "token": "Champions",
@@ -17649,8 +17733,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-01T16:59:04.553Z",
-          "occurrences": 366,
+          "lastSeenAt": "2026-06-01T17:28:58.291Z",
+          "occurrences": 373,
           "examples": [
             {
               "token": "mcdoge",
@@ -17850,48 +17934,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260528032858",
-          "startedAt": "2026-05-28T03:28:58.538Z",
-          "finishedAt": "2026-05-28T03:29:00.268Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 53,
-          "decisions": 53,
-          "trades": 1,
-          "mistakes": [],
-          "notes": [],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 1,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 3,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 2579.4,
-            "openValueUsd": 526.55,
-            "equityUsd": 3105.95,
-            "realizedPnlUsd": 122,
-            "unrealizedPnlUsd": -16.05,
-            "totalPnlUsd": 105.95,
-            "totalPnlPct": 3.53
-          }
-        },
         {
           "runId": "20260528035858",
           "startedAt": "2026-05-28T03:58:58.577Z",
