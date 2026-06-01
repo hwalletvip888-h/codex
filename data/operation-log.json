@@ -1,10 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-01T07:29:50.852Z",
+  "generatedAt": "2026-06-01T07:59:51.202Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260601072858",
+  "latestRunId": "20260601075858",
   "entries": [
+    {
+      "runId": "20260601075858",
+      "startedAt": "2026-06-01T07:58:58.324Z",
+      "finishedAt": "2026-06-01T07:59:50.502Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 60,
+      "decisions": 60,
+      "trades": 0,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 10,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2867.9,
+        "openValueUsd": 142.44,
+        "equityUsd": 3010.34,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": 10.34,
+        "totalPnlUsd": 10.34,
+        "totalPnlPct": 0.34
+      }
+    },
     {
       "runId": "20260601072858",
       "startedAt": "2026-06-01T07:28:58.081Z",
@@ -8823,30 +8865,6 @@
         "totalPnlUsd": 991.08,
         "totalPnlPct": 33.04
       }
-    },
-    {
-      "runId": "20260527044540",
-      "startedAt": "2026-05-27T04:45:40.976Z",
-      "finishedAt": "2026-05-27T04:45:40.976Z",
-      "status": "failed",
-      "chains": [],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
-        {
-          "type": "FILE_WRITE_ERROR",
-          "chain": "",
-          "message": "EPERM: operation not permitted, open 'C:\\Users\\Projects\\Onchain OS\\docs\\data\\signal-paper.json'",
-          "lesson": "Scan logic ran but persistence failed; do not infer signals or trades from an incomplete run."
-        }
-      ],
-      "notes": [
-        "Scan execution failed while writing the output file; no signals or simulated trades were persisted for this run."
-      ],
-      "chainResults": [],
-      "accountReset": null,
-      "capital": null
     }
   ]
 }
