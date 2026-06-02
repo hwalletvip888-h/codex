@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-02T11:29:53.286Z",
+  "generatedAt": "2026-06-02T12:00:41.650Z",
   "latest": {
     "date": "2026-06-02",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-02T11:29:53.274Z",
-    "runCount": 38,
+    "generatedAt": "2026-06-02T12:00:41.635Z",
+    "runCount": 39,
     "statuses": {
       "ok": 36,
-      "partial": 1,
+      "partial": 2,
       "failed": 1
     },
-    "rawSignalCount": 2410,
-    "decisionCount": 117,
+    "rawSignalCount": 2460,
+    "decisionCount": 167,
     "actions": {
-      "IGNORE": 73,
-      "WATCH": 40,
-      "HOLD": 3,
+      "IGNORE": 104,
+      "WATCH": 57,
+      "HOLD": 5,
       "BUY": 1
     },
     "tradeCount": 1,
@@ -30,40 +30,40 @@
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 104
+        "count": 150
       },
       {
         "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 10
+        "count": 15
       },
       {
         "name": "blacklisted source wallet: hybgZh...pjbL",
-        "count": 6
+        "count": 9
       },
       {
         "name": "amount < 500U",
-        "count": 6
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: FpKnR8...CCx5",
-        "count": 4
+        "count": 6
       },
       {
         "name": "blacklisted source wallet: 6thKzh...4nVi",
-        "count": 4
+        "count": 6
       },
       {
         "name": "blacklisted source wallet: 7udEMP...7SG7",
-        "count": 4
+        "count": 6
       },
       {
         "name": "blacklisted source wallet: G52j5e...TsZo",
-        "count": 4
+        "count": 6
       }
     ],
-    "mistakeCount": 2,
+    "mistakeCount": 3,
     "mistakeTypes": {
-      "CLI_ERROR": 2
+      "CLI_ERROR": 3
     },
     "accountResets": 4,
     "cycleSummaries": 4,
@@ -371,9 +371,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-02T11:28:59.417Z",
-        "occurrences": 431,
-        "highSoldRatioCount": 431,
+        "lastSeenAt": "2026-06-02T11:59:03.224Z",
+        "occurrences": 433,
+        "highSoldRatioCount": 433,
         "tokens": [
           {
             "token": "three.ws",
@@ -476,9 +476,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-02T11:28:59.417Z",
-        "occurrences": 409,
-        "highSoldRatioCount": 409,
+        "lastSeenAt": "2026-06-02T11:59:03.224Z",
+        "occurrences": 412,
+        "highSoldRatioCount": 412,
         "tokens": [
           {
             "token": " Kool Aid Pineapple Jars",
@@ -581,9 +581,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-02T11:28:59.417Z",
-        "occurrences": 395,
-        "highSoldRatioCount": 395,
+        "lastSeenAt": "2026-06-02T11:59:03.224Z",
+        "occurrences": 397,
+        "highSoldRatioCount": 397,
         "tokens": [
           {
             "token": "Atelier",
@@ -686,9 +686,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-26T22:55:39.434Z",
-        "lastSeenAt": "2026-06-02T11:28:59.417Z",
-        "occurrences": 368,
-        "highSoldRatioCount": 368,
+        "lastSeenAt": "2026-06-02T11:59:03.224Z",
+        "occurrences": 370,
+        "highSoldRatioCount": 370,
         "tokens": [
           {
             "token": "Delusional Optimist",
@@ -943,7 +943,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 555.27U; wallets 3; sold 71.71%; type KOL/Influencer",
+        "reason": "amount 6756.14U; wallets 5; sold 66.61%; type KOL/Influencer",
         "score": 62,
         "wins": 0,
         "losses": 0,
@@ -956,9 +956,16 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-02T11:28:59.417Z",
-        "occurrences": 7971,
+        "lastSeenAt": "2026-06-02T11:59:03.224Z",
+        "occurrences": 7997,
         "examples": [
+          {
+            "token": "Michul Sellor",
+            "symbol": "SELLOR",
+            "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+            "shortAddress": "124yn3...pump",
+            "chain": "solana"
+          },
           {
             "token": "Champions",
             "symbol": "WORLDCUP",
@@ -993,13 +1000,6 @@
             "address": "bucutdnuztedkmdwyqytavdhvafefvn9ykd3jj6qvory",
             "shortAddress": "bucutd...vory",
             "chain": "solana"
-          },
-          {
-            "token": "Moonshot Packs",
-            "symbol": "PACKS",
-            "address": "bnfar2pwsvnu24oqgbrk5xugabfyxqsofuj58bkgmoon",
-            "shortAddress": "bnfar2...moon",
-            "chain": "solana"
           }
         ]
       },
@@ -1021,8 +1021,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-02T11:28:59.417Z",
-        "occurrences": 3074,
+        "lastSeenAt": "2026-06-02T11:59:03.224Z",
+        "occurrences": 3094,
         "examples": [
           {
             "token": "Michul Sellor",
@@ -1073,7 +1073,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "amount < 500U",
-        "reason": "amount 235.41U; wallets 3; sold 80.17%; type KOL/Influencer",
+        "reason": "amount 235.41U; wallets 3; sold 79.75%; type KOL/Influencer",
         "score": 70.6,
         "wins": 0,
         "losses": 0,
@@ -1086,8 +1086,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-02T11:28:59.417Z",
-        "occurrences": 1052,
+        "lastSeenAt": "2026-06-02T11:59:03.224Z",
+        "occurrences": 1053,
         "examples": [
           {
             "token": "Champions",
@@ -1216,8 +1216,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-02T11:28:59.417Z",
-        "occurrences": 532,
+        "lastSeenAt": "2026-06-02T11:59:03.224Z",
+        "occurrences": 533,
         "examples": [
           {
             "token": "SpaceX",
@@ -1356,6 +1356,36 @@
         ]
       },
       {
+        "key": "mistake:cli_error:bsc",
+        "title": "执行踩坑",
+        "status": "流程问题",
+        "rule": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+        "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+        "score": 0,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "CLI_ERROR",
+          "symbol": "bsc",
+          "address": "",
+          "shortAddress": "",
+          "chain": "bsc"
+        },
+        "firstSeenAt": "2026-06-02T10:29:01.679Z",
+        "lastSeenAt": "2026-06-02T11:59:03.224Z",
+        "occurrences": 2,
+        "examples": [
+          {
+            "token": "CLI_ERROR",
+            "symbol": "bsc",
+            "address": "",
+            "shortAddress": "",
+            "chain": "bsc"
+          }
+        ]
+      },
+      {
         "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
         "title": "亏损复盘",
         "status": "需避免重复",
@@ -1381,36 +1411,6 @@
             "symbol": "HENRY",
             "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
             "shortAddress": "hfafns...pump",
-            "chain": "solana"
-          }
-        ]
-      },
-      {
-        "key": "lesson:solana:fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump:stop loss -47.51%; amount 7490.67u; wallets 3; sold 60.35%; type kol/influencer",
-        "title": "亏损复盘",
-        "status": "需避免重复",
-        "rule": "触发止损或亏损退出后自动归档",
-        "reason": "three.ws three: Stop loss -47.51%; amount 7490.67U; wallets 3; sold 60.35%; type KOL/Influencer",
-        "score": 54.1,
-        "wins": 0,
-        "losses": 1,
-        "totalPnlUsd": -64.01,
-        "example": {
-          "token": "three.ws",
-          "symbol": "three",
-          "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-          "shortAddress": "fembdo...pump",
-          "chain": "solana"
-        },
-        "firstSeenAt": "2026-06-01T13:58:58.751Z",
-        "lastSeenAt": "2026-06-01T13:58:58.751Z",
-        "occurrences": 1,
-        "examples": [
-          {
-            "token": "three.ws",
-            "symbol": "three",
-            "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-            "shortAddress": "fembdo...pump",
             "chain": "solana"
           }
         ]
@@ -3134,6 +3134,62 @@
           "totalPnlUsd": -0.22,
           "totalPnlPct": -0.01
         }
+      },
+      {
+        "runId": "20260602115903",
+        "startedAt": "2026-06-02T11:59:03.224Z",
+        "finishedAt": "2026-06-02T12:00:40.781Z",
+        "status": "partial",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 50,
+        "decisions": 50,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "CLI_ERROR",
+            "chain": "bsc",
+            "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+            "lesson": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses."
+          }
+        ],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "failed",
+            "rawSignalCount": 0,
+            "trades": 0,
+            "mistakes": [
+              {
+                "type": "CLI_ERROR",
+                "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+                "lesson": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+                "chain": "bsc"
+              }
+            ]
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2834.9,
+          "openValueUsd": 164.88,
+          "equityUsd": 2999.78,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -0.22,
+          "totalPnlUsd": -0.22,
+          "totalPnlPct": -0.01
+        }
       }
     ]
   },
@@ -3141,19 +3197,19 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T11:29:53.274Z",
-      "runCount": 38,
+      "generatedAt": "2026-06-02T12:00:41.635Z",
+      "runCount": 39,
       "statuses": {
         "ok": 36,
-        "partial": 1,
+        "partial": 2,
         "failed": 1
       },
-      "rawSignalCount": 2410,
-      "decisionCount": 117,
+      "rawSignalCount": 2460,
+      "decisionCount": 167,
       "actions": {
-        "IGNORE": 73,
-        "WATCH": 40,
-        "HOLD": 3,
+        "IGNORE": 104,
+        "WATCH": 57,
+        "HOLD": 5,
         "BUY": 1
       },
       "tradeCount": 1,
@@ -3167,40 +3223,40 @@
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 104
+          "count": 150
         },
         {
           "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 10
+          "count": 15
         },
         {
           "name": "blacklisted source wallet: hybgZh...pjbL",
-          "count": 6
+          "count": 9
         },
         {
           "name": "amount < 500U",
-          "count": 6
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: FpKnR8...CCx5",
-          "count": 4
+          "count": 6
         },
         {
           "name": "blacklisted source wallet: 6thKzh...4nVi",
-          "count": 4
+          "count": 6
         },
         {
           "name": "blacklisted source wallet: 7udEMP...7SG7",
-          "count": 4
+          "count": 6
         },
         {
           "name": "blacklisted source wallet: G52j5e...TsZo",
-          "count": 4
+          "count": 6
         }
       ],
-      "mistakeCount": 2,
+      "mistakeCount": 3,
       "mistakeTypes": {
-        "CLI_ERROR": 2
+        "CLI_ERROR": 3
       },
       "accountResets": 4,
       "cycleSummaries": 4,
@@ -3508,9 +3564,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 431,
-          "highSoldRatioCount": 431,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 433,
+          "highSoldRatioCount": 433,
           "tokens": [
             {
               "token": "three.ws",
@@ -3613,9 +3669,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 409,
-          "highSoldRatioCount": 409,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 412,
+          "highSoldRatioCount": 412,
           "tokens": [
             {
               "token": " Kool Aid Pineapple Jars",
@@ -3718,9 +3774,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 395,
-          "highSoldRatioCount": 395,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 397,
+          "highSoldRatioCount": 397,
           "tokens": [
             {
               "token": "Atelier",
@@ -3823,9 +3879,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 368,
-          "highSoldRatioCount": 368,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 370,
+          "highSoldRatioCount": 370,
           "tokens": [
             {
               "token": "Delusional Optimist",
@@ -4080,7 +4136,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 555.27U; wallets 3; sold 71.71%; type KOL/Influencer",
+          "reason": "amount 6756.14U; wallets 5; sold 66.61%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -4093,9 +4149,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 7971,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 7997,
           "examples": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "chain": "solana"
+            },
             {
               "token": "Champions",
               "symbol": "WORLDCUP",
@@ -4130,13 +4193,6 @@
               "address": "bucutdnuztedkmdwyqytavdhvafefvn9ykd3jj6qvory",
               "shortAddress": "bucutd...vory",
               "chain": "solana"
-            },
-            {
-              "token": "Moonshot Packs",
-              "symbol": "PACKS",
-              "address": "bnfar2pwsvnu24oqgbrk5xugabfyxqsofuj58bkgmoon",
-              "shortAddress": "bnfar2...moon",
-              "chain": "solana"
             }
           ]
         },
@@ -4158,8 +4214,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 3074,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 3094,
           "examples": [
             {
               "token": "Michul Sellor",
@@ -4210,7 +4266,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 235.41U; wallets 3; sold 80.17%; type KOL/Influencer",
+          "reason": "amount 235.41U; wallets 3; sold 79.75%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -4223,8 +4279,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 1052,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 1053,
           "examples": [
             {
               "token": "Champions",
@@ -4353,8 +4409,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 533,
           "examples": [
             {
               "token": "SpaceX",
@@ -4493,6 +4549,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:bsc",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "bsc",
+            "address": "",
+            "shortAddress": "",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-06-02T10:29:01.679Z",
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "bsc",
+              "address": "",
+              "shortAddress": "",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -4518,36 +4604,6 @@
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
               "shortAddress": "hfafns...pump",
-              "chain": "solana"
-            }
-          ]
-        },
-        {
-          "key": "lesson:solana:fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump:stop loss -47.51%; amount 7490.67u; wallets 3; sold 60.35%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "three.ws three: Stop loss -47.51%; amount 7490.67U; wallets 3; sold 60.35%; type KOL/Influencer",
-          "score": 54.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -64.01,
-          "example": {
-            "token": "three.ws",
-            "symbol": "three",
-            "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-            "shortAddress": "fembdo...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-06-01T13:58:58.751Z",
-          "lastSeenAt": "2026-06-01T13:58:58.751Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "three.ws",
-              "symbol": "three",
-              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-              "shortAddress": "fembdo...pump",
               "chain": "solana"
             }
           ]
@@ -6271,13 +6327,69 @@
             "totalPnlUsd": -0.22,
             "totalPnlPct": -0.01
           }
+        },
+        {
+          "runId": "20260602115903",
+          "startedAt": "2026-06-02T11:59:03.224Z",
+          "finishedAt": "2026-06-02T12:00:40.781Z",
+          "status": "partial",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 50,
+          "decisions": 50,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "CLI_ERROR",
+              "chain": "bsc",
+              "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+              "lesson": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses."
+            }
+          ],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "failed",
+              "rawSignalCount": 0,
+              "trades": 0,
+              "mistakes": [
+                {
+                  "type": "CLI_ERROR",
+                  "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+                  "lesson": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+                  "chain": "bsc"
+                }
+              ]
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2834.9,
+            "openValueUsd": 164.88,
+            "equityUsd": 2999.78,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -0.22,
+            "totalPnlUsd": -0.22,
+            "totalPnlPct": -0.01
+          }
         }
       ]
     },
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T11:29:53.275Z",
+      "generatedAt": "2026-06-02T12:00:41.636Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -6602,9 +6714,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 431,
-          "highSoldRatioCount": 431,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 433,
+          "highSoldRatioCount": 433,
           "tokens": [
             {
               "token": "three.ws",
@@ -6707,9 +6819,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 409,
-          "highSoldRatioCount": 409,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 412,
+          "highSoldRatioCount": 412,
           "tokens": [
             {
               "token": " Kool Aid Pineapple Jars",
@@ -6812,9 +6924,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 395,
-          "highSoldRatioCount": 395,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 397,
+          "highSoldRatioCount": 397,
           "tokens": [
             {
               "token": "Atelier",
@@ -6917,9 +7029,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 368,
-          "highSoldRatioCount": 368,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 370,
+          "highSoldRatioCount": 370,
           "tokens": [
             {
               "token": "Delusional Optimist",
@@ -7174,7 +7286,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 555.27U; wallets 3; sold 71.71%; type KOL/Influencer",
+          "reason": "amount 6756.14U; wallets 5; sold 66.61%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -7187,9 +7299,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 7971,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 7997,
           "examples": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "chain": "solana"
+            },
             {
               "token": "Champions",
               "symbol": "WORLDCUP",
@@ -7224,13 +7343,6 @@
               "address": "bucutdnuztedkmdwyqytavdhvafefvn9ykd3jj6qvory",
               "shortAddress": "bucutd...vory",
               "chain": "solana"
-            },
-            {
-              "token": "Moonshot Packs",
-              "symbol": "PACKS",
-              "address": "bnfar2pwsvnu24oqgbrk5xugabfyxqsofuj58bkgmoon",
-              "shortAddress": "bnfar2...moon",
-              "chain": "solana"
             }
           ]
         },
@@ -7252,8 +7364,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 3074,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 3094,
           "examples": [
             {
               "token": "Michul Sellor",
@@ -7304,7 +7416,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 235.41U; wallets 3; sold 80.17%; type KOL/Influencer",
+          "reason": "amount 235.41U; wallets 3; sold 79.75%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -7317,8 +7429,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 1052,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 1053,
           "examples": [
             {
               "token": "Champions",
@@ -7447,8 +7559,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 533,
           "examples": [
             {
               "token": "SpaceX",
@@ -7587,6 +7699,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:bsc",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "bsc",
+            "address": "",
+            "shortAddress": "",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-06-02T10:29:01.679Z",
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "bsc",
+              "address": "",
+              "shortAddress": "",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -7612,36 +7754,6 @@
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
               "shortAddress": "hfafns...pump",
-              "chain": "solana"
-            }
-          ]
-        },
-        {
-          "key": "lesson:solana:fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump:stop loss -47.51%; amount 7490.67u; wallets 3; sold 60.35%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "three.ws three: Stop loss -47.51%; amount 7490.67U; wallets 3; sold 60.35%; type KOL/Influencer",
-          "score": 54.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -64.01,
-          "example": {
-            "token": "three.ws",
-            "symbol": "three",
-            "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-            "shortAddress": "fembdo...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-06-01T13:58:58.751Z",
-          "lastSeenAt": "2026-06-01T13:58:58.751Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "three.ws",
-              "symbol": "three",
-              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-              "shortAddress": "fembdo...pump",
               "chain": "solana"
             }
           ]
@@ -9843,7 +9955,7 @@
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T11:29:53.275Z",
+      "generatedAt": "2026-06-02T12:00:41.636Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -10168,9 +10280,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 431,
-          "highSoldRatioCount": 431,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 433,
+          "highSoldRatioCount": 433,
           "tokens": [
             {
               "token": "three.ws",
@@ -10273,9 +10385,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 409,
-          "highSoldRatioCount": 409,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 412,
+          "highSoldRatioCount": 412,
           "tokens": [
             {
               "token": " Kool Aid Pineapple Jars",
@@ -10378,9 +10490,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 395,
-          "highSoldRatioCount": 395,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 397,
+          "highSoldRatioCount": 397,
           "tokens": [
             {
               "token": "Atelier",
@@ -10483,9 +10595,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 368,
-          "highSoldRatioCount": 368,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 370,
+          "highSoldRatioCount": 370,
           "tokens": [
             {
               "token": "Delusional Optimist",
@@ -10740,7 +10852,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 555.27U; wallets 3; sold 71.71%; type KOL/Influencer",
+          "reason": "amount 6756.14U; wallets 5; sold 66.61%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -10753,9 +10865,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 7971,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 7997,
           "examples": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "chain": "solana"
+            },
             {
               "token": "Champions",
               "symbol": "WORLDCUP",
@@ -10790,13 +10909,6 @@
               "address": "bucutdnuztedkmdwyqytavdhvafefvn9ykd3jj6qvory",
               "shortAddress": "bucutd...vory",
               "chain": "solana"
-            },
-            {
-              "token": "Moonshot Packs",
-              "symbol": "PACKS",
-              "address": "bnfar2pwsvnu24oqgbrk5xugabfyxqsofuj58bkgmoon",
-              "shortAddress": "bnfar2...moon",
-              "chain": "solana"
             }
           ]
         },
@@ -10818,8 +10930,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 3074,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 3094,
           "examples": [
             {
               "token": "Michul Sellor",
@@ -10870,7 +10982,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 235.41U; wallets 3; sold 80.17%; type KOL/Influencer",
+          "reason": "amount 235.41U; wallets 3; sold 79.75%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -10883,8 +10995,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 1052,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 1053,
           "examples": [
             {
               "token": "Champions",
@@ -11013,8 +11125,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 533,
           "examples": [
             {
               "token": "SpaceX",
@@ -11153,6 +11265,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:bsc",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "bsc",
+            "address": "",
+            "shortAddress": "",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-06-02T10:29:01.679Z",
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "bsc",
+              "address": "",
+              "shortAddress": "",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -11178,36 +11320,6 @@
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
               "shortAddress": "hfafns...pump",
-              "chain": "solana"
-            }
-          ]
-        },
-        {
-          "key": "lesson:solana:fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump:stop loss -47.51%; amount 7490.67u; wallets 3; sold 60.35%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "three.ws three: Stop loss -47.51%; amount 7490.67U; wallets 3; sold 60.35%; type KOL/Influencer",
-          "score": 54.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -64.01,
-          "example": {
-            "token": "three.ws",
-            "symbol": "three",
-            "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-            "shortAddress": "fembdo...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-06-01T13:58:58.751Z",
-          "lastSeenAt": "2026-06-01T13:58:58.751Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "three.ws",
-              "symbol": "three",
-              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-              "shortAddress": "fembdo...pump",
               "chain": "solana"
             }
           ]
@@ -13380,7 +13492,7 @@
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T11:29:53.276Z",
+      "generatedAt": "2026-06-02T12:00:41.637Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -13705,9 +13817,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 431,
-          "highSoldRatioCount": 431,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 433,
+          "highSoldRatioCount": 433,
           "tokens": [
             {
               "token": "three.ws",
@@ -13810,9 +13922,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 409,
-          "highSoldRatioCount": 409,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 412,
+          "highSoldRatioCount": 412,
           "tokens": [
             {
               "token": " Kool Aid Pineapple Jars",
@@ -13915,9 +14027,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 395,
-          "highSoldRatioCount": 395,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 397,
+          "highSoldRatioCount": 397,
           "tokens": [
             {
               "token": "Atelier",
@@ -14020,9 +14132,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 368,
-          "highSoldRatioCount": 368,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 370,
+          "highSoldRatioCount": 370,
           "tokens": [
             {
               "token": "Delusional Optimist",
@@ -14277,7 +14389,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 555.27U; wallets 3; sold 71.71%; type KOL/Influencer",
+          "reason": "amount 6756.14U; wallets 5; sold 66.61%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -14290,9 +14402,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 7971,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 7997,
           "examples": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "chain": "solana"
+            },
             {
               "token": "Champions",
               "symbol": "WORLDCUP",
@@ -14327,13 +14446,6 @@
               "address": "bucutdnuztedkmdwyqytavdhvafefvn9ykd3jj6qvory",
               "shortAddress": "bucutd...vory",
               "chain": "solana"
-            },
-            {
-              "token": "Moonshot Packs",
-              "symbol": "PACKS",
-              "address": "bnfar2pwsvnu24oqgbrk5xugabfyxqsofuj58bkgmoon",
-              "shortAddress": "bnfar2...moon",
-              "chain": "solana"
             }
           ]
         },
@@ -14355,8 +14467,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 3074,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 3094,
           "examples": [
             {
               "token": "Michul Sellor",
@@ -14407,7 +14519,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 235.41U; wallets 3; sold 80.17%; type KOL/Influencer",
+          "reason": "amount 235.41U; wallets 3; sold 79.75%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -14420,8 +14532,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 1052,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 1053,
           "examples": [
             {
               "token": "Champions",
@@ -14550,8 +14662,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 533,
           "examples": [
             {
               "token": "SpaceX",
@@ -14690,6 +14802,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:bsc",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "bsc",
+            "address": "",
+            "shortAddress": "",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-06-02T10:29:01.679Z",
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "bsc",
+              "address": "",
+              "shortAddress": "",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -14715,36 +14857,6 @@
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
               "shortAddress": "hfafns...pump",
-              "chain": "solana"
-            }
-          ]
-        },
-        {
-          "key": "lesson:solana:fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump:stop loss -47.51%; amount 7490.67u; wallets 3; sold 60.35%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "three.ws three: Stop loss -47.51%; amount 7490.67U; wallets 3; sold 60.35%; type KOL/Influencer",
-          "score": 54.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -64.01,
-          "example": {
-            "token": "three.ws",
-            "symbol": "three",
-            "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-            "shortAddress": "fembdo...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-06-01T13:58:58.751Z",
-          "lastSeenAt": "2026-06-01T13:58:58.751Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "three.ws",
-              "symbol": "three",
-              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-              "shortAddress": "fembdo...pump",
               "chain": "solana"
             }
           ]
@@ -16875,11 +16987,11 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T11:29:53.276Z",
-      "runCount": 19,
+      "generatedAt": "2026-06-02T12:00:41.637Z",
+      "runCount": 18,
       "statuses": {
         "ok": 12,
-        "failed": 7
+        "failed": 6
       },
       "rawSignalCount": 660,
       "decisionCount": 0,
@@ -16893,9 +17005,9 @@
       "equityEndUsd": 3122,
       "equityChangeUsd": 122,
       "topBlockers": [],
-      "mistakeCount": 7,
+      "mistakeCount": 6,
       "mistakeTypes": {
-        "REGION_RESTRICTED": 7
+        "REGION_RESTRICTED": 6
       },
       "accountResets": 3,
       "cycleSummaries": 3,
@@ -17203,9 +17315,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 431,
-          "highSoldRatioCount": 431,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 433,
+          "highSoldRatioCount": 433,
           "tokens": [
             {
               "token": "three.ws",
@@ -17308,9 +17420,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 409,
-          "highSoldRatioCount": 409,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 412,
+          "highSoldRatioCount": 412,
           "tokens": [
             {
               "token": " Kool Aid Pineapple Jars",
@@ -17413,9 +17525,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 395,
-          "highSoldRatioCount": 395,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 397,
+          "highSoldRatioCount": 397,
           "tokens": [
             {
               "token": "Atelier",
@@ -17518,9 +17630,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 368,
-          "highSoldRatioCount": 368,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 370,
+          "highSoldRatioCount": 370,
           "tokens": [
             {
               "token": "Delusional Optimist",
@@ -17775,7 +17887,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 555.27U; wallets 3; sold 71.71%; type KOL/Influencer",
+          "reason": "amount 6756.14U; wallets 5; sold 66.61%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -17788,9 +17900,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 7971,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 7997,
           "examples": [
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "chain": "solana"
+            },
             {
               "token": "Champions",
               "symbol": "WORLDCUP",
@@ -17825,13 +17944,6 @@
               "address": "bucutdnuztedkmdwyqytavdhvafefvn9ykd3jj6qvory",
               "shortAddress": "bucutd...vory",
               "chain": "solana"
-            },
-            {
-              "token": "Moonshot Packs",
-              "symbol": "PACKS",
-              "address": "bnfar2pwsvnu24oqgbrk5xugabfyxqsofuj58bkgmoon",
-              "shortAddress": "bnfar2...moon",
-              "chain": "solana"
             }
           ]
         },
@@ -17853,8 +17965,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 3074,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 3094,
           "examples": [
             {
               "token": "Michul Sellor",
@@ -17905,7 +18017,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 235.41U; wallets 3; sold 80.17%; type KOL/Influencer",
+          "reason": "amount 235.41U; wallets 3; sold 79.75%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -17918,8 +18030,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 1052,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 1053,
           "examples": [
             {
               "token": "Champions",
@@ -18048,8 +18160,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T11:28:59.417Z",
-          "occurrences": 532,
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 533,
           "examples": [
             {
               "token": "SpaceX",
@@ -18188,6 +18300,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:bsc",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "bsc",
+            "address": "",
+            "shortAddress": "",
+            "chain": "bsc"
+          },
+          "firstSeenAt": "2026-06-02T10:29:01.679Z",
+          "lastSeenAt": "2026-06-02T11:59:03.224Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "bsc",
+              "address": "",
+              "shortAddress": "",
+              "chain": "bsc"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -18216,73 +18358,9 @@
               "chain": "solana"
             }
           ]
-        },
-        {
-          "key": "lesson:solana:fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump:stop loss -47.51%; amount 7490.67u; wallets 3; sold 60.35%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "three.ws three: Stop loss -47.51%; amount 7490.67U; wallets 3; sold 60.35%; type KOL/Influencer",
-          "score": 54.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -64.01,
-          "example": {
-            "token": "three.ws",
-            "symbol": "three",
-            "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-            "shortAddress": "fembdo...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-06-01T13:58:58.751Z",
-          "lastSeenAt": "2026-06-01T13:58:58.751Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "three.ws",
-              "symbol": "three",
-              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
-              "shortAddress": "fembdo...pump",
-              "chain": "solana"
-            }
-          ]
         }
       ],
       "runs": [
-        {
-          "runId": "20260529072858",
-          "startedAt": "2026-05-29T07:28:58.164Z",
-          "finishedAt": "2026-05-29T07:28:59.028Z",
-          "status": "failed",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 0,
-          "decisions": 0,
-          "trades": 0,
-          "mistakes": [
-            {
-              "type": "REGION_RESTRICTED",
-              "chain": "",
-              "message": "API error (code=50125): Your API key or regions have no access to current services",
-              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
-            }
-          ],
-          "notes": [],
-          "chainResults": [],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 3000,
-            "openValueUsd": 0,
-            "equityUsd": 3000,
-            "realizedPnlUsd": 0,
-            "unrealizedPnlUsd": 0,
-            "totalPnlUsd": 0,
-            "totalPnlPct": 0
-          }
-        },
         {
           "runId": "20260529075857",
           "startedAt": "2026-05-29T07:58:57.877Z",

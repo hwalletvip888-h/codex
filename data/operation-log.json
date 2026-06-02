@@ -1,10 +1,66 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-02T11:29:53.276Z",
+  "generatedAt": "2026-06-02T12:00:41.637Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260602112859",
+  "latestRunId": "20260602115903",
   "entries": [
+    {
+      "runId": "20260602115903",
+      "startedAt": "2026-06-02T11:59:03.224Z",
+      "finishedAt": "2026-06-02T12:00:40.781Z",
+      "status": "partial",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 50,
+      "decisions": 50,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "CLI_ERROR",
+          "chain": "bsc",
+          "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+          "lesson": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses."
+        }
+      ],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "failed",
+          "rawSignalCount": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "CLI_ERROR",
+              "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+              "lesson": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
+              "chain": "bsc"
+            }
+          ]
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2834.9,
+        "openValueUsd": 164.88,
+        "equityUsd": 2999.78,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": -0.22,
+        "totalPnlUsd": -0.22,
+        "totalPnlPct": -0.01
+      }
+    },
     {
       "runId": "20260602112859",
       "startedAt": "2026-06-02T11:28:59.417Z",
@@ -8900,40 +8956,6 @@
       "runId": "20260529075857",
       "startedAt": "2026-05-29T07:58:57.877Z",
       "finishedAt": "2026-05-29T07:58:58.287Z",
-      "status": "failed",
-      "chains": [
-        "solana",
-        "bsc"
-      ],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
-        {
-          "type": "REGION_RESTRICTED",
-          "chain": "",
-          "message": "API error (code=50125): Your API key or regions have no access to current services",
-          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
-        }
-      ],
-      "notes": [],
-      "chainResults": [],
-      "accountReset": null,
-      "capital": {
-        "initialUsd": 3000,
-        "cashUsd": 3000,
-        "openValueUsd": 0,
-        "equityUsd": 3000,
-        "realizedPnlUsd": 0,
-        "unrealizedPnlUsd": 0,
-        "totalPnlUsd": 0,
-        "totalPnlPct": 0
-      }
-    },
-    {
-      "runId": "20260529072858",
-      "startedAt": "2026-05-29T07:28:58.164Z",
-      "finishedAt": "2026-05-29T07:28:59.028Z",
       "status": "failed",
       "chains": [
         "solana",
