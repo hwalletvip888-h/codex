@@ -1,10 +1,44 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-02T10:30:53.351Z",
+  "generatedAt": "2026-06-02T11:00:08.175Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260602102901",
+  "latestRunId": "20260602105859",
   "entries": [
+    {
+      "runId": "20260602105859",
+      "startedAt": "2026-06-02T10:58:59.360Z",
+      "finishedAt": "2026-06-02T11:00:07.308Z",
+      "status": "failed",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 0,
+      "decisions": 0,
+      "trades": 0,
+      "mistakes": [
+        {
+          "type": "CLI_ERROR",
+          "chain": "",
+          "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
+          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+        }
+      ],
+      "notes": [],
+      "chainResults": [],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2834.9,
+        "openValueUsd": 164.88,
+        "equityUsd": 2999.78,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": -0.22,
+        "totalPnlUsd": -0.22,
+        "totalPnlPct": -0.01
+      }
+    },
     {
       "runId": "20260602102901",
       "startedAt": "2026-06-02T10:29:01.679Z",
@@ -8892,40 +8926,6 @@
       "runId": "20260529065858",
       "startedAt": "2026-05-29T06:58:58.978Z",
       "finishedAt": "2026-05-29T06:58:59.628Z",
-      "status": "failed",
-      "chains": [
-        "solana",
-        "bsc"
-      ],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
-        {
-          "type": "REGION_RESTRICTED",
-          "chain": "",
-          "message": "API error (code=50125): Your API key or regions have no access to current services",
-          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
-        }
-      ],
-      "notes": [],
-      "chainResults": [],
-      "accountReset": null,
-      "capital": {
-        "initialUsd": 3000,
-        "cashUsd": 3000,
-        "openValueUsd": 0,
-        "equityUsd": 3000,
-        "realizedPnlUsd": 0,
-        "unrealizedPnlUsd": 0,
-        "totalPnlUsd": 0,
-        "totalPnlPct": 0
-      }
-    },
-    {
-      "runId": "20260529062858",
-      "startedAt": "2026-05-29T06:28:58.156Z",
-      "finishedAt": "2026-05-29T06:28:58.494Z",
       "status": "failed",
       "chains": [
         "solana",

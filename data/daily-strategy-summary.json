@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-02T10:30:53.363Z",
+  "generatedAt": "2026-06-02T11:00:08.183Z",
   "latest": {
     "date": "2026-06-02",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-02T10:30:53.337Z",
-    "runCount": 36,
+    "generatedAt": "2026-06-02T11:00:08.173Z",
+    "runCount": 37,
     "statuses": {
       "ok": 35,
-      "partial": 1
+      "partial": 1,
+      "failed": 1
     },
     "rawSignalCount": 2343,
     "decisionCount": 50,
@@ -60,9 +61,9 @@
         "count": 2
       }
     ],
-    "mistakeCount": 1,
+    "mistakeCount": 2,
     "mistakeTypes": {
-      "CLI_ERROR": 1
+      "CLI_ERROR": 2
     },
     "accountResets": 4,
     "cycleSummaries": 4,
@@ -1325,6 +1326,36 @@
         ]
       },
       {
+        "key": "mistake:cli_error:global",
+        "title": "执行踩坑",
+        "status": "流程问题",
+        "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+        "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
+        "score": 0,
+        "wins": 0,
+        "losses": 0,
+        "totalPnlUsd": 0,
+        "example": {
+          "token": "CLI_ERROR",
+          "symbol": "global",
+          "address": "",
+          "shortAddress": "",
+          "chain": "global"
+        },
+        "firstSeenAt": "2026-05-25T23:52:10.605Z",
+        "lastSeenAt": "2026-06-02T10:58:59.360Z",
+        "occurrences": 2,
+        "examples": [
+          {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          }
+        ]
+      },
+      {
         "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
         "title": "亏损复盘",
         "status": "需避免重复",
@@ -1380,36 +1411,6 @@
             "symbol": "three",
             "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
             "shortAddress": "fembdo...pump",
-            "chain": "solana"
-          }
-        ]
-      },
-      {
-        "key": "lesson:solana:oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump:stop loss -92.8%; amount 102.23u; wallets 3; sold 86.43%; type kol/influencer",
-        "title": "亏损复盘",
-        "status": "需避免重复",
-        "rule": "触发止损或亏损退出后自动归档",
-        "reason": "cummunity CUM: Stop loss -92.8%; amount 102.23U; wallets 3; sold 86.43%; type KOL/Influencer",
-        "score": 41.1,
-        "wins": 0,
-        "losses": 1,
-        "totalPnlUsd": -182.85,
-        "example": {
-          "token": "cummunity",
-          "symbol": "CUM",
-          "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-          "shortAddress": "oqu4dd...pump",
-          "chain": "solana"
-        },
-        "firstSeenAt": "2026-05-30T19:28:58.055Z",
-        "lastSeenAt": "2026-05-30T19:28:58.055Z",
-        "occurrences": 1,
-        "examples": [
-          {
-            "token": "cummunity",
-            "symbol": "CUM",
-            "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-            "shortAddress": "oqu4dd...pump",
             "chain": "solana"
           }
         ]
@@ -3057,6 +3058,40 @@
           "totalPnlUsd": -0.22,
           "totalPnlPct": -0.01
         }
+      },
+      {
+        "runId": "20260602105859",
+        "startedAt": "2026-06-02T10:58:59.360Z",
+        "finishedAt": "2026-06-02T11:00:07.308Z",
+        "status": "failed",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 0,
+        "decisions": 0,
+        "trades": 0,
+        "mistakes": [
+          {
+            "type": "CLI_ERROR",
+            "chain": "",
+            "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
+            "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+          }
+        ],
+        "notes": [],
+        "chainResults": [],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2834.9,
+          "openValueUsd": 164.88,
+          "equityUsd": 2999.78,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -0.22,
+          "totalPnlUsd": -0.22,
+          "totalPnlPct": -0.01
+        }
       }
     ]
   },
@@ -3064,11 +3099,12 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T10:30:53.337Z",
-      "runCount": 36,
+      "generatedAt": "2026-06-02T11:00:08.173Z",
+      "runCount": 37,
       "statuses": {
         "ok": 35,
-        "partial": 1
+        "partial": 1,
+        "failed": 1
       },
       "rawSignalCount": 2343,
       "decisionCount": 50,
@@ -3120,9 +3156,9 @@
           "count": 2
         }
       ],
-      "mistakeCount": 1,
+      "mistakeCount": 2,
       "mistakeTypes": {
-        "CLI_ERROR": 1
+        "CLI_ERROR": 2
       },
       "accountResets": 4,
       "cycleSummaries": 4,
@@ -4385,6 +4421,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T23:52:10.605Z",
+          "lastSeenAt": "2026-06-02T10:58:59.360Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -4440,36 +4506,6 @@
               "symbol": "three",
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
-              "chain": "solana"
-            }
-          ]
-        },
-        {
-          "key": "lesson:solana:oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump:stop loss -92.8%; amount 102.23u; wallets 3; sold 86.43%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "cummunity CUM: Stop loss -92.8%; amount 102.23U; wallets 3; sold 86.43%; type KOL/Influencer",
-          "score": 41.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -182.85,
-          "example": {
-            "token": "cummunity",
-            "symbol": "CUM",
-            "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-            "shortAddress": "oqu4dd...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-05-30T19:28:58.055Z",
-          "lastSeenAt": "2026-05-30T19:28:58.055Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "cummunity",
-              "symbol": "CUM",
-              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-              "shortAddress": "oqu4dd...pump",
               "chain": "solana"
             }
           ]
@@ -6117,13 +6153,47 @@
             "totalPnlUsd": -0.22,
             "totalPnlPct": -0.01
           }
+        },
+        {
+          "runId": "20260602105859",
+          "startedAt": "2026-06-02T10:58:59.360Z",
+          "finishedAt": "2026-06-02T11:00:07.308Z",
+          "status": "failed",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 0,
+          "decisions": 0,
+          "trades": 0,
+          "mistakes": [
+            {
+              "type": "CLI_ERROR",
+              "chain": "",
+              "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
+              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
+            }
+          ],
+          "notes": [],
+          "chainResults": [],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2834.9,
+            "openValueUsd": 164.88,
+            "equityUsd": 2999.78,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -0.22,
+            "totalPnlUsd": -0.22,
+            "totalPnlPct": -0.01
+          }
         }
       ]
     },
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T10:30:53.349Z",
+      "generatedAt": "2026-06-02T11:00:08.174Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -7403,6 +7473,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T23:52:10.605Z",
+          "lastSeenAt": "2026-06-02T10:58:59.360Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -7458,36 +7558,6 @@
               "symbol": "three",
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
-              "chain": "solana"
-            }
-          ]
-        },
-        {
-          "key": "lesson:solana:oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump:stop loss -92.8%; amount 102.23u; wallets 3; sold 86.43%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "cummunity CUM: Stop loss -92.8%; amount 102.23U; wallets 3; sold 86.43%; type KOL/Influencer",
-          "score": 41.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -182.85,
-          "example": {
-            "token": "cummunity",
-            "symbol": "CUM",
-            "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-            "shortAddress": "oqu4dd...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-05-30T19:28:58.055Z",
-          "lastSeenAt": "2026-05-30T19:28:58.055Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "cummunity",
-              "symbol": "CUM",
-              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-              "shortAddress": "oqu4dd...pump",
               "chain": "solana"
             }
           ]
@@ -9689,7 +9759,7 @@
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T10:30:53.350Z",
+      "generatedAt": "2026-06-02T11:00:08.175Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -10969,6 +11039,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T23:52:10.605Z",
+          "lastSeenAt": "2026-06-02T10:58:59.360Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -11024,36 +11124,6 @@
               "symbol": "three",
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
-              "chain": "solana"
-            }
-          ]
-        },
-        {
-          "key": "lesson:solana:oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump:stop loss -92.8%; amount 102.23u; wallets 3; sold 86.43%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "cummunity CUM: Stop loss -92.8%; amount 102.23U; wallets 3; sold 86.43%; type KOL/Influencer",
-          "score": 41.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -182.85,
-          "example": {
-            "token": "cummunity",
-            "symbol": "CUM",
-            "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-            "shortAddress": "oqu4dd...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-05-30T19:28:58.055Z",
-          "lastSeenAt": "2026-05-30T19:28:58.055Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "cummunity",
-              "symbol": "CUM",
-              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-              "shortAddress": "oqu4dd...pump",
               "chain": "solana"
             }
           ]
@@ -13226,7 +13296,7 @@
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T10:30:53.350Z",
+      "generatedAt": "2026-06-02T11:00:08.175Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -14506,6 +14576,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T23:52:10.605Z",
+          "lastSeenAt": "2026-06-02T10:58:59.360Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -14561,36 +14661,6 @@
               "symbol": "three",
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
-              "chain": "solana"
-            }
-          ]
-        },
-        {
-          "key": "lesson:solana:oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump:stop loss -92.8%; amount 102.23u; wallets 3; sold 86.43%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "cummunity CUM: Stop loss -92.8%; amount 102.23U; wallets 3; sold 86.43%; type KOL/Influencer",
-          "score": 41.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -182.85,
-          "example": {
-            "token": "cummunity",
-            "symbol": "CUM",
-            "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-            "shortAddress": "oqu4dd...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-05-30T19:28:58.055Z",
-          "lastSeenAt": "2026-05-30T19:28:58.055Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "cummunity",
-              "symbol": "CUM",
-              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-              "shortAddress": "oqu4dd...pump",
               "chain": "solana"
             }
           ]
@@ -16721,11 +16791,11 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T10:30:53.350Z",
-      "runCount": 21,
+      "generatedAt": "2026-06-02T11:00:08.175Z",
+      "runCount": 20,
       "statuses": {
         "ok": 12,
-        "failed": 9
+        "failed": 8
       },
       "rawSignalCount": 660,
       "decisionCount": 0,
@@ -16739,9 +16809,9 @@
       "equityEndUsd": 3122,
       "equityChangeUsd": 122,
       "topBlockers": [],
-      "mistakeCount": 9,
+      "mistakeCount": 8,
       "mistakeTypes": {
-        "REGION_RESTRICTED": 9
+        "REGION_RESTRICTED": 8
       },
       "accountResets": 3,
       "cycleSummaries": 3,
@@ -18004,6 +18074,36 @@
           ]
         },
         {
+          "key": "mistake:cli_error:global",
+          "title": "执行踩坑",
+          "status": "流程问题",
+          "rule": "Do not trade when source availability or payment/auth state is uncertain.",
+          "reason": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
+          "score": 0,
+          "wins": 0,
+          "losses": 0,
+          "totalPnlUsd": 0,
+          "example": {
+            "token": "CLI_ERROR",
+            "symbol": "global",
+            "address": "",
+            "shortAddress": "",
+            "chain": "global"
+          },
+          "firstSeenAt": "2026-05-25T23:52:10.605Z",
+          "lastSeenAt": "2026-06-02T10:58:59.360Z",
+          "occurrences": 2,
+          "examples": [
+            {
+              "token": "CLI_ERROR",
+              "symbol": "global",
+              "address": "",
+              "shortAddress": "",
+              "chain": "global"
+            }
+          ]
+        },
+        {
           "key": "lesson:solana:hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump:stop loss -42.58%; amount 19244.93u; wallets 3; sold 68.25%; type kol/influencer",
           "title": "亏损复盘",
           "status": "需避免重复",
@@ -18062,73 +18162,9 @@
               "chain": "solana"
             }
           ]
-        },
-        {
-          "key": "lesson:solana:oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump:stop loss -92.8%; amount 102.23u; wallets 3; sold 86.43%; type kol/influencer",
-          "title": "亏损复盘",
-          "status": "需避免重复",
-          "rule": "触发止损或亏损退出后自动归档",
-          "reason": "cummunity CUM: Stop loss -92.8%; amount 102.23U; wallets 3; sold 86.43%; type KOL/Influencer",
-          "score": 41.1,
-          "wins": 0,
-          "losses": 1,
-          "totalPnlUsd": -182.85,
-          "example": {
-            "token": "cummunity",
-            "symbol": "CUM",
-            "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-            "shortAddress": "oqu4dd...pump",
-            "chain": "solana"
-          },
-          "firstSeenAt": "2026-05-30T19:28:58.055Z",
-          "lastSeenAt": "2026-05-30T19:28:58.055Z",
-          "occurrences": 1,
-          "examples": [
-            {
-              "token": "cummunity",
-              "symbol": "CUM",
-              "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
-              "shortAddress": "oqu4dd...pump",
-              "chain": "solana"
-            }
-          ]
         }
       ],
       "runs": [
-        {
-          "runId": "20260529062858",
-          "startedAt": "2026-05-29T06:28:58.156Z",
-          "finishedAt": "2026-05-29T06:28:58.494Z",
-          "status": "failed",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 0,
-          "decisions": 0,
-          "trades": 0,
-          "mistakes": [
-            {
-              "type": "REGION_RESTRICTED",
-              "chain": "",
-              "message": "API error (code=50125): Your API key or regions have no access to current services",
-              "lesson": "Do not trade when source availability or payment/auth state is uncertain."
-            }
-          ],
-          "notes": [],
-          "chainResults": [],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 3000,
-            "openValueUsd": 0,
-            "equityUsd": 3000,
-            "realizedPnlUsd": 0,
-            "unrealizedPnlUsd": 0,
-            "totalPnlUsd": 0,
-            "totalPnlPct": 0
-          }
-        },
         {
           "runId": "20260529065858",
           "startedAt": "2026-05-29T06:58:58.978Z",
