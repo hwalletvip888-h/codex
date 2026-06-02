@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-02T00:59:51.096Z",
+  "generatedAt": "2026-06-02T01:29:51.455Z",
   "latest": {
     "date": "2026-06-02",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-02T00:59:51.074Z",
-    "runCount": 18,
+    "generatedAt": "2026-06-02T01:29:51.444Z",
+    "runCount": 19,
     "statuses": {
-      "ok": 18
+      "ok": 19
     },
-    "rawSignalCount": 1159,
-    "decisionCount": 65,
+    "rawSignalCount": 1225,
+    "decisionCount": 131,
     "actions": {
-      "IGNORE": 40,
-      "WATCH": 21,
-      "BUY": 2,
-      "HOLD": 2
+      "IGNORE": 79,
+      "WATCH": 44,
+      "HOLD": 6,
+      "BUY": 2
     },
     "tradeCount": 2,
     "buys": 2,
@@ -28,35 +28,35 @@
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 54
+        "count": 108
       },
       {
         "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 4
+        "count": 8
       },
       {
         "name": "amount < 500U",
-        "count": 4
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: hybgZh...pjbL",
-        "count": 3
+        "count": 6
       },
       {
         "name": "blacklisted source wallet: 6thKzh...4nVi",
-        "count": 2
+        "count": 4
       },
       {
         "name": "blacklisted source wallet: 7udEMP...7SG7",
-        "count": 2
+        "count": 4
       },
       {
         "name": "blacklisted source wallet: G52j5e...TsZo",
-        "count": 2
+        "count": 4
       },
       {
         "name": "blacklisted source wallet: FpKnR8...CCx5",
-        "count": 1
+        "count": 3
       }
     ],
     "mistakeCount": 0,
@@ -262,9 +262,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-02T00:58:58.297Z",
-        "occurrences": 452,
-        "highSoldRatioCount": 452,
+        "lastSeenAt": "2026-06-02T01:28:58.467Z",
+        "occurrences": 453,
+        "highSoldRatioCount": 453,
         "tokens": [
           {
             "token": "The Collector Group",
@@ -367,9 +367,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-02T00:58:58.297Z",
-        "occurrences": 389,
-        "highSoldRatioCount": 389,
+        "lastSeenAt": "2026-06-02T01:28:58.467Z",
+        "occurrences": 390,
+        "highSoldRatioCount": 390,
         "tokens": [
           {
             "token": "Retard Coin",
@@ -453,6 +453,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 88.79%",
           "watch only; sold ratio 88.84%",
           "watch only; sold ratio 89.05%",
           "watch only; sold ratio 100%",
@@ -461,8 +462,7 @@
           "watch only; sold ratio 98.15%",
           "watch only; sold ratio 99.85%",
           "watch only; sold ratio 98.3%",
-          "watch only; sold ratio 97.91%",
-          "watch only; sold ratio 88.56%"
+          "watch only; sold ratio 97.91%"
         ]
       },
       {
@@ -577,9 +577,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-02T00:58:58.297Z",
-        "occurrences": 360,
-        "highSoldRatioCount": 360,
+        "lastSeenAt": "2026-06-02T01:28:58.467Z",
+        "occurrences": 361,
+        "highSoldRatioCount": 361,
         "tokens": [
           {
             "token": "Magic Internet Money",
@@ -663,6 +663,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 97.52%",
           "watch only; sold ratio 97.51%",
           "watch only; sold ratio 96.95%",
           "watch only; sold ratio 96.6%",
@@ -671,8 +672,7 @@
           "watch only; sold ratio 84.46%",
           "watch only; sold ratio 85.63%",
           "watch only; sold ratio 84.57%",
-          "watch only; sold ratio 83.49%",
-          "watch only; sold ratio 100%"
+          "watch only; sold ratio 83.49%"
         ]
       },
       {
@@ -682,10 +682,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-26T22:55:39.434Z",
-        "lastSeenAt": "2026-06-02T00:58:58.297Z",
-        "occurrences": 325,
-        "highSoldRatioCount": 325,
+        "lastSeenAt": "2026-06-02T01:28:58.467Z",
+        "occurrences": 327,
+        "highSoldRatioCount": 327,
         "tokens": [
+          {
+            "token": "three.ws",
+            "symbol": "three",
+            "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+            "shortAddress": "fembdo...pump",
+            "soldRatioPercent": 98.42,
+            "amountUsd": 161.83
+          },
           {
             "token": "Magic Internet Money",
             "symbol": "MIM",
@@ -757,17 +765,11 @@
             "shortAddress": "5s7tf6...pump",
             "soldRatioPercent": 89.96,
             "amountUsd": 248.04
-          },
-          {
-            "token": "Justice For Henry Nowak",
-            "symbol": "HENRY",
-            "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-            "shortAddress": "hfafns...pump",
-            "soldRatioPercent": 89.18,
-            "amountUsd": 217.91
           }
         ],
         "reasons": [
+          "watch only; sold ratio 97.52%",
+          "watch only; sold ratio 98.42%",
           "watch only; sold ratio 97.66%",
           "watch only; sold ratio 97.69%",
           "watch only; sold ratio 97.51%",
@@ -775,9 +777,7 @@
           "watch only; sold ratio 96.95%",
           "watch only; sold ratio 97.67%",
           "watch only; sold ratio 96.6%",
-          "watch only; sold ratio 97.55%",
-          "watch only; sold ratio 100%",
-          "watch only; sold ratio 93.66%"
+          "watch only; sold ratio 97.55%"
         ]
       }
     ],
@@ -939,7 +939,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 757.11U; wallets 3; sold 98.43%; type KOL/Influencer",
+        "reason": "amount 1529.7U; wallets 5; sold 65.68%; type KOL/Influencer",
         "score": 62,
         "wins": 0,
         "losses": 0,
@@ -952,23 +952,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-02T00:58:58.297Z",
-        "occurrences": 7489,
+        "lastSeenAt": "2026-06-02T01:28:58.467Z",
+        "occurrences": 7514,
         "examples": [
-          {
-            "token": "Peawanuck, Ontario",
-            "symbol": "peawanuck",
-            "address": "92kcyzcd9jb5wktivye2ckjw9hnx58wsbndqkdwipump",
-            "shortAddress": "92kcyz...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "MCDOGE",
-            "symbol": "MCDOGE",
-            "address": "9fqdmbjsyg7vnjnxulwzdmocs4napnowya5zf7yafhaa",
-            "shortAddress": "9fqdmb...fhaa",
-            "chain": "solana"
-          },
           {
             "token": "Justice For Smokey",
             "symbol": "Smokey",
@@ -996,6 +982,20 @@
             "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
             "shortAddress": "fembdo...pump",
             "chain": "solana"
+          },
+          {
+            "token": "SolanaLife",
+            "symbol": "SolanaLife",
+            "address": "2srqloentljfxqfjv1n8s7ekkx2pidv5qq7slsrcpump",
+            "shortAddress": "2srqlo...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Champions",
+            "symbol": "Champions",
+            "address": "4hhzqsjikjspr3nmv8wticjaluuusymddvsybqcjs5nb",
+            "shortAddress": "4hhzqs...s5nb",
+            "chain": "solana"
           }
         ]
       },
@@ -1004,7 +1004,7 @@
         "title": "solana Whale 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 803.96U; wallets 3; sold 81.75%; type Whale",
+        "reason": "amount 918.7U; wallets 3; sold 100%; type Whale",
         "score": 68.2,
         "wins": 0,
         "losses": 0,
@@ -1017,16 +1017,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-02T00:58:58.297Z",
-        "occurrences": 2714,
+        "lastSeenAt": "2026-06-02T01:28:58.467Z",
+        "occurrences": 2733,
         "examples": [
-          {
-            "token": "Isaac GR00T",
-            "symbol": "GR00T",
-            "address": "gscbljuztckccnmzngtyjnco5egkjqgqzmpl48vpump",
-            "shortAddress": "gscblj...pump",
-            "chain": "solana"
-          },
           {
             "token": "Aerodynamic Coin",
             "symbol": "AERO",
@@ -1061,6 +1054,13 @@
             "address": "6yvtdwp9zny3mz1ntazp1mftdutqhhzed7jcszrdpump",
             "shortAddress": "6yvtdw...pump",
             "chain": "solana"
+          },
+          {
+            "token": "Retard Coin",
+            "symbol": "RETARD",
+            "address": "acuzx4asxyqcrd6btggbkxjjviup3kzquduqawbapump",
+            "shortAddress": "acuzx4...pump",
+            "chain": "solana"
           }
         ]
       },
@@ -1082,8 +1082,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-02T00:58:58.297Z",
-        "occurrences": 1033,
+        "lastSeenAt": "2026-06-02T01:28:58.467Z",
+        "occurrences": 1034,
         "examples": [
           {
             "token": "Champions",
@@ -1147,8 +1147,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-02T00:58:58.297Z",
-        "occurrences": 513,
+        "lastSeenAt": "2026-06-02T01:28:58.467Z",
+        "occurrences": 514,
         "examples": [
           {
             "token": "SpaceX",
@@ -1212,8 +1212,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-02T00:58:58.297Z",
-        "occurrences": 503,
+        "lastSeenAt": "2026-06-02T01:28:58.467Z",
+        "occurrences": 513,
         "examples": [
           {
             "token": "WORK Medical Tech",
@@ -2226,6 +2226,48 @@
           "totalPnlUsd": 16.63,
           "totalPnlPct": 0.55
         }
+      },
+      {
+        "runId": "20260602012858",
+        "startedAt": "2026-06-02T01:28:58.467Z",
+        "finishedAt": "2026-06-02T01:29:50.748Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 66,
+        "decisions": 66,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 16,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2678.6,
+          "openValueUsd": 338.03,
+          "equityUsd": 3016.63,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 16.63,
+          "totalPnlUsd": 16.63,
+          "totalPnlPct": 0.55
+        }
       }
     ]
   },
@@ -2233,18 +2275,18 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T00:59:51.074Z",
-      "runCount": 18,
+      "generatedAt": "2026-06-02T01:29:51.444Z",
+      "runCount": 19,
       "statuses": {
-        "ok": 18
+        "ok": 19
       },
-      "rawSignalCount": 1159,
-      "decisionCount": 65,
+      "rawSignalCount": 1225,
+      "decisionCount": 131,
       "actions": {
-        "IGNORE": 40,
-        "WATCH": 21,
-        "BUY": 2,
-        "HOLD": 2
+        "IGNORE": 79,
+        "WATCH": 44,
+        "HOLD": 6,
+        "BUY": 2
       },
       "tradeCount": 2,
       "buys": 2,
@@ -2257,35 +2299,35 @@
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 54
+          "count": 108
         },
         {
           "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 4
+          "count": 8
         },
         {
           "name": "amount < 500U",
-          "count": 4
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: hybgZh...pjbL",
-          "count": 3
+          "count": 6
         },
         {
           "name": "blacklisted source wallet: 6thKzh...4nVi",
-          "count": 2
+          "count": 4
         },
         {
           "name": "blacklisted source wallet: 7udEMP...7SG7",
-          "count": 2
+          "count": 4
         },
         {
           "name": "blacklisted source wallet: G52j5e...TsZo",
-          "count": 2
+          "count": 4
         },
         {
           "name": "blacklisted source wallet: FpKnR8...CCx5",
-          "count": 1
+          "count": 3
         }
       ],
       "mistakeCount": 0,
@@ -2491,9 +2533,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 452,
-          "highSoldRatioCount": 452,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 453,
+          "highSoldRatioCount": 453,
           "tokens": [
             {
               "token": "The Collector Group",
@@ -2596,9 +2638,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 389,
-          "highSoldRatioCount": 389,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 390,
+          "highSoldRatioCount": 390,
           "tokens": [
             {
               "token": "Retard Coin",
@@ -2682,6 +2724,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 88.79%",
             "watch only; sold ratio 88.84%",
             "watch only; sold ratio 89.05%",
             "watch only; sold ratio 100%",
@@ -2690,8 +2733,7 @@
             "watch only; sold ratio 98.15%",
             "watch only; sold ratio 99.85%",
             "watch only; sold ratio 98.3%",
-            "watch only; sold ratio 97.91%",
-            "watch only; sold ratio 88.56%"
+            "watch only; sold ratio 97.91%"
           ]
         },
         {
@@ -2806,9 +2848,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 360,
-          "highSoldRatioCount": 360,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 361,
+          "highSoldRatioCount": 361,
           "tokens": [
             {
               "token": "Magic Internet Money",
@@ -2892,6 +2934,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
             "watch only; sold ratio 97.51%",
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 96.6%",
@@ -2900,8 +2943,7 @@
             "watch only; sold ratio 84.46%",
             "watch only; sold ratio 85.63%",
             "watch only; sold ratio 84.57%",
-            "watch only; sold ratio 83.49%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 83.49%"
           ]
         },
         {
@@ -2911,10 +2953,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 327,
+          "highSoldRatioCount": 327,
           "tokens": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "soldRatioPercent": 98.42,
+              "amountUsd": 161.83
+            },
             {
               "token": "Magic Internet Money",
               "symbol": "MIM",
@@ -2986,17 +3036,11 @@
               "shortAddress": "5s7tf6...pump",
               "soldRatioPercent": 89.96,
               "amountUsd": 248.04
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "soldRatioPercent": 89.18,
-              "amountUsd": 217.91
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 98.42%",
             "watch only; sold ratio 97.66%",
             "watch only; sold ratio 97.69%",
             "watch only; sold ratio 97.51%",
@@ -3004,9 +3048,7 @@
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 97.67%",
             "watch only; sold ratio 96.6%",
-            "watch only; sold ratio 97.55%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 93.66%"
+            "watch only; sold ratio 97.55%"
           ]
         }
       ],
@@ -3168,7 +3210,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 757.11U; wallets 3; sold 98.43%; type KOL/Influencer",
+          "reason": "amount 1529.7U; wallets 5; sold 65.68%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -3181,23 +3223,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 7489,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 7514,
           "examples": [
-            {
-              "token": "Peawanuck, Ontario",
-              "symbol": "peawanuck",
-              "address": "92kcyzcd9jb5wktivye2ckjw9hnx58wsbndqkdwipump",
-              "shortAddress": "92kcyz...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "MCDOGE",
-              "symbol": "MCDOGE",
-              "address": "9fqdmbjsyg7vnjnxulwzdmocs4napnowya5zf7yafhaa",
-              "shortAddress": "9fqdmb...fhaa",
-              "chain": "solana"
-            },
             {
               "token": "Justice For Smokey",
               "symbol": "Smokey",
@@ -3225,6 +3253,20 @@
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
               "chain": "solana"
+            },
+            {
+              "token": "SolanaLife",
+              "symbol": "SolanaLife",
+              "address": "2srqloentljfxqfjv1n8s7ekkx2pidv5qq7slsrcpump",
+              "shortAddress": "2srqlo...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Champions",
+              "symbol": "Champions",
+              "address": "4hhzqsjikjspr3nmv8wticjaluuusymddvsybqcjs5nb",
+              "shortAddress": "4hhzqs...s5nb",
+              "chain": "solana"
             }
           ]
         },
@@ -3233,7 +3275,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 803.96U; wallets 3; sold 81.75%; type Whale",
+          "reason": "amount 918.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -3246,16 +3288,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 2714,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 2733,
           "examples": [
-            {
-              "token": "Isaac GR00T",
-              "symbol": "GR00T",
-              "address": "gscbljuztckccnmzngtyjnco5egkjqgqzmpl48vpump",
-              "shortAddress": "gscblj...pump",
-              "chain": "solana"
-            },
             {
               "token": "Aerodynamic Coin",
               "symbol": "AERO",
@@ -3290,6 +3325,13 @@
               "address": "6yvtdwp9zny3mz1ntazp1mftdutqhhzed7jcszrdpump",
               "shortAddress": "6yvtdw...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Retard Coin",
+              "symbol": "RETARD",
+              "address": "acuzx4asxyqcrd6btggbkxjjviup3kzquduqawbapump",
+              "shortAddress": "acuzx4...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -3311,8 +3353,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 1033,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 1034,
           "examples": [
             {
               "token": "Champions",
@@ -3376,8 +3418,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 513,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 514,
           "examples": [
             {
               "token": "SpaceX",
@@ -3441,8 +3483,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 503,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 513,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -4455,13 +4497,55 @@
             "totalPnlUsd": 16.63,
             "totalPnlPct": 0.55
           }
+        },
+        {
+          "runId": "20260602012858",
+          "startedAt": "2026-06-02T01:28:58.467Z",
+          "finishedAt": "2026-06-02T01:29:50.748Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 66,
+          "decisions": 66,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 16,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2678.6,
+            "openValueUsd": 338.03,
+            "equityUsd": 3016.63,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 16.63,
+            "totalPnlUsd": 16.63,
+            "totalPnlPct": 0.55
+          }
         }
       ]
     },
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T00:59:51.075Z",
+      "generatedAt": "2026-06-02T01:29:51.445Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -4681,9 +4765,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 452,
-          "highSoldRatioCount": 452,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 453,
+          "highSoldRatioCount": 453,
           "tokens": [
             {
               "token": "The Collector Group",
@@ -4786,9 +4870,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 389,
-          "highSoldRatioCount": 389,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 390,
+          "highSoldRatioCount": 390,
           "tokens": [
             {
               "token": "Retard Coin",
@@ -4872,6 +4956,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 88.79%",
             "watch only; sold ratio 88.84%",
             "watch only; sold ratio 89.05%",
             "watch only; sold ratio 100%",
@@ -4880,8 +4965,7 @@
             "watch only; sold ratio 98.15%",
             "watch only; sold ratio 99.85%",
             "watch only; sold ratio 98.3%",
-            "watch only; sold ratio 97.91%",
-            "watch only; sold ratio 88.56%"
+            "watch only; sold ratio 97.91%"
           ]
         },
         {
@@ -4996,9 +5080,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 360,
-          "highSoldRatioCount": 360,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 361,
+          "highSoldRatioCount": 361,
           "tokens": [
             {
               "token": "Magic Internet Money",
@@ -5082,6 +5166,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
             "watch only; sold ratio 97.51%",
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 96.6%",
@@ -5090,8 +5175,7 @@
             "watch only; sold ratio 84.46%",
             "watch only; sold ratio 85.63%",
             "watch only; sold ratio 84.57%",
-            "watch only; sold ratio 83.49%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 83.49%"
           ]
         },
         {
@@ -5101,10 +5185,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 327,
+          "highSoldRatioCount": 327,
           "tokens": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "soldRatioPercent": 98.42,
+              "amountUsd": 161.83
+            },
             {
               "token": "Magic Internet Money",
               "symbol": "MIM",
@@ -5176,17 +5268,11 @@
               "shortAddress": "5s7tf6...pump",
               "soldRatioPercent": 89.96,
               "amountUsd": 248.04
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "soldRatioPercent": 89.18,
-              "amountUsd": 217.91
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 98.42%",
             "watch only; sold ratio 97.66%",
             "watch only; sold ratio 97.69%",
             "watch only; sold ratio 97.51%",
@@ -5194,9 +5280,7 @@
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 97.67%",
             "watch only; sold ratio 96.6%",
-            "watch only; sold ratio 97.55%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 93.66%"
+            "watch only; sold ratio 97.55%"
           ]
         }
       ],
@@ -5358,7 +5442,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 757.11U; wallets 3; sold 98.43%; type KOL/Influencer",
+          "reason": "amount 1529.7U; wallets 5; sold 65.68%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -5371,23 +5455,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 7489,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 7514,
           "examples": [
-            {
-              "token": "Peawanuck, Ontario",
-              "symbol": "peawanuck",
-              "address": "92kcyzcd9jb5wktivye2ckjw9hnx58wsbndqkdwipump",
-              "shortAddress": "92kcyz...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "MCDOGE",
-              "symbol": "MCDOGE",
-              "address": "9fqdmbjsyg7vnjnxulwzdmocs4napnowya5zf7yafhaa",
-              "shortAddress": "9fqdmb...fhaa",
-              "chain": "solana"
-            },
             {
               "token": "Justice For Smokey",
               "symbol": "Smokey",
@@ -5415,6 +5485,20 @@
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
               "chain": "solana"
+            },
+            {
+              "token": "SolanaLife",
+              "symbol": "SolanaLife",
+              "address": "2srqloentljfxqfjv1n8s7ekkx2pidv5qq7slsrcpump",
+              "shortAddress": "2srqlo...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Champions",
+              "symbol": "Champions",
+              "address": "4hhzqsjikjspr3nmv8wticjaluuusymddvsybqcjs5nb",
+              "shortAddress": "4hhzqs...s5nb",
+              "chain": "solana"
             }
           ]
         },
@@ -5423,7 +5507,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 803.96U; wallets 3; sold 81.75%; type Whale",
+          "reason": "amount 918.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -5436,16 +5520,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 2714,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 2733,
           "examples": [
-            {
-              "token": "Isaac GR00T",
-              "symbol": "GR00T",
-              "address": "gscbljuztckccnmzngtyjnco5egkjqgqzmpl48vpump",
-              "shortAddress": "gscblj...pump",
-              "chain": "solana"
-            },
             {
               "token": "Aerodynamic Coin",
               "symbol": "AERO",
@@ -5480,6 +5557,13 @@
               "address": "6yvtdwp9zny3mz1ntazp1mftdutqhhzed7jcszrdpump",
               "shortAddress": "6yvtdw...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Retard Coin",
+              "symbol": "RETARD",
+              "address": "acuzx4asxyqcrd6btggbkxjjviup3kzquduqawbapump",
+              "shortAddress": "acuzx4...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -5501,8 +5585,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 1033,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 1034,
           "examples": [
             {
               "token": "Champions",
@@ -5566,8 +5650,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 513,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 514,
           "examples": [
             {
               "token": "SpaceX",
@@ -5631,8 +5715,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 503,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 513,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -8027,7 +8111,7 @@
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T00:59:51.075Z",
+      "generatedAt": "2026-06-02T01:29:51.445Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -8247,9 +8331,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 452,
-          "highSoldRatioCount": 452,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 453,
+          "highSoldRatioCount": 453,
           "tokens": [
             {
               "token": "The Collector Group",
@@ -8352,9 +8436,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 389,
-          "highSoldRatioCount": 389,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 390,
+          "highSoldRatioCount": 390,
           "tokens": [
             {
               "token": "Retard Coin",
@@ -8438,6 +8522,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 88.79%",
             "watch only; sold ratio 88.84%",
             "watch only; sold ratio 89.05%",
             "watch only; sold ratio 100%",
@@ -8446,8 +8531,7 @@
             "watch only; sold ratio 98.15%",
             "watch only; sold ratio 99.85%",
             "watch only; sold ratio 98.3%",
-            "watch only; sold ratio 97.91%",
-            "watch only; sold ratio 88.56%"
+            "watch only; sold ratio 97.91%"
           ]
         },
         {
@@ -8562,9 +8646,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 360,
-          "highSoldRatioCount": 360,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 361,
+          "highSoldRatioCount": 361,
           "tokens": [
             {
               "token": "Magic Internet Money",
@@ -8648,6 +8732,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
             "watch only; sold ratio 97.51%",
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 96.6%",
@@ -8656,8 +8741,7 @@
             "watch only; sold ratio 84.46%",
             "watch only; sold ratio 85.63%",
             "watch only; sold ratio 84.57%",
-            "watch only; sold ratio 83.49%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 83.49%"
           ]
         },
         {
@@ -8667,10 +8751,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 327,
+          "highSoldRatioCount": 327,
           "tokens": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "soldRatioPercent": 98.42,
+              "amountUsd": 161.83
+            },
             {
               "token": "Magic Internet Money",
               "symbol": "MIM",
@@ -8742,17 +8834,11 @@
               "shortAddress": "5s7tf6...pump",
               "soldRatioPercent": 89.96,
               "amountUsd": 248.04
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "soldRatioPercent": 89.18,
-              "amountUsd": 217.91
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 98.42%",
             "watch only; sold ratio 97.66%",
             "watch only; sold ratio 97.69%",
             "watch only; sold ratio 97.51%",
@@ -8760,9 +8846,7 @@
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 97.67%",
             "watch only; sold ratio 96.6%",
-            "watch only; sold ratio 97.55%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 93.66%"
+            "watch only; sold ratio 97.55%"
           ]
         }
       ],
@@ -8924,7 +9008,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 757.11U; wallets 3; sold 98.43%; type KOL/Influencer",
+          "reason": "amount 1529.7U; wallets 5; sold 65.68%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -8937,23 +9021,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 7489,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 7514,
           "examples": [
-            {
-              "token": "Peawanuck, Ontario",
-              "symbol": "peawanuck",
-              "address": "92kcyzcd9jb5wktivye2ckjw9hnx58wsbndqkdwipump",
-              "shortAddress": "92kcyz...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "MCDOGE",
-              "symbol": "MCDOGE",
-              "address": "9fqdmbjsyg7vnjnxulwzdmocs4napnowya5zf7yafhaa",
-              "shortAddress": "9fqdmb...fhaa",
-              "chain": "solana"
-            },
             {
               "token": "Justice For Smokey",
               "symbol": "Smokey",
@@ -8981,6 +9051,20 @@
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
               "chain": "solana"
+            },
+            {
+              "token": "SolanaLife",
+              "symbol": "SolanaLife",
+              "address": "2srqloentljfxqfjv1n8s7ekkx2pidv5qq7slsrcpump",
+              "shortAddress": "2srqlo...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Champions",
+              "symbol": "Champions",
+              "address": "4hhzqsjikjspr3nmv8wticjaluuusymddvsybqcjs5nb",
+              "shortAddress": "4hhzqs...s5nb",
+              "chain": "solana"
             }
           ]
         },
@@ -8989,7 +9073,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 803.96U; wallets 3; sold 81.75%; type Whale",
+          "reason": "amount 918.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -9002,16 +9086,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 2714,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 2733,
           "examples": [
-            {
-              "token": "Isaac GR00T",
-              "symbol": "GR00T",
-              "address": "gscbljuztckccnmzngtyjnco5egkjqgqzmpl48vpump",
-              "shortAddress": "gscblj...pump",
-              "chain": "solana"
-            },
             {
               "token": "Aerodynamic Coin",
               "symbol": "AERO",
@@ -9046,6 +9123,13 @@
               "address": "6yvtdwp9zny3mz1ntazp1mftdutqhhzed7jcszrdpump",
               "shortAddress": "6yvtdw...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Retard Coin",
+              "symbol": "RETARD",
+              "address": "acuzx4asxyqcrd6btggbkxjjviup3kzquduqawbapump",
+              "shortAddress": "acuzx4...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -9067,8 +9151,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 1033,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 1034,
           "examples": [
             {
               "token": "Champions",
@@ -9132,8 +9216,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 513,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 514,
           "examples": [
             {
               "token": "SpaceX",
@@ -9197,8 +9281,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 503,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 513,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -11564,7 +11648,7 @@
     {
       "date": "2026-05-30",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T00:59:51.076Z",
+      "generatedAt": "2026-06-02T01:29:51.446Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -11784,9 +11868,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 452,
-          "highSoldRatioCount": 452,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 453,
+          "highSoldRatioCount": 453,
           "tokens": [
             {
               "token": "The Collector Group",
@@ -11889,9 +11973,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 389,
-          "highSoldRatioCount": 389,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 390,
+          "highSoldRatioCount": 390,
           "tokens": [
             {
               "token": "Retard Coin",
@@ -11975,6 +12059,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 88.79%",
             "watch only; sold ratio 88.84%",
             "watch only; sold ratio 89.05%",
             "watch only; sold ratio 100%",
@@ -11983,8 +12068,7 @@
             "watch only; sold ratio 98.15%",
             "watch only; sold ratio 99.85%",
             "watch only; sold ratio 98.3%",
-            "watch only; sold ratio 97.91%",
-            "watch only; sold ratio 88.56%"
+            "watch only; sold ratio 97.91%"
           ]
         },
         {
@@ -12099,9 +12183,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 360,
-          "highSoldRatioCount": 360,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 361,
+          "highSoldRatioCount": 361,
           "tokens": [
             {
               "token": "Magic Internet Money",
@@ -12185,6 +12269,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
             "watch only; sold ratio 97.51%",
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 96.6%",
@@ -12193,8 +12278,7 @@
             "watch only; sold ratio 84.46%",
             "watch only; sold ratio 85.63%",
             "watch only; sold ratio 84.57%",
-            "watch only; sold ratio 83.49%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 83.49%"
           ]
         },
         {
@@ -12204,10 +12288,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 327,
+          "highSoldRatioCount": 327,
           "tokens": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "soldRatioPercent": 98.42,
+              "amountUsd": 161.83
+            },
             {
               "token": "Magic Internet Money",
               "symbol": "MIM",
@@ -12279,17 +12371,11 @@
               "shortAddress": "5s7tf6...pump",
               "soldRatioPercent": 89.96,
               "amountUsd": 248.04
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "soldRatioPercent": 89.18,
-              "amountUsd": 217.91
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 98.42%",
             "watch only; sold ratio 97.66%",
             "watch only; sold ratio 97.69%",
             "watch only; sold ratio 97.51%",
@@ -12297,9 +12383,7 @@
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 97.67%",
             "watch only; sold ratio 96.6%",
-            "watch only; sold ratio 97.55%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 93.66%"
+            "watch only; sold ratio 97.55%"
           ]
         }
       ],
@@ -12461,7 +12545,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 757.11U; wallets 3; sold 98.43%; type KOL/Influencer",
+          "reason": "amount 1529.7U; wallets 5; sold 65.68%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -12474,23 +12558,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 7489,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 7514,
           "examples": [
-            {
-              "token": "Peawanuck, Ontario",
-              "symbol": "peawanuck",
-              "address": "92kcyzcd9jb5wktivye2ckjw9hnx58wsbndqkdwipump",
-              "shortAddress": "92kcyz...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "MCDOGE",
-              "symbol": "MCDOGE",
-              "address": "9fqdmbjsyg7vnjnxulwzdmocs4napnowya5zf7yafhaa",
-              "shortAddress": "9fqdmb...fhaa",
-              "chain": "solana"
-            },
             {
               "token": "Justice For Smokey",
               "symbol": "Smokey",
@@ -12518,6 +12588,20 @@
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
               "chain": "solana"
+            },
+            {
+              "token": "SolanaLife",
+              "symbol": "SolanaLife",
+              "address": "2srqloentljfxqfjv1n8s7ekkx2pidv5qq7slsrcpump",
+              "shortAddress": "2srqlo...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Champions",
+              "symbol": "Champions",
+              "address": "4hhzqsjikjspr3nmv8wticjaluuusymddvsybqcjs5nb",
+              "shortAddress": "4hhzqs...s5nb",
+              "chain": "solana"
             }
           ]
         },
@@ -12526,7 +12610,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 803.96U; wallets 3; sold 81.75%; type Whale",
+          "reason": "amount 918.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -12539,16 +12623,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 2714,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 2733,
           "examples": [
-            {
-              "token": "Isaac GR00T",
-              "symbol": "GR00T",
-              "address": "gscbljuztckccnmzngtyjnco5egkjqgqzmpl48vpump",
-              "shortAddress": "gscblj...pump",
-              "chain": "solana"
-            },
             {
               "token": "Aerodynamic Coin",
               "symbol": "AERO",
@@ -12583,6 +12660,13 @@
               "address": "6yvtdwp9zny3mz1ntazp1mftdutqhhzed7jcszrdpump",
               "shortAddress": "6yvtdw...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Retard Coin",
+              "symbol": "RETARD",
+              "address": "acuzx4asxyqcrd6btggbkxjjviup3kzquduqawbapump",
+              "shortAddress": "acuzx4...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -12604,8 +12688,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 1033,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 1034,
           "examples": [
             {
               "token": "Champions",
@@ -12669,8 +12753,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 513,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 514,
           "examples": [
             {
               "token": "SpaceX",
@@ -12734,8 +12818,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 503,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 513,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -15059,7 +15143,7 @@
     {
       "date": "2026-05-29",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T00:59:51.076Z",
+      "generatedAt": "2026-06-02T01:29:51.446Z",
       "runCount": 36,
       "statuses": {
         "ok": 19,
@@ -15282,9 +15366,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 452,
-          "highSoldRatioCount": 452,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 453,
+          "highSoldRatioCount": 453,
           "tokens": [
             {
               "token": "The Collector Group",
@@ -15387,9 +15471,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 389,
-          "highSoldRatioCount": 389,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 390,
+          "highSoldRatioCount": 390,
           "tokens": [
             {
               "token": "Retard Coin",
@@ -15473,6 +15557,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 88.79%",
             "watch only; sold ratio 88.84%",
             "watch only; sold ratio 89.05%",
             "watch only; sold ratio 100%",
@@ -15481,8 +15566,7 @@
             "watch only; sold ratio 98.15%",
             "watch only; sold ratio 99.85%",
             "watch only; sold ratio 98.3%",
-            "watch only; sold ratio 97.91%",
-            "watch only; sold ratio 88.56%"
+            "watch only; sold ratio 97.91%"
           ]
         },
         {
@@ -15597,9 +15681,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 360,
-          "highSoldRatioCount": 360,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 361,
+          "highSoldRatioCount": 361,
           "tokens": [
             {
               "token": "Magic Internet Money",
@@ -15683,6 +15767,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
             "watch only; sold ratio 97.51%",
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 96.6%",
@@ -15691,8 +15776,7 @@
             "watch only; sold ratio 84.46%",
             "watch only; sold ratio 85.63%",
             "watch only; sold ratio 84.57%",
-            "watch only; sold ratio 83.49%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 83.49%"
           ]
         },
         {
@@ -15702,10 +15786,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 327,
+          "highSoldRatioCount": 327,
           "tokens": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "soldRatioPercent": 98.42,
+              "amountUsd": 161.83
+            },
             {
               "token": "Magic Internet Money",
               "symbol": "MIM",
@@ -15777,17 +15869,11 @@
               "shortAddress": "5s7tf6...pump",
               "soldRatioPercent": 89.96,
               "amountUsd": 248.04
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "soldRatioPercent": 89.18,
-              "amountUsd": 217.91
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 98.42%",
             "watch only; sold ratio 97.66%",
             "watch only; sold ratio 97.69%",
             "watch only; sold ratio 97.51%",
@@ -15795,9 +15881,7 @@
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 97.67%",
             "watch only; sold ratio 96.6%",
-            "watch only; sold ratio 97.55%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 93.66%"
+            "watch only; sold ratio 97.55%"
           ]
         }
       ],
@@ -15959,7 +16043,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 757.11U; wallets 3; sold 98.43%; type KOL/Influencer",
+          "reason": "amount 1529.7U; wallets 5; sold 65.68%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -15972,23 +16056,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 7489,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 7514,
           "examples": [
-            {
-              "token": "Peawanuck, Ontario",
-              "symbol": "peawanuck",
-              "address": "92kcyzcd9jb5wktivye2ckjw9hnx58wsbndqkdwipump",
-              "shortAddress": "92kcyz...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "MCDOGE",
-              "symbol": "MCDOGE",
-              "address": "9fqdmbjsyg7vnjnxulwzdmocs4napnowya5zf7yafhaa",
-              "shortAddress": "9fqdmb...fhaa",
-              "chain": "solana"
-            },
             {
               "token": "Justice For Smokey",
               "symbol": "Smokey",
@@ -16016,6 +16086,20 @@
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
               "chain": "solana"
+            },
+            {
+              "token": "SolanaLife",
+              "symbol": "SolanaLife",
+              "address": "2srqloentljfxqfjv1n8s7ekkx2pidv5qq7slsrcpump",
+              "shortAddress": "2srqlo...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Champions",
+              "symbol": "Champions",
+              "address": "4hhzqsjikjspr3nmv8wticjaluuusymddvsybqcjs5nb",
+              "shortAddress": "4hhzqs...s5nb",
+              "chain": "solana"
             }
           ]
         },
@@ -16024,7 +16108,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 803.96U; wallets 3; sold 81.75%; type Whale",
+          "reason": "amount 918.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -16037,16 +16121,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 2714,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 2733,
           "examples": [
-            {
-              "token": "Isaac GR00T",
-              "symbol": "GR00T",
-              "address": "gscbljuztckccnmzngtyjnco5egkjqgqzmpl48vpump",
-              "shortAddress": "gscblj...pump",
-              "chain": "solana"
-            },
             {
               "token": "Aerodynamic Coin",
               "symbol": "AERO",
@@ -16081,6 +16158,13 @@
               "address": "6yvtdwp9zny3mz1ntazp1mftdutqhhzed7jcszrdpump",
               "shortAddress": "6yvtdw...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Retard Coin",
+              "symbol": "RETARD",
+              "address": "acuzx4asxyqcrd6btggbkxjjviup3kzquduqawbapump",
+              "shortAddress": "acuzx4...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -16102,8 +16186,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 1033,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 1034,
           "examples": [
             {
               "token": "Champions",
@@ -16167,8 +16251,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 513,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 514,
           "examples": [
             {
               "token": "SpaceX",
@@ -16232,8 +16316,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 503,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 513,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -17901,12 +17985,12 @@
     {
       "date": "2026-05-28",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-02T00:59:51.076Z",
-      "runCount": 3,
+      "generatedAt": "2026-06-02T01:29:51.446Z",
+      "runCount": 2,
       "statuses": {
-        "ok": 3
+        "ok": 2
       },
-      "rawSignalCount": 162,
+      "rawSignalCount": 108,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -17914,9 +17998,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 2984.82,
+      "equityStartUsd": 3107.19,
       "equityEndUsd": 3106.82,
-      "equityChangeUsd": 122,
+      "equityChangeUsd": -0.37,
       "topBlockers": [],
       "mistakeCount": 0,
       "mistakeTypes": {},
@@ -18121,9 +18205,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 452,
-          "highSoldRatioCount": 452,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 453,
+          "highSoldRatioCount": 453,
           "tokens": [
             {
               "token": "The Collector Group",
@@ -18226,9 +18310,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 389,
-          "highSoldRatioCount": 389,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 390,
+          "highSoldRatioCount": 390,
           "tokens": [
             {
               "token": "Retard Coin",
@@ -18312,6 +18396,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 88.79%",
             "watch only; sold ratio 88.84%",
             "watch only; sold ratio 89.05%",
             "watch only; sold ratio 100%",
@@ -18320,8 +18405,7 @@
             "watch only; sold ratio 98.15%",
             "watch only; sold ratio 99.85%",
             "watch only; sold ratio 98.3%",
-            "watch only; sold ratio 97.91%",
-            "watch only; sold ratio 88.56%"
+            "watch only; sold ratio 97.91%"
           ]
         },
         {
@@ -18436,9 +18520,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 360,
-          "highSoldRatioCount": 360,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 361,
+          "highSoldRatioCount": 361,
           "tokens": [
             {
               "token": "Magic Internet Money",
@@ -18522,6 +18606,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
             "watch only; sold ratio 97.51%",
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 96.6%",
@@ -18530,8 +18615,7 @@
             "watch only; sold ratio 84.46%",
             "watch only; sold ratio 85.63%",
             "watch only; sold ratio 84.57%",
-            "watch only; sold ratio 83.49%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 83.49%"
           ]
         },
         {
@@ -18541,10 +18625,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-26T22:55:39.434Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 325,
-          "highSoldRatioCount": 325,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 327,
+          "highSoldRatioCount": 327,
           "tokens": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "soldRatioPercent": 98.42,
+              "amountUsd": 161.83
+            },
             {
               "token": "Magic Internet Money",
               "symbol": "MIM",
@@ -18616,17 +18708,11 @@
               "shortAddress": "5s7tf6...pump",
               "soldRatioPercent": 89.96,
               "amountUsd": 248.04
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "soldRatioPercent": 89.18,
-              "amountUsd": 217.91
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 98.42%",
             "watch only; sold ratio 97.66%",
             "watch only; sold ratio 97.69%",
             "watch only; sold ratio 97.51%",
@@ -18634,9 +18720,7 @@
             "watch only; sold ratio 96.95%",
             "watch only; sold ratio 97.67%",
             "watch only; sold ratio 96.6%",
-            "watch only; sold ratio 97.55%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 93.66%"
+            "watch only; sold ratio 97.55%"
           ]
         }
       ],
@@ -18798,7 +18882,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 757.11U; wallets 3; sold 98.43%; type KOL/Influencer",
+          "reason": "amount 1529.7U; wallets 5; sold 65.68%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -18811,23 +18895,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 7489,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 7514,
           "examples": [
-            {
-              "token": "Peawanuck, Ontario",
-              "symbol": "peawanuck",
-              "address": "92kcyzcd9jb5wktivye2ckjw9hnx58wsbndqkdwipump",
-              "shortAddress": "92kcyz...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "MCDOGE",
-              "symbol": "MCDOGE",
-              "address": "9fqdmbjsyg7vnjnxulwzdmocs4napnowya5zf7yafhaa",
-              "shortAddress": "9fqdmb...fhaa",
-              "chain": "solana"
-            },
             {
               "token": "Justice For Smokey",
               "symbol": "Smokey",
@@ -18855,6 +18925,20 @@
               "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
               "shortAddress": "fembdo...pump",
               "chain": "solana"
+            },
+            {
+              "token": "SolanaLife",
+              "symbol": "SolanaLife",
+              "address": "2srqloentljfxqfjv1n8s7ekkx2pidv5qq7slsrcpump",
+              "shortAddress": "2srqlo...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Champions",
+              "symbol": "Champions",
+              "address": "4hhzqsjikjspr3nmv8wticjaluuusymddvsybqcjs5nb",
+              "shortAddress": "4hhzqs...s5nb",
+              "chain": "solana"
             }
           ]
         },
@@ -18863,7 +18947,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 803.96U; wallets 3; sold 81.75%; type Whale",
+          "reason": "amount 918.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -18876,16 +18960,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 2714,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 2733,
           "examples": [
-            {
-              "token": "Isaac GR00T",
-              "symbol": "GR00T",
-              "address": "gscbljuztckccnmzngtyjnco5egkjqgqzmpl48vpump",
-              "shortAddress": "gscblj...pump",
-              "chain": "solana"
-            },
             {
               "token": "Aerodynamic Coin",
               "symbol": "AERO",
@@ -18920,6 +18997,13 @@
               "address": "6yvtdwp9zny3mz1ntazp1mftdutqhhzed7jcszrdpump",
               "shortAddress": "6yvtdw...pump",
               "chain": "solana"
+            },
+            {
+              "token": "Retard Coin",
+              "symbol": "RETARD",
+              "address": "acuzx4asxyqcrd6btggbkxjjviup3kzquduqawbapump",
+              "shortAddress": "acuzx4...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -18941,8 +19025,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 1033,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 1034,
           "examples": [
             {
               "token": "Champions",
@@ -19006,8 +19090,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 513,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 514,
           "examples": [
             {
               "token": "SpaceX",
@@ -19071,8 +19155,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-02T00:58:58.297Z",
-          "occurrences": 503,
+          "lastSeenAt": "2026-06-02T01:28:58.467Z",
+          "occurrences": 513,
           "examples": [
             {
               "token": "WORK Medical Tech",
@@ -19272,48 +19356,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260528115857",
-          "startedAt": "2026-05-28T11:58:57.981Z",
-          "finishedAt": "2026-05-28T11:59:00.372Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 54,
-          "decisions": 54,
-          "trades": 3,
-          "mistakes": [],
-          "notes": [],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 3,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 4,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 2530,
-            "openValueUsd": 454.82,
-            "equityUsd": 2984.82,
-            "realizedPnlUsd": 0,
-            "unrealizedPnlUsd": -15.18,
-            "totalPnlUsd": -15.18,
-            "totalPnlPct": -0.51
-          }
-        },
         {
           "runId": "20260528122857",
           "startedAt": "2026-05-28T12:28:57.721Z",
