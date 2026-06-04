@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-04T13:59:51.316Z",
+  "generatedAt": "2026-06-04T15:00:40.177Z",
   "latest": {
     "date": "2026-06-04",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-04T13:59:51.301Z",
-    "runCount": 44,
+    "generatedAt": "2026-06-04T15:00:40.163Z",
+    "runCount": 45,
     "statuses": {
-      "ok": 44
+      "ok": 45
     },
-    "rawSignalCount": 2848,
-    "decisionCount": 322,
+    "rawSignalCount": 2913,
+    "decisionCount": 387,
     "actions": {
-      "IGNORE": 207,
-      "WATCH": 102,
-      "HOLD": 10,
+      "IGNORE": 248,
+      "WATCH": 124,
+      "HOLD": 12,
       "BUY": 2,
       "SELL": 1
     },
@@ -29,35 +29,35 @@
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 292
+        "count": 352
       },
       {
         "name": "amount < 500U",
-        "count": 20
+        "count": 24
       },
       {
         "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 13
-      },
-      {
-        "name": "blacklisted source wallet: 8M2quY...twNh",
-        "count": 5
+        "count": 15
       },
       {
         "name": "blacklisted source wallet: 6thKzh...4nVi",
-        "count": 5
+        "count": 7
       },
       {
         "name": "blacklisted source wallet: HYJeo7...oavr",
-        "count": 4
+        "count": 7
+      },
+      {
+        "name": "blacklisted source wallet: 8M2quY...twNh",
+        "count": 6
       },
       {
         "name": "blacklisted source wallet: AAbnUK...iFxA",
-        "count": 2
+        "count": 4
       },
       {
         "name": "blacklisted source wallet: 3YgeJw...uzUY",
-        "count": 2
+        "count": 4
       }
     ],
     "mistakeCount": 0,
@@ -932,7 +932,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 1433.35U; wallets 3; sold 54.36%; type KOL/Influencer",
+        "reason": "amount 1418.83U; wallets 3; sold 77.51%; type KOL/Influencer",
         "score": 62,
         "wins": 0,
         "losses": 0,
@@ -945,23 +945,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-04T13:58:58.581Z",
-        "occurrences": 10708,
+        "lastSeenAt": "2026-06-04T14:58:58.876Z",
+        "occurrences": 10736,
         "examples": [
-          {
-            "token": "Hunter Biden 2028",
-            "symbol": "HUNTER",
-            "address": "9zwhs3b1oyuueqwnpu2spkeh24jmvwfevqvhuyxzpump",
-            "shortAddress": "9zwhs3...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "Justice For Henry Nowak",
-            "symbol": "HENRY",
-            "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-            "shortAddress": "hfafns...pump",
-            "chain": "solana"
-          },
           {
             "token": "White Lives Matter",
             "symbol": "WLM",
@@ -989,6 +975,20 @@
             "address": "hbzu4zmdecvfsxqhcfa8a54ewansvvmw2bgvdeawpump",
             "shortAddress": "hbzu4z...pump",
             "chain": "solana"
+          },
+          {
+            "token": "The Official Dat Bih Gah",
+            "symbol": "DATBIHGAH",
+            "address": "dmu6lrnrbv7urldpcyadhnkxxxyf4mrkdqsqc2tkpump",
+            "shortAddress": "dmu6lr...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "IS THIS NOT INSANE?",
+            "symbol": "HELLO?",
+            "address": "tjsmlrtmfxrkdjyzdackp1p4guvmc35okg7ztjspump",
+            "shortAddress": "tjsmlr...pump",
+            "chain": "solana"
           }
         ]
       },
@@ -997,7 +997,7 @@
         "title": "solana Whale 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 4058.59U; wallets 3; sold 39.38%; type Whale",
+        "reason": "amount 4058.59U; wallets 3; sold 39.57%; type Whale",
         "score": 68.2,
         "wins": 0,
         "losses": 0,
@@ -1010,9 +1010,16 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-04T13:58:58.581Z",
-        "occurrences": 4587,
+        "lastSeenAt": "2026-06-04T14:58:58.876Z",
+        "occurrences": 4606,
         "examples": [
+          {
+            "token": "Justice For Henry Nowak",
+            "symbol": "HENRY",
+            "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
+            "shortAddress": "hfafns...pump",
+            "chain": "solana"
+          },
           {
             "token": "One Wish Willow",
             "symbol": "Willow",
@@ -1025,13 +1032,6 @@
             "symbol": "DREAM",
             "address": "ecykyurtgwxpkfu2tfur8fd18syz9y2ayuvsaanz5usa",
             "shortAddress": "ecykyu...5usa",
-            "chain": "solana"
-          },
-          {
-            "token": "Justice For Henry Nowak",
-            "symbol": "HENRY",
-            "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-            "shortAddress": "hfafns...pump",
             "chain": "solana"
           },
           {
@@ -1075,8 +1075,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-04T13:58:58.581Z",
-        "occurrences": 1812,
+        "lastSeenAt": "2026-06-04T14:58:58.876Z",
+        "occurrences": 1825,
         "examples": [
           {
             "token": "帕鲁家族",
@@ -1205,8 +1205,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-04T13:58:58.581Z",
-        "occurrences": 707,
+        "lastSeenAt": "2026-06-04T14:58:58.876Z",
+        "occurrences": 709,
         "examples": [
           {
             "token": "Solana Fork Staccana ",
@@ -3405,6 +3405,55 @@
           "totalPnlUsd": -139.03,
           "totalPnlPct": -4.63
         }
+      },
+      {
+        "runId": "20260604145858",
+        "startedAt": "2026-06-04T14:58:58.876Z",
+        "finishedAt": "2026-06-04T15:00:39.440Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 65,
+        "decisions": 65,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": [
+              {
+                "type": "CLI_ERROR",
+                "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+                "lesson": "Smart Money research is watch-only and must never create trades.",
+                "chain": "solana"
+              }
+            ]
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 15,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2660.03,
+          "openValueUsd": 200.94,
+          "equityUsd": 2860.97,
+          "realizedPnlUsd": -134.17,
+          "unrealizedPnlUsd": -4.86,
+          "totalPnlUsd": -139.03,
+          "totalPnlPct": -4.63
+        }
       }
     ]
   },
@@ -3412,17 +3461,17 @@
     {
       "date": "2026-06-04",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T13:59:51.301Z",
-      "runCount": 44,
+      "generatedAt": "2026-06-04T15:00:40.163Z",
+      "runCount": 45,
       "statuses": {
-        "ok": 44
+        "ok": 45
       },
-      "rawSignalCount": 2848,
-      "decisionCount": 322,
+      "rawSignalCount": 2913,
+      "decisionCount": 387,
       "actions": {
-        "IGNORE": 207,
-        "WATCH": 102,
-        "HOLD": 10,
+        "IGNORE": 248,
+        "WATCH": 124,
+        "HOLD": 12,
         "BUY": 2,
         "SELL": 1
       },
@@ -3437,35 +3486,35 @@
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 292
+          "count": 352
         },
         {
           "name": "amount < 500U",
-          "count": 20
+          "count": 24
         },
         {
           "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 13
-        },
-        {
-          "name": "blacklisted source wallet: 8M2quY...twNh",
-          "count": 5
+          "count": 15
         },
         {
           "name": "blacklisted source wallet: 6thKzh...4nVi",
-          "count": 5
+          "count": 7
         },
         {
           "name": "blacklisted source wallet: HYJeo7...oavr",
-          "count": 4
+          "count": 7
+        },
+        {
+          "name": "blacklisted source wallet: 8M2quY...twNh",
+          "count": 6
         },
         {
           "name": "blacklisted source wallet: AAbnUK...iFxA",
-          "count": 2
+          "count": 4
         },
         {
           "name": "blacklisted source wallet: 3YgeJw...uzUY",
-          "count": 2
+          "count": 4
         }
       ],
       "mistakeCount": 0,
@@ -4340,7 +4389,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1433.35U; wallets 3; sold 54.36%; type KOL/Influencer",
+          "reason": "amount 1418.83U; wallets 3; sold 77.51%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -4353,23 +4402,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 10708,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 10736,
           "examples": [
-            {
-              "token": "Hunter Biden 2028",
-              "symbol": "HUNTER",
-              "address": "9zwhs3b1oyuueqwnpu2spkeh24jmvwfevqvhuyxzpump",
-              "shortAddress": "9zwhs3...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "chain": "solana"
-            },
             {
               "token": "White Lives Matter",
               "symbol": "WLM",
@@ -4397,6 +4432,20 @@
               "address": "hbzu4zmdecvfsxqhcfa8a54ewansvvmw2bgvdeawpump",
               "shortAddress": "hbzu4z...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Official Dat Bih Gah",
+              "symbol": "DATBIHGAH",
+              "address": "dmu6lrnrbv7urldpcyadhnkxxxyf4mrkdqsqc2tkpump",
+              "shortAddress": "dmu6lr...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "IS THIS NOT INSANE?",
+              "symbol": "HELLO?",
+              "address": "tjsmlrtmfxrkdjyzdackp1p4guvmc35okg7ztjspump",
+              "shortAddress": "tjsmlr...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -4405,7 +4454,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4058.59U; wallets 3; sold 39.38%; type Whale",
+          "reason": "amount 4058.59U; wallets 3; sold 39.57%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -4418,9 +4467,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 4587,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 4606,
           "examples": [
+            {
+              "token": "Justice For Henry Nowak",
+              "symbol": "HENRY",
+              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
+              "shortAddress": "hfafns...pump",
+              "chain": "solana"
+            },
             {
               "token": "One Wish Willow",
               "symbol": "Willow",
@@ -4433,13 +4489,6 @@
               "symbol": "DREAM",
               "address": "ecykyurtgwxpkfu2tfur8fd18syz9y2ayuvsaanz5usa",
               "shortAddress": "ecykyu...5usa",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
               "chain": "solana"
             },
             {
@@ -4483,8 +4532,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 1812,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 1825,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -4613,8 +4662,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 707,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 709,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -6813,13 +6862,62 @@
             "totalPnlUsd": -139.03,
             "totalPnlPct": -4.63
           }
+        },
+        {
+          "runId": "20260604145858",
+          "startedAt": "2026-06-04T14:58:58.876Z",
+          "finishedAt": "2026-06-04T15:00:39.440Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 65,
+          "decisions": 65,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": [
+                {
+                  "type": "CLI_ERROR",
+                  "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
+                  "lesson": "Smart Money research is watch-only and must never create trades.",
+                  "chain": "solana"
+                }
+              ]
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 15,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2660.03,
+            "openValueUsd": 200.94,
+            "equityUsd": 2860.97,
+            "realizedPnlUsd": -134.17,
+            "unrealizedPnlUsd": -4.86,
+            "totalPnlUsd": -139.03,
+            "totalPnlPct": -4.63
+          }
         }
       ]
     },
     {
       "date": "2026-06-03",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T13:59:51.302Z",
+      "generatedAt": "2026-06-04T15:00:40.164Z",
       "runCount": 40,
       "statuses": {
         "ok": 40
@@ -7708,7 +7806,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1433.35U; wallets 3; sold 54.36%; type KOL/Influencer",
+          "reason": "amount 1418.83U; wallets 3; sold 77.51%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -7721,23 +7819,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 10708,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 10736,
           "examples": [
-            {
-              "token": "Hunter Biden 2028",
-              "symbol": "HUNTER",
-              "address": "9zwhs3b1oyuueqwnpu2spkeh24jmvwfevqvhuyxzpump",
-              "shortAddress": "9zwhs3...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "chain": "solana"
-            },
             {
               "token": "White Lives Matter",
               "symbol": "WLM",
@@ -7765,6 +7849,20 @@
               "address": "hbzu4zmdecvfsxqhcfa8a54ewansvvmw2bgvdeawpump",
               "shortAddress": "hbzu4z...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Official Dat Bih Gah",
+              "symbol": "DATBIHGAH",
+              "address": "dmu6lrnrbv7urldpcyadhnkxxxyf4mrkdqsqc2tkpump",
+              "shortAddress": "dmu6lr...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "IS THIS NOT INSANE?",
+              "symbol": "HELLO?",
+              "address": "tjsmlrtmfxrkdjyzdackp1p4guvmc35okg7ztjspump",
+              "shortAddress": "tjsmlr...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -7773,7 +7871,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4058.59U; wallets 3; sold 39.38%; type Whale",
+          "reason": "amount 4058.59U; wallets 3; sold 39.57%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -7786,9 +7884,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 4587,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 4606,
           "examples": [
+            {
+              "token": "Justice For Henry Nowak",
+              "symbol": "HENRY",
+              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
+              "shortAddress": "hfafns...pump",
+              "chain": "solana"
+            },
             {
               "token": "One Wish Willow",
               "symbol": "Willow",
@@ -7801,13 +7906,6 @@
               "symbol": "DREAM",
               "address": "ecykyurtgwxpkfu2tfur8fd18syz9y2ayuvsaanz5usa",
               "shortAddress": "ecykyu...5usa",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
               "chain": "solana"
             },
             {
@@ -7851,8 +7949,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 1812,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 1825,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -7981,8 +8079,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 707,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 709,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -9983,7 +10081,7 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T13:59:51.302Z",
+      "generatedAt": "2026-06-04T15:00:40.165Z",
       "runCount": 47,
       "statuses": {
         "ok": 44,
@@ -10876,7 +10974,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1433.35U; wallets 3; sold 54.36%; type KOL/Influencer",
+          "reason": "amount 1418.83U; wallets 3; sold 77.51%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -10889,23 +10987,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 10708,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 10736,
           "examples": [
-            {
-              "token": "Hunter Biden 2028",
-              "symbol": "HUNTER",
-              "address": "9zwhs3b1oyuueqwnpu2spkeh24jmvwfevqvhuyxzpump",
-              "shortAddress": "9zwhs3...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "chain": "solana"
-            },
             {
               "token": "White Lives Matter",
               "symbol": "WLM",
@@ -10933,6 +11017,20 @@
               "address": "hbzu4zmdecvfsxqhcfa8a54ewansvvmw2bgvdeawpump",
               "shortAddress": "hbzu4z...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Official Dat Bih Gah",
+              "symbol": "DATBIHGAH",
+              "address": "dmu6lrnrbv7urldpcyadhnkxxxyf4mrkdqsqc2tkpump",
+              "shortAddress": "dmu6lr...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "IS THIS NOT INSANE?",
+              "symbol": "HELLO?",
+              "address": "tjsmlrtmfxrkdjyzdackp1p4guvmc35okg7ztjspump",
+              "shortAddress": "tjsmlr...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -10941,7 +11039,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4058.59U; wallets 3; sold 39.38%; type Whale",
+          "reason": "amount 4058.59U; wallets 3; sold 39.57%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -10954,9 +11052,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 4587,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 4606,
           "examples": [
+            {
+              "token": "Justice For Henry Nowak",
+              "symbol": "HENRY",
+              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
+              "shortAddress": "hfafns...pump",
+              "chain": "solana"
+            },
             {
               "token": "One Wish Willow",
               "symbol": "Willow",
@@ -10969,13 +11074,6 @@
               "symbol": "DREAM",
               "address": "ecykyurtgwxpkfu2tfur8fd18syz9y2ayuvsaanz5usa",
               "shortAddress": "ecykyu...5usa",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
               "chain": "solana"
             },
             {
@@ -11019,8 +11117,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 1812,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 1825,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -11149,8 +11247,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 707,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 709,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -13494,7 +13592,7 @@
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T13:59:51.303Z",
+      "generatedAt": "2026-06-04T15:00:40.165Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -14383,7 +14481,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1433.35U; wallets 3; sold 54.36%; type KOL/Influencer",
+          "reason": "amount 1418.83U; wallets 3; sold 77.51%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -14396,23 +14494,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 10708,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 10736,
           "examples": [
-            {
-              "token": "Hunter Biden 2028",
-              "symbol": "HUNTER",
-              "address": "9zwhs3b1oyuueqwnpu2spkeh24jmvwfevqvhuyxzpump",
-              "shortAddress": "9zwhs3...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "chain": "solana"
-            },
             {
               "token": "White Lives Matter",
               "symbol": "WLM",
@@ -14440,6 +14524,20 @@
               "address": "hbzu4zmdecvfsxqhcfa8a54ewansvvmw2bgvdeawpump",
               "shortAddress": "hbzu4z...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Official Dat Bih Gah",
+              "symbol": "DATBIHGAH",
+              "address": "dmu6lrnrbv7urldpcyadhnkxxxyf4mrkdqsqc2tkpump",
+              "shortAddress": "dmu6lr...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "IS THIS NOT INSANE?",
+              "symbol": "HELLO?",
+              "address": "tjsmlrtmfxrkdjyzdackp1p4guvmc35okg7ztjspump",
+              "shortAddress": "tjsmlr...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -14448,7 +14546,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4058.59U; wallets 3; sold 39.38%; type Whale",
+          "reason": "amount 4058.59U; wallets 3; sold 39.57%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -14461,9 +14559,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 4587,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 4606,
           "examples": [
+            {
+              "token": "Justice For Henry Nowak",
+              "symbol": "HENRY",
+              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
+              "shortAddress": "hfafns...pump",
+              "chain": "solana"
+            },
             {
               "token": "One Wish Willow",
               "symbol": "Willow",
@@ -14476,13 +14581,6 @@
               "symbol": "DREAM",
               "address": "ecykyurtgwxpkfu2tfur8fd18syz9y2ayuvsaanz5usa",
               "shortAddress": "ecykyu...5usa",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
               "chain": "solana"
             },
             {
@@ -14526,8 +14624,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 1812,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 1825,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -14656,8 +14754,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 707,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 709,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -17052,12 +17150,12 @@
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T13:59:51.303Z",
-      "runCount": 21,
+      "generatedAt": "2026-06-04T15:00:40.165Z",
+      "runCount": 20,
       "statuses": {
-        "ok": 21
+        "ok": 20
       },
-      "rawSignalCount": 1235,
+      "rawSignalCount": 1179,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -17941,7 +18039,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1433.35U; wallets 3; sold 54.36%; type KOL/Influencer",
+          "reason": "amount 1418.83U; wallets 3; sold 77.51%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -17954,23 +18052,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 10708,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 10736,
           "examples": [
-            {
-              "token": "Hunter Biden 2028",
-              "symbol": "HUNTER",
-              "address": "9zwhs3b1oyuueqwnpu2spkeh24jmvwfevqvhuyxzpump",
-              "shortAddress": "9zwhs3...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
-              "chain": "solana"
-            },
             {
               "token": "White Lives Matter",
               "symbol": "WLM",
@@ -17998,6 +18082,20 @@
               "address": "hbzu4zmdecvfsxqhcfa8a54ewansvvmw2bgvdeawpump",
               "shortAddress": "hbzu4z...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Official Dat Bih Gah",
+              "symbol": "DATBIHGAH",
+              "address": "dmu6lrnrbv7urldpcyadhnkxxxyf4mrkdqsqc2tkpump",
+              "shortAddress": "dmu6lr...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "IS THIS NOT INSANE?",
+              "symbol": "HELLO?",
+              "address": "tjsmlrtmfxrkdjyzdackp1p4guvmc35okg7ztjspump",
+              "shortAddress": "tjsmlr...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -18006,7 +18104,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 4058.59U; wallets 3; sold 39.38%; type Whale",
+          "reason": "amount 4058.59U; wallets 3; sold 39.57%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -18019,9 +18117,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 4587,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 4606,
           "examples": [
+            {
+              "token": "Justice For Henry Nowak",
+              "symbol": "HENRY",
+              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
+              "shortAddress": "hfafns...pump",
+              "chain": "solana"
+            },
             {
               "token": "One Wish Willow",
               "symbol": "Willow",
@@ -18034,13 +18139,6 @@
               "symbol": "DREAM",
               "address": "ecykyurtgwxpkfu2tfur8fd18syz9y2ayuvsaanz5usa",
               "shortAddress": "ecykyu...5usa",
-              "chain": "solana"
-            },
-            {
-              "token": "Justice For Henry Nowak",
-              "symbol": "HENRY",
-              "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
-              "shortAddress": "hfafns...pump",
               "chain": "solana"
             },
             {
@@ -18084,8 +18182,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 1812,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 1825,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -18214,8 +18312,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T13:58:58.581Z",
-          "occurrences": 707,
+          "lastSeenAt": "2026-06-04T14:58:58.876Z",
+          "occurrences": 709,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -18415,48 +18513,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260531055858",
-          "startedAt": "2026-05-31T05:58:58.124Z",
-          "finishedAt": "2026-05-31T05:59:50.449Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 56,
-          "decisions": 56,
-          "trades": 0,
-          "mistakes": [],
-          "notes": [],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 0,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 6,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 2817.3,
-            "openValueUsd": 182.15,
-            "equityUsd": 2999.45,
-            "realizedPnlUsd": 0,
-            "unrealizedPnlUsd": -0.55,
-            "totalPnlUsd": -0.55,
-            "totalPnlPct": -0.02
-          }
-        },
         {
           "runId": "20260531062858",
           "startedAt": "2026-05-31T06:28:58.197Z",
