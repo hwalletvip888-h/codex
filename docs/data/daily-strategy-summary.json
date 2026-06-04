@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-04T19:29:51.135Z",
+  "generatedAt": "2026-06-04T19:59:51.562Z",
   "latest": {
     "date": "2026-06-05",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-04T19:29:51.119Z",
-    "runCount": 7,
+    "generatedAt": "2026-06-04T19:59:51.545Z",
+    "runCount": 8,
     "statuses": {
-      "ok": 7
+      "ok": 8
     },
-    "rawSignalCount": 455,
-    "decisionCount": 390,
+    "rawSignalCount": 520,
+    "decisionCount": 455,
     "actions": {
-      "IGNORE": 250,
-      "WATCH": 121,
-      "HOLD": 16,
+      "IGNORE": 289,
+      "WATCH": 143,
+      "HOLD": 20,
       "BUY": 3
     },
     "tradeCount": 3,
@@ -28,35 +28,35 @@
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 353
+        "count": 411
       },
       {
         "name": "amount < 500U",
-        "count": 27
+        "count": 32
       },
       {
         "name": "blacklisted source wallet: 2g8ayw...VKc9",
-        "count": 18
+        "count": 21
       },
       {
         "name": "blacklisted source wallet: HYJeo7...oavr",
-        "count": 18
+        "count": 21
       },
       {
         "name": "blacklisted source wallet: rAfgrF...xnSX",
-        "count": 12
+        "count": 14
       },
       {
         "name": "blacklisted source wallet: Dj8MAV...HuHS",
-        "count": 12
+        "count": 14
       },
       {
         "name": "blacklisted source wallet: 6thKzh...4nVi",
-        "count": 12
+        "count": 14
       },
       {
         "name": "blacklisted source wallet: AAbnUK...iFxA",
-        "count": 12
+        "count": 14
       }
     ],
     "mistakeCount": 0,
@@ -262,9 +262,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-04T19:28:58.562Z",
-        "occurrences": 785,
-        "highSoldRatioCount": 785,
+        "lastSeenAt": "2026-06-04T19:58:58.695Z",
+        "occurrences": 787,
+        "highSoldRatioCount": 787,
         "tokens": [
           {
             "token": "Happy The Elephant",
@@ -348,6 +348,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 91.59%",
           "watch only; sold ratio 81.8%",
           "watch only; sold ratio 91.67%",
           "watch only; sold ratio 84.11%",
@@ -356,8 +357,7 @@
           "watch only; sold ratio 100%",
           "watch only; sold ratio 91.68%",
           "watch only; sold ratio 94.23%",
-          "watch only; sold ratio 97.66%",
-          "watch only; sold ratio 96.6%"
+          "watch only; sold ratio 97.66%"
         ]
       },
       {
@@ -367,9 +367,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-04T19:28:58.562Z",
-        "occurrences": 626,
-        "highSoldRatioCount": 626,
+        "lastSeenAt": "2026-06-04T19:58:58.695Z",
+        "occurrences": 629,
+        "highSoldRatioCount": 629,
         "tokens": [
           {
             "token": "Happy The Elephant",
@@ -453,6 +453,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 91.59%",
           "watch only; sold ratio 81.8%",
           "watch only; sold ratio 89.91%",
           "watch only; sold ratio 91.67%",
@@ -461,8 +462,7 @@
           "watch only; sold ratio 94.35%",
           "watch only; sold ratio 91.68%",
           "watch only; sold ratio 100%",
-          "watch only; sold ratio 87.7%",
-          "watch only; sold ratio 83.11%"
+          "watch only; sold ratio 87.7%"
         ]
       },
       {
@@ -472,9 +472,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-04T19:28:58.562Z",
-        "occurrences": 608,
-        "highSoldRatioCount": 608,
+        "lastSeenAt": "2026-06-04T19:58:58.695Z",
+        "occurrences": 612,
+        "highSoldRatioCount": 612,
         "tokens": [
           {
             "token": "Michul Sellor",
@@ -577,9 +577,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-06-04T19:28:58.562Z",
-        "occurrences": 603,
-        "highSoldRatioCount": 603,
+        "lastSeenAt": "2026-06-04T19:58:58.695Z",
+        "occurrences": 605,
+        "highSoldRatioCount": 605,
         "tokens": [
           {
             "token": "X Pokémon",
@@ -939,7 +939,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 1132.22U; wallets 3; sold 100%; type KOL/Influencer",
+        "reason": "amount 2141.33U; wallets 5; sold 100%; type KOL/Influencer",
         "score": 62,
         "wins": 0,
         "losses": 0,
@@ -952,23 +952,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-04T19:28:58.562Z",
-        "occurrences": 10981,
+        "lastSeenAt": "2026-06-04T19:58:58.695Z",
+        "occurrences": 11006,
         "examples": [
-          {
-            "token": "Polyscam",
-            "symbol": "POLYSCAM",
-            "address": "3f9ediumspjpsudqk1arpsx9xts1j7qpgdw6njtdpump",
-            "shortAddress": "3f9edi...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "Richard Ptardio",
-            "symbol": "PTARDIO",
-            "address": "cbi3cm3xvbsekuvi4qtzazplvz84cn8tmlmgpjvppump",
-            "shortAddress": "cbi3cm...pump",
-            "chain": "solana"
-          },
           {
             "token": "catwifpants",
             "symbol": "CWIF",
@@ -996,6 +982,20 @@
             "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
             "shortAddress": "fuxke7...cb8q",
             "chain": "solana"
+          },
+          {
+            "token": "DickButt",
+            "symbol": "DickButt",
+            "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
+            "shortAddress": "2p6pyh...o4d5",
+            "chain": "solana"
+          },
+          {
+            "token": "HeavyPulp",
+            "symbol": "HeavyPulp",
+            "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
+            "shortAddress": "8g5aye...pump",
+            "chain": "solana"
           }
         ]
       },
@@ -1017,8 +1017,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-04T19:28:58.562Z",
-        "occurrences": 4772,
+        "lastSeenAt": "2026-06-04T19:58:58.695Z",
+        "occurrences": 4792,
         "examples": [
           {
             "token": "Richard Ptardio",
@@ -1042,6 +1042,13 @@
             "chain": "solana"
           },
           {
+            "token": "Mallow",
+            "symbol": "MALLOW",
+            "address": "3bzwwwyw6gktrhhnmpm3bwc36q3dqakk7ei9km4hpump",
+            "shortAddress": "3bzwww...pump",
+            "chain": "solana"
+          },
+          {
             "token": "Justice For Henry Nowak",
             "symbol": "HENRY",
             "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
@@ -1053,13 +1060,6 @@
             "symbol": "HeavyPulp",
             "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
             "shortAddress": "8g5aye...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "ハートちゃん",
-            "symbol": "Heart-Chan",
-            "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
-            "shortAddress": "gzdfz8...pump",
             "chain": "solana"
           }
         ]
@@ -1082,8 +1082,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-04T19:28:58.562Z",
-        "occurrences": 1942,
+        "lastSeenAt": "2026-06-04T19:58:58.695Z",
+        "occurrences": 1955,
         "examples": [
           {
             "token": "帕鲁家族",
@@ -1134,7 +1134,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "amount < 500U",
-        "reason": "amount 356.36U; wallets 3; sold 41.15%; type KOL/Influencer",
+        "reason": "amount 356.36U; wallets 3; sold 49.84%; type KOL/Influencer",
         "score": 70.6,
         "wins": 0,
         "losses": 0,
@@ -1147,8 +1147,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-04T19:28:58.562Z",
-        "occurrences": 1072,
+        "lastSeenAt": "2026-06-04T19:58:58.695Z",
+        "occurrences": 1073,
         "examples": [
           {
             "token": "DARE",
@@ -1212,8 +1212,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-04T19:28:58.562Z",
-        "occurrences": 727,
+        "lastSeenAt": "2026-06-04T19:58:58.695Z",
+        "occurrences": 729,
         "examples": [
           {
             "token": "Solana Fork Staccana ",
@@ -1735,6 +1735,48 @@
           "totalPnlUsd": -6.06,
           "totalPnlPct": -0.2
         }
+      },
+      {
+        "runId": "20260604195858",
+        "startedAt": "2026-06-04T19:58:58.695Z",
+        "finishedAt": "2026-06-04T19:59:51.004Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 65,
+        "decisions": 65,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 15,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2396.9,
+          "openValueUsd": 597.04,
+          "equityUsd": 2993.94,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -6.06,
+          "totalPnlUsd": -6.06,
+          "totalPnlPct": -0.2
+        }
       }
     ]
   },
@@ -1742,17 +1784,17 @@
     {
       "date": "2026-06-05",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T19:29:51.119Z",
-      "runCount": 7,
+      "generatedAt": "2026-06-04T19:59:51.545Z",
+      "runCount": 8,
       "statuses": {
-        "ok": 7
+        "ok": 8
       },
-      "rawSignalCount": 455,
-      "decisionCount": 390,
+      "rawSignalCount": 520,
+      "decisionCount": 455,
       "actions": {
-        "IGNORE": 250,
-        "WATCH": 121,
-        "HOLD": 16,
+        "IGNORE": 289,
+        "WATCH": 143,
+        "HOLD": 20,
         "BUY": 3
       },
       "tradeCount": 3,
@@ -1766,35 +1808,35 @@
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 353
+          "count": 411
         },
         {
           "name": "amount < 500U",
-          "count": 27
+          "count": 32
         },
         {
           "name": "blacklisted source wallet: 2g8ayw...VKc9",
-          "count": 18
+          "count": 21
         },
         {
           "name": "blacklisted source wallet: HYJeo7...oavr",
-          "count": 18
+          "count": 21
         },
         {
           "name": "blacklisted source wallet: rAfgrF...xnSX",
-          "count": 12
+          "count": 14
         },
         {
           "name": "blacklisted source wallet: Dj8MAV...HuHS",
-          "count": 12
+          "count": 14
         },
         {
           "name": "blacklisted source wallet: 6thKzh...4nVi",
-          "count": 12
+          "count": 14
         },
         {
           "name": "blacklisted source wallet: AAbnUK...iFxA",
-          "count": 12
+          "count": 14
         }
       ],
       "mistakeCount": 0,
@@ -2000,9 +2042,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 785,
-          "highSoldRatioCount": 785,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 787,
+          "highSoldRatioCount": 787,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -2086,6 +2128,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 91.67%",
             "watch only; sold ratio 84.11%",
@@ -2094,8 +2137,7 @@
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 94.23%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 96.6%"
+            "watch only; sold ratio 97.66%"
           ]
         },
         {
@@ -2105,9 +2147,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 626,
-          "highSoldRatioCount": 626,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 629,
+          "highSoldRatioCount": 629,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -2191,6 +2233,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 89.91%",
             "watch only; sold ratio 91.67%",
@@ -2199,8 +2242,7 @@
             "watch only; sold ratio 94.35%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 87.7%",
-            "watch only; sold ratio 83.11%"
+            "watch only; sold ratio 87.7%"
           ]
         },
         {
@@ -2210,9 +2252,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 608,
-          "highSoldRatioCount": 608,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 612,
+          "highSoldRatioCount": 612,
           "tokens": [
             {
               "token": "Michul Sellor",
@@ -2315,9 +2357,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 603,
-          "highSoldRatioCount": 603,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 605,
+          "highSoldRatioCount": 605,
           "tokens": [
             {
               "token": "X Pokémon",
@@ -2677,7 +2719,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1132.22U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 2141.33U; wallets 5; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -2690,23 +2732,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 10981,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 11006,
           "examples": [
-            {
-              "token": "Polyscam",
-              "symbol": "POLYSCAM",
-              "address": "3f9ediumspjpsudqk1arpsx9xts1j7qpgdw6njtdpump",
-              "shortAddress": "3f9edi...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Richard Ptardio",
-              "symbol": "PTARDIO",
-              "address": "cbi3cm3xvbsekuvi4qtzazplvz84cn8tmlmgpjvppump",
-              "shortAddress": "cbi3cm...pump",
-              "chain": "solana"
-            },
             {
               "token": "catwifpants",
               "symbol": "CWIF",
@@ -2734,6 +2762,20 @@
               "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
               "shortAddress": "fuxke7...cb8q",
               "chain": "solana"
+            },
+            {
+              "token": "DickButt",
+              "symbol": "DickButt",
+              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
+              "shortAddress": "2p6pyh...o4d5",
+              "chain": "solana"
+            },
+            {
+              "token": "HeavyPulp",
+              "symbol": "HeavyPulp",
+              "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
+              "shortAddress": "8g5aye...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -2755,8 +2797,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 4772,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 4792,
           "examples": [
             {
               "token": "Richard Ptardio",
@@ -2780,6 +2822,13 @@
               "chain": "solana"
             },
             {
+              "token": "Mallow",
+              "symbol": "MALLOW",
+              "address": "3bzwwwyw6gktrhhnmpm3bwc36q3dqakk7ei9km4hpump",
+              "shortAddress": "3bzwww...pump",
+              "chain": "solana"
+            },
+            {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
@@ -2791,13 +2840,6 @@
               "symbol": "HeavyPulp",
               "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
               "shortAddress": "8g5aye...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "ハートちゃん",
-              "symbol": "Heart-Chan",
-              "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
-              "shortAddress": "gzdfz8...pump",
               "chain": "solana"
             }
           ]
@@ -2820,8 +2862,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1942,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1955,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -2872,7 +2914,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 356.36U; wallets 3; sold 41.15%; type KOL/Influencer",
+          "reason": "amount 356.36U; wallets 3; sold 49.84%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -2885,8 +2927,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1072,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1073,
           "examples": [
             {
               "token": "DARE",
@@ -2950,8 +2992,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 727,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 729,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -3473,13 +3515,55 @@
             "totalPnlUsd": -6.06,
             "totalPnlPct": -0.2
           }
+        },
+        {
+          "runId": "20260604195858",
+          "startedAt": "2026-06-04T19:58:58.695Z",
+          "finishedAt": "2026-06-04T19:59:51.004Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 65,
+          "decisions": 65,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 15,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2396.9,
+            "openValueUsd": 597.04,
+            "equityUsd": 2993.94,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -6.06,
+            "totalPnlUsd": -6.06,
+            "totalPnlPct": -0.2
+          }
         }
       ]
     },
     {
       "date": "2026-06-04",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T19:29:51.121Z",
+      "generatedAt": "2026-06-04T19:59:51.546Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -3699,9 +3783,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 785,
-          "highSoldRatioCount": 785,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 787,
+          "highSoldRatioCount": 787,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -3785,6 +3869,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 91.67%",
             "watch only; sold ratio 84.11%",
@@ -3793,8 +3878,7 @@
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 94.23%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 96.6%"
+            "watch only; sold ratio 97.66%"
           ]
         },
         {
@@ -3804,9 +3888,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 626,
-          "highSoldRatioCount": 626,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 629,
+          "highSoldRatioCount": 629,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -3890,6 +3974,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 89.91%",
             "watch only; sold ratio 91.67%",
@@ -3898,8 +3983,7 @@
             "watch only; sold ratio 94.35%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 87.7%",
-            "watch only; sold ratio 83.11%"
+            "watch only; sold ratio 87.7%"
           ]
         },
         {
@@ -3909,9 +3993,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 608,
-          "highSoldRatioCount": 608,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 612,
+          "highSoldRatioCount": 612,
           "tokens": [
             {
               "token": "Michul Sellor",
@@ -4014,9 +4098,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 603,
-          "highSoldRatioCount": 603,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 605,
+          "highSoldRatioCount": 605,
           "tokens": [
             {
               "token": "X Pokémon",
@@ -4376,7 +4460,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1132.22U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 2141.33U; wallets 5; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -4389,23 +4473,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 10981,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 11006,
           "examples": [
-            {
-              "token": "Polyscam",
-              "symbol": "POLYSCAM",
-              "address": "3f9ediumspjpsudqk1arpsx9xts1j7qpgdw6njtdpump",
-              "shortAddress": "3f9edi...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Richard Ptardio",
-              "symbol": "PTARDIO",
-              "address": "cbi3cm3xvbsekuvi4qtzazplvz84cn8tmlmgpjvppump",
-              "shortAddress": "cbi3cm...pump",
-              "chain": "solana"
-            },
             {
               "token": "catwifpants",
               "symbol": "CWIF",
@@ -4433,6 +4503,20 @@
               "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
               "shortAddress": "fuxke7...cb8q",
               "chain": "solana"
+            },
+            {
+              "token": "DickButt",
+              "symbol": "DickButt",
+              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
+              "shortAddress": "2p6pyh...o4d5",
+              "chain": "solana"
+            },
+            {
+              "token": "HeavyPulp",
+              "symbol": "HeavyPulp",
+              "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
+              "shortAddress": "8g5aye...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -4454,8 +4538,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 4772,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 4792,
           "examples": [
             {
               "token": "Richard Ptardio",
@@ -4479,6 +4563,13 @@
               "chain": "solana"
             },
             {
+              "token": "Mallow",
+              "symbol": "MALLOW",
+              "address": "3bzwwwyw6gktrhhnmpm3bwc36q3dqakk7ei9km4hpump",
+              "shortAddress": "3bzwww...pump",
+              "chain": "solana"
+            },
+            {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
@@ -4490,13 +4581,6 @@
               "symbol": "HeavyPulp",
               "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
               "shortAddress": "8g5aye...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "ハートちゃん",
-              "symbol": "Heart-Chan",
-              "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
-              "shortAddress": "gzdfz8...pump",
               "chain": "solana"
             }
           ]
@@ -4519,8 +4603,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1942,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1955,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -4571,7 +4655,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 356.36U; wallets 3; sold 41.15%; type KOL/Influencer",
+          "reason": "amount 356.36U; wallets 3; sold 49.84%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -4584,8 +4668,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1072,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1073,
           "examples": [
             {
               "token": "DARE",
@@ -4649,8 +4733,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 727,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 729,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -6988,7 +7072,7 @@
     {
       "date": "2026-06-03",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T19:29:51.121Z",
+      "generatedAt": "2026-06-04T19:59:51.546Z",
       "runCount": 40,
       "statuses": {
         "ok": 40
@@ -7208,9 +7292,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 785,
-          "highSoldRatioCount": 785,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 787,
+          "highSoldRatioCount": 787,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -7294,6 +7378,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 91.67%",
             "watch only; sold ratio 84.11%",
@@ -7302,8 +7387,7 @@
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 94.23%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 96.6%"
+            "watch only; sold ratio 97.66%"
           ]
         },
         {
@@ -7313,9 +7397,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 626,
-          "highSoldRatioCount": 626,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 629,
+          "highSoldRatioCount": 629,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -7399,6 +7483,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 89.91%",
             "watch only; sold ratio 91.67%",
@@ -7407,8 +7492,7 @@
             "watch only; sold ratio 94.35%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 87.7%",
-            "watch only; sold ratio 83.11%"
+            "watch only; sold ratio 87.7%"
           ]
         },
         {
@@ -7418,9 +7502,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 608,
-          "highSoldRatioCount": 608,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 612,
+          "highSoldRatioCount": 612,
           "tokens": [
             {
               "token": "Michul Sellor",
@@ -7523,9 +7607,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 603,
-          "highSoldRatioCount": 603,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 605,
+          "highSoldRatioCount": 605,
           "tokens": [
             {
               "token": "X Pokémon",
@@ -7885,7 +7969,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1132.22U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 2141.33U; wallets 5; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -7898,23 +7982,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 10981,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 11006,
           "examples": [
-            {
-              "token": "Polyscam",
-              "symbol": "POLYSCAM",
-              "address": "3f9ediumspjpsudqk1arpsx9xts1j7qpgdw6njtdpump",
-              "shortAddress": "3f9edi...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Richard Ptardio",
-              "symbol": "PTARDIO",
-              "address": "cbi3cm3xvbsekuvi4qtzazplvz84cn8tmlmgpjvppump",
-              "shortAddress": "cbi3cm...pump",
-              "chain": "solana"
-            },
             {
               "token": "catwifpants",
               "symbol": "CWIF",
@@ -7942,6 +8012,20 @@
               "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
               "shortAddress": "fuxke7...cb8q",
               "chain": "solana"
+            },
+            {
+              "token": "DickButt",
+              "symbol": "DickButt",
+              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
+              "shortAddress": "2p6pyh...o4d5",
+              "chain": "solana"
+            },
+            {
+              "token": "HeavyPulp",
+              "symbol": "HeavyPulp",
+              "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
+              "shortAddress": "8g5aye...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -7963,8 +8047,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 4772,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 4792,
           "examples": [
             {
               "token": "Richard Ptardio",
@@ -7988,6 +8072,13 @@
               "chain": "solana"
             },
             {
+              "token": "Mallow",
+              "symbol": "MALLOW",
+              "address": "3bzwwwyw6gktrhhnmpm3bwc36q3dqakk7ei9km4hpump",
+              "shortAddress": "3bzwww...pump",
+              "chain": "solana"
+            },
+            {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
@@ -7999,13 +8090,6 @@
               "symbol": "HeavyPulp",
               "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
               "shortAddress": "8g5aye...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "ハートちゃん",
-              "symbol": "Heart-Chan",
-              "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
-              "shortAddress": "gzdfz8...pump",
               "chain": "solana"
             }
           ]
@@ -8028,8 +8112,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1942,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1955,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -8080,7 +8164,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 356.36U; wallets 3; sold 41.15%; type KOL/Influencer",
+          "reason": "amount 356.36U; wallets 3; sold 49.84%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -8093,8 +8177,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1072,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1073,
           "examples": [
             {
               "token": "DARE",
@@ -8158,8 +8242,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 727,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 729,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -10160,7 +10244,7 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T19:29:51.121Z",
+      "generatedAt": "2026-06-04T19:59:51.547Z",
       "runCount": 47,
       "statuses": {
         "ok": 44,
@@ -10384,9 +10468,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 785,
-          "highSoldRatioCount": 785,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 787,
+          "highSoldRatioCount": 787,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -10470,6 +10554,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 91.67%",
             "watch only; sold ratio 84.11%",
@@ -10478,8 +10563,7 @@
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 94.23%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 96.6%"
+            "watch only; sold ratio 97.66%"
           ]
         },
         {
@@ -10489,9 +10573,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 626,
-          "highSoldRatioCount": 626,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 629,
+          "highSoldRatioCount": 629,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -10575,6 +10659,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 89.91%",
             "watch only; sold ratio 91.67%",
@@ -10583,8 +10668,7 @@
             "watch only; sold ratio 94.35%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 87.7%",
-            "watch only; sold ratio 83.11%"
+            "watch only; sold ratio 87.7%"
           ]
         },
         {
@@ -10594,9 +10678,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 608,
-          "highSoldRatioCount": 608,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 612,
+          "highSoldRatioCount": 612,
           "tokens": [
             {
               "token": "Michul Sellor",
@@ -10699,9 +10783,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 603,
-          "highSoldRatioCount": 603,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 605,
+          "highSoldRatioCount": 605,
           "tokens": [
             {
               "token": "X Pokémon",
@@ -11061,7 +11145,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1132.22U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 2141.33U; wallets 5; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -11074,23 +11158,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 10981,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 11006,
           "examples": [
-            {
-              "token": "Polyscam",
-              "symbol": "POLYSCAM",
-              "address": "3f9ediumspjpsudqk1arpsx9xts1j7qpgdw6njtdpump",
-              "shortAddress": "3f9edi...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Richard Ptardio",
-              "symbol": "PTARDIO",
-              "address": "cbi3cm3xvbsekuvi4qtzazplvz84cn8tmlmgpjvppump",
-              "shortAddress": "cbi3cm...pump",
-              "chain": "solana"
-            },
             {
               "token": "catwifpants",
               "symbol": "CWIF",
@@ -11118,6 +11188,20 @@
               "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
               "shortAddress": "fuxke7...cb8q",
               "chain": "solana"
+            },
+            {
+              "token": "DickButt",
+              "symbol": "DickButt",
+              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
+              "shortAddress": "2p6pyh...o4d5",
+              "chain": "solana"
+            },
+            {
+              "token": "HeavyPulp",
+              "symbol": "HeavyPulp",
+              "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
+              "shortAddress": "8g5aye...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -11139,8 +11223,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 4772,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 4792,
           "examples": [
             {
               "token": "Richard Ptardio",
@@ -11164,6 +11248,13 @@
               "chain": "solana"
             },
             {
+              "token": "Mallow",
+              "symbol": "MALLOW",
+              "address": "3bzwwwyw6gktrhhnmpm3bwc36q3dqakk7ei9km4hpump",
+              "shortAddress": "3bzwww...pump",
+              "chain": "solana"
+            },
+            {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
@@ -11175,13 +11266,6 @@
               "symbol": "HeavyPulp",
               "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
               "shortAddress": "8g5aye...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "ハートちゃん",
-              "symbol": "Heart-Chan",
-              "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
-              "shortAddress": "gzdfz8...pump",
               "chain": "solana"
             }
           ]
@@ -11204,8 +11288,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1942,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1955,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -11256,7 +11340,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 356.36U; wallets 3; sold 41.15%; type KOL/Influencer",
+          "reason": "amount 356.36U; wallets 3; sold 49.84%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -11269,8 +11353,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1072,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1073,
           "examples": [
             {
               "token": "DARE",
@@ -11334,8 +11418,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 727,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 729,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -13679,7 +13763,7 @@
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T19:29:51.122Z",
+      "generatedAt": "2026-06-04T19:59:51.547Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -13899,9 +13983,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 785,
-          "highSoldRatioCount": 785,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 787,
+          "highSoldRatioCount": 787,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -13985,6 +14069,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 91.67%",
             "watch only; sold ratio 84.11%",
@@ -13993,8 +14078,7 @@
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 94.23%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 96.6%"
+            "watch only; sold ratio 97.66%"
           ]
         },
         {
@@ -14004,9 +14088,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 626,
-          "highSoldRatioCount": 626,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 629,
+          "highSoldRatioCount": 629,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -14090,6 +14174,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 89.91%",
             "watch only; sold ratio 91.67%",
@@ -14098,8 +14183,7 @@
             "watch only; sold ratio 94.35%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 87.7%",
-            "watch only; sold ratio 83.11%"
+            "watch only; sold ratio 87.7%"
           ]
         },
         {
@@ -14109,9 +14193,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 608,
-          "highSoldRatioCount": 608,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 612,
+          "highSoldRatioCount": 612,
           "tokens": [
             {
               "token": "Michul Sellor",
@@ -14214,9 +14298,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 603,
-          "highSoldRatioCount": 603,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 605,
+          "highSoldRatioCount": 605,
           "tokens": [
             {
               "token": "X Pokémon",
@@ -14576,7 +14660,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1132.22U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 2141.33U; wallets 5; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -14589,23 +14673,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 10981,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 11006,
           "examples": [
-            {
-              "token": "Polyscam",
-              "symbol": "POLYSCAM",
-              "address": "3f9ediumspjpsudqk1arpsx9xts1j7qpgdw6njtdpump",
-              "shortAddress": "3f9edi...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Richard Ptardio",
-              "symbol": "PTARDIO",
-              "address": "cbi3cm3xvbsekuvi4qtzazplvz84cn8tmlmgpjvppump",
-              "shortAddress": "cbi3cm...pump",
-              "chain": "solana"
-            },
             {
               "token": "catwifpants",
               "symbol": "CWIF",
@@ -14633,6 +14703,20 @@
               "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
               "shortAddress": "fuxke7...cb8q",
               "chain": "solana"
+            },
+            {
+              "token": "DickButt",
+              "symbol": "DickButt",
+              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
+              "shortAddress": "2p6pyh...o4d5",
+              "chain": "solana"
+            },
+            {
+              "token": "HeavyPulp",
+              "symbol": "HeavyPulp",
+              "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
+              "shortAddress": "8g5aye...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -14654,8 +14738,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 4772,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 4792,
           "examples": [
             {
               "token": "Richard Ptardio",
@@ -14679,6 +14763,13 @@
               "chain": "solana"
             },
             {
+              "token": "Mallow",
+              "symbol": "MALLOW",
+              "address": "3bzwwwyw6gktrhhnmpm3bwc36q3dqakk7ei9km4hpump",
+              "shortAddress": "3bzwww...pump",
+              "chain": "solana"
+            },
+            {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
@@ -14690,13 +14781,6 @@
               "symbol": "HeavyPulp",
               "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
               "shortAddress": "8g5aye...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "ハートちゃん",
-              "symbol": "Heart-Chan",
-              "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
-              "shortAddress": "gzdfz8...pump",
               "chain": "solana"
             }
           ]
@@ -14719,8 +14803,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1942,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1955,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -14771,7 +14855,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 356.36U; wallets 3; sold 41.15%; type KOL/Influencer",
+          "reason": "amount 356.36U; wallets 3; sold 49.84%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -14784,8 +14868,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1072,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1073,
           "examples": [
             {
               "token": "DARE",
@@ -14849,8 +14933,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 727,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 729,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -17245,12 +17329,12 @@
     {
       "date": "2026-05-31",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-04T19:29:51.122Z",
-      "runCount": 11,
+      "generatedAt": "2026-06-04T19:59:51.547Z",
+      "runCount": 10,
       "statuses": {
-        "ok": 11
+        "ok": 10
       },
-      "rawSignalCount": 649,
+      "rawSignalCount": 590,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -17465,9 +17549,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 785,
-          "highSoldRatioCount": 785,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 787,
+          "highSoldRatioCount": 787,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -17551,6 +17635,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 91.67%",
             "watch only; sold ratio 84.11%",
@@ -17559,8 +17644,7 @@
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 94.23%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 96.6%"
+            "watch only; sold ratio 97.66%"
           ]
         },
         {
@@ -17570,9 +17654,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 626,
-          "highSoldRatioCount": 626,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 629,
+          "highSoldRatioCount": 629,
           "tokens": [
             {
               "token": "Happy The Elephant",
@@ -17656,6 +17740,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 91.59%",
             "watch only; sold ratio 81.8%",
             "watch only; sold ratio 89.91%",
             "watch only; sold ratio 91.67%",
@@ -17664,8 +17749,7 @@
             "watch only; sold ratio 94.35%",
             "watch only; sold ratio 91.68%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 87.7%",
-            "watch only; sold ratio 83.11%"
+            "watch only; sold ratio 87.7%"
           ]
         },
         {
@@ -17675,9 +17759,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 608,
-          "highSoldRatioCount": 608,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 612,
+          "highSoldRatioCount": 612,
           "tokens": [
             {
               "token": "Michul Sellor",
@@ -17780,9 +17864,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 603,
-          "highSoldRatioCount": 603,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 605,
+          "highSoldRatioCount": 605,
           "tokens": [
             {
               "token": "X Pokémon",
@@ -18142,7 +18226,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1132.22U; wallets 3; sold 100%; type KOL/Influencer",
+          "reason": "amount 2141.33U; wallets 5; sold 100%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -18155,23 +18239,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 10981,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 11006,
           "examples": [
-            {
-              "token": "Polyscam",
-              "symbol": "POLYSCAM",
-              "address": "3f9ediumspjpsudqk1arpsx9xts1j7qpgdw6njtdpump",
-              "shortAddress": "3f9edi...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "Richard Ptardio",
-              "symbol": "PTARDIO",
-              "address": "cbi3cm3xvbsekuvi4qtzazplvz84cn8tmlmgpjvppump",
-              "shortAddress": "cbi3cm...pump",
-              "chain": "solana"
-            },
             {
               "token": "catwifpants",
               "symbol": "CWIF",
@@ -18199,6 +18269,20 @@
               "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
               "shortAddress": "fuxke7...cb8q",
               "chain": "solana"
+            },
+            {
+              "token": "DickButt",
+              "symbol": "DickButt",
+              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
+              "shortAddress": "2p6pyh...o4d5",
+              "chain": "solana"
+            },
+            {
+              "token": "HeavyPulp",
+              "symbol": "HeavyPulp",
+              "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
+              "shortAddress": "8g5aye...pump",
+              "chain": "solana"
             }
           ]
         },
@@ -18220,8 +18304,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 4772,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 4792,
           "examples": [
             {
               "token": "Richard Ptardio",
@@ -18245,6 +18329,13 @@
               "chain": "solana"
             },
             {
+              "token": "Mallow",
+              "symbol": "MALLOW",
+              "address": "3bzwwwyw6gktrhhnmpm3bwc36q3dqakk7ei9km4hpump",
+              "shortAddress": "3bzwww...pump",
+              "chain": "solana"
+            },
+            {
               "token": "Justice For Henry Nowak",
               "symbol": "HENRY",
               "address": "hfafnsnjmbwmmrkwneuuohj8v6unugfzkpu3seajpump",
@@ -18256,13 +18347,6 @@
               "symbol": "HeavyPulp",
               "address": "8g5ayesjf4q7fewegef4jtnuwzbekcqhystfqf9ppump",
               "shortAddress": "8g5aye...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "ハートちゃん",
-              "symbol": "Heart-Chan",
-              "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
-              "shortAddress": "gzdfz8...pump",
               "chain": "solana"
             }
           ]
@@ -18285,8 +18369,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1942,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1955,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -18337,7 +18421,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "amount < 500U",
-          "reason": "amount 356.36U; wallets 3; sold 41.15%; type KOL/Influencer",
+          "reason": "amount 356.36U; wallets 3; sold 49.84%; type KOL/Influencer",
           "score": 70.6,
           "wins": 0,
           "losses": 0,
@@ -18350,8 +18434,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 1072,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 1073,
           "examples": [
             {
               "token": "DARE",
@@ -18415,8 +18499,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-04T19:28:58.562Z",
-          "occurrences": 727,
+          "lastSeenAt": "2026-06-04T19:58:58.695Z",
+          "occurrences": 729,
           "examples": [
             {
               "token": "Solana Fork Staccana ",
@@ -18616,48 +18700,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260531105859",
-          "startedAt": "2026-05-31T10:58:59.092Z",
-          "finishedAt": "2026-05-31T10:59:53.367Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 59,
-          "decisions": 59,
-          "trades": 0,
-          "mistakes": [],
-          "notes": [],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 0,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 9,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 3000,
-            "openValueUsd": 0,
-            "equityUsd": 3000,
-            "realizedPnlUsd": 0,
-            "unrealizedPnlUsd": 0,
-            "totalPnlUsd": 0,
-            "totalPnlPct": 0
-          }
-        },
         {
           "runId": "20260531112858",
           "startedAt": "2026-05-31T11:28:58.421Z",
