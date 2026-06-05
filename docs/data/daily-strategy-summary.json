@@ -1,26 +1,64 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-05T14:59:01.982Z",
+  "generatedAt": "2026-06-05T15:29:01.321Z",
   "latest": {
     "date": "2026-06-05",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-05T14:59:01.971Z",
-    "runCount": 46,
+    "generatedAt": "2026-06-05T15:29:01.307Z",
+    "runCount": 47,
     "statuses": {
-      "ok": 46
+      "ok": 47
     },
-    "rawSignalCount": 2959,
-    "decisionCount": 0,
-    "actions": {},
-    "tradeCount": 0,
-    "buys": 0,
+    "rawSignalCount": 3022,
+    "decisionCount": 63,
+    "actions": {
+      "IGNORE": 40,
+      "WATCH": 20,
+      "BUY": 2,
+      "HOLD": 1
+    },
+    "tradeCount": 2,
+    "buys": 2,
     "sells": 0,
-    "buyUsd": 0,
+    "buyUsd": 345.6,
     "realizedPnlUsd": 0,
     "equityStartUsd": 2607.64,
-    "equityEndUsd": 2993.57,
-    "equityChangeUsd": 385.93,
-    "topBlockers": [],
+    "equityEndUsd": 2994.72,
+    "equityChangeUsd": 387.08,
+    "topBlockers": [
+      {
+        "name": "sold ratio > 35%",
+        "count": 58
+      },
+      {
+        "name": "amount < 500U",
+        "count": 3
+      },
+      {
+        "name": "blacklisted source wallet: 2g8ayw...VKc9",
+        "count": 3
+      },
+      {
+        "name": "blacklisted source wallet: rAfgrF...xnSX",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: Dj8MAV...HuHS",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: AAbnUK...iFxA",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: 3YgeJw...uzUY",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: HYJeo7...oavr",
+        "count": 2
+      }
+    ],
     "mistakeCount": 0,
     "mistakeTypes": {},
     "accountResets": 6,
@@ -224,10 +262,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-05T14:58:59.010Z",
-        "occurrences": 904,
-        "highSoldRatioCount": 904,
+        "lastSeenAt": "2026-06-05T15:28:58.424Z",
+        "occurrences": 906,
+        "highSoldRatioCount": 906,
         "tokens": [
+          {
+            "token": "goblintown",
+            "symbol": "goblintown",
+            "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+            "shortAddress": "dj15qj...pump",
+            "soldRatioPercent": 96.95,
+            "amountUsd": 335.59
+          },
           {
             "token": "Kintara",
             "symbol": "KINS",
@@ -299,17 +345,11 @@
             "shortAddress": "hj4lhz...pump",
             "soldRatioPercent": 98.5,
             "amountUsd": 89.38
-          },
-          {
-            "token": "Space X IPO",
-            "symbol": "SPCX",
-            "address": "6ypa337bbsjg33yobuslxvt9c4ph6qj7ehavhibmpump",
-            "shortAddress": "6ypa33...pump",
-            "soldRatioPercent": 100,
-            "amountUsd": 161
           }
         ],
         "reasons": [
+          "watch only; sold ratio 90.81%",
+          "watch only; sold ratio 96.95%",
           "watch only; sold ratio 90.54%",
           "watch only; sold ratio 98.13%",
           "watch only; sold ratio 90.23%",
@@ -317,9 +357,7 @@
           "watch only; sold ratio 93.22%",
           "watch only; sold ratio 93.84%",
           "watch only; sold ratio 100%",
-          "watch only; sold ratio 80.32%",
-          "watch only; sold ratio 92.43%",
-          "watch only; sold ratio 80.34%"
+          "watch only; sold ratio 80.32%"
         ]
       },
       {
@@ -329,10 +367,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-05T14:58:59.010Z",
-        "occurrences": 718,
-        "highSoldRatioCount": 718,
+        "lastSeenAt": "2026-06-05T15:28:58.424Z",
+        "occurrences": 720,
+        "highSoldRatioCount": 720,
         "tokens": [
+          {
+            "token": "goblintown",
+            "symbol": "goblintown",
+            "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+            "shortAddress": "dj15qj...pump",
+            "soldRatioPercent": 96.95,
+            "amountUsd": 335.59
+          },
           {
             "token": "Kintara",
             "symbol": "KINS",
@@ -404,17 +450,11 @@
             "shortAddress": "9dvozm...pump",
             "soldRatioPercent": 81.26,
             "amountUsd": 214.1
-          },
-          {
-            "token": "UFC Freedom 250",
-            "symbol": "UFC250",
-            "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-            "shortAddress": "bavmek...pump",
-            "soldRatioPercent": 80.43,
-            "amountUsd": 137.11
           }
         ],
         "reasons": [
+          "watch only; sold ratio 90.81%",
+          "watch only; sold ratio 96.95%",
           "watch only; sold ratio 90.54%",
           "watch only; sold ratio 98.13%",
           "watch only; sold ratio 90.23%",
@@ -422,9 +462,7 @@
           "watch only; sold ratio 93.22%",
           "watch only; sold ratio 93.84%",
           "watch only; sold ratio 80.32%",
-          "watch only; sold ratio 100%",
-          "watch only; sold ratio 92.43%",
-          "watch only; sold ratio 80.34%"
+          "watch only; sold ratio 100%"
         ]
       },
       {
@@ -434,9 +472,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-05T14:58:59.010Z",
-        "occurrences": 708,
-        "highSoldRatioCount": 708,
+        "lastSeenAt": "2026-06-05T15:28:58.424Z",
+        "occurrences": 712,
+        "highSoldRatioCount": 712,
         "tokens": [
           {
             "token": "Kintara",
@@ -520,6 +558,8 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 98.13%",
+          "watch only; sold ratio 90.81%",
           "watch only; sold ratio 98.1%",
           "watch only; sold ratio 90.69%",
           "watch only; sold ratio 90.54%",
@@ -527,9 +567,7 @@
           "watch only; sold ratio 98.47%",
           "watch only; sold ratio 98.21%",
           "watch only; sold ratio 98.91%",
-          "watch only; sold ratio 80.47%",
-          "watch only; sold ratio 97.66%",
-          "watch only; sold ratio 80.6%"
+          "watch only; sold ratio 80.47%"
         ]
       },
       {
@@ -539,10 +577,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-06-05T14:58:59.010Z",
-        "occurrences": 700,
-        "highSoldRatioCount": 700,
+        "lastSeenAt": "2026-06-05T15:28:58.424Z",
+        "occurrences": 706,
+        "highSoldRatioCount": 706,
         "tokens": [
+          {
+            "token": "goblintown",
+            "symbol": "goblintown",
+            "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+            "shortAddress": "dj15qj...pump",
+            "soldRatioPercent": 96.95,
+            "amountUsd": 335.59
+          },
           {
             "token": "honter boden",
             "symbol": "HONTER",
@@ -614,27 +660,19 @@
             "shortAddress": "9dvozm...pump",
             "soldRatioPercent": 81.26,
             "amountUsd": 214.1
-          },
-          {
-            "token": "UFC Freedom 250",
-            "symbol": "UFC250",
-            "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-            "shortAddress": "bavmek...pump",
-            "soldRatioPercent": 80.43,
-            "amountUsd": 137.11
           }
         ],
         "reasons": [
+          "watch only; sold ratio 100%",
+          "watch only; sold ratio 96.5%",
+          "watch only; sold ratio 95.77%",
+          "watch only; sold ratio 90.81%",
+          "watch only; sold ratio 96.95%",
           "watch only; sold ratio 94.17%",
           "watch only; sold ratio 95.23%",
           "watch only; sold ratio 90.54%",
           "watch only; sold ratio 98.47%",
-          "watch only; sold ratio 90.28%",
-          "watch only; sold ratio 90.82%",
-          "watch only; sold ratio 100%",
-          "watch only; sold ratio 90.75%",
-          "watch only; sold ratio 98.13%",
-          "watch only; sold ratio 80.4%"
+          "watch only; sold ratio 90.28%"
         ]
       },
       {
@@ -644,9 +682,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-05T14:58:59.010Z",
-        "occurrences": 668,
-        "highSoldRatioCount": 668,
+        "lastSeenAt": "2026-06-05T15:28:58.424Z",
+        "occurrences": 672,
+        "highSoldRatioCount": 672,
         "tokens": [
           {
             "token": "honter boden",
@@ -730,16 +768,16 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 98.13%",
+          "watch only; sold ratio 95.77%",
+          "watch only; sold ratio 90.81%",
+          "watch only; sold ratio 96.95%",
           "watch only; sold ratio 98.1%",
           "watch only; sold ratio 95.23%",
           "watch only; sold ratio 90.54%",
           "watch only; sold ratio 98.07%",
           "watch only; sold ratio 90.82%",
-          "watch only; sold ratio 98.21%",
-          "watch only; sold ratio 90.75%",
-          "watch only; sold ratio 98.13%",
-          "watch only; sold ratio 80.4%",
-          "watch only; sold ratio 93.22%"
+          "watch only; sold ratio 98.21%"
         ]
       }
     ],
@@ -901,7 +939,7 @@
         "title": "solana KOL/Influencer 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 1760.99U; wallets 3; sold 73.3%; type KOL/Influencer",
+        "reason": "amount 2607.6U; wallets 3; sold 81.86%; type KOL/Influencer",
         "score": 62,
         "wins": 0,
         "losses": 0,
@@ -914,23 +952,9 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-05T14:58:59.010Z",
-        "occurrences": 11993,
+        "lastSeenAt": "2026-06-05T15:28:58.424Z",
+        "occurrences": 12022,
         "examples": [
-          {
-            "token": "grug",
-            "symbol": "grug",
-            "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
-            "shortAddress": "fuxke7...cb8q",
-            "chain": "solana"
-          },
-          {
-            "token": "DickButt",
-            "symbol": "DickButt",
-            "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
-            "shortAddress": "2p6pyh...o4d5",
-            "chain": "solana"
-          },
           {
             "token": "HeavyPulp",
             "symbol": "HeavyPulp",
@@ -958,6 +982,20 @@
             "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
             "shortAddress": "gzdfz8...pump",
             "chain": "solana"
+          },
+          {
+            "token": "The Battle Of Goonland",
+            "symbol": "Goonland",
+            "address": "gury2r9dkymfefphpegvqgiz4vofcymavqbawa5ppump",
+            "shortAddress": "gury2r...pump",
+            "chain": "solana"
+          },
+          {
+            "token": "Scarlet & Violet 151",
+            "symbol": "SV151",
+            "address": "sv151d5pjygaka8ajjckzm4wfnrx5g92fye94jqjk7g",
+            "shortAddress": "sv151d...jk7g",
+            "chain": "solana"
           }
         ]
       },
@@ -979,8 +1017,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-05T14:58:59.010Z",
-        "occurrences": 5511,
+        "lastSeenAt": "2026-06-05T15:28:58.424Z",
+        "occurrences": 5527,
         "examples": [
           {
             "token": "DickButt",
@@ -1044,8 +1082,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-05T14:58:59.010Z",
-        "occurrences": 2449,
+        "lastSeenAt": "2026-06-05T15:28:58.424Z",
+        "occurrences": 2462,
         "examples": [
           {
             "token": "帕鲁家族",
@@ -1109,9 +1147,16 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-05T14:58:59.010Z",
-        "occurrences": 1111,
+        "lastSeenAt": "2026-06-05T15:28:58.424Z",
+        "occurrences": 1113,
         "examples": [
+          {
+            "token": "APU",
+            "symbol": "APU",
+            "address": "24kko3vwwmktkb9cvct2zazgjzb2r2inryxcptyfpump",
+            "shortAddress": "24kko3...pump",
+            "chain": "solana"
+          },
           {
             "token": "DARE",
             "symbol": "DARE",
@@ -1145,13 +1190,6 @@
             "symbol": "CUM",
             "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
             "shortAddress": "oqu4dd...pump",
-            "chain": "solana"
-          },
-          {
-            "token": "锄头",
-            "symbol": "锄头",
-            "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-            "shortAddress": "ohamp5...pump",
             "chain": "solana"
           }
         ]
@@ -3480,6 +3518,48 @@
           "totalPnlUsd": -6.43,
           "totalPnlPct": -0.21
         }
+      },
+      {
+        "runId": "20260605152858",
+        "startedAt": "2026-06-05T15:28:58.424Z",
+        "finishedAt": "2026-06-05T15:29:00.901Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 63,
+        "decisions": 63,
+        "trades": 2,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 2,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 13,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2654.4,
+          "openValueUsd": 340.32,
+          "equityUsd": 2994.72,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -5.28,
+          "totalPnlUsd": -5.28,
+          "totalPnlPct": -0.18
+        }
       }
     ]
   },
@@ -3487,23 +3567,61 @@
     {
       "date": "2026-06-05",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-05T14:59:01.971Z",
-      "runCount": 46,
+      "generatedAt": "2026-06-05T15:29:01.307Z",
+      "runCount": 47,
       "statuses": {
-        "ok": 46
+        "ok": 47
       },
-      "rawSignalCount": 2959,
-      "decisionCount": 0,
-      "actions": {},
-      "tradeCount": 0,
-      "buys": 0,
+      "rawSignalCount": 3022,
+      "decisionCount": 63,
+      "actions": {
+        "IGNORE": 40,
+        "WATCH": 20,
+        "BUY": 2,
+        "HOLD": 1
+      },
+      "tradeCount": 2,
+      "buys": 2,
       "sells": 0,
-      "buyUsd": 0,
+      "buyUsd": 345.6,
       "realizedPnlUsd": 0,
       "equityStartUsd": 2607.64,
-      "equityEndUsd": 2993.57,
-      "equityChangeUsd": 385.93,
-      "topBlockers": [],
+      "equityEndUsd": 2994.72,
+      "equityChangeUsd": 387.08,
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 58
+        },
+        {
+          "name": "amount < 500U",
+          "count": 3
+        },
+        {
+          "name": "blacklisted source wallet: 2g8ayw...VKc9",
+          "count": 3
+        },
+        {
+          "name": "blacklisted source wallet: rAfgrF...xnSX",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: Dj8MAV...HuHS",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: AAbnUK...iFxA",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: 3YgeJw...uzUY",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: HYJeo7...oavr",
+          "count": 2
+        }
+      ],
       "mistakeCount": 0,
       "mistakeTypes": {},
       "accountResets": 6,
@@ -3707,10 +3825,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 904,
-          "highSoldRatioCount": 904,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 906,
+          "highSoldRatioCount": 906,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -3782,17 +3908,11 @@
               "shortAddress": "hj4lhz...pump",
               "soldRatioPercent": 98.5,
               "amountUsd": 89.38
-            },
-            {
-              "token": "Space X IPO",
-              "symbol": "SPCX",
-              "address": "6ypa337bbsjg33yobuslxvt9c4ph6qj7ehavhibmpump",
-              "shortAddress": "6ypa33...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 161
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -3800,9 +3920,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 80.32%"
           ]
         },
         {
@@ -3812,10 +3930,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 718,
-          "highSoldRatioCount": 718,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 720,
+          "highSoldRatioCount": 720,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -3887,17 +4013,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -3905,9 +4025,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -3917,9 +4035,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 708,
-          "highSoldRatioCount": 708,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 712,
+          "highSoldRatioCount": 712,
           "tokens": [
             {
               "token": "Kintara",
@@ -4003,6 +4121,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 90.81%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 90.69%",
             "watch only; sold ratio 90.54%",
@@ -4010,9 +4130,7 @@
             "watch only; sold ratio 98.47%",
             "watch only; sold ratio 98.21%",
             "watch only; sold ratio 98.91%",
-            "watch only; sold ratio 80.47%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 80.6%"
+            "watch only; sold ratio 80.47%"
           ]
         },
         {
@@ -4022,10 +4140,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 700,
-          "highSoldRatioCount": 700,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 706,
+          "highSoldRatioCount": 706,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "honter boden",
               "symbol": "HONTER",
@@ -4097,27 +4223,19 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 96.5%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 94.17%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.47%",
-            "watch only; sold ratio 90.28%",
-            "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%"
+            "watch only; sold ratio 90.28%"
           ]
         },
         {
@@ -4127,9 +4245,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 668,
-          "highSoldRatioCount": 668,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 672,
+          "highSoldRatioCount": 672,
           "tokens": [
             {
               "token": "honter boden",
@@ -4213,16 +4331,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.07%",
             "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 98.21%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%",
-            "watch only; sold ratio 93.22%"
+            "watch only; sold ratio 98.21%"
           ]
         }
       ],
@@ -4384,7 +4502,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1760.99U; wallets 3; sold 73.3%; type KOL/Influencer",
+          "reason": "amount 2607.6U; wallets 3; sold 81.86%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -4397,23 +4515,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 11993,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 12022,
           "examples": [
-            {
-              "token": "grug",
-              "symbol": "grug",
-              "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
-              "shortAddress": "fuxke7...cb8q",
-              "chain": "solana"
-            },
-            {
-              "token": "DickButt",
-              "symbol": "DickButt",
-              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
-              "shortAddress": "2p6pyh...o4d5",
-              "chain": "solana"
-            },
             {
               "token": "HeavyPulp",
               "symbol": "HeavyPulp",
@@ -4441,6 +4545,20 @@
               "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
               "shortAddress": "gzdfz8...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Battle Of Goonland",
+              "symbol": "Goonland",
+              "address": "gury2r9dkymfefphpegvqgiz4vofcymavqbawa5ppump",
+              "shortAddress": "gury2r...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Scarlet & Violet 151",
+              "symbol": "SV151",
+              "address": "sv151d5pjygaka8ajjckzm4wfnrx5g92fye94jqjk7g",
+              "shortAddress": "sv151d...jk7g",
+              "chain": "solana"
             }
           ]
         },
@@ -4462,8 +4580,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 5511,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 5527,
           "examples": [
             {
               "token": "DickButt",
@@ -4527,8 +4645,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 2449,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 2462,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -4592,9 +4710,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 1111,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 1113,
           "examples": [
+            {
+              "token": "APU",
+              "symbol": "APU",
+              "address": "24kko3vwwmktkb9cvct2zazgjzb2r2inryxcptyfpump",
+              "shortAddress": "24kko3...pump",
+              "chain": "solana"
+            },
             {
               "token": "DARE",
               "symbol": "DARE",
@@ -4628,13 +4753,6 @@
               "symbol": "CUM",
               "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
               "shortAddress": "oqu4dd...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
               "chain": "solana"
             }
           ]
@@ -6963,13 +7081,55 @@
             "totalPnlUsd": -6.43,
             "totalPnlPct": -0.21
           }
+        },
+        {
+          "runId": "20260605152858",
+          "startedAt": "2026-06-05T15:28:58.424Z",
+          "finishedAt": "2026-06-05T15:29:00.901Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 63,
+          "decisions": 63,
+          "trades": 2,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 2,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 13,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2654.4,
+            "openValueUsd": 340.32,
+            "equityUsd": 2994.72,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -5.28,
+            "totalPnlUsd": -5.28,
+            "totalPnlPct": -0.18
+          }
         }
       ]
     },
     {
       "date": "2026-06-04",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-05T14:59:01.971Z",
+      "generatedAt": "2026-06-05T15:29:01.308Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -7189,10 +7349,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 904,
-          "highSoldRatioCount": 904,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 906,
+          "highSoldRatioCount": 906,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -7264,17 +7432,11 @@
               "shortAddress": "hj4lhz...pump",
               "soldRatioPercent": 98.5,
               "amountUsd": 89.38
-            },
-            {
-              "token": "Space X IPO",
-              "symbol": "SPCX",
-              "address": "6ypa337bbsjg33yobuslxvt9c4ph6qj7ehavhibmpump",
-              "shortAddress": "6ypa33...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 161
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -7282,9 +7444,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 80.32%"
           ]
         },
         {
@@ -7294,10 +7454,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 718,
-          "highSoldRatioCount": 718,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 720,
+          "highSoldRatioCount": 720,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -7369,17 +7537,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -7387,9 +7549,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -7399,9 +7559,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 708,
-          "highSoldRatioCount": 708,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 712,
+          "highSoldRatioCount": 712,
           "tokens": [
             {
               "token": "Kintara",
@@ -7485,6 +7645,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 90.81%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 90.69%",
             "watch only; sold ratio 90.54%",
@@ -7492,9 +7654,7 @@
             "watch only; sold ratio 98.47%",
             "watch only; sold ratio 98.21%",
             "watch only; sold ratio 98.91%",
-            "watch only; sold ratio 80.47%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 80.6%"
+            "watch only; sold ratio 80.47%"
           ]
         },
         {
@@ -7504,10 +7664,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 700,
-          "highSoldRatioCount": 700,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 706,
+          "highSoldRatioCount": 706,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "honter boden",
               "symbol": "HONTER",
@@ -7579,27 +7747,19 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 96.5%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 94.17%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.47%",
-            "watch only; sold ratio 90.28%",
-            "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%"
+            "watch only; sold ratio 90.28%"
           ]
         },
         {
@@ -7609,9 +7769,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 668,
-          "highSoldRatioCount": 668,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 672,
+          "highSoldRatioCount": 672,
           "tokens": [
             {
               "token": "honter boden",
@@ -7695,16 +7855,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.07%",
             "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 98.21%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%",
-            "watch only; sold ratio 93.22%"
+            "watch only; sold ratio 98.21%"
           ]
         }
       ],
@@ -7866,7 +8026,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1760.99U; wallets 3; sold 73.3%; type KOL/Influencer",
+          "reason": "amount 2607.6U; wallets 3; sold 81.86%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -7879,23 +8039,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 11993,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 12022,
           "examples": [
-            {
-              "token": "grug",
-              "symbol": "grug",
-              "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
-              "shortAddress": "fuxke7...cb8q",
-              "chain": "solana"
-            },
-            {
-              "token": "DickButt",
-              "symbol": "DickButt",
-              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
-              "shortAddress": "2p6pyh...o4d5",
-              "chain": "solana"
-            },
             {
               "token": "HeavyPulp",
               "symbol": "HeavyPulp",
@@ -7923,6 +8069,20 @@
               "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
               "shortAddress": "gzdfz8...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Battle Of Goonland",
+              "symbol": "Goonland",
+              "address": "gury2r9dkymfefphpegvqgiz4vofcymavqbawa5ppump",
+              "shortAddress": "gury2r...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Scarlet & Violet 151",
+              "symbol": "SV151",
+              "address": "sv151d5pjygaka8ajjckzm4wfnrx5g92fye94jqjk7g",
+              "shortAddress": "sv151d...jk7g",
+              "chain": "solana"
             }
           ]
         },
@@ -7944,8 +8104,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 5511,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 5527,
           "examples": [
             {
               "token": "DickButt",
@@ -8009,8 +8169,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 2449,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 2462,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -8074,9 +8234,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 1111,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 1113,
           "examples": [
+            {
+              "token": "APU",
+              "symbol": "APU",
+              "address": "24kko3vwwmktkb9cvct2zazgjzb2r2inryxcptyfpump",
+              "shortAddress": "24kko3...pump",
+              "chain": "solana"
+            },
             {
               "token": "DARE",
               "symbol": "DARE",
@@ -8110,13 +8277,6 @@
               "symbol": "CUM",
               "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
               "shortAddress": "oqu4dd...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
               "chain": "solana"
             }
           ]
@@ -10478,7 +10638,7 @@
     {
       "date": "2026-06-03",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-05T14:59:01.972Z",
+      "generatedAt": "2026-06-05T15:29:01.308Z",
       "runCount": 40,
       "statuses": {
         "ok": 40
@@ -10698,10 +10858,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 904,
-          "highSoldRatioCount": 904,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 906,
+          "highSoldRatioCount": 906,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -10773,17 +10941,11 @@
               "shortAddress": "hj4lhz...pump",
               "soldRatioPercent": 98.5,
               "amountUsd": 89.38
-            },
-            {
-              "token": "Space X IPO",
-              "symbol": "SPCX",
-              "address": "6ypa337bbsjg33yobuslxvt9c4ph6qj7ehavhibmpump",
-              "shortAddress": "6ypa33...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 161
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -10791,9 +10953,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 80.32%"
           ]
         },
         {
@@ -10803,10 +10963,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 718,
-          "highSoldRatioCount": 718,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 720,
+          "highSoldRatioCount": 720,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -10878,17 +11046,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -10896,9 +11058,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -10908,9 +11068,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 708,
-          "highSoldRatioCount": 708,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 712,
+          "highSoldRatioCount": 712,
           "tokens": [
             {
               "token": "Kintara",
@@ -10994,6 +11154,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 90.81%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 90.69%",
             "watch only; sold ratio 90.54%",
@@ -11001,9 +11163,7 @@
             "watch only; sold ratio 98.47%",
             "watch only; sold ratio 98.21%",
             "watch only; sold ratio 98.91%",
-            "watch only; sold ratio 80.47%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 80.6%"
+            "watch only; sold ratio 80.47%"
           ]
         },
         {
@@ -11013,10 +11173,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 700,
-          "highSoldRatioCount": 700,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 706,
+          "highSoldRatioCount": 706,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "honter boden",
               "symbol": "HONTER",
@@ -11088,27 +11256,19 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 96.5%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 94.17%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.47%",
-            "watch only; sold ratio 90.28%",
-            "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%"
+            "watch only; sold ratio 90.28%"
           ]
         },
         {
@@ -11118,9 +11278,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 668,
-          "highSoldRatioCount": 668,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 672,
+          "highSoldRatioCount": 672,
           "tokens": [
             {
               "token": "honter boden",
@@ -11204,16 +11364,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.07%",
             "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 98.21%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%",
-            "watch only; sold ratio 93.22%"
+            "watch only; sold ratio 98.21%"
           ]
         }
       ],
@@ -11375,7 +11535,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1760.99U; wallets 3; sold 73.3%; type KOL/Influencer",
+          "reason": "amount 2607.6U; wallets 3; sold 81.86%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -11388,23 +11548,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 11993,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 12022,
           "examples": [
-            {
-              "token": "grug",
-              "symbol": "grug",
-              "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
-              "shortAddress": "fuxke7...cb8q",
-              "chain": "solana"
-            },
-            {
-              "token": "DickButt",
-              "symbol": "DickButt",
-              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
-              "shortAddress": "2p6pyh...o4d5",
-              "chain": "solana"
-            },
             {
               "token": "HeavyPulp",
               "symbol": "HeavyPulp",
@@ -11432,6 +11578,20 @@
               "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
               "shortAddress": "gzdfz8...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Battle Of Goonland",
+              "symbol": "Goonland",
+              "address": "gury2r9dkymfefphpegvqgiz4vofcymavqbawa5ppump",
+              "shortAddress": "gury2r...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Scarlet & Violet 151",
+              "symbol": "SV151",
+              "address": "sv151d5pjygaka8ajjckzm4wfnrx5g92fye94jqjk7g",
+              "shortAddress": "sv151d...jk7g",
+              "chain": "solana"
             }
           ]
         },
@@ -11453,8 +11613,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 5511,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 5527,
           "examples": [
             {
               "token": "DickButt",
@@ -11518,8 +11678,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 2449,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 2462,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -11583,9 +11743,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 1111,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 1113,
           "examples": [
+            {
+              "token": "APU",
+              "symbol": "APU",
+              "address": "24kko3vwwmktkb9cvct2zazgjzb2r2inryxcptyfpump",
+              "shortAddress": "24kko3...pump",
+              "chain": "solana"
+            },
             {
               "token": "DARE",
               "symbol": "DARE",
@@ -11619,13 +11786,6 @@
               "symbol": "CUM",
               "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
               "shortAddress": "oqu4dd...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
               "chain": "solana"
             }
           ]
@@ -13650,7 +13810,7 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-05T14:59:01.972Z",
+      "generatedAt": "2026-06-05T15:29:01.309Z",
       "runCount": 47,
       "statuses": {
         "ok": 44,
@@ -13874,10 +14034,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 904,
-          "highSoldRatioCount": 904,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 906,
+          "highSoldRatioCount": 906,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -13949,17 +14117,11 @@
               "shortAddress": "hj4lhz...pump",
               "soldRatioPercent": 98.5,
               "amountUsd": 89.38
-            },
-            {
-              "token": "Space X IPO",
-              "symbol": "SPCX",
-              "address": "6ypa337bbsjg33yobuslxvt9c4ph6qj7ehavhibmpump",
-              "shortAddress": "6ypa33...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 161
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -13967,9 +14129,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 80.32%"
           ]
         },
         {
@@ -13979,10 +14139,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 718,
-          "highSoldRatioCount": 718,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 720,
+          "highSoldRatioCount": 720,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -14054,17 +14222,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -14072,9 +14234,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -14084,9 +14244,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 708,
-          "highSoldRatioCount": 708,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 712,
+          "highSoldRatioCount": 712,
           "tokens": [
             {
               "token": "Kintara",
@@ -14170,6 +14330,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 90.81%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 90.69%",
             "watch only; sold ratio 90.54%",
@@ -14177,9 +14339,7 @@
             "watch only; sold ratio 98.47%",
             "watch only; sold ratio 98.21%",
             "watch only; sold ratio 98.91%",
-            "watch only; sold ratio 80.47%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 80.6%"
+            "watch only; sold ratio 80.47%"
           ]
         },
         {
@@ -14189,10 +14349,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 700,
-          "highSoldRatioCount": 700,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 706,
+          "highSoldRatioCount": 706,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "honter boden",
               "symbol": "HONTER",
@@ -14264,27 +14432,19 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 96.5%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 94.17%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.47%",
-            "watch only; sold ratio 90.28%",
-            "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%"
+            "watch only; sold ratio 90.28%"
           ]
         },
         {
@@ -14294,9 +14454,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 668,
-          "highSoldRatioCount": 668,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 672,
+          "highSoldRatioCount": 672,
           "tokens": [
             {
               "token": "honter boden",
@@ -14380,16 +14540,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.07%",
             "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 98.21%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%",
-            "watch only; sold ratio 93.22%"
+            "watch only; sold ratio 98.21%"
           ]
         }
       ],
@@ -14551,7 +14711,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1760.99U; wallets 3; sold 73.3%; type KOL/Influencer",
+          "reason": "amount 2607.6U; wallets 3; sold 81.86%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -14564,23 +14724,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 11993,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 12022,
           "examples": [
-            {
-              "token": "grug",
-              "symbol": "grug",
-              "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
-              "shortAddress": "fuxke7...cb8q",
-              "chain": "solana"
-            },
-            {
-              "token": "DickButt",
-              "symbol": "DickButt",
-              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
-              "shortAddress": "2p6pyh...o4d5",
-              "chain": "solana"
-            },
             {
               "token": "HeavyPulp",
               "symbol": "HeavyPulp",
@@ -14608,6 +14754,20 @@
               "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
               "shortAddress": "gzdfz8...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Battle Of Goonland",
+              "symbol": "Goonland",
+              "address": "gury2r9dkymfefphpegvqgiz4vofcymavqbawa5ppump",
+              "shortAddress": "gury2r...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Scarlet & Violet 151",
+              "symbol": "SV151",
+              "address": "sv151d5pjygaka8ajjckzm4wfnrx5g92fye94jqjk7g",
+              "shortAddress": "sv151d...jk7g",
+              "chain": "solana"
             }
           ]
         },
@@ -14629,8 +14789,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 5511,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 5527,
           "examples": [
             {
               "token": "DickButt",
@@ -14694,8 +14854,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 2449,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 2462,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -14759,9 +14919,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 1111,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 1113,
           "examples": [
+            {
+              "token": "APU",
+              "symbol": "APU",
+              "address": "24kko3vwwmktkb9cvct2zazgjzb2r2inryxcptyfpump",
+              "shortAddress": "24kko3...pump",
+              "chain": "solana"
+            },
             {
               "token": "DARE",
               "symbol": "DARE",
@@ -14795,13 +14962,6 @@
               "symbol": "CUM",
               "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
               "shortAddress": "oqu4dd...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
               "chain": "solana"
             }
           ]
@@ -17169,12 +17329,12 @@
     {
       "date": "2026-06-01",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-05T14:59:01.973Z",
-      "runCount": 20,
+      "generatedAt": "2026-06-05T15:29:01.309Z",
+      "runCount": 19,
       "statuses": {
-        "ok": 20
+        "ok": 19
       },
-      "rawSignalCount": 1244,
+      "rawSignalCount": 1184,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -17182,9 +17342,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 3009.32,
+      "equityStartUsd": 3010.34,
       "equityEndUsd": 3009.83,
-      "equityChangeUsd": 0.51,
+      "equityChangeUsd": -0.51,
       "topBlockers": [],
       "mistakeCount": 0,
       "mistakeTypes": {},
@@ -17389,10 +17549,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 904,
-          "highSoldRatioCount": 904,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 906,
+          "highSoldRatioCount": 906,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -17464,17 +17632,11 @@
               "shortAddress": "hj4lhz...pump",
               "soldRatioPercent": 98.5,
               "amountUsd": 89.38
-            },
-            {
-              "token": "Space X IPO",
-              "symbol": "SPCX",
-              "address": "6ypa337bbsjg33yobuslxvt9c4ph6qj7ehavhibmpump",
-              "shortAddress": "6ypa33...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 161
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -17482,9 +17644,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 100%",
-            "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 80.32%"
           ]
         },
         {
@@ -17494,10 +17654,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 718,
-          "highSoldRatioCount": 718,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 720,
+          "highSoldRatioCount": 720,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "Kintara",
               "symbol": "KINS",
@@ -17569,17 +17737,11 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.13%",
             "watch only; sold ratio 90.23%",
@@ -17587,9 +17749,7 @@
             "watch only; sold ratio 93.22%",
             "watch only; sold ratio 93.84%",
             "watch only; sold ratio 80.32%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 92.43%",
-            "watch only; sold ratio 80.34%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -17599,9 +17759,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 708,
-          "highSoldRatioCount": 708,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 712,
+          "highSoldRatioCount": 712,
           "tokens": [
             {
               "token": "Kintara",
@@ -17685,6 +17845,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 90.81%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 90.69%",
             "watch only; sold ratio 90.54%",
@@ -17692,9 +17854,7 @@
             "watch only; sold ratio 98.47%",
             "watch only; sold ratio 98.21%",
             "watch only; sold ratio 98.91%",
-            "watch only; sold ratio 80.47%",
-            "watch only; sold ratio 97.66%",
-            "watch only; sold ratio 80.6%"
+            "watch only; sold ratio 80.47%"
           ]
         },
         {
@@ -17704,10 +17864,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 700,
-          "highSoldRatioCount": 700,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 706,
+          "highSoldRatioCount": 706,
           "tokens": [
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
             {
               "token": "honter boden",
               "symbol": "HONTER",
@@ -17779,27 +17947,19 @@
               "shortAddress": "9dvozm...pump",
               "soldRatioPercent": 81.26,
               "amountUsd": 214.1
-            },
-            {
-              "token": "UFC Freedom 250",
-              "symbol": "UFC250",
-              "address": "bavmekx3z56rew2mzl6crwufvd6yehatftlfuvagpump",
-              "shortAddress": "bavmek...pump",
-              "soldRatioPercent": 80.43,
-              "amountUsd": 137.11
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
+            "watch only; sold ratio 96.5%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 94.17%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.47%",
-            "watch only; sold ratio 90.28%",
-            "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%"
+            "watch only; sold ratio 90.28%"
           ]
         },
         {
@@ -17809,9 +17969,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 668,
-          "highSoldRatioCount": 668,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 672,
+          "highSoldRatioCount": 672,
           "tokens": [
             {
               "token": "honter boden",
@@ -17895,16 +18055,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 98.13%",
+            "watch only; sold ratio 95.77%",
+            "watch only; sold ratio 90.81%",
+            "watch only; sold ratio 96.95%",
             "watch only; sold ratio 98.1%",
             "watch only; sold ratio 95.23%",
             "watch only; sold ratio 90.54%",
             "watch only; sold ratio 98.07%",
             "watch only; sold ratio 90.82%",
-            "watch only; sold ratio 98.21%",
-            "watch only; sold ratio 90.75%",
-            "watch only; sold ratio 98.13%",
-            "watch only; sold ratio 80.4%",
-            "watch only; sold ratio 93.22%"
+            "watch only; sold ratio 98.21%"
           ]
         }
       ],
@@ -18066,7 +18226,7 @@
           "title": "solana KOL/Influencer 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 1760.99U; wallets 3; sold 73.3%; type KOL/Influencer",
+          "reason": "amount 2607.6U; wallets 3; sold 81.86%; type KOL/Influencer",
           "score": 62,
           "wins": 0,
           "losses": 0,
@@ -18079,23 +18239,9 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 11993,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 12022,
           "examples": [
-            {
-              "token": "grug",
-              "symbol": "grug",
-              "address": "fuxke7mfmjbgru9p6zdnkowsuewghh2nc5jtfh43cb8q",
-              "shortAddress": "fuxke7...cb8q",
-              "chain": "solana"
-            },
-            {
-              "token": "DickButt",
-              "symbol": "DickButt",
-              "address": "2p6pyhmvb97rrryf7p98dpsbzcl5hxvgqyxqhdpjo4d5",
-              "shortAddress": "2p6pyh...o4d5",
-              "chain": "solana"
-            },
             {
               "token": "HeavyPulp",
               "symbol": "HeavyPulp",
@@ -18123,6 +18269,20 @@
               "address": "gzdfz8ush9ktpcusvnffirdom1pkd4swgb72b9avpump",
               "shortAddress": "gzdfz8...pump",
               "chain": "solana"
+            },
+            {
+              "token": "The Battle Of Goonland",
+              "symbol": "Goonland",
+              "address": "gury2r9dkymfefphpegvqgiz4vofcymavqbawa5ppump",
+              "shortAddress": "gury2r...pump",
+              "chain": "solana"
+            },
+            {
+              "token": "Scarlet & Violet 151",
+              "symbol": "SV151",
+              "address": "sv151d5pjygaka8ajjckzm4wfnrx5g92fye94jqjk7g",
+              "shortAddress": "sv151d...jk7g",
+              "chain": "solana"
             }
           ]
         },
@@ -18144,8 +18304,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 5511,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 5527,
           "examples": [
             {
               "token": "DickButt",
@@ -18209,8 +18369,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 2449,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 2462,
           "examples": [
             {
               "token": "帕鲁家族",
@@ -18274,9 +18434,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-05T14:58:59.010Z",
-          "occurrences": 1111,
+          "lastSeenAt": "2026-06-05T15:28:58.424Z",
+          "occurrences": 1113,
           "examples": [
+            {
+              "token": "APU",
+              "symbol": "APU",
+              "address": "24kko3vwwmktkb9cvct2zazgjzb2r2inryxcptyfpump",
+              "shortAddress": "24kko3...pump",
+              "chain": "solana"
+            },
             {
               "token": "DARE",
               "symbol": "DARE",
@@ -18310,13 +18477,6 @@
               "symbol": "CUM",
               "address": "oqu4ddycbdsf9j74vnegvcn1yznfyqepwac6pu6pump",
               "shortAddress": "oqu4dd...pump",
-              "chain": "solana"
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
               "chain": "solana"
             }
           ]
@@ -18540,77 +18700,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260601062858",
-          "startedAt": "2026-06-01T06:28:58.580Z",
-          "finishedAt": "2026-06-01T06:30:02.731Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 60,
-          "decisions": 60,
-          "trades": 1,
-          "mistakes": [],
-          "notes": [
-            "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
-          ],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 1,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 10,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": {
-            "timestamp": "2026-06-01T06:28:58.580Z",
-            "runId": "20260601062858",
-            "reason": "completed_cycle_reset",
-            "cycleSummaryId": "cycle-20260601062858",
-            "previousSession": {
-              "id": "20260601015858-cycle",
-              "startedAt": "2026-06-01T01:58:58.083Z",
-              "lastAuthOkAt": "2026-06-01T06:28:58.580Z",
-              "lastAuthFailureAt": "",
-              "authState": "online",
-              "authRecoveries": 3,
-              "resetReason": "completed_cycle_reset"
-            },
-            "previousCapital": {
-              "initialUsd": 3000,
-              "cashUsd": 2555.3,
-              "openValueUsd": 454.02,
-              "equityUsd": 3009.32,
-              "realizedPnlUsd": 0,
-              "unrealizedPnlUsd": 9.32,
-              "totalPnlUsd": 9.32,
-              "totalPnlPct": 0.31
-            },
-            "previousOpenPositions": 3,
-            "previousTrades": 3,
-            "previousDecisions": 500
-          },
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 2555.3,
-            "openValueUsd": 454.02,
-            "equityUsd": 3009.32,
-            "realizedPnlUsd": 0,
-            "unrealizedPnlUsd": 9.32,
-            "totalPnlUsd": 9.32,
-            "totalPnlPct": 0.31
-          }
-        },
         {
           "runId": "20260601065859",
           "startedAt": "2026-06-01T06:58:59.152Z",
