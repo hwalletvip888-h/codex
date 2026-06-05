@@ -1,40 +1,33 @@
 # 2026-06-05 策略模拟日报
 
-生成时间：2026-06-05T14:29:01.455Z
+生成时间：2026-06-05T14:59:01.971Z
 时区：Asia/Hong_Kong
 
 ## 当日结果
 
-- 扫描轮次：45
-- 原始信号：2896
-- 决策记录：500
-- 模拟成交：4 笔，买入 4 笔，卖出 0 笔
-- 买入金额：728.6U
+- 扫描轮次：46
+- 原始信号：2959
+- 决策记录：0
+- 模拟成交：0 笔，买入 0 笔，卖出 0 笔
+- 买入金额：0U
 - 已实现盈亏：0U
 - 权益变化：2607.64U -> 2993.57U（385.93U）
-- 账户重置：5 次
-- 周期总结：5 次
+- 账户重置：6 次
+- 周期总结：6 次
 - 钱包黑名单：28 个地址
 - 聪明钱只读观察：500 个地址
 
 ## 操作状态
 
-- ok: 45 轮
+- ok: 46 轮
 
 ## 主要阻断条件
 
-- sold ratio > 35%: 455 次
-- blacklisted source wallet: 2g8ayw...VKc9: 24 次
-- amount < 500U: 16 次
-- blacklisted source wallet: rAfgrF...xnSX: 16 次
-- blacklisted source wallet: Dj8MAV...HuHS: 16 次
-- blacklisted source wallet: AAbnUK...iFxA: 16 次
-- blacklisted source wallet: 3YgeJw...uzUY: 16 次
-- blacklisted source wallet: HYJeo7...oavr: 16 次
+- 暂无阻断记录
 
 ## 今日复盘
 
-- 今日有模拟成交，后续按止盈/止损和信号延续情况继续验证策略质量。
+- 今日没有满足买入条件的成交，优先观察阻断条件是否过严或市场信号质量不足。
 - 今日执行层没有记录错误。
 
 ## 不可篡改原则
