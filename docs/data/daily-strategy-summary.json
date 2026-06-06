@@ -1,26 +1,63 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-06T08:59:00.452Z",
+  "generatedAt": "2026-06-06T09:29:00.422Z",
   "latest": {
     "date": "2026-06-06",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-06T08:59:00.440Z",
-    "runCount": 34,
+    "generatedAt": "2026-06-06T09:29:00.409Z",
+    "runCount": 35,
     "statuses": {
-      "ok": 34
+      "ok": 35
     },
-    "rawSignalCount": 2136,
-    "decisionCount": 0,
-    "actions": {},
-    "tradeCount": 0,
-    "buys": 0,
+    "rawSignalCount": 2198,
+    "decisionCount": 62,
+    "actions": {
+      "IGNORE": 43,
+      "WATCH": 18,
+      "BUY": 1
+    },
+    "tradeCount": 1,
+    "buys": 1,
     "sells": 0,
-    "buyUsd": 0,
+    "buyUsd": 123.3,
     "realizedPnlUsd": 0,
     "equityStartUsd": 2994.72,
-    "equityEndUsd": 2999.62,
-    "equityChangeUsd": 4.9,
-    "topBlockers": [],
+    "equityEndUsd": 2999.63,
+    "equityChangeUsd": 4.91,
+    "topBlockers": [
+      {
+        "name": "sold ratio > 35%",
+        "count": 60
+      },
+      {
+        "name": "blacklisted source wallet: 2g8ayw...VKc9",
+        "count": 7
+      },
+      {
+        "name": "amount < 500U",
+        "count": 4
+      },
+      {
+        "name": "blacklisted source wallet: rAfgrF...xnSX",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: Dj8MAV...HuHS",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: AAbnUK...iFxA",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: 3YgeJw...uzUY",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: HYJeo7...oavr",
+        "count": 2
+      }
+    ],
     "mistakeCount": 0,
     "mistakeTypes": {},
     "accountResets": 4,
@@ -224,9 +261,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 990,
-        "highSoldRatioCount": 990,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 995,
+        "highSoldRatioCount": 995,
         "tokens": [
           {
             "token": "XDC NETWORK",
@@ -310,6 +347,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 85.77%",
           "watch only; sold ratio 85.94%",
           "watch only; sold ratio 100%",
           "watch only; sold ratio 91.69%",
@@ -318,8 +356,7 @@
           "watch only; sold ratio 90.13%",
           "watch only; sold ratio 90.1%",
           "watch only; sold ratio 85.37%",
-          "watch only; sold ratio 89.78%",
-          "watch only; sold ratio 84.15%"
+          "watch only; sold ratio 89.78%"
         ]
       },
       {
@@ -329,9 +366,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 788,
-        "highSoldRatioCount": 788,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 789,
+        "highSoldRatioCount": 789,
         "tokens": [
           {
             "token": "Evil Ape ",
@@ -434,9 +471,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 782,
-        "highSoldRatioCount": 782,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 785,
+        "highSoldRatioCount": 785,
         "tokens": [
           {
             "token": "America250 ",
@@ -520,6 +557,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 85.77%",
           "watch only; sold ratio 85.94%",
           "watch only; sold ratio 91.96%",
           "watch only; sold ratio 85.41%",
@@ -528,8 +566,7 @@
           "watch only; sold ratio 91.07%",
           "watch only; sold ratio 90.1%",
           "watch only; sold ratio 85.37%",
-          "watch only; sold ratio 89.78%",
-          "watch only; sold ratio 84.15%"
+          "watch only; sold ratio 89.78%"
         ]
       },
       {
@@ -539,10 +576,18 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 775,
-        "highSoldRatioCount": 775,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 776,
+        "highSoldRatioCount": 776,
         "tokens": [
+          {
+            "token": "Everyone is lying to you for $",
+            "symbol": "MONEY",
+            "address": "cotmxnne85weyfr5xvzjksezhlctqhd9uzffbkhcpump",
+            "shortAddress": "cotmxn...pump",
+            "soldRatioPercent": 100,
+            "amountUsd": 233.49
+          },
           {
             "token": "eCash",
             "symbol": "ECASH",
@@ -614,17 +659,10 @@
             "shortAddress": "aw5sxk...pump",
             "soldRatioPercent": 95.37,
             "amountUsd": 339.52
-          },
-          {
-            "token": "Bountywork",
-            "symbol": "Bountywork",
-            "address": "j4x1emmqjf6wezxq2tutzy89x5amhyz5czfevcjepump",
-            "shortAddress": "j4x1em...pump",
-            "soldRatioPercent": 100,
-            "amountUsd": 147.32
           }
         ],
         "reasons": [
+          "watch only; sold ratio 100%",
           "watch only; sold ratio 91%",
           "watch only; sold ratio 91.08%",
           "watch only; sold ratio 91.06%",
@@ -633,8 +671,7 @@
           "watch only; sold ratio 91.22%",
           "watch only; sold ratio 91.03%",
           "watch only; sold ratio 91.38%",
-          "watch only; sold ratio 91.45%",
-          "watch only; sold ratio 91.53%"
+          "watch only; sold ratio 91.45%"
         ]
       },
       {
@@ -644,9 +681,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 756,
-        "highSoldRatioCount": 756,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 759,
+        "highSoldRatioCount": 759,
         "tokens": [
           {
             "token": "AMERICA 250",
@@ -730,6 +767,7 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 85.77%",
           "watch only; sold ratio 83.05%",
           "watch only; sold ratio 85.94%",
           "watch only; sold ratio 85.41%",
@@ -738,8 +776,7 @@
           "watch only; sold ratio 85.37%",
           "watch only; sold ratio 84.15%",
           "watch only; sold ratio 83.66%",
-          "watch only; sold ratio 100%",
-          "watch only; sold ratio 82.96%"
+          "watch only; sold ratio 100%"
         ]
       }
     ],
@@ -914,8 +951,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 13093,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 13125,
         "examples": [
           {
             "token": "ハートちゃん",
@@ -979,8 +1016,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 6103,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 6119,
         "examples": [
           {
             "token": "Scarlet & Violet 151",
@@ -1044,8 +1081,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 2911,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 2923,
         "examples": [
           {
             "token": "LOCKIN",
@@ -1109,8 +1146,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 1181,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 1183,
         "examples": [
           {
             "token": "APU",
@@ -1174,8 +1211,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-06T08:58:57.756Z",
-        "occurrences": 780,
+        "lastSeenAt": "2026-06-06T09:28:57.843Z",
+        "occurrences": 781,
         "examples": [
           {
             "token": "eCash",
@@ -2918,6 +2955,48 @@
           "totalPnlUsd": -0.38,
           "totalPnlPct": -0.01
         }
+      },
+      {
+        "runId": "20260606092857",
+        "startedAt": "2026-06-06T09:28:57.843Z",
+        "finishedAt": "2026-06-06T09:28:59.982Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 62,
+        "decisions": 62,
+        "trades": 1,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 1,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 12,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 2876.7,
+          "openValueUsd": 122.93,
+          "equityUsd": 2999.63,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": -0.37,
+          "totalPnlUsd": -0.37,
+          "totalPnlPct": -0.01
+        }
       }
     ]
   },
@@ -2925,23 +3004,60 @@
     {
       "date": "2026-06-06",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T08:59:00.440Z",
-      "runCount": 34,
+      "generatedAt": "2026-06-06T09:29:00.409Z",
+      "runCount": 35,
       "statuses": {
-        "ok": 34
+        "ok": 35
       },
-      "rawSignalCount": 2136,
-      "decisionCount": 0,
-      "actions": {},
-      "tradeCount": 0,
-      "buys": 0,
+      "rawSignalCount": 2198,
+      "decisionCount": 62,
+      "actions": {
+        "IGNORE": 43,
+        "WATCH": 18,
+        "BUY": 1
+      },
+      "tradeCount": 1,
+      "buys": 1,
       "sells": 0,
-      "buyUsd": 0,
+      "buyUsd": 123.3,
       "realizedPnlUsd": 0,
       "equityStartUsd": 2994.72,
-      "equityEndUsd": 2999.62,
-      "equityChangeUsd": 4.9,
-      "topBlockers": [],
+      "equityEndUsd": 2999.63,
+      "equityChangeUsd": 4.91,
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 60
+        },
+        {
+          "name": "blacklisted source wallet: 2g8ayw...VKc9",
+          "count": 7
+        },
+        {
+          "name": "amount < 500U",
+          "count": 4
+        },
+        {
+          "name": "blacklisted source wallet: rAfgrF...xnSX",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: Dj8MAV...HuHS",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: AAbnUK...iFxA",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: 3YgeJw...uzUY",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: HYJeo7...oavr",
+          "count": 2
+        }
+      ],
       "mistakeCount": 0,
       "mistakeTypes": {},
       "accountResets": 4,
@@ -3145,9 +3261,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 990,
-          "highSoldRatioCount": 990,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 995,
+          "highSoldRatioCount": 995,
           "tokens": [
             {
               "token": "XDC NETWORK",
@@ -3231,6 +3347,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.69%",
@@ -3239,8 +3356,7 @@
             "watch only; sold ratio 90.13%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -3250,9 +3366,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 788,
-          "highSoldRatioCount": 788,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 789,
+          "highSoldRatioCount": 789,
           "tokens": [
             {
               "token": "Evil Ape ",
@@ -3355,9 +3471,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 782,
-          "highSoldRatioCount": 782,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 785,
+          "highSoldRatioCount": 785,
           "tokens": [
             {
               "token": "America250 ",
@@ -3441,6 +3557,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 91.96%",
             "watch only; sold ratio 85.41%",
@@ -3449,8 +3566,7 @@
             "watch only; sold ratio 91.07%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -3460,10 +3576,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 775,
-          "highSoldRatioCount": 775,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 776,
+          "highSoldRatioCount": 776,
           "tokens": [
+            {
+              "token": "Everyone is lying to you for $",
+              "symbol": "MONEY",
+              "address": "cotmxnne85weyfr5xvzjksezhlctqhd9uzffbkhcpump",
+              "shortAddress": "cotmxn...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 233.49
+            },
             {
               "token": "eCash",
               "symbol": "ECASH",
@@ -3535,17 +3659,10 @@
               "shortAddress": "aw5sxk...pump",
               "soldRatioPercent": 95.37,
               "amountUsd": 339.52
-            },
-            {
-              "token": "Bountywork",
-              "symbol": "Bountywork",
-              "address": "j4x1emmqjf6wezxq2tutzy89x5amhyz5czfevcjepump",
-              "shortAddress": "j4x1em...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 147.32
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 91%",
             "watch only; sold ratio 91.08%",
             "watch only; sold ratio 91.06%",
@@ -3554,8 +3671,7 @@
             "watch only; sold ratio 91.22%",
             "watch only; sold ratio 91.03%",
             "watch only; sold ratio 91.38%",
-            "watch only; sold ratio 91.45%",
-            "watch only; sold ratio 91.53%"
+            "watch only; sold ratio 91.45%"
           ]
         },
         {
@@ -3565,9 +3681,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 756,
-          "highSoldRatioCount": 756,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 759,
+          "highSoldRatioCount": 759,
           "tokens": [
             {
               "token": "AMERICA 250",
@@ -3651,6 +3767,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 83.05%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 85.41%",
@@ -3659,8 +3776,7 @@
             "watch only; sold ratio 85.37%",
             "watch only; sold ratio 84.15%",
             "watch only; sold ratio 83.66%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 82.96%"
+            "watch only; sold ratio 100%"
           ]
         }
       ],
@@ -3835,8 +3951,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 13093,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 13125,
           "examples": [
             {
               "token": "ハートちゃん",
@@ -3900,8 +4016,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 6103,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 6119,
           "examples": [
             {
               "token": "Scarlet & Violet 151",
@@ -3965,8 +4081,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 2911,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 2923,
           "examples": [
             {
               "token": "LOCKIN",
@@ -4030,8 +4146,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 1181,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 1183,
           "examples": [
             {
               "token": "APU",
@@ -4095,8 +4211,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 780,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 781,
           "examples": [
             {
               "token": "eCash",
@@ -5839,13 +5955,55 @@
             "totalPnlUsd": -0.38,
             "totalPnlPct": -0.01
           }
+        },
+        {
+          "runId": "20260606092857",
+          "startedAt": "2026-06-06T09:28:57.843Z",
+          "finishedAt": "2026-06-06T09:28:59.982Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 62,
+          "decisions": 62,
+          "trades": 1,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 1,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 12,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 2876.7,
+            "openValueUsd": 122.93,
+            "equityUsd": 2999.63,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": -0.37,
+            "totalPnlUsd": -0.37,
+            "totalPnlPct": -0.01
+          }
         }
       ]
     },
     {
       "date": "2026-06-05",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T08:59:00.440Z",
+      "generatedAt": "2026-06-06T09:29:00.410Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -6065,9 +6223,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 990,
-          "highSoldRatioCount": 990,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 995,
+          "highSoldRatioCount": 995,
           "tokens": [
             {
               "token": "XDC NETWORK",
@@ -6151,6 +6309,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.69%",
@@ -6159,8 +6318,7 @@
             "watch only; sold ratio 90.13%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -6170,9 +6328,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 788,
-          "highSoldRatioCount": 788,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 789,
+          "highSoldRatioCount": 789,
           "tokens": [
             {
               "token": "Evil Ape ",
@@ -6275,9 +6433,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 782,
-          "highSoldRatioCount": 782,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 785,
+          "highSoldRatioCount": 785,
           "tokens": [
             {
               "token": "America250 ",
@@ -6361,6 +6519,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 91.96%",
             "watch only; sold ratio 85.41%",
@@ -6369,8 +6528,7 @@
             "watch only; sold ratio 91.07%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -6380,10 +6538,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 775,
-          "highSoldRatioCount": 775,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 776,
+          "highSoldRatioCount": 776,
           "tokens": [
+            {
+              "token": "Everyone is lying to you for $",
+              "symbol": "MONEY",
+              "address": "cotmxnne85weyfr5xvzjksezhlctqhd9uzffbkhcpump",
+              "shortAddress": "cotmxn...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 233.49
+            },
             {
               "token": "eCash",
               "symbol": "ECASH",
@@ -6455,17 +6621,10 @@
               "shortAddress": "aw5sxk...pump",
               "soldRatioPercent": 95.37,
               "amountUsd": 339.52
-            },
-            {
-              "token": "Bountywork",
-              "symbol": "Bountywork",
-              "address": "j4x1emmqjf6wezxq2tutzy89x5amhyz5czfevcjepump",
-              "shortAddress": "j4x1em...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 147.32
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 91%",
             "watch only; sold ratio 91.08%",
             "watch only; sold ratio 91.06%",
@@ -6474,8 +6633,7 @@
             "watch only; sold ratio 91.22%",
             "watch only; sold ratio 91.03%",
             "watch only; sold ratio 91.38%",
-            "watch only; sold ratio 91.45%",
-            "watch only; sold ratio 91.53%"
+            "watch only; sold ratio 91.45%"
           ]
         },
         {
@@ -6485,9 +6643,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 756,
-          "highSoldRatioCount": 756,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 759,
+          "highSoldRatioCount": 759,
           "tokens": [
             {
               "token": "AMERICA 250",
@@ -6571,6 +6729,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 83.05%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 85.41%",
@@ -6579,8 +6738,7 @@
             "watch only; sold ratio 85.37%",
             "watch only; sold ratio 84.15%",
             "watch only; sold ratio 83.66%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 82.96%"
+            "watch only; sold ratio 100%"
           ]
         }
       ],
@@ -6755,8 +6913,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 13093,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 13125,
           "examples": [
             {
               "token": "ハートちゃん",
@@ -6820,8 +6978,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 6103,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 6119,
           "examples": [
             {
               "token": "Scarlet & Violet 151",
@@ -6885,8 +7043,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 2911,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 2923,
           "examples": [
             {
               "token": "LOCKIN",
@@ -6950,8 +7108,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 1181,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 1183,
           "examples": [
             {
               "token": "APU",
@@ -7015,8 +7173,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 780,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 781,
           "examples": [
             {
               "token": "eCash",
@@ -9411,7 +9569,7 @@
     {
       "date": "2026-06-04",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T08:59:00.441Z",
+      "generatedAt": "2026-06-06T09:29:00.410Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -9631,9 +9789,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 990,
-          "highSoldRatioCount": 990,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 995,
+          "highSoldRatioCount": 995,
           "tokens": [
             {
               "token": "XDC NETWORK",
@@ -9717,6 +9875,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.69%",
@@ -9725,8 +9884,7 @@
             "watch only; sold ratio 90.13%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -9736,9 +9894,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 788,
-          "highSoldRatioCount": 788,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 789,
+          "highSoldRatioCount": 789,
           "tokens": [
             {
               "token": "Evil Ape ",
@@ -9841,9 +9999,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 782,
-          "highSoldRatioCount": 782,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 785,
+          "highSoldRatioCount": 785,
           "tokens": [
             {
               "token": "America250 ",
@@ -9927,6 +10085,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 91.96%",
             "watch only; sold ratio 85.41%",
@@ -9935,8 +10094,7 @@
             "watch only; sold ratio 91.07%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -9946,10 +10104,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 775,
-          "highSoldRatioCount": 775,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 776,
+          "highSoldRatioCount": 776,
           "tokens": [
+            {
+              "token": "Everyone is lying to you for $",
+              "symbol": "MONEY",
+              "address": "cotmxnne85weyfr5xvzjksezhlctqhd9uzffbkhcpump",
+              "shortAddress": "cotmxn...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 233.49
+            },
             {
               "token": "eCash",
               "symbol": "ECASH",
@@ -10021,17 +10187,10 @@
               "shortAddress": "aw5sxk...pump",
               "soldRatioPercent": 95.37,
               "amountUsd": 339.52
-            },
-            {
-              "token": "Bountywork",
-              "symbol": "Bountywork",
-              "address": "j4x1emmqjf6wezxq2tutzy89x5amhyz5czfevcjepump",
-              "shortAddress": "j4x1em...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 147.32
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 91%",
             "watch only; sold ratio 91.08%",
             "watch only; sold ratio 91.06%",
@@ -10040,8 +10199,7 @@
             "watch only; sold ratio 91.22%",
             "watch only; sold ratio 91.03%",
             "watch only; sold ratio 91.38%",
-            "watch only; sold ratio 91.45%",
-            "watch only; sold ratio 91.53%"
+            "watch only; sold ratio 91.45%"
           ]
         },
         {
@@ -10051,9 +10209,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 756,
-          "highSoldRatioCount": 756,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 759,
+          "highSoldRatioCount": 759,
           "tokens": [
             {
               "token": "AMERICA 250",
@@ -10137,6 +10295,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 83.05%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 85.41%",
@@ -10145,8 +10304,7 @@
             "watch only; sold ratio 85.37%",
             "watch only; sold ratio 84.15%",
             "watch only; sold ratio 83.66%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 82.96%"
+            "watch only; sold ratio 100%"
           ]
         }
       ],
@@ -10321,8 +10479,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 13093,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 13125,
           "examples": [
             {
               "token": "ハートちゃん",
@@ -10386,8 +10544,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 6103,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 6119,
           "examples": [
             {
               "token": "Scarlet & Violet 151",
@@ -10451,8 +10609,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 2911,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 2923,
           "examples": [
             {
               "token": "LOCKIN",
@@ -10516,8 +10674,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 1181,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 1183,
           "examples": [
             {
               "token": "APU",
@@ -10581,8 +10739,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 780,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 781,
           "examples": [
             {
               "token": "eCash",
@@ -12920,7 +13078,7 @@
     {
       "date": "2026-06-03",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T08:59:00.441Z",
+      "generatedAt": "2026-06-06T09:29:00.410Z",
       "runCount": 40,
       "statuses": {
         "ok": 40
@@ -13140,9 +13298,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 990,
-          "highSoldRatioCount": 990,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 995,
+          "highSoldRatioCount": 995,
           "tokens": [
             {
               "token": "XDC NETWORK",
@@ -13226,6 +13384,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.69%",
@@ -13234,8 +13393,7 @@
             "watch only; sold ratio 90.13%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -13245,9 +13403,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 788,
-          "highSoldRatioCount": 788,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 789,
+          "highSoldRatioCount": 789,
           "tokens": [
             {
               "token": "Evil Ape ",
@@ -13350,9 +13508,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 782,
-          "highSoldRatioCount": 782,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 785,
+          "highSoldRatioCount": 785,
           "tokens": [
             {
               "token": "America250 ",
@@ -13436,6 +13594,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 91.96%",
             "watch only; sold ratio 85.41%",
@@ -13444,8 +13603,7 @@
             "watch only; sold ratio 91.07%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -13455,10 +13613,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 775,
-          "highSoldRatioCount": 775,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 776,
+          "highSoldRatioCount": 776,
           "tokens": [
+            {
+              "token": "Everyone is lying to you for $",
+              "symbol": "MONEY",
+              "address": "cotmxnne85weyfr5xvzjksezhlctqhd9uzffbkhcpump",
+              "shortAddress": "cotmxn...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 233.49
+            },
             {
               "token": "eCash",
               "symbol": "ECASH",
@@ -13530,17 +13696,10 @@
               "shortAddress": "aw5sxk...pump",
               "soldRatioPercent": 95.37,
               "amountUsd": 339.52
-            },
-            {
-              "token": "Bountywork",
-              "symbol": "Bountywork",
-              "address": "j4x1emmqjf6wezxq2tutzy89x5amhyz5czfevcjepump",
-              "shortAddress": "j4x1em...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 147.32
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 91%",
             "watch only; sold ratio 91.08%",
             "watch only; sold ratio 91.06%",
@@ -13549,8 +13708,7 @@
             "watch only; sold ratio 91.22%",
             "watch only; sold ratio 91.03%",
             "watch only; sold ratio 91.38%",
-            "watch only; sold ratio 91.45%",
-            "watch only; sold ratio 91.53%"
+            "watch only; sold ratio 91.45%"
           ]
         },
         {
@@ -13560,9 +13718,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 756,
-          "highSoldRatioCount": 756,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 759,
+          "highSoldRatioCount": 759,
           "tokens": [
             {
               "token": "AMERICA 250",
@@ -13646,6 +13804,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 83.05%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 85.41%",
@@ -13654,8 +13813,7 @@
             "watch only; sold ratio 85.37%",
             "watch only; sold ratio 84.15%",
             "watch only; sold ratio 83.66%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 82.96%"
+            "watch only; sold ratio 100%"
           ]
         }
       ],
@@ -13830,8 +13988,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 13093,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 13125,
           "examples": [
             {
               "token": "ハートちゃん",
@@ -13895,8 +14053,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 6103,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 6119,
           "examples": [
             {
               "token": "Scarlet & Violet 151",
@@ -13960,8 +14118,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 2911,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 2923,
           "examples": [
             {
               "token": "LOCKIN",
@@ -14025,8 +14183,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 1181,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 1183,
           "examples": [
             {
               "token": "APU",
@@ -14090,8 +14248,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 780,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 781,
           "examples": [
             {
               "token": "eCash",
@@ -16092,14 +16250,14 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T08:59:00.441Z",
-      "runCount": 31,
+      "generatedAt": "2026-06-06T09:29:00.411Z",
+      "runCount": 30,
       "statuses": {
-        "ok": 28,
+        "ok": 27,
         "partial": 2,
         "failed": 1
       },
-      "rawSignalCount": 1967,
+      "rawSignalCount": 1902,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -16107,9 +16265,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 3924.5,
+      "equityStartUsd": 3016.63,
       "equityEndUsd": 2999.77,
-      "equityChangeUsd": -924.73,
+      "equityChangeUsd": -16.86,
       "topBlockers": [],
       "mistakeCount": 3,
       "mistakeTypes": {
@@ -16316,9 +16474,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 990,
-          "highSoldRatioCount": 990,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 995,
+          "highSoldRatioCount": 995,
           "tokens": [
             {
               "token": "XDC NETWORK",
@@ -16402,6 +16560,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 91.69%",
@@ -16410,8 +16569,7 @@
             "watch only; sold ratio 90.13%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -16421,9 +16579,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 788,
-          "highSoldRatioCount": 788,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 789,
+          "highSoldRatioCount": 789,
           "tokens": [
             {
               "token": "Evil Ape ",
@@ -16526,9 +16684,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 782,
-          "highSoldRatioCount": 782,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 785,
+          "highSoldRatioCount": 785,
           "tokens": [
             {
               "token": "America250 ",
@@ -16612,6 +16770,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 91.96%",
             "watch only; sold ratio 85.41%",
@@ -16620,8 +16779,7 @@
             "watch only; sold ratio 91.07%",
             "watch only; sold ratio 90.1%",
             "watch only; sold ratio 85.37%",
-            "watch only; sold ratio 89.78%",
-            "watch only; sold ratio 84.15%"
+            "watch only; sold ratio 89.78%"
           ]
         },
         {
@@ -16631,10 +16789,18 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 775,
-          "highSoldRatioCount": 775,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 776,
+          "highSoldRatioCount": 776,
           "tokens": [
+            {
+              "token": "Everyone is lying to you for $",
+              "symbol": "MONEY",
+              "address": "cotmxnne85weyfr5xvzjksezhlctqhd9uzffbkhcpump",
+              "shortAddress": "cotmxn...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 233.49
+            },
             {
               "token": "eCash",
               "symbol": "ECASH",
@@ -16706,17 +16872,10 @@
               "shortAddress": "aw5sxk...pump",
               "soldRatioPercent": 95.37,
               "amountUsd": 339.52
-            },
-            {
-              "token": "Bountywork",
-              "symbol": "Bountywork",
-              "address": "j4x1emmqjf6wezxq2tutzy89x5amhyz5czfevcjepump",
-              "shortAddress": "j4x1em...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 147.32
             }
           ],
           "reasons": [
+            "watch only; sold ratio 100%",
             "watch only; sold ratio 91%",
             "watch only; sold ratio 91.08%",
             "watch only; sold ratio 91.06%",
@@ -16725,8 +16884,7 @@
             "watch only; sold ratio 91.22%",
             "watch only; sold ratio 91.03%",
             "watch only; sold ratio 91.38%",
-            "watch only; sold ratio 91.45%",
-            "watch only; sold ratio 91.53%"
+            "watch only; sold ratio 91.45%"
           ]
         },
         {
@@ -16736,9 +16894,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 756,
-          "highSoldRatioCount": 756,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 759,
+          "highSoldRatioCount": 759,
           "tokens": [
             {
               "token": "AMERICA 250",
@@ -16822,6 +16980,7 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 85.77%",
             "watch only; sold ratio 83.05%",
             "watch only; sold ratio 85.94%",
             "watch only; sold ratio 85.41%",
@@ -16830,8 +16989,7 @@
             "watch only; sold ratio 85.37%",
             "watch only; sold ratio 84.15%",
             "watch only; sold ratio 83.66%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 82.96%"
+            "watch only; sold ratio 100%"
           ]
         }
       ],
@@ -17006,8 +17164,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 13093,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 13125,
           "examples": [
             {
               "token": "ハートちゃん",
@@ -17071,8 +17229,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 6103,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 6119,
           "examples": [
             {
               "token": "Scarlet & Violet 151",
@@ -17136,8 +17294,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 2911,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 2923,
           "examples": [
             {
               "token": "LOCKIN",
@@ -17201,8 +17359,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 1181,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 1183,
           "examples": [
             {
               "token": "APU",
@@ -17266,8 +17424,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T08:58:57.756Z",
-          "occurrences": 780,
+          "lastSeenAt": "2026-06-06T09:28:57.843Z",
+          "occurrences": 781,
           "examples": [
             {
               "token": "eCash",
@@ -17467,77 +17625,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260602002858",
-          "startedAt": "2026-06-02T00:28:58.370Z",
-          "finishedAt": "2026-06-02T00:29:50.816Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 65,
-          "decisions": 65,
-          "trades": 0,
-          "mistakes": [],
-          "notes": [
-            "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
-          ],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 0,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 15,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": {
-            "timestamp": "2026-06-02T00:28:58.370Z",
-            "runId": "20260602002858",
-            "reason": "completed_cycle_reset",
-            "cycleSummaryId": "cycle-20260602002858",
-            "previousSession": {
-              "id": "20260601195901-cycle",
-              "startedAt": "2026-06-01T19:59:01.311Z",
-              "lastAuthOkAt": "2026-06-02T00:28:58.370Z",
-              "lastAuthFailureAt": "",
-              "authState": "online",
-              "authRecoveries": 3,
-              "resetReason": "completed_cycle_reset"
-            },
-            "previousCapital": {
-              "initialUsd": 3000,
-              "cashUsd": 3594.4,
-              "openValueUsd": 330.1,
-              "equityUsd": 3924.5,
-              "realizedPnlUsd": 569.08,
-              "unrealizedPnlUsd": 16.4,
-              "totalPnlUsd": 924.5,
-              "totalPnlPct": 30.82
-            },
-            "previousOpenPositions": 2,
-            "previousTrades": 15,
-            "previousDecisions": 500
-          },
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 3594.4,
-            "openValueUsd": 330.1,
-            "equityUsd": 3924.5,
-            "realizedPnlUsd": 569.08,
-            "unrealizedPnlUsd": 16.4,
-            "totalPnlUsd": 924.5,
-            "totalPnlPct": 30.82
-          }
-        },
         {
           "runId": "20260602005858",
           "startedAt": "2026-06-02T00:58:58.297Z",
