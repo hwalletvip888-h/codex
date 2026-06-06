@@ -1,17 +1,17 @@
 # 2026-06-07 策略模拟日报
 
-生成时间：2026-06-06T18:29:02.474Z
+生成时间：2026-06-06T18:59:00.403Z
 时区：Asia/Hong_Kong
 
 ## 当日结果
 
-- 扫描轮次：5
-- 原始信号：310
-- 决策记录：62
-- 模拟成交：0 笔，买入 0 笔，卖出 0 笔
-- 买入金额：0U
+- 扫描轮次：6
+- 原始信号：372
+- 决策记录：124
+- 模拟成交：1 笔，买入 1 笔，卖出 0 笔
+- 买入金额：261.9U
 - 已实现盈亏：0U
-- 权益变化：2966.11U -> 3000U（33.89U）
+- 权益变化：2966.11U -> 2999.21U（33.1U）
 - 账户重置：1 次
 - 周期总结：1 次
 - 钱包黑名单：31 个地址
@@ -19,22 +19,22 @@
 
 ## 操作状态
 
-- ok: 5 轮
+- ok: 6 轮
 
 ## 主要阻断条件
 
-- sold ratio > 35%: 61 次
-- blacklisted source wallet: 2g8ayw...VKc9: 6 次
-- amount < 500U: 4 次
-- blacklisted source wallet: 6e6zBy...D2J7: 2 次
-- blacklisted source wallet: HoT5PC...RvPq: 2 次
-- blacklisted source wallet: AcXCrt...oMzc: 2 次
-- blacklisted source wallet: rAfgrF...xnSX: 2 次
-- blacklisted source wallet: Dj8MAV...HuHS: 2 次
+- sold ratio > 35%: 121 次
+- blacklisted source wallet: 2g8ayw...VKc9: 12 次
+- amount < 500U: 8 次
+- blacklisted source wallet: 6e6zBy...D2J7: 4 次
+- blacklisted source wallet: HoT5PC...RvPq: 4 次
+- blacklisted source wallet: AcXCrt...oMzc: 4 次
+- blacklisted source wallet: rAfgrF...xnSX: 4 次
+- blacklisted source wallet: Dj8MAV...HuHS: 4 次
 
 ## 今日复盘
 
-- 今日没有满足买入条件的成交，优先观察阻断条件是否过严或市场信号质量不足。
+- 今日有模拟成交，后续按止盈/止损和信号延续情况继续验证策略质量。
 - 今日执行层没有记录错误。
 
 ## 不可篡改原则
