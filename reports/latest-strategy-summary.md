@@ -1,17 +1,17 @@
 # 2026-06-06 策略模拟日报
 
-生成时间：2026-06-06T03:29:05.570Z
+生成时间：2026-06-06T03:59:00.334Z
 时区：Asia/Hong_Kong
 
 ## 当日结果
 
-- 扫描轮次：23
-- 原始信号：1449
-- 决策记录：441
-- 模拟成交：1 笔，买入 1 笔，卖出 0 笔
-- 买入金额：132.1U
+- 扫描轮次：24
+- 原始信号：1512
+- 决策记录：500
+- 模拟成交：2 笔，买入 2 笔，卖出 0 笔
+- 买入金额：312.6U
 - 已实现盈亏：0U
-- 权益变化：2994.72U -> 2999.6U（4.88U）
+- 权益变化：2994.72U -> 2999.06U（4.34U）
 - 账户重置：2 次
 - 周期总结：2 次
 - 钱包黑名单：28 个地址
@@ -19,18 +19,18 @@
 
 ## 操作状态
 
-- ok: 23 轮
+- ok: 24 轮
 
 ## 主要阻断条件
 
-- sold ratio > 35%: 425 次
-- blacklisted source wallet: 2g8ayw...VKc9: 49 次
-- amount < 500U: 28 次
-- blacklisted source wallet: rAfgrF...xnSX: 14 次
-- blacklisted source wallet: Dj8MAV...HuHS: 14 次
-- blacklisted source wallet: AAbnUK...iFxA: 14 次
-- blacklisted source wallet: 3YgeJw...uzUY: 14 次
-- blacklisted source wallet: HYJeo7...oavr: 14 次
+- sold ratio > 35%: 481 次
+- blacklisted source wallet: 2g8ayw...VKc9: 56 次
+- amount < 500U: 31 次
+- blacklisted source wallet: rAfgrF...xnSX: 16 次
+- blacklisted source wallet: Dj8MAV...HuHS: 16 次
+- blacklisted source wallet: AAbnUK...iFxA: 16 次
+- blacklisted source wallet: 3YgeJw...uzUY: 16 次
+- blacklisted source wallet: HYJeo7...oavr: 16 次
 
 ## 今日复盘
 
