@@ -1,10 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-06T18:59:00.406Z",
+  "generatedAt": "2026-06-06T19:29:10.209Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260606185858",
+  "latestRunId": "20260606192858",
   "entries": [
+    {
+      "runId": "20260606192858",
+      "startedAt": "2026-06-06T19:28:58.262Z",
+      "finishedAt": "2026-06-06T19:29:09.693Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 62,
+      "decisions": 62,
+      "trades": 0,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 0,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 12,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2738.1,
+        "openValueUsd": 261.11,
+        "equityUsd": 2999.21,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": -0.79,
+        "totalPnlUsd": -0.79,
+        "totalPnlPct": -0.03
+      }
+    },
     {
       "runId": "20260606185858",
       "startedAt": "2026-06-06T18:58:58.027Z",
@@ -9017,40 +9059,6 @@
           "mistakes": []
         }
       ],
-      "accountReset": null,
-      "capital": {
-        "initialUsd": 3000,
-        "cashUsd": 2834.9,
-        "openValueUsd": 164.88,
-        "equityUsd": 2999.78,
-        "realizedPnlUsd": 0,
-        "unrealizedPnlUsd": -0.22,
-        "totalPnlUsd": -0.22,
-        "totalPnlPct": -0.01
-      }
-    },
-    {
-      "runId": "20260602105859",
-      "startedAt": "2026-06-02T10:58:59.360Z",
-      "finishedAt": "2026-06-02T11:00:07.308Z",
-      "status": "failed",
-      "chains": [
-        "solana",
-        "bsc"
-      ],
-      "rawSignalCount": 0,
-      "decisions": 0,
-      "trades": 0,
-      "mistakes": [
-        {
-          "type": "CLI_ERROR",
-          "chain": "",
-          "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/supported/chain): operation timed out",
-          "lesson": "Do not trade when source availability or payment/auth state is uncertain."
-        }
-      ],
-      "notes": [],
-      "chainResults": [],
       "accountReset": null,
       "capital": {
         "initialUsd": 3000,
