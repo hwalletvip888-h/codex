@@ -1,26 +1,62 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-06T17:59:00.656Z",
+  "generatedAt": "2026-06-06T18:29:02.485Z",
   "latest": {
     "date": "2026-06-07",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-06T17:59:00.644Z",
-    "runCount": 4,
+    "generatedAt": "2026-06-06T18:29:02.474Z",
+    "runCount": 5,
     "statuses": {
-      "ok": 4
+      "ok": 5
     },
-    "rawSignalCount": 248,
-    "decisionCount": 0,
-    "actions": {},
+    "rawSignalCount": 310,
+    "decisionCount": 62,
+    "actions": {
+      "IGNORE": 47,
+      "WATCH": 15
+    },
     "tradeCount": 0,
     "buys": 0,
     "sells": 0,
     "buyUsd": 0,
     "realizedPnlUsd": 0,
     "equityStartUsd": 2966.11,
-    "equityEndUsd": 2966.11,
-    "equityChangeUsd": 0,
-    "topBlockers": [],
+    "equityEndUsd": 3000,
+    "equityChangeUsd": 33.89,
+    "topBlockers": [
+      {
+        "name": "sold ratio > 35%",
+        "count": 61
+      },
+      {
+        "name": "blacklisted source wallet: 2g8ayw...VKc9",
+        "count": 6
+      },
+      {
+        "name": "amount < 500U",
+        "count": 4
+      },
+      {
+        "name": "blacklisted source wallet: 6e6zBy...D2J7",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: HoT5PC...RvPq",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: AcXCrt...oMzc",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: rAfgrF...xnSX",
+        "count": 2
+      },
+      {
+        "name": "blacklisted source wallet: Dj8MAV...HuHS",
+        "count": 2
+      }
+    ],
     "mistakeCount": 0,
     "mistakeTypes": {},
     "accountResets": 1,
@@ -225,9 +261,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-06T17:58:57.939Z",
-        "occurrences": 1037,
-        "highSoldRatioCount": 1037,
+        "lastSeenAt": "2026-06-06T18:28:58.609Z",
+        "occurrences": 1040,
+        "highSoldRatioCount": 1040,
         "tokens": [
           {
             "token": "Chutou",
@@ -311,6 +347,8 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 97.17%",
+          "watch only; sold ratio 90.39%",
           "watch only; sold ratio 97.02%",
           "watch only; sold ratio 90.08%",
           "watch only; sold ratio 97.07%",
@@ -318,9 +356,7 @@
           "watch only; sold ratio 97.2%",
           "watch only; sold ratio 96.89%",
           "watch only; sold ratio 86.69%",
-          "watch only; sold ratio 100%",
-          "watch only; sold ratio 85.87%",
-          "watch only; sold ratio 84.69%"
+          "watch only; sold ratio 100%"
         ]
       },
       {
@@ -330,9 +366,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-06T17:58:57.939Z",
-        "occurrences": 819,
-        "highSoldRatioCount": 819,
+        "lastSeenAt": "2026-06-06T18:28:58.609Z",
+        "occurrences": 820,
+        "highSoldRatioCount": 820,
         "tokens": [
           {
             "token": "Hunter Biden 2028",
@@ -426,6 +462,111 @@
           "watch only; sold ratio 96.57%",
           "watch only; sold ratio 97.04%",
           "watch only; sold ratio 86.43%"
+        ]
+      },
+      {
+        "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
+        "shortAddress": "EDoYjE...biNZ",
+        "chain": "solana",
+        "walletType": "Smart Money",
+        "status": "watch_only",
+        "firstSeenAt": "2026-05-25T15:52:50.990Z",
+        "lastSeenAt": "2026-06-06T18:28:58.609Z",
+        "occurrences": 799,
+        "highSoldRatioCount": 799,
+        "tokens": [
+          {
+            "token": "America250 ",
+            "symbol": "USA250",
+            "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
+            "shortAddress": "7zzgor...pump",
+            "soldRatioPercent": 82.78,
+            "amountUsd": 461.25
+          },
+          {
+            "token": "GIGAFLY",
+            "symbol": "GIGAFLY",
+            "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
+            "shortAddress": "ccsev1...pump",
+            "soldRatioPercent": 91.07,
+            "amountUsd": 98.29
+          },
+          {
+            "token": "New York Knicks",
+            "symbol": "KNICKS",
+            "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
+            "shortAddress": "a3f7jl...pump",
+            "soldRatioPercent": 88.92,
+            "amountUsd": 140.19
+          },
+          {
+            "token": "Grand Arena",
+            "symbol": "ARENA",
+            "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+            "shortAddress": "ddrae7...pump",
+            "soldRatioPercent": 100,
+            "amountUsd": 138.07
+          },
+          {
+            "token": "Michul Sellor",
+            "symbol": "SELLOR",
+            "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+            "shortAddress": "124yn3...pump",
+            "soldRatioPercent": 90.11,
+            "amountUsd": 107.79
+          },
+          {
+            "token": "锄头",
+            "symbol": "锄头",
+            "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+            "shortAddress": "ohamp5...pump",
+            "soldRatioPercent": 83.81,
+            "amountUsd": 237.16
+          },
+          {
+            "token": "goblintown",
+            "symbol": "goblintown",
+            "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+            "shortAddress": "dj15qj...pump",
+            "soldRatioPercent": 96.95,
+            "amountUsd": 335.59
+          },
+          {
+            "token": "honter boden",
+            "symbol": "HONTER",
+            "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
+            "shortAddress": "uuxwwf...ek57",
+            "soldRatioPercent": 95.23,
+            "amountUsd": 76.42
+          },
+          {
+            "token": "SpaceX",
+            "symbol": "SPCX",
+            "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
+            "shortAddress": "e6ifp2...pump",
+            "soldRatioPercent": 98.47,
+            "amountUsd": 255.5
+          },
+          {
+            "token": "IDLE Protocol",
+            "symbol": "IDLE",
+            "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
+            "shortAddress": "ajlhrx...pump",
+            "soldRatioPercent": 100,
+            "amountUsd": 91.68
+          }
+        ],
+        "reasons": [
+          "watch only; sold ratio 97.17%",
+          "watch only; sold ratio 97.02%",
+          "watch only; sold ratio 97.07%",
+          "watch only; sold ratio 97.05%",
+          "watch only; sold ratio 97.2%",
+          "watch only; sold ratio 96.89%",
+          "watch only; sold ratio 86.74%",
+          "watch only; sold ratio 86.35%",
+          "watch only; sold ratio 85.77%",
+          "watch only; sold ratio 85.94%"
         ]
       },
       {
@@ -534,120 +675,15 @@
         ]
       },
       {
-        "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
-        "shortAddress": "EDoYjE...biNZ",
-        "chain": "solana",
-        "walletType": "Smart Money",
-        "status": "watch_only",
-        "firstSeenAt": "2026-05-25T15:52:50.990Z",
-        "lastSeenAt": "2026-06-06T17:58:57.939Z",
-        "occurrences": 798,
-        "highSoldRatioCount": 798,
-        "tokens": [
-          {
-            "token": "America250 ",
-            "symbol": "USA250",
-            "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
-            "shortAddress": "7zzgor...pump",
-            "soldRatioPercent": 82.78,
-            "amountUsd": 461.25
-          },
-          {
-            "token": "GIGAFLY",
-            "symbol": "GIGAFLY",
-            "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
-            "shortAddress": "ccsev1...pump",
-            "soldRatioPercent": 91.07,
-            "amountUsd": 98.29
-          },
-          {
-            "token": "New York Knicks",
-            "symbol": "KNICKS",
-            "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
-            "shortAddress": "a3f7jl...pump",
-            "soldRatioPercent": 88.92,
-            "amountUsd": 140.19
-          },
-          {
-            "token": "Grand Arena",
-            "symbol": "ARENA",
-            "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
-            "shortAddress": "ddrae7...pump",
-            "soldRatioPercent": 100,
-            "amountUsd": 138.07
-          },
-          {
-            "token": "Michul Sellor",
-            "symbol": "SELLOR",
-            "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
-            "shortAddress": "124yn3...pump",
-            "soldRatioPercent": 90.11,
-            "amountUsd": 107.79
-          },
-          {
-            "token": "锄头",
-            "symbol": "锄头",
-            "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-            "shortAddress": "ohamp5...pump",
-            "soldRatioPercent": 83.81,
-            "amountUsd": 237.16
-          },
-          {
-            "token": "goblintown",
-            "symbol": "goblintown",
-            "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
-            "shortAddress": "dj15qj...pump",
-            "soldRatioPercent": 96.95,
-            "amountUsd": 335.59
-          },
-          {
-            "token": "honter boden",
-            "symbol": "HONTER",
-            "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
-            "shortAddress": "uuxwwf...ek57",
-            "soldRatioPercent": 95.23,
-            "amountUsd": 76.42
-          },
-          {
-            "token": "SpaceX",
-            "symbol": "SPCX",
-            "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
-            "shortAddress": "e6ifp2...pump",
-            "soldRatioPercent": 98.47,
-            "amountUsd": 255.5
-          },
-          {
-            "token": "IDLE Protocol",
-            "symbol": "IDLE",
-            "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
-            "shortAddress": "ajlhrx...pump",
-            "soldRatioPercent": 100,
-            "amountUsd": 91.68
-          }
-        ],
-        "reasons": [
-          "watch only; sold ratio 97.02%",
-          "watch only; sold ratio 97.07%",
-          "watch only; sold ratio 97.05%",
-          "watch only; sold ratio 97.2%",
-          "watch only; sold ratio 96.89%",
-          "watch only; sold ratio 86.74%",
-          "watch only; sold ratio 86.35%",
-          "watch only; sold ratio 85.77%",
-          "watch only; sold ratio 85.94%",
-          "watch only; sold ratio 91.96%"
-        ]
-      },
-      {
         "walletAddress": "9Gpf1oeXtbiSYqkhZnEPwWoQtKWHUDGixEeFdbz9SXMx",
         "shortAddress": "9Gpf1o...SXMx",
         "chain": "solana",
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-06T17:58:57.939Z",
-        "occurrences": 784,
-        "highSoldRatioCount": 784,
+        "lastSeenAt": "2026-06-06T18:28:58.609Z",
+        "occurrences": 786,
+        "highSoldRatioCount": 786,
         "tokens": [
           {
             "token": "honter boden",
@@ -731,6 +767,8 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 97.17%",
+          "watch only; sold ratio 91.08%",
           "watch only; sold ratio 97.02%",
           "watch only; sold ratio 87.6%",
           "watch only; sold ratio 97.07%",
@@ -738,9 +776,7 @@
           "watch only; sold ratio 97.05%",
           "watch only; sold ratio 88.29%",
           "watch only; sold ratio 97.2%",
-          "watch only; sold ratio 96.89%",
-          "watch only; sold ratio 86.74%",
-          "watch only; sold ratio 100%"
+          "watch only; sold ratio 96.89%"
         ]
       }
     ],
@@ -915,8 +951,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-06T17:58:57.939Z",
-        "occurrences": 13692,
+        "lastSeenAt": "2026-06-06T18:28:58.609Z",
+        "occurrences": 13727,
         "examples": [
           {
             "token": "Varsko Intelligence",
@@ -980,8 +1016,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-06T17:58:57.939Z",
-        "occurrences": 6361,
+        "lastSeenAt": "2026-06-06T18:28:58.609Z",
+        "occurrences": 6375,
         "examples": [
           {
             "token": "Bountywork",
@@ -1045,8 +1081,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-06T17:58:57.939Z",
-        "occurrences": 3127,
+        "lastSeenAt": "2026-06-06T18:28:58.609Z",
+        "occurrences": 3139,
         "examples": [
           {
             "token": "LOCKIN",
@@ -1110,8 +1146,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-06T17:58:57.939Z",
-        "occurrences": 1217,
+        "lastSeenAt": "2026-06-06T18:28:58.609Z",
+        "occurrences": 1219,
         "examples": [
           {
             "token": "APU",
@@ -1175,8 +1211,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-06T17:58:57.939Z",
-        "occurrences": 798,
+        "lastSeenAt": "2026-06-06T18:28:58.609Z",
+        "occurrences": 799,
         "examples": [
           {
             "token": "eCash",
@@ -1572,6 +1608,48 @@
           "totalPnlUsd": -33.89,
           "totalPnlPct": -1.13
         }
+      },
+      {
+        "runId": "20260606182858",
+        "startedAt": "2026-06-06T18:28:58.609Z",
+        "finishedAt": "2026-06-06T18:29:01.974Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 62,
+        "decisions": 62,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 12,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
       }
     ]
   },
@@ -1579,23 +1657,59 @@
     {
       "date": "2026-06-07",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T17:59:00.644Z",
-      "runCount": 4,
+      "generatedAt": "2026-06-06T18:29:02.474Z",
+      "runCount": 5,
       "statuses": {
-        "ok": 4
+        "ok": 5
       },
-      "rawSignalCount": 248,
-      "decisionCount": 0,
-      "actions": {},
+      "rawSignalCount": 310,
+      "decisionCount": 62,
+      "actions": {
+        "IGNORE": 47,
+        "WATCH": 15
+      },
       "tradeCount": 0,
       "buys": 0,
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
       "equityStartUsd": 2966.11,
-      "equityEndUsd": 2966.11,
-      "equityChangeUsd": 0,
-      "topBlockers": [],
+      "equityEndUsd": 3000,
+      "equityChangeUsd": 33.89,
+      "topBlockers": [
+        {
+          "name": "sold ratio > 35%",
+          "count": 61
+        },
+        {
+          "name": "blacklisted source wallet: 2g8ayw...VKc9",
+          "count": 6
+        },
+        {
+          "name": "amount < 500U",
+          "count": 4
+        },
+        {
+          "name": "blacklisted source wallet: 6e6zBy...D2J7",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: HoT5PC...RvPq",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: AcXCrt...oMzc",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: rAfgrF...xnSX",
+          "count": 2
+        },
+        {
+          "name": "blacklisted source wallet: Dj8MAV...HuHS",
+          "count": 2
+        }
+      ],
       "mistakeCount": 0,
       "mistakeTypes": {},
       "accountResets": 1,
@@ -1800,9 +1914,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1037,
-          "highSoldRatioCount": 1037,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1040,
+          "highSoldRatioCount": 1040,
           "tokens": [
             {
               "token": "Chutou",
@@ -1886,6 +2000,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 90.39%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 90.08%",
             "watch only; sold ratio 97.07%",
@@ -1893,9 +2009,7 @@
             "watch only; sold ratio 97.2%",
             "watch only; sold ratio 96.89%",
             "watch only; sold ratio 86.69%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 85.87%",
-            "watch only; sold ratio 84.69%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -1905,9 +2019,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 819,
-          "highSoldRatioCount": 819,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 820,
+          "highSoldRatioCount": 820,
           "tokens": [
             {
               "token": "Hunter Biden 2028",
@@ -2001,6 +2115,111 @@
             "watch only; sold ratio 96.57%",
             "watch only; sold ratio 97.04%",
             "watch only; sold ratio 86.43%"
+          ]
+        },
+        {
+          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
+          "shortAddress": "EDoYjE...biNZ",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
+          "highSoldRatioCount": 799,
+          "tokens": [
+            {
+              "token": "America250 ",
+              "symbol": "USA250",
+              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
+              "shortAddress": "7zzgor...pump",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 461.25
+            },
+            {
+              "token": "GIGAFLY",
+              "symbol": "GIGAFLY",
+              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
+              "shortAddress": "ccsev1...pump",
+              "soldRatioPercent": 91.07,
+              "amountUsd": 98.29
+            },
+            {
+              "token": "New York Knicks",
+              "symbol": "KNICKS",
+              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
+              "shortAddress": "a3f7jl...pump",
+              "soldRatioPercent": 88.92,
+              "amountUsd": 140.19
+            },
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 138.07
+            },
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 90.11,
+              "amountUsd": 107.79
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "soldRatioPercent": 83.81,
+              "amountUsd": 237.16
+            },
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
+            {
+              "token": "honter boden",
+              "symbol": "HONTER",
+              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
+              "shortAddress": "uuxwwf...ek57",
+              "soldRatioPercent": 95.23,
+              "amountUsd": 76.42
+            },
+            {
+              "token": "SpaceX",
+              "symbol": "SPCX",
+              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
+              "shortAddress": "e6ifp2...pump",
+              "soldRatioPercent": 98.47,
+              "amountUsd": 255.5
+            },
+            {
+              "token": "IDLE Protocol",
+              "symbol": "IDLE",
+              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
+              "shortAddress": "ajlhrx...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 91.68
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 97.02%",
+            "watch only; sold ratio 97.07%",
+            "watch only; sold ratio 97.05%",
+            "watch only; sold ratio 97.2%",
+            "watch only; sold ratio 96.89%",
+            "watch only; sold ratio 86.74%",
+            "watch only; sold ratio 86.35%",
+            "watch only; sold ratio 85.77%",
+            "watch only; sold ratio 85.94%"
           ]
         },
         {
@@ -2109,120 +2328,15 @@
           ]
         },
         {
-          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
-          "shortAddress": "EDoYjE...biNZ",
-          "chain": "solana",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
-          "highSoldRatioCount": 798,
-          "tokens": [
-            {
-              "token": "America250 ",
-              "symbol": "USA250",
-              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
-              "shortAddress": "7zzgor...pump",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 461.25
-            },
-            {
-              "token": "GIGAFLY",
-              "symbol": "GIGAFLY",
-              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
-              "shortAddress": "ccsev1...pump",
-              "soldRatioPercent": 91.07,
-              "amountUsd": 98.29
-            },
-            {
-              "token": "New York Knicks",
-              "symbol": "KNICKS",
-              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
-              "shortAddress": "a3f7jl...pump",
-              "soldRatioPercent": 88.92,
-              "amountUsd": 140.19
-            },
-            {
-              "token": "Grand Arena",
-              "symbol": "ARENA",
-              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
-              "shortAddress": "ddrae7...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 138.07
-            },
-            {
-              "token": "Michul Sellor",
-              "symbol": "SELLOR",
-              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
-              "shortAddress": "124yn3...pump",
-              "soldRatioPercent": 90.11,
-              "amountUsd": 107.79
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
-              "soldRatioPercent": 83.81,
-              "amountUsd": 237.16
-            },
-            {
-              "token": "goblintown",
-              "symbol": "goblintown",
-              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
-              "shortAddress": "dj15qj...pump",
-              "soldRatioPercent": 96.95,
-              "amountUsd": 335.59
-            },
-            {
-              "token": "honter boden",
-              "symbol": "HONTER",
-              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
-              "shortAddress": "uuxwwf...ek57",
-              "soldRatioPercent": 95.23,
-              "amountUsd": 76.42
-            },
-            {
-              "token": "SpaceX",
-              "symbol": "SPCX",
-              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
-              "shortAddress": "e6ifp2...pump",
-              "soldRatioPercent": 98.47,
-              "amountUsd": 255.5
-            },
-            {
-              "token": "IDLE Protocol",
-              "symbol": "IDLE",
-              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
-              "shortAddress": "ajlhrx...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 91.68
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 97.02%",
-            "watch only; sold ratio 97.07%",
-            "watch only; sold ratio 97.05%",
-            "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 86.35%",
-            "watch only; sold ratio 85.77%",
-            "watch only; sold ratio 85.94%",
-            "watch only; sold ratio 91.96%"
-          ]
-        },
-        {
           "walletAddress": "9Gpf1oeXtbiSYqkhZnEPwWoQtKWHUDGixEeFdbz9SXMx",
           "shortAddress": "9Gpf1o...SXMx",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 784,
-          "highSoldRatioCount": 784,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 786,
+          "highSoldRatioCount": 786,
           "tokens": [
             {
               "token": "honter boden",
@@ -2306,6 +2420,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 91.08%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 87.6%",
             "watch only; sold ratio 97.07%",
@@ -2313,9 +2429,7 @@
             "watch only; sold ratio 97.05%",
             "watch only; sold ratio 88.29%",
             "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 96.89%"
           ]
         }
       ],
@@ -2490,8 +2604,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 13692,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 13727,
           "examples": [
             {
               "token": "Varsko Intelligence",
@@ -2555,8 +2669,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 6361,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 6375,
           "examples": [
             {
               "token": "Bountywork",
@@ -2620,8 +2734,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 3127,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 3139,
           "examples": [
             {
               "token": "LOCKIN",
@@ -2685,8 +2799,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1217,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1219,
           "examples": [
             {
               "token": "APU",
@@ -2750,8 +2864,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
           "examples": [
             {
               "token": "eCash",
@@ -3147,13 +3261,55 @@
             "totalPnlUsd": -33.89,
             "totalPnlPct": -1.13
           }
+        },
+        {
+          "runId": "20260606182858",
+          "startedAt": "2026-06-06T18:28:58.609Z",
+          "finishedAt": "2026-06-06T18:29:01.974Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 62,
+          "decisions": 62,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 12,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
         }
       ]
     },
     {
       "date": "2026-06-06",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T17:59:00.645Z",
+      "generatedAt": "2026-06-06T18:29:02.475Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -3374,9 +3530,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1037,
-          "highSoldRatioCount": 1037,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1040,
+          "highSoldRatioCount": 1040,
           "tokens": [
             {
               "token": "Chutou",
@@ -3460,6 +3616,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 90.39%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 90.08%",
             "watch only; sold ratio 97.07%",
@@ -3467,9 +3625,7 @@
             "watch only; sold ratio 97.2%",
             "watch only; sold ratio 96.89%",
             "watch only; sold ratio 86.69%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 85.87%",
-            "watch only; sold ratio 84.69%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -3479,9 +3635,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 819,
-          "highSoldRatioCount": 819,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 820,
+          "highSoldRatioCount": 820,
           "tokens": [
             {
               "token": "Hunter Biden 2028",
@@ -3575,6 +3731,111 @@
             "watch only; sold ratio 96.57%",
             "watch only; sold ratio 97.04%",
             "watch only; sold ratio 86.43%"
+          ]
+        },
+        {
+          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
+          "shortAddress": "EDoYjE...biNZ",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
+          "highSoldRatioCount": 799,
+          "tokens": [
+            {
+              "token": "America250 ",
+              "symbol": "USA250",
+              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
+              "shortAddress": "7zzgor...pump",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 461.25
+            },
+            {
+              "token": "GIGAFLY",
+              "symbol": "GIGAFLY",
+              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
+              "shortAddress": "ccsev1...pump",
+              "soldRatioPercent": 91.07,
+              "amountUsd": 98.29
+            },
+            {
+              "token": "New York Knicks",
+              "symbol": "KNICKS",
+              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
+              "shortAddress": "a3f7jl...pump",
+              "soldRatioPercent": 88.92,
+              "amountUsd": 140.19
+            },
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 138.07
+            },
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 90.11,
+              "amountUsd": 107.79
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "soldRatioPercent": 83.81,
+              "amountUsd": 237.16
+            },
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
+            {
+              "token": "honter boden",
+              "symbol": "HONTER",
+              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
+              "shortAddress": "uuxwwf...ek57",
+              "soldRatioPercent": 95.23,
+              "amountUsd": 76.42
+            },
+            {
+              "token": "SpaceX",
+              "symbol": "SPCX",
+              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
+              "shortAddress": "e6ifp2...pump",
+              "soldRatioPercent": 98.47,
+              "amountUsd": 255.5
+            },
+            {
+              "token": "IDLE Protocol",
+              "symbol": "IDLE",
+              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
+              "shortAddress": "ajlhrx...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 91.68
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 97.02%",
+            "watch only; sold ratio 97.07%",
+            "watch only; sold ratio 97.05%",
+            "watch only; sold ratio 97.2%",
+            "watch only; sold ratio 96.89%",
+            "watch only; sold ratio 86.74%",
+            "watch only; sold ratio 86.35%",
+            "watch only; sold ratio 85.77%",
+            "watch only; sold ratio 85.94%"
           ]
         },
         {
@@ -3683,120 +3944,15 @@
           ]
         },
         {
-          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
-          "shortAddress": "EDoYjE...biNZ",
-          "chain": "solana",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
-          "highSoldRatioCount": 798,
-          "tokens": [
-            {
-              "token": "America250 ",
-              "symbol": "USA250",
-              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
-              "shortAddress": "7zzgor...pump",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 461.25
-            },
-            {
-              "token": "GIGAFLY",
-              "symbol": "GIGAFLY",
-              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
-              "shortAddress": "ccsev1...pump",
-              "soldRatioPercent": 91.07,
-              "amountUsd": 98.29
-            },
-            {
-              "token": "New York Knicks",
-              "symbol": "KNICKS",
-              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
-              "shortAddress": "a3f7jl...pump",
-              "soldRatioPercent": 88.92,
-              "amountUsd": 140.19
-            },
-            {
-              "token": "Grand Arena",
-              "symbol": "ARENA",
-              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
-              "shortAddress": "ddrae7...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 138.07
-            },
-            {
-              "token": "Michul Sellor",
-              "symbol": "SELLOR",
-              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
-              "shortAddress": "124yn3...pump",
-              "soldRatioPercent": 90.11,
-              "amountUsd": 107.79
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
-              "soldRatioPercent": 83.81,
-              "amountUsd": 237.16
-            },
-            {
-              "token": "goblintown",
-              "symbol": "goblintown",
-              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
-              "shortAddress": "dj15qj...pump",
-              "soldRatioPercent": 96.95,
-              "amountUsd": 335.59
-            },
-            {
-              "token": "honter boden",
-              "symbol": "HONTER",
-              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
-              "shortAddress": "uuxwwf...ek57",
-              "soldRatioPercent": 95.23,
-              "amountUsd": 76.42
-            },
-            {
-              "token": "SpaceX",
-              "symbol": "SPCX",
-              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
-              "shortAddress": "e6ifp2...pump",
-              "soldRatioPercent": 98.47,
-              "amountUsd": 255.5
-            },
-            {
-              "token": "IDLE Protocol",
-              "symbol": "IDLE",
-              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
-              "shortAddress": "ajlhrx...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 91.68
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 97.02%",
-            "watch only; sold ratio 97.07%",
-            "watch only; sold ratio 97.05%",
-            "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 86.35%",
-            "watch only; sold ratio 85.77%",
-            "watch only; sold ratio 85.94%",
-            "watch only; sold ratio 91.96%"
-          ]
-        },
-        {
           "walletAddress": "9Gpf1oeXtbiSYqkhZnEPwWoQtKWHUDGixEeFdbz9SXMx",
           "shortAddress": "9Gpf1o...SXMx",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 784,
-          "highSoldRatioCount": 784,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 786,
+          "highSoldRatioCount": 786,
           "tokens": [
             {
               "token": "honter boden",
@@ -3880,6 +4036,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 91.08%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 87.6%",
             "watch only; sold ratio 97.07%",
@@ -3887,9 +4045,7 @@
             "watch only; sold ratio 97.05%",
             "watch only; sold ratio 88.29%",
             "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 96.89%"
           ]
         }
       ],
@@ -4064,8 +4220,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 13692,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 13727,
           "examples": [
             {
               "token": "Varsko Intelligence",
@@ -4129,8 +4285,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 6361,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 6375,
           "examples": [
             {
               "token": "Bountywork",
@@ -4194,8 +4350,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 3127,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 3139,
           "examples": [
             {
               "token": "LOCKIN",
@@ -4259,8 +4415,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1217,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1219,
           "examples": [
             {
               "token": "APU",
@@ -4324,8 +4480,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
           "examples": [
             {
               "token": "eCash",
@@ -6691,7 +6847,7 @@
     {
       "date": "2026-06-05",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T17:59:00.645Z",
+      "generatedAt": "2026-06-06T18:29:02.476Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -6912,9 +7068,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1037,
-          "highSoldRatioCount": 1037,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1040,
+          "highSoldRatioCount": 1040,
           "tokens": [
             {
               "token": "Chutou",
@@ -6998,6 +7154,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 90.39%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 90.08%",
             "watch only; sold ratio 97.07%",
@@ -7005,9 +7163,7 @@
             "watch only; sold ratio 97.2%",
             "watch only; sold ratio 96.89%",
             "watch only; sold ratio 86.69%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 85.87%",
-            "watch only; sold ratio 84.69%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -7017,9 +7173,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 819,
-          "highSoldRatioCount": 819,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 820,
+          "highSoldRatioCount": 820,
           "tokens": [
             {
               "token": "Hunter Biden 2028",
@@ -7113,6 +7269,111 @@
             "watch only; sold ratio 96.57%",
             "watch only; sold ratio 97.04%",
             "watch only; sold ratio 86.43%"
+          ]
+        },
+        {
+          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
+          "shortAddress": "EDoYjE...biNZ",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
+          "highSoldRatioCount": 799,
+          "tokens": [
+            {
+              "token": "America250 ",
+              "symbol": "USA250",
+              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
+              "shortAddress": "7zzgor...pump",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 461.25
+            },
+            {
+              "token": "GIGAFLY",
+              "symbol": "GIGAFLY",
+              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
+              "shortAddress": "ccsev1...pump",
+              "soldRatioPercent": 91.07,
+              "amountUsd": 98.29
+            },
+            {
+              "token": "New York Knicks",
+              "symbol": "KNICKS",
+              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
+              "shortAddress": "a3f7jl...pump",
+              "soldRatioPercent": 88.92,
+              "amountUsd": 140.19
+            },
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 138.07
+            },
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 90.11,
+              "amountUsd": 107.79
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "soldRatioPercent": 83.81,
+              "amountUsd": 237.16
+            },
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
+            {
+              "token": "honter boden",
+              "symbol": "HONTER",
+              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
+              "shortAddress": "uuxwwf...ek57",
+              "soldRatioPercent": 95.23,
+              "amountUsd": 76.42
+            },
+            {
+              "token": "SpaceX",
+              "symbol": "SPCX",
+              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
+              "shortAddress": "e6ifp2...pump",
+              "soldRatioPercent": 98.47,
+              "amountUsd": 255.5
+            },
+            {
+              "token": "IDLE Protocol",
+              "symbol": "IDLE",
+              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
+              "shortAddress": "ajlhrx...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 91.68
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 97.02%",
+            "watch only; sold ratio 97.07%",
+            "watch only; sold ratio 97.05%",
+            "watch only; sold ratio 97.2%",
+            "watch only; sold ratio 96.89%",
+            "watch only; sold ratio 86.74%",
+            "watch only; sold ratio 86.35%",
+            "watch only; sold ratio 85.77%",
+            "watch only; sold ratio 85.94%"
           ]
         },
         {
@@ -7221,120 +7482,15 @@
           ]
         },
         {
-          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
-          "shortAddress": "EDoYjE...biNZ",
-          "chain": "solana",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
-          "highSoldRatioCount": 798,
-          "tokens": [
-            {
-              "token": "America250 ",
-              "symbol": "USA250",
-              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
-              "shortAddress": "7zzgor...pump",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 461.25
-            },
-            {
-              "token": "GIGAFLY",
-              "symbol": "GIGAFLY",
-              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
-              "shortAddress": "ccsev1...pump",
-              "soldRatioPercent": 91.07,
-              "amountUsd": 98.29
-            },
-            {
-              "token": "New York Knicks",
-              "symbol": "KNICKS",
-              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
-              "shortAddress": "a3f7jl...pump",
-              "soldRatioPercent": 88.92,
-              "amountUsd": 140.19
-            },
-            {
-              "token": "Grand Arena",
-              "symbol": "ARENA",
-              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
-              "shortAddress": "ddrae7...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 138.07
-            },
-            {
-              "token": "Michul Sellor",
-              "symbol": "SELLOR",
-              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
-              "shortAddress": "124yn3...pump",
-              "soldRatioPercent": 90.11,
-              "amountUsd": 107.79
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
-              "soldRatioPercent": 83.81,
-              "amountUsd": 237.16
-            },
-            {
-              "token": "goblintown",
-              "symbol": "goblintown",
-              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
-              "shortAddress": "dj15qj...pump",
-              "soldRatioPercent": 96.95,
-              "amountUsd": 335.59
-            },
-            {
-              "token": "honter boden",
-              "symbol": "HONTER",
-              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
-              "shortAddress": "uuxwwf...ek57",
-              "soldRatioPercent": 95.23,
-              "amountUsd": 76.42
-            },
-            {
-              "token": "SpaceX",
-              "symbol": "SPCX",
-              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
-              "shortAddress": "e6ifp2...pump",
-              "soldRatioPercent": 98.47,
-              "amountUsd": 255.5
-            },
-            {
-              "token": "IDLE Protocol",
-              "symbol": "IDLE",
-              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
-              "shortAddress": "ajlhrx...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 91.68
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 97.02%",
-            "watch only; sold ratio 97.07%",
-            "watch only; sold ratio 97.05%",
-            "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 86.35%",
-            "watch only; sold ratio 85.77%",
-            "watch only; sold ratio 85.94%",
-            "watch only; sold ratio 91.96%"
-          ]
-        },
-        {
           "walletAddress": "9Gpf1oeXtbiSYqkhZnEPwWoQtKWHUDGixEeFdbz9SXMx",
           "shortAddress": "9Gpf1o...SXMx",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 784,
-          "highSoldRatioCount": 784,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 786,
+          "highSoldRatioCount": 786,
           "tokens": [
             {
               "token": "honter boden",
@@ -7418,6 +7574,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 91.08%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 87.6%",
             "watch only; sold ratio 97.07%",
@@ -7425,9 +7583,7 @@
             "watch only; sold ratio 97.05%",
             "watch only; sold ratio 88.29%",
             "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 96.89%"
           ]
         }
       ],
@@ -7602,8 +7758,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 13692,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 13727,
           "examples": [
             {
               "token": "Varsko Intelligence",
@@ -7667,8 +7823,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 6361,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 6375,
           "examples": [
             {
               "token": "Bountywork",
@@ -7732,8 +7888,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 3127,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 3139,
           "examples": [
             {
               "token": "LOCKIN",
@@ -7797,8 +7953,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1217,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1219,
           "examples": [
             {
               "token": "APU",
@@ -7862,8 +8018,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
           "examples": [
             {
               "token": "eCash",
@@ -10258,7 +10414,7 @@
     {
       "date": "2026-06-04",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T17:59:00.646Z",
+      "generatedAt": "2026-06-06T18:29:02.476Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -10479,9 +10635,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1037,
-          "highSoldRatioCount": 1037,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1040,
+          "highSoldRatioCount": 1040,
           "tokens": [
             {
               "token": "Chutou",
@@ -10565,6 +10721,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 90.39%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 90.08%",
             "watch only; sold ratio 97.07%",
@@ -10572,9 +10730,7 @@
             "watch only; sold ratio 97.2%",
             "watch only; sold ratio 96.89%",
             "watch only; sold ratio 86.69%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 85.87%",
-            "watch only; sold ratio 84.69%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -10584,9 +10740,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 819,
-          "highSoldRatioCount": 819,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 820,
+          "highSoldRatioCount": 820,
           "tokens": [
             {
               "token": "Hunter Biden 2028",
@@ -10680,6 +10836,111 @@
             "watch only; sold ratio 96.57%",
             "watch only; sold ratio 97.04%",
             "watch only; sold ratio 86.43%"
+          ]
+        },
+        {
+          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
+          "shortAddress": "EDoYjE...biNZ",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
+          "highSoldRatioCount": 799,
+          "tokens": [
+            {
+              "token": "America250 ",
+              "symbol": "USA250",
+              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
+              "shortAddress": "7zzgor...pump",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 461.25
+            },
+            {
+              "token": "GIGAFLY",
+              "symbol": "GIGAFLY",
+              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
+              "shortAddress": "ccsev1...pump",
+              "soldRatioPercent": 91.07,
+              "amountUsd": 98.29
+            },
+            {
+              "token": "New York Knicks",
+              "symbol": "KNICKS",
+              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
+              "shortAddress": "a3f7jl...pump",
+              "soldRatioPercent": 88.92,
+              "amountUsd": 140.19
+            },
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 138.07
+            },
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 90.11,
+              "amountUsd": 107.79
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "soldRatioPercent": 83.81,
+              "amountUsd": 237.16
+            },
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
+            {
+              "token": "honter boden",
+              "symbol": "HONTER",
+              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
+              "shortAddress": "uuxwwf...ek57",
+              "soldRatioPercent": 95.23,
+              "amountUsd": 76.42
+            },
+            {
+              "token": "SpaceX",
+              "symbol": "SPCX",
+              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
+              "shortAddress": "e6ifp2...pump",
+              "soldRatioPercent": 98.47,
+              "amountUsd": 255.5
+            },
+            {
+              "token": "IDLE Protocol",
+              "symbol": "IDLE",
+              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
+              "shortAddress": "ajlhrx...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 91.68
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 97.02%",
+            "watch only; sold ratio 97.07%",
+            "watch only; sold ratio 97.05%",
+            "watch only; sold ratio 97.2%",
+            "watch only; sold ratio 96.89%",
+            "watch only; sold ratio 86.74%",
+            "watch only; sold ratio 86.35%",
+            "watch only; sold ratio 85.77%",
+            "watch only; sold ratio 85.94%"
           ]
         },
         {
@@ -10788,120 +11049,15 @@
           ]
         },
         {
-          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
-          "shortAddress": "EDoYjE...biNZ",
-          "chain": "solana",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
-          "highSoldRatioCount": 798,
-          "tokens": [
-            {
-              "token": "America250 ",
-              "symbol": "USA250",
-              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
-              "shortAddress": "7zzgor...pump",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 461.25
-            },
-            {
-              "token": "GIGAFLY",
-              "symbol": "GIGAFLY",
-              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
-              "shortAddress": "ccsev1...pump",
-              "soldRatioPercent": 91.07,
-              "amountUsd": 98.29
-            },
-            {
-              "token": "New York Knicks",
-              "symbol": "KNICKS",
-              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
-              "shortAddress": "a3f7jl...pump",
-              "soldRatioPercent": 88.92,
-              "amountUsd": 140.19
-            },
-            {
-              "token": "Grand Arena",
-              "symbol": "ARENA",
-              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
-              "shortAddress": "ddrae7...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 138.07
-            },
-            {
-              "token": "Michul Sellor",
-              "symbol": "SELLOR",
-              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
-              "shortAddress": "124yn3...pump",
-              "soldRatioPercent": 90.11,
-              "amountUsd": 107.79
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
-              "soldRatioPercent": 83.81,
-              "amountUsd": 237.16
-            },
-            {
-              "token": "goblintown",
-              "symbol": "goblintown",
-              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
-              "shortAddress": "dj15qj...pump",
-              "soldRatioPercent": 96.95,
-              "amountUsd": 335.59
-            },
-            {
-              "token": "honter boden",
-              "symbol": "HONTER",
-              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
-              "shortAddress": "uuxwwf...ek57",
-              "soldRatioPercent": 95.23,
-              "amountUsd": 76.42
-            },
-            {
-              "token": "SpaceX",
-              "symbol": "SPCX",
-              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
-              "shortAddress": "e6ifp2...pump",
-              "soldRatioPercent": 98.47,
-              "amountUsd": 255.5
-            },
-            {
-              "token": "IDLE Protocol",
-              "symbol": "IDLE",
-              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
-              "shortAddress": "ajlhrx...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 91.68
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 97.02%",
-            "watch only; sold ratio 97.07%",
-            "watch only; sold ratio 97.05%",
-            "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 86.35%",
-            "watch only; sold ratio 85.77%",
-            "watch only; sold ratio 85.94%",
-            "watch only; sold ratio 91.96%"
-          ]
-        },
-        {
           "walletAddress": "9Gpf1oeXtbiSYqkhZnEPwWoQtKWHUDGixEeFdbz9SXMx",
           "shortAddress": "9Gpf1o...SXMx",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 784,
-          "highSoldRatioCount": 784,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 786,
+          "highSoldRatioCount": 786,
           "tokens": [
             {
               "token": "honter boden",
@@ -10985,6 +11141,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 91.08%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 87.6%",
             "watch only; sold ratio 97.07%",
@@ -10992,9 +11150,7 @@
             "watch only; sold ratio 97.05%",
             "watch only; sold ratio 88.29%",
             "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 96.89%"
           ]
         }
       ],
@@ -11169,8 +11325,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 13692,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 13727,
           "examples": [
             {
               "token": "Varsko Intelligence",
@@ -11234,8 +11390,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 6361,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 6375,
           "examples": [
             {
               "token": "Bountywork",
@@ -11299,8 +11455,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 3127,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 3139,
           "examples": [
             {
               "token": "LOCKIN",
@@ -11364,8 +11520,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1217,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1219,
           "examples": [
             {
               "token": "APU",
@@ -11429,8 +11585,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
           "examples": [
             {
               "token": "eCash",
@@ -13768,7 +13924,7 @@
     {
       "date": "2026-06-03",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T17:59:00.646Z",
+      "generatedAt": "2026-06-06T18:29:02.476Z",
       "runCount": 40,
       "statuses": {
         "ok": 40
@@ -13989,9 +14145,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1037,
-          "highSoldRatioCount": 1037,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1040,
+          "highSoldRatioCount": 1040,
           "tokens": [
             {
               "token": "Chutou",
@@ -14075,6 +14231,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 90.39%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 90.08%",
             "watch only; sold ratio 97.07%",
@@ -14082,9 +14240,7 @@
             "watch only; sold ratio 97.2%",
             "watch only; sold ratio 96.89%",
             "watch only; sold ratio 86.69%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 85.87%",
-            "watch only; sold ratio 84.69%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -14094,9 +14250,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 819,
-          "highSoldRatioCount": 819,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 820,
+          "highSoldRatioCount": 820,
           "tokens": [
             {
               "token": "Hunter Biden 2028",
@@ -14190,6 +14346,111 @@
             "watch only; sold ratio 96.57%",
             "watch only; sold ratio 97.04%",
             "watch only; sold ratio 86.43%"
+          ]
+        },
+        {
+          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
+          "shortAddress": "EDoYjE...biNZ",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
+          "highSoldRatioCount": 799,
+          "tokens": [
+            {
+              "token": "America250 ",
+              "symbol": "USA250",
+              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
+              "shortAddress": "7zzgor...pump",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 461.25
+            },
+            {
+              "token": "GIGAFLY",
+              "symbol": "GIGAFLY",
+              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
+              "shortAddress": "ccsev1...pump",
+              "soldRatioPercent": 91.07,
+              "amountUsd": 98.29
+            },
+            {
+              "token": "New York Knicks",
+              "symbol": "KNICKS",
+              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
+              "shortAddress": "a3f7jl...pump",
+              "soldRatioPercent": 88.92,
+              "amountUsd": 140.19
+            },
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 138.07
+            },
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 90.11,
+              "amountUsd": 107.79
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "soldRatioPercent": 83.81,
+              "amountUsd": 237.16
+            },
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
+            {
+              "token": "honter boden",
+              "symbol": "HONTER",
+              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
+              "shortAddress": "uuxwwf...ek57",
+              "soldRatioPercent": 95.23,
+              "amountUsd": 76.42
+            },
+            {
+              "token": "SpaceX",
+              "symbol": "SPCX",
+              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
+              "shortAddress": "e6ifp2...pump",
+              "soldRatioPercent": 98.47,
+              "amountUsd": 255.5
+            },
+            {
+              "token": "IDLE Protocol",
+              "symbol": "IDLE",
+              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
+              "shortAddress": "ajlhrx...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 91.68
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 97.02%",
+            "watch only; sold ratio 97.07%",
+            "watch only; sold ratio 97.05%",
+            "watch only; sold ratio 97.2%",
+            "watch only; sold ratio 96.89%",
+            "watch only; sold ratio 86.74%",
+            "watch only; sold ratio 86.35%",
+            "watch only; sold ratio 85.77%",
+            "watch only; sold ratio 85.94%"
           ]
         },
         {
@@ -14298,120 +14559,15 @@
           ]
         },
         {
-          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
-          "shortAddress": "EDoYjE...biNZ",
-          "chain": "solana",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
-          "highSoldRatioCount": 798,
-          "tokens": [
-            {
-              "token": "America250 ",
-              "symbol": "USA250",
-              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
-              "shortAddress": "7zzgor...pump",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 461.25
-            },
-            {
-              "token": "GIGAFLY",
-              "symbol": "GIGAFLY",
-              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
-              "shortAddress": "ccsev1...pump",
-              "soldRatioPercent": 91.07,
-              "amountUsd": 98.29
-            },
-            {
-              "token": "New York Knicks",
-              "symbol": "KNICKS",
-              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
-              "shortAddress": "a3f7jl...pump",
-              "soldRatioPercent": 88.92,
-              "amountUsd": 140.19
-            },
-            {
-              "token": "Grand Arena",
-              "symbol": "ARENA",
-              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
-              "shortAddress": "ddrae7...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 138.07
-            },
-            {
-              "token": "Michul Sellor",
-              "symbol": "SELLOR",
-              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
-              "shortAddress": "124yn3...pump",
-              "soldRatioPercent": 90.11,
-              "amountUsd": 107.79
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
-              "soldRatioPercent": 83.81,
-              "amountUsd": 237.16
-            },
-            {
-              "token": "goblintown",
-              "symbol": "goblintown",
-              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
-              "shortAddress": "dj15qj...pump",
-              "soldRatioPercent": 96.95,
-              "amountUsd": 335.59
-            },
-            {
-              "token": "honter boden",
-              "symbol": "HONTER",
-              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
-              "shortAddress": "uuxwwf...ek57",
-              "soldRatioPercent": 95.23,
-              "amountUsd": 76.42
-            },
-            {
-              "token": "SpaceX",
-              "symbol": "SPCX",
-              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
-              "shortAddress": "e6ifp2...pump",
-              "soldRatioPercent": 98.47,
-              "amountUsd": 255.5
-            },
-            {
-              "token": "IDLE Protocol",
-              "symbol": "IDLE",
-              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
-              "shortAddress": "ajlhrx...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 91.68
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 97.02%",
-            "watch only; sold ratio 97.07%",
-            "watch only; sold ratio 97.05%",
-            "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 86.35%",
-            "watch only; sold ratio 85.77%",
-            "watch only; sold ratio 85.94%",
-            "watch only; sold ratio 91.96%"
-          ]
-        },
-        {
           "walletAddress": "9Gpf1oeXtbiSYqkhZnEPwWoQtKWHUDGixEeFdbz9SXMx",
           "shortAddress": "9Gpf1o...SXMx",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 784,
-          "highSoldRatioCount": 784,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 786,
+          "highSoldRatioCount": 786,
           "tokens": [
             {
               "token": "honter boden",
@@ -14495,6 +14651,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 91.08%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 87.6%",
             "watch only; sold ratio 97.07%",
@@ -14502,9 +14660,7 @@
             "watch only; sold ratio 97.05%",
             "watch only; sold ratio 88.29%",
             "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 96.89%"
           ]
         }
       ],
@@ -14679,8 +14835,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 13692,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 13727,
           "examples": [
             {
               "token": "Varsko Intelligence",
@@ -14744,8 +14900,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 6361,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 6375,
           "examples": [
             {
               "token": "Bountywork",
@@ -14809,8 +14965,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 3127,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 3139,
           "examples": [
             {
               "token": "LOCKIN",
@@ -14874,8 +15030,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1217,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1219,
           "examples": [
             {
               "token": "APU",
@@ -14939,8 +15095,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
           "examples": [
             {
               "token": "eCash",
@@ -16941,14 +17097,14 @@
     {
       "date": "2026-06-02",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-06T17:59:00.646Z",
-      "runCount": 13,
+      "generatedAt": "2026-06-06T18:29:02.477Z",
+      "runCount": 12,
       "statuses": {
-        "ok": 10,
+        "ok": 9,
         "partial": 2,
         "failed": 1
       },
-      "rawSignalCount": 770,
+      "rawSignalCount": 703,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -16956,9 +17112,9 @@
       "sells": 0,
       "buyUsd": 0,
       "realizedPnlUsd": 0,
-      "equityStartUsd": 2999.22,
+      "equityStartUsd": 2999.78,
       "equityEndUsd": 2999.77,
-      "equityChangeUsd": 0.55,
+      "equityChangeUsd": -0.01,
       "topBlockers": [],
       "mistakeCount": 3,
       "mistakeTypes": {
@@ -17166,9 +17322,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1037,
-          "highSoldRatioCount": 1037,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1040,
+          "highSoldRatioCount": 1040,
           "tokens": [
             {
               "token": "Chutou",
@@ -17252,6 +17408,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 90.39%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 90.08%",
             "watch only; sold ratio 97.07%",
@@ -17259,9 +17417,7 @@
             "watch only; sold ratio 97.2%",
             "watch only; sold ratio 96.89%",
             "watch only; sold ratio 86.69%",
-            "watch only; sold ratio 100%",
-            "watch only; sold ratio 85.87%",
-            "watch only; sold ratio 84.69%"
+            "watch only; sold ratio 100%"
           ]
         },
         {
@@ -17271,9 +17427,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 819,
-          "highSoldRatioCount": 819,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 820,
+          "highSoldRatioCount": 820,
           "tokens": [
             {
               "token": "Hunter Biden 2028",
@@ -17367,6 +17523,111 @@
             "watch only; sold ratio 96.57%",
             "watch only; sold ratio 97.04%",
             "watch only; sold ratio 86.43%"
+          ]
+        },
+        {
+          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
+          "shortAddress": "EDoYjE...biNZ",
+          "chain": "solana",
+          "walletType": "Smart Money",
+          "status": "watch_only",
+          "firstSeenAt": "2026-05-25T15:52:50.990Z",
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
+          "highSoldRatioCount": 799,
+          "tokens": [
+            {
+              "token": "America250 ",
+              "symbol": "USA250",
+              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
+              "shortAddress": "7zzgor...pump",
+              "soldRatioPercent": 82.78,
+              "amountUsd": 461.25
+            },
+            {
+              "token": "GIGAFLY",
+              "symbol": "GIGAFLY",
+              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
+              "shortAddress": "ccsev1...pump",
+              "soldRatioPercent": 91.07,
+              "amountUsd": 98.29
+            },
+            {
+              "token": "New York Knicks",
+              "symbol": "KNICKS",
+              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
+              "shortAddress": "a3f7jl...pump",
+              "soldRatioPercent": 88.92,
+              "amountUsd": 140.19
+            },
+            {
+              "token": "Grand Arena",
+              "symbol": "ARENA",
+              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
+              "shortAddress": "ddrae7...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 138.07
+            },
+            {
+              "token": "Michul Sellor",
+              "symbol": "SELLOR",
+              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
+              "shortAddress": "124yn3...pump",
+              "soldRatioPercent": 90.11,
+              "amountUsd": 107.79
+            },
+            {
+              "token": "锄头",
+              "symbol": "锄头",
+              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
+              "shortAddress": "ohamp5...pump",
+              "soldRatioPercent": 83.81,
+              "amountUsd": 237.16
+            },
+            {
+              "token": "goblintown",
+              "symbol": "goblintown",
+              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
+              "shortAddress": "dj15qj...pump",
+              "soldRatioPercent": 96.95,
+              "amountUsd": 335.59
+            },
+            {
+              "token": "honter boden",
+              "symbol": "HONTER",
+              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
+              "shortAddress": "uuxwwf...ek57",
+              "soldRatioPercent": 95.23,
+              "amountUsd": 76.42
+            },
+            {
+              "token": "SpaceX",
+              "symbol": "SPCX",
+              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
+              "shortAddress": "e6ifp2...pump",
+              "soldRatioPercent": 98.47,
+              "amountUsd": 255.5
+            },
+            {
+              "token": "IDLE Protocol",
+              "symbol": "IDLE",
+              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
+              "shortAddress": "ajlhrx...pump",
+              "soldRatioPercent": 100,
+              "amountUsd": 91.68
+            }
+          ],
+          "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 97.02%",
+            "watch only; sold ratio 97.07%",
+            "watch only; sold ratio 97.05%",
+            "watch only; sold ratio 97.2%",
+            "watch only; sold ratio 96.89%",
+            "watch only; sold ratio 86.74%",
+            "watch only; sold ratio 86.35%",
+            "watch only; sold ratio 85.77%",
+            "watch only; sold ratio 85.94%"
           ]
         },
         {
@@ -17475,120 +17736,15 @@
           ]
         },
         {
-          "walletAddress": "EDoYjESyAAD9oYSAtvdzAwPGDXrKd7bQwMAbhvNnbiNZ",
-          "shortAddress": "EDoYjE...biNZ",
-          "chain": "solana",
-          "walletType": "Smart Money",
-          "status": "watch_only",
-          "firstSeenAt": "2026-05-25T15:52:50.990Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
-          "highSoldRatioCount": 798,
-          "tokens": [
-            {
-              "token": "America250 ",
-              "symbol": "USA250",
-              "address": "7zzgorz2hcdnvrcujlaww9qquqtbxxx3ujauxuygpump",
-              "shortAddress": "7zzgor...pump",
-              "soldRatioPercent": 82.78,
-              "amountUsd": 461.25
-            },
-            {
-              "token": "GIGAFLY",
-              "symbol": "GIGAFLY",
-              "address": "ccsev1p3ymcmrofby86hr6jgb87v35vkjh5ui2e6pump",
-              "shortAddress": "ccsev1...pump",
-              "soldRatioPercent": 91.07,
-              "amountUsd": 98.29
-            },
-            {
-              "token": "New York Knicks",
-              "symbol": "KNICKS",
-              "address": "a3f7jl4eeg9yvxkqfqvqimncgmgvarzgjvdhnqurpump",
-              "shortAddress": "a3f7jl...pump",
-              "soldRatioPercent": 88.92,
-              "amountUsd": 140.19
-            },
-            {
-              "token": "Grand Arena",
-              "symbol": "ARENA",
-              "address": "ddrae7atujkl2np8mywgmf2lbu1e4ewrvq3cwpajpump",
-              "shortAddress": "ddrae7...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 138.07
-            },
-            {
-              "token": "Michul Sellor",
-              "symbol": "SELLOR",
-              "address": "124yn3ucd4ybb8jcyw6a2g9jjgg4ykp8vbp7xqnqpump",
-              "shortAddress": "124yn3...pump",
-              "soldRatioPercent": 90.11,
-              "amountUsd": 107.79
-            },
-            {
-              "token": "锄头",
-              "symbol": "锄头",
-              "address": "ohamp55kr1m5h7ewnskqabmv8fapsvkrkbrmhfwpump",
-              "shortAddress": "ohamp5...pump",
-              "soldRatioPercent": 83.81,
-              "amountUsd": 237.16
-            },
-            {
-              "token": "goblintown",
-              "symbol": "goblintown",
-              "address": "dj15qjxvpfgv6kyht6lvdgqg9b4abfwqzava7dgxpump",
-              "shortAddress": "dj15qj...pump",
-              "soldRatioPercent": 96.95,
-              "amountUsd": 335.59
-            },
-            {
-              "token": "honter boden",
-              "symbol": "HONTER",
-              "address": "uuxwwfl6g9ujiyrzvwxjrsb18v1okbgyrmueamrek57",
-              "shortAddress": "uuxwwf...ek57",
-              "soldRatioPercent": 95.23,
-              "amountUsd": 76.42
-            },
-            {
-              "token": "SpaceX",
-              "symbol": "SPCX",
-              "address": "e6ifp2mjy8cyqehugutfvrxrirkxruonlmrvtfypump",
-              "shortAddress": "e6ifp2...pump",
-              "soldRatioPercent": 98.47,
-              "amountUsd": 255.5
-            },
-            {
-              "token": "IDLE Protocol",
-              "symbol": "IDLE",
-              "address": "ajlhrxn2yrce45y2kgpmzckbm6npn43jwqpkdzq6pump",
-              "shortAddress": "ajlhrx...pump",
-              "soldRatioPercent": 100,
-              "amountUsd": 91.68
-            }
-          ],
-          "reasons": [
-            "watch only; sold ratio 97.02%",
-            "watch only; sold ratio 97.07%",
-            "watch only; sold ratio 97.05%",
-            "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 86.35%",
-            "watch only; sold ratio 85.77%",
-            "watch only; sold ratio 85.94%",
-            "watch only; sold ratio 91.96%"
-          ]
-        },
-        {
           "walletAddress": "9Gpf1oeXtbiSYqkhZnEPwWoQtKWHUDGixEeFdbz9SXMx",
           "shortAddress": "9Gpf1o...SXMx",
           "chain": "solana",
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 784,
-          "highSoldRatioCount": 784,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 786,
+          "highSoldRatioCount": 786,
           "tokens": [
             {
               "token": "honter boden",
@@ -17672,6 +17828,8 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.17%",
+            "watch only; sold ratio 91.08%",
             "watch only; sold ratio 97.02%",
             "watch only; sold ratio 87.6%",
             "watch only; sold ratio 97.07%",
@@ -17679,9 +17837,7 @@
             "watch only; sold ratio 97.05%",
             "watch only; sold ratio 88.29%",
             "watch only; sold ratio 97.2%",
-            "watch only; sold ratio 96.89%",
-            "watch only; sold ratio 86.74%",
-            "watch only; sold ratio 100%"
+            "watch only; sold ratio 96.89%"
           ]
         }
       ],
@@ -17856,8 +18012,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 13692,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 13727,
           "examples": [
             {
               "token": "Varsko Intelligence",
@@ -17921,8 +18077,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 6361,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 6375,
           "examples": [
             {
               "token": "Bountywork",
@@ -17986,8 +18142,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 3127,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 3139,
           "examples": [
             {
               "token": "LOCKIN",
@@ -18051,8 +18207,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 1217,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 1219,
           "examples": [
             {
               "token": "APU",
@@ -18116,8 +18272,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-06T17:58:57.939Z",
-          "occurrences": 798,
+          "lastSeenAt": "2026-06-06T18:28:58.609Z",
+          "occurrences": 799,
           "examples": [
             {
               "token": "eCash",
@@ -18317,77 +18473,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260602092900",
-          "startedAt": "2026-06-02T09:29:00.631Z",
-          "finishedAt": "2026-06-02T09:29:53.176Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 67,
-          "decisions": 67,
-          "trades": 0,
-          "mistakes": [],
-          "notes": [
-            "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
-          ],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 0,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 17,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": {
-            "timestamp": "2026-06-02T09:29:00.631Z",
-            "runId": "20260602092900",
-            "reason": "completed_cycle_reset",
-            "cycleSummaryId": "cycle-20260602092900",
-            "previousSession": {
-              "id": "20260602045859-cycle",
-              "startedAt": "2026-06-02T04:58:59.128Z",
-              "lastAuthOkAt": "2026-06-02T09:29:00.631Z",
-              "lastAuthFailureAt": "",
-              "authState": "online",
-              "authRecoveries": 3,
-              "resetReason": "completed_cycle_reset"
-            },
-            "previousCapital": {
-              "initialUsd": 3000,
-              "cashUsd": 2651.1,
-              "openValueUsd": 348.12,
-              "equityUsd": 2999.22,
-              "realizedPnlUsd": 0,
-              "unrealizedPnlUsd": -0.78,
-              "totalPnlUsd": -0.78,
-              "totalPnlPct": -0.03
-            },
-            "previousOpenPositions": 2,
-            "previousTrades": 2,
-            "previousDecisions": 500
-          },
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 2651.1,
-            "openValueUsd": 348.12,
-            "equityUsd": 2999.22,
-            "realizedPnlUsd": 0,
-            "unrealizedPnlUsd": -0.78,
-            "totalPnlUsd": -0.78,
-            "totalPnlPct": -0.03
-          }
-        },
         {
           "runId": "20260602102901",
           "startedAt": "2026-06-02T10:29:01.679Z",
