@@ -1,10 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-06T04:29:00.454Z",
+  "generatedAt": "2026-06-06T04:59:00.283Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260606042857",
+  "latestRunId": "20260606045857",
   "entries": [
+    {
+      "runId": "20260606045857",
+      "startedAt": "2026-06-06T04:58:57.721Z",
+      "finishedAt": "2026-06-06T04:58:59.857Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 63,
+      "decisions": 63,
+      "trades": 1,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 1,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 13,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2873.4,
+        "openValueUsd": 126.22,
+        "equityUsd": 2999.62,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": -0.38,
+        "totalPnlUsd": -0.38,
+        "totalPnlPct": -0.01
+      }
+    },
     {
       "runId": "20260606042857",
       "startedAt": "2026-06-06T04:28:57.691Z",
@@ -9033,77 +9075,6 @@
         "unrealizedPnlUsd": 16.4,
         "totalPnlUsd": 159.48,
         "totalPnlPct": 5.32
-      }
-    },
-    {
-      "runId": "20260601195901",
-      "startedAt": "2026-06-01T19:59:01.311Z",
-      "finishedAt": "2026-06-01T19:59:53.433Z",
-      "status": "ok",
-      "chains": [
-        "solana",
-        "bsc"
-      ],
-      "rawSignalCount": 65,
-      "decisions": 65,
-      "trades": 2,
-      "mistakes": [],
-      "notes": [
-        "已完成 10 轮周期，总结已入档，并自动重置模拟本金为 3000U。"
-      ],
-      "chainResults": [
-        {
-          "chain": "solana",
-          "status": "ok",
-          "rawSignalCount": 50,
-          "trades": 2,
-          "mistakes": []
-        },
-        {
-          "chain": "bsc",
-          "status": "ok",
-          "rawSignalCount": 15,
-          "trades": 0,
-          "mistakes": []
-        }
-      ],
-      "accountReset": {
-        "timestamp": "2026-06-01T19:59:01.311Z",
-        "runId": "20260601195901",
-        "reason": "completed_cycle_reset",
-        "cycleSummaryId": "cycle-20260601195901",
-        "previousSession": {
-          "id": "20260601152858-cycle",
-          "startedAt": "2026-06-01T15:28:58.363Z",
-          "lastAuthOkAt": "2026-06-01T19:59:01.311Z",
-          "lastAuthFailureAt": "",
-          "authState": "online",
-          "authRecoveries": 3,
-          "resetReason": "completed_cycle_reset"
-        },
-        "previousCapital": {
-          "initialUsd": 3000,
-          "cashUsd": 2714.91,
-          "openValueUsd": 588.24,
-          "equityUsd": 3303.15,
-          "realizedPnlUsd": 268.51,
-          "unrealizedPnlUsd": 34.64,
-          "totalPnlUsd": 303.15,
-          "totalPnlPct": 10.1
-        },
-        "previousOpenPositions": 3,
-        "previousTrades": 7,
-        "previousDecisions": 500
-      },
-      "capital": {
-        "initialUsd": 3000,
-        "cashUsd": 2714.91,
-        "openValueUsd": 588.24,
-        "equityUsd": 3303.15,
-        "realizedPnlUsd": 268.51,
-        "unrealizedPnlUsd": 34.64,
-        "totalPnlUsd": 303.15,
-        "totalPnlPct": 10.1
       }
     }
   ]
