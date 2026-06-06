@@ -1,10 +1,52 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-06T18:29:02.477Z",
+  "generatedAt": "2026-06-06T18:59:00.406Z",
   "source": "docs/data/signal-paper.json",
   "totalRuns": 200,
-  "latestRunId": "20260606182858",
+  "latestRunId": "20260606185858",
   "entries": [
+    {
+      "runId": "20260606185858",
+      "startedAt": "2026-06-06T18:58:58.027Z",
+      "finishedAt": "2026-06-06T18:58:59.979Z",
+      "status": "ok",
+      "chains": [
+        "solana",
+        "bsc"
+      ],
+      "rawSignalCount": 62,
+      "decisions": 62,
+      "trades": 1,
+      "mistakes": [],
+      "notes": [],
+      "chainResults": [
+        {
+          "chain": "solana",
+          "status": "ok",
+          "rawSignalCount": 50,
+          "trades": 1,
+          "mistakes": []
+        },
+        {
+          "chain": "bsc",
+          "status": "ok",
+          "rawSignalCount": 12,
+          "trades": 0,
+          "mistakes": []
+        }
+      ],
+      "accountReset": null,
+      "capital": {
+        "initialUsd": 3000,
+        "cashUsd": 2738.1,
+        "openValueUsd": 261.11,
+        "equityUsd": 2999.21,
+        "realizedPnlUsd": 0,
+        "unrealizedPnlUsd": -0.79,
+        "totalPnlUsd": -0.79,
+        "totalPnlPct": -0.03
+      }
+    },
     {
       "runId": "20260606182858",
       "startedAt": "2026-06-06T18:28:58.609Z",
@@ -9009,62 +9051,6 @@
       ],
       "notes": [],
       "chainResults": [],
-      "accountReset": null,
-      "capital": {
-        "initialUsd": 3000,
-        "cashUsd": 2834.9,
-        "openValueUsd": 164.88,
-        "equityUsd": 2999.78,
-        "realizedPnlUsd": 0,
-        "unrealizedPnlUsd": -0.22,
-        "totalPnlUsd": -0.22,
-        "totalPnlPct": -0.01
-      }
-    },
-    {
-      "runId": "20260602102901",
-      "startedAt": "2026-06-02T10:29:01.679Z",
-      "finishedAt": "2026-06-02T10:30:52.517Z",
-      "status": "partial",
-      "chains": [
-        "solana",
-        "bsc"
-      ],
-      "rawSignalCount": 50,
-      "decisions": 50,
-      "trades": 1,
-      "mistakes": [
-        {
-          "type": "CLI_ERROR",
-          "chain": "bsc",
-          "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
-          "lesson": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses."
-        }
-      ],
-      "notes": [],
-      "chainResults": [
-        {
-          "chain": "solana",
-          "status": "ok",
-          "rawSignalCount": 50,
-          "trades": 1,
-          "mistakes": []
-        },
-        {
-          "chain": "bsc",
-          "status": "failed",
-          "rawSignalCount": 0,
-          "trades": 0,
-          "mistakes": [
-            {
-              "type": "CLI_ERROR",
-              "message": "Network unavailable — check your connection and try again: error sending request for url (https://web3.okx.com/api/v6/dex/market/signal/list): operation timed out",
-              "lesson": "A failed chain scan is recorded as failed; never backfill trades from memory or guesses.",
-              "chain": "bsc"
-            }
-          ]
-        }
-      ],
       "accountReset": null,
       "capital": {
         "initialUsd": 3000,
