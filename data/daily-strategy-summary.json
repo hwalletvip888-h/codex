@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-07T13:59:00.589Z",
+  "generatedAt": "2026-06-07T14:29:00.866Z",
   "latest": {
     "date": "2026-06-07",
     "timeZone": "Asia/Hong_Kong",
-    "generatedAt": "2026-06-07T13:59:00.576Z",
-    "runCount": 43,
+    "generatedAt": "2026-06-07T14:29:00.854Z",
+    "runCount": 44,
     "statuses": {
-      "ok": 43
+      "ok": 44
     },
-    "rawSignalCount": 2634,
-    "decisionCount": 180,
+    "rawSignalCount": 2694,
+    "decisionCount": 240,
     "actions": {
-      "IGNORE": 138,
-      "WATCH": 42
+      "IGNORE": 184,
+      "WATCH": 56
     },
     "tradeCount": 0,
     "buys": 0,
@@ -26,35 +26,35 @@
     "topBlockers": [
       {
         "name": "sold ratio > 35%",
-        "count": 180
+        "count": 240
       },
       {
         "name": "blacklisted source wallet: 2g8ayw...VKc9",
-        "count": 12
+        "count": 16
       },
       {
         "name": "blacklisted source wallet: 6e6zBy...D2J7",
-        "count": 6
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: HoT5PC...RvPq",
-        "count": 6
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: AcXCrt...oMzc",
-        "count": 6
+        "count": 8
       },
       {
         "name": "amount < 500U",
-        "count": 6
+        "count": 8
       },
       {
         "name": "blacklisted source wallet: 9nP8di...wpE6",
-        "count": 3
+        "count": 4
       },
       {
         "name": "blacklisted source wallet: 6thKzh...4nVi",
-        "count": 3
+        "count": 4
       }
     ],
     "mistakeCount": 0,
@@ -261,9 +261,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-07T13:58:57.971Z",
-        "occurrences": 1098,
-        "highSoldRatioCount": 1098,
+        "lastSeenAt": "2026-06-07T14:28:58.025Z",
+        "occurrences": 1099,
+        "highSoldRatioCount": 1099,
         "tokens": [
           {
             "token": "Subly",
@@ -366,9 +366,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-07T13:58:57.971Z",
-        "occurrences": 884,
-        "highSoldRatioCount": 884,
+        "lastSeenAt": "2026-06-07T14:28:58.025Z",
+        "occurrences": 890,
+        "highSoldRatioCount": 890,
         "tokens": [
           {
             "token": "America Is Back",
@@ -452,16 +452,16 @@
           }
         ],
         "reasons": [
+          "watch only; sold ratio 97.52%",
+          "watch only; sold ratio 94.34%",
+          "watch only; sold ratio 87.12%",
+          "watch only; sold ratio 84.53%",
           "watch only; sold ratio 97.71%",
           "watch only; sold ratio 93.68%",
           "watch only; sold ratio 87.05%",
           "watch only; sold ratio 100%",
           "watch only; sold ratio 84.37%",
-          "watch only; sold ratio 97.99%",
-          "watch only; sold ratio 93.53%",
-          "watch only; sold ratio 86.11%",
-          "watch only; sold ratio 97.5%",
-          "watch only; sold ratio 84.67%"
+          "watch only; sold ratio 97.99%"
         ]
       },
       {
@@ -471,9 +471,9 @@
         "walletType": "Smart Money",
         "status": "watch_only",
         "firstSeenAt": "2026-05-25T11:10:31.629Z",
-        "lastSeenAt": "2026-06-07T13:58:57.971Z",
-        "occurrences": 828,
-        "highSoldRatioCount": 828,
+        "lastSeenAt": "2026-06-07T14:28:58.025Z",
+        "occurrences": 829,
+        "highSoldRatioCount": 829,
         "tokens": [
           {
             "token": "Chutou",
@@ -951,8 +951,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-07T13:58:57.971Z",
-        "occurrences": 14936,
+        "lastSeenAt": "2026-06-07T14:28:58.025Z",
+        "occurrences": 14967,
         "examples": [
           {
             "token": "Kintara",
@@ -1003,7 +1003,7 @@
         "title": "solana Whale 不及格条件",
         "status": "归档拦截",
         "rule": "sold ratio > 35%",
-        "reason": "amount 573.85U; wallets 3; sold 100%; type Whale",
+        "reason": "amount 1359.7U; wallets 3; sold 100%; type Whale",
         "score": 68.2,
         "wins": 0,
         "losses": 0,
@@ -1016,9 +1016,16 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-07T13:58:57.971Z",
-        "occurrences": 7023,
+        "lastSeenAt": "2026-06-07T14:28:58.025Z",
+        "occurrences": 7042,
         "examples": [
+          {
+            "token": "three.ws",
+            "symbol": "three",
+            "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+            "shortAddress": "fembdo...pump",
+            "chain": "solana"
+          },
           {
             "token": "GoPump",
             "symbol": "GO",
@@ -1053,13 +1060,6 @@
             "address": "ehhyfjrwj2jhmse7gw5ujfizalcnda5c4hwpisqjpump",
             "shortAddress": "ehhyfj...pump",
             "chain": "solana"
-          },
-          {
-            "token": "AMERICA 250",
-            "symbol": "250",
-            "address": "7pseyqfd35handx4fbzl9n2epmixwytnaw7r61rupump",
-            "shortAddress": "7pseyq...pump",
-            "chain": "solana"
           }
         ]
       },
@@ -1081,8 +1081,8 @@
           "chain": "bsc"
         },
         "firstSeenAt": "2026-05-25T10:58:04.711Z",
-        "lastSeenAt": "2026-06-07T13:58:57.971Z",
-        "occurrences": 3563,
+        "lastSeenAt": "2026-06-07T14:28:58.025Z",
+        "occurrences": 3573,
         "examples": [
           {
             "token": "mcdoge",
@@ -1146,8 +1146,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T08:13:21.812Z",
-        "lastSeenAt": "2026-06-07T13:58:57.971Z",
-        "occurrences": 1260,
+        "lastSeenAt": "2026-06-07T14:28:58.025Z",
+        "occurrences": 1261,
         "examples": [
           {
             "token": "APU",
@@ -1211,8 +1211,8 @@
           "chain": "solana"
         },
         "firstSeenAt": "2026-05-25T03:33:47.500Z",
-        "lastSeenAt": "2026-06-07T13:58:57.971Z",
-        "occurrences": 837,
+        "lastSeenAt": "2026-06-07T14:28:58.025Z",
+        "occurrences": 838,
         "examples": [
           {
             "token": "eCash",
@@ -3362,6 +3362,48 @@
           "totalPnlUsd": 0,
           "totalPnlPct": 0
         }
+      },
+      {
+        "runId": "20260607142858",
+        "startedAt": "2026-06-07T14:28:58.025Z",
+        "finishedAt": "2026-06-07T14:29:00.442Z",
+        "status": "ok",
+        "chains": [
+          "solana",
+          "bsc"
+        ],
+        "rawSignalCount": 60,
+        "decisions": 60,
+        "trades": 0,
+        "mistakes": [],
+        "notes": [],
+        "chainResults": [
+          {
+            "chain": "solana",
+            "status": "ok",
+            "rawSignalCount": 50,
+            "trades": 0,
+            "mistakes": []
+          },
+          {
+            "chain": "bsc",
+            "status": "ok",
+            "rawSignalCount": 10,
+            "trades": 0,
+            "mistakes": []
+          }
+        ],
+        "accountReset": null,
+        "capital": {
+          "initialUsd": 3000,
+          "cashUsd": 3000,
+          "openValueUsd": 0,
+          "equityUsd": 3000,
+          "realizedPnlUsd": 0,
+          "unrealizedPnlUsd": 0,
+          "totalPnlUsd": 0,
+          "totalPnlPct": 0
+        }
       }
     ]
   },
@@ -3369,16 +3411,16 @@
     {
       "date": "2026-06-07",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-07T13:59:00.576Z",
-      "runCount": 43,
+      "generatedAt": "2026-06-07T14:29:00.854Z",
+      "runCount": 44,
       "statuses": {
-        "ok": 43
+        "ok": 44
       },
-      "rawSignalCount": 2634,
-      "decisionCount": 180,
+      "rawSignalCount": 2694,
+      "decisionCount": 240,
       "actions": {
-        "IGNORE": 138,
-        "WATCH": 42
+        "IGNORE": 184,
+        "WATCH": 56
       },
       "tradeCount": 0,
       "buys": 0,
@@ -3391,35 +3433,35 @@
       "topBlockers": [
         {
           "name": "sold ratio > 35%",
-          "count": 180
+          "count": 240
         },
         {
           "name": "blacklisted source wallet: 2g8ayw...VKc9",
-          "count": 12
+          "count": 16
         },
         {
           "name": "blacklisted source wallet: 6e6zBy...D2J7",
-          "count": 6
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: HoT5PC...RvPq",
-          "count": 6
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: AcXCrt...oMzc",
-          "count": 6
+          "count": 8
         },
         {
           "name": "amount < 500U",
-          "count": 6
+          "count": 8
         },
         {
           "name": "blacklisted source wallet: 9nP8di...wpE6",
-          "count": 3
+          "count": 4
         },
         {
           "name": "blacklisted source wallet: 6thKzh...4nVi",
-          "count": 3
+          "count": 4
         }
       ],
       "mistakeCount": 0,
@@ -3626,9 +3668,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1098,
-          "highSoldRatioCount": 1098,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1099,
+          "highSoldRatioCount": 1099,
           "tokens": [
             {
               "token": "Subly",
@@ -3731,9 +3773,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 884,
-          "highSoldRatioCount": 884,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 890,
+          "highSoldRatioCount": 890,
           "tokens": [
             {
               "token": "America Is Back",
@@ -3817,16 +3859,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 94.34%",
+            "watch only; sold ratio 87.12%",
+            "watch only; sold ratio 84.53%",
             "watch only; sold ratio 97.71%",
             "watch only; sold ratio 93.68%",
             "watch only; sold ratio 87.05%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 84.37%",
-            "watch only; sold ratio 97.99%",
-            "watch only; sold ratio 93.53%",
-            "watch only; sold ratio 86.11%",
-            "watch only; sold ratio 97.5%",
-            "watch only; sold ratio 84.67%"
+            "watch only; sold ratio 97.99%"
           ]
         },
         {
@@ -3836,9 +3878,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 828,
-          "highSoldRatioCount": 828,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 829,
+          "highSoldRatioCount": 829,
           "tokens": [
             {
               "token": "Chutou",
@@ -4316,8 +4358,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 14936,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 14967,
           "examples": [
             {
               "token": "Kintara",
@@ -4368,7 +4410,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 573.85U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1359.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -4381,9 +4423,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 7023,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 7042,
           "examples": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "chain": "solana"
+            },
             {
               "token": "GoPump",
               "symbol": "GO",
@@ -4418,13 +4467,6 @@
               "address": "ehhyfjrwj2jhmse7gw5ujfizalcnda5c4hwpisqjpump",
               "shortAddress": "ehhyfj...pump",
               "chain": "solana"
-            },
-            {
-              "token": "AMERICA 250",
-              "symbol": "250",
-              "address": "7pseyqfd35handx4fbzl9n2epmixwytnaw7r61rupump",
-              "shortAddress": "7pseyq...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -4446,8 +4488,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 3563,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 3573,
           "examples": [
             {
               "token": "mcdoge",
@@ -4511,8 +4553,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1260,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1261,
           "examples": [
             {
               "token": "APU",
@@ -4576,8 +4618,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 837,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 838,
           "examples": [
             {
               "token": "eCash",
@@ -6727,13 +6769,55 @@
             "totalPnlUsd": 0,
             "totalPnlPct": 0
           }
+        },
+        {
+          "runId": "20260607142858",
+          "startedAt": "2026-06-07T14:28:58.025Z",
+          "finishedAt": "2026-06-07T14:29:00.442Z",
+          "status": "ok",
+          "chains": [
+            "solana",
+            "bsc"
+          ],
+          "rawSignalCount": 60,
+          "decisions": 60,
+          "trades": 0,
+          "mistakes": [],
+          "notes": [],
+          "chainResults": [
+            {
+              "chain": "solana",
+              "status": "ok",
+              "rawSignalCount": 50,
+              "trades": 0,
+              "mistakes": []
+            },
+            {
+              "chain": "bsc",
+              "status": "ok",
+              "rawSignalCount": 10,
+              "trades": 0,
+              "mistakes": []
+            }
+          ],
+          "accountReset": null,
+          "capital": {
+            "initialUsd": 3000,
+            "cashUsd": 3000,
+            "openValueUsd": 0,
+            "equityUsd": 3000,
+            "realizedPnlUsd": 0,
+            "unrealizedPnlUsd": 0,
+            "totalPnlUsd": 0,
+            "totalPnlPct": 0
+          }
         }
       ]
     },
     {
       "date": "2026-06-06",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-07T13:59:00.577Z",
+      "generatedAt": "2026-06-07T14:29:00.855Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -6954,9 +7038,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1098,
-          "highSoldRatioCount": 1098,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1099,
+          "highSoldRatioCount": 1099,
           "tokens": [
             {
               "token": "Subly",
@@ -7059,9 +7143,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 884,
-          "highSoldRatioCount": 884,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 890,
+          "highSoldRatioCount": 890,
           "tokens": [
             {
               "token": "America Is Back",
@@ -7145,16 +7229,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 94.34%",
+            "watch only; sold ratio 87.12%",
+            "watch only; sold ratio 84.53%",
             "watch only; sold ratio 97.71%",
             "watch only; sold ratio 93.68%",
             "watch only; sold ratio 87.05%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 84.37%",
-            "watch only; sold ratio 97.99%",
-            "watch only; sold ratio 93.53%",
-            "watch only; sold ratio 86.11%",
-            "watch only; sold ratio 97.5%",
-            "watch only; sold ratio 84.67%"
+            "watch only; sold ratio 97.99%"
           ]
         },
         {
@@ -7164,9 +7248,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 828,
-          "highSoldRatioCount": 828,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 829,
+          "highSoldRatioCount": 829,
           "tokens": [
             {
               "token": "Chutou",
@@ -7644,8 +7728,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 14936,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 14967,
           "examples": [
             {
               "token": "Kintara",
@@ -7696,7 +7780,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 573.85U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1359.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -7709,9 +7793,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 7023,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 7042,
           "examples": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "chain": "solana"
+            },
             {
               "token": "GoPump",
               "symbol": "GO",
@@ -7746,13 +7837,6 @@
               "address": "ehhyfjrwj2jhmse7gw5ujfizalcnda5c4hwpisqjpump",
               "shortAddress": "ehhyfj...pump",
               "chain": "solana"
-            },
-            {
-              "token": "AMERICA 250",
-              "symbol": "250",
-              "address": "7pseyqfd35handx4fbzl9n2epmixwytnaw7r61rupump",
-              "shortAddress": "7pseyq...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -7774,8 +7858,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 3563,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 3573,
           "examples": [
             {
               "token": "mcdoge",
@@ -7839,8 +7923,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1260,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1261,
           "examples": [
             {
               "token": "APU",
@@ -7904,8 +7988,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 837,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 838,
           "examples": [
             {
               "token": "eCash",
@@ -10271,7 +10355,7 @@
     {
       "date": "2026-06-05",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-07T13:59:00.577Z",
+      "generatedAt": "2026-06-07T14:29:00.855Z",
       "runCount": 48,
       "statuses": {
         "ok": 48
@@ -10492,9 +10576,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1098,
-          "highSoldRatioCount": 1098,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1099,
+          "highSoldRatioCount": 1099,
           "tokens": [
             {
               "token": "Subly",
@@ -10597,9 +10681,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 884,
-          "highSoldRatioCount": 884,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 890,
+          "highSoldRatioCount": 890,
           "tokens": [
             {
               "token": "America Is Back",
@@ -10683,16 +10767,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 94.34%",
+            "watch only; sold ratio 87.12%",
+            "watch only; sold ratio 84.53%",
             "watch only; sold ratio 97.71%",
             "watch only; sold ratio 93.68%",
             "watch only; sold ratio 87.05%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 84.37%",
-            "watch only; sold ratio 97.99%",
-            "watch only; sold ratio 93.53%",
-            "watch only; sold ratio 86.11%",
-            "watch only; sold ratio 97.5%",
-            "watch only; sold ratio 84.67%"
+            "watch only; sold ratio 97.99%"
           ]
         },
         {
@@ -10702,9 +10786,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 828,
-          "highSoldRatioCount": 828,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 829,
+          "highSoldRatioCount": 829,
           "tokens": [
             {
               "token": "Chutou",
@@ -11182,8 +11266,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 14936,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 14967,
           "examples": [
             {
               "token": "Kintara",
@@ -11234,7 +11318,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 573.85U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1359.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -11247,9 +11331,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 7023,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 7042,
           "examples": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "chain": "solana"
+            },
             {
               "token": "GoPump",
               "symbol": "GO",
@@ -11284,13 +11375,6 @@
               "address": "ehhyfjrwj2jhmse7gw5ujfizalcnda5c4hwpisqjpump",
               "shortAddress": "ehhyfj...pump",
               "chain": "solana"
-            },
-            {
-              "token": "AMERICA 250",
-              "symbol": "250",
-              "address": "7pseyqfd35handx4fbzl9n2epmixwytnaw7r61rupump",
-              "shortAddress": "7pseyq...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -11312,8 +11396,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 3563,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 3573,
           "examples": [
             {
               "token": "mcdoge",
@@ -11377,8 +11461,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1260,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1261,
           "examples": [
             {
               "token": "APU",
@@ -11442,8 +11526,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 837,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 838,
           "examples": [
             {
               "token": "eCash",
@@ -13838,7 +13922,7 @@
     {
       "date": "2026-06-04",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-07T13:59:00.578Z",
+      "generatedAt": "2026-06-07T14:29:00.856Z",
       "runCount": 47,
       "statuses": {
         "ok": 47
@@ -14059,9 +14143,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1098,
-          "highSoldRatioCount": 1098,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1099,
+          "highSoldRatioCount": 1099,
           "tokens": [
             {
               "token": "Subly",
@@ -14164,9 +14248,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 884,
-          "highSoldRatioCount": 884,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 890,
+          "highSoldRatioCount": 890,
           "tokens": [
             {
               "token": "America Is Back",
@@ -14250,16 +14334,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 94.34%",
+            "watch only; sold ratio 87.12%",
+            "watch only; sold ratio 84.53%",
             "watch only; sold ratio 97.71%",
             "watch only; sold ratio 93.68%",
             "watch only; sold ratio 87.05%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 84.37%",
-            "watch only; sold ratio 97.99%",
-            "watch only; sold ratio 93.53%",
-            "watch only; sold ratio 86.11%",
-            "watch only; sold ratio 97.5%",
-            "watch only; sold ratio 84.67%"
+            "watch only; sold ratio 97.99%"
           ]
         },
         {
@@ -14269,9 +14353,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 828,
-          "highSoldRatioCount": 828,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 829,
+          "highSoldRatioCount": 829,
           "tokens": [
             {
               "token": "Chutou",
@@ -14749,8 +14833,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 14936,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 14967,
           "examples": [
             {
               "token": "Kintara",
@@ -14801,7 +14885,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 573.85U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1359.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -14814,9 +14898,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 7023,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 7042,
           "examples": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "chain": "solana"
+            },
             {
               "token": "GoPump",
               "symbol": "GO",
@@ -14851,13 +14942,6 @@
               "address": "ehhyfjrwj2jhmse7gw5ujfizalcnda5c4hwpisqjpump",
               "shortAddress": "ehhyfj...pump",
               "chain": "solana"
-            },
-            {
-              "token": "AMERICA 250",
-              "symbol": "250",
-              "address": "7pseyqfd35handx4fbzl9n2epmixwytnaw7r61rupump",
-              "shortAddress": "7pseyq...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -14879,8 +14963,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 3563,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 3573,
           "examples": [
             {
               "token": "mcdoge",
@@ -14944,8 +15028,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1260,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1261,
           "examples": [
             {
               "token": "APU",
@@ -15009,8 +15093,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 837,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 838,
           "examples": [
             {
               "token": "eCash",
@@ -17348,12 +17432,12 @@
     {
       "date": "2026-06-03",
       "timeZone": "Asia/Hong_Kong",
-      "generatedAt": "2026-06-07T13:59:00.578Z",
-      "runCount": 14,
+      "generatedAt": "2026-06-07T14:29:00.856Z",
+      "runCount": 13,
       "statuses": {
-        "ok": 14
+        "ok": 13
       },
-      "rawSignalCount": 952,
+      "rawSignalCount": 884,
       "decisionCount": 0,
       "actions": {},
       "tradeCount": 0,
@@ -17569,9 +17653,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1098,
-          "highSoldRatioCount": 1098,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1099,
+          "highSoldRatioCount": 1099,
           "tokens": [
             {
               "token": "Subly",
@@ -17674,9 +17758,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 884,
-          "highSoldRatioCount": 884,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 890,
+          "highSoldRatioCount": 890,
           "tokens": [
             {
               "token": "America Is Back",
@@ -17760,16 +17844,16 @@
             }
           ],
           "reasons": [
+            "watch only; sold ratio 97.52%",
+            "watch only; sold ratio 94.34%",
+            "watch only; sold ratio 87.12%",
+            "watch only; sold ratio 84.53%",
             "watch only; sold ratio 97.71%",
             "watch only; sold ratio 93.68%",
             "watch only; sold ratio 87.05%",
             "watch only; sold ratio 100%",
             "watch only; sold ratio 84.37%",
-            "watch only; sold ratio 97.99%",
-            "watch only; sold ratio 93.53%",
-            "watch only; sold ratio 86.11%",
-            "watch only; sold ratio 97.5%",
-            "watch only; sold ratio 84.67%"
+            "watch only; sold ratio 97.99%"
           ]
         },
         {
@@ -17779,9 +17863,9 @@
           "walletType": "Smart Money",
           "status": "watch_only",
           "firstSeenAt": "2026-05-25T11:10:31.629Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 828,
-          "highSoldRatioCount": 828,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 829,
+          "highSoldRatioCount": 829,
           "tokens": [
             {
               "token": "Chutou",
@@ -18259,8 +18343,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 14936,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 14967,
           "examples": [
             {
               "token": "Kintara",
@@ -18311,7 +18395,7 @@
           "title": "solana Whale 不及格条件",
           "status": "归档拦截",
           "rule": "sold ratio > 35%",
-          "reason": "amount 573.85U; wallets 3; sold 100%; type Whale",
+          "reason": "amount 1359.7U; wallets 3; sold 100%; type Whale",
           "score": 68.2,
           "wins": 0,
           "losses": 0,
@@ -18324,9 +18408,16 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 7023,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 7042,
           "examples": [
+            {
+              "token": "three.ws",
+              "symbol": "three",
+              "address": "fembdox7r1psc4gecvjdsbnbza3bfztcydcatjvjpump",
+              "shortAddress": "fembdo...pump",
+              "chain": "solana"
+            },
             {
               "token": "GoPump",
               "symbol": "GO",
@@ -18361,13 +18452,6 @@
               "address": "ehhyfjrwj2jhmse7gw5ujfizalcnda5c4hwpisqjpump",
               "shortAddress": "ehhyfj...pump",
               "chain": "solana"
-            },
-            {
-              "token": "AMERICA 250",
-              "symbol": "250",
-              "address": "7pseyqfd35handx4fbzl9n2epmixwytnaw7r61rupump",
-              "shortAddress": "7pseyq...pump",
-              "chain": "solana"
             }
           ]
         },
@@ -18389,8 +18473,8 @@
             "chain": "bsc"
           },
           "firstSeenAt": "2026-05-25T10:58:04.711Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 3563,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 3573,
           "examples": [
             {
               "token": "mcdoge",
@@ -18454,8 +18538,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T08:13:21.812Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 1260,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 1261,
           "examples": [
             {
               "token": "APU",
@@ -18519,8 +18603,8 @@
             "chain": "solana"
           },
           "firstSeenAt": "2026-05-25T03:33:47.500Z",
-          "lastSeenAt": "2026-06-07T13:58:57.971Z",
-          "occurrences": 837,
+          "lastSeenAt": "2026-06-07T14:28:58.025Z",
+          "occurrences": 838,
           "examples": [
             {
               "token": "eCash",
@@ -18720,48 +18804,6 @@
         }
       ],
       "runs": [
-        {
-          "runId": "20260603052858",
-          "startedAt": "2026-06-03T05:28:58.889Z",
-          "finishedAt": "2026-06-03T05:29:52.050Z",
-          "status": "ok",
-          "chains": [
-            "solana",
-            "bsc"
-          ],
-          "rawSignalCount": 68,
-          "decisions": 68,
-          "trades": 0,
-          "mistakes": [],
-          "notes": [],
-          "chainResults": [
-            {
-              "chain": "solana",
-              "status": "ok",
-              "rawSignalCount": 50,
-              "trades": 0,
-              "mistakes": []
-            },
-            {
-              "chain": "bsc",
-              "status": "ok",
-              "rawSignalCount": 18,
-              "trades": 0,
-              "mistakes": []
-            }
-          ],
-          "accountReset": null,
-          "capital": {
-            "initialUsd": 3000,
-            "cashUsd": 2479.4,
-            "openValueUsd": 519.29,
-            "equityUsd": 2998.69,
-            "realizedPnlUsd": 0,
-            "unrealizedPnlUsd": -1.31,
-            "totalPnlUsd": -1.31,
-            "totalPnlPct": -0.04
-          }
-        },
         {
           "runId": "20260603055859",
           "startedAt": "2026-06-03T05:58:59.357Z",
